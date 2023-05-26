@@ -1,6 +1,4 @@
-@extends(index)
 
-@section('content')
 <nav class="navbar navbar-expand-lg bg-primary navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
     <a href="#" class="navbar-brand ms-3 d-lg-none">MENU</a>
     <button type="button" class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -28,4 +26,4 @@
         <a href="#" class="btn btn-sm btn-light rounded-pill py-2 px-4 d-none d-lg-block">Get Started</a>
     </div>
 </nav>
-@endsection
+
