@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Message;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,4 +25,16 @@ Route::get('/contact', function () {
 
 Route::get('/about', function () {
     return view('Front.pages.about');
+});
+
+Route::post('/contact', function (Request $request) {
+    Message::create($request->all());
+    toastr()->success('Votre message a été enregistré avec succès');
+    return redirect()->back();
+})->name('contact');
+
+
+Route::get('/messages', function (Request $request) {
+    $messages = Message::all();
+    return view('message', compact('messages'));
 });
