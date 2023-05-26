@@ -7,13 +7,13 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav me-auto p-3 p-lg-0">
             <a href="index.html" class="nav-item nav-link active">Accueil</a>
-            <a href="about.html" class="nav-item nav-link">A PROPOS </a>
-            <a href="service.html" class="nav-item nav-link">POURQUOI NOUS REJOINDRE</a>
-            <a href="project.html" class="nav-item nav-link">COMMENT S'INSTALLER</a>
-            <a href="project.html" class="nav-item nav-link">ENTREPRISES AGREEES</a>
-            <a href="project.html" class="nav-item nav-link">MEDIATHEQUE </a>
+            <a href="about.html" class="nav-item nav-link">A Propos </a>
+            <a href="service.html" class="nav-item nav-link">Rejoingnez-nous</a>
+            <a href="project.html" class="nav-item nav-link">S'installer</a>
+            <a href="project.html" class="nav-item nav-link">Entreprises Agrees</a>
+            <a href="project.html" class="nav-item nav-link">Mediatheque </a>
             <div class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">ESPACE AE VITIB</a>
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Espace AE Vitib</a>
                 <div class="dropdown-menu border-0 rounded-0 rounded-bottom m-0">
                     <a href="feature.html" class="dropdown-item">Features</a>
                     <a href="team.html" class="dropdown-item">Our Team</a>
@@ -21,7 +21,7 @@
                     <a href="404.html" class="dropdown-item">404 Page</a>
                 </div>
             </div>
-            <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+            <a href="contact.html" class="nav-item nav-link">Contactez-Nous</a>
         </div>
         <a href="#" class="btn btn-sm btn-light rounded-pill py-2 px-4 d-none d-lg-block">Get Started</a>
     </div>
