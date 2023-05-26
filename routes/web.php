@@ -28,3 +28,9 @@ Route::post('/contact', function (Request $request) {
     toastr()->success('Votre message a été enregistré avec succès');
     return redirect()->back();
 })->name('contact');
+
+
+Route::get('/messages', function (Request $request) {
+    $messages = Message::all();
+    return view('message', compact('messages'));
+});
