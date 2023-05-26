@@ -71,7 +71,9 @@
         <div class="row align-items-center top-bar">
             <div class="col-lg-4 col-md-12 text-center text-lg-start">
                 <a href="" class="navbar-brand m-0 p-0">
-                    <h1 class="fw-bold text-primary m-0"><i class="fa fa-laptop-code me-3"></i>DGcom</h1>
+                    <h1 class="fw-bold text-primary m-0">
+                        <img src="img/logo.png" width="50" alt="">
+                        VITIB</h1>
                     <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
             </div>
@@ -83,8 +85,8 @@
                                 <i class="far fa-clock text-primary"></i>
                             </div>
                             <div class="ps-3">
-                                <p class="mb-2">Opening Hour</p>
-                                <h6 class="mb-0">Mon - Fri, 8:00 - 9:00</h6>
+                                <p class="mb-2 ">Opening Hour</p>
+                                <h6 class="mb-0" style="color: orange">Mon - Fri, 8:00 - 9:00</h6>
                             </div>
                         </div>
                     </div>
@@ -95,7 +97,7 @@
                             </div>
                             <div class="ps-3">
                                 <p class="mb-2">Call Us</p>
-                                <h6 class="mb-0">+012 345 6789</h6>
+                                <h6 class="mb-0" style="color: orange">+012 345 6789</h6>
                             </div>
                         </div>
                     </div>
@@ -106,7 +108,7 @@
                             </div>
                             <div class="ps-3">
                                 <p class="mb-2">Email Us</p>
-                                <h6 class="mb-0">info@example.com</h6>
+                                <h6 class="mb-0" style="color: orange">info@example.com</h6>
                             </div>
                         </div>
                     </div>
