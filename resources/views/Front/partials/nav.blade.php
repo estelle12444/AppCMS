@@ -6,24 +6,25 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav me-auto p-3 p-lg-0">
-            <a href="index.html" class="nav-item nav-link active">Accueil</a>
-            <a href="about.html" class="nav-item nav-link">A Propos </a>
-            <a href="service.html" class="nav-item nav-link">Rejoingnez-nous</a>
-            <a href="project.html" class="nav-item nav-link">S'installer</a>
-            <a href="project.html" class="nav-item nav-link">Entreprises Agrees</a>
-            <a href="project.html" class="nav-item nav-link">Mediatheque </a>
-            <div class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Espace AE Vitib</a>
+            <a href="/" class="nav-item nav-link active">Accueil</a>
+            <a href="/about" class="nav-item nav-link">A Propos </a>
+            <a href="/join" class="nav-item nav-link">Rejoingnez-nous</a>
+            <a href="/installer" class="nav-item nav-link">S'installer</a>
+            <a href="/entreprise" class="nav-item nav-link">Entreprises Agrees</a>
+            <a href="/mediatheque" class="nav-item nav-link">Mediatheque </a>
+            <a href="/espace" class="nav-item nav-link">Espace AE Vitib </a>
+            {{-- <div class="nav-item dropdown">
+                <a href="/espaces" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Espace AE Vitib</a>
                 <div class="dropdown-menu border-0 rounded-0 rounded-bottom m-0">
                     <a href="feature.html" class="dropdown-item">Features</a>
                     <a href="team.html" class="dropdown-item">Our Team</a>
                     <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                     <a href="404.html" class="dropdown-item">404 Page</a>
                 </div>
-            </div>
+            </div> --}}
 
         </div>
-        <a href="#" class="btn btn-sm btn-light rounded-pill py-2 px-4 d-none d-lg-block">Contactez-Nous</a>
+        <a href="/contact" class="btn btn-sm btn-light rounded-pill py-2 px-4 d-none d-lg-block">Contactez-Nous</a>
     </div>
 </nav>
 
