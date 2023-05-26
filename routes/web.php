@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Message;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +22,9 @@ Route::get('/', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+Route::post('/contact', function (Request $request) {
+    Message::create($request->all());
+    toastr()->success('Votre message a été enregistré avec succès');
+    return redirect()->back();
+})->name('contact');
