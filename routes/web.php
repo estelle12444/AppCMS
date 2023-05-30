@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\DownloadController;
 use App\Models\Message;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PdfController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +26,9 @@ Route::get('/accueil', function () {
 
 Route::get('/contact', function () {
     return view('Front.pages.contact');
+});
+Route::get('/opportunity', function () {
+    return view('Front.pages.opportunity');
 });
 
 Route::get('/about', function () {
@@ -57,3 +62,8 @@ Route::get('/messages', function (Request $request) {
     $messages = Message::all();
     return view('message', compact('messages'));
 });
+
+
+
+Route::get('/telecharger-pdf', [DownloadController::class, 'telechargerPDF']);
+Route::get('/download-pdf', [DownloadController::class, 'downloadPDF']);

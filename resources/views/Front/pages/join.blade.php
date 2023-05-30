@@ -64,7 +64,7 @@
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h6 class="section-title bg-white text-center text-primary px-3">AVANTAGES FISCAUX</h6>
+                    <h5 class="section-title bg-white text-center text-primary px-3">AVANTAGES FISCAUX</h5>
 
                     <p>
                         La ZBTIC prévoit des exonérations fiscales et douanières pour les entreprises désireuses de s’implanter dans la zone sous- douane (zone franche)
@@ -74,32 +74,32 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="fact-item bg-light rounded text-center h-100 p-5">
                             <i class="fa fa-certificate fa-4x text-primary mb-4"></i>
-                            <h1 class="display-5 mb-0" data-toggle="counter-up">0%</h1>
-                            <h5 class="mb-3">Years Experience</h5>
+                            <h5 >0% d’impôts</h5>
+                            <h6 class="mb-3">les cinq (5) premières années</h6>
 
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="fact-item bg-light rounded text-center h-100 p-5">
                             <i class="fa fa-users-cog fa-4x text-primary mb-4"></i>
-                            <h1 class="display-5 mb-0" data-toggle="counter-up">1234</h1>
-                            <h5 class="mb-3">Team Members</h5>
+                            <h5 >1% d’impôts</h5>
+                            <h6 class="mb-3">à partir de la 6ème année, avec possibilité de réduction d’impôts </h6>
 
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="fact-item bg-light rounded text-center h-100 p-5">
                             <i class="fa fa-users fa-4x text-primary mb-4"></i>
-                            <h1 class="display-5 mb-0" data-toggle="counter-up">1234</h1>
-                            <h5 class="mb-3">Satisfied Clients</h5>
+                            <h5 >0% d’impôts</h5>
+                            <h6 class="mb-3">les cinq (5) premières années</h6>
 
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="fact-item bg-light rounded text-center h-100 p-5">
                             <i class="fa fa-check fa-4x text-primary mb-4"></i>
-                            <h1 class="display-5 mb-0" data-toggle="counter-up">1234</h1>
-                            <h5 class="mb-3">Projects Done</h5>
+                            <h5 >0% d’impôts</h5>
+                            <h6 class="mb-3">les cinq (5) premières années</h6>
 
                         </div>
                     </div>
@@ -112,9 +112,8 @@
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h6 class="section-title bg-white text-center text-primary px-3">Avantages Douaniers</h6>
-                    <h4 class="display-6 mb-4">L’organisation de la ZBTIC</h1>
-                    <p>La ZBTIC est subdivisée en trois blocs distincts : les blocs A et B situés à cheval de la nouvelle autoroute Abidjan – Bassam (réalisée en 2015) et le futur bloc C, situé sur l’île de Vitré et séparé du bloc B par la lagune Ebrié. </p>
+                    <h5 class="section-title bg-white text-center text-primary px-3">Avantages Douaniers</h5>
+
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -204,7 +203,7 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h6 class="section-title bg-white text-center text-primary px-3">INFRASTRUCTURES</h6>
+                <h5 class="section-title bg-white text-center text-primary px-3">INFRASTRUCTURES</h5>
                 <p>Les infrastructures du Village de l’Innovation Technologique de Grand- Bassam en Côte d’Ivoire proposent aux entreprises désireuses de s’y implanter des opportunités uniques et cumulent de nombreux avantages </p>
             </div>
             <div class="owl-carousel project-carousel wow fadeInUp" data-wow-delay="0.1s">
@@ -213,8 +212,8 @@
                         <img class="img-fluid rounded" src="img/project-1.jpg" alt="">
                         <a href="img/project-1.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
                     </div>
-                    <h6>UI / UX Design</h6>
-                    <span>Digital agency website design and development</span>
+                    <h6>624 hectares </h6>
+                    <span>de terrains avec les droits purgés</span>
                 </div>
                 <div class="project-item border rounded h-100 p-4" data-dot="02">
                     <div class="position-relative mb-4">
