@@ -14,11 +14,11 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
-                <h5 class="text-light mb-4">Quick Links</h5>
-                <a class="btn btn-link" href="">About Us</a>
-                <a class="btn btn-link" href="">Contact Us</a>
-                <a class="btn btn-link" href="">Our Services</a>
-                <a class="btn btn-link" href="">Terms & Condition</a>
+                <h5 class="text-light mb-4">Menu</h5>
+                <a class="btn btn-link" href="/about">A propos de Nous</a>
+                <a class="btn btn-link" href="/contact">Contact</a>
+                <a class="btn btn-link" href="">Nos services</a>
+                <a class="btn btn-link" href="">Termes & Conditions</a>
                 <a class="btn btn-link" href="">Support</a>
             </div>
             <div class="col-lg-3 col-md-6">
@@ -54,7 +54,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid copyright">
+    {{-- <div class="container-fluid copyright">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
@@ -67,5 +67,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 </div>

@@ -6,12 +6,13 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav me-auto p-3 p-lg-0">
-            <a href="/" class="nav-item nav-link active">Accueil</a>
+            <a href="/accueil" class="nav-item nav-link active">Accueil</a>
             <a href="/about" class="nav-item nav-link">A Propos </a>
-            <a href="#" class="nav-item nav-link">Rejoingnez-nous</a>
+            <a href="/join" class="nav-item nav-link">Rejoignez-nous</a>
             <a href="#" class="nav-item nav-link">S'installer</a>
-            <a href="#" class="nav-item nav-link">Entreprises Agrees</a>
-            <a href="#" class="nav-item nav-link">Mediatheque </a>
+            <a href="/opportunity" class="nav-item nav-link">Opportunités</a>
+            <a href="#" class="nav-item nav-link">Entreprises Agrées</a>
+            <a href="#" class="nav-item nav-link">Mediathèque </a>
             <a href="#" class="nav-item nav-link">Espace AE Vitib </a>
             {{-- <div class="nav-item dropdown">
                 <a href="/espaces" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Espace AE Vitib</a>

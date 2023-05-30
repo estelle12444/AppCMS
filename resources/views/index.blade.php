@@ -126,9 +126,7 @@
                     <h1 class="display-6 mb-4">#1 La Zone Franche de la Biotechnologie <span class="text-primary">624 hectares</span> d'étendue</h1>
                     <p>La première zone franche ivoirienne.
                         Elle a pour but d’accueillir des entreprises au niveau technologique élevé et qui présentent un fort potentiel de croissance et de création d’emplois.
-La zone choisie pour la ZBTIC présente une forte valeur écologique et paysagère.
-
-</p>
+La zone choisie pour la ZBTIC présente une forte valeur écologique et paysagère.</p>
                     <p class="mb-4">Elle est bordée par la Lagune Ebrié, qui s’étend le long de l’Océan Atlantique et constitue le plus grand système lagunaire de Côte d’Ivoire.</p>
                     <div class="d-flex align-items-center mb-4 pb-2">
                         <img class="flex-shrink-0 rounded-circle" src="img/team-1.jpg" alt="" style="width: 50px; height: 50px;">
@@ -137,7 +135,7 @@ La zone choisie pour la ZBTIC présente une forte valeur écologique et paysagè
                             <small>Directeur Général VITIB SA </small>
                         </div>
                     </div>
-                    <a class="btn btn-primary rounded-pill py-3 px-5" href="">En savoir plus</a>
+                    <a class="btn btn-primary rounded-pill py-3 px-5" href="/about">En savoir plus</a>
                 </div>
             </div>
         </div>

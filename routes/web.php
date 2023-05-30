@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return view('Front.landing');
+});
+Route::get('/accueil', function () {
     return view('index');
 });
 
