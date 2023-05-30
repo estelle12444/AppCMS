@@ -90,16 +90,18 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="fact-item bg-light rounded text-center h-100 p-5">
                             <i class="fa fa-users fa-4x text-primary mb-4"></i>
-                            <h5 >0% d’impôts</h5>
-                            <h6 class="mb-3">les cinq (5) premières années</h6>
+                            <h5 >0% de taxes</h5>
+                            <h6 class="mb-3">sur la consommation de l'eau, l'électricité,
+                                carburant et lubrifiants</h6>
 
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="fact-item bg-light rounded text-center h-100 p-5">
                             <i class="fa fa-check fa-4x text-primary mb-4"></i>
-                            <h5 >0% d’impôts</h5>
-                            <h6 class="mb-3">les cinq (5) premières années</h6>
+                            <h5 >0% de taxes</h5>
+                            <h6 class="mb-3">sur les prestations fournies aux entreprises relevant du régime
+                                de la ZBTIC</h6>
 
                         </div>
                     </div>
@@ -119,8 +121,8 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="fact-item bg-light rounded text-center h-100 p-5">
                             <i class="fa fa-certificate fa-4x text-primary mb-4"></i>
-                            <h1 class="display-5 mb-0" data-toggle="counter-up">0%</h1>
-                            <h5 class="mb-3">Years Experience</h5>
+                            <h5 >0% de droits de douanes et taxes</h5>
+                            <h6 class="mb-3">à l’Importation et à l’exportation</h6>
 
                         </div>
                     </div>

@@ -28,10 +28,10 @@
                         <img class="img-fluid" src="img/team-1.jpg" alt="">
                     </div>
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s" style="text-align: justify">
                     <div class="h-100">
                         <h6 class="section-title bg-white text-start text-primary pe-3">LE VITIB</h6>
-                    <h1 class="display-6 mb-4">#1 La Zone Franche de la Biotechnologie <span class="text-primary">624 hectares</span> d'étendue</h1>
+                    <h1 class="display-6 mb-4">#1 Zone Franche de la Biotechnologie <span class="text-primary">624 hectares</span></h1>
 
                     <p class="mb-4">
 

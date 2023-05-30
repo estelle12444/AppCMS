@@ -6,14 +6,12 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav me-auto p-3 p-lg-0">
-            <a href="/accueil" class="nav-item nav-link active">Accueil</a>
+            <a href="/home" class="nav-item nav-link active">Accueil</a>
             <a href="/about" class="nav-item nav-link">A Propos </a>
             <a href="/join" class="nav-item nav-link">Rejoignez-nous</a>
             <a href="/installer" class="nav-item nav-link">S'installer</a>
             <a href="/telecharger-pdf" class="nav-item nav-link">Opportunités</a>
             <a href="/download-pdf" class="nav-item nav-link">Entreprises Agrées</a>
-
-
         </div>
         <a href="/contact" class="btn btn-sm btn-light rounded-pill py-2 px-4 d-none d-lg-block">Contactez-Nous</a>
     </div>

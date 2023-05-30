@@ -20,7 +20,7 @@ use App\Http\Controllers\PdfController;
 Route::get('/', function () {
     return view('Front.landing');
 });
-Route::get('/accueil', function () {
+Route::get('/home', function () {
     return view('index');
 });
 
@@ -40,7 +40,7 @@ Route::get('/join', function () {
 });
 
 Route::get('/espace', function () {
-    return view('Front.pages.espace');
+    return view('Front.pages.etsagre');
 });
 
 Route::get('/installer', function () {

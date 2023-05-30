@@ -55,31 +55,24 @@ img {margin-bottom: -8px;}
       </div>
     </div>
   </div>
-  <a class="w3-button w3-black w3-display-right w3-margin-right w3-round w3-hide-small w3-hover-light-grey" onclick="plusDivs(1)" href="/accueil">Vistez l'accueil <i class="fa fa-angle-right"></i></a>
-  <a class="w3-button w3-block w3-black w3-hide-large w3-hide-medium" onclick="plusDivs(1)" href="/accueil">Vistez l'accueil  <i class="fa fa-angle-right"></i></a>
+  <a class="w3-button w3-black w3-display-right w3-margin-right w3-round w3-hide-small w3-hover-light-grey" onclick="plusDivs(1)" href="/home">Parcourir le site <i class="fa fa-angle-right"></i></a>
+  <a class="w3-button w3-block w3-black w3-hide-large w3-hide-medium" onclick="plusDivs(1)" href="/home">Parcourir  le site  <i class="fa fa-angle-right"></i></a>
 </header>
 
 <!-- The App Section -->
 <div class="w3-padding-64 w3-white">
   <div class="w3-row-padding">
     <div class="w3-col l8 m6">
-      <h1 class="w3-jumbo"><b>The App</b></h1>
-      <h1 class="w3-xxxlarge w3-text-green"><b>Why buy it?</b></h1>
-      <p><span class="w3-xlarge">Reservez votre espace</span> You should buy this app because lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-      <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small" onclick="document.getElementById('download').style.display='block'">
-        <i class="fa fa-download"></i> Download Application
-      </button>
-      <p>Available for <i class="fa fa-android w3-xlarge w3-text-green"></i> <i class="fa fa-apple w3-xlarge"></i> <i class="fa fa-windows w3-xlarge w3-text-blue"></i></p>
+      <h1 class="w3-jumbo"><b>VITIB</b></h1>
+      <h1 class="w3-xxxlarge w3-text-green"><b>Village de l'Innovation Technologique</b></h1>
+      <p style="text-align: justify"> La zone choisie pour la ZBTIC présente une forte valeur écologique et paysagère. Elle est bordée par la Lagune Ebrié, qui s’étend le long de l’Océan Atlantique et constitue le plus grand système lagunaire de Côte d’Ivoire.
+        On y retrouve les mangroves et la forte biodiversité, caractéristiques de la commune de Grand-Bassam : des atouts qui présentent un fort potentiel de mise en valeur.
+      </p>
+
     </div>
     <div class="w3-col l4 m6">
-      <img src="/w3images/img_app.jpg" class="w3-image w3-right w3-hide-small" width="335" height="471">
-      <div class="w3-center w3-hide-large w3-hide-medium">
-        <button class="w3-button w3-block w3-padding-large" onclick="document.getElementById('download').style.display='block'">
-          <i class="fa fa-download"></i> Download Application
-        </button>
-        <img src="/w3images/img_app.jpg" class="w3-image w3-margin-top" width="335" height="471">
-      </div>
+      <img src="img/logo.png" class="w3-image w3-right w3-hide-small" width="335" height="471">
+
     </div>
   </div>
 </div>
@@ -99,16 +92,19 @@ img {margin-bottom: -8px;}
 </div>
 
 <!-- Clarity Section -->
-<div class="w3-padding-64 w3-light-grey">
+<div class="w3-padding-64 w3-light-orange" style="background-image: url('img/plan.jpg')">
   <div class="w3-row-padding">
     <div class="w3-col l4 m6">
-      <img class="w3-image w3-round-large w3-hide-small w3-grayscale" src="/w3images/app5.jpg" alt="App" width="335" height="471">
+      {{-- <img class="w3-image w3-round-large w3-hide-small " src="img/plan.jpg" alt="plan"  width="auto" height="600"> --}}
+
+      <iframe  class="w3-image w3-round-large w3-hide-small" height="600px" width="400" src="https://www.youtube.com/embed/tESE3STIOzM?autoplay=1&mute=1" title="VITIB" frameborder="0" allow="accelerometer; autoplay;clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
     </div>
-    <div class="w3-col l8 m6">
-      <h1 class="w3-jumbo"><b>Clarity</b></h1>
-      <h1 class="w3-xxxlarge w3-text-red"><b>Pixels, who?</b></h1>
-      <p><span class="w3-xlarge">A revolution in resolution.</span> Sharp and clear photos with the world's best photo engine, incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    <div class="w3-col l8 m6" style="text-align: justify">
+      <h3 class="w3-jumbo"><b> Bâtissons une autre Afrique  </b></h3>
+      <h4 class="w3-xxxlarge w3-text-red"><b>Ensemble</b></h4>
+      <p><span class="w3-xlarge">celle de grands défis de la nouvelle économie.</span>
+        Les grands projets d’infrastructures prévus par le Schéma Directeur d’Urbanisme du Grand Abidjan rendront le site encore plus attractif en termes d’accès, avec la réalisation d’un transport léger sur rail qui reliera Grand-Bassam à l’aéroport et à Abidjan, la construction de la nouvelle rocade Nord et l’élargissement de la Route de Bonoua.
+    </p>
     </div>
   </div>
 </div>
@@ -176,56 +172,12 @@ img {margin-bottom: -8px;}
   </div>
 </div> --}}
 
-<!-- Pricing Section -->
-<div class="w3-padding-64 w3-center w3-white">
-  <h1 class="w3-jumbo"><b>Pricing</b></h1>
-  <p class="w3-large">Choose a pricing plan that fits your needs.</p>
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-half w3-section">
-      <ul class="w3-ul w3-card w3-hover-shadow">
-        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-        <li class="w3-padding-16"><b>250</b> Photos</li>
-        <li class="w3-padding-16"><b>10</b> Features</li>
-        <li class="w3-padding-16"><b>No</b> Ads</li>
-        <li class="w3-padding-16"><b>Office hours</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-opacity">$ 25</h2>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large" onclick="document.getElementById('download').style.display='block'"><i class="fa fa-download"></i> Download</button>
-        </li>
-      </ul>
-    </div>
-    <div class="w3-half w3-section">
-      <ul class="w3-ul w3-card w3-hover-shadow">
-        <li class="w3-red w3-xlarge w3-padding-32">Premium</li>
-        <li class="w3-padding-16"><b>1000</b> Photos</li>
-        <li class="w3-padding-16"><b>50</b> Features</li>
-        <li class="w3-padding-16"><b>No</b> Ads</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-opacity">$ 99</h2>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large" onclick="document.getElementById('download').style.display='block'"> <i class="fa fa-download"></i> Download</button>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <br>
-</div>
+
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-32 w3-light-grey w3-center w3-xlarge">
-  <div class="w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+
+  <p class="w3-medium"> <a href="https://sahanalytics.com/" target="_blank" class="w3-hover-text-green">Sah Analytics</a></p>
 </footer>
 
 <script>
