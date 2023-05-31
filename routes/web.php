@@ -18,7 +18,7 @@ use App\Http\Controllers\PdfController;
 */
 
 Route::get('/', function () {
-    return view('Front.landing');
+    return view('Front.landingg');
 });
 Route::get('/home', function () {
     return view('index');
