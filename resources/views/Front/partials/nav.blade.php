@@ -10,8 +10,8 @@
             <a href="/about" class="nav-item nav-link">A Propos </a>
             <a href="/join" class="nav-item nav-link">Rejoignez-nous</a>
             <a href="/installer" class="nav-item nav-link">S'installer</a>
-            <a href="/telecharger-pdf" class="nav-item nav-link">Opportunités</a>
-            <a href="/download-pdf" class="nav-item nav-link">Entreprises Agrées</a>
+            <a href="/opportunity" class="nav-item nav-link">Opportunités</a>
+            <a href="/partners" class="nav-item nav-link">Entreprises Agrées</a>
         </div>
         <a href="/contact" class="btn btn-sm btn-light rounded-pill py-2 px-4 d-none d-lg-block">Contactez-Nous</a>
     </div>

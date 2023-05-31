@@ -80,8 +80,8 @@
                                 <i class="far fa-clock text-primary"></i>
                             </div>
                             <div class="ps-3">
-                                <p class="mb-2 ">Opening Hour</p>
-                                <h6 class="mb-0" style="color: orange">Mon - Fri, 8:00 - 9:00</h6>
+                                <p class="mb-2 ">Horaire</p>
+                                <h6 class="mb-0" style="color: orange">Lun - Vend 8:00 - 17:00</h6>
                             </div>
                         </div>
                     </div>
@@ -91,8 +91,8 @@
                                 <i class="fa fa-phone text-primary"></i>
                             </div>
                             <div class="ps-3">
-                                <p class="mb-2">Call Us</p>
-                                <h6 class="mb-0" style="color: orange">+012 345 6789</h6>
+                                <p class="mb-2">Appel</p>
+                                <h6 class="mb-0" style="color: orange">+(225) 27 21 31 29 00</h6>
                             </div>
                         </div>
                     </div>
@@ -102,8 +102,8 @@
                                 <i class="far fa-envelope text-primary"></i>
                             </div>
                             <div class="ps-3">
-                                <p class="mb-2">Email Us</p>
-                                <h6 class="mb-0" style="color: orange">info@example.com</h6>
+                                <p class="mb-2">Email </p>
+                                <h6 class="mb-0" style="color: orange">www.vitib.ci</h6>
                             </div>
                         </div>
                     </div>

@@ -39,7 +39,7 @@ Route::get('/join', function () {
     return view('Front.pages.join');
 });
 
-Route::get('/espace', function () {
+Route::get('/partners', function () {
     return view('Front.pages.etsagre');
 });
 

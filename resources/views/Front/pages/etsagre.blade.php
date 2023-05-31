@@ -24,8 +24,8 @@
 
     <div class="row">
       <div class="col">
-        <div class="" style="width: 15rem; height:15rem">
-            <img src="img/Partenaire/sah.png" class="card-img-top" alt="sah"  style="height:6rem">
+        <div class="" style="width: 10rem; height:10rem">
+            <img src="img/Partenaire/sah.png" class="card-img-top" alt="sah" >
             <div class="card-body" style="text-align: center">
               <h6 class="card-title">Sah Analytics Internationnal  </h6>
           </div>

@@ -2,24 +2,26 @@
     <div class="container py-5">
         <div class="row g-5">
             <div class="col-lg-3 col-md-6">
-                <h5 class="text-light mb-4">Address</h5>
-                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                <h5 class="text-light mb-4">Contacts</h5>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>
+                    B.P 605 Grand-Bassam</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+(225) 27 21 31 29 00 / 31</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@vitib.ci</p>
+                <p class="mb-2" > <i class=""></i>Côte d'Ivoire</p>
                 <div class="d-flex pt-2">
-                    <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fab fa-youtube"></i></a>
-                    <a class="btn btn-square btn-outline-secondary rounded-circle me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href="https://twitter.com/VitibCi"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=":https://www.facebook.com/vitibzonefranche"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href="https://www.youtube.com/channel/UCzA2_qBxt4XRoiLRiNs2Drw"><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-square btn-outline-secondary rounded-circle me-0" href="https://www.linkedin.com/in/vitib-sa-89a711142/"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <h5 class="text-light mb-4">Menu</h5>
                 <a class="btn btn-link" href="/about">A propos de Nous</a>
                 <a class="btn btn-link" href="/contact">Contact</a>
-                <a class="btn btn-link" href="">Nos services</a>
-                <a class="btn btn-link" href="">Termes & Conditions</a>
-                <a class="btn btn-link" href="">Support</a>
+                <a class="btn btn-link" href="/join">Nos services</a>
+                <a class="btn btn-link" href="/home">Termes & Conditions</a>
+                <a class="btn btn-link" href="/contact">Support</a>
             </div>
             <div class="col-lg-3 col-md-6">
                 <h5 class="text-light mb-4">Gallery</h5>
@@ -46,10 +48,10 @@
             </div>
             <div class="col-lg-3 col-md-6">
                 <h5 class="text-light mb-4">Newsletter</h5>
-                <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                <p>Inscrivez-vous à nos communications pour recevoir nos meilleures offres!</p>
                 <div class="position-relative mx-auto" style="max-width: 400px;">
-                    <input class="form-control bg-transparent border-secondary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                    <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    <input class="form-control bg-transparent border-secondary w-100 py-3 ps-4 pe-5" type="text" placeholder="Ecrivez votre mail">
+                    <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">S'inscrire</button>
                 </div>
             </div>
         </div>
