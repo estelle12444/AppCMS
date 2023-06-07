@@ -24,25 +24,25 @@
                 <a class="btn btn-link" href="/contact">Support</a>
             </div>
             <div class="col-lg-3 col-md-6">
-                <h5 class="text-light mb-4">Gallery</h5>
+                <h5 class="text-light mb-4">Services</h5>
                 <div class="row g-2">
                     <div class="col-4">
-                        <img class="img-fluid rounded" src="img/project-1.jpg" alt="Image">
+                        <img class="img-fluid rounded" src="img/service-1.jpg" alt="Image">
                     </div>
                     <div class="col-4">
-                        <img class="img-fluid rounded" src="img/project-2.jpg" alt="Image">
+                        <img class="img-fluid rounded" src="img/service-2.jpg" alt="Image">
                     </div>
                     <div class="col-4">
-                        <img class="img-fluid rounded" src="img/project-3.jpg" alt="Image">
+                        <img class="img-fluid rounded" src="img/service-3.jpg" alt="Image">
                     </div>
                     <div class="col-4">
-                        <img class="img-fluid rounded" src="img/project-4.jpg" alt="Image">
+                        <img class="img-fluid rounded" src="img/service-4.jpg" alt="Image">
                     </div>
                     <div class="col-4">
-                        <img class="img-fluid rounded" src="img/project-5.jpg" alt="Image">
+                        <img class="img-fluid rounded" src="img/service-5.jpg" alt="Image">
                     </div>
                     <div class="col-4">
-                        <img class="img-fluid rounded" src="img/project-6.jpg" alt="Image">
+                        <img class="img-fluid rounded" src="img/service-6.jpg" alt="Image">
                     </div>
                 </div>
             </div>
@@ -50,7 +50,7 @@
                 <h5 class="text-light mb-4">Newsletter</h5>
                 <p>Inscrivez-vous à nos communications pour recevoir nos meilleures offres!</p>
                 <div class="position-relative mx-auto" style="max-width: 400px;">
-                    <input class="form-control bg-transparent border-secondary w-100 py-3 ps-4 pe-5" type="text" placeholder="Ecrivez votre mail">
+                    <input class="form-control bg-transparent border-secondary w-100 py-3 ps-4 pe-5" type="text" placeholder="Email">
                     <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">S'inscrire</button>
                 </div>
             </div>

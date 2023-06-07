@@ -1,0 +1,49 @@
+/* .modal-dialog {
+    max-width: 600px;
+}
+
+/* Style pour la classe d'image de partenaire */
+/* .partner-image {
+    cursor: pointer;
+}
+*/
+
+/* Pour centrer le contenu du modal */
+.modal-dialog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Pour augmenter la taille de l'image */
+.modal-body img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Pour ajouter un espacement avant le texte */
+.modal-body p {
+    margin-top: 10px;
+}
+
+/* Pour personnaliser le bouton de fermeture */
+.modal .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.modal .close:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+
+

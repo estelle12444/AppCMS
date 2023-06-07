@@ -43,7 +43,7 @@ https://templatemo.com/tm-567-nomad-force
         <section class="hero" id="hero">
             <div class="heroText">
                 <h1 class="text-white mt-5 mb-lg-4" data-aos="zoom-in" data-aos-delay="800">
-                    VITIB
+                    <img src="img/logo.png" width="70" alt=""> VITIB
                 </h1>
 
                 <p class="text-secondary-white-color" data-aos="fade-up" data-aos-delay="1000">

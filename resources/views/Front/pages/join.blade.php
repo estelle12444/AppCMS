@@ -10,7 +10,7 @@
                 <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a class="text-white" href="#">Accueil</a></li>
                     <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                    <li class="breadcrumb-item text-primary active" aria-current="page">A propos</li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">Rejoindre</li>
                 </ol>
             </nav>
         </div>
@@ -75,7 +75,7 @@
                         <div class="fact-item bg-light rounded text-center h-100 p-5">
                             <i class="fa fa-certificate fa-4x text-primary mb-4"></i>
                             <h5 >0% d’impôts</h5>
-                            <h6 class="mb-3">les cinq (5) premières années</h6>
+                            <h6 class="mb-3">les 5 premières années</h6>
 
                         </div>
                     </div>
@@ -83,7 +83,7 @@
                         <div class="fact-item bg-light rounded text-center h-100 p-5">
                             <i class="fa fa-users-cog fa-4x text-primary mb-4"></i>
                             <h5 >1% d’impôts</h5>
-                            <h6 class="mb-3">à partir de la 6ème année, avec possibilité de réduction d’impôts </h6>
+                            <h6 class="mb-3">dès la 6ème année, avec possibilité de réduction d’impôts </h6>
 
                         </div>
                     </div>
@@ -92,7 +92,7 @@
                             <i class="fa fa-users fa-4x text-primary mb-4"></i>
                             <h5 >0% de taxes</h5>
                             <h6 class="mb-3">sur la consommation de l'eau, l'électricité,
-                                carburant et lubrifiants</h6>
+                                carburant </h6>
 
                         </div>
                     </div>
@@ -100,7 +100,7 @@
                         <div class="fact-item bg-light rounded text-center h-100 p-5">
                             <i class="fa fa-check fa-4x text-primary mb-4"></i>
                             <h5 >0% de taxes</h5>
-                            <h6 class="mb-3">sur les prestations fournies aux entreprises relevant du régime
+                            <h6 class="mb-3"> des prestations fournies aux entreprises relevant du régime
                                 de la ZBTIC</h6>
 
                         </div>
@@ -120,7 +120,7 @@
                 <div class="row g-4">
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="fact-item bg-light rounded text-center h-100 p-5">
-                            <i class="fa fa-certificate fa-4x text-primary mb-4"></i>
+                            <i class="fas fa-dollar-sign fa-4x text-primary mb-4"></i>
                             <h5 >0% de droits de douanes et taxes</h5>
                             <h6 class="mb-3">à l’Importation et à l’exportation</h6>
 
@@ -128,74 +128,29 @@
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="fact-item bg-light rounded text-center h-100 p-5">
-                            <i class="fa fa-users-cog fa-4x text-primary mb-4"></i>
-                            <h1 class="display-5 mb-0" data-toggle="counter-up">1234</h1>
-                            <h5 class="mb-3">Team Members</h5>
+                            <i class="fa fas fa-balance-scale fa-4x text-primary mb-4"></i>
+
+                            <h6 class="mb-3">0% de droits de douanes et taxes à l’Importation et à l’exportation</h6>
 
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="fact-item bg-light rounded text-center h-100 p-5">
-                            <i class="fa fa-users fa-4x text-primary mb-4"></i>
-                            <h1 class="display-5 mb-0" data-toggle="counter-up">1234</h1>
-                            <h5 class="mb-3">Satisfied Clients</h5>
+                            <i class="fa fas fa-calculator fa-4x text-primary mb-4"></i>
 
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="fact-item bg-light rounded text-center h-100 p-5">
-                            <i class="fa fa-check fa-4x text-primary mb-4"></i>
-                            <h1 class="display-5 mb-0" data-toggle="counter-up">1234</h1>
-                            <h5 class="mb-3">Projects Done</h5>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Facts End -->
-
-        <!-- Facts Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h6 class="section-title bg-white text-center text-primary px-3">la ZBTIC</h6>
-                    <h4 class="display-6 mb-4">L’organisation de la ZBTIC</h4>
-                    <p>La ZBTIC est subdivisée en trois blocs distincts : les blocs A et B situés à cheval de la nouvelle autoroute Abidjan – Bassam (réalisée en 2015) et le futur bloc C, situé sur l’île de Vitré et séparé du bloc B par la lagune Ebrié. </p>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="fact-item bg-light rounded text-center h-100 p-5">
-                            <i class="fa fa-certificate fa-4x text-primary mb-4"></i>
-                            <h1 class="display-5 mb-0" data-toggle="counter-up">0%</h1>
-                            <h5 class="mb-3">Years Experience</h5>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="fact-item bg-light rounded text-center h-100 p-5">
-                            <i class="fa fa-users-cog fa-4x text-primary mb-4"></i>
-                            <h1 class="display-5 mb-0" data-toggle="counter-up">1234</h1>
-                            <h5 class="mb-3">Team Members</h5>
+                            <h6 class="mb-3">0% de droits de douanes et taxes à l’Importation et à l’exportation</h6>
 
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="fact-item bg-light rounded text-center h-100 p-5">
-                            <i class="fa fa-users fa-4x text-primary mb-4"></i>
-                            <h1 class="display-5 mb-0" data-toggle="counter-up">1234</h1>
-                            <h5 class="mb-3">Satisfied Clients</h5>
+                            <i class="fa fas fa-coins fa-4x text-primary mb-4"></i>
+
+                            <h6 class="mb-3">0% de droits de douanes et taxes à l’Importation et à l’exportation</h6>
 
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="fact-item bg-light rounded text-center h-100 p-5">
-                            <i class="fa fa-check fa-4x text-primary mb-4"></i>
-                            <h1 class="display-5 mb-0" data-toggle="counter-up">1234</h1>
-                            <h5 class="mb-3">Projects Done</h5>
 
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -222,72 +177,89 @@
                         <img class="img-fluid rounded" src="img/project-2.jpg" alt="">
                         <a href="img/project-2.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
                     </div>
-                    <h6>UI / UX Design</h6>
-                    <span>Digital agency website design and development</span>
+                    <h6>2400 hectares</h6>
+                    <span> viabilisés en eau, en électricité, en fibre optique, en voiries sites A et B</span>
                 </div>
                 <div class="project-item border rounded h-100 p-4" data-dot="03">
                     <div class="position-relative mb-4">
                         <img class="img-fluid rounded" src="img/project-3.jpg" alt="">
                         <a href="img/project-2.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
                     </div>
-                    <h6>UI / UX Design</h6>
-                    <span>Digital agency website design and development</span>
+                    <h6>cinq (05) Data Centers</h6>
+                    <span>câble sous-marin et téléport VSAT G</span>
                 </div>
                 <div class="project-item border rounded h-100 p-4" data-dot="04">
                     <div class="position-relative mb-4">
                         <img class="img-fluid rounded" src="img/project-4.jpg" alt="">
                         <a href="img/project-4.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
                     </div>
-                    <h6>UI / UX Design</h6>
-                    <span>Digital agency website design and development</span>
+                    <h6>Un cadre</h6>
+                    <span> législatif et réglementaire particulièrement incitatif</span>
                 </div>
                 <div class="project-item border rounded h-100 p-4" data-dot="05">
                     <div class="position-relative mb-4">
                         <img class="img-fluid rounded" src="img/project-5.jpg" alt="">
                         <a href="img/project-5.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
                     </div>
-                    <h6>UI / UX Design</h6>
-                    <span>Digital agency website design and development</span>
+                    <h6>sécurité</h6>
+                    <span>Une sécurité optimale des biens et des personnes</span>
                 </div>
                 <div class="project-item border rounded h-100 p-4" data-dot="06">
                     <div class="position-relative mb-4">
                         <img class="img-fluid rounded" src="img/project-6.jpg" alt="">
                         <a href="img/project-6.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
                     </div>
-                    <h6>UI / UX Design</h6>
-                    <span>Digital agency website design and development</span>
+                    <h6>Une politique</h6>
+                    <span> hardie de protection, de garantie et de promotion de l&#39;investissement privé</span>
                 </div>
                 <div class="project-item border rounded h-100 p-4" data-dot="07">
                     <div class="position-relative mb-4">
                         <img class="img-fluid rounded" src="img/project-7.jpg" alt="">
                         <a href="img/project-7.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
                     </div>
-                    <h6>UI / UX Design</h6>
-                    <span>Digital agency website design and development</span>
+                    <h6>Des infrastructures</h6>
+                    <span> routières, portuaires et aéroportuaires de qualité et en pleine expansion</span>
                 </div>
                 <div class="project-item border rounded h-100 p-4" data-dot="08">
                     <div class="position-relative mb-4">
                         <img class="img-fluid rounded" src="img/project-8.jpg" alt="">
                         <a href="img/project-8.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
                     </div>
-                    <h6>UI / UX Design</h6>
-                    <span>Digital agency website design and development</span>
+                    <h6>Des réseaux</h6>
+                    <span>Des réseaux de télécommunications fiables et avancés</span>
                 </div>
                 <div class="project-item border rounded h-100 p-4" data-dot="09">
                     <div class="position-relative mb-4">
                         <img class="img-fluid rounded" src="img/project-9.jpg" alt="">
                         <a href="img/project-9.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
                     </div>
-                    <h6>UI / UX Design</h6>
-                    <span>Digital agency website design and development</span>
+                    <h6>main d&#39;œuvre</h6>
+                    <span>Une main d&#39;œuvre abondante, qualifiée et à cout modéré</span>
                 </div>
                 <div class="project-item border rounded h-100 p-4" data-dot="10">
                     <div class="position-relative mb-4">
                         <img class="img-fluid rounded" src="img/project-10.jpg" alt="">
                         <a href="img/project-10.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
                     </div>
-                    <h6>UI / UX Design</h6>
-                    <span>Digital agency website design and development</span>
+                    <h6>Mise à disposition</h6>
+                    <span> dans l’immédiat de locaux à loyers très compétitifs</span>
+                </div>
+                <div class="project-item border rounded h-100 p-4" data-dot="11">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="img/project-10.jpg" alt="">
+                        <a href="img/project-10.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
+                    </div>
+                    <h6>Mise à disposition de terrain sous forme de bail  </h6>
+                    <span> de 15 à 50ans en vue de la réalisation d’infrastructures immobilières bureaux, logements, Golf club,
+                        hôtels…</span>
+                </div>
+                <div class="project-item border rounded h-100 p-4" data-dot="12">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="img/project-10.jpg" alt="">
+                        <a href="img/project-10.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
+                    </div>
+                    <h6>Mise à disposition</h6>
+                    <span> dans l’immédiat de locaux à loyers très compétitifs</span>
                 </div>
             </div>
         </div>
