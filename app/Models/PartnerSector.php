@@ -11,6 +11,7 @@ class PartnerSector extends Model
 
     protected $table = 'partners_sectors';
     protected $fillable = ['partner_id', 'sector_id'];
+    public $timestamps = false;
 
     public function partner()
     {

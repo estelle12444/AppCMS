@@ -56,18 +56,19 @@
                                                 {{-- <td>{{ $partner->created_at }}</td> --}}
 
                                                 <td><a href="{{ route('Front.admin.partner.edit', $partner) }}"
-                                                        class="btn btn-primary">Modifier</a>
+                                                    class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="" data-original-title="Edit"><i class="fas fa-pencil-alt"></i></a>
 
                                                     <form action="{{ route('Front.admin.partner.destroy', $partner->id) }}"
                                                         method="POST" style="display: inline;">
                                                         @csrf
                                                         @method('DELETE')
                                                         <button type="submit"
-                                                            class="btn btn-danger"  onclick="return confirm('Êtes-vous sûr de vouloir supprimer ce secteur ?')">Supprimer</button>
+                                                        class="btn btn-danger btn-action trigger--fire-modal-6" onclick="return confirm('Êtes-vous sûr de vouloir supprimer ce secteur ?')"><i class="fas fa-trash"></i></button>
 
                                                 </form>
 
                                                 </td>
+
                                             </tr>
                                         @endforeach
                                     </tbody>

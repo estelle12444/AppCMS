@@ -42,7 +42,7 @@
             <input class="form-control" type="search" placeholder="Search" aria-label="Search" data-width="250">
             <button class="btn" type="submit"><i class="fas fa-search"></i></button>
             <div class="search-backdrop"></div>
-            <div class="search-result">
+            {{-- <div class="search-result">
               <div class="search-header">
                 Histories
               </div>
@@ -98,27 +98,25 @@
                   Create a new Homepage Design
                 </a>
               </div>
-            </div>
+            </div> --}}
           </div>
         </form>
 
           <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
         <img alt="image" src="{{asset('assets/img/avatar/avatar-1.png')}}" class="rounded-circle mr-1">
-            <div class="d-sm-none d-lg-inline-block">Salut Pascale</div></a>
+            <div class="d-sm-none d-lg-inline-block">Salut {{ app('App\Http\Controllers\AdminController')->getUsername() }}  </div></a>
             <div class="dropdown-menu dropdown-menu-right">
-              <div class="dropdown-title">Logged in 5 min ago</div>
+              <div class="dropdown-title">Connecté il y a 5 min</div>
               <a href="features-profile.html" class="dropdown-item has-icon">
                 <i class="far fa-user"></i> Profile
               </a>
-              <a href="features-activities.html" class="dropdown-item has-icon">
-                <i class="fas fa-bolt"></i> Activities
-              </a>
+
               <a href="features-settings.html" class="dropdown-item has-icon">
-                <i class="fas fa-cog"></i> Settings
+                <i class="fas fa-cog"></i> Paramètre
               </a>
               <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item has-icon text-danger">
-                <i class="fas fa-sign-out-alt"></i> Logout
+              <a href="/logout" class="dropdown-item has-icon text-danger">
+                <i class="fas fa-sign-out-alt"></i> Déconnexion
               </a>
             </div>
           </li>
@@ -129,13 +127,13 @@
           <div class="sidebar-brand">
             <a href="/admin">VITIB-ADMIN</a>
           </div>
-          <div class="sidebar-brand sidebar-brand-sm">
-            <a href="index.html">St</a>
-          </div>
+          {{-- <div class="sidebar-brand sidebar-brand-sm">
+            <a href="index.html">Stfffffffff</a>
+          </div> --}}
           <ul class="sidebar-menu">
             <li class="menu-header">Tableau de Bord</li>
             <li class="dropdown">
-              <a href="/admin" class=""><span>General Dashboard</span></a>
+              <a href="/admin" class=""><span>General </span></a>
 
             </li>
             <li class="menu-header">Partenaires</li>
@@ -144,7 +142,6 @@
               <ul class="dropdown-menu">
                 <li><a class="nav-link" href="/partner">Liste</a></li>
                 <li><a class="nav-link" href="/partner/create">Enregistrer</a></li>
-                <li><a class="nav-link" href="/partner">Modifier</a></li>
 
               </ul>
             </li>
@@ -154,7 +151,7 @@
               <ul class="dropdown-menu">
                 <li><a class="nav-link" href="/sector">Liste</a></li>
                 <li><a class="nav-link" href="/sector/create">Enregistrer</a></li>
-                <li><a class="nav-link" href="/sector">Modifier</a></li>
+
 
               </ul>
             </li>
@@ -170,7 +167,7 @@
       </div>
       <footer class="main-footer">
         <div class="footer-left">
-          Droit reservés &copy; 2023 <div class="bullet"></div> Fait par <a href="https://nauval.in/">VITIB</a>
+          Droit reservés &copy; 2023 <div class="bullet"></div> Fait par <a href="/admin">VITIB</a>
         </div>
         <div class="footer-right">
 

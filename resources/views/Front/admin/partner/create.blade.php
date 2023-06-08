@@ -45,7 +45,7 @@
                   <div class="form-group row mb-4">
                     <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Descriptif activité</label>
                     <div class="col-sm-12 col-md-7">
-                        <textarea name="content" ></textarea>
+                        <textarea name="content" class="form-control"></textarea>
                         @error('content')
                             <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
@@ -54,8 +54,10 @@
                   <div class="form-group row mb-4">
                     <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Logo </label>
                     <div class="col-sm-12 col-md-7">
-                        <input name="image" type="file" id="image" class="form-control-file" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
-
+                    <div class="custom-file">
+                        <input type="file" name="image" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                        <label class="custom-file-label">Choisir une image</label>
+                      </div>
                     </div>
                   </div>
                   <div class="form-group row mb-4">

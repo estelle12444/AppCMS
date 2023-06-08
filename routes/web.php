@@ -10,6 +10,7 @@ use App\Http\Controllers\PdfController;
 use App\Http\Controllers\SectorController;
 use App\Models\Partner;
 use App\Models\Sector;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,9 +27,7 @@ Route::get('/', function () {
     return view('Front.landingg');
 });
 
-Route::get('/abc', function () {
-    return view('Front.partials.popup');
-});
+
 Route::get('/home', function () {
     return view('index');
 });
@@ -79,10 +78,7 @@ Route::get('/messages', function (Request $request) {
 });
 
 
-Route::get('/admin', function (Request $request) {
 
-    return view('Front.admin.home');
-});
 
 
 Route::get('/telecharger-pdf', [DownloadController::class, 'telechargerPDF']);
@@ -105,3 +101,14 @@ Route::get('/sector', [SectorController::class, 'index'])->name('Front.admin.sec
     Route::get('/sector/{sector}/edit', [SectorController::class, 'edit'])->name('Front.admin.sector.edit');
     Route::put('/sector/{sector}', [SectorController::class, 'update'])->name('Front.admin.sector.update');
     Route::delete('/sector/{sector}', [SectorController::class, 'destroy'])->name('Front.admin.sector.destroy');
+
+Auth::routes();
+
+
+Route::get('/admin', function (Request $request) {
+
+    return view('Front.admin.home');
+});
+
+Route::get('/logout', [App\Http\Controllers\AdminController::class, 'logout'])->name('auth.login');
+

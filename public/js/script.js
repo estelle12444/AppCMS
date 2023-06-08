@@ -14,15 +14,23 @@
 
 
 
-$(document).ready(function() {
+$(document).ready(function () {
     // Afficher le contenu du modal lorsque vous cliquez sur un élément
-    $('.element').click(function() {
+    $('.element').click(function () {
         var elementId = $(this).data('target');
         $(elementId).modal('show');
     });
 
     // Fermer le modal lorsque vous cliquez sur le bouton de fermeture
-    $('.modal .close').click(function() {
+    $('.modal .close').click(function () {
         $(this).closest('.modal').modal('hide');
     });
+
+
+
+    // // Récupérer la valeur précédente de la recherche
+    // var previousSearch = "{{ old('sector_id') }}";
+
+    // // Assigner la valeur au select
+    // document.getElementById("sector_id").value = previousSearch;
 });

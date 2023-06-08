@@ -35,11 +35,9 @@
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border position-relative text-primary" style="width: 6rem; height: 6rem;" role="status">
-        </div>
-        <i class="fa fa-laptop-code fa-2x text-primary position-absolute top-50 start-50 translate-middle"></i>
+   <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+
     </div>
     <!-- Spinner End -->
 
@@ -219,7 +217,7 @@
             <div class="form">
                 <div class="row">
                 <div class="col-md-4 mb-2">
-                    <select name="sector_id" class="form-control">
+                    <select name="sector_id" id="sector_id" class="form-control">
                         <option value="">Tous les secteurs</option>
                         @foreach ($sectors as $sector)
                             <option value="{{ $sector->id }}" {{ old('sector_id') == $sector->id ? 'selected' : '' }}>
@@ -230,7 +228,7 @@
                 </div>
                 <div class="col-md-4 mb-2">
                     <input type="text" name="search_term" value="{{ old('search_term') }}" class="form-control"
-                        placeholder="Recherche par nom du partenaire">
+                        placeholder="Recherche par nom de l'entreprise">
                 </div>
                 <div class="col-md-4">
                     <button type="submit" class="btn btn-primary">Rechercher</button>
@@ -242,15 +240,15 @@
         @if (count($partners) > 0)
             <div class="row">
                 @foreach ($partners as $partner)
-                    <div class="col-md-3 mb-4">
+                    <div class="col-md-2 mb-4">
                         {{-- <a href="#" data-toggle="modal" data-toggle="modal" data-target="#myModal">
                             <img src="{{ asset('storage/' . $partner->image) }}" width="150"
                                 alt="Logo du partenaire" class="img-fluid partner-image"
                                 data-partner-id="{{ $partner->id }}">
                         </a> --}}
                         <div class="element" data-toggle="modal" data-target="#elementModal{{ $partner->id }}">
-                            <img src="{{ asset('storage/' . $partner->image) }}" width="150"
-                                alt="Logo du partenaire" class="img-fluid partner-image"
+                            <img src="{{ asset('storage/' . $partner->image) }}"
+                                alt="Logo du partenaire" class="img-fluid partner-image img-container"
                                 data-partner-id="{{ $partner->id }}">
                         </div>
 
@@ -326,19 +324,27 @@
                         aria-labelledby="elementModal{{ $partner->id }}Label" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
+
+
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="myModalLabel"> {{ $partner->title }}</h5>
-                                    <h5 class="modal-title" id="elementModal{{ $partner->id }}Label">
+
+                                    <h5 class="modal-title" id="elementModal{{ $partner->id }}Label" style="color:#242E7C">
                                         {{ $partner->title }}</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
+
+
                                 <div class="modal-body">
-                                    <img src="{{ asset('storage/' . $partner->image) }}" height="80"
-                                        width="50" alt="Logo du partenaire" class="img-fluid">
-                                    <p>Raison sociale: {{ $partner->title }}</p>
-                                    <p>Description: {{ $partner->content }}</p>
+                                    <img src="{{ asset('storage/' . $partner->image) }}" width="100"
+                                    alt="Logo du partenaire" class="img-fluid img-container image-popup" >
+
+                                    <h6> Raison sociale : </h6>
+                                    <p>{{ $partner->title }}</p>
+                                    <h6>Description :</h6>
+                                    <p>{{ $partner->content }}</p>
+
                                     <h6>Secteurs d'activité :</h6>
                                     <ul>
                                         @forelse ($partner->sectors as $sector)
@@ -358,45 +364,6 @@
     </div>
     </div>
 
-    <!-- Votre vue Blade -->
-
-    <!-- Boucle sur les éléments pour afficher chaque élément -->
-    {{-- @foreach ($elements as $element)
-        <div class="element" data-toggle="modal" data-target="#elementModal{{ $partner->id }}">
-            <img src="{{ asset('storage/' . $partner->image) }}" width="150" alt="Logo du partenaire"
-                class="img-fluid partner-image" data-partner-id="{{ $partner->id }}">
-        </div>
-
-        <!-- Modal pour chaque élément -->
-        <div class="modal fade" id="elementModal{{ $partner->id }}" tabindex="-1" role="dialog"
-            aria-labelledby="elementModal{{ $partner->id }}Label" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="myModalLabel"> {{ $partner->title }}</h5>
-                        <h5 class="modal-title" id="elementModal{{ $partner->id }}Label">{{ $partner->title }}</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="{{ asset('storage/' . $partner->image) }}" height="80" width="50"
-                            alt="Logo du partenaire" class="img-fluid">
-                        <p>Raison sociale: {{ $partner->title }}</p>
-                        <p>Description: {{ $partner->content }}</p>
-                        <h6>Secteurs d'activité :</h6>
-                        <ul>
-                            @forelse ($partner->sectors as $sector)
-                                <li>{{ $sector->sector?->nom }}</li>
-                            @empty
-                                <li>Aucun secteur</li>
-                            @endforelse
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    @endforeach --}}
 
 
 

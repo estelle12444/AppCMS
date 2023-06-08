@@ -2,14 +2,34 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Auth;
 use App\Models\BusinessSector;
 use App\Models\Partner;
 use App\Models\Sector;
+use App\Models\User;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
+    public function getUsername()
+    {
+        $user = Auth::user();
+        $username = $user->name;
+
+        return $username;
+    }
+
+
+    public function logout()
+    {
+        Auth::logout();
+
+        // Rediriger l'utilisateur vers une autre page après la déconnexion
+        return redirect()->route('login');
+    }
+
+
 
     public function create()
     {

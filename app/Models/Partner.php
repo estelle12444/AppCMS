@@ -14,8 +14,6 @@ class Partner extends Model
         'image'
     ];
 
-    public $timestamps = false;
-
     public function sectors()
     {
         return $this->hasMany(PartnerSector::class);

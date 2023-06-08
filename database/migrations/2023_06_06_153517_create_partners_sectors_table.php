@@ -14,13 +14,13 @@ return new class extends Migration
         Schema::create('partners_sectors', function (Blueprint $table) {
             $table->id();
             $table->foreignId('partner_id')
-            ->constrained()
-            ->onDelete('cascade')
-            ->onUpdate('cascade');
-      $table->foreignId('sector_id')
-            ->constrained()
-            ->onDelete('cascade')
-            ->onUpdate('cascade');
+                ->constrained()
+                ->onDelete('cascade')
+                ->onUpdate('cascade');
+            $table->foreignId('sector_id')
+                ->constrained()
+                ->onDelete('cascade')
+                ->onUpdate('cascade');
         });
     }
 

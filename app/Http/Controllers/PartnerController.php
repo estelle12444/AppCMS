@@ -29,13 +29,37 @@ class PartnerController extends Controller
 
     public function search_process(Request $request)
     {
-        $data = $request->all();
+        // $data = $request->all();
+
+         // Récupérer tous les secteurs d'activité
         $sectors = Sector::all();
 
-        $partners = Partner::whereHas('sectors', function () use ($data) {
+        // Effectuer la recherche en fonction des critères
+        $query = Partner::query();
 
-         })->where('title', 'like','%'. $data['search_term'] . '%')->get();
+        if ($request->has('sector_id')) {
+            // Filtrer par secteur d'activité
+            $query->whereHas('sectors', function ($query) use ($request) {
+                $query->where('sector_id', $request->sector_id);
+            });
+        }
 
-        return view('Front.pages.etsagre', ['results' => $partners], compact('sectors', 'partners'));
+        if ($request->has('search_term')) {
+            // Filtrer par nom de partenaire
+            $query->where('title', 'LIKE', '%' . $request->search_term . '%');
+        }
+
+        // Récupérer les partenaires correspondants aux critères de recherche
+        $partners = $query->get();
+
+        return view('Front.pages.etsagre', compact('sectors', 'partners'));
+
+
+
+
+        // $partners = Partner::whereHas('sectors', function () use ($data) {
+        // })->where('title', 'like', '%' . $data['search_term'] . '%')->get();
+
+        // return view('Front.pages.etsagre', ['results' => $partners], compact('sectors', 'partners'));
     }
 }

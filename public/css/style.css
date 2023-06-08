@@ -530,3 +530,20 @@
     cursor: pointer;
   }
 
+
+  .spinner {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 5px solid #f3f3f3;
+    border-top-color: #242E7C;
+    animation: spin 2s ease-in-out infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
