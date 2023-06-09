@@ -272,7 +272,7 @@
                     <i class="bi bi-download fas fa-2x" ></i>
                 </span>
                 <span class="align-middle">
-                    <a href="/opportunity-pdf" download>  Présenter la liste des opportunités d’investissement (investir au VITIB)</a>
+                    <a href="/opportunity-pdf" download>  Consulter la liste des opportunités d’investissement (investir au VITIB)</a>
                 </span>
 
             </div>

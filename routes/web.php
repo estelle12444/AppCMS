@@ -61,8 +61,8 @@ Route::get('/installer', function () {
     return view('Front.pages.installer');
 });
 
-Route::get('/mediatheque', function () {
-    return view('Front.pages.mediatheque');
+Route::get('/form', function () {
+    return view('Front.pages.form');
 });
 
 Route::post('/contact', function (Request $request) {

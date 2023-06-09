@@ -51,13 +51,13 @@
 }
 
 .img-container {
-    width: 120px; /* Définissez la largeur souhaitée */
+    width: auto; /* Définissez la largeur souhaitée */
     height: 70px; /* Définissez la hauteur souhaitée */
 
   }
 
   .img-container img {
     width: 100%; /* Forcez la largeur de l'image à remplir le conteneur */
-    height: 80%; /* Forcez la hauteur de l'image à remplir le conteneur */
+    height: 100%; /* Forcez la hauteur de l'image à remplir le conteneur */
     object-fit: cover; /* Redimensionnez l'image pour qu'elle couvre le conteneur tout en préservant les proportions */
   }

@@ -10,10 +10,20 @@
             <a href="/about" class="nav-item nav-link">A Propos </a>
             <a href="/join" class="nav-item nav-link">Rejoignez-nous</a>
             <a href="/installer" class="nav-item nav-link">S'installer</a>
-            <a href="/opportunity" class="nav-item nav-link">Opportunités</a>
+            <div class="nav-item dropdown">
+                <a href="" class="nav-item nav-link nav-link dropdown-toggle" data-bs-toggle="dropdown">Opportunités</a>
+                <div class="dropdown-menu border-0 rounded-0 rounded-bottom m-0">
+                    <a href="/opportunity" class="dropdown-item">Projets</a>
+                    <a href="#" class="dropdown-item">Offres d'emploi</a>
+                    <a href="#" class="dropdown-item">Aquisitions </a>
+
+                </div>
+            </div>
+
             <a href="/partners" class="nav-item nav-link">Entreprises Agrées</a>
+            <a href="/contact" class="nav-item nav-link">Contactez-Nous</a>
         </div>
-        <a href="/contact" class="btn btn-sm btn-light rounded-pill py-2 px-4 d-none d-lg-block">Contactez-Nous</a>
+        <a href="/form" class="btn btn-sm btn-light rounded-pill py-2 px-4 d-none d-lg-block">Faire une demande </a>
     </div>
 </nav>
 

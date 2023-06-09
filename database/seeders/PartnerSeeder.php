@@ -54,7 +54,7 @@ class PartnerSeeder extends Seeder
                 ],
                 'content' => "• Fabrication, conditionnement et distribution de produits pharmaceutiques ;
                 • L’importation de produits, de matériels et d’équipements de laboratoire et d’analyse.",
-                'image' => "africure.png"
+                'image' => "africture.png"
             ],
 
             'ALINK WEST AFRICA' => [
@@ -282,6 +282,288 @@ class PartnerSeeder extends Seeder
                 ],
                 'content' => " IT - Sécurité informatique",
                 'image' => "ITITUDE.png"
+            ],
+
+
+        // jour 2
+
+            "IXPERTA" => [
+                'sectors' => [
+                    "TIC"
+                ],
+                'content' => " Déploiement de support informatique",
+                'image' => "IXPERTA.png"
+            ],
+
+            "LOGIMATIQUE ELECTRONIQUE ET SECURITE " => [
+                'sectors' => [
+                    "TIC"
+                ],
+                'content' => " IT - Electronique et sécurité",
+                'image' => "LOGIMATIQUE.png"
+            ],
+
+            "MAINONE" => [
+                'sectors' => [
+                    "TIC","DATA CENTER"
+                ],
+                'content' => " Leader en fourniture de services de télécommunication novateurs et de solutions de réseau des affaires en Afrique occidentale. Depuis son lancement en 2010, MainOne a développé une solide réputation de services fortement fiables pour devenir le fournisseur préféré de services Internet de gros opérateurs de télécommunication majeurs, des fournisseurs d'accès Internet, des agences gouvernementales, de grandes entreprises et des institutions éducatives en Afrique occidentale.
+                L’activité principale consistera en la fourniture de capacité Internet en gros (IP Transit & IPLC) aux opérateurs Télécoms et ISP.",
+                'image' => "mainone.png"
+            ],
+
+
+            "MAPACI " => [
+                'sectors' => [
+                    "BIOTECHNOLOGIE"
+                ],
+                'content' => " Transformation de fruits et légumes tropicaux",
+                'image' => "mapaci.png"
+            ],
+
+
+            "MEDIMAGE MEDICAL DEVICES" => [
+                'sectors' => [
+                    "TIC"
+                ],
+                'content' => " Distribution, Négoce (importation/exportation) et Maintenance de matériel médical & Formation",
+                'image' => "ITITUDE.png"
+            ],
+
+            "MED-PROTEX PRODUCTION" => [
+                'sectors' => [
+                    "MEDICAL","BIOTECH"
+                ],
+                'content' => " Production de matériel sanitaire",
+                'image' => "med-protex.png"
+            ],
+
+            "MY BILL BOX" => [
+                'sectors' => [
+                    "TIC"
+                ],
+                'content' => "IT - Développepent d'applications informatiques",
+                'image' => "billbox.png"
+            ],
+
+            "NEW DIGITAL AFRICA BUSINESS SOLUTIONS" => [
+                'sectors' => [
+                    "TIC"
+                ],
+                'content' => " Sous-holding de NDA",
+                'image' => ""
+            ],
+            "NEW DIGITAL AFRICA (NDA) " => [
+                'sectors' => [
+                    "TIC","INFORMATIQUE"
+                ],
+                'content' => " IT - Conception des systèmes informatiques et investissement  Holding de sous holdings et de filiales",
+                'image' => "nda.png"
+            ],
+
+            "OPENVIEW" => [
+                'sectors' => [
+                    "COMPAGNIE D'INVESTISSEMENT"
+                ],
+                'content' => " Sous holding de filiales",
+                'image' => "openview.png"
+            ],
+
+            "PANELYS" => [
+                'sectors' => [
+                    "TIC","BIOTECH"
+                ],
+                'content' => "Entreprise d’inclusion financière digitale visant à régler le problème de la précarité des femmes, des jeunes et des acteurs du secteur informel via l’application SMS et Mobile Panelys ",
+                'image' => "panelys.png"
+            ],
+
+            "PHARMANOVA CI" => [
+                'sectors' => [
+                    "BIOTECH","FINTECH"
+                ],
+                'content' => " • Fabrication de médicaments à usage humain ;
+                • Représentation, Promotion et Commercialisation de produits pharmaceutiques et dispositifs médicaux;
+                • Laboratoire de recherche et développement en  biotechnologie
+                ",
+                'image' => "pharmanova.png"
+            ],
+            "PY TECHNOLOGIES" => [
+                'sectors' => [
+                    "TIC"
+                ],
+                'content' => " PY TECHNOLOGIES spécialisée dans l’ingénierie logicielle et dans la conception de solutions
+                informatiques intégrées. Elle est le résultat de plusieurs années de réflexion et de travaux
+                préparatoires.",
+                'image' => "py_technologies.png"
+            ]
+            ,
+            "RAXIO" => [
+                'sectors' => [
+                    "TIC","DATA CENTER"
+                ],
+                'content' => " activité de Data Center (hebergement de salle serveurs) et fourniture de capacité Internet.",
+                'image' => "raxio.png"
+            ]
+            ,
+            "RIGHTCOM CI" => [
+                'sectors' => [
+                    "TIC"
+                ],
+                'content' => "Mise en place de logiciel d’entreprises qui permet de créer, de diffuser et de mesurer les expériences que vous offrez à vos clients, vos employés, vos partenaires ou tout autre personne quel que soit votre secteur d’activité par l’élaboration de certains logiciels tels que :
+                     RIGHT Q : Application intelligente de gestion dynamique de file d’attente pour hall d’accueil d’agences;",
+                'image' => "rightcom_ci.png"
+            ]
+            ,
+            "SAH ANALYTICS INTERNATIONAL " => [
+                'sectors' => [
+                    "TIC"
+                ],
+                'content' => " Analyse de données, traitement big data, intelligence Artificielle",
+                'image' => "sah_analytics.png"
+            ]
+            ,
+            "SAIPH IVOIRE" => [
+                'sectors' => [
+                    "BIOTECH","PHARMACEUTIQUE"
+                ],
+                'content' => " Fabrication, conditionnement, distribution ainsi que promotion de médicaments à usage humain;
+                - La construction, l’équipement et l’exploitation d’une unité de production des produits à usage pharmaceutiques et cosmétiques à usage humain et vétérinaire et de tous produits de base ou annexes de réactifs ;
+                - L’achat, la vente, l’importation, l’exportation de tous ces produits,
+                - La promotion médicale des produits y afférents.… ",
+                'image' => "saiph_ivoire.png"
+            ]
+            ,
+            "SATEL" => [
+                'sectors' => [
+                    "TIC","TELECOM-ENERGIE"
+                ],
+                'content' => " • Conception et assemblages des composants électroniques ;
+                • Montage d’automates et d’armoires électroniques ;
+                • Etude et réalisations de projets d’éclairage ;
+                • Distribution des produits d’éclairage ; Formation ; Conseil ;
+                • Produits et services connexes.",
+                'image' => "satel.png"
+            ]
+            ,
+            "SCTE" => [
+                'sectors' => [
+                    "TIC","TELECOM-ENERGIE"
+                ],
+                'content' => " • Montage et câblage d’équipements électriques et/ou pneumatiques dans coffrets, armoires, châssis, baies et tout type d’enveloppes et de schelters, montages et câblages d’équipements  électriques et/ou pneumatiques dans schelters en basse tension, moyenne tension, courant fort et/ou courant faible.
+                • Tout matériel ou système de process d’automatisme, de supervision, d’instrumentation, d’entrainement et matériels en réseaux informatiques ;
+                • Programmation et essais des composants électriques et d’automatismes.",
+                'image' => "scte.png"
+            ]
+            ,
+            "SMART SENSORS AFRICA (S2A)" => [
+                'sectors' => [
+                    "TIC","OBJETS CONNECTES"
+                ],
+                'content' => "IT -Objets connectés",
+                'image' => "s2a.png"
+            ],
+            "LIFE TV PRODUCTION" => [
+                'sectors' => [
+                    "TIC","AUDIO VISUEL"
+                ],
+                'content' => " Production audiovisuelle",
+                'image' => "lifetv.png"
+            ],
+            "SUPERNET TECHNOLOGIES" => [
+                'sectors' => [
+                    "TIC","TELECOM"
+                ],
+                'content' => " Intervention dans les Télécoms et des Services à valeur ajoutée au profit des institutions financières, des opérateurs télécoms et des administrations fiscales.
+                Supernet Technologies est le partenaire stratégique et technologique du GIM-UEMOA en matière de Mobile Banking, et plus généralement de l’écosystème Mobile Financial Services (MFS) de l’UEMOA. ",
+                'image' => "supernet.png"
+            ],
+            "TALENTYS SC-CI" => [
+                'sectors' => [
+                    "TIC","SECURITE"
+                ],
+                'content' => ",Sécurité de l’information
+                , Infrastructure et fourniture d’application
+                , Communication unifiée et collaboration
+                , Audit sécurité informatique;",
+                'image' => "talentycs.png"
+            ],
+            "TECHMEDIA INTERNATIONAL" => [
+                'sectors' => [
+                    "TIC","FORMATION"
+                ],
+                'content' => " IT - Formation  Sécurité informatique",
+                'image' => "techmedia.png"
+            ],
+            "TECHNOLOGY INNOVATION REVOLUTIONNER (TIR)" => [
+                'sectors' => [
+                    "TIC"
+                ],
+                'content' => " TIR est une entreprise privée du digital qui offre une palette de services sur mesure à des firmes exerçant dans divers domaines d'activités, basées en côte d'ivoire ou à l'exterieur.
+                TIR utilise des technologies innovantes et prime dans des domaines tels que
+                l'Ingénierie logicielle du cloud et microservices,
+                l'Ingénierie de la cybersécurité,
+                l'Ingénierie des infrastructures cloud et
+                l'Ingénierie du développement d’application mobile, web et UX.",
+                'image' => "tir.png"
+            ],
+
+            "WEBLOGY OFFSHORE" => [
+                'sectors' => [
+                    "TIC","PRESSE EN LIGNE"
+                ],
+                'content' => " Developpement Web - Presse en ligne - paiement mobile - inclusion financiere",
+                'image' => "weblogy.png"
+            ],
+            "WEST AFRICA DATABRIDGE" => [
+                'sectors' => [],
+                'content' => " ",
+                'image' => "west_africa.png"
+            ],
+            "AHOKO" => [
+                'sectors' => [
+                    "TIC"
+                ],
+                'content' => " ATECOMCI INTER est spécialisée dans la télécommunication et la construction métallique. Ainsi elle met à la disposition de ses clients les services suivants :
+                •Technologie informatique et télécommunication :
+                • Vente de matériels informatiques et bureautiques (accessoires, matériels de sécurité, télécommunication) ;
+                • Installation de réseaux informatiques et télécom (câblage et configuration) ;
+                • Maintenance informatique ;
+                • Dépannage de réseaux informatiques et télécom ;
+                • Montage informatique et équipement ;
+                • Création et gestion de sites internet ;
+                • Communication sur objets (plaquette publicitaire, brochure commerciale, papier entête, affiche publicitaire, faire-part, carte de visite, banderole, enseigne, kakemono (roll up), calendrier, flyers, dépliant, etc…) ;
+                • Conseil, assistance et formation.
+
+                 Gros œuvres :
+                • Montage équipements informatique ;
+                • Travaux bâtiments ;
+                • Construction métallique (réhabilitation et aménagement, charpente métallique, grille et barrière extensible, hangar métallique, rideau métallique, porte métallique blindée, construction aluminium, mobilier et artisanat en fer forgé).
+                ",
+                'image' => "ahoko.png"
+            ],
+            "INVESTIV Cote d'Ivoire" => [
+                'sectors' => [
+                    "TIC"
+                ],
+                'content' => " IT - Montage de drones et de solutions informatiquesGestion de plantations et de projets agricoles : Offre d’une solution intégrée et innovante destinée aux producteurs agricoles afin de les aider à être plus précis et plus efficaces tout en optimisant l’utilisation des intrants",
+                'image' => "investiv.png"
+            ]
+            ,
+            "SPA ENTERPRISE" => [
+                'sectors' => [
+                    "TIC"
+                ],
+                'content' => " IT - Montage de drones et de solutions informatiquesGestion de plantations et de projets agricoles : Offre d’une solution intégrée et innovante destinée aux producteurs agricoles afin de les aider à être plus précis et plus efficaces tout en optimisant l’utilisation des intrantsassembalage véhicules électrique, Fintech, e-Commerce, incubation",
+                'image' => "spa.png"
+            ]
+
+            ,
+            "WARIPARK" => [
+                'sectors' => [
+                    "TIC","INCUBATEUR"
+                ],
+                'content' => " Intégrateur de l'Ecosystème digital/ Management d'incubateurs et de Tech Hubs",
+                'image' => "waripark.png"
             ]
         ];
     }

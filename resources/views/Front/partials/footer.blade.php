@@ -24,28 +24,15 @@
                 <a class="btn btn-link" href="/contact">Support</a>
             </div>
             <div class="col-lg-3 col-md-6">
-                <h5 class="text-light mb-4">Services</h5>
-                <div class="row g-2">
-                    <div class="col-4">
-                        <img class="img-fluid rounded" src="img/service-1.jpg" alt="Image">
-                    </div>
-                    <div class="col-4">
-                        <img class="img-fluid rounded" src="img/service-2.jpg" alt="Image">
-                    </div>
-                    <div class="col-4">
-                        <img class="img-fluid rounded" src="img/service-3.jpg" alt="Image">
-                    </div>
-                    <div class="col-4">
-                        <img class="img-fluid rounded" src="img/service-4.jpg" alt="Image">
-                    </div>
-                    <div class="col-4">
-                        <img class="img-fluid rounded" src="img/service-5.jpg" alt="Image">
-                    </div>
-                    <div class="col-4">
-                        <img class="img-fluid rounded" src="img/service-6.jpg" alt="Image">
-                    </div>
-                </div>
+                <h5 class="text-light mb-4">Aquisitions / Offres d'emploi</h5>
+
+                <a class="btn btn-link" href="#">Appels d’offre</a>
+                <a class="btn btn-link" href="#">Demandes de manifestation</a>
+                <a class="btn btn-link" href="#">Demandes de cotation</a>
+                <a class="btn btn-link" href="#">Appels à candidature</a>
+                <a class="btn btn-link" href="#">Offres d’emploi</a>
             </div>
+
             <div class="col-lg-3 col-md-6">
                 <h5 class="text-light mb-4">Newsletter</h5>
                 <p>Inscrivez-vous à nos communications pour recevoir nos meilleures offres!</p>

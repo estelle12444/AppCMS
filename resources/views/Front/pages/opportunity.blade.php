@@ -26,14 +26,14 @@
             </div>
             <div class="row g-4">
                 <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                    <a class="service-item d-block rounded  h-100 p-4" href="">
                         <img class="img-fluid rounded mb-4" src="img/service-1.jpg" alt="">
-                        <h4 class="mb-0">Entrepots à louer</h4>
+
                     </a>
                 </div>
                 <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-
-                    <p style="text-align: justify; padding:10%">Ce projet vise à créer des infrastructures de type
+                    <h4 class="mb-0 titre"><strong>Entrepots à louer</strong></h4>
+                    <p class="texte">Ce projet vise à créer des infrastructures de type
                         entrepôts, pouvant abriter les chaines
                         d’assemblage de divers produits TIC, ainsi que des espaces de stockage
                         complémentaires pour des industriels et des usagers de la ZBTIC.</p>
@@ -42,7 +42,8 @@
 
             <div class="row g-4">
                 <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p style="text-align: justify; padding:10%">Cette zone inclut une zone économique TIC-soft, ayant pour
+                    <h4  class="mb-0 titre">Immeubles à bureaux</h4>
+                    <p class="texte">Cette zone inclut une zone économique TIC-soft, ayant pour
                         objet l’hébergement des
                         entreprises œuvrant dans le secteur des TIC.
                         Les infrastructures d’accueil de ce type d’entreprises répond à des standards
@@ -53,7 +54,7 @@
                 <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <a class="service-item d-block rounded text-center h-100 p-4" href="">
                         <img class="img-fluid rounded mb-4" src="img/service-2.jpg" alt="">
-                        <h4 class="mb-0">Immeubles à bureaux</h4>
+
                     </a>
                 </div>
             </div>
@@ -62,12 +63,12 @@
                 <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <a class="service-item d-block rounded text-center h-100 p-4" href="">
                         <img class="img-fluid rounded mb-4" src="img/service-3.jpg" alt="">
-                        <h4 class="mb-0">Tours jumelles</h4>
+
                     </a>
                 </div>
                 <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-
-                    <p style="text-align: justify; padding:10%">
+                    <h4 class="mb-0 titre">Tours jumelles</h4>
+                    <p class="texte">
                         Situées à l’entrée même de la ZBTIC, ces deux grandes tours jumelles de haut standing
                         ambitionnent de marquer avec force le statut de « parc technologique » de la ZBTIC.
                         Ces deux tours, à l’instar des grandes villes au monde, représenteront la signature
@@ -77,7 +78,8 @@
 
             <div class="row g-4">
                 <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p style="text-align: justify; padding:10%">La zone administrative du VITIB a pour ambition de devenir
+                    <h4 class="mb-0 titre">Immeubles à Bureaux TIC</h4>
+                    <p class="texte">La zone administrative du VITIB a pour ambition de devenir
                         le second centre des
                         affaires (business district) de la Côte d’Ivoire, après la commune du Plateau.
                         Il s’agira d’infrastructures de type bureaux, destinées aux entreprises du secteur des
@@ -88,7 +90,7 @@
                 <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <a class="service-item d-block rounded text-center h-100 p-4" href="">
                         <img class="img-fluid rounded mb-4" src="img/service-4.jpg" alt="">
-                        <h4 class="mb-0">Immeubles à Bureaux TIC</h4>
+
                     </a>
                 </div>
             </div>
@@ -96,12 +98,12 @@
                 <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <a class="service-item d-block rounded text-center h-100 p-4" href="">
                         <img class="img-fluid rounded mb-4" src="img/service-5.jpg" alt="">
-                        <h4 class="mb-0">Promotion Immobilière Bloc Ar</h4>
+
                     </a>
                 </div>
                 <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-
-                    <p style="text-align: justify; padding:10%">Cette promotion immobilière doit prendre en compte un compte
+                    <h4 class="mb-0 titre">Promotion Immobilière Bloc Ar</h4>
+                    <p class="texte">Cette promotion immobilière doit prendre en compte un compte
                         un programme
                         spécifique d’habitants réalisées à titre gracieux pour VITIB S.A.
                         Le reste de la parcelle (80%) pourra être commercialisé.
@@ -113,7 +115,8 @@
             </div>
             <div class="row g-4">
                 <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p style="text-align: justify; padding:10%">Ce projet est prévu en trois phases.
+                    <h4 class="mb-0 titre">Promotion Immobilière Bloc B</h4>
+                    <p class="texte">Ce projet est prévu en trois phases.
                         Il comportera des immeubles à appartement moyen et haut standing, ainsi que des
                         villas haut standing, dont certaines donnent un accès à la plage lagunaire.
                         Cela nécessitera également les travaux de viabilisation (VRD).</p>
@@ -121,7 +124,7 @@
                 <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <a class="service-item d-block rounded text-center h-100 p-4" href="">
                         <img class="img-fluid rounded mb-4" src="img/service-6.jpg" alt="">
-                        <h4 class="mb-0">Promotion Immobilière Bloc B</h4>
+
                     </a>
                 </div>
             </div>
@@ -129,12 +132,12 @@
                 <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <a class="service-item d-block rounded text-center h-100 p-4" href="">
                         <img class="img-fluid rounded mb-4" src="img/service-5.jpg" alt="">
-                        <h4 class="mb-0">Université</h4>
+
                     </a>
                 </div>
                 <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-
-                    <p style="text-align: justify; padding:10%">Le Village de l’Innovation Technologique a pour vocation
+                    <h4 class="mb-0 titre">Université</h4>
+                    <p class="texte">Le Village de l’Innovation Technologique a pour vocation
                         d’être le centre de la réflexion
                         technologique en Afrique de l’Ouest.
                         La création d’un établissement académique de niveau universitaire permettra de former
@@ -146,7 +149,8 @@
 
             <div class="row g-4">
                 <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p style="text-align: justify; padding:10%">Voisin du futur centre des Congrès du parc technologique,
+                    <h4 class="mb-0 titre">Hôtels d’Affaires</h4>
+                    <p class="texte">Voisin du futur centre des Congrès du parc technologique,
                         cet hôtel d’affaires offrira
                         une solution d’hébergement aux différents experts, cadres et visiteurs des sociétés en
                         opération sur le site de la ZBTIC.</p>
@@ -154,7 +158,7 @@
                 <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <a class="service-item d-block rounded text-center h-100 p-4" href="">
                         <img class="img-fluid rounded mb-4" src="img/service-6.jpg" alt="">
-                        <h4 class="mb-0">Hôtels d’Affaires</h4>
+
                     </a>
                 </div>
             </div>
@@ -162,12 +166,12 @@
                 <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <a class="service-item d-block rounded text-center h-100 p-4" href="">
                         <img class="img-fluid rounded mb-4" src="img/service-5.jpg" alt="">
-                        <h4 class="mb-0">Hôtel de villégiature</h4>
+
                     </a>
                 </div>
                 <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-
-                    <p style="text-align: justify; padding:10%">Ce complexe hôtelier, à la fois pour les affaires et les
+                    <h4 class="mb-0 titre">Hôtel de villégiature</h4>
+                    <p class="texte">Ce complexe hôtelier, à la fois pour les affaires et les
                         loisirs, est idéalement situé en
                         bordure de lagune, au cœur de la zone résidentielle et commerciale, à 1km du futur
                         centre des congrès de stature internationale.</p>
@@ -176,7 +180,8 @@
 
             <div class="row g-4">
                 <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p style="text-align: justify; padding:10%">Il s’agit de bâtir un grand centre des congrès
+                    <h4 class="mb-0 titre">Centre des Congrès</h4>
+                    <p class="texte">Il s’agit de bâtir un grand centre des congrès
                         international, à 15 minutes de l’aéroport
                         international d’Abidjan, permettant de combler un déficit évident en infrastructure de
                         ce type.</p>
@@ -184,7 +189,7 @@
                 <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <a class="service-item d-block rounded text-center h-100 p-4" href="">
                         <img class="img-fluid rounded mb-4" src="img/service-2.jpg" alt="">
-                        <h4 class="mb-0">Centre des Congrès</h4>
+
                     </a>
                 </div>
             </div>
@@ -193,12 +198,12 @@
                 <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <a class="service-item d-block rounded text-center h-100 p-4" href="">
                         <img class="img-fluid rounded mb-4" src="img/service-3.jpg" alt="">
-                        <h4 class="mb-0">Centre Culturel</h4>
+
                     </a>
                 </div>
                 <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-
-                    <p style="text-align: justify; padding:10%">
+                    <h4 class="mb-0 titre">Centre Culturel</h4>
+                    <p class="texte">
                         La ville de Grand- Bassam, haut lieu de l’histoire contemporaine de la Côte d’Ivoire et
                         classée au patrimoine mondial de l’UNESCO, souffre de l’absence de centrte culturel à
                         la dimension de sa réputation.
@@ -212,12 +217,12 @@
                     <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <a class="service-item d-block rounded text-center h-100 p-4" href="">
                             <img class="img-fluid rounded mb-4" src="img/service-1.jpg" alt="">
-                            <h4 class="mb-0">Centre Commercial</h4>
+
                         </a>
                     </div>
                     <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-
-                        <p style="text-align: justify; padding:10%">Le centre commercial sera composé notamment d’un
+                        <h4 class="mb-0 titre">Centre Commercial</h4>
+                        <p class="texte">Le centre commercial sera composé notamment d’un
                             hypermarché, d’une galerie
                             marchande et de parkings destiné à sa clientèle.
 
@@ -230,7 +235,8 @@
 
                 <div class="row g-4">
                     <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <p style="text-align: justify; padding:10%">Une clinique médicale de stature internationale
+                        <h4 class="mb-0 titre">Clinique Médiale Internationale</h4>
+                        <p class="texte">Une clinique médicale de stature internationale
                             correspondant aux standards
                             internationaux, vise à offrir à minima des services de médecine générale et des
                             services spécialisés à la clientèle et aux travailleurs de la ZBTIC.</p>
@@ -238,11 +244,11 @@
                     <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <a class="service-item d-block rounded text-center h-100 p-4" href="">
                             <img class="img-fluid rounded mb-4" src="img/service-2.jpg" alt="">
-                            <h4 class="mb-0">Clinique Médiale Internationale</h4>
+
                         </a>
                     </div>
                 </div>
-                <div class="row g-4">
+                {{-- <div class="row g-4">
                     <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                        <h5> ACQUISITIONS </h5>
                         <ul>
@@ -258,7 +264,7 @@
                         <li> Offres d’emploi </li>
                         </ul>
                     </div>
-                </div>
+                </div> --}}
 
 
             </div>
