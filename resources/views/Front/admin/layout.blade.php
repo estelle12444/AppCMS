@@ -25,6 +25,8 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-94034622-3');
+
+  $(".js-example-basic-multiple").select2();
 </script>
 <!-- /END GA --></head>
 

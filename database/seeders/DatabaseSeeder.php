@@ -3,6 +3,10 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+use App\Models\Eligibility;
+use App\Models\Obligation;
+use App\Models\TypeDemande;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -21,5 +25,17 @@ class DatabaseSeeder extends Seeder
 
         $this->call(SectorSeeder::class);
         $this->call(PartnerSeeder::class);
+        $this->call(RoleSeeder::class);
+        $this->call(UserSeeder::class);
+
+        $this->call(EligibilitySeeder::class);
+        $this->call(DispositionSeeder::class);
+        $this->call(ObligationSeeder::class);
+        $this->call(TypeDemandeSeeder::class);
+
+        $this->call(EligibilityTypeDemandeSeeder::class);
+        $this->call(ObligationTypeDemandeSeeder::class);
+        $this->call(DispositionTypeDemandeSeeder::class);
+
     }
 }

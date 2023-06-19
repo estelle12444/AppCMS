@@ -84,9 +84,11 @@
     outline: none;
 }
 
-.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:hover{
+    color: orange  ;
+}
 .navbar .navbar-nav .nav-link.active {
-    color:  ;
+    color: var(--orange) ;
 }
 
 .navbar.sticky-top {
@@ -583,4 +585,30 @@
     transform: translateY(-2px);
     color: #ffffff;
   }
+
+  .form-part {
+    display: none;
+}
+
+.scrolling-text {
+    width:120%;
+    height: 350px; /* Hauteur de la div de défilement */
+    overflow-y: scroll;
+     /* Permet le défilement vertical */
+  }
+  .taille{
+    width:110%;
+  }
+
+.right
+{
+    float: right;
+}
+
+.scrolling-inputs {
+   height: 350px;
+
+    overflow-y: scroll; /* Permet le défilement vertical */
+  }
+
 

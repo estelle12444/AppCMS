@@ -8,6 +8,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PdfController;
 use App\Http\Controllers\SectorController;
+use App\Http\Controllers\TypeDeDemandeController;
+use App\Http\Controllers\TypeDemandeController;
 use App\Models\Partner;
 use App\Models\Sector;
 use Illuminate\Support\Facades\Auth;
@@ -102,7 +104,7 @@ Route::get('/sector', [SectorController::class, 'index'])->name('Front.admin.sec
     Route::put('/sector/{sector}', [SectorController::class, 'update'])->name('Front.admin.sector.update');
     Route::delete('/sector/{sector}', [SectorController::class, 'destroy'])->name('Front.admin.sector.destroy');
 
-Auth::routes();
+
 
 
 Route::get('/admin', function (Request $request) {
@@ -111,4 +113,15 @@ Route::get('/admin', function (Request $request) {
 });
 
 Route::get('/logout', [App\Http\Controllers\AdminController::class, 'logout'])->name('auth.login');
+
+
+Auth::routes();
+
+Route::get('/profil', [App\Http\Controllers\ProfilController::class, 'index'])->name('Front.profil.home');
+Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('Front.admin.home');
+
+
+
+Route::get('/demande', [TypeDeDemandeController::class, 'index'])->name('Front.demande.index');
+Route::get('/demande/{typeDeDemande}', [TypeDeDemandeController::class, 'form'])->name('Front.demande.form');
 

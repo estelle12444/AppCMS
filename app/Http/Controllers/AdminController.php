@@ -15,9 +15,14 @@ class AdminController extends Controller
     public function getUsername()
     {
         $user = Auth::user();
-        $username = $user->name;
+        $username = $user->nom;
 
         return $username;
+    }
+
+    public function dashboard()
+    {
+        return view('Front.admin.home');
     }
 
 

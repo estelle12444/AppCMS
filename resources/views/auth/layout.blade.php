@@ -1,19 +1,10 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
-
+    <title>Auth</title>
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
@@ -42,9 +33,18 @@
 
 <body>
     <div id="app">
+        <section class="section">
+            <div class="container mt-5">
+                <div class="row">
 
-        @yield('content')
 
+
+
+                    @yield('content')
+                </div>
+            </div>
+    </div>
+    </section>
     </div>
 
     <!-- General JS Scripts -->

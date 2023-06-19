@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Role;
 use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -14,16 +15,54 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        $user = new User();
-        $user->name = 'Pascale';
-        $user->email = 'pascale@gmail.com';
-        $user->password = Hash::make('motdepasse');
-        $user->save();
+          // Récupération des rôles
+          $adminRole = Role::where('nom', 'admin')->first();
+          $userRole = Role::where('nom', 'user')->first();
 
-        $user = new User();
-        $user->name = 'Admin';
-        $user->email = 'admin@gmail.com';
-        $user->password = Hash::make('admin');
-        $user->save();
+          // Création des administrateurs
+          User::create([
+              'nom' => 'Admin1',
+              'prenom' => 'Admin1',
+              'email' => 'admin1@example.com',
+              'password' => Hash::make('password'),
+              'telephone' => '0123456789',
+              'adresse' => 'Adresse Admin1',
+              'role_id' => $adminRole->id,
+              'piece_identite'=>'passeport'
+          ]);
+
+          User::create([
+              'nom' => 'Admin2',
+              'prenom' => 'Admin2',
+              'email' => 'admin2@example.com',
+              'password' => Hash::make('password'),
+              'telephone' => '9876543210',
+              'adresse' => 'Adresse Admin2',
+              'role_id' => $adminRole->id,
+              'piece_identite'=>'carte_identite'
+          ]);
+
+          // Création des utilisateurs
+          User::create([
+              'nom' => 'User1',
+              'prenom' => 'User1',
+              'email' => 'user1@example.com',
+              'password' => Hash::make('password'),
+              'telephone' => '5555555555',
+              'adresse' => 'Adresse User1',
+              'role_id' => $userRole->id,
+              'piece_identite'=>'passeport'
+          ]);
+
+          User::create([
+              'nom' => 'User2',
+              'prenom' => 'User2',
+              'email' => 'user2@example.com',
+              'password' => Hash::make('password'),
+              'telephone' => '1111111111',
+              'adresse' => 'Adresse User2',
+              'role_id' => $userRole->id,
+              'piece_identite'=>'carte_identite'
+          ]);
     }
 }

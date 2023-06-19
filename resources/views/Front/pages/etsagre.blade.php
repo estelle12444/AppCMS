@@ -35,7 +35,8 @@
 
 <body>
     <!-- Spinner Start -->
-   <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner"></div>
 
     </div>
@@ -71,8 +72,8 @@
             <div class="col-lg-4 col-md-12 text-center text-lg-start">
                 <a href="" class="navbar-brand m-0 p-0">
                     <h1 class="fw-bold text-primary m-0">
-                        <img src="img/logo.png" width="50" alt="">
-                        VITIB
+                        <img src="img/logo1.png" width="200" alt="">
+
                     </h1>
                     <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
@@ -210,32 +211,39 @@
 
 
     <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <form action="{{ route('Front.admin.search_process') }}" method="post" class="mb-3">
+                    @csrf
 
-        <form action="{{ route('Front.admin.search_process') }}" method="post" class="mb-3">
-            @csrf
-
-            <div class="form">
-                <div class="row">
-                <div class="col-md-4 mb-2">
-                    <select name="sector_id" id="sector_id" class="form-control">
-                        <option value="">Tous les secteurs</option>
-                        @foreach ($sectors as $sector)
-                            <option value="{{ $sector->id }}" {{ old('sector_id') == $sector->id ? 'selected' : '' }}>
-                                {{ $sector->nom }}
-                            </option>
-                        @endforeach
-                    </select>
-                </div>
-                <div class="col-md-4 mb-2">
-                    <input type="text" name="search_term" value="{{ old('search_term') }}" class="form-control"
-                        placeholder="Recherche par nom de l'entreprise">
-                </div>
-                <div class="col-md-4">
-                    <button type="submit" class="btn btn-primary">Rechercher</button>
-                </div>
+                    <div class="form">
+                        <div class="row">
+                            <div class="col-md-4 mb-2">
+                                <select name="sector_id" id="sector_id" class="form-control">
+                                    <option value="">Tous les secteurs</option>
+                                    @foreach ($sectors as $sector)
+                                        <option value="{{ $sector->id }}"
+                                            {{ old('sector_id') == $sector->id ? 'selected' : '' }}>
+                                            {{ $sector->nom }}
+                                        </option>
+                                    @endforeach
+                                </select>
+                            </div>
+                            <div class="col-md-4 mb-2">
+                                <input type="text" name="search_term" value="{{ old('search_term') }}"
+                                    class=" bg-white shadow form-control"
+                                    placeholder="Recherche par nom de l'entreprise">
+                            </div>
+                            <div class="col-md-4">
+                                <button type="submit" class="btn btn-primary">Rechercher</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
+            <div class="col-md-2"></div>
         </div>
-        </form>
         <br>
         @if (count($partners) > 0)
             <div class="row">
@@ -247,9 +255,8 @@
                                 data-partner-id="{{ $partner->id }}">
                         </a> --}}
                         <div class="element" data-toggle="modal" data-target="#elementModal{{ $partner->id }}">
-                            <img src="{{ asset('storage/' . $partner->image) }}"
-                                alt="Logo du partenaire" class="img-fluid partner-image img-container"
-                                data-partner-id="{{ $partner->id }}">
+                            <img src="{{ asset('storage/' . $partner->image) }}" alt="Logo du partenaire"
+                                class="img-fluid partner-image img-container" data-partner-id="{{ $partner->id }}">
                         </div>
 
                     </div>
@@ -328,7 +335,8 @@
 
                                 <div class="modal-header">
 
-                                    <h5 class="modal-title" id="elementModal{{ $partner->id }}Label" style="color:#242E7C">
+                                    <h5 class="modal-title" id="elementModal{{ $partner->id }}Label"
+                                        style="color:#242E7C">
                                         {{ $partner->title }}</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
                                         <span aria-hidden="true">&times;</span>
@@ -338,7 +346,7 @@
 
                                 <div class="modal-body">
                                     <img src="{{ asset('storage/' . $partner->image) }}" width="100"
-                                    alt="Logo du partenaire" class="img-fluid img-container image-popup" >
+                                        alt="Logo du partenaire" class="img-fluid img-container image-popup">
 
                                     <h6> Raison sociale : </h6>
                                     <p>{{ $partner->title }}</p>

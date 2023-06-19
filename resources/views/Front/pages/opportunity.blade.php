@@ -32,7 +32,7 @@
                     </a>
                 </div>
                 <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h4 class="mb-0 titre"><strong>Entrepots à louer</strong></h4>
+                    <h4 class="mb-0 titre">Entrepots à louer</h4>
                     <p class="texte">Ce projet vise à créer des infrastructures de type
                         entrepôts, pouvant abriter les chaines
                         d’assemblage de divers produits TIC, ainsi que des espaces de stockage
@@ -102,7 +102,7 @@
                     </a>
                 </div>
                 <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h4 class="mb-0 titre">Promotion Immobilière Bloc Ar</h4>
+                    <h4 class="mb-0 titre">Promotion Immobilière Bloc A</h4>
                     <p class="texte">Cette promotion immobilière doit prendre en compte un compte
                         un programme
                         spécifique d’habitants réalisées à titre gracieux pour VITIB S.A.
