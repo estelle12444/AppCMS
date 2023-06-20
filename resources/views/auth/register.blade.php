@@ -5,7 +5,8 @@
             <img src="{{asset('img/logo.png')}}" alt="logo" width="100" class="shadow-light rounded-circle">
         </div>
         <div class="card card-primary">
-            <div class="card-header">{{ __('Register') }}</h4>
+            <div class="card-header">
+                 <h2 style="float:left; color:rgb(0, 0, 0)">{{ __('Inscrivez-vous') }}</h2>
             </div>
 
             <div class="card-body">
@@ -38,7 +39,39 @@
                         </div>
                     </div>
 
-                    <div class="form-group">
+                    <div class="row">
+                        <div class="form-group col-6">
+                            <label for="frist_name">{{ __('Telephone') }}</label>
+
+                            <input id="phone" type="tel" class="form-control" name="telephone"
+                                @error('telephone') is-invalid @enderror" value="{{ old('telephone') }}" required
+                                autocomplete="telephone" autofocus>
+                            @error('telephone')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                        <div class="form-group col-6">
+
+                                <label for="piece">{{ __('Piece d\'identite') }}</label>
+
+
+                                <input id="piece" type="text" class="form-control @error('email') is-invalid @enderror"
+                                    name="email" value="{{ old('email') }}" required autocomplete="email">
+
+                                @error('piece')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-6">
                         <label for="email">{{ __('Email Address') }}</label>
 
 
@@ -52,8 +85,23 @@
                         @enderror
 
                     </div>
+                    <div class="form-group col-6">
+                        <label for="email">{{ __('Adresse') }}</label>
 
-                    <div class="form-group">
+
+                        <input id="adresse" type="text" class="form-control @error('adresse') is-invalid @enderror"
+                            name="adresse" value="{{ old('adresse') }}" required autocomplete="adresse">
+
+                        @error('adresse')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+                    </div>
+
+                    <div class="row">
+                    <div class="form-group col-6">
                         <label for="password">{{ __('Password') }}</label>
 
 
@@ -68,7 +116,8 @@
 
                     </div>
 
-                    <div class="form-group">
+
+                    <div class="form-group col-6">
                         <label for="password-confirm">{{ __('Confirm Password') }}</label>
 
 
@@ -76,10 +125,11 @@
                             required autocomplete="new-password">
 
                     </div>
+                </div>
 
                     <div class="form-group">
 
-                        <button type="submit" class="btn btn-primary btn-lg btn-block">
+                        <button type="submit" class="btn btn-primary" style="text-align:center">
                             {{ __('Register') }}
                         </button>
 

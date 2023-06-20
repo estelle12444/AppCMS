@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Windmill Dashboard</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/tailwind.output.css" />
+    <link rel="stylesheet" href="{{asset('./assets/css/tailwind.output.css')}}" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-    <script src="./assets/js/init-alpine.js"></script>
+<script src="{{asset('./assets/js/init-alpine.js')}}"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" defer></script>
-    <script src="./assets/js/charts-lines.js" defer></script>
-    <script src="./assets/js/charts-pie.js" defer></script>
+    <script src="{{asset('./assets/js/charts-lines.js')}}" defer></script>
+    <script src="{{asset('./assets/js/charts-pie.js')}}" defer></script>
+    <link href="{{asset('css/bootstrap1.min.css')}}" rel="stylesheet">
+    <script src="{{asset('js/main2.js')}}"></script>
+    <link href="{{asset('css/style2.css')}}" rel="stylesheet">
+
 </head>
 
 <body>
@@ -22,14 +26,14 @@
             <div class="py-4 text-gray-500 dark:text-gray-400">
 
                 <a style="text-align: center" href="/profil">
-                    <img src="img/logo1.png" width="150" alt="">
+                    <img src="{{asset('img/logo1.png')}}" width="150" alt="">
                 </a>
                 <ul class="mt-6">
                     <li class="relative px-6 py-3">
                         <span class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
                             aria-hidden="true"></span>
                         <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
-                            href="index.html">
+                            href="/profil">
                             <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round"
                                 stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                                 <path
@@ -43,14 +47,14 @@
                 <ul>
                     <li class="relative px-6 py-3">
                         <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
-                            href="forms.html">
+                            href="/profil">
                             <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round"
                                 stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                                 <path
                                     d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01">
                                 </path>
                             </svg>
-                            <span class="ml-4">Forms</span>
+                            <span class="ml-4">Liste des Demandes </span>
                         </a>
                     </li>
                     <li class="relative px-6 py-3">
@@ -62,7 +66,7 @@
                                     d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
                                 </path>
                             </svg>
-                            <span class="ml-4">Cards</span>
+                            <span class="ml-4">Etat de la demande</span>
                         </a>
                     </li>
                     <li class="relative px-6 py-3">
@@ -73,7 +77,7 @@
                                 <path d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path>
                                 <path d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path>
                             </svg>
-                            <span class="ml-4">Charts</span>
+                            <span class="ml-4">Documents</span>
                         </a>
                     </li>
                     <li class="relative px-6 py-3">
@@ -170,7 +174,7 @@
                 <div class="px-6 my-6">
                     <button
                         class="flex items-center justify-between w-full px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
-                        Create account
+                        Nouvelle demande
                         <span class="ml-2" aria-hidden="true">+</span>
                     </button>
                 </div>
@@ -444,7 +448,7 @@
                             </template>
                         </li>
                         <!-- Profile menu -->
-                        <li> Salut {{ app('App\Http\Controllers\ProfilController')->getUsername() }} </li>
+                        <li> Bienvenue {{ app('App\Http\Controllers\ProfilController')->getUsername() }} </li>
                         <li class="relative">
                             <button class="align-middle rounded-full focus:shadow-outline-purple focus:outline-none"
                                 @click="toggleProfileMenu" @keydown.escape="closeProfileMenu" aria-label="Account"

@@ -13,23 +13,23 @@ class DispositionTypeDemandeSeeder extends Seeder
      */
     public function run(): void
     {
-        // DispositionTypeDemande::create([
-        //     'disposition_id'=> [1,2,3,4,5,6],
-        //      'type_de_demande_id'=>1
-        // ]);
 
-        // DispositionTypeDemande::create([
-        //     'disposition_id'=> [1,2,3,4,5,6,7,8],
-        //      'type_de_demande_id'=>2
-        // ]);
+        $dispositions1 = [1, 2, 3, 4, 5, 6];
+        $typeDemandeId1 = 1;
 
-        $dispositions = [1, 2, 3, 4, 5, 6];
-        $typeDemandeId = 1;
+        $dispositions2 = [1,2,3,4,5,6,7,8];
+        $typeDemandeId2 = 2;
 
-        foreach ($dispositions as $disposition) {
+        foreach ($dispositions1 as $disposition) {
             DispositionTypeDemande::create([
                 'disposition_id' => $disposition,
-                'type_de_demande_id' => $typeDemandeId
+                'type_de_demande_id' => $typeDemandeId1
+            ]);
+        }
+        foreach ($dispositions2 as $disposition) {
+            DispositionTypeDemande::create([
+                'disposition_id' => $disposition,
+                'type_de_demande_id' => $typeDemandeId2
             ]);
         }
     }

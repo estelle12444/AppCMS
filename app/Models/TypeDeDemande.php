@@ -9,22 +9,21 @@ class TypeDeDemande extends Model
 {
     protected $fillable = ['name'];
 
+    public function getRouteKeyName()
+    {
+        return 'name';
+    }
 
     public function obligations()
     {
-        return $this->belongsToMany(
-            Obligation::class,
-            'obligation_type_de_demande',
-            'type_de_demande_id',
-            'obligation_id'
-        );
+        return $this->hasMany(Obligation::class,'obligation_type_demande','type_de_demande_id','obligation_id');
     }
 
     public function eligibilities()
     {
         return $this->belongsToMany(
             Eligibility::class,
-            'eligibility_type_de_demande',
+            'eligibility_type_demande',
             'type_de_demande_id',
             'eligibility_id'
         );
@@ -34,7 +33,7 @@ class TypeDeDemande extends Model
     {
         return $this->belongsToMany(
             Disposition::class,
-            'disposition_type_de_demande',
+            'disposition_type_demande',
             'type_de_demande_id',
             'disposition_id'
         );

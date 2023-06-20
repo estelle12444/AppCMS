@@ -16,7 +16,7 @@ class ObligationSeeder extends Seeder
     {
         $obligations = [
             [
-                'title' => ' dossier d’agrément',
+                'title' => 'Dossier d’agrément',
                 'content' => "Un formulaire de demande d’agrément dument
                 renseigné par le représentant légal de l’entreprise
                 - Les statuts de la société
@@ -30,14 +30,14 @@ class ObligationSeeder extends Seeder
 
 
             [
-                'title' => '',
+                'title' => 'Signature',
                 'content' => 'La signature des Conditions Générales d’Implantation (CGI)',
                 'cost' => NULL
             ],
 
             [
-                'title' => 'La signature d’un contrat de bail commercial',
-                'content' => " en cas de
+                'title' => 'Signature d’un contrat de bail commercial',
+                'content' => " La signature d’un contrat de bail commercialen cas de
                 location de bureaux ou d’un contrat de bail emphytéotique
                 de 15 à 50 ans renouvelable en cas d’option de
                 construction, correspondant aux besoins exprimés en
@@ -46,32 +46,32 @@ class ObligationSeeder extends Seeder
             ],
 
             [
-                'title' => "frais d'agrement",
+                'title' => "Frais d'agrement",
                 'content' => "L’acquittement de la facture de frais d’agrément",
                 'cost' => NULL
             ],
 
             [
-                'title' => 'Le paiement de redevance',
-                'content' => 'sur le chiffre d’affaires dès le
+                'title' => ' Paiement de redevance',
+                'content' => 'Le paiement de redevance sur le chiffre d’affaires dès le
                 début de l’exploitation;',
                 'cost' =>NULL
             ],
 
             [
-                'title' => 'dossier technique',
+                'title' => 'Dossier technique',
                 'content' => "La communication du dossier technique de construction sur
                 la ZBTIC y compris les délais;",
                 'cost' => NULL
             ],
 
             [
-                'title' => ' Le plan',
-                'content' => ' de financement du projet',
+                'title' => '  Plan',
+                'content' => ' Le plan de financement du projet',
                 'cost' =>NULL
             ],
         [
-                'title' => '',
+                'title' => 'Dispositions ',
                 'content' => "Les dispositions en matière de sécurité, d’hygiène, de
                 salubrité publique, de protection de l’environnement, de la
                 faune, de la flore et du patrimoine national",
@@ -81,12 +81,12 @@ class ObligationSeeder extends Seeder
             [
                 'title' => 'EIES',
                 'content' => 'Pour les entreprises de Biotechnologie, fournir l’Étude
-                d’Impact Environnemental et Social .',
+                d’Impact Environnemental et Social (EIES) .',
                 'cost' => NULL
             ],
 
             [
-                'title' => 'dossier d’agrément',
+                'title' => 'Dossier d’agrément',
                 'content' => "Un formulaire de demande d’agrément dûment renseigné par
                 le représentant légal de l’entreprise
                 - les statuts de la société

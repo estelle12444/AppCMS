@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Demande extends Model
 {
-    public $timestamps = false;
+
     protected $fillable = ['reference','title', 'version','code'];
 
     public function typeDemande()

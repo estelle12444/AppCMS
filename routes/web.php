@@ -122,6 +122,6 @@ Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('Fro
 
 
 
-Route::get('/demande', [TypeDeDemandeController::class, 'index'])->name('Front.demande.index');
-Route::get('/demande/{typeDeDemande}', [TypeDeDemandeController::class, 'form'])->name('Front.demande.form');
+
+Route::get('/demande/{typeDeDemande}', [TypeDeDemandeController::class, 'form'])->name('Front.profil.form');
 

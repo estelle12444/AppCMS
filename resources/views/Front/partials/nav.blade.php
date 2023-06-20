@@ -23,7 +23,7 @@
             <a href="/partners" class="nav-item nav-link">Entreprises Agrées</a>
             <a href="/contact" class="nav-item nav-link">Contactez-Nous</a>
         </div>
-        <a href="/demande" class="btn btn-sm btn-light rounded-pill py-2 px-4 d-none d-lg-block">Faire une demande </a>
+        <a href="{{route('register')}}" class="btn btn-sm btn-light rounded-pill py-2 px-4 d-none d-lg-block">Faire une demande </a>
     </div>
 </nav>
 

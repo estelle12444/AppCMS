@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\TypeDeDemande;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -24,7 +25,8 @@ class ProfilController extends Controller
      */
     public function index()
     {
-        return view('Front.profil.home');
+        $typeDemandes = TypeDeDemande::all();
+        return view('Front.profil.home', compact('typeDemandes'));
     }
 
     public function logout()
@@ -41,5 +43,12 @@ class ProfilController extends Controller
         $username = $user->nom;
 
         return $username;
+    }
+    public function getLastname()
+    {
+        $user = Auth::user();
+        $lastname = $user->prenom;
+
+        return $lastname;
     }
 }

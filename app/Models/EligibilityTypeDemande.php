@@ -9,9 +9,9 @@ class EligibilityTypeDemande extends Model
 {
     protected $table = 'eligibility_type_demande';
     protected $fillable = ['eligibility_id', 'type_de_demande_id'];
-    public $timestamps = false;
 
-    public function Eligibility()
+
+    public function eligibility()
     {
         return $this->belongsTo(
             Eligibility::class

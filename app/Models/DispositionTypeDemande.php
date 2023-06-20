@@ -9,9 +9,9 @@ class DispositionTypeDemande extends Model
 {
     protected $table = 'disposition_type_demande';
     protected $fillable = ['disposition_id', 'type_de_demande_id'];
-    public $timestamps = false;
 
-    public function Disposition()
+
+    public function disposition()
     {
         return $this->belongsTo(
             Disposition::class

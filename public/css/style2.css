@@ -1,0 +1,61 @@
+
+.titre{
+    padding-left:10%;
+    padding-top:10%;
+}
+.texte{
+    text-align: justify;
+     padding-top:5%;
+     padding-left:10%;
+}
+
+.rectangle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .rectangle {
+    width: 300px;
+    height: 200px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .rectangle:hover {
+    background-color: #2a3a7ddf;
+    transform: translateY(-2px);
+    color: #ffffff;
+  }
+
+  .form-part {
+    display: none;
+}
+
+.scrolling-text {
+
+    height: 450px; /* Hauteur de la div de défilement */
+    overflow-y: scroll;
+     /* Permet le défilement vertical */
+  }
+
+
+.right
+{
+    float: right;
+}
+
+.scrolling-inputs {
+   height: 350px;
+
+    overflow-y: scroll; /* Permet le défilement vertical */
+  }
+

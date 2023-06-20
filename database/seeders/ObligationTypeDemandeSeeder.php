@@ -54,7 +54,7 @@ class ObligationTypeDemandeSeeder extends Seeder
                 'type_de_demande_id' => 1
             ],
             [
-                'obligation_id' => 1,
+                'obligation_id' => 10,
                 'type_de_demande_id' => 2
             ],
             [

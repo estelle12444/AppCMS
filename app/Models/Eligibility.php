@@ -7,12 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Eligibility extends Model
 {
-    public $timestamps = false;
+  
     protected $fillable = ['title'];
     public function typeDemandes()
     {
         return $this->belongsToMany(
-            TypeDemande::class,
+            TypeDeDemande::class,
             'eligibility_type_de_demande',
             'eligibility_id',
             'type_de_demande_id'

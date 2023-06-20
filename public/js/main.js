@@ -198,7 +198,20 @@ function nextSection() {
   nextSection.style.display = "block";
 }
 
+$('#renseigner-demande-btn').click(function() {
+    $('#connexion-popup').show();
+  });
 
+  // Fermer la popup de connexion lors du clic sur le bouton "Se connecter"
+  $('#connexion-btn').click(function() {
+    // Ici, vous pouvez ajouter la logique de vérification des informations de connexion
+    // Si les informations de connexion sont valides, vous pouvez effectuer des actions supplémentaires
+    // Sinon, vous pouvez afficher un message d'erreur ou effectuer toute autre action nécessaire
+
+    // Fermer la popup de connexion
+    $('#connexion-popup').hide();
+
+  })
 
 
 

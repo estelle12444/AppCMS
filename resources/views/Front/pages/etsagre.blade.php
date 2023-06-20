@@ -141,75 +141,6 @@
     <!-- Page Header End -->
 
 
-    {{-- <div class="container">
-        <form class="mt-4" style="padding-left:40%; ">
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="Mot cle">
-                <div class="input-group-append">
-                    <button class="btn btn-primary" type="submit">Rechercher </button>
-                </div>
-            </div>
-        </form>
-
-        <br>
-
-
-        <div class="row">
-
-            <div class="col-md-3">
-                <div class=" ">
-
-                    <div class="card-body" id="myButton" data-toggle="modal" data-target="#myModal"
-                        style="text-align: center">
-                        <img src="img/Partenaire/sah.png" class="card-img-top" alt="sah">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class=" ">
-
-                    <div class="card-body" style="text-align: center">
-                        <img src="img/Partenaire/sah.png" class="card-img-top" alt="sah">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class=" ">
-
-                    <div class="card-body" style="text-align: center">
-                        <img src="img/Partenaire/sah.png" class="card-img-top" alt="sah">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class=" ">
-                    <div class="card-body" style="text-align: center">
-                        <img src="img/Partenaire/sah.png" class="card-img-top" alt="sah">
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-
-    <!-- Popup -->
-
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-
-          @foreach ($partners as $partner)
-
-
-          <p>Contenu du pop-up {{$partner->id}}</p>
-
-          @endforeach
-        </div>
-      </div> --}}
-
-
-
     <div class="container">
         <div class="row">
             <div class="col-md-2"></div>
@@ -233,7 +164,7 @@
                             <div class="col-md-4 mb-2">
                                 <input type="text" name="search_term" value="{{ old('search_term') }}"
                                     class=" bg-white shadow form-control"
-                                    placeholder="Recherche par nom de l'entreprise">
+                                    placeholder="Entrer le nom de l'entreprise">
                             </div>
                             <div class="col-md-4">
                                 <button type="submit" class="btn btn-primary">Rechercher</button>
@@ -249,11 +180,7 @@
             <div class="row">
                 @foreach ($partners as $partner)
                     <div class="col-md-2 mb-4">
-                        {{-- <a href="#" data-toggle="modal" data-toggle="modal" data-target="#myModal">
-                            <img src="{{ asset('storage/' . $partner->image) }}" width="150"
-                                alt="Logo du partenaire" class="img-fluid partner-image"
-                                data-partner-id="{{ $partner->id }}">
-                        </a> --}}
+
                         <div class="element" data-toggle="modal" data-target="#elementModal{{ $partner->id }}">
                             <img src="{{ asset('storage/' . $partner->image) }}" alt="Logo du partenaire"
                                 class="img-fluid partner-image img-container" data-partner-id="{{ $partner->id }}">
@@ -261,70 +188,6 @@
 
                     </div>
 
-                    <!-- Modal -->
-                    {{-- <div class="modal fade" id="partner-modal-{{ $partner->id }}" tabindex="-1" role="dialog"
-                        aria-labelledby="partner-modal-title-{{ $partner->id }}" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="partner-modal-title-{{ $partner->id }}">
-                                        {{ $partner->title }}</h5>
-                                    <span class="close">&times;</span>
-
-                                </div>
-                                <div class="modal-body">
-                                    <div class="text-center mb-4">
-                                        <img src="{{ asset('storage/' . $partner->image) }}" height="80"
-                                            width="50" alt="Logo du partenaire" class="img-fluid">
-                                    </div>
-                                    <p>Raison sociale: {{ $partner->title }}</p>
-                                    <p>Description: {{ $partner->content }}</p>
-                                    <h6>Secteurs d'activité :</h6>
-                                    <ul>
-                                        @forelse ($partner->sectors as $sector)
-                                            <li>{{ $sector->sector?->nom }}</li>
-                                        @empty
-                                            <li>Aucun secteur</li>
-                                        @endforelse
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div> --}}
-                    {{-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
-                        aria-labelledby="myModalLabel">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <!-- En-tête du popup -->
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="myModalLabel"> {{ $partner->title }}</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <!-- Contenu du popup -->
-                                <div class="modal-body">
-                                    <img src="{{ asset('storage/' . $partner->image) }}" height="80"
-                                        width="50" alt="Logo du partenaire" class="img-fluid">
-                                    <p>Raison sociale: {{ $partner->title }}</p>
-                                    <p>Description: {{ $partner->content }}</p>
-                                    <h6>Secteurs d'activité :</h6>
-                                    <ul>
-                                        @forelse ($partner->sectors as $sector)
-                                            <li>{{ $sector->sector?->nom }}</li>
-                                        @empty
-                                            <li>Aucun secteur</li>
-                                        @endforelse
-                                    </ul>
-                                </div>
-                                <!-- Pied du popup -->
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-dismiss="modal">Fermer</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div> --}}
 
                     <!-- Modal pour chaque élément -->
                     <div class="modal fade" id="elementModal{{ $partner->id }}" tabindex="-1" role="dialog"
@@ -345,8 +208,8 @@
 
 
                                 <div class="modal-body">
-                                    <img src="{{ asset('storage/' . $partner->image) }}" width="100"
-                                        alt="Logo du partenaire" class="img-fluid img-container image-popup">
+                                    <img src="{{ asset('storage/' . $partner->image) }}" width="150"
+                                        alt="Logo du partenaire" class="img-fluid  image-popup">
 
                                     <h6> Raison sociale : </h6>
                                     <p>{{ $partner->title }}</p>
