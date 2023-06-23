@@ -4,10 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Models\Disposition;
 use App\Models\DispositionTypeDemande;
+use App\Models\DocumentTypeDemande;
 use App\Models\EligibilityTypeDemande;
 use App\Models\Obligation;
 use App\Models\ObligationTypeDemande;
 use App\Models\TypeDeDemande;
+use App\Models\TypeDocumentTypeDemande;
 use Illuminate\Contracts\Session\Session;
 use Illuminate\Http\Request;
 
@@ -30,7 +32,9 @@ class TypeDeDemandeController extends Controller
 
         $eligibilities = EligibilityTypeDemande::with('eligibility')->where('type_de_demande_id', $typeDeDemande->id)
         ->get();
+        $documentsType = TypeDocumentTypeDemande::with('typeDocuments')->where('type_de_demande_id', $typeDeDemande->id)
+        ->get();
 
-        return view('Front.profil.form',  compact('typeDeDemande','obligations','dispositions','eligibilities'));
+        return view('Front.profil.form',  compact('typeDeDemande','obligations','dispositions','eligibilities','documentsType'));
     }
 }

@@ -43,5 +43,11 @@ class TypeDeDemande extends Model
     {
         return $this->hasMany(Demande::class);
     }
-    public $timestamps = false;
+
+    public function typeDocuments(){
+        return $this->hasMany(TypeDeDocument::class,
+        'type_de_demande_type_de_document',
+        'type_de_document_id',
+        'type_de_demande_id');
+    }
 }

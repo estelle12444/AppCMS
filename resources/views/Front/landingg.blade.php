@@ -43,7 +43,7 @@ https://templatemo.com/tm-567-nomad-force
         <section class="hero" id="hero">
             <div class="heroText">
                 <h4 class="text-white mt-5 mb-lg-4" data-aos="zoom-in" data-aos-delay="800" style="text-align: center">
-                    <img src="img/logo1.png" width="300" alt="">
+                    <img src="img/logo2.png" width="150" alt="">
                 </h4>
 
                 <p class="text-secondary-white-color" data-aos="fade-up" data-aos-delay="1000">
@@ -54,7 +54,7 @@ https://templatemo.com/tm-567-nomad-force
 
             <div class="videoWrapper">
                 <video autoplay="" loop="" muted="" class="custom-video"
-                    poster="videos/792bd98f3e617786c850493560e11c45.jpg">
+                    poster="videos/792bd98f3e617786c850493560e11c45.png">
                     <source src="videos/814dc43e870597176cad645798825c03.mp4" type="video/mp4">
 
                     Your browser does not support the video tag.
@@ -104,7 +104,7 @@ https://templatemo.com/tm-567-nomad-force
             <div class="container mb-5 pb-lg-5">
                 <div class="row">
                     <div class="col-12">
-                        <h2 class="mb-3" data-aos="fade-up">Village de l'Innovation Technologique</h2>
+                        <h2 class="mb-3" data-aos="fade-up" style="color: #01943e">Village de l'Innovation Technologique</h2>
                     </div>
 
                     <div class="col-lg-6 col-12 mt-3 mb-lg-5">

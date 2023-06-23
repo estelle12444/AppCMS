@@ -5,7 +5,9 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
+
         <div class="navbar-nav me-auto p-3 p-lg-0">
+
             <a href="/home" class="nav-item nav-link active">Accueil</a>
             <a href="/about" class="nav-item nav-link">A Propos </a>
             <a href="/join" class="nav-item nav-link">Rejoignez-nous</a>
@@ -23,7 +25,7 @@
             <a href="/partners" class="nav-item nav-link">Entreprises Agrées</a>
             <a href="/contact" class="nav-item nav-link">Contactez-Nous</a>
         </div>
-        <a href="{{route('register')}}" class="btn btn-sm btn-light rounded-pill py-2 px-4 d-none d-lg-block">Faire une demande </a>
+        <a href="{{route('login')}}" class="btn btn-sm btn-light rounded-pill py-2 px-4 d-none d-lg-block">Faire une demande </a>
     </div>
 </nav>
 

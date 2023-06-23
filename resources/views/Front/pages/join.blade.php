@@ -8,7 +8,7 @@
             <h1 class="display-4 text-white animated slideInDown mb-3">Nous Rejoindre</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Accueil</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="/home">Accueil</a></li>
                     <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
                     <li class="breadcrumb-item text-primary active" aria-current="page">Rejoindre</li>
                 </ol>
@@ -166,7 +166,7 @@
             <div class="owl-carousel project-carousel wow fadeInUp" data-wow-delay="0.1s">
                 <div class="project-item border rounded h-100 p-4" data-dot="01">
                     <div class="position-relative mb-4">
-                        <img class="img-fluid rounded" src="img/project-1.jpg" alt="">
+                        <img class="img-fluid rounded" src="img/Picture2.png" alt="">
                         <a href="img/project-1.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
                     </div>
                     <h6>624 hectares </h6>
@@ -174,15 +174,15 @@
                 </div>
                 <div class="project-item border rounded h-100 p-4" data-dot="02">
                     <div class="position-relative mb-4">
-                        <img class="img-fluid rounded" src="img/project-2.jpg" alt="">
+                        <img class="img-fluid rounded" src="img/Picture5.png" alt="">
                         <a href="img/project-2.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
                     </div>
-                    <h6>2400 hectares</h6>
-                    <span> viabilisés en eau, en électricité, en fibre optique, en voiries sites A et B</span>
+                    <h6>2400 hectares viabilisés</h6>
+                    <span>  en eau, en électricité, en fibre optique, en voiries sites A et B</span>
                 </div>
                 <div class="project-item border rounded h-100 p-4" data-dot="03">
                     <div class="position-relative mb-4">
-                        <img class="img-fluid rounded" src="img/project-3.jpg" alt="">
+                        <img class="img-fluid rounded" src="img/Picture.png" alt="">
                         <a href="img/project-2.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
                     </div>
                     <h6>cinq (05) Data Centers</h6>
@@ -190,7 +190,7 @@
                 </div>
                 <div class="project-item border rounded h-100 p-4" data-dot="04">
                     <div class="position-relative mb-4">
-                        <img class="img-fluid rounded" src="img/project-4.jpg" alt="">
+                        <img class="img-fluid rounded" src="img/Picture2.png" alt="">
                         <a href="img/project-4.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
                     </div>
                     <h6>Un cadre</h6>
@@ -198,7 +198,7 @@
                 </div>
                 <div class="project-item border rounded h-100 p-4" data-dot="05">
                     <div class="position-relative mb-4">
-                        <img class="img-fluid rounded" src="img/project-5.jpg" alt="">
+                        <img class="img-fluid rounded" src="img/Picture8.png" alt="">
                         <a href="img/project-5.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
                     </div>
                     <h6>sécurité</h6>
@@ -206,19 +206,19 @@
                 </div>
                 <div class="project-item border rounded h-100 p-4" data-dot="06">
                     <div class="position-relative mb-4">
-                        <img class="img-fluid rounded" src="img/project-6.jpg" alt="">
+                        <img class="img-fluid rounded" src="img/Picture10.png" alt="">
                         <a href="img/project-6.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
                     </div>
-                    <h6>Une politique</h6>
-                    <span> hardie de protection, de garantie et de promotion de l&#39;investissement privé</span>
+                    <h6>Une politique  hardie de protection</h6>
+                    <span> de garantie et de promotion de l&#39;investissement privé</span>
                 </div>
                 <div class="project-item border rounded h-100 p-4" data-dot="07">
                     <div class="position-relative mb-4">
                         <img class="img-fluid rounded" src="img/project-7.jpg" alt="">
                         <a href="img/project-7.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
                     </div>
-                    <h6>Des infrastructures</h6>
-                    <span> routières, portuaires et aéroportuaires de qualité et en pleine expansion</span>
+                    <h6>Des infrastructures routières,</h6>
+                    <span>  portuaires et aéroportuaires de qualité et en pleine expansion</span>
                 </div>
                 <div class="project-item border rounded h-100 p-4" data-dot="08">
                     <div class="position-relative mb-4">
@@ -226,7 +226,7 @@
                         <a href="img/project-8.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
                     </div>
                     <h6>Des réseaux</h6>
-                    <span>Des réseaux de télécommunications fiables et avancés</span>
+                    <span>de télécommunications fiables et avancés</span>
                 </div>
                 <div class="project-item border rounded h-100 p-4" data-dot="09">
                     <div class="position-relative mb-4">
@@ -250,8 +250,8 @@
                         <a href="img/project-10.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
                     </div>
                     <h6>Mise à disposition de terrain sous forme de bail  </h6>
-                    <span> de 15 à 50ans en vue de la réalisation d’infrastructures immobilières bureaux, logements, Golf club,
-                        hôtels…</span>
+                    <span> de 15 à 50ans en vue de la réalisation d’infrastructures immobilières
+                        </span>
                 </div>
                 <div class="project-item border rounded h-100 p-4" data-dot="12">
                     <div class="position-relative mb-4">

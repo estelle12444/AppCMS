@@ -65,9 +65,9 @@
     <div class="container-fluid py-4 px-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="row align-items-center top-bar">
             <div class="col-lg-4 col-md-12 text-center text-lg-start">
-                <a href="" class="navbar-brand m-0 p-0">
+                <a href="/home" class="navbar-brand m-0 p-0">
                     <h1 class="fw-bold text-primary m-0">
-                        <img src="{{asset('img/logo1.png')}}" width="200" alt="">
+                        <img src="{{asset('img/logo2.png')}}" width="200" alt="">
                        </h1>
                     <!-- <img src="img/logo.png')}}" alt="Logo"> -->
                 </a>
@@ -81,7 +81,7 @@
                             </div>
                             <div class="ps-3">
                                 <p class="mb-2 ">Horaire</p>
-                                <h6 class="mb-0" style="color: orange">Lun - Vend 8:00 - 17:00</h6>
+                                <h6 class="mb-0" style="color: #ed7406">Lun - Vend 8:00 - 17:00</h6>
                             </div>
                         </div>
                     </div>
@@ -92,7 +92,7 @@
                             </div>
                             <div class="ps-3">
                                 <p class="mb-2">Appel</p>
-                                <h6 class="mb-0" style="color: orange">+(225) 27 21 31 29 00</h6>
+                                <h6 class="mb-0" style="color: #ed7406">+(225) 27 21 31 29 00</h6>
                             </div>
                         </div>
                     </div>
@@ -103,7 +103,7 @@
                             </div>
                             <div class="ps-3">
                                 <p class="mb-2">Email </p>
-                                <h6 class="mb-0" style="color: orange">www.vitib.ci</h6>
+                                <h6 class="mb-0" style="color: #ed7406">www.vitib.ci</h6>
                             </div>
                         </div>
                     </div>

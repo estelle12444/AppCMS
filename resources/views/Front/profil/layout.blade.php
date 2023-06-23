@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html :class="{ 'theme-dark': dark }" x-data="data()" lang="en">
+<html :class="{ 'theme-!dark': !dark }" x-data="data()" lang="fr">
 
 <head>
     <meta charset="UTF-8" />
@@ -20,13 +20,14 @@
 </head>
 
 <body>
-    <div class="flex h-screen bg-gray-50 dark:bg-gray-900" :class="{ 'overflow-hidden': isSideMenuOpen }">
+    <div class="flex h-screen bg-gray-50 dark:bg-gray-900" >
+    {{-- <div class="flex h-screen bg-gray-50 dark:bg-gray-900" :class="{ 'overflow-hidden': isSideMenuOpen }"> --}}
         <!-- Desktop sidebar -->
         <aside class="z-20 hidden w-64 overflow-y-auto bg-white dark:bg-gray-800 md:block flex-shrink-0">
             <div class="py-4 text-gray-500 dark:text-gray-400">
 
                 <a style="text-align: center" href="/profil">
-                    <img src="{{asset('img/logo1.png')}}" width="150" alt="">
+                    <img src="{{asset('img/logo2.png')}}" width="200" alt="">
                 </a>
                 <ul class="mt-6">
                     <li class="relative px-6 py-3">
@@ -40,7 +41,7 @@
                                     d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
                                 </path>
                             </svg>
-                            <span class="ml-4">Dashboard</span>
+                            <span class="ml-4">Tableau de bord</span>
                         </a>
                     </li>
                 </ul>
@@ -80,7 +81,7 @@
                             <span class="ml-4">Documents</span>
                         </a>
                     </li>
-                    <li class="relative px-6 py-3">
+                    {{-- <li class="relative px-6 py-3">
                         <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                             href="buttons.html">
                             <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round"
@@ -113,7 +114,7 @@
                             </svg>
                             <span class="ml-4">Tables</span>
                         </a>
-                    </li>
+                    </li>--}}
                     <li class="relative px-6 py-3">
                         <button
                             class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
@@ -380,7 +381,7 @@
                     </div>
                     <ul class="flex items-center flex-shrink-0 space-x-6">
                         <!-- Theme toggler -->
-                        <li class="flex">
+                        {{-- <li class="flex">
                             <button class="rounded-md focus:outline-none focus:shadow-outline-purple"
                                 @click="toggleTheme" aria-label="Toggle color mode">
                                 <template x-if="!dark">
@@ -397,7 +398,7 @@
                                     </svg>
                                 </template>
                             </button>
-                        </li>
+                        </li> --}}
                         <!-- Notifications menu -->
                         <li class="relative">
                             <button

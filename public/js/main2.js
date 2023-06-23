@@ -88,3 +88,7 @@ function nextSection() {
   currentSection.style.display = "none";
   nextSection.style.display = "block";
 }
+function toggleFileInput(checkbox, documentId) {
+    var fileInputContainer = document.getElementById('fileInputContainer_' + documentId);
+    fileInputContainer.style.display = checkbox.checked ? 'block' : 'none';
+}

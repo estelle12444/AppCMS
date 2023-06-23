@@ -2,7 +2,7 @@
 
 @section('content')
     <!-- Carousel Start -->
-    <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s" >
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="0" class="active" aria-current="true"
@@ -15,50 +15,50 @@
                 <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="2" aria-label="Slide 3">
                     <img class="img-fluid" src="img/carousel-3.jpg" alt="Image">
                 </button>
-                <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="2" aria-label="Slide 3">
+                <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="3" aria-label="Slide 4">
                     <img class="img-fluid" src="img/carousel-4.jpg" alt="Image">
                 </button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                    <img class="w-100" src="img/carousel-1.jpg"  style="height: 650px" alt="Image">
                     <div class="carousel-caption">
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase mb-4 animated zoomIn">Ensemble bâtissons une autre Afrique
                             </h4>
-                            <h1 class="display-1 text-white mb-0 animated zoomIn">celle de grands défis de la nouvelle
-                                économie.</h1>
+                            <h3 class="display-1 text-white mb-0 animated zoomIn">celle de grands défis de la nouvelle
+                                économie.</h3>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <img class="w-100" src="img/carousel-2.jpg"  style="height: 650px" alt="Image">
                     <div class="carousel-caption">
                         <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-white text-uppercase mb-4 animated zoomIn">We Are Leader In</h4>
-                            <h1 class="display-1 text-white mb-0 animated zoomIn">Creative & Innovative Digital Solution
-                            </h1>
+                            <h4 class="text-white text-uppercase mb-4 animated zoomIn">Nous sommes les leader en</h4>
+                            <h3 class="display-1 text-white mb-0 animated zoomIn">Solution numérique créative et innovante
+                            </h3>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-3.jpg" alt="Image">
+                    <img class="w-100" src="img/carousel-3.jpg"  style="height: 650px" alt="Image">
                     <div class="carousel-caption">
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase mb-4 animated zoomIn">des Data Center de la zone franche
                             </h4>
-                            <h1 class="display-1 text-white mb-0 animated zoomIn"> aux normes internationales</h1>
+                            <h3 class="display-1 text-white mb-0 animated zoomIn"> aux normes internationales</h3>
                         </div>
                     </div>
                 </div>
 
                 <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-4.jpg" alt="Image">
+                    <img class="w-100" src="img/carousel-4.jpg" style="height: 650px"alt="Image">
                     <div class="carousel-caption">
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase mb-4 animated zoomIn">Nous vous invitons donc à un
                                 partenariat</h4>
-                            <h1 class="display-1 text-white mb-0 animated zoomIn">bénéfique pour nos deux parties.</h1>
+                            <h3 class="display-1 text-white mb-0 animated zoomIn">bénéfique pour nos deux parties.</h3>
                         </div>
                     </div>
                 </div>
@@ -80,28 +80,28 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="fact-item bg-light rounded text-center h-100 p-5">
                         <i class="fa fa-certificate fa-4x text-primary mb-4"></i>
                         <h5 class="mb-3">Années d'Experience</h5>
                         <h1 class="display-5 mb-0" data-toggle="counter-up">15</h1>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="fact-item bg-light rounded text-center h-100 p-5">
                         <i class="fa fa-users-cog fa-4x text-primary mb-4"></i>
                         <h5 class="mb-3">Entréprises</h5>
                         <h1 class="display-5 mb-0" data-toggle="counter-up">900</h1>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                {{-- <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="fact-item bg-light rounded text-center h-100 p-5">
                         <i class="fa fa-users fa-4x text-primary mb-4"></i>
                         <h5 class="mb-3">Visiteurs</h5>
                         <h1 class="display-5 mb-0" data-toggle="counter-up">2000000+</h1>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                </div> --}}
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="fact-item bg-light rounded text-center h-100 p-5">
                         <i class="fa fa-check fa-4x text-primary mb-4"></i>
                         <h5 class="mb-3">Projects réalisés</h5>
@@ -120,7 +120,7 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="img-border">
-                        <img class="img-fluid" src="img/Dosso_mebetti_DG.jpg" alt="">
+                        <img class="img-fluid" src="img/team-1.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -167,7 +167,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <a class="service-item d-block rounded text-center h-100 p-4" href="">
-                        <img class="img-fluid rounded mb-4" src="img/service-2.jpg" alt="">
+                        <img class="img-fluid rounded mb-4" src="img/affaire.jpg" alt="">
                         <h4 class="mb-0">Immeubles à bureaux</h4>
                     </a>
                 </div>

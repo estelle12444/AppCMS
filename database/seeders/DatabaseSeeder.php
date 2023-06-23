@@ -37,5 +37,12 @@ class DatabaseSeeder extends Seeder
         $this->call(ObligationTypeDemandeSeeder::class);
         $this->call(DispositionTypeDemandeSeeder::class);
 
+
+        $this->call(TypeDeDocumentSeeder::class);
+        $this->call(TypeDocumentTypeDemandeSeeder::class);
+        $this->call(BusinessPlanSeeder::class);
+
+
+
     }
 }
