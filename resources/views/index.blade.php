@@ -83,14 +83,14 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="fact-item bg-light rounded text-center h-100 p-5">
                         <i class="fa fa-certificate fa-4x text-primary mb-4"></i>
-                        <h5 class="mb-3">Années d'Experience</h5>
+                        <h5 class="mb-3">Années d'Expériences</h5>
                         <h1 class="display-5 mb-0" data-toggle="counter-up">15</h1>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="fact-item bg-light rounded text-center h-100 p-5">
                         <i class="fa fa-users-cog fa-4x text-primary mb-4"></i>
-                        <h5 class="mb-3">Entréprises</h5>
+                        <h5 class="mb-3">Entreprises</h5>
                         <h1 class="display-5 mb-0" data-toggle="counter-up">900</h1>
                     </div>
                 </div>
@@ -104,7 +104,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="fact-item bg-light rounded text-center h-100 p-5">
                         <i class="fa fa-check fa-4x text-primary mb-4"></i>
-                        <h5 class="mb-3">Projects réalisés</h5>
+                        <h5 class="mb-3">Projets réalisés</h5>
                         <h1 class="display-5 mb-0" data-toggle="counter-up">2000</h1>
                     </div>
                 </div>
@@ -120,7 +120,7 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="img-border">
-                        <img class="img-fluid" src="img/team-1.jpg" alt="">
+                        <img class="img-fluid" src="img/team-2.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -135,7 +135,7 @@
                         <p class="mb-4">Elle est bordée par la Lagune Ebrié, qui s’étend le long de l’Océan Atlantique et
                             constitue le plus grand système lagunaire de Côte d’Ivoire.</p>
                         <div class="d-flex align-items-center mb-4 pb-2">
-                            <img class="flex-shrink-0 rounded-circle" src="img/team-1.jpg" alt=""
+                            <img class="flex-shrink-0 rounded-circle" src="img/team-2.jpg" alt=""
                                 style="width: 50px; height: 50px;">
                             <div class="ps-4">
                                 <h6>DOSSO MEBETTI </h6>

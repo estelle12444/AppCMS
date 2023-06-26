@@ -265,6 +265,15 @@
     object-fit: cover;
     border-radius: 6px;
 }
+.img-borde img {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    width: calc(100% - 3rem);
+   
+    object-fit: cover;
+    border-radius: 6px;
+}
 
 
 /*** Facts ***/
