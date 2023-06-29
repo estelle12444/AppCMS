@@ -67,7 +67,7 @@
             <div class="col-lg-4 col-md-12 text-center text-lg-start">
                 <a href="/home" class="navbar-brand m-0 p-0">
                     <h1 class="fw-bold text-primary m-0">
-                        <img src="{{asset('img/logo2.png')}}" width="200" alt="">
+                        <img src="{{asset('img/logo2.png')}}" width="200" alt="logo">
                        </h1>
                     <!-- <img src="img/logo.png')}}" alt="Logo"> -->
                 </a>

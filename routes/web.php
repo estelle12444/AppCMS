@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\DownloadController;
 use App\Http\Controllers\PartnerController;
 use App\Models\Message;
@@ -121,7 +122,8 @@ Route::get('/profil', [App\Http\Controllers\ProfilController::class, 'index'])->
 Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('Front.admin.home');
 
 
-
+Route::get('/auth/register',  [RegisterController::class, 'create'])->name('auth.register');
+Route::post('auth',  [RegisterController::class, 'store'])->name('auth.login');
 
 Route::get('/demande/{typeDeDemande}', [TypeDeDemandeController::class, 'form'])->name('Front.profil.form');
 

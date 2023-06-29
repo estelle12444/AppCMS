@@ -27,13 +27,7 @@
     <link href="css/aos.css" rel="stylesheet">
 
     <link href="css/templatemo-nomad-force.css" rel="stylesheet">
-    <!--
 
-TemplateMo 567 Nomad Force
-
-https://templatemo.com/tm-567-nomad-force
-
--->
 </head>
 
 <body>
@@ -64,47 +58,14 @@ https://templatemo.com/tm-567-nomad-force
             <div class="overlay"></div>
         </section>
 
-        {{-- <nav class="navbar navbar-expand-lg bg-light shadow-lg">
-                <div class="container">
-                    <a class="navbar-brand" href="index.html">
-                        <strong>Nomad Force</strong>
-                    </a>
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav mx-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#hero">Home</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#about">Our Studio</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#portfolio">Portfolio</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#news">News & Events</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contact">Contact Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav> --}}
 
         <section class="section-padding pb-0" id="about">
             <div class="container mb-5 pb-lg-5">
                 <div class="row">
                     <div class="col-12">
-                        <h2 class="mb-3" data-aos="fade-up" style="color: #01943e">Village de l'Innovation Technologique</h2>
+                        <h2 class="mb-3" data-aos="fade-up" style="color: #01943e">Village de l'Innovation
+                            Technologique</h2>
                     </div>
 
                     <div class="col-lg-6 col-12 mt-3 mb-lg-5">
@@ -315,17 +276,17 @@ https://templatemo.com/tm-567-nomad-force
             </section>
     </footer>  --}}
 
-            <!-- JAVASCRIPT FILES -->
+    <!-- JAVASCRIPT FILES -->
 
 
-            <script src="js/jquery.min.js"></script>
-            <script src="js/bootstrap.bundle.min.js"></script>
-            <script src="js/jquery.sticky.js"></script>
-            <script src="js/aos.js"></script>
-            <script src="js/jquery.magnific-popup.min.js"></script>
-            <script src="js/magnific-popup-options.js"></script>
-            <script src="js/scrollspy.min.js"></script>
-            <script src="js/custom.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/magnific-popup-options.js"></script>
+    <script src="js/scrollspy.min.js"></script>
+    <script src="js/custom.js"></script>
 
 </body>
 
