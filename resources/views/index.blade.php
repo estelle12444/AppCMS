@@ -125,7 +125,7 @@
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="h-100">
-                        <h6 class="section-title bg-white text-start text-primary pe-3">LE VITIB</h6>
+                        <h6 class="section-title bg-white text-start text-primary pe-3">LE VITIB main</h6>
                         <h1 class="display-6 mb-4">#1 La Zone Franche de la Biotechnologie <span class="text-primary">624
                                 hectares</span> d'étendue</h1>
                         <p>La première zone franche ivoirienne.
