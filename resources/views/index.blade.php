@@ -56,9 +56,9 @@
                     <img class="w-100" src="img/carousel-4.jpg" style="height: 650px"alt="Image">
                     <div class="carousel-caption">
                         <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-white text-uppercase mb-4 animated zoomIn">Nous vous invitons donc à un
+                            <h4 class="text-white text-uppercase mb-4 animated zoomIn">Nous vous invitons  à un
                                 partenariat</h4>
-                            <h3 class="display-1 text-white mb-0 animated zoomIn">bénéfique pour nos deux parties.</h3>
+                            <h3 class="display-1 text-white mb-0 animated zoomIn">GAGNANT-GAGNANT.</h3>
                         </div>
                     </div>
                 </div>
@@ -125,8 +125,8 @@
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="h-100">
-                        <h6 class="section-title bg-white text-start text-primary pe-3">LE VITIB main</h6>
-                        <h1 class="display-6 mb-4">#1 La Zone Franche de la Biotechnologie <span class="text-primary">624
+                        <h6 class="section-title bg-white text-start text-primary pe-3">LE VITIB</h6>
+                        <h1 class="display-6 mb-4">#1 La Zone Franche de la Biotechnologie : <span class="text-primary">624
                                 hectares</span> d'étendue</h1>
                         <p>La première zone franche ivoirienne.
                             Elle a pour but d’accueillir des entreprises au niveau technologique élevé et qui présentent un
@@ -156,40 +156,76 @@
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                 <h6 class="section-title bg-white text-center text-primary px-3">Projets</h6>
-                <h1 class="display-6 mb-4">Nous vous offrons meilleur dans tous les secteurs </h1>
+                <h1 class="display-6 mb-4">Nous vous offrons le meilleur dans tous les secteurs </h1>
             </div>
             <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <a class="service-item d-block rounded text-center h-100 p-4" href="">
                         <img class="img-fluid rounded mb-4" src="img/service-1.jpg" alt="">
                         <h4 class="mb-0">Entrepôts à louer</h4>
                     </a>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <img class="img-fluid rounded mb-4" src="img/service-1.jpg" alt="">
+                        <h4 class="mb-0">Entrepôts à louer</h4>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <a class="service-item d-block rounded text-center h-100 p-4" href="">
                         <img class="img-fluid rounded mb-4" src="img/affaire.jpg" alt="">
                         <h4 class="mb-0">Immeubles à bureaux</h4>
                     </a>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <a class="service-item d-block rounded text-center h-100 p-4" href="">
                         <img class="img-fluid rounded mb-4" src="img/service-3.jpg" alt="">
                         <h4 class="mb-0">Tours jumelles</h4>
                     </a>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <a class="service-item d-block rounded text-center h-100 p-4" href="">
                         <img class="img-fluid rounded mb-4" src="img/service-4.jpg" alt="">
                         <h4 class="mb-0">Allée Commerciale</h4>
                     </a>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <a class="service-item d-block rounded text-center h-100 p-4" href="">
                         <img class="img-fluid rounded mb-4" src="img/service-5.jpg" alt="">
                         <h4 class="mb-0">Hôtels</h4>
                     </a>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <img class="img-fluid rounded mb-4" src="img/service-6.jpg" alt="">
+                        <h4 class="mb-0">Université</h4>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <img class="img-fluid rounded mb-4" src="img/service-6.jpg" alt="">
+                        <h4 class="mb-0">Université</h4>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <img class="img-fluid rounded mb-4" src="img/service-6.jpg" alt="">
+                        <h4 class="mb-0">Université</h4>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <img class="img-fluid rounded mb-4" src="img/service-6.jpg" alt="">
+                        <h4 class="mb-0">Université</h4>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <img class="img-fluid rounded mb-4" src="img/service-6.jpg" alt="">
+                        <h4 class="mb-0">Université</h4>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <a class="service-item d-block rounded text-center h-100 p-4" href="">
                         <img class="img-fluid rounded mb-4" src="img/service-6.jpg" alt="">
                         <h4 class="mb-0">Université</h4>

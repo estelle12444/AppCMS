@@ -81,6 +81,9 @@ Route::get('/messages', function (Request $request) {
 });
 
 
+Route::get('/actu', function () {
+    return view('Front.pages.actu');
+});
 
 
 

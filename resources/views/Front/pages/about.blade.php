@@ -31,13 +31,11 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s" style="text-align: justify">
                     <div class="h-100">
                         <h6 class="section-title bg-white text-start text-primary pe-3">LE VITIB</h6>
-                    <h1 class="display-6 mb-4">#1 Zone Franche de la Biotechnologie <span class="text-primary">624 hectares</span></h1>
+                    <h1 class="display-6 mb-4">#1 Zone Franche de la Biotechnologie : <span class="text-primary">624 hectares</span></h1>
 
                     <p class="mb-4">
 
                             Par décret, la société VITIB S.A. a été désignée EPE (Entreprise de Promotion et d’Exploitation) avec délégation de service public conformément à la loi instituant le régime de la ZBTIC.</p>
-
-
 
                             La Zone Franche de la Biotechnologie, des Technologies de l’Information et de la Communication (ZBTIC) est la première zone franche ivoirienne avec une étendue de 624 hectares.
 
@@ -76,7 +74,7 @@
                             <img class="img-fluid rounded" src="img/project-1.jpg" alt="">
                             <a href="img/project-1.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
                         </div>
-                        <h6>La Zone Franche(zone sous douane)</h6>
+                        <h6>La Zone Franche <br>(zone sous douane)</h6>
                         <span>Elle accueille les industries de la biotechnologie, les industries d’assemblage et les immeubles de bureaux.
                             Cette zone  a une entrée restreinte.
                         </span>
@@ -120,19 +118,19 @@
                 <div class="row g-4">
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <a class="service-item d-block rounded text-center h-100 p-4" href="">
-                            <img class="img-fluid rounded mb-4" src="img/service-1.jpg" alt="">
+                            <img class="img-fluid rounded mb-4" src="img/station_vsat.jpg" alt="">
                             <h4 class="mb-0">Hébergement d’entreprises</h4>
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <a class="service-item d-block rounded text-center h-100 p-4" href="">
-                            <img class="img-fluid rounded mb-4" src="img/service-2.jpg" alt="">
+                            <img class="img-fluid rounded mb-4" src="img/data_centre.jpg" alt="">
                             <h4 class="mb-0">Produits technologiques</h4>
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <a class="service-item d-block rounded text-center h-100 p-4" href="">
-                            <img class="img-fluid rounded mb-4" src="img/service-3.jpg" alt="">
+                            <img class="img-fluid rounded mb-4" src="img/pepiniere.png" width="250" alt="">
                             <h4 class="mb-0">Pépinière d’entreprises</h4>
                         </a>
                     </div>

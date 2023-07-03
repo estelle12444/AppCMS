@@ -23,6 +23,16 @@
             </div>
 
             <a href="/partners" class="nav-item nav-link">Entreprises Agrées</a>
+            <div class="nav-item dropdown">
+                <a href="" class="nav-item nav-link nav-link dropdown-toggle" data-bs-toggle="dropdown">Mediathèque</a>
+                <div class="dropdown-menu border-0 rounded-0 rounded-bottom m-0">
+                    <a href="/actu" class="dropdown-item"> Nos actualites</a>
+                    <a href="#" class="dropdown-item">Documents</a>
+                    <a href="#" class="dropdown-item">Media </a>
+
+                </div>
+            </div>
+            <a href="#" class="nav-item nav-link">Espace AE VITIB</a>
             <a href="/contact" class="nav-item nav-link">Contactez-Nous</a>
         </div>
         <a href="{{route('login')}}" class="btn btn-sm btn-light rounded-pill py-2 px-4 d-none d-lg-block">Faire une demande </a>

@@ -25,7 +25,7 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="h-100">
                         <h6 class="section-title bg-white text-start text-primary pe-3">NOUS REJOINDRE</h6>
-                        <h1 class="display-6 mb-4">Pourquoi rejoindre la Zone Franche ?</h1>
+                        <h1 class="display-6 mb-4">Pourquoi rejoindre la Zone Franche de Grand-Bassam ?</h1>
                         <p class="mb-4"> La ZBTIC est un territoire sur lequel s’appliquent des politiques fiscales et
                             douanières avantageuses.</p>
                         <div class="row g-4">
@@ -52,7 +52,7 @@
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="img-border">
-                        <img class="img-fluid" src="img/feature.jpg" alt="">
+                        <img class="img-fluid" src="img/contact.png" alt="">
                     </div>
                 </div>
             </div>
@@ -246,21 +246,14 @@
                 </div>
                 <div class="project-item border rounded h-100 p-4" data-dot="11">
                     <div class="position-relative mb-4">
-                        <img class="img-fluid rounded" src="img/project-10.jpg" alt="">
-                        <a href="img/project-10.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
+                        <img class="img-fluid rounded" src="img/bail.jpg" alt="">
+                        <a href="img/bail.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
                     </div>
-                    <h6>Mise à disposition de terrain sous forme de bail  </h6>
-                    <span> de 15 à 50ans en vue de la réalisation d’infrastructures immobilières
+                    <h6>Mise à disposition de terrain sous forme de bail emphytéotique </h6>
+                    <span> de 15 à 50ans pour la réalisation d’infrastructures immobilières
                         </span>
                 </div>
-                <div class="project-item border rounded h-100 p-4" data-dot="12">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded" src="img/project-10.jpg" alt="">
-                        <a href="img/project-10.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
-                    </div>
-                    <h6>Mise à disposition</h6>
-                    <span> dans l’immédiat de locaux à loyers très compétitifs</span>
-                </div>
+
             </div>
         </div>
     </div>
