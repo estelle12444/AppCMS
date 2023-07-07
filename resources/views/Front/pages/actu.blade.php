@@ -32,14 +32,14 @@
                                     <img src="img/carousel-1.jpg" class="img-fluid large-news-image news-image" alt="">
                                 </a>
 
-                                <div class="news-category bg-warning text-white">News</div>
+                                <div class="news-category bg-warning text-white">Nouvelles</div>
 
                                 <div class="news-text-info">
                                     <h5 class="news-title">
-                                        <a href="news-detail.html" class="news-title-link">The rise of the gig economy spells the end for these workers the old system</a>
+                                        <a href="news-detail.html" class="news-title-link">L'essor de l'économie des petits boulots sonne la fin pour ces travailleurs de l'ancien système</a>
                                     </h5>
 
-                                    <span class="text-muted">22 hours ago</span>
+                                    <span class="text-muted">Il y a 3 ans</span>
                                 </div>
                             </div>
                         </div>
@@ -52,22 +52,22 @@
                                         <img src="img/carousel-2.jpg" class="img-fluid news-image" alt="">
                                     </a>
 
-                                    <div class="news-category bg-primary text-white">Events</div>
+                                    <div class="news-category bg-primary text-white">Événements</div>
                                 </div>
 
                                 <div class="news-bottom w-100">
                                     <div class="news-text-info">
                                         <h5 class="news-title">
-                                            <a href="news-detail.html" class="news-title-link">Job Opportunities: Digital, Marketing</a>
+                                            <a href="news-detail.html" class="news-title-link">Opportunités d'emploi : numérique, marketing</a>
                                         </h5>
 
                                         <div class="d-flex flex-wrap">
                                             <span class="text-muted me-2">
                                                 <i class="bi-geo-alt-fill me-1 mb-2 mb-lg-0"></i>
-                                                Alaska,
+                                                Abidjan,
                                             </span>
 
-                                            <span class="text-muted">August 6, 2021</span>
+                                            <span class="text-muted">6 Aout, 2021</span>
                                         </div>
                                     </div>
                                 </div>
@@ -80,16 +80,16 @@
                                         <img src="img/carousel-4.jpg" class="img-fluid news-image" alt="">
                                     </a>
 
-                                    <div class="news-category bg-success text-white">News</div>
+                                    <div class="news-category bg-success text-white">Nouvelles</div>
                                 </div>
 
                                 <div class="news-bottom w-100">
                                     <div class="news-text-info">
                                         <h5 class="news-title">
-                                            <a href="news-detail.html" class="news-title-link">What happened to new viral video?</a>
+                                            <a href="news-detail.html" class="news-title-link">Qu'est-il arrivé à la nouvelle vidéo virale ?</a>
                                         </h5>
 
-                                        <span class="text-muted">6 days ago</span>
+                                        <span class="text-muted">il y a 3 ans</span>
                                     </div>
                                 </div>
                             </div>

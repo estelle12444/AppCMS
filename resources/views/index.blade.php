@@ -159,12 +159,7 @@
                 <h1 class="display-6 mb-4">Nous vous offrons le meilleur dans tous les secteurs </h1>
             </div>
             <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
-                        <img class="img-fluid rounded mb-4" src="img/service-1.jpg" alt="">
-                        <h4 class="mb-0">Entrepôts à louer</h4>
-                    </a>
-                </div>
+
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <a class="service-item d-block rounded text-center h-100 p-4" href="">
                         <img class="img-fluid rounded mb-4" src="img/service-1.jpg" alt="">
@@ -203,34 +198,17 @@
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <a class="service-item d-block rounded text-center h-100 p-4" href="">
-                        <img class="img-fluid rounded mb-4" src="img/service-6.jpg" alt="">
-                        <h4 class="mb-0">Université</h4>
+                        <img class="img-fluid rounded mb-4" src="img/sculture.jpg" alt="">
+                        <h4 class="mb-0">Centre Culturel</h4>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <a class="service-item d-block rounded text-center h-100 p-4" href="">
-                        <img class="img-fluid rounded mb-4" src="img/service-6.jpg" alt="">
-                        <h4 class="mb-0">Université</h4>
+                        <img class="img-fluid rounded mb-4" src="img/clinique.jpg" alt="">
+                        <h4 class="mb-0">Clinique Médicale Internationale</h4>
                     </a>
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
-                        <img class="img-fluid rounded mb-4" src="img/service-6.jpg" alt="">
-                        <h4 class="mb-0">Université</h4>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
-                        <img class="img-fluid rounded mb-4" src="img/service-6.jpg" alt="">
-                        <h4 class="mb-0">Université</h4>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
-                        <img class="img-fluid rounded mb-4" src="img/service-6.jpg" alt="">
-                        <h4 class="mb-0">Université</h4>
-                    </a>
-                </div>
+
             </div>
         </div>
     </div>
@@ -275,7 +253,7 @@
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="img-border">
-                        <img class="img-fluid" src="img/feature.jpg" alt="">
+                        <img class="img-fluid" src="img/join.jpg" alt="">
                     </div>
                 </div>
             </div>

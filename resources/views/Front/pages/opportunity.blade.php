@@ -89,7 +89,7 @@
                 </div>
                 <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <a class="service-item d-block rounded text-center h-100 p-4" href="">
-                        <img class="img-fluid rounded mb-4" src="img/service-4.jpg" alt="">
+                        <img class="img-fluid rounded mb-4" src="img/affaire.jpg" alt="">
 
                     </a>
                 </div>
@@ -97,7 +97,7 @@
             <div class="row g-4">
                 <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <a class="service-item d-block rounded text-center h-100 p-4" href="">
-                        <img class="img-fluid rounded mb-4" src="img/service-5.jpg" alt="">
+                        <img class="img-fluid rounded mb-4" src="img/immobilier.jpg" alt="">
 
                     </a>
                 </div>
@@ -131,7 +131,7 @@
             <div class="row g-4">
                 <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <a class="service-item d-block rounded text-center h-100 p-4" href="">
-                        <img class="img-fluid rounded mb-4" src="img/service-5.jpg" alt="">
+                        <img class="img-fluid rounded mb-4" src="img/service-6.jpg" alt="">
 
                     </a>
                 </div>
@@ -157,7 +157,7 @@
                 </div>
                 <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <a class="service-item d-block rounded text-center h-100 p-4" href="">
-                        <img class="img-fluid rounded mb-4" src="img/service-6.jpg" alt="">
+                        <img class="img-fluid rounded mb-4" src="img/Picture2.png" alt="">
 
                     </a>
                 </div>
@@ -188,7 +188,7 @@
                 </div>
                 <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <a class="service-item d-block rounded text-center h-100 p-4" href="">
-                        <img class="img-fluid rounded mb-4" src="img/service-2.jpg" alt="">
+                        <img class="img-fluid rounded mb-4" src="img/office.jpg" alt="">
 
                     </a>
                 </div>
@@ -197,7 +197,7 @@
             <div class="row g-4">
                 <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <a class="service-item d-block rounded text-center h-100 p-4" href="">
-                        <img class="img-fluid rounded mb-4" src="img/service-3.jpg" alt="">
+                        <img class="img-fluid rounded mb-4" src="img/sculture.jpg" alt="">
 
                     </a>
                 </div>
@@ -243,7 +243,7 @@
                     </div>
                     <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <a class="service-item d-block rounded text-center h-100 p-4" href="">
-                            <img class="img-fluid rounded mb-4" src="img/service-2.jpg" alt="">
+                            <img class="img-fluid rounded mb-4" src="img/clinique.jpg" alt="">
 
                         </a>
                     </div>
