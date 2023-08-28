@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    /* .container {
+        padding: 20px;
+        padding-left: 40px;
+    } */
+
+    .text-orange {
+        color: #F18700;
+
+        font-weight: 500;
+    }
+    .orange{
+        color: #F18700;
+    }
+
+    .text-white {
+        color: white;
+        font-weight: 500;
+        padding: 7px;
+        margin: 2px;
+    }
+
+    .space {
+        padding: 5px;
+        margin: 10px;
+    }
+
+    .white {
+        color: #ffff;
+    }
+
+    .blue {
+        background-color: #262978;
+    }
+
+    .text-slate {
+        color: #113443;
+    }
+    .green{
+        background-color: #65B32E;
+
+    }
+    .im{
+        background-image: url(img/Image6.png);
+    }
+
+}

@@ -30,10 +30,13 @@ Route::get('/', function () {
     return view('Front.landingg');
 });
 
-
 Route::get('/home', function () {
-    return view('index');
+   return view('index');
 });
+
+// Route::get('/home', function () {
+//     return view('index');
+// });
 
 Route::get('/contact', function () {
     return view('Front.pages.contact');
