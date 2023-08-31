@@ -2,31 +2,31 @@
 
 
 @section('content')
-    <div
-        class="md:container md:mx-auto px-20 py-5 bg-gradient-to-r from-orange-100 from-20%  to-gray-100 to-90% ">
-        <div class="flex flex-row py-24">
-            <div class="basis-1/2 px-4">
-                <h1 class="text-6xl font-bold text-slate-600 space">
+
+    <div class=" pl-20 pb-5 bg-gradient-to-r from-orange-100 from-20%  to-gray-100 to-90% sm:pl-2 pb-2 md:pl-4 ">
+        <div class="flex flex-row pt-24 container pb-8">
+            <div class="basis-1/2 lg:pl-24 lg:pt-12 sm:pl-8 md:pl-8">
+                <h1 class="lg:text-6xl font-bold text-slate-600 tracking-tight sm:text-3xl md:text-5xl ">
                     LE <span class="text-orange ">VITIB </span> VOUS
                 </h1>
-
-                <h1 class="text-6xl font-bold text-slate-600 space ">
-                    SOUHAITE
+                <h1 class="text-6xl font-bold pt-8 text-slate-600  ">
+                    SOUHAITE LA
                 </h1>
-                <h1 class="text-6xl font-bold text-slate-600 space ">
-                    LA BIENVENUE
+                <h1 class="text-6xl font-bold pt-8 text-slate-600  ">
+                    BIENVENUE
                 </h1>
-                <p class="text-1xl  text-slate-600 pl-5 pt-2">
+                <p class="text-2xl  text-slate-600  pt-8">
                     Le parc Technologique de Côte d'Ivoire
                 </p>
-                <div class="space">
+                <div class=" pt-8">
 
-                    <button type="button" class="font-bold rounded-none bg-amber-500 white text-center p-5 ">
+                    <button type="button" style="background-color: #F18700"
+                        class="font-bold rounded-none  white text-center p-8  ">
                         REJOIGNEZ NOUS
                     </button>
                 </div>
             </div>
-            <div class="basis-1/2 px-2 py-2" style="background-image: url(img/Image9.png);">
+            <div class="basis-1/2 pr-24 pt-12 bg-no-repeat" style="background-image: url(img/Image9.png);">
                 <div
                     class="videoWrapper flex justify-center items-center  rounded-lg border-solid border-4 border-gray-300  ">
                     <span class="absolute  flex h-20 w-20">
@@ -41,8 +41,7 @@
                             </svg>
                         </span>
                     </span>
-                    <video autoplay="" loop="" muted="" class="custom-video"
-                        poster="videos/792bd98f3e617786c850493560e11c45.png">
+                    <video  class="w-full " muted autoplay controls>
 
                         <source src="videos/814dc43e870597176cad645798825c03.mp4" type="video/mp4">
 
@@ -52,30 +51,46 @@
                 <div class="overlay"></div>
             </div>
         </div>
+    </div>
 
-        <hr>
-        <div class="bg-white">
-            <div class="flex flex-row  ">
-                <div class="basis-1/6 pl-24  ">
-                    <div class="rounded-none-4 blue text-white h-32 w-25  ">
-                        <h3 class="py-10 text-center">Nos partenaires</h3>
-                    </div>
 
+    <div class=" bg-gradient-to-r from-gray-50 from-40% to-green-200 to-60% ">
+        <div class=" bg-white flex flex-row  ">
+            <div class="basis-1/6 pl-24  ">
+                <div class="rounded-none-4 blue text-white h-32   ">
+                    <h3 class=" text-2xl pt-8 pl-2">Nos partenaires</h3>
                 </div>
-                <div class="basis-1/2">
-                </div>
+            </div>
+            <div class="basis-1/6 pl-8 pt-8 ">
+                <img class="h-auto max-w-full rounded-lg" src="img/logo/image4.png" alt="">
+            </div>
+            <div class="basis-1/6  pt-8">
+                <img src="img/logo/image2.png" alt="">
+            </div>
+            <div class="basis-1/6 pt-8">
+                <img src="img/logo/image3.png" alt="">
+            </div>
+            <div class="basis-1/6 pt-8">
+                <img src="img/logo/image1.png" alt="">
+            </div>
+            <div class="basis-1/6 pl-8 pt-8 pt-8">
+                <img src="img/logo/image5.png" alt="">
             </div>
         </div>
         <hr>
-        <div class="  px-20 py-32 bg-gradient-to-r from-orange-100 from-10% via-white-500 via-30% to-green-100 to-90%">
-            <div class=" bg-no-repeat-x " style="background-image: url(img/Image6.png)">
+    </div>
+    <div class="bg-gradient-to-r from-orange-100 from-20%  to-green-100 to-90%">
+    <div>
+        <div class="  pl-20 pt-24 sm:pl-2 pt-8 " >
+            <div class=" bg-no-repeat " style="background-image: url(img/background/font_logo.png)">
                 <div class="flex flex-col  ">
                     <div>
-                        <h1 class=" text-center text-3xl font-bold text-slate-600 space p-6">INNOVEZ AU COEUR DE L'AFRIQUE
+                        <h1 class=" text-center text-3xl font-bold text-slate-600  p-6">INNOVEZ AU COEUR DE L'AFRIQUE
                         </h1>
                     </div>
-                    <div class=" px-64 ">
-                        <p class="text-center text-justify "> Bienvenue au VITIB - Village des Technoloies de
+                    <div class="  tracking-tight">
+                        <p class="text-center text-justify text-lg lg:pl-72 lg:pr-80 sm:pl-8 sm:pr-8 md:pl-4 md:pr-8"> Bienvenue au VITIB - Village des
+                            Technoloies de
                             l'Information et de la Biotechnologie, un centre d'excellence dédié à l'innvovation et au
                             développement technologique en Côte D'Ivoire. Situé au coeur de l'Afrique, en Côte d'Ivoire, le
                             VITIB est une zonz franche technologique qui offre un environnement propice à la croissance des
@@ -83,25 +98,28 @@
                     </div>
                 </div>
                 <div class="flex flex-row">
-                    <div class=" basis-1/2  ">
-                        <a href="/reports" class=" py-5 pl-64">
-                            <h6 class=" text-right text-orange font-bold underline "> voir plus</h6>
+                    <div class=" basis-1/2 text-right pt-4 underline ">
+                        <a href="#"
+                            class="  inline-flex items-center font-medium text-orange-400 dark:text-orange-400 hover:underline">
+                            Voir plus
+                            <svg class="w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
                         </a>
-                    </div>
-                    <div class="basis-1/2 py-6 pl-10">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-8 h-8">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                        </svg>
                     </div>
                 </div>
             </div>
-            <div class="flex flex-row pb-8 py-32 " style="background-image: url(img/Image8.png)">
-                <div class="basis-1/2">
-                    <h1 class="text-3xl font-bold text-slate-600 space">
+        </div>
+
+        <div class="pl-32 pr-32  bg-no-repeat" >
+            <div class="flex flex-row pt-16 " style="background-image: url(img/Image8.png)">
+                <div class="basis-1/2 pl-24 ">
+                    <h1 class="text-4xl font-bold  tracking-tight   ">
                         DECOUVREZ 8 AVANTAGES UNIQUE AU VITIB
                     </h1>
-                    <p class="text-center text-justify space">
+                    <p class="text-center text-lg text-justify tracking-tight pt-8 pr-16">
                         Le VITIB offre un écosystème favorable et attractif pour les entreprises technologiques qui
                         cherchent à développer leurs activités en Afrique de l'Ouest.
                         En combinant avantages fiscaux, infrastructures modernes, accès à un marché en pleine croissance et
@@ -111,256 +129,298 @@
                     </p>
 
                     <div class="flex flex-row">
-                        <div class=" basis-1/2  ">
-                            <a href="/reports" class=" py-5 ">
-                                <h6 class=" space text-orange font-bold underline "> voir plus</h6>
+                        <div class=" basis-1/2 text-center pt-8 underline ">
+                            <a href="#"
+                                class="  inline-flex items-center font-medium text-orange-400 dark:text-orange-400 hover:underline">
+                                Voir plus
+                                <svg class="w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg>
                             </a>
                         </div>
-                        <div class="basis-1/2 py-5 text-left ">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="w-8 h-8">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                            </svg>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="basis-1/4">
-                    <div class="flex flex-col ml-10 ">
-                        <div class="rounded-lg border-2 border-gray-700 p-2 ">
-                            <div class="px-3 ">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="  w-10 h-10">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
-                                </svg>
-                            </div>
-                            <p class="px-8 pb-2 mr-0">
-                                Avantages fiscaux et reglementaires
-                            </p>
-
-                        </div>
-                        <div class="rounded-lg border-2 border-gray-700 p-2 mt-4 ">
-                            <div class="px-3 ">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="  w-10 h-10">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
-                                </svg>
-                            </div>
-                            <p class="px-8 pb-2 mr-0">
-                                Partenariats et réseautage
-                            </p>
-
-                        </div>
-                        <div class="rounded-lg border-2 border-gray-700 p-2 mt-4 ">
-                            <div class="px-3 ">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="  w-10 h-10">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
-                                </svg>
-                            </div>
-                            <p class="px-8 pb-2 mr-0">
-                                Soutien gouvernemental
-                            </p>
-
-                        </div>
-                        <div class="rounded-lg border-2 border-gray-700 p-2 mt-4 ">
-                            <div class="px-3 ">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="  w-10 h-10">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
-                                </svg>
-                            </div>
-                            <p class="px-8 pb-2 mr-0">
-                                Main d'oeuvre qualifiée
-                            </p>
-
-                        </div>
                     </div>
                 </div>
-                <div class="basis-1/4">
-                    <div class="flex flex-col py-8 p-6">
-                        <div class="rounded-lg border-2 border-gray-700 p-2 ">
-                            <div class="px-3 ">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="  w-10 h-10">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
-                                </svg>
-                            </div>
-                            <p class="px-8 pb-2 mr-0">
-                                Avantages douaniers
-                            </p>
+                <div class="basis-1/2 pr-16 ">
+                    <div class="flex flex-row">
+                        <div class="basis-1/2 ">
+                            <div class="flex flex-col  ml-10 ">
+                                <div class="rounded-lg border-2 border-gray-700 p-2 ">
+                                    <div class="px-3 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="  w-10 h-10">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
+                                        </svg>
+                                    </div>
+                                    <p class="pl-4 pb-2 mr-0  text-lg">
+                                        Avantages fiscaux et reglementaires
+                                    </p>
 
+                                </div>
+                                <div class="rounded-lg border-2 border-gray-700 p-2 mt-4 ">
+                                    <div class="px-3 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+                                          </svg>
+
+                                    </div>
+                                    <p class="pl-4 pb-2 mr-0 text-lg">
+                                        Partenariats et réseautage
+                                    </p>
+
+                                </div>
+                                <div class="rounded-lg border-2 border-gray-700 p-2 mt-4 ">
+                                    <div class="px-3 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M20.893 13.393l-1.135-1.135a2.252 2.252 0 01-.421-.585l-1.08-2.16a.414.414 0 00-.663-.107.827.827 0 01-.812.21l-1.273-.363a.89.89 0 00-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.212.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 01-1.81 1.025 1.055 1.055 0 01-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.655-.261a2.25 2.25 0 01-1.383-2.46l.007-.042a2.25 2.25 0 01.29-.787l.09-.15a2.25 2.25 0 012.37-1.048l1.178.236a1.125 1.125 0 001.302-.795l.208-.73a1.125 1.125 0 00-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 01-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 01-1.458-1.137l1.411-2.353a2.25 2.25 0 00.286-.76m11.928 9.869A9 9 0 008.965 3.525m11.928 9.868A9 9 0 118.965 3.525" />
+                                          </svg>
+
+                                    </div>
+                                    <p class="pl-4 pb-2 mr-0 text-lg">
+                                        Soutien gouvernemental
+                                    </p>
+
+                                </div>
+                                <div class="rounded-lg border-2 border-gray-700 p-2 mt-4 ">
+                                    <div class="px-3 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="  w-10 h-10">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
+                                        </svg>
+                                    </div>
+                                    <p class="pl-4 pb-2 mr-0 text-lg">
+                                        Main d'oeuvre qualifiée
+                                    </p>
+
+                                </div>
+                            </div>
                         </div>
-                        <div class="rounded-lg border-2 border-gray-700 p-2 mt-4 ">
-                            <div class="px-3 ">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="  w-10 h-10">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
-                                </svg>
-                            </div>
-                            <p class="px-8 pb-2">
-                                Un accès à un marché en plein essor
-                            </p>
+                        <div class="basis-1/2 ">
+                            <div class="flex flex-col py-8 p-6">
+                                <div class="rounded-lg border-2 border-gray-700 p-2 ">
+                                    <div class="px-3 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                          </svg>
 
-                        </div>
-                        <div class="rounded-lg border-2 border-gray-700 p-2 mt-4 ">
-                            <div class="px-3 ">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="  w-10 h-10">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
-                                </svg>
-                            </div>
-                            <p class="px-8 pb-2 mr-0">
-                                Environnement d'innovation
-                            </p>
+                                    </div>
+                                    <p class="pl-4 pb-2 mr-0 text-lg">
+                                        Avantages douaniers
+                                    </p>
 
-                        </div>
-                        <div class="rounded-lg border-2 border-gray-700 p-2 mt-4 ">
-                            <div class="px-3 ">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="  w-10 h-10">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
-                                </svg>
-                            </div>
-                            <p class="px-8 pb-2 mr-0">
-                                Infrastructure de pointe
-                            </p>
+                                </div>
+                                <div class="rounded-lg border-2 border-gray-700 p-2 mt-4 ">
+                                    <div class="px-3 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349m-16.5 11.65V9.35m0 0a3.001 3.001 0 003.75-.615A2.993 2.993 0 009.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 002.25 1.016c.896 0 1.7-.393 2.25-1.016a3.001 3.001 0 003.75.614m-16.5 0a3.004 3.004 0 01-.621-4.72L4.318 3.44A1.5 1.5 0 015.378 3h13.243a1.5 1.5 0 011.06.44l1.19 1.189a3 3 0 01-.621 4.72m-13.5 8.65h3.75a.75.75 0 00.75-.75V13.5a.75.75 0 00-.75-.75H6.75a.75.75 0 00-.75.75v3.75c0 .415.336.75.75.75z" />
+                                          </svg>
 
+                                    </div>
+                                    <p class="pl-4 pb-2 text-lg">
+                                        Un accès à un marché en plein essor
+                                    </p>
+
+                                </div>
+                                <div class="rounded-lg border-2 border-gray-700 p-2 mt-4 ">
+                                    <div class="px-3 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="  w-10 h-10">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
+                                        </svg>
+                                    </div>
+                                    <p class="pl-4 pb-2 mr-0 text-lg">
+                                        Environnement d'innovation
+                                    </p>
+                                </div>
+                                <div class="rounded-lg border-2 border-gray-700 p-2 mt-4 ">
+                                    <div class="px-3 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+                                          </svg>
+
+
+                                    </div>
+                                    <p class="pl-4 pb-2 mr-0 text-lg">
+                                        Infrastructure de pointe
+                                    </p>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col px-64 py-32">
-                <h1 class="text-3xl font-bold text-slate-600 space">
+            <div class="flex flex-col text-center pb-20">
+                <h1 class="text-3xl font-bold text-slate-600 pb-8 ">
                     LE PARCOURS DE NOS FUTURS MEMBRES
                 </h1>
+                {{-- <img src="img/parcours.png" alt=""> --}}
 
-                <div>
-                    <img src="img/Image10.png" alt="">
-
-                </div>
-
-                <div class="px-32">
-                    <button type="button"
-                        class="text-2xl font-bold rounded-none bg-amber-500 white text-center p-6 pl-20 pr-20">
+                <div class=" pt-8 text-center">
+                    <button type="button" style="background-color: #F18700"
+                        class="font-bold rounded-none  white text-center pl-16 pt-4 pb-4 pr-16   ">
                         REJOIGNEZ NOUS
                     </button>
                 </div>
             </div>
-            <div class="flex flex-col  py-32">
-                <h1 class="text-3xl text-center font-bold text-slate-600 space">
+            {{-- <div class="flex flex-col  py-32">
+                <h1 class="text-4xl text-center  font-bold text-slate-600 ">
                     NOS ACTUALITES
                 </h1>
-
-                <div class="flex flex-row">
-                    <div class="basis-1/2 pr-8 px-20 ">
-
-                        <div id="custom-controls-gallery" class="relative w-full" data-carousel="slide">
-                            <!-- Carousel wrapper -->
-                            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-                                <!-- Item 1 -->
-                                <div class="hidden duration-300 ease-in-out" data-carousel-item>
-                                    <img src="img/carousel-1.jpg"
-                                        class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                        alt="">
-                                </div>
-                                <!-- Item 2 -->
-                                <div class="hidden duration-300 ease-in-out" data-carousel-item="active">
-                                    <img src="img/carousel-2.jpg"
-                                        class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                        alt="">
-                                </div>
-                                <!-- Item 3 -->
-                                <div class="hidden duration-300 ease-in-out" data-carousel-item>
-                                    <img src="img/carousel-4.jpg"
-                                        class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                        alt="">
-                                </div>
-
-
+                <div class="flex ">
+                                        <div id="default-carousel" class="relative w-full" data-carousel="slide">
+                        <!-- Carousel wrapper -->
+                        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                             <!-- Item 1 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="img/carousel-1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                             </div>
-                            <div class="flex justify-center items-center pt-4">
-                                <button type="button"
-                                    class="flex justify-center items-center mr-4 h-full cursor-pointer group focus:outline-none"
-                                    data-carousel-prev>
-                                    <span
-                                        class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
-                                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                            fill="none" viewBox="0 0 14 10">
-                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                                stroke-width="2" d="M13 5H1m0 0 4 4M1 5l4-4" />
-                                        </svg>
-                                        <span class="sr-only">Previous</span>
-                                    </span>
-                                </button>
-                                <button type="button"
-                                    class="flex justify-center items-center h-full cursor-pointer group focus:outline-none"
-                                    data-carousel-next>
-                                    <span
-                                        class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
-                                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                            fill="none" viewBox="0 0 14 10">
-                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                                stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                        </svg>
-                                        <span class="sr-only">Next</span>
-                                    </span>
-                                </button>
+                            <!-- Item 2 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="img/carousel-2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="img/carousel-3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                            </div>
+
+                            <!-- Item 5 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="img/carousel-5.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                             </div>
                         </div>
-                    </div>
-                    <div class="basis-1/2 px-4">
-                        <div id="custom-controls-gallery" class="relative w-full" data-carousel="slide">
-                            <!-- Carousel wrapper -->
-                            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-                                <!-- Item 1 -->
-                                <div class="hidden duration-300 ease-in-out" data-carousel-item>
-                                    <p
-                                        class="text-justify  relative block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                                        Le VITIB offre un écosystème favorable et attractif pour les entreprises
-                                        technologiques
-                                        qui cherchent à développer leurs activités en Afrique de l'Ouest. En combinant
-                                        avantages
-                                        fiscaux, infrastructures modernes, accès à un marché en pleine croissance et soutien
-                                        gouvernemental, le VITIB se positionne comme un choix stratégique pour les
-                                        entreprises
-                                        qui souhaitent prospérer dans le secteur technologique en Côte d'Ivoire.
-                                    </p>
-                                </div>
-                                <!-- Item 2 -->
-                                <div class="hidden duration-300 ease-in-out" data-carousel-item="active">
-                                    <p>
-
-                                    </p>
-                                </div>
-                                <!-- Item 3 -->
-                                <div class="hidden duration-300 ease-in-out" data-carousel-item>
-                                </div>
-
-
-                            </div>
-
+                        <!-- Slider indicators -->
+                        <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
                         </div>
-
+                        <!-- Slider controls -->
+                        <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                                </svg>
+                                <span class="sr-only">Previous</span>
+                            </span>
+                        </button>
+                        <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                                </svg>
+                                <span class="sr-only">Next</span>
+                            </span>
+                        </button>
                     </div>
+
+
                 </div>
-            </div>
-            <div class="flex flex-row ">
-                <div class="basis-1/2">
-                    <h1 class="text-6xl font-bold text-slate-600 space">
+            </div> --}}
+        </div>
+
+                <div class="pl-32 pr-32  bg-no-repeat" style="background-image: url(img/background/vert.png);background-size:cover"  >
+            <div class="pl-24 pr-16 ">
+            <div class="flex flex-row  ">
+                <div class="basis-1/2 text-lg">
+                    <h1 class="text-5xl font-bold  ">
                         Projets & Services
                     </h1>
-                    <p>Investissez sur ses opportunités dans un lieu unique </p>
+                    <p class="pt-8 pb-8 text-lg">Investissez sur ses opportunités dans un lieu unique </p>
+                    <div class="grid grid-col-2 grid-flow-col gap-2 pt-4 ">
+                        <div class="grid grid-col-2 ">
+                            <div class="flex items-center  rounded-lg " role="alert">
+                                <div
+                                    class="inline-flex items-center  flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                    <img src="img/icon/check.png" alt="">
+                                </div>
+                                <p class="ml-4 text-md font-normal">
+                                    Immeubles à <br>
+                                    bureaux
+                                </p>
+                            </div>
+                            <div class="flex items-center  pt-8 rounded-lg " role="alert">
+                                <div
+                                    class="inline-flex items-center  flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                    <img src="img/icon/check.png" alt="">
+                                </div>
+                                <p class="ml-4 text-md font-normal">
+                                    Université
+                                </p>
+                            </div>
+                            <div class="flex items-center pt-8 rounded-lg " role="alert">
+                                <div
+                                    class="inline-flex items-center  flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                    <img src="img/icon/check.png" alt="">
+                                </div>
+                                <p class="ml-4 text-md font-normal">
+                                    Clinique Médicale <br>
+                                    Internationale
+                                </p>
+                            </div>
+                            <div class="flex items-center pt-8 rounded-lg " role="alert">
+                                <div
+                                    class="inline-flex items-center  flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                    <img src="img/icon/check.png" alt="">
+                                </div>
+                                <p class="ml-4 text-md font-normal">
+                                    Allée <br>
+                                    Commerciale
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid grid-col-2 ">
+                            <div class="flex items-center  rounded-lg " role="alert">
+                                <div
+                                    class="inline-flex items-center  flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                    <img src="img/icon/check.png" alt="">
+                                </div>
+                                <p class="ml-4 text-md font-normal">
+                                    Entrepôts à <br>
+                                    louer
+                                </p>
+                            </div>
+                            <div class="flex items-center pt-8 rounded-lg " role="alert">
+                                <div
+                                    class="inline-flex items-center  flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                    <img src="img/icon/check.png" alt="">
+                                </div>
+                                <p class="ml-4 text-md font-normal">
+                                    Hôtels
+                                </p>
+                            </div>
+                            <div class="flex items-center pt-8 rounded-lg " role="alert">
+                                <div
+                                    class="inline-flex items-center  flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                    <img src="img/icon/check.png" alt="">
+                                </div>
+                                <p class="ml-4 text-md font-normal">
+                                    Centre culturel
+                                </p>
+                            </div>
 
+                        </div>
+
+                    </div>
+                    <div class="flex items-left pt-8 rounded-lg " role="alert">
+                        <div class=" pt-4 underline ">
+                            <a href="#"
+                                class="  inline-flex items-center font-medium text-orange-400 dark:text-orange-400 hover:underline">
+                                Voir plus
+                                <svg class="w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
 
                 </div>
                 <div class="basis-1/2">
@@ -371,27 +431,30 @@
 
                 </div>
             </div>
-            <div class="flex flex-col  py-20">
+            </div>
+
+
+            <div class="flex flex-col  pt-20 pb-24">
                 <div class="px-30">
-                    <h1 class="text-3xl text-center font-bold text-slate-600 space ">
-                        Des sessions d'accompagnement conçus pour nos futures locataires
+                    <h1 class="text-5xl text-center font-bold text-slate-600  ">
+                        Des sessions d'accompagnement conçus <br> pour nos futures locataires
                     </h1>
                 </div>
-                <div class="px-64">
-                    <p class="text-center text-slate-600 space py-10  ">
+                <div class="pl-64 pr-32">
+                    <p class="text-center text-slate-600  text-lg pt-10  ">
                         Participez à des événements programmés conçus pour les entreprises à grande échelle.
                         Avec des programmes de développement créés pour nourrir et soutenir.
-                        Et des espaces événementiels remplis de programmes d'information et de réflexion pour enrichir et
+                        Et des es événementiels remplis de programmes d'information et de réflexion pour enrichir et
                         inspirer tout le monde.
                     </p>
                 </div>
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 py-16">
-                    <div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 pt-16">
+                    <div class="ml-10">
                         <img class="h-auto max-w-full rounded-lg" src="img/Image2.png" alt="">
-                        <h2 class="py-8 text-2xl">
+                        <h2 class="pt-8 text-2xl">
                             Programmes de formation des dirigeants
                         </h2>
-                        <p class="text-justify">
+                        <p class="text-justify pt-4">
                             Vous souhaitez passer à l'étape suivante de votre parcours de dirigeant ? Le programme Elevate
                             pour
                             les leaders émergents est un cours de leadership unique en son genre, spécialement conçu pour
@@ -400,12 +463,12 @@
                         </p>
 
                     </div>
-                    <div>
+                    <div class="ml-10">
                         <img class="h-auto max-w-full rounded-lg" src="img/Image3.png" alt="">
-                        <h2 class="py-8 text-2xl">
+                        <h2 class="pt-8 text-2xl">
                             Produits Technologiques
                         </h2>
-                        <p class="text-justify">Produits Technologiques" est une collection diversifiée d'appareils,
+                        <p class="text-justify pt-4">Produits Technologiques" est une collection diversifiée d'appareils,
                             gadgets,
                             et équipements de pointe, conçue pour répondre aux besoins de la vie moderne et numérique. Cette
                             gamme de produits offre des solutions innovantes, pratiques et hautement performantes pour
@@ -413,22 +476,23 @@
                             notre quotidien, tant sur le plan professionnel que personnel.</p>
 
                     </div>
-                    <div>
+                    <div class="ml-10">
                         <img class="h-auto max-w-full rounded-lg" src="img/Image1.png" alt="">
-                        <h2 class="py-8 text-2xl">
+                        <h2 class="pt-8 text-2xl">
                             ScaleUP Africa meet-ups
                         </h2>
-                        <p class="text-justify">
-                            Hébergé à Techspace, ScaleUP VITIB est un réseau de pairs pour les leaders émergents. Nous nous
+                        <p class="text-justify pt-4">
+                            Hébergé à Tech, ScaleUP VITIB est un réseau de pairs pour les leaders émergents. Nous nous
                             réunissons en personne tous les mois et rassemblons des leaders de l'écosystème technologique
                             pour
                             se connecter, partager et apprendre les uns des autres. Posez votre candidature ci-dessous. </p>
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col bg-repeat-x " style="background-image: url('img/Image6.png')">
-                <div class="px-30">
-                    <h1 class="text-4xl text-center font-bold text-slate-600 space py-10">
+
+            <div class=" flex flex-col bg-repeat-x " style="background-image: url('img/Image6.png')">
+                <div class="pl-30 ">
+                    <h1 class="text-4xl text-center font-bold ">
                         COMMENT NOUS REJOINDRE
                     </h1>
 
@@ -536,8 +600,8 @@
                             </div>
 
                             <div class="border-dashed px-4 border-l-2 border-gray-700">
-                                <button type="button"
-                                    class="font-bold rounded-none bg-amber-500 white text-center p-4 pl-20 pr-20">
+                                <button type="button" style="background-color: #F18700"
+                                    class="font-bold rounded-none white text-center p-4 pl-20 pr-20">
                                     REJOIGNEZ NOUS
                                 </button>
                             </div>
@@ -547,14 +611,14 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col  py-20">
-                <div class="px-30">
-                    <h1 class="text-3xl text-center font-bold text-slate-600 space ">
+            <div class="flex flex-col  py-20 pb-32">
+                <div class="px-30 mb-20">
+                    <h1 class="text-5xl text-center font-bold   ">
                         Témoignages de nos clients
                     </h1>
                 </div>
                 <div class="flex flex-row">
-                    <div class="basis-1/3 px-8 pl-16 ">
+                    <div class="basis-1/3  pl-16 pr-10">
                         <div class="flex flex-col">
                             <div class="max-w-sm pl-4 py-4 pr-2  bg-white rounded-lg ">
                                 <div class="flex-shrink-0">
@@ -592,7 +656,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="basis-1/3 py-8  pr-10">
+                    <div class="basis-1/3 py-8   pr-10">
                         <div class="flex flex-col">
                             <div class="max-w-sm pl-4 py-4 pr-2  bg-white rounded-lg ">
                                 <div class="flex-shrink-0">
@@ -671,44 +735,39 @@
                     </div>
                 </div>
 
-                <div class="rounded-lg border-2 border-gray-500 p-4 mx-64 my-10">
+                <div class="rounded-lg border-2 mt-20 border-gray-300 p-2 ml-72 mr-64 mb-10">
                     <img src="img/image5.png" alt="" width="3990">
 
-                    <h1 class="font-extrabold font-sora text-4xl text-center py-4">
+                    <h1 class="font-bold font-sora text-5xl pl-32 pt-4 pb-8">
                         Contactez-nous
                     </h1>
-                    <form action="#" class=" mx-20 mr-5 pr-10">
+                    <form action="#" class=" pl-32 mr-24  pr-16">
                         <div class="mb-6">
-                            <label for="email"
-                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
-                                email</label>
+
                             <input type="email" id="email"
                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                placeholder="name@company.com" required>
+                                placeholder="Your email" required>
                         </div>
                         <div class="mb-6">
-                            <label for="subject"
-                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Subject</label>
+
                             <input type="text" id="subject"
                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                placeholder="Let us know how we can help you" required>
+                                placeholder="Subject" required>
                         </div>
                         <div class="mb-6">
-                            <label for="message"
-                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
-                                message</label>
+
                             <textarea id="message" rows="4"
                                 class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                 placeholder="Your message..."></textarea>
                         </div>
-                        <button type="submit"
-                            class="text-white bg-amber-500 hover:bg-blue-800 w-full focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 block">Send
-                            message
+                        <button type="submit" style="background-color: #F18700"
+                            class=" text-white p-8  hover:bg-amber-500 w-full focus:ring-8 focus:ring-amber-500 font-medium rounded-lg text-sm  ">Envoyer
                         </button>
                     </form>
                 </div>
 
             </div>
+        </div>
         </div>
     </div>
 @endsection

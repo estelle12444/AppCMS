@@ -53,6 +53,10 @@ Route::get('/join', function () {
     return view('Front.pages.join');
 });
 
+Route::get('/media', function () {
+    return view('Front.pages.media');
+});
+
 Route::get('/partners', function (Request $request) {
     $partners = Partner::all();
     $sectors = Sector::all();

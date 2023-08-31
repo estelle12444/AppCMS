@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="md:container md:mx-auto px-20 py-5 bg-gradient-to-r from-orange-100 from-20%  to-gray-100 to-90% ">
+    <div class="md:container md:mx-auto   py-5 bg-gradient-to-r from-orange-100 from-20%  to-gray-100 to-90% ">
         <!-- Navbar Start -->
         @include('Front.partials.nav')
     </div>
