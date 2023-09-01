@@ -91,7 +91,7 @@
                             </svg>
                         </span>
                     </span>
-                    <video  class="w-full rounded-lg" muted autoplay controls>
+                    <video  class="md:w-full md:rounded-lg" muted autoplay controls>
 
                         <source src="videos/814dc43e870597176cad645798825c03.mp4" type="video/mp4">
 
@@ -140,7 +140,7 @@
                         </h1>
                     </div>
                     <div class=" tracking-tight" >
-                        <p class="text-center text-justify sm:text-center text-lg lg:pl-72 lg:pr-80 md:sm:pl-2 sm:pr-8 md:pl-4 md:pr-8 " > Bienvenue au VITIB - Village des
+                        <p class="md:text-center text-justify sm:text-center md:text-lg md:lg:pl-72 lg:pr-80 md:sm:pl-2 sm:pr-8 md:pl-4 md:pr-8 " > Bienvenue au VITIB - Village des
                             Technoloies de
                             l'Information et de la Biotechnologie, un centre d'excellence dédié à l'innvovation et au
                             développement technologique en Côte D'Ivoire. Situé au coeur de l'Afrique, en Côte d'Ivoire, le
@@ -164,13 +164,13 @@
             </div>
         </div>
 
-        <div class="pl-32 pr-32  bg-no-repeat" >
-            <div class="flex flex-row pt-16 " style="background-image: url(img/Image8.png)">
-                <div  data-aos="fade-right" class="basis-1/2 pl-24 ">
-                    <h1 class="text-4xl font-bold  tracking-tight   ">
+        <div class="md:pl-32 md:pr-32  bg-no-repeat" >
+            <div class="md:flex flex-row pt-16 " style="background-image: url(img/Image8.png)">
+                <div  data-aos="fade-right" class="md:basis-1/2 md:pl-24 px-5 ">
+                    <h1 class="md:text-4xl  font-bold  tracking-tight   ">
                         DECOUVREZ 8 AVANTAGES UNIQUE AU VITIB
                     </h1>
-                    <p class="text-center text-lg text-justify tracking-tight pt-8 pr-16">
+                    <p class="md:text-center md:text-lg text-justify md:tracking-tight pt-8 md:pr-16">
                         Le VITIB offre un écosystème favorable et attractif pour les entreprises technologiques qui
                         cherchent à développer leurs activités en Afrique de l'Ouest.
                         En combinant avantages fiscaux, infrastructures modernes, accès à un marché en pleine croissance et
@@ -378,14 +378,14 @@
             </div> --}}
         </div>
 
-                <div class="pl-32 pr-32  bg-no-repeat" style="background-image: url(img/background/vert.png);background-size:cover"  >
-            <div class="pl-24 pr-16 ">
-            <div class="flex flex-row  ">
-                <div  data-aos="zoom-in-right" class="basis-1/2 text-lg">
-                    <h1 class="text-5xl font-bold  ">
+                <div class="md:pl-32 md:pr-32  bg-no-repeat" style="background-image: url(img/background/vert.png);background-size:cover"  >
+            <div class="md:pl-24 md:pr-16 px-16 ">
+            <div class="md:flex flex-row  ">
+                <div  data-aos="zoom-in-right" class="md:basis-1/2 text-lg">
+                    <h1 class="md:text-5xl font-bold  ">
                         Projets & Services
                     </h1>
-                    <p class="pt-8 pb-8 text-lg">Investissez sur ses opportunités dans un lieu unique </p>
+                    <p class="pt-8 pb-8 md:text-lg">Investissez sur ses opportunités dans un lieu unique </p>
                     <div class="grid grid-col-2 grid-flow-col gap-2 pt-4 ">
                         <div class="grid grid-col-2 ">
                             <div class="flex items-center  rounded-lg " role="alert">
@@ -487,14 +487,15 @@
             </div>
 
 
-            <div class="flex flex-col  pt-20 pb-24">
+            <div
+            data-aos-anchor-placement="bottom-center" class="md:flex flex-col  pt-20 pb-24">
                 <div class="px-30">
                     <h1 data-aos="zoom-in-down" class="text-5xl text-center font-bold text-slate-600  ">
                         Des sessions d'accompagnement conçus <br> pour nos futures locataires
                     </h1>
                 </div>
-                <div class="pl-64 pr-32">
-                    <p data-aos="zoom-in-right" class="text-center text-slate-600  text-lg pt-10  ">
+                <div class="md:pl-64 md:pr-32">
+                    <p data-aos="zoom-in-right" class="md:text-center text-slate-600  tmd:ext-lg pt-10  ">
                         Participez à des événements programmés conçus pour les entreprises à grande échelle.
                         Avec des programmes de développement créés pour nourrir et soutenir.
                         Et des es événementiels remplis de programmes d'information et de réflexion pour enrichir et
@@ -507,7 +508,7 @@
                         <h2 class="pt-8 text-2xl">
                             Programmes de formation des dirigeants
                         </h2>
-                        <p class="text-justify pt-4">
+                        <p class="text-justify md:pt-4">
                             Vous souhaitez passer à l'étape suivante de votre parcours de dirigeant ? Le programme Elevate
                             pour
                             les leaders émergents est un cours de leadership unique en son genre, spécialement conçu pour
@@ -516,7 +517,7 @@
                         </p>
 
                     </div>
-                    <div class="ml-10">
+                    <div class="md:ml-10">
                         <img data-aos="zoom-in-left" class="h-auto max-w-full rounded-lg" src="img/Image3.png" alt="">
                         <h2 class="pt-8 text-2xl">
                             Produits Technologiques
@@ -543,13 +544,13 @@
                 </div>
             </div>
 
-            <div data-aos="zoom-in-up" class="flex flex-col bg-repeat-x " style="background-image: url('img/Image6.png')">
+            <div data-aos="zoom-in-up" class="md:flex flex-col bg-repeat-x " style="background-image: url('img/Image6.png')">
                 <div class="px-30 py-12">
                     <h1 class="text-4xl  text-center font-bold text-slate-600 space ">
                         COMMENT NOUS REJOINDRE
                     </h1>
 
-                    <div class="flex flex-row py-8">
+                    <div class="md:flex flex-row py-8">
                         <div class="basis-1/3">
                             <img class="h-auto max-w-full rounded-lg" src="img/Image7.png" alt="">
                         </div>
@@ -571,7 +572,7 @@
                             </p>
 
                         </div>
-                        <div class="basis-1/3 pl-10 ">
+                        <div class="md:basis-1/3 pl-10 ">
                             <div class="basis-2/3  border-dashed  border-l-2 border-gray-700">
                                 <div class="flex flex-row ml-4 pb-4 py-6">
                                     <div class=" basis-1/5 ">
@@ -674,15 +675,15 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col  py-20 pb-32">
+            <div class="md:flex flex-col  py-20 pb-32">
                 <div data-aos="zoom-in-up" class="px-30 mb-20">
                     <h1 class="text-5xl text-center font-bold   ">
                         Témoignages de nos clients
                     </h1>
                 </div>
-                <div data-aos="zoom-in-up" class="flex flex-row">
-                    <div class="basis-1/3  pl-16 pr-10">
-                        <div class="flex flex-col">
+                <div data-aos="zoom-in-up" class="md:flex flex-row">
+                    <div class="md:basis-1/3  md:pl-16 md:pr-10">
+                        <div class="md:flex flex-col">
                             <div class="max-w-sm pl-4 py-4 pr-2  bg-white rounded-lg ">
                                 <div class="flex-shrink-0">
                                     <img class="w-8 h-8 rounded-full"
@@ -719,7 +720,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="basis-1/3 py-8   pr-10">
+                    <div class="md:basis-1/3 py-8   pr-10">
                         <div class="flex flex-col">
                             <div class="max-w-sm pl-4 py-4 pr-2  bg-white rounded-lg ">
                                 <div class="flex-shrink-0">
@@ -759,8 +760,7 @@
                     </div>
 
 
-
-                    <div class="basis-1/3 pr-20">
+                    <div class="md:basis-1/3 pr-20">
                         <div class="flex flex-col">
                             <div class="max-w-sm pl-4 py-4 pr-2  bg-white  rounded-lg ">
                                 <div class="flex-shrink-0">
@@ -798,13 +798,13 @@
                     </div>
                 </div>
 
-                <div data-aos="zoom-in-up" class="rounded-lg border-2 mt-20 border-gray-300 p-2 ml-72 mr-64 mb-10">
+                <div data-aos="zoom-in-up" class="rounded-lg border-2 mt-20 border-gray-300 p-2 md:ml-72 md:mr-64 mb-10">
                     <img src="img/Image5.png" alt="" width="3990">
 
-                    <h1 class="font-bold font-sora text-5xl pl-32 pt-4 pb-8">
+                    <h1 class="font-bold font-sora md:text-5xl pl-32 pt-4 pb-8">
                         Contactez-nous
                     </h1>
-                    <form action="#" class=" pl-32 mr-24  pr-16">
+                    <form action="#" class=" md:pl-32 md:mr-24  md:pr-16">
                         <div class="mb-6">
 
                             <input type="email" id="email"

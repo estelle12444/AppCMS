@@ -10,7 +10,8 @@
                 ANNONCES</h1>
         </div>
     </section>
-    <div class=" pt-10 pr-32 pl-32 bg-gradient-to-r from-orange-100 from-20%  to-green-100 to-90%">
+    <div  data-aos="fade-up"
+    data-aos-anchor-placement="center-bottom"class=" pt-10 pr-32 pl-32 bg-gradient-to-r from-orange-100 from-20%  to-green-100 to-90%">
 
         <form action="{{ route('Front.admin.search_process') }}" method="post" class="mb-3">
             @csrf
@@ -70,7 +71,8 @@
 
         <div class="grid grid-col-3 grid-flow-col gap-3 pt-10 pb-10">
 
-            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div  data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom" class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <a href="#">
                     <img class="h-48 w-96 rounded-lg" src="img/page_5/image_1.png" alt="" />
                 </a>
@@ -89,7 +91,8 @@
 
                 </div>
             </div>
-            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div  data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom" class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <a href="#">
                     <img class="h-48 w-96 rounded-lg" src="img/Picture5.png" alt="" />
                 </a>
@@ -110,7 +113,8 @@
 
                 </div>
             </div>
-            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div   data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <a href="#">
                     <img class="h-48 w-96 rounded-t-lg" src="img/page_5/image_2.png" alt="" />
                 </a>

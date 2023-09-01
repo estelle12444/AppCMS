@@ -350,7 +350,8 @@
             Procédure d'agrément
         </h1>
     </div>
-    <div class=" flex flex-col bg-no-repeat " style="background-image: url('img/Image6.png')">
+    <div data-aos="fade-up"
+    data-aos-anchor-placement="bottom-center" class=" flex flex-col bg-no-repeat " style="background-image: url('img/Image6.png')">
         <div class=" ">
             <h1 class="text-3xl text-center font-bold ">
                 COMMENT NOUS REJOINDRE

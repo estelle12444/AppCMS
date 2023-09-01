@@ -552,16 +552,17 @@
         </div>
     </div>
     <div
-        class=" relative md:mx-auto pl-32 pr-32 bg-gradient-to-r from-orange-100 from-10%  via-30% to-green-100 to-90% ">
+        class=" pt-32 relative md:mx-auto pl-32 pr-32 bg-gradient-to-r from-orange-100 from-10%  via-30% to-green-100 to-90% ">
 
 
-        <div class="flex flex-col bg-repeat-x " style="background-image: url('img/Image6.png')">
+        <div  data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom" class="flex flex-col bg-repeat-x " style="background-image: url('img/Image6.png')">
             <div class="px-30 py-12">
                 <h1 class="text-4xl  text-center font-bold text-slate-600 space ">
                     COMMENT NOUS REJOINDRE
                 </h1>
 
-                <div class="flex flex-row py-8">
+                <div class="flex flex-row pt-16 py-8">
                     <div class="basis-1/3">
                         <img class="h-auto max-w-full rounded-lg" src="img/Image7.png" alt="">
                     </div>

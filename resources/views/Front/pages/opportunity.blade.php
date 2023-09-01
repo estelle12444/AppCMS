@@ -11,7 +11,7 @@
     </section>
 
 
-    <div class="   pt-32 pr-20  bg-gradient-to-r from-orange-100 from-20%  to-green-100 to-90%">
+    <div class="   pt-32 pr-26 bg-gradient-to-r from-orange-100 from-20%  to-green-100 to-90%">
         <div class="flex flex-row pl-32 pr-16 pb-10">
             <div data-aos="zoom-in-left" class="basis-1/2 md:basis-1/2">
                 <img src="img/plan.png" class="" alt="">
@@ -293,7 +293,8 @@
             </div>
         </div>
 
-        <div class=" pt-24 pb-10">
+        <div data-aos="fade-up"
+        data-aos-anchor-placement="bottom-center" class=" pt-24 pb-10">
             <h1 data-aos="zoom-in-down" class="mb-20 text-3xl text-center font-bold tracking-tight text-gray-900">
                 REJOIGNEZ-NOUS
             </h1>
