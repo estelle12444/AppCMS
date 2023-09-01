@@ -65,7 +65,7 @@
                 <h1 class="text-6xl font-medium pt-8 text-slate-600  ">
                     BIENVENUE
                 </h1>
-                <p class="text-2xl font-medium  text-slate-600  pt-8">
+                <p class="text-2xl font-medium  text-slate-600  pl-2 pt-8">
                     Le parc Technologique de Côte d'Ivoire
                 </p>
                 <div class=" pt-8  ">
@@ -197,7 +197,7 @@
                     <div class="flex flex-row">
                         <div class="basis-1/2 ">
                             <div class="flex flex-col  ml-10 ">
-                                <div class="rounded-lg border-2 border-gray-700 p-2 ">
+                                <div data-aos="zoom-in-right" class="rounded-lg border-2 border-gray-700 p-2 ">
                                     <div class="px-3 ">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                             stroke-width="1.5" stroke="currentColor" class="  w-10 h-10">
@@ -381,7 +381,7 @@
                 <div class="pl-32 pr-32  bg-no-repeat" style="background-image: url(img/background/vert.png);background-size:cover"  >
             <div class="pl-24 pr-16 ">
             <div class="flex flex-row  ">
-                <div class="basis-1/2 text-lg">
+                <div  data-aos="zoom-in-right" class="basis-1/2 text-lg">
                     <h1 class="text-5xl font-bold  ">
                         Projets & Services
                     </h1>
@@ -476,7 +476,7 @@
                     </div>
 
                 </div>
-                <div class="basis-1/2">
+                <div data-aos="zoom-in-left" class="basis-1/2">
                     <div>
                         <img src="img/Image4.png " alt="">
                     </div>
@@ -489,12 +489,12 @@
 
             <div class="flex flex-col  pt-20 pb-24">
                 <div class="px-30">
-                    <h1 class="text-5xl text-center font-bold text-slate-600  ">
+                    <h1 data-aos="zoom-in-down" class="text-5xl text-center font-bold text-slate-600  ">
                         Des sessions d'accompagnement conçus <br> pour nos futures locataires
                     </h1>
                 </div>
                 <div class="pl-64 pr-32">
-                    <p class="text-center text-slate-600  text-lg pt-10  ">
+                    <p data-aos="zoom-in-right" class="text-center text-slate-600  text-lg pt-10  ">
                         Participez à des événements programmés conçus pour les entreprises à grande échelle.
                         Avec des programmes de développement créés pour nourrir et soutenir.
                         Et des es événementiels remplis de programmes d'information et de réflexion pour enrichir et
@@ -503,7 +503,7 @@
                 </div>
                 <div class="grid grid-cols-2 md:grid-cols-3 gap-4 pt-16">
                     <div class="ml-10">
-                        <img class="h-auto max-w-full rounded-lg" src="img/Image2.png" alt="">
+                        <img  data-aos="zoom-in-left" class="h-auto max-w-full rounded-lg" src="img/Image2.png" alt="">
                         <h2 class="pt-8 text-2xl">
                             Programmes de formation des dirigeants
                         </h2>
@@ -517,7 +517,7 @@
 
                     </div>
                     <div class="ml-10">
-                        <img class="h-auto max-w-full rounded-lg" src="img/Image3.png" alt="">
+                        <img data-aos="zoom-in-left" class="h-auto max-w-full rounded-lg" src="img/Image3.png" alt="">
                         <h2 class="pt-8 text-2xl">
                             Produits Technologiques
                         </h2>
@@ -530,7 +530,7 @@
 
                     </div>
                     <div class="ml-10">
-                        <img class="h-auto max-w-full rounded-lg" src="img/Image1.png" alt="">
+                        <img data-aos="zoom-in-right" class="h-auto max-w-full rounded-lg" src="img/Image1.png" alt="">
                         <h2 class="pt-8 text-2xl">
                             ScaleUP Africa meet-ups
                         </h2>
