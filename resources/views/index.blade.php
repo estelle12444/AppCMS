@@ -3,7 +3,8 @@
 
 @section('content')
 
-    <div class=" pl-20 pb-5 bg-gradient-to-r from-orange-100 from-20%  to-gray-100 to-90% sm:pl-2 pb-2 md:pl-4 ">
+    <section  >
+    {{-- <div class=" pl-20 pb-5 bg-gradient-to-r from-orange-100 from-20%  to-gray-100 to-90% sm:pl-2 pb-2 md:pl-4 ">
         <div class="flex flex-row pt-24 container pb-8">
             <div class="basis-1/2 lg:pl-24 lg:pt-12 sm:pl-8 md:pl-8">
                 <h1 class="lg:text-6xl font-bold text-slate-600 tracking-tight sm:text-3xl md:text-5xl ">
@@ -41,7 +42,56 @@
                             </svg>
                         </span>
                     </span>
-                    <video  class="w-full " muted autoplay controls>
+                    <video  class="w-full rounded)lg" muted autoplay controls>
+
+                        <source src="videos/814dc43e870597176cad645798825c03.mp4" type="video/mp4">
+
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="overlay"></div>
+            </div>
+        </div>
+    </div> --}}
+    <div class=" pl-16 pb-5 bg-gradient-to-r from-orange-100 from-20%  to-gray-100 to-90%  ">
+        <div class="grid gap-8 md:grid-cols-2 md:items-center md:right pt-16 container pb-8">
+            <div data-aos="fade-right" class=" lg:pl-15 lg:pt-12 sm:pl-8 md:pl-8 " >
+                <h1 class="text-6xl  font-medium text-slate-600 tracking-tight  ">
+                    LE <span class="text-orange ">VITIB </span> VOUS
+                </h1>
+                <h1 class="text-6xl font-medium pt-8 text-slate-600  ">
+                    SOUHAITE LA
+                </h1>
+                <h1 class="text-6xl font-medium pt-8 text-slate-600  ">
+                    BIENVENUE
+                </h1>
+                <p class="text-2xl font-medium  text-slate-600  pt-8">
+                    Le parc Technologique de Côte d'Ivoire
+                </p>
+                <div class=" pt-8  ">
+
+                    <button type="button" style="background-color: #F18700"
+                        class=" pl-16 pr-16 pt-4 pb-4 font-medium rounded-none  white text-center  ">
+                        REJOIGNEZ NOUS
+                    </button>
+                </div>
+            </div>
+            <div data-aos="fade-right" class=" pr-24  bg-no-repeat" style="background-image: url(img/Image9.png); background-size:cover">
+                <div
+                    class="videoWrapper flex justify-center items-center  rounded-lg border-solid border-4 border-gray-300  ">
+                    <span class="absolute  flex h-20 w-20">
+                        <span
+                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+                        <span class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" style="color: white"
+                                class=" relative inline-flex rounded-full h-16 w-16 pl-2 bg-amber-500">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                            </svg>
+                        </span>
+                    </span>
+                    <video  class="w-full rounded-lg" muted autoplay controls>
 
                         <source src="videos/814dc43e870597176cad645798825c03.mp4" type="video/mp4">
 
@@ -52,13 +102,14 @@
             </div>
         </div>
     </div>
+</section>
 
 
-    <div class=" bg-gradient-to-r from-gray-50 from-40% to-green-200 to-60% ">
+    <div   class="  bg-gradient-to-r from-gray-50 from-40% to-green-200 to-60% ">
         <div class=" bg-white flex flex-row  ">
-            <div class="basis-1/6 pl-24  ">
+            <div class="basis-1/6 pl-24  " data-aos="zoom-out-up">
                 <div class="rounded-none-4 blue text-white h-32   ">
-                    <h3 class=" text-2xl pt-8 pl-2">Nos partenaires</h3>
+                    <h3 class=" text-lg pt-8 pl-2">Nos <br> partenaires</h3>
                 </div>
             </div>
             <div class="basis-1/6 pl-8 pt-8 ">
@@ -79,17 +130,17 @@
         </div>
         <hr>
     </div>
-    <div class="bg-gradient-to-r from-orange-100 from-20%  to-green-100 to-90%">
-    <div>
-        <div class="  pl-20 pt-24 sm:pl-2 pt-8 " >
+    <div  class="bg-gradient-to-r from-orange-100 from-20%  to-green-100 to-90%">
+    <section class="">
+        <div class="  pl-20 pt-24 sm:pl-2 md:pl-4 pt-8 " >
             <div class=" bg-no-repeat " style="background-image: url(img/background/font_logo.png)">
-                <div class="flex flex-col  ">
+                <div data-aos="zoom-in-up" class="grid gap-8 md:grid-cols-1  md:right  ">
                     <div>
-                        <h1 class=" text-center text-3xl font-bold text-slate-600  p-6">INNOVEZ AU COEUR DE L'AFRIQUE
+                        <h1  class=" text-center text-3xl font-bold text-slate-600  sm:p-2 lg:p-6" >INNOVEZ AU COEUR DE L'AFRIQUE
                         </h1>
                     </div>
-                    <div class="  tracking-tight">
-                        <p class="text-center text-justify text-lg lg:pl-72 lg:pr-80 sm:pl-8 sm:pr-8 md:pl-4 md:pr-8"> Bienvenue au VITIB - Village des
+                    <div class=" tracking-tight" >
+                        <p class="text-center text-justify sm:text-center text-lg lg:pl-72 lg:pr-80 md:sm:pl-2 sm:pr-8 md:pl-4 md:pr-8 " > Bienvenue au VITIB - Village des
                             Technoloies de
                             l'Information et de la Biotechnologie, un centre d'excellence dédié à l'innvovation et au
                             développement technologique en Côte D'Ivoire. Situé au coeur de l'Afrique, en Côte d'Ivoire, le
@@ -98,8 +149,8 @@
                     </div>
                 </div>
                 <div class="flex flex-row">
-                    <div class=" basis-1/2 text-right pt-4 underline ">
-                        <a href="#"
+                    <div class=" basis-1/2 text-right pt-4  ">
+                        <a href="/about"
                             class="  inline-flex items-center font-medium text-orange-400 dark:text-orange-400 hover:underline">
                             Voir plus
                             <svg class="w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -115,7 +166,7 @@
 
         <div class="pl-32 pr-32  bg-no-repeat" >
             <div class="flex flex-row pt-16 " style="background-image: url(img/Image8.png)">
-                <div class="basis-1/2 pl-24 ">
+                <div  data-aos="fade-right" class="basis-1/2 pl-24 ">
                     <h1 class="text-4xl font-bold  tracking-tight   ">
                         DECOUVREZ 8 AVANTAGES UNIQUE AU VITIB
                     </h1>
@@ -129,8 +180,8 @@
                     </p>
 
                     <div class="flex flex-row">
-                        <div class=" basis-1/2 text-center pt-8 underline ">
-                            <a href="#"
+                        <div class=" basis-1/2 text-center pt-8 ">
+                            <a href="/about"
                                 class="  inline-flex items-center font-medium text-orange-400 dark:text-orange-400 hover:underline">
                                 Voir plus
                                 <svg class="w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -142,7 +193,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="basis-1/2 pr-16 ">
+                <div data-aos="fade-left" class="basis-1/2 pr-16 ">
                     <div class="flex flex-row">
                         <div class="basis-1/2 ">
                             <div class="flex flex-col  ml-10 ">
@@ -261,10 +312,12 @@
                 {{-- <img src="img/parcours.png" alt=""> --}}
 
                 <div class=" pt-8 text-center">
+                    <a href="/installer">
                     <button type="button" style="background-color: #F18700"
                         class="font-bold rounded-none  white text-center pl-16 pt-4 pb-4 pr-16   ">
                         REJOIGNEZ NOUS
                     </button>
+                </a>
                 </div>
             </div>
             {{-- <div class="flex flex-col  py-32">
@@ -409,7 +462,7 @@
 
                     </div>
                     <div class="flex items-left pt-8 rounded-lg " role="alert">
-                        <div class=" pt-4 underline ">
+                        <div class=" pt-4  ">
                             <a href="#"
                                 class="  inline-flex items-center font-medium text-orange-400 dark:text-orange-400 hover:underline">
                                 Voir plus
@@ -425,7 +478,7 @@
                 </div>
                 <div class="basis-1/2">
                     <div>
-                        <img src="img/image4.png " alt="">
+                        <img src="img/Image4.png " alt="">
                     </div>
 
 
@@ -490,28 +543,29 @@
                 </div>
             </div>
 
-            <div class=" flex flex-col bg-repeat-x " style="background-image: url('img/Image6.png')">
-                <div class="pl-30 ">
-                    <h1 class="text-4xl text-center font-bold ">
+            <div class="flex flex-col bg-repeat-x " style="background-image: url('img/Image6.png')">
+                <div class="px-30 py-12">
+                    <h1 class="text-4xl  text-center font-bold text-slate-600 space ">
                         COMMENT NOUS REJOINDRE
                     </h1>
 
-                    <div class="flex flex-row py-16">
+                    <div class="flex flex-row py-8">
                         <div class="basis-1/3">
                             <img class="h-auto max-w-full rounded-lg" src="img/Image7.png" alt="">
                         </div>
                         <div class="basis-1/3 pl-10">
-                            <h2 class="font-bold py-4">
+                            <h2 class="font-bold  text-lg">
                                 TÉLÉCHARGER DOSSIER DE DEMANDE D’AGRÉMENT
                             </h2>
-                            <p class="text-justify">
+                            <p class="text-justify text-lg ">
                                 Une opportunité exceptionnelle au VITIB.
                                 Bénéficiez d'avantages fiscaux, d'une infrastructure de pointe et d'un écosystème dynamique
                                 propice à l'innovation. Immergez votre entreprise dans un environnement stratégique et
                                 prospère,
                                 prêt à accueillir les entreprises technologiques les plus prometteuses.
                             </p>
-                            <p class="text-justify">
+
+                            <p class="text-justify text-lg">
                                 Rejoignez-nous dès aujourd'hui et transformez l'avenir de votre entreprise au cœur de
                                 l'Afrique.
                             </p>
@@ -528,9 +582,12 @@
                                         </svg>
                                     </div>
                                     <div class=" basis-3/5 ">
-                                        <a href="" class="underline">
-                                            Formulaire de demande
+                                        <a href="/download-pdf" class="underline hover:underline">
+                                            <p class="text-lg">
+                                                Formulaire de demande
                                             d’agrément Pépinière
+                                            </p>
+
                                         </a>
                                     </div>
                                     <div class=" basis-1/5 ">
@@ -553,11 +610,13 @@
                                         </svg>
                                     </div>
                                     <div class=" basis-3/5 ">
-                                        <a href="" class="underline">
+                                        <a href="/opportunity-pdf" class=" underline hover:underline">
+                                            <p class="text-lg">
                                             Consulter la liste des
                                             opportunités
                                             d’investissement
                                             (investir au VITIB)
+                                            </p>
                                         </a>
                                     </div>
                                     <div class=" basis-1/5 ">
@@ -580,8 +639,10 @@
                                         </svg>
                                     </div>
                                     <div class=" basis-3/5 ">
-                                        <a href="" class="underline">
+                                        <a href="/telecharger-pdf" class=" underline hover:underline">
+                                            <p class="text-lg">
                                             Formulaire de demande d'agrement
+                                            </p>
                                         </a>
                                     </div>
                                     <div class=" basis-1/5 ">
@@ -600,10 +661,12 @@
                             </div>
 
                             <div class="border-dashed px-4 border-l-2 border-gray-700">
+                                <a href="/installer">
                                 <button type="button" style="background-color: #F18700"
-                                    class="font-bold rounded-none white text-center p-4 pl-20 pr-20">
+                                    class="font-bold  text-lg rounded-none bg-amber-500 white text-center p-4 pl-20 pr-20">
                                     REJOIGNEZ NOUS
                                 </button>
+                                </a>
                             </div>
 
                         </div>
@@ -736,7 +799,7 @@
                 </div>
 
                 <div class="rounded-lg border-2 mt-20 border-gray-300 p-2 ml-72 mr-64 mb-10">
-                    <img src="img/image5.png" alt="" width="3990">
+                    <img src="img/Image5.png" alt="" width="3990">
 
                     <h1 class="font-bold font-sora text-5xl pl-32 pt-4 pb-8">
                         Contactez-nous
@@ -769,5 +832,5 @@
             </div>
         </div>
         </div>
-    </div>
+    </section>
 @endsection

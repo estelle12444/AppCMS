@@ -36,9 +36,9 @@
             </div>
                 <div class="h-auto bg-no-repeat max-w-full rounded-lg"
                 style="background-image: url('img/page_6/karaoke.png');background-size:cover; ">
-                <div class="   text-left pt-32 lg:pt-32">
+                <div class="   text-left pt-32 lg:pt-32 pb-8">
                     <p class=" text-sm  pb-16 font-extrabold tracking-tight leading-none text-white md:text-3xl lg:text-lg lg:p-8">
-                        Qu'est-il arrivé à la nouvelle <br>vidéo virale ?
+                        Qu'est-il arrivé à la nouvelle vidéo virale ?
                     </p>
                 </div>
             </div>
@@ -54,7 +54,7 @@
         </div>
         <div class="grid grid-col-4 grid-flow-col gap-4 pt-16">
             <div class="h-auto bg-no-repeat max-w-full rounded-lg"
-                    style="background-image: url('img/page_6/image2.png')">
+                    style="background-image: url('img/page_6/image3.png')">
                     <div class=" mx-auto max-w-screen-xl text-left pt-64 lg:pt-64">
                         <p class=" text-lg font-extrabold tracking-tight leading-none text-white md:text-3xl lg:text-lg">
                             Pépinière
@@ -64,7 +64,7 @@
                     </div>
                 </div>
                 <div class="h-auto bg-no-repeat max-w-full rounded-lg"
-                    style="background-image: url('img/slider/tech.png')">
+                    style="background-image: url('img/page_6/image4.png')">
                     <div class=" mx-auto max-w-screen-xl text-left pt-64 lg:pt-64">
                         <p class=" text-4xl font-extrabold tracking-tight leading-none text-white md:text-3xl lg:text-lg">
                             Produits
@@ -73,7 +73,7 @@
                     </div>
                 </div>
                 <div class="h-auto bg-no-repeat max-w-full rounded-lg"
-                    style="background-image: url('img/slider/immeuble.png')">
+                    style="background-image: url('img/page_6/image2.png')">
                     <div class=" mx-auto max-w-screen-xl text-left pt-64 lg:pt-64">
                         <p class=" text-4xl font-extrabold tracking-tight leading-none text-white md:text-3xl lg:text-lg">
                             Hebergements
@@ -82,7 +82,7 @@
                     </div>
                 </div>
                 <div class="h-auto bg-no-repeat max-w-full rounded-lg"
-                    style="background-image: url('img/slider/immeuble.png')">
+                    style="background-image: url('img/page_6/image5.png')">
                     <div class=" mx-auto max-w-screen-xl text-left pt-64 lg:pt-64">
                         <p class=" text-4xl font-extrabold tracking-tight leading-none text-white md:text-3xl lg:text-lg">
                             Hebergements

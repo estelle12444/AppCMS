@@ -79,10 +79,12 @@
                     Ensemble, innovons au cœur de l'Afrique.
                 </p>
                 <div class="pt-10">
+                    <a href="/installer">
                     <button type="button" style="background-color: #F18700"
                         class="font-bold rounded-none  white text-center p-4  pl-20 pr-20">
                         REJOIGNEZ NOUS
                     </button>
+                    </a>
                 </div>
             </div>
         </div>

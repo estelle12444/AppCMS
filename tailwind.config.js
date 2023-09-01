@@ -17,9 +17,15 @@ export default {
             center: true,
         }
     },
+    animatecss: {
+        prefix: 'custom-animation'
+      }
   },
   plugins: [
-    require('flowbite/plugin')
+    require('flowbite/plugin')({
+        charts: true,
+    }),
+    require('tailwind-animatecss')
 
   ],
 }

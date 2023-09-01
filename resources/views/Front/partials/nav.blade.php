@@ -5,13 +5,14 @@ $url = $_SERVER['REQUEST_URI'];
     class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 bg-gradient-to-r ">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/home" class="flex items-center">
-            <img src="{{ asset('img/slider/logo-VILLAGE.svg') }}" width="150" alt="logo">
+            <img src="{{ asset('img/slider/Logo-VILLAGE.svg') }}" width="150" alt="logo">
         </a>
         <div class="flex md:order-2">
             <a href="#">
-                <button type="button" style="background-color:  #F18700;"
-                    class="text-white bg-orange-500 hover:bg-slate-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800 p-8">
-                    S'inscrire</button>
+                <button type="button" style="background-color: #F18700"
+                        class=" pl-4 pr-4 pt-2 pb-2 font-medium rounded-none  white text-center  ">
+                        S'INSCRIRE
+                    </button>
             </a>
             <p class="pl-4 pt-2">
                 <strong style="color:  #F18700;">FR</strong> | EN
@@ -67,7 +68,7 @@ $url = $_SERVER['REQUEST_URI'];
                 </li>
                 <li>
                     <a href="/media"
-                        class="block py-2 pl-3 pr-4 text-gray-700 <?php if ($url == '/about') {
+                        class="block py-2 pl-3 pr-4 text-gray-700 <?php if ($url == '/media') {
                             echo 'md:text-orange-400';
                         } ?>  rounded md:bg-transparent md:hover:text-amber-500  md:p-0 md:dark:text-blue-500"
                         aria-current="page">Mediathèque</a>

@@ -388,7 +388,7 @@
                                 </svg>
                             </div>
                             <div class=" basis-3/5 ">
-                                <a href="" class="underline">
+                                <a href="/download-pdf" class="underline">
                                     Formulaire de demande
                                     d’agrément Pépinière
                                 </a>
@@ -413,7 +413,7 @@
                                 </svg>
                             </div>
                             <div class=" basis-3/5 ">
-                                <a href="" class="underline">
+                                <a href="/opportunity-pdf" class="underline">
                                     Consulter la liste des
                                     opportunités
                                     d’investissement
@@ -439,7 +439,7 @@
                                 </svg>
                             </div>
                             <div class=" basis-3/5 ">
-                                <a href="" class="underline">
+                                <a href="/telecharger-pdf" class="underline ">
                                     Formulaire de demande d'agrement
                                 </a>
                             </div>

@@ -594,7 +594,7 @@
                                     </svg>
                                 </div>
                                 <div class=" basis-3/5 ">
-                                    <a href="" class="underline">
+                                    <a href="/download-pdf" class="underline hover:underline">
                                         <p class="text-lg">
                                             Formulaire de demande
                                         d’agrément Pépinière
@@ -622,7 +622,7 @@
                                     </svg>
                                 </div>
                                 <div class=" basis-3/5 ">
-                                    <a href="" class="underline">
+                                    <a href="/opportunity-pdf" class=" underline hover:underline">
                                         <p class="text-lg">
                                         Consulter la liste des
                                         opportunités
@@ -651,7 +651,7 @@
                                     </svg>
                                 </div>
                                 <div class=" basis-3/5 ">
-                                    <a href="" class="underline">
+                                    <a href="/telecharger-pdf" class=" underline hover:underline">
                                         <p class="text-lg">
                                         Formulaire de demande d'agrement
                                         </p>
@@ -673,10 +673,12 @@
                         </div>
 
                         <div class="border-dashed px-4 border-l-2 border-gray-700">
-                            <button type="button"
+                            <a href="/installer">
+                            <button type="button" style="background-color: #F18700"
                                 class="font-bold  text-lg rounded-none bg-amber-500 white text-center p-4 pl-20 pr-20">
                                 REJOIGNEZ NOUS
                             </button>
+                            </a>
                         </div>
 
                     </div>
