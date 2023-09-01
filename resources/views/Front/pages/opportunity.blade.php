@@ -2,7 +2,7 @@
 
 
 @section('content')
-    <section class="bg-center bg-no-repeat bg-blend-multiply" style="background-image: url(img/slider/header_1.png)">
+    <section data-aos="zoom-in-up" class="bg-center bg-no-repeat bg-blend-multiply" style="background-image: url(img/slider/header_1.png)">
         <div class="px-4 mx-auto max-w-screen-xl text-center py-20 lg:pb-48 lg:pt-32">
             <h1 class="uppercase mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
                <p> Projets, Services</p>
@@ -13,11 +13,11 @@
 
     <div class="   pt-32 pr-20  bg-gradient-to-r from-orange-100 from-20%  to-green-100 to-90%">
         <div class="flex flex-row pl-32 pr-16 pb-10">
-            <div class="basis-1/2 md:basis-1/2">
+            <div data-aos="zoom-in-left" class="basis-1/2 md:basis-1/2">
                 <img src="img/plan.png" class="" alt="">
             </div>
 
-            <div class="basis-1/2 md:basis-1/2">
+            <div data-aos="zoom-in-right" class="basis-1/2 md:basis-1/2">
                 <h1 class=" text-5xl  pr-16 pt-4 font-bold tracking-tight ">
                     UN LIEU PENSÉ POUR VOS BESOINS.
                 </h1>
@@ -60,7 +60,7 @@
             </div>
         </div>
     </div>
-    <div class=" bg-gradient-to-r from-orange-100 from-20%  to-green-100 to-90%">
+    <div data-aos="zoom-in-up" class=" bg-gradient-to-r from-orange-100 from-20%  to-green-100 to-90%">
         <div class="grid grid-cols-5 gap-4   pt-5 pr-32 pb-10 md:pl-20 md:pb-5 lg:pl-40 lg:pb-10">
             <div class="bg-amber-500 font-extrabold rounded-lg p-4" style=" height:100px ">
                 <p class="text-white text-center  ">
@@ -132,9 +132,9 @@
 
     </div>
     <div class="bg-gradient-to-r from-gray-100 from-20%  to-orange-100 to-90%">
-    <div class=" md:container  md:mx-auto px-24 pt-16  ">
+    <div class="   md:mx-auto px-24 pt-16  ">
 
-        <h1 class="mb-24 text-5xl text-center font-bold tracking-tight text-gray-900">INVESTISSEZ SUR CES PROJETS D'AVENIR
+        <h1 data-aos="zoom-in-up" class="mb-24 text-5xl text-center font-bold tracking-tight text-gray-900">INVESTISSEZ SUR CES PROJETS D'AVENIR
         </h1>
 
         <div class=" grid grid-cols-2 gap-2">
@@ -143,18 +143,18 @@
                 <h5 class="mb-2 text-2xl pt-4 font-bold tracking-tight text-gray-900 dark:text-white">
                     Entrepôts à louer
                 </h5>
-                <p class="text-justify  pr-10">
+                <p class="text-justify   pr-16">
                     Ce projet vise à créer des infrastructures de type entrepôts, pouvant abriter les chaines d’assemblage
                     de divers produits TIC, ainsi que des espaces de stockage complémentaires pour des industriels et des
                     usagers de la ZBTIC.
                 </p>
             </div>
-            <div class="">
+            <div data-aos="zoom-in-down" class="">
                 <img class="h-auto max-w-full rounded-lg " src="img/immeuble.png" alt="">
                 <h5 class="mb-2 text-2xl pt-4 font-bold tracking-tight text-gray-900 dark:text-white">
                     Immeubles à bureaux
                 </h5>
-                <p class="text-justify pb-20  ">
+                <p class="text-justify pb-20  pr-16  ">
                     Cette zone inclut une zone économique TIC-soft, ayant pour objet l’hébergement des entreprises œuvrant
                     dans le secteur des TIC. Les infrastructures d’accueil de ce type d’entreprises répond à des standards
                     internationaux, en vue de répondre aux exigences des multinationales (Microsoft, Oracle, Apple, Google)
@@ -162,46 +162,46 @@
                     sont attendus dans la zone.
                 </p>
             </div>
-            <div>
+            <div data-aos="zoom-in-up">
                 <img class="h-auto max-w-full rounded-lg pr-10" src="img/Picture9.png" alt="">
                 <h5 class="mb-2 text-2xl pt-4 font-bold tracking-tight text-gray-900 dark:text-white">
                     Promotion Immobilière Bloc A
                 </h5>
-                <p class="text-justify   pr-10">
+                <p class="text-justify   pr-16">
                     Cette promotion immobilière doit prendre en compte un compte un programme spécifique d’habitants
                     réalisées à titre gracieux pour VITIB S.A. Le reste de la parcelle (80%) pourra être commercialisé. 2 Ce
                     projet doit inclure à la fois des habitations collectives de moyen et haut standing (appartements) et
                     des habitations pavillonnaires (villas).
                 </p>
             </div>
-            <div>
+            <div data-aos="zoom-in-up">
                 <img class="h-auto max-w-full rounded-lg " src="img/universite.png" alt="">
                 <h5 class="mb-2 text-2xl pt-4 font-bold tracking-tight text-gray-900 dark:text-white">
                     Université
                 </h5>
-                <p class="text-justify  pb-20 ">
+                <p class="text-justify  pb-20  pr-16">
                     Le Village de l’Innovation Technologique a pour vocation d’être le centre de la réflexion technologique
                     en Afrique de l’Ouest. La création d’un établissement académique de niveau universitaire permettra de
                     former les scientifiques et les managers de demain. L’établissement tirera avantage de la proximité des
                     entreprises installées au sein de la zone économique spéciale.</p>
             </div>
-            <div>
+            <div data-aos="zoom-in-down ">
                 <img class="h-auto max-w-full rounded-lg pr-10" src="img/hotel.png" alt="">
                 <h5 class="mb-2 text-2xl pt-4 font-bold tracking-tight text-gray-900 dark:text-white">
                     Hôtels d’affaires
                 </h5>
-                <p class="text-justify   pr-10">
+                <p class="text-justify   pr-16">
                     Voisin du futur centre des Congrès du parc technologique, cet hôtel d’affaires offrira une solution
                     d’hébergement aux différents experts, cadres et visiteurs des sociétés en opération sur le site de la
                     ZBTIC.
                 </p>
             </div>
-            <div>
+            <div data-aos="zoom-in-up">
                 <img class="h-auto max-w-full rounded-lg " src="img/immobilier.png" alt="">
                 <h5 class="mb-2 text-2xl pt-4 font-bold tracking-tight text-gray-900 dark:text-white">
                     Immeubles à bureaux
                 </h5>
-                <p class="text-justify pb-20 ">
+                <p class="text-justify pb-20  pr-16 ">
                     Cette zone inclut une zone économique TIC-soft, ayant pour objet l’hébergement des entreprises œuvrant
                     dans le secteur des TIC. Les infrastructures d’accueil de ce type d’entreprises répond à des standards
                     internationaux, en vue de répondre aux exigences des multinationales (Microsoft, Oracle, Apple, Google)
@@ -209,23 +209,23 @@
                     sont attendus dans la zone.
                 </p>
             </div>
-            <div>
+            <div data-aos="zoom-in-down">
                 <img class="h-auto max-w-full rounded-lg pr-10" src="img/centre.png" alt="">
                 <h5 class="mb-2 text-2xl pt-4 font-bold tracking-tight text-gray-900 dark:text-white">
                     Entrepôts à louer
                 </h5>
-                <p class="text-justify   pr-10">
+                <p class="text-justify    pr-16">
                     Ce projet vise à créer des infrastructures de type entrepôts, pouvant abriter les chaines d’assemblage
                     de divers produits TIC, ainsi que des espaces de stockage complémentaires pour des industriels et des
                     usagers de la ZBTIC.
                 </p>
             </div>
-            <div>
+            <div data-aos="zoom-in-up">
                 <img class="h-auto max-w-full rounded-lg " src="img/centre_cultu.png" alt="">
                 <h5 class="mb-2 text-2xl pt-4 font-bold tracking-tight text-gray-900 dark:text-white">
                     Immeubles à bureaux
                 </h5>
-                <p class="text-justify pb-20  ">
+                <p data-aos="zoom-in-left" class="text-justify pb-20  pr-16 ">
                     Cette zone inclut une zone économique TIC-soft, ayant pour objet l’hébergement des entreprises œuvrant
                     dans le secteur des TIC. Les infrastructures d’accueil de ce type d’entreprises répond à des standards
                     internationaux, en vue de répondre aux exigences des multinationales (Microsoft, Oracle, Apple, Google)
@@ -233,23 +233,23 @@
                     sont attendus dans la zone.
                 </p>
             </div>
-            <div>
+            <div data-aos="zoom-in-up">
                 <img class="h-auto max-w-full rounded-lg pr-10" src="img/centre_commer.png" alt="">
                 <h5 class="mb-2 text-2xl pt-4 font-bold tracking-tight text-gray-900 dark:text-white">
                     Entrepôts à louer
                 </h5>
-                <p class="text-justify   pr-10">
+                <p class="text-justify    pr-16">
                     Ce projet vise à créer des infrastructures de type entrepôts, pouvant abriter les chaines d’assemblage
                     de divers produits TIC, ainsi que des espaces de stockage complémentaires pour des industriels et des
                     usagers de la ZBTIC.
                 </p>
             </div>
-            <div>
+            <div data-aos="zoom-in-down">
                 <img class="h-auto max-w-full rounded-lg " src="img/clinique.png" alt="">
                 <h5 class="mb-2 text-2xl pt-4 font-bold tracking-tight text-gray-900 dark:text-white">
                     Clinique médicale internationale
                 </h5>
-                <p class="text-justify  ">
+                <p class="text-justify  pr-16 ">
                     Une clinique médicale de stature internationale correspondant aux standards internationaux, vise à
                     offrir à minima des services de médecine générale et des services spécialisés à la clientèle et aux
                     travailleurs de la ZBTIC.
@@ -258,10 +258,10 @@
 
         </div>
         <div class="pt-32">
-            <h1 class="mb-20 text-3xl text-center font-bold tracking-tight text-gray-900">
+            <h1 data-aos="zoom-out" class="mb-20 text-3xl text-center font-bold tracking-tight text-gray-900">
                 NOS SERVICES
             </h1>
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div data-aos="zoom-in-down" class="grid grid-cols-2 md:grid-cols-3 gap-4">
                 <div class="h-auto bg-no-repeat max-w-full rounded-lg"
                     style="background-image: url('img/slider/pepiniere.png')">
                     <div class=" mx-auto max-w-screen-xl text-left pt-64 lg:pt-64">
@@ -294,12 +294,12 @@
         </div>
 
         <div class=" pt-24 pb-10">
-            <h1 class="mb-20 text-3xl text-center font-bold tracking-tight text-gray-900">
+            <h1 data-aos="zoom-in-down" class="mb-20 text-3xl text-center font-bold tracking-tight text-gray-900">
                 REJOIGNEZ-NOUS
             </h1>
 
             <div class="flex flex-row justify-between  leading-normal bg-center">
-                <div class="basis-1/2 pl-24">
+                <div data-aos="zoom-in-up" class="basis-1/2 pl-24">
                     <img class="h-72  max-w-lg mx-auto  " src="img/join.png" alt="image description">
                 </div>
                 <div class="basis-1/2  mr-48">

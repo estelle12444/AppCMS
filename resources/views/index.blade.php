@@ -543,7 +543,7 @@
                 </div>
             </div>
 
-            <div class="flex flex-col bg-repeat-x " style="background-image: url('img/Image6.png')">
+            <div data-aos="zoom-in-up" class="flex flex-col bg-repeat-x " style="background-image: url('img/Image6.png')">
                 <div class="px-30 py-12">
                     <h1 class="text-4xl  text-center font-bold text-slate-600 space ">
                         COMMENT NOUS REJOINDRE
@@ -675,12 +675,12 @@
                 </div>
             </div>
             <div class="flex flex-col  py-20 pb-32">
-                <div class="px-30 mb-20">
+                <div data-aos="zoom-in-up" class="px-30 mb-20">
                     <h1 class="text-5xl text-center font-bold   ">
                         Témoignages de nos clients
                     </h1>
                 </div>
-                <div class="flex flex-row">
+                <div data-aos="zoom-in-up" class="flex flex-row">
                     <div class="basis-1/3  pl-16 pr-10">
                         <div class="flex flex-col">
                             <div class="max-w-sm pl-4 py-4 pr-2  bg-white rounded-lg ">
@@ -798,7 +798,7 @@
                     </div>
                 </div>
 
-                <div class="rounded-lg border-2 mt-20 border-gray-300 p-2 ml-72 mr-64 mb-10">
+                <div data-aos="zoom-in-up" class="rounded-lg border-2 mt-20 border-gray-300 p-2 ml-72 mr-64 mb-10">
                     <img src="img/Image5.png" alt="" width="3990">
 
                     <h1 class="font-bold font-sora text-5xl pl-32 pt-4 pb-8">
