@@ -91,7 +91,7 @@
             </div>
             <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <a href="#">
-                    <img class="h-48 w-96 rounded-lg" src="img/picture5.png" alt="" />
+                    <img class="h-48 w-96 rounded-lg" src="img/Picture5.png" alt="" />
                 </a>
                 <div class="p-5">
                     <p class="" style="color: #F18700;">

@@ -163,7 +163,7 @@
                 </p>
             </div>
             <div>
-                <img class="h-auto max-w-full rounded-lg pr-10" src="img/picture9.png" alt="">
+                <img class="h-auto max-w-full rounded-lg pr-10" src="img/Picture9.png" alt="">
                 <h5 class="mb-2 text-2xl pt-4 font-bold tracking-tight text-gray-900 dark:text-white">
                     Promotion Immobilière Bloc A
                 </h5>

@@ -2,7 +2,7 @@
 
 
 @section('content')
-    <section class="bg-center bg-no-repeat  bg-blend-multiply " style="background-image: url(img/page_4/image2.png)">
+    <section class="bg-center bg-no-repeat  bg-blend-multiply " style="background-image: url(img/page_4/Image2.png)">
         <div class="px-4 mx-auto max-w-screen-xl text-center py-20  lg:py-48">
             <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">COMMENT
                 S'IMPLANTER</h1>
@@ -24,13 +24,13 @@
         </div>
         <!-- ... -->
         <div>
-            <img src="img/page_4/image4.png" alt="">
+            <img src="img/page_4/Image4.png" alt="">
         </div>
 
     </div>
     <div class="grid grid-cols-3 gap-3 pt-20 pr-48 pl-32 pb-20">
         <div>
-            <img src="img/page_4/image5.png" alt="">
+            <img src="img/page_4/Image5.png" alt="">
         </div>
         <!-- ... -->
         <div class="col-span-2 pl-8">
