@@ -20,13 +20,13 @@
         </div>
     </section>
     <section class="" style="height:1570px; bottom:100px">
-    <div class="pl-32 pr-32 relative bg-repeat-x " style="background-image: url(img/Image8.png);  ">
+    <div class="md:px-32 px-12  relative bg-repeat-x " style="background-image: url(img/Image8.png);  ">
 
-        <div class="flex flex-row ">
+        <div class="md:flex flex-row ">
             <div class="basis-1/2">
                 <img src="img/dg.png" width="" alt="">
             </div>
-            <div class="basis-1/2 ">
+            <div class="md:basis-1/2 ">
                 <h2 class="font-bold text-5xl py-8">Mot du directeur Géneral</h2>
                 <p class="text-justify text-gray-600  text-lg tracking-tight">
                     Bienvenue sur le site Internet du Village des Technologies de l’Information et de la Biotechnologie
@@ -79,8 +79,8 @@
             </div>
         </div>
 
-        <div class="flex flex-row white absolute  left-0" style="background-image: url(img/blue.png); top:95%">
-            <div class="basis-1/2 pl-32 pr-8 pt-10  ">
+        <div class="md:flex flex-row white absolute  left-0" style="background-image: url(img/blue.png); top:95%">
+            <div class="md:basis-1/2 md:pl-32 pl-6 md:pr-8 pt-10  ">
                 <h2 class="font-bold text-4xl ">
                     Notre vision
                 </h2>
@@ -90,7 +90,7 @@
                     renommée internationale. <br>
                     Cette vision inclut quelques éléments clés qui sont:
                 </p>
-                <h2 class=" font-bold  tracking-tight">
+                <h2 class=" font-bold  tracking-tight ">
                     1. Infrastructure de pointe :
                 </h2>
                 <p class="text-justify pt-4 pb-4  text-lg tracking-tight">
@@ -100,7 +100,7 @@
                     <br>Cela
                     faciliterait le développement et la mise en œuvre de nouvelles technologies.
                 </p>
-                <h2 class="font-bold ">
+                <h2 class="font-bold font-bold text-lg tracking-tight">
                     3. Formation et développement des talents :
                 </h2>
                  <p class="text-justify pt-4 pb-4 tracking-tight text-lg">
@@ -111,7 +111,7 @@
                     continu et en favorisant les interactions entre les étudiants, les chercheurs et les professionnels de
                     l'industrie.
                 </p>
-                <h2 class="font-bold ">
+                <h2 class="font-bold text-lg tracking-tight ">
                     5. Durabilité et responsabilité sociale :
                 </h2>
                 <p class="text-justify pt-4 pb-4 tracking-tight text-lg">
@@ -122,8 +122,8 @@
                     résoudre les défis sociaux et environnementaux.
                 </p>
             </div>
-            <div class="basis-1/2 pt-56 pl-8 pr-32">
-                <h2 class=" font-bold ">
+            <div class="md:basis-1/2 md:pt-56 md:pl-8 md:pr-32">
+                <h2 class=" font-bold text-lg tracking-tight ">
                     2. Collaboration entre les acteurs :
                 </h2>
                  <p class="text-justify pt-4 pb-4 tracking-tight text-lg">
@@ -133,7 +133,7 @@
                     connaissances et les initiatives communes, on peut stimuler l'innovation et accélérer le développement
                     technologique.
                 </p>
-                <h2 class=" font-bold ">
+                <h2 class=" font-bold text-lg tracking-tight ">
                     4. Soutien à l'entrepreneuriat :
                 </h2>
                  <p class="text-justify pt-4 pb-4 tracking-tight text-lg">
@@ -143,7 +143,7 @@
                     programmes d'accélération et un soutien financier pour les entrepreneurs afin de favoriser l'émergence de
                     nouvelles entreprises technologiques.
                 </p>
-                <h2 class=" font-bold ">
+                <h2 class=" font-bold text-lg tracking-tight ">
                     6. Image de marque et réputation :
                 </h2>
                  <p class="text-justify pt-4 pb-4 tracking-tight text-lg">
@@ -163,8 +163,8 @@
 
     <div
         class="  md:mx-auto px-20 py-5 bg-gradient-to-r from-gray-100 from-10%  to-orange-100 to-90% ">
-        <div class="flex flex-row pt-16 pb-16 pl-24  pr-24 ">
-            <div class="basis-1/2">
+        <div class="md:flex flex-row pt-16 pb-16 pl-24  pr-24 ">
+            <div class="md:basis-1/2">
                 <h1 class="font-bold text-6xl pl-4 ">
                     Un espace Tech <br> pour vous
                 </h1>
@@ -178,7 +178,7 @@
                     <img src="img/city.png" class="h-80 w-full pr-16 pl-2" />
                 </div>
             </div>
-            <div class="basis-1/2">
+            <div class="md:basis-1/2">
                 <img src="img/tech.png" class="h-64 w-full " alt="">
                 <h1 class="font-bold text-6xl pt-8 ">
                     Smart city
@@ -197,7 +197,7 @@
             </div>
         </div>
     </div>
-    <div class=" flex flex-row pl-32  " style="background-image: url(img/blue1.png)">
+    <div class=" md:flex flex-row pl-32  " style="background-image: url(img/blue1.png)">
         <div class="basis-1/2 ">
             <img src="img/plan_carte.png" class="pt-4 pb-4" width="" alt="">
         </div>
@@ -209,7 +209,7 @@
                  situé sur l’île de Vitré et séparé du bloc B par la <br>
                 lagune Ebrié.
             </p>
-            <div class="flex flex-row">
+            <div class="    flex flex-row">
                 <div class=" basis-1/2  pt-8 underline ">
                     <a href="#"
                         class="  inline-flex items-center font-medium text-orange-400 dark:text-orange-400 hover:underline">
@@ -226,14 +226,14 @@
         </div>
     </div>
 
-    <div class=" relative flex flex-row bg-gradient-to-r from-gray-100 from-20%  to-orange-100 to-90%  ">
+    <div class=" relative md:flex flex-row bg-gradient-to-r from-gray-100 from-20%  to-orange-100 to-90%  ">
 
-        <div class="basis-3/4 pl-24 pb-32">
+        <div class="md:basis-3/4 pl-24 pb-32">
             <h3 class="font-bold text-4xl pl-10 pt-24 pb-8">
                 8 avantages unique au Vitib
             </h3>
 
-            <div class="flex flex-row">
+            <div class="md:flex flex-row">
                 <div class="basis-1/2 pr-10">
                     <h5 class=" font-bold text-3md  pt-8 pb-4">
                         Avantages fiscaux et réglementaires
@@ -462,7 +462,7 @@
                 </div>
             </div>
         </div>
-        <div class="basis-1/4 pl-64 mt-24 ml-8 bg-no-repeat" style=" background-size:cover; background-image:url('img/image15.png')">
+        <div class=" md:basis-1/4 pl-64 mt-24 ml-8 bg-no-repeat" style=" background-size:cover; background-image:url('img/image15.png')">
 
         </div>
     </div>
@@ -470,10 +470,10 @@
     <div
         class=" md:mx-auto px-20 py-5 bg-gradient-to-r from-orange-100 from-10%  via-30% to-green-100 to-90% ">
 
-        <div class="text-center px-96">
+        <div class="text-center md:px-96">
             <img src="img/cadre.png" class=" pt-16 pb-8  h-auto">
             <h1 class="font-bold text-3xl text-center  pb-4">
-                Le hub des partenariats <br>
+                Le hub des partenariat <br>
                 stratégiques en Afrique
             </h1>
             <p class="text-center text-lg ">
@@ -487,15 +487,15 @@
 
 
         <div class="text-center  pt-48">
-            <h1 class="font-bold px-96 text-4xl text-center pb-4">
+            <h1 class="font-bold md:px-96 text-4xl text-center pb-4">
                 Nos partenaires
             </h1>
-            <p class=" text-center text-lg px-72 pb-4">
-                Notre mission est soutenue par l'engagement du gouvernement ivoirien, qui favorise <br>
+            <p class="  text-center text-lg md:px-72 px-4 pb-4">
+                Notre mission est soutenue par l'engagement du gouvernement ivoirien, qui favorise<br>
                 activement le développement technologique en investissant dans l'innovation et en <br>
                  offrant un soutien précieux aux entreprises établies dans notre zone.
             </p>
-            <div class="flex flex-row">
+            <div class=" flex flex-row">
                 <div class=" basis-1/2 text-right ">
 
                     <a href="#"
@@ -517,7 +517,7 @@
     <div class=" relative md:mx-auto px-20 py-2 ">
 
         <div class="bg-white ">
-            <div class="flex flex-row ">
+            <div class="md:flex flex-row ">
                 <div class="basis-1/6  pl-24 ">
                     <div class=" text-white h-32 w-25  ">
                         <img src="img/partenaire/GOS.png" alt="">
@@ -556,17 +556,17 @@
 
 
         <div  data-aos="fade-up"
-        data-aos-anchor-placement="center-bottom" class="flex flex-col bg-repeat-x " style="background-image: url('img/Image6.png')">
+        data-aos-anchor-placement="center-bottom" class="md:flex flex-col bg-repeat-x " style="background-image: url('img/Image6.png')">
             <div class="px-30 py-12">
                 <h1 class="text-4xl  text-center font-bold text-slate-600 space ">
                     COMMENT NOUS REJOINDRE
                 </h1>
 
-                <div class="flex flex-row pt-16 py-8">
-                    <div class="basis-1/3">
+                <div class="md:flex flex-row pt-16 py-8">
+                    <div class="md:basis-1/3">
                         <img class="h-auto max-w-full rounded-lg" src="img/Image7.png" alt="">
                     </div>
-                    <div class="basis-1/3 pl-10">
+                    <div class="md:basis-1/3 pl-10">
                         <h2 class="font-bold  text-lg">
                             TÉLÉCHARGER DOSSIER DE DEMANDE D’AGRÉMENT
                         </h2>
@@ -584,7 +584,7 @@
                         </p>
 
                     </div>
-                    <div class="basis-1/3 pl-10 ">
+                    <div class="md:basis-1/3 pl-10 ">
                         <div class="basis-2/3  border-dashed  border-l-2 border-gray-700">
                             <div class="flex flex-row ml-4 pb-4 py-6">
                                 <div class=" basis-1/5 ">

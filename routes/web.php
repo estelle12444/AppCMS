@@ -92,6 +92,10 @@ Route::get('/actu', function () {
     return view('Front.pages.actu');
 });
 
+Route::get('/anonce', function () {
+    return view('Front.pages.anonce');
+});
+
 
 
 Route::get('/telecharger-pdf', [DownloadController::class, 'telechargerPDF']);

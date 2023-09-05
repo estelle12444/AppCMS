@@ -2,140 +2,122 @@
 
 
 @section('content')
+    <div class=" pt-32 pr-24 pl-32 bg-gradient-to-r from-orange-100 from-20%  to-gray-100 to-90%">
+        <h1 class="text-gray-500 pb-4 text-2xl font-bold">
+            Recherche
+        </h1>
+        <div class="grid grid-col-3 grid-flow-col gap-4">
+            <div class="row-span-3 col-span-2 ">
+                <div
+                    class="videoWrapper flex justify-center items-center  rounded-lg border-solid border-4 border-gray-300  ">
+                    <video autoplay="" loop="" muted="" class="custom-video"
+                        poster="videos/792bd98f3e617786c850493560e11c45.png">
 
-    <section class="bg-center bg-no-repeat  bg-blend-multiply" style="background-image: url(img/page_5/annonce.png)">
-        <div class="px-4 mx-auto max-w-screen-xl text-center py-20 lg:pb-20 lg:pt-32">
-            <h1
-                class=" text-4xl font-extrabold uppercase tracking-tight leading-none text-white md:text-5xl lg:text-6xl ">
-                ANNONCES</h1>
-        </div>
-    </section>
-    <div  data-aos="fade-up"
-    data-aos-anchor-placement="center-bottom"class=" pt-10 pr-32 pl-32 bg-gradient-to-r from-orange-100 from-20%  to-green-100 to-90%">
+                        <source src="videos/814dc43e870597176cad645798825c03.mp4" type="video/mp4">
 
-        <form action="{{ route('Front.admin.search_process') }}" method="post" class="mb-3">
-            @csrf
-            <div class="grid grid-cols-3 gap-3 ">
-                <div class="col-span-2">
-                    <select
-                        class="bg-white border border-gray-300 text-gray-600 text-lg rounded-lg focus:ring-amber-500 focus:border-amber-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-amber-500 dark:focus:border-amber-500"
-                        name="sector_id" id="sector_id" class="form-control">
-                        <option value="">Tous les secteurs</option>
-                        {{-- @foreach ($sectors as $sector)
-                        <option value="{{ $sector->id }}" {{ old('sector_id') == $sector->id ? 'selected' : '' }}>
-                            {{ $sector->nom }}
-                        </option>
-                    @endforeach --}}
-                    </select>
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="overlay"></div>
                 </div>
-
-                <button type="submit"
-                    class="p-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ">
-                    Rechercher
-                </button>
-
+            <h1 class="text-2xl pt-4 text-gray-500">
+                <strong>
+                    L'essor de l'économie des petits boulots sonne la fin pour ces travailleurs de l'ancien système
+                </strong>
+            </h1>
             </div>
-        </form>
-        <div class="grid grid-col-6 grid-flow-col gap-6 pt-16">
-            <div>
-                <p class="text-lg text-amber-500 font-bold underline">
-                    Tous
-                </p>
+            <div class=" rounded-lg"
+                    style="background-image: url('img/page_6/carousel_petit.png'); background-size:cover; ">
+                    <div class=" mx-auto max-w-screen-xl text-left pt-32 lg:pt-32 ">
+                        <p class=" text-lg  pl-8 pb-16 tracking-tight leading-none white md:text-lg lg:text-lg lg:pl-8 lg:p-8">
+                           <strong> Opportunité d'emploi:</strong>
+                            <br> numérique, marketing
+                        </p>
+                    </div>
             </div>
-            <div>
-                <p class="text-lg text-gray-500 ">
-                   Appels d’offre
-                </p>
-            </div>
-             <div>
-                <p class="text-lg text-gray-500">
-                    Demandes de manifestation
-                </p>
-            </div>
-             <div>
-                <p class="text-lg text-gray-500 ">
-                    Demandes de cotation
-                </p>
-            </div>
-             <div>
-                <p class="text-lg text-gray-500 ">
-                    Appels à candidature
-                </p>
-            </div>
-            <div>
-                <p class="text-lg text-gray-500">
-                    Offres d’emploi
-                </p>
+                <div class="h-auto bg-no-repeat max-w-full rounded-lg"
+                style="background-image: url('img/page_6/karaoke.png');background-size:cover; ">
+                <div class="   text-left pt-32 lg:pt-32 pb-8">
+                    <p class=" text-sm  pb-16 font-extrabold tracking-tight leading-none text-white md:text-3xl lg:text-lg lg:p-8">
+                        Qu'est-il arrivé à la nouvelle vidéo virale ?
+                    </p>
+                </div>
             </div>
         </div>
 
-        <div class="grid grid-col-3 grid-flow-col gap-3 pt-10 pb-10">
-
-            <div  data-aos="fade-up"
-            data-aos-anchor-placement="center-bottom" class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
-                    <img class="h-48 w-96 rounded-lg" src="img/page_5/image_1.png" alt="" />
-                </a>
-                <div class="p-5">
-                    <p class="" style="color: #F18700;">
-                        Appels d'Offres
-                    </p>
-                        <h5 class="mb-2 text-3xl font-bold tracking-tight text-blue-800 dark:text-white">BTP, construction de
-                            bâtiment de Bureau</h5>
-
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 uppercase">Nous sommes à la recherche d'entreprises
-                        de construction qualifiées et expérimentées
-                        dans le secteur du BTP </p>
-
-                       <p style="color: #F18700;">  Date limite: 23/08/2023 </p>
-
-                </div>
+        <div class="grid grid-col-2 grid-flow-col gap-2 pt-24 ">
+            <div>
+                <img class="h-auto max-w-full rounded-lg" src="img/page_6/image1.png" alt="">
             </div>
-            <div  data-aos="fade-up"
-            data-aos-anchor-placement="center-bottom" class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
-                    <img class="h-48 w-96 rounded-lg" src="img/Picture5.png" alt="" />
-                </a>
-                <div class="p-5">
-                    <p class="" style="color: #F18700;">
-                        Appels d'Offres
-                    </p>
-                        <h5 class="mb-2 text-3xl font-bold tracking-tight text-blue-800 dark:text-white">BTP, construction de
-                            bâtiment de Bureau</h5>
-
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 uppercase">Nous sommes à la recherche d'entreprises
-                        de construction qualifiées et expérimentées
-                        dans le secteur du BTP </p>
-
-
-                       <p style="color: #F18700;">  Date limite: 23/08/2023 </p>
-
-
-                </div>
+            <div>
+                <img class="h-auto max-w-full rounded-lg" src="img/page_6/image1.png" alt="">
             </div>
-            <div   data-aos="fade-up"
-            data-aos-anchor-placement="center-bottom"class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
-                    <img class="h-48 w-96 rounded-t-lg" src="img/page_5/image_2.png" alt="" />
-                </a>
-                <div class="p-5">
-                    <p class="" style="color: #F18700;">
-                        Appels d'Offres
+        </div>
+        <div class="grid grid-col-4 grid-flow-col gap-4 pt-16">
+            <div class="h-auto bg-no-repeat max-w-full rounded-lg"
+                    style="background-image: url('img/page_6/image3.png')">
+                    <div class=" mx-auto max-w-screen-xl text-left pt-64 lg:pt-64">
+                        <p class=" text-lg font-extrabold tracking-tight leading-none text-white md:text-3xl lg:text-lg">
+                            Pépinière
+                            <br>
+                            d'entreprises
+                        </p>
+                    </div>
+                </div>
+                <div class="h-auto bg-no-repeat max-w-full rounded-lg"
+                    style="background-image: url('img/page_6/image4.png')">
+                    <div class=" mx-auto max-w-screen-xl text-left pt-64 lg:pt-64">
+                        <p class=" text-4xl font-extrabold tracking-tight leading-none text-white md:text-3xl lg:text-lg">
+                            Produits
+                            <br> technologiques
+                        </p>
+                    </div>
+                </div>
+                <div class="h-auto bg-no-repeat max-w-full rounded-lg"
+                    style="background-image: url('img/page_6/image2.png')">
+                    <div class=" mx-auto max-w-screen-xl text-left pt-64 lg:pt-64">
+                        <p class=" text-4xl font-extrabold tracking-tight leading-none text-white md:text-3xl lg:text-lg">
+                            Hebergements
+                            <br> d'entreprises
+                        </p>
+                    </div>
+                </div>
+                <div class="h-auto bg-no-repeat max-w-full rounded-lg"
+                    style="background-image: url('img/page_6/image5.png')">
+                    <div class=" mx-auto max-w-screen-xl text-left pt-64 lg:pt-64">
+                        <p class=" text-4xl font-extrabold tracking-tight leading-none text-white md:text-3xl lg:text-lg">
+                            Hebergements
+                            <br> d'entreprises
+                        </p>
+                    </div>
+                </div>
+        </div>
+        <div class=" pt-48 pb-10">
+            <h1 class="mb-24 text-3xl text-center font-bold tracking-tight text-gray-900">
+                REJOIGNEZ-NOUS
+            </h1>
+
+            <div class="flex flex-row justify-between  leading-normal bg-center">
+                <div class="basis-1/2 pl-48">
+                    <img class="h-72  max-w-lg mx-auto  " src="img/join.png" alt="image description">
+                </div>
+                <div class="basis-1/2  mr-48">
+                    <p class="font-normal text-justify  text-gray-700 tracking-tight pt-10  ">
+                        Nous sommes fiers d'accueillir des entreprises innovantes qui transforment l'avenir de la Côte
+                        d'Ivoire et de l'Afrique. Rejoignez-nous au VITIB et devenez acteur d'un écosystème florissant,
+                        propice à l'épanouissement de votre entreprise. Contactez-nous dès aujourd'hui pour découvrir
+                        comment vous pouvez vous implantez et prospérer au sein de notre zone franche technologique.
+                        Ensemble, innovons au cœur de l'Afrique.
                     </p>
-                        <h5 class="mb-2 text-3xl font-bold tracking-tight text-blue-800 dark:text-white">BTP, construction de
-                            bâtiment de Bureau</h5>
-
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 uppercase">Nous sommes à la recherche d'entreprises
-                        de construction qualifiées et expérimentées
-                        dans le secteur du BTP </p>
-
-
-                       <p style="color: #F18700;">  Date limite: 23/08/2023 </p>
-
-
+                    <div class="pt-10">
+                        <button type="button" style="background-color: #F18700"
+                            class="font-bold rounded-none  white text-center p-4  pl-20 pr-20">
+                            REJOIGNEZ NOUS
+                        </button>
+                    </div>
                 </div>
             </div>
 
         </div>
+
     </div>
-@endsection
+    @endsection

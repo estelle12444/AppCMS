@@ -8,7 +8,7 @@ $url = $_SERVER['REQUEST_URI'];
             <img src="{{ asset('img/slider/Logo-VILLAGE.svg') }}" width="150" alt="logo">
         </a>
         <div class="flex md:order-2">
-            <a href="#">
+            <a href="{{route('login')}}">
                 <button type="button" style="background-color: #F18700"
                         class=" pl-4 pr-4 pt-2 pb-2 font-medium rounded-none  white text-center  ">
                         S'INSCRIRE
@@ -67,6 +67,13 @@ $url = $_SERVER['REQUEST_URI'];
                         aria-current="page">Nos partenaires</a>
                 </li>
                 <li>
+                    <a href="/actu"
+                        class="block py-2 pl-3 pr-4 text-gray-700 <?php if ($url == '/actu') {
+                            echo 'md:text-orange-400';
+                        } ?>  rounded md:bg-transparent md:hover:text-amber-500  md:p-0 md:dark:text-blue-500"
+                        aria-current="page">Actualités</a>
+                </li>
+                <li>
                     <a href="/media"
                         class="block py-2 pl-3 pr-4 text-gray-700 <?php if ($url == '/media') {
                             echo 'md:text-orange-400';
@@ -74,8 +81,8 @@ $url = $_SERVER['REQUEST_URI'];
                         aria-current="page">Mediathèque</a>
                 </li>
                 <li>
-                    <a href="/actu"
-                    class="block py-2 pl-3 pr-4 text-gray-700 <?php if ($url == '/actu') {
+                    <a href="/anonce"
+                    class="block py-2 pl-3 pr-4 text-gray-700 <?php if ($url == '/anonce') {
                         echo 'md:text-orange-400';
                     } ?>  rounded md:bg-transparent md:hover:text-amber-500  md:p-0 md:dark:text-blue-500"
                     aria-current="page">Annonces </a></li>
