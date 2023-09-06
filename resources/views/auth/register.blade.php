@@ -141,16 +141,16 @@
     </div> --}}
 
     <div class="flex flex-col overflow-y-auto md:flex-row">
-        <div class="h-32 md:h-auto md:w-1/2">
+        {{-- <div class="h-32 md:h-auto md:w-1/2">
             <img aria-hidden="true" class="" width="400" style="margin-top:250px;padding-left:30px"
                 src="{{ asset('../img/logo2.png') }}" alt="Office" />
-                <h2 class="text-blue-400 font-bold">
-                    Rejoignez-nous
-dès aujourd'hui
-et transformez
-l'avenir de votre
-entreprise
-                </h2>
+            <h2 class="text-blue-400 font-bold">
+                Rejoignez-nous
+                dès aujourd'hui
+                et transformez
+                l'avenir de votre
+                entreprise
+            </h2>
 
         </div>
         <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
@@ -158,7 +158,7 @@ entreprise
                 <form method="POST" action="{{ route('register') }}">
                     @csrf
 
-                    <h1 class="mb-4 text-xl font-semibold text-gray-700 dark:text-gray-200">
+                    <h1 class="mb-4 text-2xl font-bold text-gray-700 dark:text-gray-200">
                         {{ __('S\'inscrivez-vous') }}
                     </h1>
                     <label class="block text-sm">
@@ -216,7 +216,8 @@ entreprise
                         <span class="text-gray-700 dark:text-gray-400">
                             {{ __('Piece didentite ') }}
                         </span>
-                        <input name="piece_identite" value="{{ old('piece_identite') }}" required autocomplete="piece_identite"
+                        <input name="piece_identite" value="{{ old('piece_identite') }}" required
+                            autocomplete="piece_identite"
                             class=" form-control @error('piece_identite') is-invalid @enderror block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
                             placeholder="" type="text" />
                         @error('piece_identite')
@@ -309,6 +310,6 @@ entreprise
                     </p>
                 </form>
             </div>
-        </div>
+        </div> --}}
     </div>
 @endsection
