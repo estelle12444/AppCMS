@@ -12,13 +12,13 @@
 
 
     <div class="   pt-32 pr-26 bg-gradient-to-r from-orange-100 from-20%  to-green-100 to-90%">
-        <div class="flex flex-row pl-32 pr-16 pb-10">
-            <div data-aos="zoom-in-left" class="basis-1/2 md:basis-1/2">
+        <div class="md:flex flex-row pl-32 pr-16 pb-10">
+            <div data-aos="zoom-in-left" class="basis-1/2 ">
                 <img src="img/plan.png" class="" alt="">
             </div>
 
-            <div data-aos="zoom-in-right" class="basis-1/2 md:basis-1/2">
-                <h1 class=" text-5xl  pr-16 pt-4 font-bold tracking-tight ">
+            <div data-aos="zoom-in-right" class="md:basis-1/2">
+                <h1 class=" md:text-4xl  text-5xl  md:pr-16 pt-4 font-bold tracking-tight ">
                     UN LIEU PENSÉ POUR VOS BESOINS.
                 </h1>
                 <h3 class=" pt-8 font-bold text-lg">
@@ -61,7 +61,7 @@
         </div>
     </div>
     <div data-aos="zoom-in-up" class=" bg-gradient-to-r from-orange-100 from-20%  to-green-100 to-90%">
-        <div class="grid grid-cols-5 gap-4   pt-5 pr-32 pb-10 md:pl-20 md:pb-5 lg:pl-40 lg:pb-10">
+        <div class="md:grid grid-cols-5 gap-4   pt-5 pr-32 md:pb-10 md:pl-20 md:pb-5 lg:pl-40 lg:pb-10">
             <div class="bg-amber-500 font-extrabold rounded-lg p-4" style=" height:100px ">
                 <p class="text-white text-center  ">
                     <strong> ADMINISTRATION
@@ -137,7 +137,7 @@
         <h1 data-aos="zoom-in-up" class="mb-24 text-5xl text-center font-bold tracking-tight text-gray-900">INVESTISSEZ SUR CES PROJETS D'AVENIR
         </h1>
 
-        <div class=" grid grid-cols-2 gap-2">
+        <div class=" md:grid grid-cols-2 gap-2">
             <div>
                 <img class="h-auto max-w-full rounded-lg  pr-10" src="img/city.png" alt="">
                 <h5 class="mb-2 text-2xl pt-4 font-bold tracking-tight text-gray-900 dark:text-white">
@@ -265,7 +265,7 @@
                 <div class="h-auto bg-no-repeat max-w-full rounded-lg"
                     style="background-image: url('img/slider/pepiniere.png')">
                     <div class=" mx-auto max-w-screen-xl text-left pt-64 lg:pt-64">
-                        <p class=" text-3xl font-extrabold tracking-tight leading-none text-white md:text-3xl lg:text-3xl">
+                        <p class="  font-extrabold tracking-tight leading-none text-white md:text-3xl lg:text-3xl">
                             Pépinière
                             <br>
                             d'entreprises
@@ -275,7 +275,7 @@
                 <div class="h-auto bg-no-repeat max-w-full rounded-lg"
                     style="background-image: url('img/slider/tech.png')">
                     <div class=" mx-auto max-w-screen-xl text-left pt-64 lg:pt-64">
-                        <p class=" text-4xl font-extrabold tracking-tight leading-none text-white md:text-3xl lg:text-3xl">
+                        <p class=" font-extrabold tracking-tight leading-none text-white md:text-3xl lg:text-3xl">
                             Produits
                             <br> technologiques
                         </p>
@@ -293,17 +293,16 @@
             </div>
         </div>
 
-        <div data-aos="fade-up"
-        data-aos-anchor-placement="bottom-center" class=" pt-24 pb-10">
+        <div  class=" pt-24 pb-10">
             <h1 data-aos="zoom-in-down" class="mb-20 text-3xl text-center font-bold tracking-tight text-gray-900">
                 REJOIGNEZ-NOUS
             </h1>
 
-            <div class="flex flex-row justify-between  leading-normal bg-center">
-                <div data-aos="zoom-in-up" class="basis-1/2 pl-24">
+            <div class="md:flex flex-row justify-between  leading-normal bg-center">
+                <div class="md:basis-1/2 pl-24">
                     <img class="h-72  max-w-lg mx-auto  " src="img/join.png" alt="image description">
                 </div>
-                <div class="basis-1/2  mr-48">
+                <div class="md:basis-1/2  mr-48">
                     <p class="font-normal text-justify  text-gray-700 tracking-tight  ">
                         Nous sommes fiers d'accueillir des entreprises innovantes qui transforment l'avenir de la Côte
                         d'Ivoire et de l'Afrique. Rejoignez-nous au VITIB et devenez acteur d'un écosystème florissant,

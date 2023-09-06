@@ -4,7 +4,7 @@
 @section('content')
     <div class=" pt-32 pr-24 pl-32 bg-gradient-to-r from-orange-100 from-20%  to-gray-100 to-90%">
         <h1 class="text-gray-500 pb-4 text-2xl font-bold">
-            Recherche
+           Nos Albums
         </h1>
         <div class="grid grid-col-3 grid-flow-col gap-4">
             <div class="row-span-3 col-span-2 ">
@@ -72,7 +72,7 @@
                         </p>
                     </div>
                 </div>
-                <div class=" h-auto bg-no-repeat max-w-full rounded-lg"
+                <div class=" ml-8 h-auto bg-no-repeat max-w-full rounded-lg"
                     style="background-image: url('img/page_6/image2.png')">
                     <div class=" mx-auto max-w-screen-xl text-left pt-64 lg:pt-64">
                         <p class=" text-4xl font-extrabold tracking-tight leading-none text-white md:text-3xl lg:text-lg">
@@ -81,7 +81,7 @@
                         </p>
                     </div>
                 </div>
-                <div class=" pr-10 h-auto bg-no-repeat max-w-full rounded-lg"
+                <div class="  h-auto bg-no-repeat max-w-full rounded-lg"
                     style="background-image: url('img/page_6/image5.png')">
                     <div class=" mx-auto max-w-screen-xl text-left pt-64 lg:pt-64">
                         <p class=" text-4xl font-extrabold tracking-tight leading-none text-white md:text-3xl lg:text-lg">

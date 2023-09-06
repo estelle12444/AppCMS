@@ -349,6 +349,7 @@
         <h1 class="text-3xl font-bold  uppercase">
             Procédure d'agrément
         </h1>
+        <img src="img/background/Parcours1.svg"  class=" pl-48 pr-40 pt-24">
     </div>
     <div data-aos="fade-up"
     data-aos-anchor-placement="bottom-center" class=" flex flex-col bg-no-repeat " style="background-image: url('img/Image6.png')">

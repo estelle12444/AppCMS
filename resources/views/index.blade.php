@@ -55,20 +55,21 @@
     </div> --}}
     <div class=" pl-16 pb-5 bg-gradient-to-r from-orange-100 from-20%  to-gray-100 to-90%  ">
         <div class="grid gap-8 md:grid-cols-2 md:items-center md:right pt-16 container pb-8">
-            <div data-aos="fade-right" class=" lg:pl-15 lg:pt-12 sm:pl-8 md:pl-8 " >
-                <h1 class="text-6xl  font-medium text-slate-600 tracking-tight  ">
+            <div data-aos="zoom-out-right"  data-aos-duration="1500"
+            data-aos-delay="500" class=" lg:pt-12 sm:pl-8 md:pl-8 " >
+                <h1 class="text-6xl px-12  font-medium text-slate-600 tracking-tight  ">
                     LE <span class="text-orange ">VITIB </span> VOUS
                 </h1>
-                <h1 class="text-6xl font-medium pt-8 text-slate-600  ">
+                <h1 class="text-6xl px-12 font-medium pt-8 text-slate-600  ">
                     SOUHAITE LA
                 </h1>
-                <h1 class="text-6xl font-medium pt-8 text-slate-600  ">
+                <h1 class="text-6xl px-12 font-medium pt-8 text-slate-600  ">
                     BIENVENUE
                 </h1>
-                <p class="text-2xl font-medium  text-slate-600  pl-2 pt-8">
+                <p class="text-2xl font-medium px-12 text-slate-600  pt-8">
                     Le parc Technologique de Côte d'Ivoire
                 </p>
-                <div class=" pt-8  ">
+                <div class=" pt-8 px-12  ">
 
                     <button type="button" style="background-color: #F18700"
                         class=" pl-16 pr-16 pt-4 pb-4 font-medium rounded-none  white text-center  ">
@@ -76,7 +77,8 @@
                     </button>
                 </div>
             </div>
-            <div data-aos="fade-right" class=" pr-24  bg-no-repeat" style="background-image: url(img/Image9.png); background-size:cover">
+            <div data-aos="zoom-out-left"  data-aos-duration="1500"
+            data-aos-delay="500" class=" pr-24  bg-no-repeat" style="background-image: url(img/Image9.png); background-size:cover">
                 <div
                     class="videoWrapper flex justify-center items-center  rounded-lg border-solid border-4 border-gray-300  ">
                     <span class="absolute  flex h-20 w-20">
@@ -105,11 +107,14 @@
 </section>
 
 
+
     <div   class="  bg-gradient-to-r from-gray-50 from-40% to-green-200 to-60% ">
-        <div class=" bg-white flex flex-row  ">
-            <div class="basis-1/6 pl-24  " data-aos="zoom-out-up">
+        <div class="bubbles"></div>
+<a class="bubble-toggle" href="#">Bubbles Off</a>
+        <div class=" bg-white md:flex flex-row  ">
+            <div  class="basis-1/6  pl-36 " >
                 <div class="rounded-none-4 blue text-white h-32   ">
-                    <h3 class=" text-lg pt-8 pl-2">Nos <br> partenaires</h3>
+                    <h3 class=" text-lg pt-8 pl-2 mr-10">Nos <br> partenaires</h3>
                 </div>
             </div>
             <div class="basis-1/6 pl-8 pt-8 ">
@@ -134,7 +139,8 @@
     <section class="">
         <div class="  pl-20 pt-24 sm:pl-2 md:pl-4 pt-8 " >
             <div class=" bg-no-repeat " style="background-image: url(img/background/font_logo.png)">
-                <div data-aos="zoom-in-up" class="grid gap-8 md:grid-cols-1  md:right  ">
+                <div data-aos="zoom-in-up" data-aos-duration="1500"
+                data-aos-delay="500" class="grid gap-8 md:grid-cols-1  md:right  ">
                     <div>
                         <h1  class=" text-center text-3xl font-bold text-slate-600  sm:p-2 lg:p-6" >INNOVEZ AU COEUR DE L'AFRIQUE
                         </h1>
@@ -166,7 +172,8 @@
 
         <div class="md:pl-32 md:pr-32  bg-no-repeat" >
             <div class="md:flex flex-row pt-16 " style="background-image: url(img/Image8.png)">
-                <div  data-aos="fade-right" class="md:basis-1/2 md:pl-24 px-5 ">
+                <div  data-aos="fade-right" data-aos-duration="1500"
+                data-aos-delay="500" class="md:basis-1/2 md:pl-24 px-5 ">
                     <h1 class="md:text-4xl  font-bold  tracking-tight   ">
                         DECOUVREZ 8 AVANTAGES UNIQUE AU VITIB
                     </h1>
@@ -193,7 +200,8 @@
                         </div>
                     </div>
                 </div>
-                <div data-aos="fade-left" class="basis-1/2 pr-16 ">
+                <div data-aos="fade-left" data-aos-duration="1500"
+                data-aos-delay="500" class="basis-1/2 pr-16 ">
                     <div class="flex flex-row">
                         <div class="basis-1/2 ">
                             <div class="flex flex-col  ml-10 ">
@@ -309,7 +317,7 @@
                 <h1 class="text-3xl font-bold text-slate-600 pb-8 ">
                     LE PARCOURS DE NOS FUTURS MEMBRES
                 </h1>
-                {{-- <img src="img/parcours.png" alt=""> --}}
+                <img src="img/background/Parcours.svg" alt="">
 
                 <div class=" pt-8 text-center">
                     <a href="/installer">
@@ -381,7 +389,8 @@
                 <div class="md:pl-32 md:pr-32  bg-no-repeat" style="background-image: url(img/background/vert.png);background-size:cover"  >
             <div class="md:pl-24 md:pr-16 px-16 ">
             <div class="md:flex flex-row  ">
-                <div  data-aos="zoom-in-right" class="md:basis-1/2 text-lg">
+                <div  data-aos="zoom-in-right" data-aos-duration="1500"
+                data-aos-delay="500" class="md:basis-1/2 text-lg">
                     <h1 class="md:text-5xl font-bold  ">
                         Projets & Services
                     </h1>
@@ -476,7 +485,8 @@
                     </div>
 
                 </div>
-                <div data-aos="zoom-in-left" class="basis-1/2">
+                <div data-aos="zoom-in-left" data-aos-duration="1500"
+                data-aos-delay="500" class="basis-1/2">
                     <div>
                         <img src="img/Image4.png " alt="">
                     </div>
@@ -488,14 +498,17 @@
 
 
             <div
-            data-aos-anchor-placement="bottom-center" class="md:flex flex-col  pt-20 pb-24">
+            data-aos-anchor-placement="bottom-center"data-aos-duration="1500"
+            data-aos-delay="500" class="md:flex flex-col  pt-20 pb-24">
                 <div class="px-30">
-                    <h1 data-aos="zoom-in-down" class="text-5xl text-center font-bold text-slate-600  ">
+                    <h1 data-aos="zoom-in-down" data-aos-duration="1500"
+                    data-aos-delay="500" class="text-5xl text-center font-bold text-slate-600  ">
                         Des sessions d'accompagnement conçus <br> pour nos futures locataires
                     </h1>
                 </div>
                 <div class="md:pl-64 md:pr-32">
-                    <p data-aos="zoom-in-right" class="md:text-center text-slate-600  tmd:ext-lg pt-10  ">
+                    <p data-aos="zoom-in-right" data-aos-duration="1500"
+                    data-aos-delay="500" class="md:text-center text-slate-600  tmd:ext-lg pt-10  ">
                         Participez à des événements programmés conçus pour les entreprises à grande échelle.
                         Avec des programmes de développement créés pour nourrir et soutenir.
                         Et des es événementiels remplis de programmes d'information et de réflexion pour enrichir et
@@ -504,7 +517,8 @@
                 </div>
                 <div class="grid grid-cols-2 md:grid-cols-3 gap-4 pt-16">
                     <div class="ml-10">
-                        <img  data-aos="zoom-in-left" class="h-auto max-w-full rounded-lg" src="img/Image2.png" alt="">
+                        <img  data-aos="zoom-in-left" data-aos-duration="1500"
+                        data-aos-delay="500" class="h-auto max-w-full rounded-lg" src="img/Image2.png" alt="">
                         <h2 class="pt-8 text-2xl">
                             Programmes de formation des dirigeants
                         </h2>
@@ -518,7 +532,8 @@
 
                     </div>
                     <div class="md:ml-10">
-                        <img data-aos="zoom-in-left" class="h-auto max-w-full rounded-lg" src="img/Image3.png" alt="">
+                        <img data-aos="zoom-in-left" data-aos-duration="1500"
+                        data-aos-delay="500" class="h-auto max-w-full rounded-lg" src="img/Image3.png" alt="">
                         <h2 class="pt-8 text-2xl">
                             Produits Technologiques
                         </h2>
@@ -531,7 +546,8 @@
 
                     </div>
                     <div class="ml-10">
-                        <img data-aos="zoom-in-right" class="h-auto max-w-full rounded-lg" src="img/Image1.png" alt="">
+                        <img data-aos="zoom-in-right" data-aos-duration="1500"
+                        data-aos-delay="500" class="h-auto max-w-full rounded-lg" src="img/Image1.png" alt="">
                         <h2 class="pt-8 text-2xl">
                             ScaleUP Africa meet-ups
                         </h2>
@@ -544,7 +560,8 @@
                 </div>
             </div>
 
-            <div data-aos="zoom-in-up" class="md:flex flex-col bg-repeat-x " style="background-image: url('img/Image6.png')">
+            <div data-aos="zoom-in-up" data-aos-duration="1500"
+            data-aos-delay="500" class="md:flex flex-col bg-repeat-x " style="background-image: url('img/Image6.png')">
                 <div class="px-30 py-12">
                     <h1 class="text-4xl  text-center font-bold text-slate-600 space ">
                         COMMENT NOUS REJOINDRE
@@ -552,7 +569,7 @@
 
                     <div class="md:flex flex-row py-8">
                         <div class="basis-1/3">
-                            <img class="h-auto max-w-full rounded-lg" src="img/Image7.png" alt="">
+                            <img class="h-auto max-w-full rounded-lg pl-4" src="img/Image7.png" alt="">
                         </div>
                         <div class="basis-1/3 pl-10">
                             <h2 class="font-bold  text-lg">
@@ -681,7 +698,8 @@
                         Témoignages de nos clients
                     </h1>
                 </div>
-                <div data-aos="zoom-in-up" class="md:flex flex-row">
+                <div data-aos="zoom-in-up" data-aos-duration="1500"
+                data-aos-delay="500" class="md:flex flex-row">
                     <div class="md:basis-1/3  ">
                         <div class="md:flex flex-col">
                             <div class="max-w-sm pl-4 py-4 pr-2  bg-white rounded-lg ">
@@ -801,13 +819,14 @@
                     </div>
                 </div>
 
-                <div data-aos="zoom-in-up" class="rounded-lg border-2 mt-20 border-gray-300 p-2 md:ml-72 md:mr-64 mb-10">
+                <div data-aos="zoom-in-up" data-aos-duration="1500"
+                data-aos-delay="500"class="rounded-lg border-2 mt-20 border-gray-300 p-2 md:ml-72 md:mr-64 mb-10">
                     <img src="img/Image5.png" alt="" width="3990">
 
-                    <h1 class="font-bold font-sora md:text-5xl pl-32 pt-4 pb-8">
+                    <h1 class="font-bold font-sora md:text-5xl pl-40 pt-4 pb-8">
                         Contactez-nous
                     </h1>
-                    <form action="#" class=" md:pl-32 md:mr-24  md:pr-16">
+                    <form action="#" class=" md:pl-40 md:mr-24 pb-10  md:pr-16">
                         <div class="mb-6">
 
                             <input type="email" id="email"
@@ -827,7 +846,7 @@
                                 placeholder="Your message..."></textarea>
                         </div>
                         <button type="submit" style="background-color: #F18700"
-                            class=" text-white p-8  hover:bg-amber-500 w-full focus:ring-8 focus:ring-amber-500 font-medium rounded-lg text-sm  ">Envoyer
+                            class=" text-white p-8 mt-10 hover:bg-amber-500 w-full focus:ring-8 focus:ring-amber-500 font-medium text-sm  ">Envoyer
                         </button>
                     </form>
                 </div>

@@ -2,7 +2,7 @@
 @section('content')
     <div class="flex flex-col overflow-y-auto md:flex-row">
         <div class="h-32 md:h-auto md:w-1/2" style="margin-top: 140px;padding-left: 90px;">
-            <img aria-hidden="true" class="" width="300" src="{{ asset('../img/logo2.png') }}" alt="Office" />
+            <img aria-hidden="true" class="" width="300" src="{{ asset('/img/logo2.png') }}" alt="Office" />
 
         </div>
         <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
@@ -10,7 +10,7 @@
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
                 <h1 class="mb-4 text-xl font-semibold text-gray-700 dark:text-gray-200">
-                    Connexion
+                   CONNEXION
                 </h1>
                 <label class="block text-sm">
                     <span class="text-gray-700 dark:text-gray-400">Email</span>

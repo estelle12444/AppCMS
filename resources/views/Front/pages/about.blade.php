@@ -2,6 +2,11 @@
 
 
 @section('content')
+<style>
+    #carte-map{
+        height: 300px
+    }
+</style>
     <section class="bg-center bg-no-repeat  bg-slate-500  bg-blend-multiply" style="background-image: url(img/immobilier1.png)">
         <div class="px-4 mx-auto max-w-screen-xl text-center pt-48 pb-32 lg:pt-48 lg:pb-32">
             <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">LE VITIB
@@ -164,7 +169,7 @@
     <div
         class="  md:mx-auto px-20 py-5 bg-gradient-to-r from-gray-100 from-10%  to-orange-100 to-90% ">
         <div class="md:flex flex-row pt-16 pb-16 pl-24  pr-24 ">
-            <div class="md:basis-1/2">
+            <div class="basis-1/2">
                 <h1 class="font-bold text-6xl pl-4 ">
                     Un espace Tech <br> pour vous
                 </h1>
@@ -178,7 +183,7 @@
                     <img src="img/city.png" class="h-80 w-full pr-16 pl-2" />
                 </div>
             </div>
-            <div class="md:basis-1/2">
+            <div class="basis-1/2">
                 <img src="img/tech.png" class="h-64 w-full " alt="">
                 <h1 class="font-bold text-6xl pt-8 ">
                     Smart city
@@ -199,10 +204,13 @@
     </div>
     <div class=" md:flex flex-row pl-32  " style="background-image: url(img/blue1.png)">
         <div class="basis-1/2 ">
-            <img src="img/plan_carte.png" class="pt-4 pb-4" width="" alt="">
+            {{-- <img src="img/plan_carte.png" width="" alt=""> --}}
+            <div id='carte-map' class="pt-4 pb-4" >
+
+            </div>
         </div>
         <div class="basis-1/2 pr-16 pl-8 pt-16">
-            <p class="text-justify white  text-lg ">
+            <p class="text-justify white  text-2xl ">
                 La ZBTIC est subdivisée en trois blocs distincts : les <br>
                  blocs A et B situés à cheval de la nouvelle autoroute <br>
                 Abidjan – Bassam (réalisée en 2015) et le futur bloc C, <br>
@@ -688,4 +696,16 @@
             </div>
         </div>
     </div>
+
+    <script>
+        //5.230592230474829, -3.757789933512643
+        var map = L.map('carte-map').setView([5.230592230474829, -3.757789933512643], 15);
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+        var marker = L.marker([5.230592230474829, -3.757789933512643])
+        marker.titre='VITIB'
+        marker.addTo(map);
+    </script>
 @endsection

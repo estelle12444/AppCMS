@@ -144,6 +144,13 @@
         <div class="h-32 md:h-auto md:w-1/2">
             <img aria-hidden="true" class="" width="400" style="margin-top:250px;padding-left:30px"
                 src="{{ asset('../img/logo2.png') }}" alt="Office" />
+                <h2 class="text-blue-400 font-bold">
+                    Rejoignez-nous
+dès aujourd'hui
+et transformez
+l'avenir de votre
+entreprise
+                </h2>
 
         </div>
         <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
@@ -152,7 +159,7 @@
                     @csrf
 
                     <h1 class="mb-4 text-xl font-semibold text-gray-700 dark:text-gray-200">
-                        {{ __('Créer un compte') }}
+                        {{ __('S\'inscrivez-vous') }}
                     </h1>
                     <label class="block text-sm">
                         <span class="text-gray-700 dark:text-gray-400"> {{ __('Nom De Famille') }} </span>

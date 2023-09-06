@@ -4,7 +4,7 @@
 @section('content')
     <div class=" pt-32 pr-24 pl-32 bg-gradient-to-r from-orange-100 from-20%  to-gray-100 to-90%">
         <h1 class="text-gray-500 pb-4 text-2xl font-bold">
-            Recherche
+            Actualités récentes
         </h1>
         <div class="grid grid-col-3 grid-flow-col gap-4">
             <div class="row-span-3 col-span-2 ">

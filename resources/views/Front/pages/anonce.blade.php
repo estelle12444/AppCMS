@@ -13,29 +13,7 @@
     <div  data-aos="fade-up"
     data-aos-anchor-placement="center-bottom"class=" pt-10 pr-32 pl-32 bg-gradient-to-r from-orange-100 from-20%  to-green-100 to-90%">
 
-        <form action="{{ route('Front.admin.search_process') }}" method="post" class="mb-3">
-            @csrf
-            <div class="grid grid-cols-3 gap-3 ">
-                <div class="col-span-2">
-                    <select
-                        class="bg-white border border-gray-300 text-gray-600 text-lg rounded-lg focus:ring-amber-500 focus:border-amber-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-amber-500 dark:focus:border-amber-500"
-                        name="sector_id" id="sector_id" class="form-control">
-                        <option value="">Tous les secteurs</option>
-                        {{-- @foreach ($sectors as $sector)
-                        <option value="{{ $sector->id }}" {{ old('sector_id') == $sector->id ? 'selected' : '' }}>
-                            {{ $sector->nom }}
-                        </option>
-                    @endforeach --}}
-                    </select>
-                </div>
-
-                <button type="submit"
-                    class="p-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ">
-                    Rechercher
-                </button>
-
-            </div>
-        </form>
+        
         <div class="grid grid-col-6 grid-flow-col gap-6 pt-16">
             <div>
                 <p class="text-lg text-amber-500 font-bold underline">
