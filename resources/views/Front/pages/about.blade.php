@@ -24,14 +24,14 @@
 
         </div>
     </section>
-    <section class="" style="height:1570px; bottom:100px">
+    <section class="" style="height:1480px; ">
     <div class="md:px-32 px-12  relative bg-repeat-x " style="background-image: url(img/Image8.png);  ">
 
         <div class="md:flex flex-row ">
-            <div class="basis-1/2">
+            <div data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="500" class="basis-1/2">
                 <img src="img/dg.png" width="" alt="">
             </div>
-            <div class="md:basis-1/2 ">
+            <div  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="700" class="md:basis-1/2 ">
                 <h2 class="font-bold text-5xl py-8">Mot du directeur Géneral</h2>
                 <p class="text-justify text-gray-600  text-lg tracking-tight">
                     Bienvenue sur le site Internet du Village des Technologies de l’Information et de la Biotechnologie
@@ -84,31 +84,42 @@
             </div>
         </div>
 
-        <div class="md:flex flex-row white absolute  left-0" style="background-image: url(img/blue.png); top:95%">
+        <div class="md:flex flex-row white absolute  left-0" style="background-image: url(img/blue.png); top:90%">
             <div class="md:basis-1/2 md:pl-32 pl-6 md:pr-8 pt-10  ">
-                <h2 class="font-bold text-4xl ">
+                <h2  class="font-bold text-4xl ">
                     Notre vision
                 </h2>
-                <p class="text-justify pt-8 pb-8 text-lg tracking-tight">
+                <p  class="text-justify pt-8 pb-8  ">
                     Notre vision est de devenir un pôle d’innovation et de développement technologique qui catalyse la
                     croissance économique, encourage l’entrepreneuriat et transforme la zone en un hub technologique régional de
                     renommée internationale. <br>
-                    Cette vision inclut quelques éléments clés qui sont:
+                    Cette vision  inclut quelques éléments clés qui sont:
                 </p>
-                <h2 class=" font-bold  tracking-tight ">
+                <h2 data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="500" class=" font-bold  tracking-tight ">
                     1. Infrastructure de pointe :
                 </h2>
-                <p class="text-justify pt-4 pb-4  text-lg tracking-tight">
+                <p  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="600" class="text-justify pt-4 pb-4   tracking-tight">
 
                     Une zone techno pôle devrait disposer d'infrastructures modernes, telles que des centres de recherche, des
                     laboratoires, des espaces de travail collaboratifs et des équipements technologiques de pointe.
                     <br>Cela
                     faciliterait le développement et la mise en œuvre de nouvelles technologies.
                 </p>
-                <h2 class="font-bold font-bold text-lg tracking-tight">
+                <h2  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="700" class=" font-bold tracking-tight ">
+                    2. Collaboration entre les acteurs :
+                </h2>
+                 <p data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="800" class="text-justify pt-4 pb-4 tracking-tight ">
+
+                    Une vision forte serait de promouvoir la collaboration entre les entreprises, les universités, les centres
+                    de recherche et les gouvernements locaux. <br> En favorisant les partenariats stratégiques, les échanges de
+                    connaissances et les initiatives communes, on peut stimuler l'innovation et accélérer le développement
+                    technologique.
+                </p>
+
+                <h2  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="600" class="font-bold font-bold  tracking-tight">
                     3. Formation et développement des talents :
                 </h2>
-                 <p class="text-justify pt-4 pb-4 tracking-tight text-lg">
+                 <p data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="700" class="text-justify pt-4 pb-4 tracking-tight ">
 
                     Une zone techno pôle devrait s'engager à former et à développer une main-d'œuvre qualifiée.
                     <br>Cela peut être
@@ -116,42 +127,34 @@
                     continu et en favorisant les interactions entre les étudiants, les chercheurs et les professionnels de
                     l'industrie.
                 </p>
-                <h2 class="font-bold text-lg tracking-tight ">
-                    5. Durabilité et responsabilité sociale :
-                </h2>
-                <p class="text-justify pt-4 pb-4 tracking-tight text-lg">
 
-                    Une vision moderne pour une zone techno pôle devrait intégrer des principes de durabilité environnementale
-                    et de responsabilité sociale. <br>Il est important d'adopter des pratiques respectueuses de l'environnement, <br>de
-                    promouvoir l'énergie propre et d'encourager le développement de solutions technologiques qui contribuent à
-                    résoudre les défis sociaux et environnementaux.
-                </p>
             </div>
             <div class="md:basis-1/2 md:pt-56 md:pl-8 md:pr-32">
-                <h2 class=" font-bold text-lg tracking-tight ">
-                    2. Collaboration entre les acteurs :
-                </h2>
-                 <p class="text-justify pt-4 pb-4 tracking-tight text-lg">
 
-                    Une vision forte serait de promouvoir la collaboration entre les entreprises, les universités, les centres
-                    de recherche et les gouvernements locaux. <br> En favorisant les partenariats stratégiques, les échanges de
-                    connaissances et les initiatives communes, on peut stimuler l'innovation et accélérer le développement
-                    technologique.
-                </p>
-                <h2 class=" font-bold text-lg tracking-tight ">
+                <h2 data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="500" class=" font-bold  tracking-tight ">
                     4. Soutien à l'entrepreneuriat :
                 </h2>
-                 <p class="text-justify pt-4 pb-4 tracking-tight text-lg">
+                 <p data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="600"class="text-justify pt-4 pb-4 tracking-tight ">
 
                     Encourager l'entrepreneuriat et la création de startups est essentiel pour stimuler l'innovation. <br> Une vision
                     pour une zone techno pôle pourrait inclure des incubateurs d'entreprises, des fonds d'investissement,<br> des
                     programmes d'accélération et un soutien financier pour les entrepreneurs afin de favoriser l'émergence de
                     nouvelles entreprises technologiques.
                 </p>
-                <h2 class=" font-bold text-lg tracking-tight ">
+                <h2 data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="700" class="font-bold  tracking-tight ">
+                    5. Durabilité et responsabilité sociale :
+                </h2>
+                <p data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="800" class="text-justify pt-4 pb-4 tracking-tight">
+
+                    Une vision moderne pour une zone techno pôle devrait intégrer des principes de durabilité environnementale
+                    et de responsabilité sociale. <br>Il est important d'adopter des pratiques respectueuses de l'environnement, <br>de
+                    promouvoir l'énergie propre et d'encourager le développement de solutions technologiques qui contribuent à
+                    résoudre les défis sociaux et environnementaux.
+                </p>
+                <h2 data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="600" class=" font-bold  tracking-tight ">
                     6. Image de marque et réputation :
                 </h2>
-                 <p class="text-justify pt-4 pb-4 tracking-tight text-lg">
+                 <p data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="700" class="text-justify pt-4 pb-4 tracking-tight">
 
                     Le fait d'être associé à VITIB Technopolis, un projet phare en matière de technologie et d'innovation en
                     Cote d’Ivoire, peut améliorer la marque et la réputation de votre entreprise. <br> Elle témoigne de votre
@@ -170,25 +173,25 @@
         class="  md:mx-auto px-20 py-5 bg-gradient-to-r from-gray-100 from-10%  to-orange-100 to-90% ">
         <div class="md:flex flex-row pt-16 pb-16 pl-24  pr-24 ">
             <div class="basis-1/2">
-                <h1 class="font-bold text-6xl pl-4 ">
+                <h1 data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="700" class="font-bold text-6xl pl-4 ">
                     Un espace Tech <br> pour vous
                 </h1>
-                <p class="text-justify text-gray-600 pt-4 pl-2 pr-16">
+                <p data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="1000" class="text-justify text-gray-600 pt-4 pl-2 pr-16">
                     Nous sommes fiers de proposer un écosystème dynamique, où les entreprises peuvent prospérer grâce à des
                     avantages fiscaux et réglementaires attractifs, ainsi qu'à une infrastructure de pointe. Le VITIB met à
                     disposition des espaces de bureaux modernes, des laboratoires de recherche de pointe, une connectivité
                     Internet haut débit et bien plus encore.
                 </p>
-                <div class="pt-24 w-auto h-10">
+                <div data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="1300" class="pt-20 w-auto h-10">
                     <img src="img/city.png" class="h-80 w-full pr-16 pl-2" />
                 </div>
             </div>
             <div class="basis-1/2">
-                <img src="img/tech.png" class="h-64 w-full " alt="">
-                <h1 class="font-bold text-6xl pt-8 ">
+                <img  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="700" src="img/tech.png" class="h-64 w-full " alt="">
+                <h1 data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="1000" class="font-bold text-6xl pt-20 ">
                     Smart city
                 </h1>
-                <p class="text-justify text-gray-600 py-4">
+                <p data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="1300" class="text-justify text-gray-600 py-4">
                     La ZBTIC est un territoire sur lequel s’appliquent des politiques fiscales et douanières avantageuses.
                     La législation ivoirienne relative à la ZBTIC (loi N° 429-2004 du 30 août 2004) attribue le monopole de
                     la gestion, de l’exploitation, de l’aménagement et de la promotion du Village de l’Innovation
@@ -205,12 +208,12 @@
     <div class=" md:flex flex-row pl-32  " style="background-image: url(img/blue1.png)">
         <div class="basis-1/2 ">
             {{-- <img src="img/plan_carte.png" width="" alt=""> --}}
-            <div id='carte-map' class="pt-4 pb-4" >
+            <div data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="500" id='carte-map' class="pt-4 pb-4" >
 
             </div>
         </div>
         <div class="basis-1/2 pr-16 pl-8 pt-16">
-            <p class="text-justify white  text-2xl ">
+            <p data-aos="zoom-in-left" data-aos-duration="1500" data-aos-delay="700" class="text-justify white  text-lg ">
                 La ZBTIC est subdivisée en trois blocs distincts : les <br>
                  blocs A et B situés à cheval de la nouvelle autoroute <br>
                 Abidjan – Bassam (réalisée en 2015) et le futur bloc C, <br>
@@ -237,33 +240,22 @@
     <div class=" relative md:flex flex-row bg-gradient-to-r from-gray-100 from-20%  to-orange-100 to-90%  ">
 
         <div class="md:basis-3/4 pl-24 pb-32">
-            <h3 class="font-bold text-4xl pl-10 pt-24 pb-8">
+            <h3 data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="500"  class="font-bold text-6xl pl-10 pt-24 pb-8">
                 8 avantages unique au Vitib
             </h3>
 
             <div class="md:flex flex-row">
                 <div class="basis-1/2 pr-10">
-                    <h5 class=" font-bold text-3md  pt-8 pb-4">
+                    <h5  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="600" class=" font-bold text-3md  pt-8 pb-4">
                         Avantages fiscaux et réglementaires
                     </h5>
-                    <p class="text-justify pb-4 text-lg">
+                    <p data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="700" class="text-justify pb-4 ">
                         Les entreprises établies au VITIB bénéficient d'un régime fiscal avantageux, comprenant des
                         exonérations d'impôts sur les bénéfices et les dividendes, ainsi que des droits de douane réduits
                         voire nuls sur les importations de biens d'équipement. Ces incitations fiscales visent à encourager
                         l'investissement et la croissance des entreprises dans la zone.
                     </p>
-                    <div class="flex flex-row pb-4">
-                        <div class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-green-500 bg-white rounded-lg dark:bg-green-800 dark:text-green-200">
-                            <img src="img/icon/check.png" alt="">
-
-                        </div>
-                        <div class="basis-5/6">
-                            <p>
-                                0% de droits de douanes et taxes à l’Importation et à l’exportation
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex flex-row pb-4">
+                    <div  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="500" class="flex flex-row pb-4">
                         <div class="basis-1/6 pl-10">
                             <img src="img/icon/check.png" alt="">
                         </div>
@@ -273,7 +265,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="flex flex-row pb-4">
+                    <div  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="600" class="flex flex-row pb-4">
                         <div class="basis-1/6 pl-10">
                             <img src="img/icon/check.png" alt="">
                         </div>
@@ -283,7 +275,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="flex flex-row pb-4">
+                    <div  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="700" class="flex flex-row pb-4">
                         <div class="basis-1/6 pl-10">
                             <img src="img/icon/check.png" alt="">
                         </div>
@@ -293,7 +285,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="flex flex-row pb-4">
+                    <div  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="500" class="flex flex-row pb-4">
                         <div class="basis-1/6 pl-10">
                             <img src="img/icon/check.png" alt="">
                         </div>
@@ -303,28 +295,38 @@
                             </p>
                         </div>
                     </div>
-                    <h5 class=" font-bold text-3md  pt-8 pb-4">
+                    <div  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="600" class="flex flex-row pb-4">
+                        <div class="basis-1/6 pl-10">
+                            <img src="img/icon/check.png" alt="">
+                        </div>
+                        <div class="basis-5/6">
+                            <p>
+                                0% de droits de douanes et taxes à l’Importation et à l’exportation
+                            </p>
+                        </div>
+                    </div>
+                    <h5  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="700" class=" font-bold text-3md  pt-8 pb-4">
                         Main-d'œuvre qualifiée
                     </h5>
-                    <p class="text-justify pb-4 text-lg">
+                    <p  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="800" class="text-justify pb-4 text-lg">
                         La Côte d'Ivoire dispose d'une main-d'œuvre jeune, dynamique et qualifiée. Le VITIB offre aux
                         entreprises un accès à un réservoir de talents en croissance, grâce à la proximité des
                         établissements d'enseignement supérieur et des centres de formation spécialisés.
                     </p>
-                    <h5 class=" font-bold text-3md  pt-8 pb-4">
+                    <h5  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="700" class=" font-bold text-3md  pt-8 pb-4">
                         Un accès à un marché en
                         plein essor
                     </h5>
-                    <p class="text-justify pb-4 text-lg">
+                    <p  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="700" class="text-justify pb-4 text-lg">
                         La Côte d'Ivoire est l'une des économies en croissance les plus rapides en Afrique. En choisissant
                         le VITIB comme base opérationnelle, les entreprises peuvent accéder à un marché régional en pleine
                         expansion et profiter des opportunités commerciales qu'offre la région de l'Afrique de l'Ouest.
                     </p>
-                    <h5 class=" font-bold text-3md  pt-8 pb-4">
+                    <h5  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="500"class=" font-bold text-3md  pt-8 pb-4">
                         Un environnement
                         d'innovation
                     </h5>
-                    <p class="text-justify pb-4 text-lg">
+                    <p  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="600" class="text-justify pb-4 text-lg">
                         La Côte d'Ivoire dispose d'une main-d'œuvre jeune, dynamique et qualifiée. Le VITIB offre aux
                         entreprises un accès à un réservoir de talents en croissance, grâce à la proximité des
                         établissements d'enseignement supérieur et des centres de formation spécialisés.Le VITIB est conçu
@@ -334,10 +336,10 @@
                     </p>
                 </div>
                 <div class="basis-1/2">
-                    <h5 class=" font-bold text-3md  text-lg pl-10 pt-8 pb-4">
+                    <h5  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="300" class=" font-bold text-3md  text-lg pl-10 pt-8 pb-4">
                         Avantages douaniers
                     </h5>
-                    <div class="flex flex-row">
+                    <div  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="400" class="flex flex-row">
                         <div class="basis-1/6 pl-10">
                             <img src="img/icon/check.png" alt="">
                         </div>
@@ -347,7 +349,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="flex flex-row pb-4">
+                    <div  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="500"class="flex flex-row pb-4">
                         <div class="basis-1/6 pl-10">
                             <img src="img/icon/check.png" alt="">
                         </div>
@@ -357,7 +359,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="flex flex-row pb-4">
+                    <div  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="600" class="flex flex-row pb-4">
                         <div class="basis-1/6 pl-10">
                             <img src="img/icon/check.png" alt="">
                         </div>
@@ -367,7 +369,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="flex flex-row pb-4">
+                    <div  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="700" class="flex flex-row pb-4">
                         <div class="basis-1/6 pl-10">
                             <img src="img/icon/check.png" alt="">
                         </div>
@@ -378,15 +380,15 @@
                         </div>
                     </div>
 
-                    <h5 class=" font-bold text-3md pl-10 pt-8 pb-4">
+                    <h5  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="800" class=" font-bold text-3md pl-10 pt-8 pb-4">
                         Infrastructure de pointe
                     </h5>
-                    <p class="text-justify pl-10 pb-4 text-lg">
+                    <p   data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="500"class="text-justify pl-10 pb-4 text-lg">
                         Le VITIB propose des infrastructures modernes et de haute qualité, avec des espaces de bureaux
                         équipés, des laboratoires de recherche technologique, des parcs industriels, et une connectivité
                         Internet haut débit. Ces infrastructures permettent aux entreprises de démarrer leurs activités
                         rapidement et de manière efficace.</p>
-                    <div class="flex flex-row pb-4">
+                    <div  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="600"class="flex flex-row pb-4">
                         <div class="basis-1/6 pl-10">
                             <img src="img/icon/check.png" alt="">
                         </div>
@@ -396,7 +398,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="flex flex-row pb-4">
+                    <div  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="500" class="flex flex-row pb-4">
                         <div class="basis-1/6 pl-10">
                             <img src="img/icon/check.png" alt="">
                         </div>
@@ -406,7 +408,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="flex flex-row pb-4">
+                    <div  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="600"class="flex flex-row pb-4">
                         <div class="basis-1/6 pl-10">
                             <img src="img/icon/check.png" alt="">
                         </div>
@@ -416,7 +418,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="flex flex-row pb-4">
+                    <div data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="700" class="flex flex-row pb-4">
                         <div class="basis-1/6 pl-10">
                             <img src="img/icon/check.png" alt="">
                         </div>
@@ -426,7 +428,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="flex flex-row pb-4">
+                    <div  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="800"class="flex flex-row pb-4">
                         <div class="basis-1/6 pl-10">
                             <img src="img/icon/check.png" alt="">
                         </div>
@@ -436,7 +438,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="flex flex-row pb-4">
+                    <div  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="700" class="flex flex-row pb-4">
                         <div class="basis-1/6 pl-10">
                             <img src="img/icon/check.png" alt="">
                         </div>
@@ -446,21 +448,21 @@
                             </p>
                         </div>
                     </div>
-                    <h5 class=" font-bold text-3md  pt-8 pl-10 pb-4">
+                    <h5  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="500" class=" font-bold text-3md  pt-8 pl-10 pb-4">
                         Des partenariats et
                         réseautage unique
                     </h5>
-                    <p class="text-justify pl-10 pb-4 text-lg">
+                    <p  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="600" class="text-justify pl-10 pb-4 text-lg">
                         En s'installant au VITIB, les entreprises ont la possibilité de créer des partenariats stratégiques
                         avec d'autres entreprises du secteur, des centres de recherche, des universités et des incubateurs
                         d'entreprises. Ces collaborations favorisent l'innovation, le partage des connaissances et l'accès à
                         de nouveaux marchés.
 
                     </p>
-                    <h5 class=" font-bold text-3md pl-10 pt-8 pb-4">
+                    <h5  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="500" class=" font-bold text-3md pl-10 pt-8 pb-4">
                         Un soutien gouvernemental
                     </h5>
-                    <p class="text-justify pl-10 pb-4 text-lg">
+                    <p  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="600" class="text-justify pl-10 pb-4 text-lg">
                         Le VITIB bénéficie du soutien actif du gouvernement ivoirien, qui s'engage à promouvoir le
                         développement technologique et à faciliter l'implantation des entreprises dans la zone. Cela se
                         traduit par des mesures d'accompagnement, des facilités administratives et un environnement propice
@@ -479,12 +481,12 @@
         class=" md:mx-auto px-20 py-5 bg-gradient-to-r from-orange-100 from-10%  via-30% to-green-100 to-90% ">
 
         <div class="text-center md:px-96">
-            <img src="img/cadre.png" class=" pt-16 pb-8  h-auto">
-            <h1 class="font-bold text-3xl text-center  pb-4">
+            <img data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="500" src="img/cadre.png" class=" pt-16 pb-8  h-auto">
+            <h1 data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="600" class="font-bold text-3xl text-center  pb-4">
                 Le hub des partenariat <br>
                 stratégiques en Afrique
             </h1>
-            <p class="text-center text-lg ">
+            <p data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="700" class="text-center text-lg ">
                 Au VITIB, nous croyons en la puissance des partenariats stratégiques.
                  En vous installant ici, vous aurez la possibilité de collaborer avec
                  des entreprises locales et internationales, des centres de recherche, des
@@ -495,16 +497,16 @@
 
 
         <div class="text-center  pt-48">
-            <h1 class="font-bold md:px-96 text-4xl text-center pb-4">
+            <h1 data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="500" class="font-bold md:px-96 text-4xl text-center pb-4">
                 Nos partenaires
             </h1>
-            <p class="  text-center text-lg md:px-72 px-4 pb-4">
+            <p data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="600" class="  text-center text-lg md:px-72 px-4 pb-4">
                 Notre mission est soutenue par l'engagement du gouvernement ivoirien, qui favorise<br>
                 activement le développement technologique en investissant dans l'innovation et en <br>
                  offrant un soutien précieux aux entreprises établies dans notre zone.
             </p>
             <div class=" flex flex-row">
-                <div class=" basis-1/2 text-right ">
+                <div data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="700" class=" basis-1/2 text-right ">
 
                     <a href="#"
                         class="  inline-flex items-center font-medium text-orange-400 dark:text-orange-400 underline hover:underline">
@@ -524,38 +526,40 @@
     </div>
     <div class=" relative md:mx-auto px-20 py-2 ">
 
-        <div class="bg-white ">
+        <div class="bg-white  relative flex overflow-x-hidden">
             <div class="md:flex flex-row ">
-                <div class="basis-1/6  pl-24 ">
+                <div class="basis-1/6  pl-24 animate-marquee whitespace-nowrap">
                     <div class=" text-white h-32 w-25  ">
                         <img src="img/partenaire/GOS.png" alt="">
                     </div>
                 </div>
-                <div class="basis-1/6 pl-24  ">
+                <div class="basis-1/6 pl-24 animate-marquee whitespace-nowrap ">
                     <div class=" text-white h-32 w-25  ">
                         <img src="img/logo/image2.png" alt="">
                     </div>
                 </div>
-                <div class="basis-1/6 pl-24  ">
+                <div class="basis-1/6 pl-24 animate-marquee whitespace-nowrap ">
                     <div class=" text-white h-32 w-25  ">
                         <img src="img/logo/image4.png" alt="">
                     </div>
                 </div>
-                <div class="basis-1/6 pl-24  ">
+                <div class="basis-1/6 pl-24 animate-marquee whitespace-nowrap ">
                     <div class=" text-white h-32 w-25  ">
                         <img src="img/logo/image3.png" alt="">
                     </div>
                 </div>
-                <div class="basis-1/6 pl-24 pt-8 ">
+                <div class="basis-1/6 pl-24 pt-8 animate-marquee whitespace-nowrap ">
                     <div class=" text-white   ">
                         <img src="img/logo/image1.png" alt="">
                     </div>
                 </div>
-                <div class="basis-1/6 pl-24  ">
+
+                <div class="basis-1/6 pl-24 animate-marquee whitespace-nowrap ">
                     <div class=" text-white h-32 w-25  ">
                         <img src="img/partenaire/GOS.png" alt="">
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -563,14 +567,13 @@
         class=" pt-32 relative md:mx-auto pl-32 pr-32 bg-gradient-to-r from-orange-100 from-10%  via-30% to-green-100 to-90% ">
 
 
-        <div  data-aos="fade-up"
-        data-aos-anchor-placement="center-bottom" class="md:flex flex-col bg-repeat-x " style="background-image: url('img/Image6.png')">
+        <div  style="background-image: url('img/Image6.png')">
             <div class="px-30 py-12">
-                <h1 class="text-4xl  text-center font-bold text-slate-600 space ">
+                <h1 data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="500" class="text-4xl  text-center font-bold text-slate-600 space ">
                     COMMENT NOUS REJOINDRE
                 </h1>
 
-                <div class="md:flex flex-row pt-16 py-8">
+                <div data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="600" class="md:flex flex-row pt-16 py-8">
                     <div class="md:basis-1/3">
                         <img class="h-auto max-w-full rounded-lg" src="img/Image7.png" alt="">
                     </div>
@@ -608,15 +611,16 @@
                                             Formulaire de demande
                                         d’agrément Pépinière
                                         </p>
-
                                     </a>
                                 </div>
                                 <div class=" basis-1/5 ">
+                                    <a href="/download-pdf" class="underline hover:underline">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                         stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                         <path stroke-linecap="round" stroke-linejoin="round"
                                             d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
                                     </svg>
+                                    </a>
 
                                 </div>
 
@@ -641,11 +645,13 @@
                                     </a>
                                 </div>
                                 <div class=" basis-1/5 ">
+                                    <a href="/opportunity-pdf" class=" underline hover:underline">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                         stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                         <path stroke-linecap="round" stroke-linejoin="round"
                                             d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
                                     </svg>
+                                </a>
 
                                 </div>
 
@@ -667,11 +673,13 @@
                                     </a>
                                 </div>
                                 <div class=" basis-1/5 ">
+                                    <a href="/telecharger-pdf" class=" underline hover:underline">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                         stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                         <path stroke-linecap="round" stroke-linejoin="round"
                                             d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
                                     </svg>
+                                    </a>
 
                                 </div>
 

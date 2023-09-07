@@ -1,6 +1,6 @@
 @extends('auth.layout')
 @section('content')
-    <div class="flex flex-col overflow-y-auto md:flex-row">
+    {{-- <div class="flex flex-col overflow-y-auto md:flex-row">
         <div class="h-32 md:h-auto md:w-1/2" style="margin-top: 140px;padding-left: 90px;">
             <img aria-hidden="true" class="" width="300" src="{{ asset('/img/logo2.png') }}" alt="Office" />
 
@@ -9,44 +9,43 @@
             <div class="w-full">
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
-                <h1 class="mb-4 text-xl font-semibold text-gray-700 dark:text-gray-200">
-                   CONNEXION
-                </h1>
-                <label class="block text-sm">
-                    <span class="text-gray-700 dark:text-gray-400">Email</span>
-                    <input
-                        class=" @error('email') is-invalid @enderror block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                        placeholder="Entrer votre mail" value="{{ old('email') }}" required autocomplete="email"
-                        name="email" autofocus />
+                    <h1 class="mb-4 text-xl font-semibold text-gray-700 dark:text-gray-200">
+                        CONNEXION
+                    </h1>
+                    <label class="block text-sm">
+                        <span class="text-gray-700 dark:text-gray-400">Email</span>
+                        <input
+                            class=" @error('email') is-invalid @enderror block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                            placeholder="Entrer votre mail" value="{{ old('email') }}" required autocomplete="email"
+                            name="email" autofocus />
 
-                    @error('email')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
-                </label>
+                        @error('email')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </label>
 
-                <label class="block mt-4 text-sm">
-                    <span class="text-gray-700 dark:text-gray-400">Mot de Passe</span>
-                    <input name="password" required autocomplete="current-password"
-                        class=" @error('password') is-invalid @enderror block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                        placeholder="***************" type="password" />
-                    @error('password')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
-                </label>
+                    <label class="block mt-4 text-sm">
+                        <span class="text-gray-700 dark:text-gray-400">Mot de Passe</span>
+                        <input name="password" required autocomplete="current-password"
+                            class=" @error('password') is-invalid @enderror block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                            placeholder="***************" type="password" />
+                        @error('password')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </label>
 
-                <!-- You should use a button here, as the anchor is only used for the example  -->
-                <a style="background-color:#193487;"
-                    class="block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
-                    >
-                    <button type="submit" class="btn btn-primary btn-lg btn-block">
-                        {{ __('se connecter') }}
-                    </button>
-                </a>
-                {{--
+                    <!-- You should use a button here, as the anchor is only used for the example  -->
+                    <a style="background-color:#193487;"
+                        class="block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">
+                            {{ __('se connecter') }}
+                        </button>
+                    </a>
+                    {{--
                 <hr class="my-8" />
 
                 <button
@@ -66,22 +65,22 @@
                     Twitter
                 </button> --}}
 
-                <p class="mt-4">
-                    <a class="text-sm font-medium text-purple-600 dark:text-purple-400 hover:underline"
-                        href="{{ route('password.request') }}">
-                        Mot de passe oublié?
-                    </a>
-                </p>
-                <p class="mt-1">
-                    <a class="text-sm font-medium text-purple-600 dark:text-purple-400 hover:underline"
-                        href="{{ route('register') }}">
-                        Creer un compte
-                    </a>
-                </p>
+    {{-- <p class="mt-4">
+                        <a class="text-sm font-medium text-purple-600 dark:text-purple-400 hover:underline"
+                            href="{{ route('password.request') }}">
+                            Mot de passe oublié?
+                        </a>
+                    </p>
+                    <p class="mt-1">
+                        <a class="text-sm font-medium text-purple-600 dark:text-purple-400 hover:underline"
+                            href="{{ route('register') }}">
+                            Creer un compte
+                        </a>
+                    </p>
                 </form>
             </div>
         </div>
-    </div>
+    </div> --}}
     {{-- <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
         <div class="login-brand">
             <img src="{{ asset('img/logo.png') }}" alt="logo" width="100" class="shadow-light rounded-circle">
@@ -164,4 +163,98 @@
             </div>
         </div>
     </div> --}}
+
+    <div class="row g-0">
+        <div class="col-lg-4">
+            <div class="p-5">
+                <img aria-hidden="true" class="" width="250" style="margin-top:20px"
+                    src="{{ asset('../img/logo2.png') }}" alt="Office" />
+                <br>
+                <h3 class="fw-normal mb-10" style="color:#193487; padding-top :50px"> <strong>
+                        Rejoignez-nous
+                        dès aujourd'hui
+                        et transformez
+                        l'avenir de votre
+                        entreprise</strong></h3>
+            </div>
+        </div>
+        <div class="col-lg-8 ">
+            <div class="p-5"
+                style="background-color: rgb(244, 244, 244); margin-top:25px; margin-right:20px;margin-bottom:25px">
+                <h3 class="fw-normal mb-5" style="color:#193487;text-align:center">
+                    <strong> CONNEXION</strong>
+                </h3>
+                <form method="POST" action="{{ route('login') }}" style="padding-left:10%">
+                    @csrf
+
+                    <div class="" >
+                        <div class="col-md-10 mb-4 pb-2">
+
+                            <div class="form-outline ">
+                                <input type="email" id="form3Examplea7" name="email"
+                                    value="{{ old('email') }}" required autocomplete="email"
+                                    autofocus
+                                    class="form-control form-control-lg @error('email') is-invalid @enderror " />
+                                <label class="form-label"
+                                    for="form3Examplea7">{{ __('Email ') }}</label>
+                                @error('email')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="col-md-10 mb-4 pb-2" >
+                            <div class="form-outline ">
+                                <input type="text" id="form3Examplea5" name="password" required
+                                    autocomplete="password" autofocus
+                                    class="form-control form-control-lg @error('password') is-invalid @enderror " />
+                                <label class="form-label"
+                                    for="form3Examplea5">{{ __('Mot de passe ') }}</label>
+                            </div>
+                            @error('password')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+
+                        </div>
+
+                    </div>
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+
+                    <button type="submit" class="btn btn-primary btn-lg"
+                        data-mdb-ripple-color="dark" style="background-color:#193487;" >Se
+                        Connecter</button>
+                    <hr class="my-8" />
+                    <p class="mt-4">
+                        <a class="text-sm font-medium text-purple-600 dark:text-purple-400 hover:underline"
+                            href="{{ route('password.request') }}">
+                            Mot de passe oublié?
+                        </a>
+                    </p>
+                    <p class="mt-1">
+                        <a class="text-sm font-medium text-purple-600 dark:text-purple-400 hover:underline"
+                            href="{{ route('register') }}">
+                            Créer un compte
+                        </a>
+                    </p>
+                    <a class="text-sm text-center font-medium  dark:text-purple-400 hover:underline"
+                    href="/home">
+                        <p class="mt-4" style="color:orange;">
+                            Retourner à la page d'acceuil
+                        </p>
+                     </a>
+                </form>
+            </div>
+        </div>
+    </div>
 @endsection

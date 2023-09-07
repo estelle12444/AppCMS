@@ -106,22 +106,22 @@
             <h2 class="mb-6 text-2xl font-semibold text-gray-900  dark:text-white"> Menu</h2>
             <ul class="text-gray-700 dark:text-gray-400 font-medium">
                 <li class="mb-4">
-                    <a href="#" class="hover:underline">Accueil</a>
+                    <a href="/home" class="hover:underline">Accueil</a>
                 </li>
                 <li class="mb-4">
-                    <a href="#" class="hover:underline"> A propos</a>
+                    <a href="/about" class="hover:underline"> A propos</a>
                 </li>
                 <li class="mb-4">
-                    <a href="#" class="hover:underline"> Nos partenaires</a>
+                    <a href="/etsagre" class="hover:underline"> Nos partenaires</a>
                 </li>
                 <li class="mb-4">
-                    <a href="#" class="hover:underline"> S'implanter</a>
+                    <a href="/installer" class="hover:underline"> S'implanter</a>
                 </li>
                 <li class="mb-4">
-                    <a href="#" class="hover:underline"> Opportunités</a>
+                    <a href="/opportunity" class="hover:underline"> Opportunités</a>
                 </li>
                 <li class="mb-4">
-                    <a href="#" class="hover:underline">  Mediathèque</a>
+                    <a href="/media" class="hover:underline">  Mediathèque</a>
                 </li>
             </ul>
         </div>

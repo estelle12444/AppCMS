@@ -5,7 +5,7 @@
     <section class="bg-center bg-no-repeat  bg-gray-500 bg-blend-multiply" style="background-image: url(img/carousel-1.jpg)">
         <div class="px-4 mx-auto max-w-screen-xl text-center py-20 lg:py-48">
             <h1
-                class="mb-4 text-4xl font-extrabold uppercase tracking-tight leading-none text-white md:text-5xl lg:text-6xl ">
+            data-aos="zoom-in-up" data-aos-duration="1500" data-aos-delay="700" class="mb-4 text-4xl font-extrabold uppercase tracking-tight leading-none text-white md:text-5xl lg:text-6xl ">
                 Nos partenaires</h1>
         </div>
     </section>
@@ -69,11 +69,11 @@
 
 
     <div class=" pt-24   pb-10 bg-gradient-to-r from-orange-100 from-20%  to-green-100 to-90%">
-        <h1 class="mb-10 text-3xl text-center font-bold tracking-tight text-gray-900">
+        <h1 data-aos="zoom-in-up" data-aos-duration="1500" data-aos-delay="700" class="mb-10 text-3xl text-center font-bold tracking-tight text-gray-900">
             REJOIGNEZ-NOUS
         </h1>
 
-        <div class="flex flex-row justify-between  leading-normal bg-center">
+        <div data-aos="zoom-in-up" data-aos-duration="1500" data-aos-delay="1000" class="flex flex-row justify-between  leading-normal bg-center">
             <div class="basis-1/2 pl-48">
                 <img class="h-72  max-w-lg mx-auto  " src="img/join.png" alt="image description">
             </div>
