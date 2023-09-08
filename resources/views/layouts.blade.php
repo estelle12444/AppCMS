@@ -44,8 +44,9 @@
 
     <div id="popup" class="popup">
         <div class="popup-content">
-            <h2>Le site n'est pas disponible sur mobile</h2>
-            <p>Veuillez visiter ce site depuis un ordinateur de bureau ou une tablette.</p>
+            <h2>Le site n'est pas disponible sur mobile pour le moment</h2>
+            <p>Veuillez visiter ce site depuis un ordinateur portable.</p>
+
             <button id="closePopup" class="close-button">Fermer</button>
         </div>
     </div>
