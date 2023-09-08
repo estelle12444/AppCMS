@@ -3,98 +3,44 @@
 
 @section('content')
     <section>
-        {{-- <div class=" pl-20 pb-5 bg-gradient-to-r from-orange-100 from-20%  to-gray-100 to-90% sm:pl-2 pb-2 md:pl-4 ">
-        <div class="flex flex-row pt-24 container pb-8">
-            <div class="basis-1/2 lg:pl-24 lg:pt-12 sm:pl-8 md:pl-8">
-                <h1 class="lg:text-6xl font-bold text-slate-600 tracking-tight sm:text-3xl md:text-5xl ">
-                    LE <span class="text-orange ">VITIB </span> VOUS
-                </h1>
-                <h1 class="text-6xl font-bold pt-8 text-slate-600  ">
-                    SOUHAITE LA
-                </h1>
-                <h1 class="text-6xl font-bold pt-8 text-slate-600  ">
-                    BIENVENUE
-                </h1>
-                <p class="text-2xl  text-slate-600  pt-8">
-                    Le parc Technologique de Côte d'Ivoire
-                </p>
-                <div class=" pt-8">
-
-                    <button type="button" style="background-color: #F18700"
-                        class="font-bold rounded-none  white text-center p-8  ">
-                        REJOIGNEZ NOUS
-                    </button>
-                </div>
-            </div>
-            <div class="basis-1/2 pr-24 pt-12 bg-no-repeat" style="background-image: url(img/Image9.png);">
-                <div
-                    class="videoWrapper flex justify-center items-center  rounded-lg border-solid border-4 border-gray-300  ">
-                    <span class="absolute  flex h-20 w-20">
-                        <span
-                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
-                        <span class="">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" style="color: white"
-                                class=" relative inline-flex rounded-full h-20 w-20 bg-amber-500">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
-                            </svg>
-                        </span>
-                    </span>
-                    <video  class="w-full rounded)lg" muted autoplay controls>
-
-                        <source src="videos/814dc43e870597176cad645798825c03.mp4" type="video/mp4">
-
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div class="overlay"></div>
-            </div>
-        </div>
-    </div> --}}
-        <div class=" pl-16 pb-5 bg-gradient-to-r from-orange-100 from-20%  to-gray-100 to-90%  ">
-            <div class="grid gap-8 md:grid-cols-2 md:items-center md:right pt-16 container pb-8">
-                <div data-aos="zoom-out-left" data-aos-duration="1500" data-aos-delay="500" class=" lg:pt-12 sm:pl-8 md:pl-8 ">
-                    <h1 class="text-6xl px-12  font-medium text-slate-600 tracking-tight  ">
-                        LE <span class="text-orange ">VITIB </span> VOUS
+        <div class="bg-gradient-to-r from-orange-100 via-gray-100 to-gray-100">
+            <div class="container mx-auto pt-16 md:grid md:grid-cols-2 md:gap-8 md:items-center pb-8">
+                <div data-aos="zoom-out-left" data-aos-duration="1500" data-aos-delay="500" class="md:pt-12 sm:px-8 md:px-8">
+                    <h1 class="text-4xl md:text-6xl font-medium text-slate-600 tracking-tight">
+                        LE <span class="text-orange">VITIB</span> VOUS
                     </h1>
-                    <h1 class="text-6xl px-12 font-medium pt-8 text-slate-600  ">
+                    <h1 class="text-4xl md:text-6xl font-medium pt-4 md:pt-8 text-slate-600">
                         SOUHAITE LA
                     </h1>
-                    <h1 class="text-6xl px-12 font-medium pt-8 text-slate-600  ">
+                    <h1 class="text-4xl md:text-6xl font-medium pt-4 md:pt-8 text-slate-600">
                         BIENVENUE
                     </h1>
-                    <p class="text-2xl font-medium px-12 text-slate-600  pt-8">
+                    <p class="text-xl md:text-2xl font-medium pt-4 md:pt-8 text-slate-600">
                         Le parc Technologique de Côte d'Ivoire
                     </p>
-                    <div class=" pt-8 px-12  ">
-
+                    <div class="pt-4 md:pt-8">
                         <button type="button" style="background-color: #F18700"
-                            class=" pl-16 pr-16 pt-4 pb-4 font-medium rounded-none  white text-center  ">
-                            REJOIGNEZ NOUS
+                            class="px-8 md:px-16 py-2 md:py-4 font-medium rounded-none text-white text-center">
+                            REJOIGNEZ-NOUS
                         </button>
                     </div>
                 </div>
-                <div data-aos="zoom-out-right" data-aos-duration="1500" data-aos-delay="1000" class=" pr-24  bg-no-repeat"
-                    style="background-image: url(img/Image9.png); background-size:cover">
-                    <div
-                        class="videoWrapper flex justify-center items-center  rounded-lg border-solid border-4 border-gray-300  ">
-                        <span class="absolute  flex h-20 w-20">
-                            <span
-                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+                <div data-aos="zoom-out-right" data-aos-duration="1500" data-aos-delay="1000"
+                    class="md:pr-24 bg-no-repeat bg-cover bg-center" style="background-image: url(img/Image9.png);">
+                    <div class="videoWrapper flex justify-center items-center rounded-lg border-solid border-4 border-gray-300">
+                        <span class="absolute flex h-16 w-16">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
                             <span class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor" style="color: white"
-                                    class=" relative inline-flex rounded-full h-16 w-16 pl-2 bg-amber-500">
+                                    class="relative inline-flex rounded-full h-12 w-12 pl-1 bg-amber-500">
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
                                 </svg>
                             </span>
                         </span>
-                        <video class="md:w-full md:rounded-lg" muted autoplay controls>
-
+                        <video class="w-full rounded-lg" muted autoplay controls>
                             <source src="videos/814dc43e870597176cad645798825c03.mp4" type="video/mp4">
-
                             Your browser does not support the video tag.
                         </video>
                     </div>
@@ -102,6 +48,7 @@
                 </div>
             </div>
         </div>
+
     </section>
 
     <div class=" bg-white md:flex flex-row  ">
@@ -115,7 +62,7 @@
             <div class="basis-1/6 pl-8 pt-8 animate-marquee whitespace-nowrap">
                 <img class="h-auto max-w-full rounded-lg" src="https://www.afi-global.org/wp-content/uploads/2021/02/Cote-d-Ivoire-e1614067202586.png" alt="">
             </div>
-            <div class="basis-1/6 pl-8  animate-marquee whitespace-nowrap">
+            <div class="basis-1/6 pl-8 animate-marquee whitespace-nowrap ">
                 <img src="https://www.umoatitres.org/wp-content/uploads/2018/03/logo_boad.jpg" alt="">
             </div>
             <div class="basis-1/6 pl-8 pt-10 animate-marquee whitespace-nowrap">
@@ -134,6 +81,7 @@
         </div>
 
     </div>
+
     <hr>
     </div>
     <div class="bg-gradient-to-r from-orange-100 from-20%  to-green-100 to-90%">
