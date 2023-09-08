@@ -79,7 +79,18 @@
   }
 
 
- 
+ /* Styles pour le message de redirection */
+#mobileWarning {
+    background-color: #0022ffcf;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
 
 .popup {
     display: none;
@@ -94,21 +105,7 @@
     z-index: 999;
 }
 
-.popup-content {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-}
 
-.close-button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
+
 
 

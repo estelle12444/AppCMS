@@ -42,15 +42,16 @@
     </div>
     <!--  Preloader -->
 
+
+
     <div id="popup" class="popup">
         <div class="popup-content">
-            <h2>Le site n'est pas disponible sur mobile pour le moment</h2>
-            <p>Veuillez visiter ce site depuis un ordinateur portable.</p>
-
-            <button id="closePopup" class="close-button">Fermer</button>
+            <div id="mobileWarning" class="hidden">
+                <p>Ce site n'est pas disponible sur mobile ou une tablette. Vous allez être redirigé vers une autre page.</p>
+                <p>Veuillez visiter ce site depuis un ordinateur portable </p>
+            </div>
         </div>
     </div>
-
     <div class="md:container md:mx-auto   py-5 bg-gradient-to-r from-orange-100 from-20%  to-gray-100 to-90% ">
         <!-- Navbar Start -->
         @include('Front.partials.nav')
