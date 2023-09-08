@@ -18,5 +18,5 @@ if (isMobile()) {
     // Rediriger après un délai (par exemple, 5 secondes)
     setTimeout(() => {
         window.location.href = '/'; // Remplacez 'redirection.html' par l'URL de la page de redirection
-    }, 5000); // 5000 millisecondes (5 secondes)
+    }, 10000); // 5000 millisecondes (5 secondes)
 }
