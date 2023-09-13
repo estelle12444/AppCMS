@@ -93,6 +93,8 @@ Route::get('/messages', function (Request $request) {
 Route::get('/actu', function () {
     return view('Front.pages.actu');
 });
+Route::get('/info/{tender}',  [AnnonceController::class, 'show_tender']
+)->name('Front.pages.info');
 
 Route::get('/annonce', [AnnonceController::class, 'index']);
 

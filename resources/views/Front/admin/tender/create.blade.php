@@ -22,7 +22,7 @@
                     <form action="{{ route('Front.admin.tender.store') }}" method="POST"enctype="multipart/form-data">
                         @csrf
                   <div class="form-group row mb-4">
-                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Title</label>
+                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Titre de l'offre</label>
                     <div class="col-sm-12 col-md-7">
                       <input name="title" type="text" class="form-control">
 

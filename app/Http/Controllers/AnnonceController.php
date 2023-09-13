@@ -14,4 +14,10 @@ class AnnonceController extends Controller
 
         return view('Front.pages.anonce', compact( 'tenders'));
     }
+    public function show_tender(Tender $tender)
+    {
+
+        return view('Front.pages.info', compact( 'tender'));
+    }
+
 }
