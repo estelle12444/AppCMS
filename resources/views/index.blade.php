@@ -478,7 +478,7 @@
                                 </div>
                             </div>
                         </div> --}}
-                        <img data-aos="zoom-out-right" data-aos-duration="1000" data-aos-delay="800" src="img/background/parcours.svg" alt="">
+                        <img data-aos="zoom-out-right" data-aos-duration="1000" data-aos-delay="800" src="img/background/Parcours.svg" alt="">
                     </div>
 
                     <div class="pt-4 md:pt-8 text-center">
@@ -867,7 +867,7 @@
                     <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="500"
                         class="rounded-lg border-2 mt-10 md:mt-20 border-gray-300 p-2 md:ml-4 md:mr-4 mb-10 md:ml-72 md:mr-64">
 
-                       <img src="img/image5.png" class="w-full"/>
+                       <img src="img/Image5.png" class="w-full"/>
                         <h1 class="font-bold text-3xl md:text-5xl text-center md:text-left pl-0 md:pl-40 pt-4 pb-4 md:pt-8">
                             Contactez-nous
                         </h1>

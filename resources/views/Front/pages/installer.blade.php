@@ -334,7 +334,7 @@
                 Procédure d'agrément
             </h1>
             <div class="py-8 md:pt-20 px-24">
-                <img data-aos="zoom-out-right" data-aos-duration="1000" data-aos-delay="800" src="img/background/parcours1.svg" alt="">
+                <img data-aos="zoom-out-right" data-aos-duration="1000" data-aos-delay="800" src="img/background/Parcours1.svg" alt="">
                 </div>
             </div>
             <div class="pt-4 md:pt-8 text-center">
