@@ -44,14 +44,14 @@
 
 
 
-    <div id="popup" class="popup">
+    {{-- <div id="popup" class="popup">
         <div class="popup-content">
             <div id="mobileWarning" class="hidden">
-                <p>Ce site n'est pas disponible sur mobile ou une tablette. Vous allez être redirigé vers une autre page.</p>
-                <p>Veuillez visiter ce site depuis un ordinateur portable </p>
+                <p>La version mobile de ce site est en cours de construction . Vous serrez rediriger.</p>
+                <p>Merci de consulter ce site via un ordinateur .  </p>
             </div>
         </div>
-    </div>
+    </div> --}}
     <div class="md:container md:mx-auto   py-5 bg-gradient-to-r from-orange-100 from-20%  to-gray-100 to-90% ">
         <!-- Navbar Start -->
         @include('Front.partials.nav')

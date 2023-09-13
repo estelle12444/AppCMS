@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AnnonceController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\DownloadController;
 use App\Http\Controllers\PartnerController;
@@ -9,6 +10,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PdfController;
 use App\Http\Controllers\SectorController;
+use App\Http\Controllers\TenderController;
 use App\Http\Controllers\TypeDeDemandeController;
 use App\Http\Controllers\TypeDemandeController;
 use App\Models\Partner;
@@ -92,9 +94,7 @@ Route::get('/actu', function () {
     return view('Front.pages.actu');
 });
 
-Route::get('/anonce', function () {
-    return view('Front.pages.anonce');
-});
+Route::get('/annonce', [AnnonceController::class, 'index']);
 
 
 
@@ -120,6 +120,12 @@ Route::get('/sector', [SectorController::class, 'index'])->name('Front.admin.sec
     Route::delete('/sector/{sector}', [SectorController::class, 'destroy'])->name('Front.admin.sector.destroy');
 
 
+Route::get('/tender', [TenderController::class, 'index'])->name('Front.admin.tender.index');
+    Route::get('/tender/create', [TenderController::class, 'create'])->name('Front.admin.tender.create');
+    Route::post('/tender', [TenderController::class, 'store'])->name('Front.admin.tender.store');
+    Route::delete('/tender/{tender}', [TenderController::class, 'destroy'])->name('Front.admin.tender.destroy');
+    Route::get('/tender/{tender}/edit', [TenderController::class, 'edit'])->name('Front.admin.tender.edit');
+    Route::put('/tender/{tender}',[TenderController::class, 'update'])->name('Front.admin.tender.update');
 
 
 Route::get('/admin', function (Request $request) {

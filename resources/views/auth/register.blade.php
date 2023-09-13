@@ -491,7 +491,7 @@
                         <div class="col-md-6 mb-4 pb-2">
 
                             <div class="form-outline ">
-                                <input type="text" id="form3Examplea5" name="password" required autocomplete="password"
+                                <input type="password" id="form3Examplea5" name="password" required autocomplete="password"
                                     class="form-control form-control-lg @error('password') is-invalid @enderror " />
                                 <label class="form-label" for="form3Examplea5">{{ __('Mot de passe ') }}</label>
                             </div>

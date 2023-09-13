@@ -206,7 +206,7 @@
                         </div>
                         <div class="col-md-10 mb-4 pb-2" >
                             <div class="form-outline ">
-                                <input type="text" id="form3Examplea5" name="password" required
+                                <input type="password" id="form3Examplea5" name="password" required
                                     autocomplete="password" autofocus
                                     class="form-control form-control-lg @error('password') is-invalid @enderror " />
                                 <label class="form-label"

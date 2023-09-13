@@ -29,7 +29,8 @@ class PartnerController extends Controller
 
     public function search_process(Request $request)
     {
-        // $data = $request->all();
+         $sector_id = '';
+         $search_term = '';
 
          // Récupérer tous les secteurs d'activité
         $sectors = Sector::all();
@@ -39,6 +40,7 @@ class PartnerController extends Controller
 
         if ($request->has('sector_id')) {
             // Filtrer par secteur d'activité
+            $sector_id = $request->sector_id;
             $query->whereHas('sectors', function ($query) use ($request) {
                 $query->where('sector_id', $request->sector_id);
             });
@@ -46,13 +48,14 @@ class PartnerController extends Controller
 
         if ($request->has('search_term')) {
             // Filtrer par nom de partenaire
+            $search_term = $request->search_term;
             $query->where('title', 'LIKE', '%' . $request->search_term . '%');
         }
 
         // Récupérer les partenaires correspondants aux critères de recherche
         $partners = $query->get();
 
-        return view('Front.pages.etsagre', compact('sectors', 'partners'));
+        return view('Front.pages.etsagre', compact('sectors', 'partners','search_term', 'sector_id'));
 
 
 

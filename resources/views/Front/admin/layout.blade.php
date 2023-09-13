@@ -157,6 +157,16 @@
 
               </ul>
             </li>
+            <li class="menu-header">Appels d'Offres</li>
+            <li class="dropdown">
+              <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span>Appels d'Offres</span></a>
+              <ul class="dropdown-menu">
+                <li><a class="nav-link" href="/tender">Liste des appels </a></li>
+                <li><a class="nav-link" href="/tender/create">Ajouter un appel d'offre</a></li>
+
+
+              </ul>
+            </li>
           </ul>
 
 

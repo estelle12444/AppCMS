@@ -60,8 +60,8 @@ class RegisterController extends Controller
             'password' => ['required', 'string', 'min:8'],
             'telephone' => 'nullable',
             'adresse' => 'required',
-            'piece_identite' => 'nullable|in:carte_identite,passeport',
-            'role_id' => 'required|exists:roles,id',
+            //'piece_identite' => 'nullable|in:carte_identite,passeport',
+            //'role_id' => 'required|exists:roles,id',
         ]);
     }
 
@@ -81,7 +81,7 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
             'telephone' => $data['telephone'],
             'adresse' => $data['adresse'],
-            'piece_identite' => $data['piece_identite'],
+           // 'piece_identite' => $data['piece_identite'],
             'role_id' => $defaultRole->id,
         ]);
     }
@@ -96,8 +96,8 @@ class RegisterController extends Controller
     {
         $this->validator($request->all())->validate();
         $user = $this->create($request->all());
-        dd($user);
-        return redirect()->route('auth.login')->with('success', 'Utilisateur créé avec succès !');
+
+        return redirect()->route('login')->with('success', 'Utilisateur créé avec succès !');
     }
 
 

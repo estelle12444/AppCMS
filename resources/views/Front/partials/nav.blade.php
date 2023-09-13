@@ -1,8 +1,8 @@
 <?php
 $url = $_SERVER['REQUEST_URI'];
 ?>
-<nav
-    class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 bg-gradient-to-r ">
+
+<nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 bg-gradient-to-r">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/home" class="flex items-center">
             <img src="{{ asset('img/slider/Logo-VILLAGE.svg') }}" width="150" alt="logo">
@@ -10,9 +10,9 @@ $url = $_SERVER['REQUEST_URI'];
         <div class="flex md:order-2">
             <a href="{{route('login')}}">
                 <button type="button" style="background-color: #F18700"
-                        class=" pl-4 pr-4 pt-2 pb-2 font-medium rounded-none  white text-center  ">
-                        S'INSCRIRE
-                    </button>
+                    class="pl-4 pr-4 pt-2 pb-2 font-medium rounded-none white text-center hidden md:inline">
+                    S'INSCRIRE
+                </button>
             </a>
             <p class="pl-4 pt-2">
                 <strong style="color:  #F18700;">FR</strong> | EN
@@ -28,109 +28,74 @@ $url = $_SERVER['REQUEST_URI'];
                 </svg>
             </button>
         </div>
-        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+        <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 space-x-4 md:space-x-0 md:space-y-0"
+            id="navbar-sticky">
             <ul
-                class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:flex-row md:space-x-4 md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:flex-row md:space-x-4 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                 <li>
                     <a href="/home"
-                        class="block py-2 pl-3  text-gray-700 <?php if ($url == '/home') {
+                        class="block py-2 pl-3 text-gray-700 <?php if ($url == '/home') {
                             echo 'md:text-orange-400';
-                        } ?>  rounded md:bg-transparent md:hover:text-amber-500 md:p-0 md:dark:text-blue-500"
+                        } ?> rounded md:bg-transparent md:hover:text-amber-500 md:p-0 md:dark:text-blue-500"
                         aria-current="page">Accueil</a>
                 </li>
                 <li>
                     <a href="/about"
                         class="block py-2 pl-3 pr-4 text-gray-700 <?php if ($url == '/about') {
                             echo 'md:text-orange-400';
-                        } ?>  rounded md:bg-transparent md:hover:text-amber-500  md:p-0 md:dark:text-blue-500"
+                        } ?> rounded md:bg-transparent md:hover:text-amber-500 md:p-0 md:dark:text-blue-500"
                         aria-current="page">A propos</a>
                 </li>
                 <li>
                     <a href="/opportunity"
                         class="block py-2 pl-3 pr-4 text-gray-700 <?php if ($url == '/opportunity') {
                             echo 'md:text-orange-400';
-                        } ?>  rounded md:bg-transparent md:hover:text-amber-500  md:p-0 md:dark:text-blue-500"
+                        } ?> rounded md:bg-transparent md:hover:text-amber-500 md:p-0 md:dark:text-blue-500"
                         aria-current="page">Opportunités</a>
                 </li>
                 <li>
                     <a href="/installer"
                         class="block py-2 pl-3 pr-4 text-gray-700 <?php if ($url == '/installer') {
                             echo 'md:text-orange-400';
-                        } ?>  rounded md:bg-transparent md:hover:text-amber-500  md:p-0 md:dark:text-blue-500"
+                        } ?> rounded md:bg-transparent md:hover:text-amber-500 md:p-0 md:dark:text-blue-500"
                         aria-current="page">S'implanter</a>
                 </li>
                 <li>
                     <a href="/partners"
                         class="block py-2 pl-3 pr-4 text-gray-700 <?php if ($url == '/partners') {
                             echo 'md:text-orange-400';
-                        } ?>  rounded md:bg-transparent md:hover:text-amber-500  md:p-0 md:dark:text-blue-500"
+                        } ?> rounded md:bg-transparent md:hover:text-amber-500 md:p-0 md:dark:text-blue-500"
                         aria-current="page">Nos partenaires</a>
                 </li>
                 <li>
                     <a href="/actu"
                         class="block py-2 pl-3 pr-4 text-gray-700 <?php if ($url == '/actu') {
                             echo 'md:text-orange-400';
-                        } ?>  rounded md:bg-transparent md:hover:text-amber-500  md:p-0 md:dark:text-blue-500"
+                        } ?> rounded md:bg-transparent md:hover:text-amber-500 md:p-0 md:dark:text-blue-500"
                         aria-current="page">Actualités</a>
                 </li>
                 <li>
                     <a href="/media"
                         class="block py-2 pl-3 pr-4 text-gray-700 <?php if ($url == '/media') {
                             echo 'md:text-orange-400';
-                        } ?>  rounded md:bg-transparent md:hover:text-amber-500  md:p-0 md:dark:text-blue-500"
+                        } ?> rounded md:bg-transparent md:hover:text-amber-500 md:p-0 md:dark:text-blue-500"
                         aria-current="page">Mediathèque</a>
                 </li>
                 <li>
-                    <a href="/anonce"
-                    class="block py-2 pl-3 pr-4 text-gray-700 <?php if ($url == '/anonce') {
-                        echo 'md:text-orange-400';
-                    } ?>  rounded md:bg-transparent md:hover:text-amber-500  md:p-0 md:dark:text-blue-500"
-                    aria-current="page">Annonces </a></li>
+                    <a href="/annonce"
+                        class="block py-2 pl-3 pr-4 text-gray-700 <?php if ($url == '/anonce') {
+                            echo 'md:text-orange-400';
+                        } ?> rounded md:bg-transparent md:hover:text-amber-500 md:p-0 md:dark:text-blue-500"
+                        aria-current="page">Annonces</a>
+                </li>
             </ul>
-        </div>
-    </div>
-
-</nav>
-
-
-
-{{-- <div class="flex flex-row ">
-    <div class="basis-1/4">
-        <img src="{{ asset('img/logo2.png') }}" width="150" alt="logo">
-    </div>
-    <div class="basis-1/2">
-        <nav class="flex justify-center space-x-4">
-            <a href="/home" class="px-2 py-2 text-orange rounded-lg hover:bg-slate-100 hover:text-slate-900">
-                Accueil</a>
-            <a href="/about" class="px-1 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">A
-                propos</a>
-            <a href="/opportunity" class=" px-2 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">
-                Opportunité</a>
-            <a href="/join" class="px-2 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">
-                S'implanter</a>
-            <a href="/etsagre" class="px-2 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">
-                Nos
-                Partenaires</a>
-
-
-            <a href="/reports" class=" px-2 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">
-                Médiathèque</a>
-
-        </nav>
-
-    </div>
-    <div class="basis-1/4">
-        <div class="flex flex-row">
-            <div class="basis-1/4"> </div>
-            <div class="basis-2/4">
-                <a href="/actu" class=" px-2 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">
-                    Annonces</a>
-                <button type="button" class=" rounded-none bg-amber-500 text-white ">
-                    S'inscrire
+            <a href="{{route('login')}}">
+                <button type="button" style="background-color: #F18700"
+                    class="pl-4 pr-4 pt-2 pb-2 font-medium rounded-none white text-center md:hidden">
+                    S'INSCRIRE
                 </button>
-            </div>
-            <div class="basis-1/4">
-                FR | EN </div>
+            </a>
         </div>
     </div>
-</div> --}}
+</nav>
