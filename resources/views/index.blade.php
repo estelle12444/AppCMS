@@ -4,7 +4,7 @@
 @section('content')
     <section>
         <div class="bg-gradient-to-r from-orange-100 via-gray-100 to-gray-100">
-            <div class="md:container  md:px-28 pt-16 md:grid md:grid-cols-2 md:gap-8 md:items-center pb-8">
+            <div class=" md:px-28 pt-16 md:grid md:grid-cols-2 md:gap-8 md:items-center pb-8">
                 <div data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="500"
                     class="px-8 md:pt-12 sm:px-8 md:px-8 text-center md:text-left">
                     <h1 class="text-4xl md:text-6xl font-medium text-slate-600 tracking-tight">
@@ -58,7 +58,7 @@
     <div class="bg-white flex flex-col md:flex-row  md:px-36">
         <div class="w-full md:w-1/6 ">
             <div class="rounded-none-4 blue text-white h-20 md:h-full">
-                <h3 class="text-lg text-center md:text-center md:py-10 py-2 pl-3 font-bold">Nos<br>partenaires</h3>
+                <h3 class="text-lg text-center md:text-center md:py-10 py-2 md:px-2 font-bold">Nos<br>partenaires</h3>
             </div>
         </div>
 

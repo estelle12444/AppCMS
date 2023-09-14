@@ -246,10 +246,10 @@
                     <div
                         class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <img class="w-48 h-auto mx-auto mt-5 rounded-lg"
-                            src="https://abc-signaletique.fr/822-large_default/panneau-point-d-exclamation-refd868.jpg"
+                            src="{{ asset('img/annonce/candidature.png') }}"
                             alt="" />
                         <div class="p-5">
-                            <h3 class="text-lg">Pas de résultats de recherche</h3>
+                            <h3 class="text-lg">Pas d'appel à candidature </h3>
                             <p class="text-gray-500">Aucun résultat trouvé pour votre recherche.</p>
                         </div>
                     </div>
@@ -341,10 +341,10 @@
                     <div
                         class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <img class="w-48 h-auto mx-auto mt-5 rounded-lg"
-                            src="https://abc-signaletique.fr/822-large_default/panneau-point-d-exclamation-refd868.jpg"
+                            src="{{ asset('img/annonce/cotation.png') }}"
                             alt="" />
                         <div class="p-5">
-                            <h3 class="text-lg">Pas de résultats de recherche</h3>
+                            <h3 class="text-lg">Pas de demande de cotation </h3>
                             <p class="text-gray-500">Aucun résultat trouvé pour votre recherche.</p>
                         </div>
                     </div>
@@ -434,10 +434,10 @@
                     <div
                         class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <img class="w-48 h-auto mx-auto mt-5 rounded-lg"
-                            src="https://abc-signaletique.fr/822-large_default/panneau-point-d-exclamation-refd868.jpg"
+                            src="{{ asset('img/annonce/offre_emploi.jpg') }}"
                             alt="" />
                         <div class="p-5">
-                            <h3 class="text-lg">Pas de résultats de recherche</h3>
+                            <h3 class="text-lg">Aucune offre d'emploi disponible</h3>
                             <p class="text-gray-500">Aucun résultat trouvé pour votre recherche.</p>
                         </div>
                     </div>
@@ -521,7 +521,7 @@
                     </div>
                 </div>
             @empty
-                <div data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="500"
+                {{-- <div data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="500"
                     class="flex items-center justify-center h-full">
                     <div
                         class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
@@ -533,7 +533,7 @@
                             <p class="text-gray-500">Aucun résultat trouvé pour votre recherche.</p>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             @endforelse
         </div>
 
