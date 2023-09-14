@@ -71,7 +71,8 @@ class QuotationController extends Controller
             $imagePath = $request->file('file')->store('quotations', 'public');
             $quotation->file = $imagePath;
         }
-        $quotation->limit_date = $validatedData['limit_date'];
+        $formattedDate = date("Y-m-d H:i:s",  strtotime($validatedData['limit_date']));
+        $quotation->limit_date = $formattedDate;
         $quotation->save();
 
         return redirect()->route('Front.admin.quotation.index')->with('success', "Demande de cotation ajouté avec succès.");
