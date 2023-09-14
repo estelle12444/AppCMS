@@ -94,7 +94,7 @@
                     <div class="w-full sm:w-1/2 mb-8 sm:mb-0 sm:pl-8 md:pl-24 ">
                         <img class="h-64 sm:h-72 max-w-full ml-4" src="img/join.png" alt="image description">
                     </div>
-                    <div class="w-full sm:w-1/2 sm:mr-8 md:mr-16 lg:mr-48 px-6 ">
+                    <div class="w-full sm:w-1/2 sm:mr-0   lg:mr-48 px-6 ">
                         <p class="font-normal text-justify text-gray-700 tracking-tight  pt-10 md:pt-0">
                             Nous sommes fiers d'accueillir des entreprises innovantes qui transforment l'avenir de la Côte
                             d'Ivoire et de l'Afrique. Rejoignez-nous au VITIB et devenez acteur d'un écosystème florissant,

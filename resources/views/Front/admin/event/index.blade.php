@@ -1,21 +1,20 @@
 @extends('Front.admin.layout')
-
 @section('content')
     <section class="section">
         <div class="section-header">
-            <h1>Liste des appels d'offres</h1>
+            <h1>Liste des demandes de manifestations</h1>
             <div class="section-header-breadcrumb">
                 <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
-                <div class="breadcrumb-item"><a href="#">Appels d'offres</a></div>
+                <div class="breadcrumb-item"><a href="#">Demandes de manifestations</a></div>
                 <div class="breadcrumb-item">Liste</div>
             </div>
         </div>
 
         <div class="section-body">
             {{-- <h2 class="section-title">DataTables</h2>
-      <p class="section-lead">
-        We use 'DataTables' made by @SpryMedia. You can check the full documentation <a href="https://datatables.net/">here</a>.
-      </p> --}}
+  <p class="section-lead">
+    We use 'DataTables' made by @SpryMedia. You can check the full documentation <a href="https://datatables.net/">here</a>.
+  </p> --}}
 
             <div class="row">
                 <div class="col-12">
@@ -42,22 +41,22 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach ($tenders as $tender)
+                                        @foreach ($events as $event)
                                             <tr>
-                                                <td>{{ $tender->id }}</td>
-                                                <td>{{ $tender->title }}</td>
-                                                <td>{{ $tender->content }}</td>
-                                                <td>{{ $tender->resume }}</td>
-                                                <td>{{ $tender->limit_date }}</td>
+                                                <td>{{ $event->id }}</td>
+                                                <td>{{ $event->title }}</td>
+                                                <td>{{ $event->content }}</td>
+                                                <td>{{ $event->resume }}</td>
+                                                <td>{{ $event->limit_date }}</td>
 
                                                 <td>
-                                                    <img alt="{{ $tender->title }}"
-                                                        src="{{ asset('storage/' . $tender->image) }}" data-toggle="tooltip"
+                                                    <img alt="{{ $event->title }}"
+                                                        src="{{ asset('storage/' . $event->image) }}" data-toggle="tooltip"
                                                         width="50">
                                                 </td>
                                                 <td>
-                                                    <a href="{{ asset('storage/' . $tender->file) }}"
-                                                        title="{{ $tender->title }}">
+                                                    <a href="{{ asset('storage/' . $event->file) }}"
+                                                        title="{{ $event->title }}">
                                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                                                             viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                                                             class="w-4 h-4">
@@ -69,12 +68,12 @@
                                                 </td>
                                                 {{-- <td>{{ $partner->created_at }}</td> --}}
 
-                                                <td><a href="{{ route('Front.admin.tender.edit', $tender) }}"
+                                                <td><a href="{{ route('Front.admin.event.edit', $event) }}"
                                                         class="btn btn-primary btn-action mr-1" data-toggle="tooltip"
                                                         title="" data-original-title="Edit"><i
                                                             class="fas fa-pencil-alt"></i></a>
 
-                                                    <form action="{{ route('Front.admin.tender.destroy', $tender->id) }}"
+                                                    <form action="{{ route('Front.admin.event.destroy', $event->id) }}"
                                                         method="POST" style="display: inline;">
                                                         @csrf
                                                         @method('DELETE')

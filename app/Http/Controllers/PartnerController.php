@@ -38,15 +38,15 @@ class PartnerController extends Controller
         // Effectuer la recherche en fonction des critères
         $query = Partner::query();
 
-        if ($request->has('sector_id')) {
+        if (!empty($request->sector_id)) {
             // Filtrer par secteur d'activité
             $sector_id = $request->sector_id;
             $query->whereHas('sectors', function ($query) use ($request) {
-                $query->where('sector_id', $request->sector_id);
+                $query->where('sector_id','=', $request->sector_id);
             });
         }
 
-        if ($request->has('search_term')) {
+        if (!empty($request->search_term)) {
             // Filtrer par nom de partenaire
             $search_term = $request->search_term;
             $query->where('title', 'LIKE', '%' . $request->search_term . '%');

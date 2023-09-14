@@ -3,18 +3,24 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AnnonceController;
 use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\CareerController;
 use App\Http\Controllers\DownloadController;
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\JobController;
 use App\Http\Controllers\PartnerController;
 use App\Models\Message;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PdfController;
+use App\Http\Controllers\QuotationController;
 use App\Http\Controllers\SectorController;
 use App\Http\Controllers\TenderController;
 use App\Http\Controllers\TypeDeDemandeController;
 use App\Http\Controllers\TypeDemandeController;
+use App\Models\PageCount;
 use App\Models\Partner;
 use App\Models\Sector;
+use Faker\Core\File;
 use Illuminate\Support\Facades\Auth;
 
 /*
@@ -129,6 +135,44 @@ Route::get('/tender', [TenderController::class, 'index'])->name('Front.admin.ten
     Route::get('/tender/{tender}/edit', [TenderController::class, 'edit'])->name('Front.admin.tender.edit');
     Route::put('/tender/{tender}',[TenderController::class, 'update'])->name('Front.admin.tender.update');
 
+Route::get('/job', [JobController::class, 'index'])->name('Front.admin.job.index');
+    Route::get('/job/create', [JobController::class, 'create'])->name('Front.admin.job.create');
+    Route::post('/job', [JobController::class, 'store'])->name('Front.admin.job.store');
+    Route::delete('/job/{job}', [JobController::class, 'destroy'])->name('Front.admin.job.destroy');
+    Route::get('/job/{job}/edit', [JobController::class, 'edit'])->name('Front.admin.job.edit');
+    Route::put('/job/{job}',[JobController::class, 'update'])->name('Front.admin.job.update');
+
+Route::get('/event', [EventController::class, 'index'])->name('Front.admin.event.index');
+    Route::get('/event/create', [EventController::class, 'create'])->name('Front.admin.event.create');
+    Route::post('/event', [EventController::class, 'store'])->name('Front.admin.event.store');
+    Route::delete('/event/{event}', [EventController::class, 'destroy'])->name('Front.admin.event.destroy');
+    Route::get('/event/{event}/edit', [EventController::class, 'edit'])->name('Front.admin.event.edit');
+    Route::put('/event/{event}',[EventController::class, 'update'])->name('Front.admin.event.update');
+
+Route::get('/career', [CareerController::class, 'index'])->name('Front.admin.career.index');
+    Route::get('/career/create', [CareerController::class, 'create'])->name('Front.admin.career.create');
+    Route::post('/career', [CareerController::class, 'store'])->name('Front.admin.career.store');
+    Route::delete('/career/{career}', [CareerController::class, 'destroy'])->name('Front.admin.career.destroy');
+    Route::get('/career/{career}/edit', [CareerController::class, 'edit'])->name('Front.admin.career.edit');
+    Route::put('/career/{career}',[CareerController::class, 'update'])->name('Front.admin.career.update');
+
+Route::get('/quotation', [QuotationController::class, 'index'])->name('Front.admin.quotation.index');
+    Route::get('/quotation/create', [QuotationController::class, 'create'])->name('Front.admin.quotation.create');
+    Route::post('/quotation', [QuotationController::class, 'store'])->name('Front.admin.quotation.store');
+    Route::delete('/quotation/{quotation}', [QuotationController::class, 'destroy'])->name('Front.admin.quotation.destroy');
+    Route::get('/quotation/{quotation}/edit', [QuotationController::class, 'edit'])->name('Front.admin.quotation.edit');
+    Route::put('/quotation/{quotation}',[QuotationController::class, 'update'])->name('Front.admin.quotation.update');
+
+
+
+Route::get('/count/', function (Request $request) {
+    $filename = $request->query('filename');
+    $page = PageCount::firstOrCreate(['url'=> $filename], ['name'=> $filename, 'count'=>0, 'url'=>$filename]);
+    $page->count = $page->count + 1;
+    $page->save();
+
+    return response()->file(storage_path('app/public/'.$filename));
+})->name('download_file');
 
 Route::get('/admin', function (Request $request) {
 

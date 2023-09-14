@@ -7,6 +7,8 @@
             <p class="pb-4" style="color: #F18700;">
                 Dossier d'Appel d'Offre N 0{{ $tender->id }}
             </p>
+
+            <img src="{{ asset('img/annonce/appel_offre.jpg') }}" class="w-full h-auto md:py-16" alt="">
             <h5 class="mb-2 text-4xl tracking-tight  capitalize ">
 
                 <span class="text-blue-800 dark:text-white font-bold pt-8"> {{ $tender->title }}</span></h5>
@@ -20,8 +22,6 @@
                 {{ $tender->resume }}
 
             </p>
-
-
 
             <p> <span class="text-blue-800 font-bold"> Date limite:</span> <span
                     style="color: #F18700;">{{ $tender->limit_date }}</span> </p>

@@ -132,7 +132,7 @@
 
             <div class=" grid grid-cols-1 md:grid-cols-2 gap-2">
                 <div data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="700">
-                    <img class="h-auto max-w-full rounded-lg  pr-10" src="img/city.png" alt="">
+                    <img class="h-auto max-w-full rounded-lg  md:pr-10" src="img/city.png" alt="">
                     <h5 class="mb-2 text-2xl pt-4 font-bold tracking-tight text-gray-900 dark:text-white">
                         Entrepôts à louer
                     </h5>
@@ -143,11 +143,11 @@
                     </p>
                 </div>
                 <div data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="700" class="">
-                    <img class="h-auto max-w-full rounded-lg md:pr-16 " src="img/immeuble.png" alt="">
+                    <img class="h-auto max-w-full rounded-lg " src="img/immeuble.png" alt="">
                     <h5 class="mb-2 text-2xl pt-4 font-bold tracking-tight text-gray-900 dark:text-white">
                         Immeubles à bureaux
                     </h5>
-                    <p class="text-justify pb-20  md:pr-16  ">
+                    <p class="text-justify pb-20 md:pr-2   ">
                         Cette zone inclut une zone économique TIC-soft, ayant pour objet l’hébergement des entreprises œuvrant
                         dans le secteur des TIC. Les infrastructures d’accueil de ce type d’entreprises répond à des standards
                         internationaux, en vue de répondre aux exigences des multinationales (Microsoft, Oracle, Apple, Google)
@@ -156,7 +156,7 @@
                     </p>
                 </div>
                 <div data-aos="zoom-in-up" data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="700">
-                    <img class="h-auto max-w-full rounded-lg pr-10" src="img/Picture9.png" alt="">
+                    <img class="h-auto max-w-full rounded-lg md:pr-10" src="img/Picture9.png" alt="">
                     <h5 class="mb-2 text-2xl pt-4 font-bold tracking-tight text-gray-900 dark:text-white">
                         Promotion Immobilière Bloc A
                     </h5>
@@ -172,14 +172,14 @@
                     <h5 class="mb-2 text-2xl pt-4 font-bold tracking-tight text-gray-900 dark:text-white">
                         Université
                     </h5>
-                    <p class="text-justify  pb-20  md:pr-16">
+                    <p class="text-justify  pb-20  md:pr-2 ">
                         Le Village de l’Innovation Technologique a pour vocation d’être le centre de la réflexion technologique
                         en Afrique de l’Ouest. La création d’un établissement académique de niveau universitaire permettra de
                         former les scientifiques et les managers de demain. L’établissement tirera avantage de la proximité des
                         entreprises installées au sein de la zone économique spéciale.</p>
                 </div>
                 <div data-aos="zoom-in-down "data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="700">
-                    <img class="h-auto max-w-full rounded-lg pr-10" src="img/hotel.png" alt="">
+                    <img class="h-auto max-w-full rounded-lg md:pr-10" src="img/hotel.png" alt="">
                     <h5 class="mb-2 text-2xl pt-4 font-bold tracking-tight text-gray-900 dark:text-white">
                         Hôtels d’affaires
                     </h5>
@@ -194,7 +194,7 @@
                     <h5 class="mb-2 text-2xl pt-4 font-bold tracking-tight text-gray-900 dark:text-white">
                         Immeubles à bureaux
                     </h5>
-                    <p class="text-justify pb-20  md:pr-16 ">
+                    <p class="text-justify pb-20  md:pr-2 ">
                         Cette zone inclut une zone économique TIC-soft, ayant pour objet l’hébergement des entreprises œuvrant
                         dans le secteur des TIC. Les infrastructures d’accueil de ce type d’entreprises répond à des standards
                         internationaux, en vue de répondre aux exigences des multinationales (Microsoft, Oracle, Apple, Google)
@@ -203,7 +203,7 @@
                     </p>
                 </div>
                 <div data-aos="zoom-in-down"data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="700">
-                    <img class="h-auto max-w-full rounded-lg pr-10" src="img/centre.png" alt="">
+                    <img class="h-auto max-w-full rounded-lg md:pr-10" src="img/centre.png" alt="">
                     <h5 class="mb-2 text-2xl pt-4 font-bold tracking-tight text-gray-900 dark:text-white">
                         Entrepôts à louer
                     </h5>
@@ -218,7 +218,7 @@
                     <h5 class="mb-2 text-2xl pt-4 font-bold tracking-tight text-gray-900 dark:text-white">
                         Immeubles à bureaux
                     </h5>
-                    <p data-aos="zoom-in-left" class="text-justify pb-20  md:pr-16 ">
+                    <p data-aos="zoom-in-left" class="text-justify pb-20  md:pr-2  ">
                         Cette zone inclut une zone économique TIC-soft, ayant pour objet l’hébergement des entreprises œuvrant
                         dans le secteur des TIC. Les infrastructures d’accueil de ce type d’entreprises répond à des standards
                         internationaux, en vue de répondre aux exigences des multinationales (Microsoft, Oracle, Apple, Google)
@@ -227,7 +227,7 @@
                     </p>
                 </div>
                 <div data-aos="zoom-in-up"data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="700">
-                    <img class="h-auto max-w-full rounded-lg pr-10" src="img/centre_commer.png" alt="">
+                    <img class="h-auto max-w-full rounded-lg md:pr-10 " src="img/centre_commer.png" alt="">
                     <h5 class="mb-2 text-2xl pt-4 font-bold tracking-tight text-gray-900 dark:text-white">
                         Entrepôts à louer
                     </h5>
@@ -242,7 +242,7 @@
                     <h5 class="mb-2 text-2xl pt-4 font-bold tracking-tight text-gray-900 dark:text-white">
                         Clinique médicale internationale
                     </h5>
-                    <p class="text-justify  md:pr-16 ">
+                    <p class="text-justify  md:pr-2  ">
                         Une clinique médicale de stature internationale correspondant aux standards internationaux, vise à
                         offrir à minima des services de médecine générale et des services spécialisés à la clientèle et aux
                         travailleurs de la ZBTIC.
@@ -257,8 +257,8 @@
                 <div  class="grid  md:grid-cols-3 gap-4">
                     <div data-aos="zoom-in-down" data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="500" class="h-auto bg-no-repeat max-w-full rounded-lg bg-cover"
                         style="background-image: url('img/slider/pepiniere.png')">
-                        <div class=" mx-auto max-w-screen-xl text-left pt-64 lg:pt-64">
-                            <p class="  font-extrabold tracking-tight leading-none text-white md:text-3xl lg:text-3xl">
+                        <div class=" mx-auto max-w-screen-xl text-center pt-64 lg:pt-64">
+                            <p class="  font-extrabold tracking-tight leading-none text-white md:text-2xl lg:text-lg">
                                 Pépinière
                                 <br>
                                 d'entreprises
@@ -267,8 +267,8 @@
                     </div>
                     <div data-aos="zoom-in-down" data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="800" class="h-auto bg-no-repeat max-w-full rounded-lg bg-cover"
                         style="background-image: url('img/slider/tech.png')">
-                        <div class=" mx-auto max-w-screen-xl text-left pt-64 lg:pt-64">
-                            <p class=" font-extrabold tracking-tight leading-none text-white md:text-3xl lg:text-3xl">
+                        <div class=" mx-auto max-w-screen-xl text-center pt-64 lg:pt-64">
+                            <p class=" font-extrabold tracking-tight leading-none text-white md:text-2xl lg:text-lg">
                                 Produits
                                 <br> technologiques
                             </p>
@@ -276,8 +276,8 @@
                     </div>
                     <div data-aos="zoom-in-down"  data-aos-duration="1500" data-aos-delay="1100"class="h-auto bg-no-repeat max-w-full rounded-lg bg-cover"
                         style="background-image: url('img/slider/immeuble.png')">
-                        <div class=" mx-auto max-w-screen-xl text-left pt-64 lg:pt-64">
-                            <p class=" text-4xl font-extrabold tracking-tight leading-none text-white md:text-3xl lg:text-3xl">
+                        <div class=" mx-auto max-w-screen-xl text-center pt-64 lg:pt-64">
+                            <p class=" text-4xl font-extrabold tracking-tight leading-none text-white md:text-2xl lg:text-lg">
                                 Hebergements
                                 <br> d'entreprises
                             </p>

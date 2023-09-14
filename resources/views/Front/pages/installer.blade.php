@@ -207,7 +207,7 @@
             </div>
         </div>
 
-        <div class="px-4 py-4 lg:px-32 lg:py-32">
+        <div class="px-4 py-4 lg:px-32 ">
             <h1 data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="700" class="text-4xl font-bold text-center lg:text-justify">
                 Renforcement des capacités
             </h1>
@@ -241,7 +241,7 @@
             </div>
         </div>
 
-        <div data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="500" class="px-4 sm:px-8 md:px-8 lg:px-32 xl:px-48 pb-8">
+        <div data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="500" class="px-4 py-4 lg:px-32">
             <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center md:text-justify">
                 Services à valeur ajoutée
             </h1>

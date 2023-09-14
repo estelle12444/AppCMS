@@ -55,10 +55,26 @@ class TenderController extends Controller
     public function update(Request $request, Tender $tender)
     {
         $validatedData = $request->validate([
-            'nom' => 'required',
+            'title' => 'required',
+            'content' => 'required',
+            'resume' => 'nullable',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'file' => 'nullable',
+            'limit_date'=>'nullable'
         ]);
 
-        $tender->nom = $validatedData['nom'];
+        $tender->title = $validatedData['title'];
+        $tender->content = $validatedData['content'];
+        $tender->resume = $validatedData['resume'];
+        if ($request->hasFile('image')) {
+            $imagePath = $request->file('image')->store('tenders', 'public');
+            $tender->image = $imagePath;
+        }
+        if ($request->hasFile('file')) {
+            $imagePath = $request->file('file')->store('tenders', 'public');
+            $tender->file = $imagePath;
+        }
+        $tender->limit_date = $validatedData['limit_date'];
         $tender->save();
 
         return redirect()->route('Front.admin.tender.index')->with('success', "L'offre a été ajouté avec succès.");

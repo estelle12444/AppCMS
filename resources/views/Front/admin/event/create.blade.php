@@ -6,8 +6,8 @@
       <h1>Creation</h1>
       <div class="section-header-breadcrumb">
         <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
-        <div class="breadcrumb-item"><a href="#">Appels d'Offres</a></div>
-        <div class="breadcrumb-item">Creation</div>
+        <div class="breadcrumb-item"><a href="#">Demande de manifestation</a></div>
+        <div class="breadcrumb-item">Création</div>
       </div>
     </div>
 
@@ -19,10 +19,10 @@
                   <h4>Enregistrement </h4>
                 </div>
                 <div class="card-body">
-                    <form action="{{ route('Front.admin.tender.store') }}" method="POST"enctype="multipart/form-data">
+                    <form action="{{ route('Front.admin.event.store') }}" method="POST"enctype="multipart/form-data">
                         @csrf
                   <div class="form-group row mb-4">
-                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Titre de l'offre</label>
+                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Titre de la demande</label>
                     <div class="col-sm-12 col-md-7">
                       <input name="title" type="text" class="form-control">
 
@@ -33,7 +33,7 @@
                   </div>
 
                   <div class="form-group row mb-4">
-                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Description de l'Offre</label>
+                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Description de la demande</label>
                     <div class="col-sm-12 col-md-7">
                         <textarea name="content" class="form-control"></textarea>
                         @error('content')
@@ -42,7 +42,7 @@
                     </div>
                   </div>
                   <div class="form-group row mb-4">
-                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Resume de l'Offre</label>
+                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Resume de la demande</label>
                     <div class="col-sm-12 col-md-7">
                         <textarea name="resume" class="form-control"></textarea>
                         @error('resume')
@@ -51,7 +51,7 @@
                     </div>
                   </div>
                   <div class="form-group row mb-4">
-                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Date Limite</label>
+                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Date Limite de demande</label>
                     <div class="col-sm-12 col-md-7">
                       <input name="limit_date" type="datetime-local" class="form-control">
 
@@ -88,5 +88,4 @@
           </div>
     </div>
 </section>
-
 @endsection
