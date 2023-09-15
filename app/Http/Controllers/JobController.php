@@ -71,8 +71,8 @@ class JobController extends Controller
             $imagePath = $request->file('file')->store('jobs', 'public');
             $job->file = $imagePath;
         }
-        $formattedDate = date("Y-m-d H:i:s",  strtotime($validatedData['limit_date']));
-        $job->limit_date = $formattedDate;
+        $job->limit_date = $validatedData['limit_date'];
+
         $job->save();
 
         return redirect()->route('Front.admin.job.index')->with('success', "L'offre d'emploi  a été ajouté avec succès.");

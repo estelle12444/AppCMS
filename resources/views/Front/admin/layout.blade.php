@@ -142,7 +142,7 @@
           <ul class="sidebar-menu">
             <li class="menu-header">VITIB-ADMIN</li>
             <li class="dropdown">
-              <a href="/admin" class=""><i class="fas fa-house"></i> <span> Accueil </span></a>
+              <a href="/admin" class=""><i class="fas fa-home"></i> <span> Accueil </span></a>
 
             </li>
             <li class="menu-header">Partenaires</li>
@@ -199,7 +199,7 @@
             <li class="dropdown">
               <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span>Demande de Quotation</span></a>
               <ul class="dropdown-menu">
-                <li><a class="nav-link" href="/quotaton">Liste des demandes </a></li>
+                <li><a class="nav-link" href="/quotation">Liste des demandes </a></li>
                 <li><a class="nav-link" href="/quotation/create">Ajouter une demande</a></li>
               </ul>
             </li>

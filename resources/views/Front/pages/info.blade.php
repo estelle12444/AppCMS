@@ -4,27 +4,29 @@
 @section('content')
 <div class="  bg-gradient-to-r from-orange-100 from-20%  to-green-100 to-90%">
         <div class="p-5 py-20 mx-2 md:mx-48">
+            <img src="{{ asset('img/annonce/appel_offre.jpg') }}"  style="width: 600px; height:400px;" class="md:py-8" alt="">
             <p class="pb-4" style="color: #F18700;">
                 Dossier d'Appel d'Offre N 0{{ $tender->id }}
             </p>
 
-            <img src="{{ asset('img/annonce/appel_offre.jpg') }}" class="w-full h-auto md:py-16" alt="">
+          
             <h5 class="mb-2 text-4xl tracking-tight  capitalize ">
-
-                <span class="text-blue-800 dark:text-white font-bold pt-8"> {{ $tender->title }}</span></h5>
-
+                Titre:
+                <span class="text-blue-800 text-center dark:text-white font-bold pt-8"> {{ $tender->title }}</span>
+            </h5>
             <p class="mb-3 text-lg pt-16 text-justify font-normal text-gray-700 dark:text-gray-400 lowercase">
-                {{ $tender->content }}
+                <h5 class="mb-2 text-4xl tracking-tight  capitalize "> Description:</h5> {{ $tender->content }}
 
             </p>
 
             <p class="mb-3 text-lg pt-4  text-justify  text-gray-700 dark:text-gray-400 lowercase">
-                {{ $tender->resume }}
+                <h5 class="mb-2 text-4xl tracking-tight  capitalize "> Resume:</h5> {{ $tender->resume }}
 
             </p>
 
-            <p> <span class="text-blue-800 font-bold"> Date limite:</span> <span
-                    style="color: #F18700;">{{ $tender->limit_date }}</span> </p>
+            <p class="text-blue-800 font-bold pt-8">
+                <h5 class="mb-2 text-4xl tracking-tight  capitalize "> Date Limite: <span
+                    style="color: #F18700;">{{ $tender->limit_date }}</span> </h5> </p>
             <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 ">
 
                 <div class="md:flex flex-row py-4 md:py-8" >

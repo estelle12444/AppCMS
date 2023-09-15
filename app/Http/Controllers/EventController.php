@@ -42,8 +42,8 @@ class EventController extends Controller
             $imagePath = $request->file('file')->store('events', 'public');
             $event->file = $imagePath;
         }
-        $formattedDate = date("Y-m-d H:i:s",  strtotime($validatedData['limit_date']));
-        $event->limit_date = $formattedDate;
+        // $formattedDate = date("Y-m-d H:i:s",  strtotime($validatedData['limit_date']));
+        $event->limit_date =$validatedData['limit_date'];
 
         $event->save();
 
@@ -72,8 +72,7 @@ class EventController extends Controller
             $imagePath = $request->file('file')->store('events', 'public');
             $event->file = $imagePath;
         }
-        $formattedDate = date("Y-m-d H:i:s",  strtotime($validatedData['limit_date']));
-        $event->limit_date = $formattedDate;
+        $event->limit_date =$validatedData['limit_date'];
         $event->save();
 
         return redirect()->route('Front.admin.event.index')->with('success', "Demande de manifestation ajouté avec succès.");

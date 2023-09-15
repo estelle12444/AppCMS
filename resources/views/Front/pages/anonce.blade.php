@@ -4,14 +4,14 @@
 @section('content')
     <section class="bg-center bg-no-repeat  bg-blend-multiply" style="background-image: url(img/page_5/annonce.png)">
         <div class="px-4 mx-auto max-w-screen-xl text-center py-20 lg:pb-20 lg:pt-32">
-            <h1 data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="700"
+            <h1 data-aos="zoom-in" data-aos-duration="500"data-aos-delay="700"
                 class=" text-4xl font-extrabold uppercase tracking-tight leading-none text-white md:text-5xl lg:text-6xl ">
                 ANNONCES</h1>
         </div>
     </section>
     <div class="  bg-gradient-to-r from-orange-100 from-20%  to-green-100 to-90%">
 
-        {{-- <div data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="500" class="grid grid-col-6 grid-flow-col gap-6 pt-16">
+        {{-- <div data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="200" class="grid grid-col-6 grid-flow-col gap-6 pt-16">
             <div>
                 <p class="text-lg text-amber-500 font-bold underline">
                     Tous
@@ -44,16 +44,17 @@
             </div>
         </div> --}}
         <div class="pt-16">
-            <div data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="500"
+            <div data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="200"
                 class="  flex items-center justify-center py-4 md:py-8 flex-wrap">
-                <button type="button" onclick="setContent('tous')"
-                    class="text-amber-500 hover:text-white border border-amber-500 bg-white hover:bg-amber-500 focus:ring-4 focus:outline-none focus:ring-amber-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:border-amber-500 dark:text-amber-500 dark:hover:text-white dark:hover:bg-amber-500 dark:bg-gray-900 dark:focus:ring-amber-800">
-                    Tous</button>
+                <button type="button" onclick="setContent('tous')" class="text-amber-500 hover:text-white border border-amber-500 bg-white hover:bg-amber-500 focus:ring-4 focus:outline-none focus:ring-amber-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:border-amber-500 dark:text-amber-500 dark:hover:text-white dark:hover:bg-amber-500 dark:bg-gray-900 dark:focus:ring-amber-800">
+                    Tous
+                </button>
                 <button type="button" onclick="setContent('#bloc-tender')"
                     class="text-gray-900 border border-white hover:border-amber-500 dark:border-amber-500 dark:bg-amber-900 dark:hover:border-amber-700 bg-white focus:ring-4 focus:outline-none focus:ring-amber-500 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-amber-800">
                     Appels d’offre</button>
                 <button type="button" onclick="setContent('#bloc-event')"
-                    class="text-gray-900 border border-white hover:border-amber-500 dark:border-amber-500 dark:bg-amber-900 dark:hover:border-amber-700 bg-white focus:ring-4 focus:outline-none focus:ring-amber-500 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-amber-800">Demandes
+                    class="text-gray-900 border border-white hover:border-amber-500 dark:border-amber-500 dark:bg-amber-900 dark:hover:border-amber-700 bg-white focus:ring-4 focus:outline-none focus:ring-amber-500 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-amber-800">
+                    Demandes
                     de manifestation</button>
                 <button type="button" onclick="setContent('#bloc-quotation')"
                     class="text-gray-900 border border-white hover:border-amber-500 dark:border-amber-500 dark:bg-amber-900 dark:hover:border-amber-700 bg-white focus:ring-4 focus:outline-none focus:ring-amber-500 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-amber-800">Demandes
@@ -70,12 +71,12 @@
             </div>
         </div>
             {{--Appels d'Offres--}}
-        <div id="bloc-tender"
-            class="pt-10 pr-4 lg:pr-24 pl-4 bloc lg:pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 pt-10 pb-10">
+        <div id="bloc-tender" 
+            class=" pt-10 pr-4 lg:pr-24 pl-4 bloc lg:pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 pt-10 pb-10">
 
             @forelse ($tenders as $tender)
-                <div data-aos="zoom-up" data-aos-duration="800" data-aos-delay="500"
-                    class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <div data-aos="zoom-in" 
+                    class="  max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
                         <img class="h-48 md:h-48 lg:h-52 w-full " src="{{ asset('img/annonce/appel_offre.jpg') }}"
                             alt="" />
@@ -147,13 +148,12 @@
                     </div>
                 </div>
             @empty
-                <div data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="500"
-                    class="flex items-center justify-center h-full">
-                    <div
-                        class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <img class="w-48 h-auto mx-auto mt-5 rounded-lg"
-                            src="https://abc-signaletique.fr/822-large_default/panneau-point-d-exclamation-refd868.jpg"
-                            alt="" />
+            <div data-aos="zoom-in" 
+            class=" justify-center h-full">
+            <div
+                class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <img class="h-48 md:h-48 lg:h-52 w-full " src="{{ asset('img/annonce/appel_offre.jpg') }}"
+                alt="" />
                         <div class="p-5">
                             <h3 class="text-lg">Pas de résultats de recherche</h3>
                             <p class="text-gray-500">Aucun résultat trouvé pour votre recherche.</p>
@@ -164,12 +164,12 @@
         </div>
 
              {{--Appels à Candidature --}}
-        <div id="bloc-career"
-            class="pt-10 pr-4 lg:pr-24 pl-4 bloc lg:pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 pt-10 pb-10">
+        <div id="bloc-career" 
+        class=" pt-10 pr-4 lg:pr-24 pl-4 bloc lg:pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 pt-10 pb-10">
 
             @forelse ($careers as $career)
                 <div
-                    class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    class=" flex items-center max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
                         <img class="h-48 md:h-48 lg:h-52 w-full " src="{{ asset('img/annonce/candidature.png') }}"
                             alt="" />
@@ -241,11 +241,11 @@
                     </div>
                 </div>
             @empty
-                <div data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="500"
-                    class="flex items-center justify-center h-full">
-                    <div
-                        class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <img class="w-48 h-auto mx-auto mt-5 rounded-lg"
+            <div 
+            class=" justify-center h-full">
+            <div
+                class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <img class="h-48 md:h-48 lg:h-52 w-full"
                             src="{{ asset('img/annonce/candidature.png') }}"
                             alt="" />
                         <div class="p-5">
@@ -260,10 +260,10 @@
 
 
          {{--  Demandes de Cotation--}}
-        <div id="bloc-quotation"
-            class="pt-10 pr-4 lg:pr-24 pl-4 bloc lg:pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 pt-10 pb-10">
-            @forelse ($quotations as $quotation)
-                <div
+        <div id="bloc-quotation" 
+        class=" pt-10 pr-4 lg:pr-24 pl-4 bloc lg:pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 pt-10 pb-10">
+@forelse ($quotations as $quotation)
+                <div 
                     class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
                         <img class="h-48 md:h-48 lg:h-52 w-full " src="{{ asset('img/annonce/cotation.png') }}"
@@ -336,11 +336,11 @@
                     </div>
                 </div>
             @empty
-                <div data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="500"
-                    class="flex items-center justify-center h-full">
-                    <div
-                        class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <img class="w-48 h-auto mx-auto mt-5 rounded-lg"
+            <div 
+            class=" justify-center h-full">
+            <div
+                class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <img class="w-48 h-auto mx-auto mt-5 rounded-lg"
                             src="{{ asset('img/annonce/cotation.png') }}"
                             alt="" />
                         <div class="p-5">
@@ -353,10 +353,10 @@
         </div>
 
          {{--Offres d'emploi--}}
-        <div id="bloc-job"
-            class="pt-10 pr-4 lg:pr-24 pl-4 bloc lg:pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 pt-10 pb-10">
-            @forelse ($jobs as $job)
-                <div
+        <div id="bloc-job" 
+        class=" pt-10 pr-4 lg:pr-24 pl-4 bloc lg:pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 pt-10 pb-10">
+@forelse ($jobs as $job)
+                <div data-aos="zoom-in" 
                     class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
                         <img class="h-48 md:h-48 lg:h-52 w-full " src="{{ asset('img/annonce/offre_emploi.jpg') }}"
@@ -429,8 +429,8 @@
                     </div>
                 </div>
             @empty
-                <div data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="500"
-                    class="flex items-center justify-center h-full">
+                <div 
+                    class=" justify-center h-full">
                     <div
                         class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <img class="w-48 h-auto mx-auto mt-5 rounded-lg"
@@ -445,10 +445,10 @@
             @endforelse
         </div>
          {{--Demande de manifestion --}}
-        <div id="bloc-event"
-            class="pt-10 pr-4 lg:pr-24 pl-4 bloc lg:pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 pt-10 pb-10">
-            @forelse ($events as $event)
-                <div
+        <div id="bloc-event" 
+        class=" pt-10 pr-4 lg:pr-24 pl-4 bloc lg:pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 pt-10 pb-10">
+@forelse ($events as $event)
+                <div data-aos="zoom-in" 
                     class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
                         <img class="h-48 md:h-48 lg:h-52 w-full " src="{{ asset('storage/' . $event->image) }}"
@@ -521,7 +521,7 @@
                     </div>
                 </div>
             @empty
-                {{-- <div data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="500"
+                {{-- <div data-aos="zoom-in" 
                     class="flex items-center justify-center h-full">
                     <div
                         class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
@@ -541,24 +541,35 @@
 
     </div>
     <script>
-        let blocs = document.querySelectorAll('.bloc')
-        console.log(blocs.lenght);
+        let blocs = document.querySelectorAll('.bloc');
+        console.log(blocs.length); // "length" était mal orthographié
+    
         const hideAllBloc = () => {
             blocs.forEach((b) => {
-                b.classList.add('hidden')
-            })
+                b.classList.add('hidden');
+            });
         }
-
+    
         const setContent = (n) => {
-            hideAllBloc()
+            hideAllBloc();
             if (n === 'tous') {
                 blocs.forEach((b) => {
-                    b.classList.remove('hidden')
-                })
+                    b.classList.remove('hidden');
+                });
+            } else {
+                // Assurez-vous que l'élément avec l'ID correspondant existe avant d'essayer de le cibler.
+                const element = document.querySelector(n);
+                if (element) {
+                    element.classList.remove('hidden');
+                } else {
+                    console.error(`Element with ID '${n}' not found.`);
+                }
             }
-            document.querySelector(n).classList.remove('hidden')
+            
         }
+       
     </script>
+    
     {{-- <script>
         const voirPlusBtn = document.getElementById("voirPlusBtn");
         const modal = document.getElementById("modal");

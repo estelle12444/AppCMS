@@ -73,8 +73,7 @@ class CareerController extends Controller
         }
 
 
-        $formattedDate = date("Y-m-d H:i:s",  strtotime($validatedData['limit_date']));
-        $career->limit_date = $formattedDate;
+        $career->limit_date = $validatedData['limit_date'];
         $career->save();
 
         return redirect()->route('Front.admin.career.index')->with('success', "Appel à candidature ajouté avec succès.");
