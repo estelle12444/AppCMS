@@ -8,20 +8,20 @@
         </h1>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-2">
-            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
                 <img class="h-auto max-w-full rounded-lg"
                     src="img/carousel-2.jpg" alt="">
             </div>
 
-            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
                 <img class="h-auto max-w-full rounded-lg"
                     src=" img/carousel-4.jpg" alt="">
             </div>
-            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="600">
                 <img class="h-auto max-w-full rounded-lg"
                     src="img/carousel-4.jpg" alt="">
             </div>
-            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="600">
                 <img class="h-auto max-w-full rounded-lg"
                     src="img/carousel-1.jpg" alt="">
             </div>
@@ -34,7 +34,7 @@
                     REJOIGNEZ-NOUS
                 </h1>
 
-                <div data-aos="zoom-up" data-aos-duration="1000" data-aos-delay="600"
+                <div data-aos="zoom-up" data-aos-duration="500" data-aos-delay="600"
                             class="flex flex-col sm:flex-row justify-center sm:justify-between leading-normal bg-center">
                             <div class="w-full sm:w-1/2 mb-2  px-4 md:pl-24  ">
                                 <img class="h-64 sm:h-72 max-w-full " src="img/join.png" alt="image description">

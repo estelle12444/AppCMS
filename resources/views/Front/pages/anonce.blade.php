@@ -11,38 +11,6 @@
     </section>
     <div class="  bg-gradient-to-r from-orange-100 from-20%  to-green-100 to-90%">
 
-        {{-- <div data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="200" class="grid grid-col-6 grid-flow-col gap-6 pt-16">
-            <div>
-                <p class="text-lg text-amber-500 font-bold underline">
-                    Tous
-                </p>
-            </div>
-            <div>
-                <p class="text-lg text-gray-500 ">
-                   Appels d’offre
-                </p>
-            </div>
-             <div>
-                <p class="text-lg text-gray-500">
-                    Demandes de manifestation
-                </p>
-            </div>
-             <div>
-                <p class="text-lg text-gray-500 ">
-                    Demandes de cotation
-                </p>
-            </div>
-             <div>
-                <p class="text-lg text-gray-500 ">
-                    Appels à candidature
-                </p>
-            </div>
-            <div>
-                <p class="text-lg text-gray-500">
-                    Offres d’emploi
-                </p>
-            </div>
-        </div> --}}
         <div class="pt-16">
             <div data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="200"
                 class="  flex items-center justify-center py-4 md:py-8 flex-wrap">
@@ -72,7 +40,7 @@
             </div>
         </div>
         {{-- Appels d'Offres --}}
-        
+
         <div id="bloc-tender"
             class=" pt-10 pr-4 lg:pr-24 pl-4 bloc lg:pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 pt-10 pb-10">
 
@@ -150,9 +118,9 @@
                     </div>
                 </div>
             @empty
-                <div data-aos="zoom-in" class=" justify-center h-full">
+                <div data-aos="zoom-in" class="empty  justify-center h-full">
                     <div
-                        class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        class=" max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <img class="h-48 md:h-48 lg:h-52 w-full " src="{{ asset('img/annonce/appel_offre.jpg') }}"
                             alt="" />
                         <div class="p-5">
@@ -242,7 +210,7 @@
                     </div>
                 </div>
             @empty
-                <div class=" justify-center h-full">
+                <div class=" empty  justify-center h-full">
                     <div
                         class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <img class="h-48 md:h-48 lg:h-52 w-full" src="{{ asset('img/annonce/candidature.png') }}"
@@ -287,16 +255,7 @@
                             </a>
 
                         </p>
-                        {{-- <div id="modal" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center hidden">
-                    <div class="bg-white rounded-lg p-8 max-w-md">
-                        <h2 class="text-2xl font-semibold mb-4" id="modalTitle">Titre du modal</h2>
-                        <p class="text-gray-700" id="modalDescription">Description du modal.</p>
-                        <!-- Ajoutez d'autres éléments ici si nécessaire -->
-                        <button id="fermerModal" class="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">
-                            Fermer
-                        </button>
-                    </div>
-                </div> --}}
+
 
                         <p> <span class="text-blue-800 font-bold"> Date limite:</span> <span
                                 style="color: #F18700;">{{ $quotation->limit_date }}</span> </p>
@@ -335,7 +294,7 @@
                     </div>
                 </div>
             @empty
-                <div class=" justify-center h-full">
+                <div class=" empty justify-center h-full">
                     <div
                         class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <img class="w-48 h-auto mx-auto mt-5 rounded-lg" src="{{ asset('img/annonce/cotation.png') }}"
@@ -426,9 +385,9 @@
                     </div>
                 </div>
             @empty
-                <div class=" justify-center h-full">
+                <div class="justify-center h-full">
                     <div
-                        class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        class=" empty max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <img class="w-48 h-auto mx-auto mt-5 rounded-lg"
                             src="{{ asset('img/annonce/offre_emploi.jpg') }}" alt="" />
                         <div class="p-5">
@@ -516,10 +475,9 @@
                     </div>
                 </div>
             @empty
-                {{-- <div data-aos="zoom-in"
-                    class="flex items-center justify-center h-full">
+                <div data-aos="zoom-in" class="empty flex items-center justify-center h-full">
                     <div
-                        class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        class=" max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <img class="w-48 h-auto mx-auto mt-5 rounded-lg"
                             src="https://abc-signaletique.fr/822-large_default/panneau-point-d-exclamation-refd868.jpg"
                             alt="" />
@@ -528,21 +486,23 @@
                             <p class="text-gray-500">Aucun résultat trouvé pour votre recherche.</p>
                         </div>
                     </div>
-                </div> --}}
+                </div>
             @endforelse
         </div>
-
-
 
     </div>
     <script>
         let blocs = document.querySelectorAll('.bloc');
-        console.log(blocs.length); // "length" était mal orthographié
+        let empty = document.querySelectorAll('.empty');
+        console.log(blocs.length);
+        console.log(empty); // "length" était mal orthographié
 
         const hideAllBloc = () => {
             blocs.forEach((b) => {
                 b.classList.add('hidden');
             });
+
+
         }
 
         const setContent = (n) => {
@@ -551,14 +511,24 @@
                 blocs.forEach((b) => {
                     b.classList.remove('hidden');
                 });
+
+                empty.forEach((b) => {
+                    b.style.display = 'none';
+                    b.parentElement.style.display = 'none';
+                });
+
             } else {
-                // Assurez-vous que l'élément avec l'ID correspondant existe avant d'essayer de le cibler.
+                empty.forEach((b) => {
+                    b.style.display = 'block';
+                });
+
                 const element = document.querySelector(n);
                 if (element) {
                     element.classList.remove('hidden');
                 } else {
                     console.error(`Element with ID '${n}' not found.`);
                 }
+
             }
 
         }

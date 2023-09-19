@@ -105,6 +105,9 @@
     z-index: 999;
 }
 
+.empty{
+    display:none;
+}
 
 
 
