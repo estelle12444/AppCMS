@@ -23,29 +23,29 @@
                 <h1 class="md:text-4xl text-3xl md:pr-16 pt-4 font-bold tracking-tight">
                     UN LIEU PENSÉ POUR VOS BESOINS.
                 </h1>
-                <h3 class="pt-8 font-bold text-lg">
+                <h3 class="pt-8 font-bold md:text-lg">
                     #1 Zone Franche de la Biotechnologie : 624 hectares
                 </h3>
-                <p class="pt-4 md:pt-8 text-lg">
+                <p class="pt-4 md:pt-8 md:text-lg">
                     La phase 1 de développement est divisée en 3 sous-zones principales
                 </p>
                 <div class="flex items-center pt-4 rounded-lg" role="alert">
                     <div class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-green-500 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
                         <img src="img/icon/check.png" alt="">
                     </div>
-                    <div class="ml-3 text-lg font-normal">Zone Franche avec accès restreint.</div>
+                    <div class="ml-3 md:text-lg font-normal">Zone Franche avec accès restreint.</div>
                 </div>
                 <div class="flex items-center pb-4 md:pb-0 md:rounded-lg" role="alert">
                     <div class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-green-500 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
                         <img src="img/icon/check.png" alt="">
                     </div>
-                    <div class="ml-3 text-lg font-normal">Cette zone accueillera les industries de la biotechnologie, les industries d'assemblage et les immeubles de bureaux.</div>
+                    <div class="ml-3 md:text-lg font-normal">Cette zone accueillera les industries de la biotechnologie, les industries d'assemblage et les immeubles de bureaux.</div>
                 </div>
                 <div class="flex items-center pb-4 md:pb-0 md:rounded-lg" role="alert">
                     <div class="inline-flex items-center flex-shrink-0 w-8 h-8 text-green-500 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
                         <img src="img/icon/check.png" alt="">
                     </div>
-                    <p class="ml-3 text-lg font-normal">
+                    <p class="ml-3 md:text-lg font-normal">
                         Zone résidentielle prévue hors des limites de la Zone Franche
                     </p>
                 </div>

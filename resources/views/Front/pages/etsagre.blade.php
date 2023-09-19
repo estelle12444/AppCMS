@@ -17,8 +17,8 @@
         <h1 class="text-gray-500 pb-4 text-2xl font-bold">
             Recherche
         </h1>
-        <form action="{{ route('Front.admin.search_process') }}" method="post" class="text-center">
-            @csrf
+        <form action="{{ route('Front.admin.search_process') }}" method="get" class="text-center">
+           
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
                 <div>
 
@@ -85,7 +85,7 @@
         <div data-aos="zoom-up" data-aos-duration="1000" data-aos-delay="600"
                     class="flex flex-col sm:flex-row justify-center sm:justify-between leading-normal bg-center">
                     <div class="w-full sm:w-1/2 mb-8 sm:mb-0 sm:pl-8 md:pl-24 ">
-                        <img class="h-64 sm:h-72 max-w-full ml-auto" src="img/join.png" alt="image description">
+                        <img class="h-64 sm:h-72 max-w-full mx-auto" src="img/join.png" alt="image description">
                     </div>
                     <div class="w-full sm:w-1/2 sm:mr-8 md:mr-16 lg:mr-48 px-6 ">
                         <p class="font-normal text-justify text-gray-700 tracking-tight  pt-10 md:pt-0">
@@ -105,4 +105,21 @@
                 </div>
     </div>
 </div>
+
+
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+</script>
+
+<script>
+   function getMessage() {
+      $.ajax({
+         type:'GET',
+         url:'/getmsg',
+         data:'_token = <?php echo csrf_token() ?>',
+         success:function(data) {
+            $("#msg").html(data.msg);
+         }
+      });
+   }
+</script>
 @endsection

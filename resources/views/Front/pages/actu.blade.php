@@ -45,8 +45,8 @@
 
         <div data-aos="zoom-in-up" data-aos-duration="700" data-aos-delay="500" class="md:mx-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pt-24 ">
             <div class="  h-auto bg-no-repeat max-w-full rounded-lg" style="background-image: url('img/page_6/image3.png')">
-                <div class="mx-auto max-w-screen-xl text-center md:text-center pt-24 md:pt-64">
-                    <p class="text-lg font-extrabold tracking-tight leading-none text-white md:text-2xl lg:text-lg">
+                <div class="mx-auto max-w-screen-xl text-center md:text-center pb-4 pt-24 md:pt-64">
+                    <p class="md:text-lg font-extrabold tracking-tight leading-none text-white md:text-2xl lg:text-lg">
                         Pépinière
                         <br>
                         d'entreprises
@@ -54,24 +54,24 @@
                 </div>
             </div>
             <div class="h-auto bg-no-repeat max-w-full rounded-lg" style="background-image: url('img/page_6/image4.png')">
-                <div class="mx-auto max-w-screen-xl text-center md:text-center pt-24 md:pt-64">
-                    <p class="text-lg font-extrabold tracking-tight leading-none text-white md:text-2xl lg:text-lg">
+                <div class="mx-auto max-w-screen-xl text-center md:text-center pb-4 pt-24 md:pt-64">
+                    <p class="md:text-lg font-extrabold tracking-tight leading-none text-white md:text-2xl lg:text-lg">
                         Produits
                         <br> technologiques
                     </p>
                 </div>
             </div>
             <div class="h-auto bg-no-repeat max-w-full rounded-lg" style="background-image: url('img/page_6/image2.png')">
-                <div class="mx-auto max-w-screen-xl text-center md:text-center pt-24 md:pt-64">
-                    <p class="text-lg font-extrabold tracking-tight leading-none text-white md:text-2xl lg:text-lg">
+                <div class="mx-auto max-w-screen-xl text-center md:text-center pb-4 pt-24 md:pt-64">
+                    <p class="md:text-lg font-extrabold tracking-tight leading-none text-white md:text-2xl lg:text-lg">
                         Hebergements
                         <br>d'entreprises
                     </p>
                 </div>
             </div>
             <div class="h-auto bg-no-repeat max-w-full rounded-lg" style="background-image: url('img/page_6/image5.png')">
-                <div class="mx-auto max-w-screen-xl text-center md:text-center pb-20 pt-24 md:pt-64">
-                    <p class="text-lg font-extrabold tracking-tight leading-none text-white md:text-2xl lg:text-lg">
+                <div class="mx-auto max-w-screen-xl text-center md:text-center pb-4 pt-24 md:pt-64">
+                    <p class="md:text-lg font-extrabold tracking-tight leading-none text-white md:text-2xl lg:text-lg">
                         Hebergements
                        <br>d'entreprises
                     </p>

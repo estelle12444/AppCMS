@@ -20,6 +20,7 @@ class AdminController extends Controller
         return $username;
     }
 
+
     public function dashboard()
     {
         return view('Front.admin.home');

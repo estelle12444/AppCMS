@@ -132,7 +132,7 @@
       <div class="main-sidebar sidebar-style-2">
         <aside id="sidebar-wrapper">
           <div class="sidebar-brand  " style="margin-bottom:20px;margin-top:20px;">
-            <a href="/admin" >
+            <a href="/home" >
                     <img src="{{asset('img/logo2.png')}}" width="200" alt="">
             </a>
           </div>

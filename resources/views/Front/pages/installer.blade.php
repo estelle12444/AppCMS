@@ -15,12 +15,12 @@
         <div class="lg:grid lg:grid-cols-3 gap-3 pt-10 lg:pt-20 pr-6 lg:pr-48 pl-6 lg:pl-32">
             <div class="lg:col-span-2">
                 <h1 data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="500"
-                    class="text-2xl lg:text-4xl font-bold text-center lg:text-justify pr-4 lg:pr-16 text-gray-600">
-                    Rejoignez-nous dès aujourd'hui et <br> transformez l'avenir de votre entreprise <br>au cœur de
+                    class="md:text-4xl text-3xl font-bold   pr-4 lg:pr-16 text-gray-600">
+                    Rejoignez-nous dès aujourd'hui et transformez l'avenir de votre entreprise au cœur de
                     l'Afrique.
                 </h1>
                 <p data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="700"
-                    class="pt-4 lg:pt-10 text-center lg:text-justify text-base lg:text-lg">
+                    class="pt-4 pb-5 lg:pt-10 text-center lg:text-justify text-base lg:text-lg">
                     L’État de Côte d’Ivoire permet aux entreprises nationales et internationales de faire <br
                         class="hidden 2xl:block">
                     des affaires, de bénéficier des avantages qu’offre la loi N° 2004-429 du 30 août 2004 <br
@@ -47,10 +47,10 @@
             </div>
             <div class="md:col-span-2 lg:pl-8">
                 <h1 data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="400"
-                    class="text-4xl font-bold text-justify pr-4 lg:pr-16 text-gray-600">
+                    class="md:text-3xl text-4xl font-bold text-justify pr-4 lg:pr-16 text-gray-600">
                     Eligibilité – Pré-requis
                 </h1>
-                <p data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="500" class="pt-4 text-justify text-lg">
+                <p data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="500" class="pt-4 text-justify md:text-lg">
                     Le bénéfice du régime de la ZBTIC est soumis à l’obtention d’un agrément délivré par l’EPE (VITIB S.A).
                     Pour ce faire, les sociétés désireuses de s’implanter sur la zone franche en qualité d’Entreprises
                     Utilisatrices doivent opérer dans les domaines d’activités suivants :
@@ -61,7 +61,7 @@
                         class="inline-flex items-center flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
                         <img src="img/icon/check.png" alt="">
                     </div>
-                    <p class="ml-2 md:ml-4 text-lg font-normal">
+                    <p class="ml-2 md:ml-4 md:text-lg font-normal">
                         Biotechnologie
                     </p>
                 </div>
@@ -71,7 +71,7 @@
                         class="inline-flex items-center flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
                         <img src="img/icon/check.png" alt="">
                     </div>
-                    <p class="ml-2 md:ml-4 text-lg font-normal">
+                    <p class="ml-2 md:ml-4 md:text-lg font-normal">
                         Technologies de l’Information et de la Communication
                     </p>
                 </div>
@@ -81,12 +81,12 @@
                         class="inline-flex items-center flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
                         <img src="img/icon/check.png" alt="">
                     </div>
-                    <p class="ml-2 md:ml-4 text-lg font-normal">
+                    <p class="ml-2 md:ml-4 md:text-lg font-normal">
                         Banques et Établissements financiers d’appui aux investissements réalisés dans la Zone Franche.
                     </p>
                 </div>
 
-                <p data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="700" class="pt-6 text-justify text-lg">
+                <p data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="700" class="pt-6 text-justify md:text-lg">
                     VITIB offre également des opportunités d’investissements dans l’immobilier en BOO et BOT sur 180 Ha en
                     aménagement, avec en vue la création d’une nouvelle ville. VITIB recherche des partenaires techniques et
                     financiers en mode PPP pour le financement et la réalisation de projets urbains sur la Zone Franche de
@@ -328,16 +328,16 @@
 
 
 
-        <div class="flex flex-col text-center py-20">
+        <div class="flex flex-col text-center md:py-20 py-4">
             <h1 data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="700"
                 class="text-2xl lg:text-4xl font-bold uppercase">
                 Procédure d'agrément
             </h1>
-            <div class="py-8 md:pt-20 px-24">
+            <div class="md:py-8 py-4 md:pt-20 md:px-24 px-6">
                 <img data-aos="zoom-out-right" data-aos-duration="1000" data-aos-delay="800" src="img/background/Parcours1.svg" alt="">
                 </div>
             </div>
-            <div class="pt-4 md:pt-8 text-center">
+            <div class="pt-4 md:pt-8 pb-5 text-center">
                 <a href="/installer">
                     <button type="button" style="background-color: #F18700"
                         class="font-bold rounded-none white text-center px-8 md:px-16 pt-3 pb-3 md:pt-4 md:pb-4 md:pr-16">
@@ -347,7 +347,7 @@
             </div>
         </div>
 
-        <div class="md:pl-32 md:pr-32 px-6  bg-no-repeat bg-gradient-to-r from-orange-100 from-20%  to-gray-100 to-90%"   >
+        <div class="md:pl-32 md:pr-32 px-6 pt-5 bg-no-repeat bg-gradient-to-r from-orange-100 from-20%  to-gray-100 to-90%"   >
     <div class="md:flex flex-col bg-repeat-x" style="background-image: url('img/Image6.png')">
         <div class="  md:py-12">
             <h1 class="text-2xl md:text-4xl pb-4 md:pb-24 text-center font-bold text-slate-600 space"
@@ -361,10 +361,10 @@
                     <img class="h-auto max-w-full rounded-lg pl-4" src="img/Image7.png" alt="">
                 </div>
                 <div class="md:w-1/3 md:pl-8 mt-4 md:mt-0">
-                    <h2 class="font-bold text-lg">
+                    <h2 class="font-bold md:text-lg">
                         TÉLÉCHARGER DOSSIER DE DEMANDE D’AGRÉMENT
                     </h2>
-                    <p class="text-justify text-lg">
+                    <p class="text-justify md:text-lg">
                         Une opportunité exceptionnelle au VITIB.
                         Bénéficiez d'avantages fiscaux, d'une infrastructure de pointe et d'un écosystème
                         dynamique
@@ -374,14 +374,14 @@
                         prêt à accueillir les entreprises technologiques les plus prometteuses.
                     </p>
 
-                    <p class="text-justify text-lg">
+                    <p class="text-justify md:text-lg">
                         Rejoignez-nous dès aujourd'hui et transformez l'avenir de votre entreprise au cœur
                         de
                         l'Afrique.
                     </p>
                 </div>
                 <div class="md:w-1/3 md:pl-4 mt-4 md:mt-0">
-                    <div class="md:w-2/3 border-dashed border-l-2 border-gray-700">
+                    <div class=" border-dashed border-l-2 border-gray-700">
                         <div class="flex flex-row ml-4 pb-4 py-6">
                             <div class="md:w-1/5">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -392,7 +392,7 @@
                             </div>
                             <div class="md:w-3/5">
                                 <a href="/download-pdf" class="underline hover:underline">
-                                    <p class="text-lg">
+                                    <p class="md:text-lg">
                                         Formulaire de demande d’agrément Pépinière
                                     </p>
                                 </a>
@@ -420,7 +420,7 @@
                             </div>
                             <div class="md:w-3/5">
                                 <a href="/opportunity-pdf" class="underline hover:underline">
-                                    <p class="text-lg">
+                                    <p class="md:text-lg">
                                         Consulter la liste des opportunités d’investissement (investir au VITIB)
                                     </p>
                                 </a>
@@ -448,7 +448,7 @@
                             </div>
                             <div class="w-3/5">
                                 <a href="/telecharger-pdf" class="underline hover:underline">
-                                    <p class="text-lg">
+                                    <p class="md:text-lg">
                                         Formulaire de demande d'agrement
                                     </p>
                                 </a>

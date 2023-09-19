@@ -36,10 +36,10 @@
 
                 <div data-aos="zoom-up" data-aos-duration="1000" data-aos-delay="600"
                             class="flex flex-col sm:flex-row justify-center sm:justify-between leading-normal bg-center">
-                            <div class="w-full sm:w-1/2 mb-8 sm:mb-0  md:pl-24  ">
-                                <img class="h-64 sm:h-72 max-w-full ml-2" src="img/join.png" alt="image description">
+                            <div class="w-full sm:w-1/2 mb-2  px-4 md:pl-24  ">
+                                <img class="h-64 sm:h-72 max-w-full " src="img/join.png" alt="image description">
                             </div>
-                            <div class="w-full sm:w-1/2 sm:mr-8 md:mr-16 lg:mr-48 px-6 ">
+                            <div class="w-full sm:w-1/2 mr-8 md:mr-16  px-4 ">
                                 <p class="font-normal text-justify text-gray-700 tracking-tight  pt-10 md:pt-0">
                                     Nous sommes fiers d'accueillir des entreprises innovantes qui transforment l'avenir de la Côte
                                     d'Ivoire et de l'Afrique. Rejoignez-nous au VITIB et devenez acteur d'un écosystème florissant,

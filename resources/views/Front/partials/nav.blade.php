@@ -2,18 +2,54 @@
 $url = $_SERVER['REQUEST_URI'];
 ?>
 
-<nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 bg-gradient-to-r">
+<nav
+    class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 bg-gradient-to-r">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/home" class="flex items-center">
             <img src="{{ asset('img/slider/Logo-VILLAGE.svg') }}" width="150" alt="logo">
         </a>
         <div class="flex md:order-2">
-            <a href="{{route('login')}}">
-                <button type="button" style="background-color: #F18700"
-                    class="pl-4 pr-4 pt-2 pb-2 font-medium rounded-none white text-center hidden md:inline">
-                    S'INSCRIRE
-                </button>
-            </a>
+            @if (auth()->check())
+
+                <div class="flex items-center space-x-4">
+                    <div class="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
+                        <svg  id="avatarButton" type="button" data-dropdown-toggle="userDropdown"  class="absolute w-12 h-12 text-gray-400 -left-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+                        <span class="top-0 left-7 absolute  w-3.5 h-3.5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"></span>
+                    </div>
+                    <div id="userDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                        <div class="px-4 py-3 text-sm text-gray-900 dark:text-white">
+                          <div>{{ app('App\Http\Controllers\ProfilController')->getUsername() }}</div>
+                          <div class="font-medium truncate">{{ app('App\Http\Controllers\ProfilController')->getEmail() }}</div>
+                        </div>
+                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="avatarButton">
+                          <li>
+                            <a href="/profil" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Tableau de bord</a>
+                          </li>
+                          <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Parametre</a>
+                          </li>
+                          {{-- <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                          </li> --}}
+                        </ul>
+                        <div class="py-1">
+                          <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Deconnexion</a>
+                        </div>
+                    </div>
+
+                    <div class="font-medium dark:text-white">
+                        <div>Salut</div>
+                        <div class="text-sm text-gray-500 dark:text-gray-400">{{ app('App\Http\Controllers\AdminController')->getUsername() }}</div>
+                    </div>
+                </div>
+            @else
+                <a href="{{ route('login') }}">
+                    <button type="button" style="background-color: #F18700"
+                        class="pl-4 pr-4 pt-2 pb-2 font-medium rounded-none white text-center hidden md:inline">
+                        S'INSCRIRE
+                    </button>
+                </a>
+            @endif
             <p class="pl-4 pt-2">
                 <strong style="color:  #F18700;">FR</strong> | EN
             </p>
@@ -28,8 +64,7 @@ $url = $_SERVER['REQUEST_URI'];
                 </svg>
             </button>
         </div>
-        <div
-            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 space-x-4 md:space-x-0 md:space-y-0"
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 space-x-4 md:space-x-0 md:space-y-0"
             id="navbar-sticky">
             <ul
                 class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:flex-row md:space-x-4 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
@@ -84,13 +119,13 @@ $url = $_SERVER['REQUEST_URI'];
                 </li>
                 <li>
                     <a href="/annonce"
-                        class="block py-2 pl-3 pr-4 text-gray-700 <?php if ($url == '/anonce') {
+                        class="block py-2 pl-3 pr-4 text-gray-700 <?php if ($url == '/annonce') {
                             echo 'md:text-orange-400';
                         } ?> rounded md:bg-transparent md:hover:text-amber-500 md:p-0 md:dark:text-blue-500"
                         aria-current="page">Annonces</a>
                 </li>
             </ul>
-            <a href="{{route('login')}}">
+            <a href="{{ route('login') }}">
                 <button type="button" style="background-color: #F18700"
                     class="pl-4 pr-4 pt-2 pb-2 font-medium rounded-none white text-center md:hidden">
                     S'INSCRIRE

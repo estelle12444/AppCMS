@@ -7,6 +7,7 @@ use App\Http\Controllers\CareerController;
 use App\Http\Controllers\DownloadController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\JobController;
+use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\PartnerController;
 use App\Models\Message;
 use Illuminate\Http\Request;
@@ -17,6 +18,7 @@ use App\Http\Controllers\SectorController;
 use App\Http\Controllers\TenderController;
 use App\Http\Controllers\TypeDeDemandeController;
 use App\Http\Controllers\TypeDemandeController;
+use App\Models\Newsletter;
 use App\Models\PageCount;
 use App\Models\Partner;
 use App\Models\Sector;
@@ -39,8 +41,20 @@ Route::get('/', function () {
 });
 
 Route::get('/home', function () {
-   return view('index');
+    return view('index');
 });
+
+
+Route::match([ 'post'], '/home', function (Request $request) {
+    Newsletter::create($request->all());
+    toastr()->success('Votre message a été enregistré avec succès');
+    return redirect()->back();
+})->name('index');
+
+
+
+Route::post('/subscribe', [NewsletterController::class, 'subscribe'])->name('newsletter.subscribe');
+
 
 // Route::get('/home', function () {
 //     return view('index');
@@ -65,15 +79,11 @@ Route::get('/media', function () {
     return view('Front.pages.media');
 });
 
-Route::get('/partners', function (Request $request) {
-    $partners = Partner::all();
-    $sectors = Sector::all();
+Route::get('/partners',[PartnerController::class, 'index']);
 
-    return view('Front.pages.etsagre', compact('partners', 'sectors'));
-});
 
 Route::get('/partners', [PartnerController::class, 'search'])->name('Front.admin.search');
-Route::post('/partners', [PartnerController::class, 'search_process'])->name('Front.admin.search_process');
+Route::get('/partners', [PartnerController::class, 'search_process'])->name('Front.admin.search_process');
 
 Route::get('/installer', function () {
     return view('Front.pages.installer');
@@ -88,6 +98,8 @@ Route::post('/contact', function (Request $request) {
     toastr()->success('Votre message a été enregistré avec succès');
     return redirect()->back();
 })->name('contact');
+
+
 
 
 Route::get('/messages', function (Request $request) {

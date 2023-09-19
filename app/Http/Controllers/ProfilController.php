@@ -51,4 +51,11 @@ class ProfilController extends Controller
 
         return $lastname;
     }
+    public function getEmail()
+    {
+        $email = Auth::user();
+        $email = $email->email;
+
+        return $email;
+    }
 }

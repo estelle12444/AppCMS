@@ -40,7 +40,7 @@ class PartnerController extends Controller
 
         if (!empty($request->sector_id)) {
             // Filtrer par secteur d'activité
-            $sector_id = $request->sector_id;
+            $sector_id = htmlspecialchars($request->sector_id);
             $query->whereHas('sectors', function ($query) use ($request) {
                 $query->where('sector_id','=', $request->sector_id);
             });
@@ -48,8 +48,9 @@ class PartnerController extends Controller
 
         if (!empty($request->search_term)) {
             // Filtrer par nom de partenaire
-            $search_term = $request->search_term;
-            $query->where('title', 'LIKE', '%' . $request->search_term . '%');
+            $search_term = htmlspecialchars($request->search_term);
+
+            $query->where('title', 'LIKE', '%' . strtoupper($request->search_term) . '%');
         }
 
         // Récupérer les partenaires correspondants aux critères de recherche

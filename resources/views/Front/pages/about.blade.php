@@ -18,8 +18,8 @@
                     LE VITIB VOUS SOUHAITE <br> LA BIENVENUE
                 </h1>
                 <br>
-                <p class="mb-8 text-base sm:text-lg lg:text-md font-normal text-center text-gray-100 sm:px-8 md:px-16 lg:px-32">
-                    Bienvenue au VITIB - Village des Technologies de l'Information et de la Biotechnologie, un <br> centre
+                <p class="mb-8 text-base md:text-lg lg:text-md font-normal text-center text-gray-100 sm:px-8 md:px-16 lg:px-32">
+                    Bienvenue au VITIB - Village des Technologies de l'Information et de la Biotechnologie, un <br > centre
                     d'excellence dédié à l'innovation et au développement technologique en Côte d'Ivoire. <br> Situé au cœur de
                     l'Afrique, le VITIB est une zone franche technologique qui offre un <br> environnement propice à la
                     croissance des entreprises technologiques.
@@ -180,8 +180,8 @@
                     <img src="img/dg.png" width="" alt="">
                 </div>
                 <div data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="700" class="md:w-1/2  mx-4 md:mx-0">
-                    <h2 class="font-bold text-5xl py-8 ">Mot du directeur Général</h2>
-                    <p class="text-justify text-gray-600 text-lg tracking-tight">
+                    <h2 class="font-bold md:text-5xl py-8 text-4xl ">Mot du directeur Général</h2>
+                    <p class="text-justify text-gray-600 md:text-lg tracking-tight">
                         Bienvenue sur le site Internet du Village des Technologies de l’Information et de la Biotechnologie
                         (VITIB SA).
                     </p>
@@ -459,8 +459,8 @@
 
 
 
-    <div class="mx-auto px-5 md:px-20 py-5 bg-gradient-to-r from-gray-100 from-10% to-orange-100 to-90%">
-        <div class="md:flex flex-col md:flex-row pt-16 pb-16 md:pl-24 md:pr-24">
+    <div class="mx-auto px-5 md:px-20 md:py-12 py-4 bg-gradient-to-r from-gray-100 from-10% to-orange-100 to-90%">
+        <div class="md:flex flex-col md:flex-row py-16 md:px-24">
             <div class="md:w-1/2">
                 <h1 data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="700"
                     class="font-bold text-3xl md:text-6xl pl-4">
@@ -511,7 +511,7 @@
         <div class="md:w-1/2 md:pr-16 md:pl-8 md:pt-16 py-4">
             <div class="md:sticky md:top-0"> <!-- Ajoutez ces classes pour rendre le bloc de droite fixe -->
                 <p data-aos="zoom-in-left" data-aos-duration="800" data-aos-delay="700"
-                    class="text-justify text-lg text-white">
+                    class="text-justify md:text-lg text-white">
                     La ZBTIC est subdivisée en trois blocs distincts : les <br>
                     blocs A et B situés à cheval de la nouvelle autoroute <br>
                     Abidjan – Bassam (réalisée en 2015) et le futur bloc C, <br>
@@ -854,7 +854,7 @@
                         Main-d'œuvre qualifiée
                     </h5>
                     <p data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="800"
-                        class="text-justify pb-4 text-lg">
+                        class="text-justify pb-4 md:text-lg">
                         La Côte d'Ivoire dispose d'une main-d'œuvre jeune, dynamique et qualifiée. Le VITIB offre aux
                         entreprises un accès à un réservoir de talents en croissance, grâce à la proximité des
                         établissements d'enseignement supérieur et des centres de formation spécialisés.
@@ -865,7 +865,7 @@
                         plein essor
                     </h5>
                     <p data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="700"
-                        class="text-justify pb-4 text-lg">
+                        class="text-justify pb-4 md:text-lg">
                         La Côte d'Ivoire est l'une des économies en croissance les plus rapides en Afrique. En choisissant
                         le VITIB comme base opérationnelle, les entreprises peuvent accéder à un marché régional en pleine
                         expansion et profiter des opportunités commerciales qu'offre la région de l'Afrique de l'Ouest.
@@ -887,7 +887,7 @@
 
                 </div>
                 <div class="w-full md:w-1/2">
-                    <h5  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="300" class=" font-bold text-3md  text-lg md:pl-10 pt-8 pb-4">
+                    <h5  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="300" class=" font-bold text-3md  md:text-lg md:pl-10 pt-8 pb-4">
                         Avantages douaniers
                     </h5>
 
@@ -935,7 +935,7 @@
                 <h5  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="800" class=" font-bold text-3md md:pl-10 pt-8 pb-4">
                     Infrastructure de pointe
                 </h5>
-                <p   data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="500"class="text-justify md:pl-10 pb-4 text-lg">
+                <p   data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="500"class="text-justify md:pl-10 pb-4 md:text-lg">
                     Le VITIB propose des infrastructures modernes et de haute qualité, avec des espaces de bureaux
                     équipés, des laboratoires de recherche technologique, des parcs industriels, et une connectivité
                     Internet haut débit. Ces infrastructures permettent aux entreprises de démarrer leurs activités
@@ -1004,7 +1004,7 @@
                     Des partenariats et
                     réseautage unique
                 </h5>
-                <p  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="600" class="text-justify md:pl-10 pb-4 text-lg">
+                <p  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="600" class="text-justify md:pl-10 pb-4 md:text-lg">
                     En s'installant au VITIB, les entreprises ont la possibilité de créer des partenariats stratégiques
                     avec d'autres entreprises du secteur, des centres de recherche, des universités et des incubateurs
                     d'entreprises. Ces collaborations favorisent l'innovation, le partage des connaissances et l'accès à
@@ -1014,7 +1014,7 @@
                 <h5  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="500" class=" font-bold text-3md md:pl-10 pt-8 pb-4">
                     Un soutien gouvernemental
                 </h5>
-                <p  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="600" class="text-justify md:pl-10 pb-4 text-lg">
+                <p  data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="600" class="text-justify md:pl-10 pb-4 md:text-lg">
                     Le VITIB bénéficie du soutien actif du gouvernement ivoirien, qui s'engage à promouvoir le
                     développement technologique et à faciliter l'implantation des entreprises dans la zone. Cela se
                     traduit par des mesures d'accompagnement, des facilités administratives et un environnement propice
@@ -1090,7 +1090,7 @@
                          alt="">
                  </div>
                  <div class="w-1/4 md:w-1/6 pl-4 animate-marquee whitespace-nowrap ">
- 
+
                      <img class="" src="img/logo/armoirie-Côte-dIvoire.png" style="height: 100px;width:100px" alt="">
                  </div>
                  <div class="w-1/4 md:w-1/6 pl-4 animate-marquee whitespace-nowrap ">
@@ -1098,7 +1098,7 @@
                          src="img/logo/boad.png" style="height: 90px;width:100px"
                          alt="">
                  </div>
- 
+
              </div>
          </div>
     </div>
@@ -1137,7 +1137,7 @@
                     </p>
                 </div>
                 <div class="md:w-1/3 md:pl-4 mt-4 md:mt-0">
-                    <div class="md:w-2/3 border-dashed border-l-2 border-gray-700">
+                    <div class="border-dashed border-l-2 border-gray-700">
                         <div class="flex flex-row ml-4 pb-4 py-6">
                             <div class="md:w-1/5">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"

@@ -58,7 +58,7 @@
     <div class="bg-white flex flex-col md:flex-row  md:px-36">
         <div class="w-full md:w-1/6 ">
             <div class="rounded-none-4 blue text-white h-20 md:h-full">
-                <h3 class="text-lg text-center md:text-center md:py-10 py-2 md:px-2 font-bold">Nos<br>partenaires</h3>
+                <h3 class="md:text-lg text-center md:text-center md:py-10 py-2 md:px-2 font-bold">Nos<br>partenaires</h3>
             </div>
         </div>
 
@@ -100,7 +100,7 @@
                                 INNOVEZ AU COEUR DE L'AFRIQUE
                             </h1>
 
-                            <p class="text-center   text-lg  pt-4 md:pt-10">
+                            <p class="text-center   md:text-lg  pt-4 md:pt-10">
                                 Bienvenue au VITIB - Village des Technologies de l'Information
 
                                 et de la Biotechnologie, <br class="hidden md:block">un centre d'excellence dédié à
@@ -204,7 +204,7 @@
                                             </svg>
 
                                         </div>
-                                        <p class="pl-4 pb-2 mr-0 text-lg">
+                                        <p class="pl-4 pb-2 mr-0 md:text-lg">
                                             Soutien gouvernemental
                                         </p>
 
@@ -329,7 +329,7 @@
                                                         d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
                                                 </svg>
                                             </div>
-                                            <p class="pl-4 pb-2 mr-0  text-lg">
+                                            <p class="pl-4 pb-2 mr-0  md:text-lg">
                                                 Avantages fiscaux et reglementaires
                                             </p>
 
@@ -344,7 +344,7 @@
                                                 </svg>
 
                                             </div>
-                                            <p class="pl-4 pb-2 mr-0 text-lg">
+                                            <p class="pl-4 pb-2 mr-0 md:text-lg">
                                                 Partenariats et réseautage
                                             </p>
 
@@ -359,7 +359,7 @@
                                                 </svg>
 
                                             </div>
-                                            <p class="pl-4 pb-2 mr-0 text-lg">
+                                            <p class="pl-4 pb-2 mr-0 md:text-lg">
                                                 Soutien gouvernemental
                                             </p>
 
@@ -373,7 +373,7 @@
                                                         d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
                                                 </svg>
                                             </div>
-                                            <p class="pl-4 pb-2 mr-0 text-lg">
+                                            <p class="pl-4 pb-2 mr-0 md:text-lg">
                                                 Main d'oeuvre qualifiée
                                             </p>
 
@@ -394,7 +394,7 @@
                                                 </svg>
 
                                             </div>
-                                            <p class="pl-4 pb-2 mr-0 text-lg">
+                                            <p class="pl-4 pb-2 mr-0 md:text-lg">
                                                 Avantages douaniers
                                             </p>
 
@@ -409,7 +409,7 @@
                                                 </svg>
 
                                             </div>
-                                            <p class="pl-4 pb-2 text-lg">
+                                            <p class="pl-4 pb-2 md:text-lg">
                                                 Un accès à un marché en plein essor
                                             </p>
 
@@ -423,7 +423,7 @@
                                                         d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
                                                 </svg>
                                             </div>
-                                            <p class="pl-4 pb-2 mr-0 text-lg">
+                                            <p class="pl-4 pb-2 mr-0 md:text-lg">
                                                 Environnement d'innovation
                                             </p>
                                         </div>
@@ -438,7 +438,7 @@
 
 
                                             </div>
-                                            <p class="pl-4 pb-2 mr-0 text-lg">
+                                            <p class="pl-4 pb-2 mr-0 md:text-lg">
                                                 Infrastructure de pointe
                                             </p>
 
@@ -455,7 +455,7 @@
                         data-aos-duration="1000" data-aos-delay="800">
                         LE PARCOURS DE NOS FUTURS MEMBRES
                     </h1>
-                    <div class="py-8 md:py-20 px-16">
+                    <div class="md:py-8 py-4 md:pt-20 md:px-24 px-6">
                         {{-- <div class="flex flex-col md:flex-row flex-wrap items-center justify-center space-y-2 md:space-y-0">
                             <div data-aos="zoom-in-up" data-aos-duration="1200" data-aos-delay="400"
                             class="flex items-center md:mx-4 lg:mx-6 rounded-lg border-2 border-gray-50 p-4 bg-white ">
@@ -691,7 +691,7 @@
                     </div>
                     <div class="md:pl-0 md:pr-0 md:pl-64 md:pr-32">
                         <p data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="800"
-                            class="md:text-center text-slate-600 text-lg md:text-xl pt-4 md:pt-10">
+                            class="md:text-center text-slate-600 md:text-lg md:text-xl pt-4 md:pt-10">
                             Participez à des événements programmés conçus pour les entreprises à grande échelle.
                             Avec des programmes de développement créés pour nourrir et soutenir.
                             Et des événements remplis de programmes d'information et de réflexion pour enrichir et inspirer
@@ -763,10 +763,10 @@
                                 <img class="h-auto max-w-full rounded-lg pl-4" src="img/Image7.png" alt="">
                             </div>
                             <div class="md:w-1/3 md:pl-8 mt-4 md:mt-0">
-                                <h2 class="font-bold text-lg">
+                                <h2 class="font-bold md:text-lg">
                                     TÉLÉCHARGER DOSSIER DE DEMANDE D’AGRÉMENT
                                 </h2>
-                                <p class="text-justify text-lg">
+                                <p class="text-justify md:text-lg">
                                     Une opportunité exceptionnelle au VITIB.
                                     Bénéficiez d'avantages fiscaux, d'une infrastructure de pointe et d'un écosystème
                                     dynamique
@@ -776,14 +776,14 @@
                                     prêt à accueillir les entreprises technologiques les plus prometteuses.
                                 </p>
 
-                                <p class="text-justify text-lg">
+                                <p class="text-justify md:text-lg">
                                     Rejoignez-nous dès aujourd'hui et transformez l'avenir de votre entreprise au cœur
                                     de
                                     l'Afrique.
                                 </p>
                             </div>
                             <div class="md:w-1/3 md:pl-4 mt-4 md:mt-0">
-                                <div class="md:w-2/3 border-dashed border-l-2 border-gray-700">
+                                <div class=" border-dashed border-l-2 border-gray-700">
                                     <div class="flex flex-row ml-4 pb-4 py-6">
                                         <div class="md:w-1/5">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -794,7 +794,7 @@
                                         </div>
                                         <div class="md:w-3/5">
                                             <a href="/download-pdf" class="underline hover:underline">
-                                                <p class="text-lg">
+                                                <p class="md:text-lg">
                                                     Formulaire de demande d’agrément Pépinière
                                                 </p>
                                             </a>
@@ -822,7 +822,7 @@
                                         </div>
                                         <div class="md:w-3/5">
                                             <a href="/opportunity-pdf" class="underline hover:underline">
-                                                <p class="text-lg">
+                                                <p class="md:text-lg">
                                                     Consulter la liste des opportunités d’investissement (investir au VITIB)
                                                 </p>
                                             </a>
@@ -850,7 +850,7 @@
                                         </div>
                                         <div class="w-3/5">
                                             <a href="/telecharger-pdf" class="underline hover:underline">
-                                                <p class="text-lg">
+                                                <p class="md:text-lg">
                                                     Formulaire de demande d'agrement
                                                 </p>
                                             </a>
@@ -887,14 +887,14 @@
                 <div class="md:flex flex-col pb-10 justify-content-center">
 
                     <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="500"
-                        class="rounded-lg border-2 mt-10  border-gray-300 p-2  mb-10 md:mx-80 ">
+                        class="rounded-lg border-2 mt-10  border-gray-300 p-2  mb-10 md:mx-72 ">
 
                         <img src="img/Image5.png" class="w-full" />
                         <h1
                             class="font-bold text-3xl md:text-5xl text-center md:text-center py-8 ">
                             Contactez-nous
                         </h1>
-                        <form action="#" class="md:mx-32 md:mb-5">
+                        <form action="#" class="md:mx-28     md:mb-5">
                             <div class="mb-6">
                                 <input type="email" id="email"
                                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
