@@ -42,9 +42,10 @@
         {{-- Appels d'Offres --}}
 
         <div id="bloc-tender"
-            class=" pt-10 pr-4 lg:pr-24 pl-4 bloc lg:pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 pt-10 pb-10">
+            class=" lg:pr-24 pl-4 bloc lg:pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
 
             @forelse ($tenders as $tender)
+            <div class="px-4 py-10">
                 <div data-aos="zoom-in"
                     class="  max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
@@ -117,6 +118,7 @@
                         </p>
                     </div>
                 </div>
+            </div>
             @empty
                 <div data-aos="zoom-in" class="empty  justify-center h-full">
                     <div
@@ -134,9 +136,10 @@
 
         {{-- Appels à Candidature --}}
         <div id="bloc-career"
-            class=" pt-10 pr-4 lg:pr-24 pl-4 bloc lg:pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 pt-10 pb-10">
+            class="  lg:pr-24 pl-4 bloc lg:pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 ">
 
             @forelse ($careers as $career)
+            <div class="px-4 py-10">
                 <div
                     class=" flex items-center max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
@@ -209,6 +212,7 @@
                         </p>
                     </div>
                 </div>
+            </div>
             @empty
                 <div class=" empty  justify-center h-full">
                     <div
@@ -228,8 +232,9 @@
 
         {{--  Demandes de Cotation --}}
         <div id="bloc-quotation"
-            class=" pt-10 pr-4 lg:pr-24 pl-4 bloc lg:pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 pt-10 pb-10">
+            class="  lg:pr-24 pl-4 bloc lg:pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
             @forelse ($quotations as $quotation)
+            <div class="px-4 py-10">
                 <div
                     class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
@@ -293,6 +298,7 @@
                         </p>
                     </div>
                 </div>
+            </div>
             @empty
                 <div class=" empty justify-center h-full">
                     <div
@@ -310,8 +316,9 @@
 
         {{-- Offres d'emploi --}}
         <div id="bloc-job"
-            class=" pt-10 pr-4 lg:pr-24 pl-4 bloc lg:pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 pt-10 pb-10">
+            class=" lg:pr-24 pl-4 bloc lg:pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 ">
             @forelse ($jobs as $job)
+            <div class="px-4 py-10">
                 <div data-aos="zoom-in"
                     class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
@@ -337,16 +344,6 @@
                             </a>
 
                         </p>
-                        {{-- <div id="modal" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center hidden">
-                    <div class="bg-white rounded-lg p-8 max-w-md">
-                        <h2 class="text-2xl font-semibold mb-4" id="modalTitle">Titre du modal</h2>
-                        <p class="text-gray-700" id="modalDescription">Description du modal.</p>
-                        <!-- Ajoutez d'autres éléments ici si nécessaire -->
-                        <button id="fermerModal" class="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">
-                            Fermer
-                        </button>
-                    </div>
-                </div> --}}
 
                         <p> <span class="text-blue-800 font-bold"> Date limite:</span> <span
                                 style="color: #F18700;">{{ $job->limit_date }}</span> </p>
@@ -384,6 +381,7 @@
                         </p>
                     </div>
                 </div>
+            </div>
             @empty
                 <div class="justify-center h-full">
                     <div
@@ -400,10 +398,11 @@
         </div>
         {{-- Demande de manifestion --}}
         <div id="bloc-event"
-            class=" pt-10 pr-4 lg:pr-24 pl-4 bloc lg:pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 pt-10 pb-10">
+            class="lg:pr-24 pl-4 bloc lg:pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 ">
             @forelse ($events as $event)
+            <div class="px-4 py-10">
                 <div data-aos="zoom-in"
-                    class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    class=" max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
                         <img class="h-48 md:h-48 lg:h-52 w-full " src="{{ asset('storage/' . $event->image) }}"
                             alt="" />
@@ -427,16 +426,6 @@
                             </a>
 
                         </p>
-                        {{-- <div id="modal" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center hidden">
-                    <div class="bg-white rounded-lg p-8 max-w-md">
-                        <h2 class="text-2xl font-semibold mb-4" id="modalTitle">Titre du modal</h2>
-                        <p class="text-gray-700" id="modalDescription">Description du modal.</p>
-                        <!-- Ajoutez d'autres éléments ici si nécessaire -->
-                        <button id="fermerModal" class="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">
-                            Fermer
-                        </button>
-                    </div>
-                </div> --}}
 
                         <p> <span class="text-blue-800 font-bold"> Date limite:</span> <span
                                 style="color: #F18700;">{{ $event->limit_date }}</span> </p>
@@ -474,15 +463,17 @@
                         </p>
                     </div>
                 </div>
+
+            </div>
             @empty
-                <div data-aos="zoom-in" class="empty flex items-center justify-center h-full">
+                <div data-aos="zoom-in" class="flex items-center justify-center h-full">
                     <div
-                        class=" max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        class="empty  max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <img class="w-48 h-auto mx-auto mt-5 rounded-lg"
                             src="https://abc-signaletique.fr/822-large_default/panneau-point-d-exclamation-refd868.jpg"
                             alt="" />
                         <div class="p-5">
-                            <h3 class="text-lg">Pas de résultats de recherche</h3>
+                            <h3 class="text-lg">Pas de demande de manifestation</h3>
                             <p class="text-gray-500">Aucun résultat trouvé pour votre recherche.</p>
                         </div>
                     </div>
@@ -492,47 +483,52 @@
 
     </div>
     <script>
+        // Récupérer tous les éléments avec la classe "bloc" et "empty"
         let blocs = document.querySelectorAll('.bloc');
         let empty = document.querySelectorAll('.empty');
         console.log(blocs.length);
-        console.log(empty); // "length" était mal orthographié
 
+        // Fonction pour masquer tous les éléments avec la classe "hidden"
         const hideAllBloc = () => {
             blocs.forEach((b) => {
                 b.classList.add('hidden');
             });
-
-
         }
 
+        // Fonction pour définir le contenu en fonction de la catégorie
         const setContent = (n) => {
+            // Masquer tous les éléments "bloc"
             hideAllBloc();
+
             if (n === 'tous') {
+                // Afficher tous les éléments "bloc"
                 blocs.forEach((b) => {
                     b.classList.remove('hidden');
                 });
 
-                empty.forEach((b) => {
-                    b.style.display = 'none';
-                    b.parentElement.style.display = 'none';
+                // Masquer tous les éléments "empty"
+                empty.forEach((e) => {
+                    e.style.display = 'none';
                 });
 
             } else {
-                empty.forEach((b) => {
-                    b.style.display = 'block';
+                // Afficher tous les éléments "empty"
+                empty.forEach((e) => {
+                    e.style.display = 'block';
                 });
 
+                // Afficher l'élément avec l'ID correspondant
                 const element = document.querySelector(n);
                 if (element) {
                     element.classList.remove('hidden');
                 } else {
                     console.error(`Element with ID '${n}' not found.`);
                 }
-
             }
-
         }
     </script>
+
+
 
     {{-- <script>
         const voirPlusBtn = document.getElementById("voirPlusBtn");
