@@ -2,7 +2,7 @@
 $url = $_SERVER['REQUEST_URI'];
 ?>
 
-<nav
+<nav style="overflow-x: hidden"
     class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 bg-gradient-to-r">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/home" class="flex items-center">
@@ -71,56 +71,56 @@ $url = $_SERVER['REQUEST_URI'];
                 <li>
                     <a href="/home"
                         class="block py-2 pl-3 text-gray-700 <?php if ($url == '/home') {
-                            echo 'md:text-orange-400';
+                            echo 'md:text-orange-400 text-orange-400';
                         } ?> rounded md:bg-transparent md:hover:text-amber-500 md:p-0 md:dark:text-blue-500"
                         aria-current="page">Accueil</a>
                 </li>
                 <li>
                     <a href="/about"
                         class="block py-2 pl-3 pr-4 text-gray-700 <?php if ($url == '/about') {
-                            echo 'md:text-orange-400';
+                            echo 'md:text-orange-400 text-orange-400';
                         } ?> rounded md:bg-transparent md:hover:text-amber-500 md:p-0 md:dark:text-blue-500"
                         aria-current="page">A propos</a>
                 </li>
                 <li>
                     <a href="/opportunity"
                         class="block py-2 pl-3 pr-4 text-gray-700 <?php if ($url == '/opportunity') {
-                            echo 'md:text-orange-400';
+                            echo 'md:text-orange-400 text-orange-400';
                         } ?> rounded md:bg-transparent md:hover:text-amber-500 md:p-0 md:dark:text-blue-500"
                         aria-current="page">Opportunités</a>
                 </li>
                 <li>
                     <a href="/installer"
                         class="block py-2 pl-3 pr-4 text-gray-700 <?php if ($url == '/installer') {
-                            echo 'md:text-orange-400';
+                            echo 'md:text-orange-400 text-orange-400';
                         } ?> rounded md:bg-transparent md:hover:text-amber-500 md:p-0 md:dark:text-blue-500"
                         aria-current="page">S'implanter</a>
                 </li>
                 <li>
                     <a href="/partners"
                         class="block py-2 pl-3 pr-4 text-gray-700 <?php if ($url == '/partners') {
-                            echo 'md:text-orange-400';
+                            echo 'md:text-orange-400 text-orange-400';
                         } ?> rounded md:bg-transparent md:hover:text-amber-500 md:p-0 md:dark:text-blue-500"
                         aria-current="page">Nos partenaires</a>
                 </li>
                 <li>
                     <a href="/actu"
                         class="block py-2 pl-3 pr-4 text-gray-700 <?php if ($url == '/actu') {
-                            echo 'md:text-orange-400';
+                            echo 'md:text-orange-400 text-orange-400';
                         } ?> rounded md:bg-transparent md:hover:text-amber-500 md:p-0 md:dark:text-blue-500"
                         aria-current="page">Actualités</a>
                 </li>
                 <li>
                     <a href="/media"
                         class="block py-2 pl-3 pr-4 text-gray-700 <?php if ($url == '/media') {
-                            echo 'md:text-orange-400';
+                            echo 'md:text-orange-400 text-orange-400';
                         } ?> rounded md:bg-transparent md:hover:text-amber-500 md:p-0 md:dark:text-blue-500"
                         aria-current="page">Mediathèque</a>
                 </li>
                 <li>
                     <a href="/annonce"
                         class="block py-2 pl-3 pr-4 text-gray-700 <?php if ($url == '/annonce') {
-                            echo 'md:text-orange-400';
+                            echo 'md:text-orange-400 text-orange-400';
                         } ?> rounded md:bg-transparent md:hover:text-amber-500 md:p-0 md:dark:text-blue-500"
                         aria-current="page">Annonces</a>
                 </li>

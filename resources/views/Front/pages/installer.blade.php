@@ -338,7 +338,7 @@
                 </div>
             </div>
             <div class="pt-4 md:pt-8 pb-5 text-center">
-                <a href="/installer">
+                <a href="{{ route('register') }}">
                     <button type="button" style="background-color: #F18700"
                         class="font-bold rounded-none white text-center px-8 md:px-16 pt-3 pb-3 md:pt-4 md:pb-4 md:pr-16">
                         REJOIGNEZ NOUS
@@ -470,10 +470,12 @@
                     <div class=" w-auto mt-4 md:mt-0">
                         <div class="border-dashed px-4 border-l-2 border-gray-700">
                             <div class="pt-2 sm:pt-2 ">
+                                <a href="{{ route('login') }} ">
                                 <button type="button" style="background-color: #F18700"
                                     class="font-bold rounded-none text-white text-center p-3 sm:p-4 md:p-5 lg:pl-12  lg:pr-12">
                                     REJOIGNEZ-NOUS
                                 </button>
+                                </a>
                             </div>
                         </div>
                     </div>

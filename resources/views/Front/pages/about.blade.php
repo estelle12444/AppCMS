@@ -466,25 +466,25 @@
                     class="font-bold text-3xl md:text-6xl pl-4">
                     Un espace Tech <br> pour vous
                 </h1>
-                <p data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="1000"
+                <p data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="700"
                     class="text-justify text-gray-600 pt-4 pl-2 md:pr-16">
                     Nous sommes fiers de proposer un écosystème dynamique, où les entreprises peuvent prospérer grâce à des
                     avantages fiscaux et réglementaires attractifs, ainsi qu'à une infrastructure de pointe. Le VITIB met à
                     disposition des espaces de bureaux modernes, des laboratoires de recherche de pointe, une connectivité
                     Internet haut débit et bien plus encore.
                 </p>
-                <div data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="1300" class="pt-8 md:pt-20">
+                <div data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="700" class="pt-8 md:pt-20">
                     <img src="img/city.png" class="h-64 md:h-80 w-full pr-2 md:pr-16 pl-2" alt="">
                 </div>
             </div>
-            <div class="md:w-1/2">
+            <div class="md:w-1/2 py-8 md:py-0">
                 <img data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="700" src="img/tech.png"
                     class="h-48 md:h-64 w-full" alt="">
-                <h1 data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="1000"
+                <h1 data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="700"
                     class="font-bold text-3xl md:text-6xl pt-8 md:pt-20">
                     Smart city
                 </h1>
-                <p data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="1300"
+                <p data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="700"
                     class="text-justify text-gray-600 py-4">
                     La ZBTIC est un territoire sur lequel s’appliquent des politiques fiscales et douanières avantageuses.
                     La législation ivoirienne relative à la ZBTIC (loi N° 429-2004 du 30 août 2004) attribue le monopole de
@@ -519,7 +519,7 @@
                     lagune Ebrié.
                 </p>
                 <div class="flex flex-row pt-8 underline">
-                    <a href="#"
+                    <a href="https://maps.app.goo.gl/581yHbQcEPMB9y8F8"
                         class="inline-flex items-center font-medium text-orange-400 dark:text-orange-400 hover:underline">
                         Voir plus
                         <svg class="w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -778,7 +778,7 @@
 
         <div class="md:w-3/4 md:pl-24 md:pb-32">
             <h3 data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="500"
-                class="font-bold text-5xl md:text-3xl pl-10 pt-24 pb-8">
+                class="font-bold text-4xl md:text-5xl pl-10 pt-24 pb-8">
                 8 avantages unique au Vitib
             </h3>
 
@@ -1063,7 +1063,7 @@
             <div class="flex flex-row">
                 <div data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="700"
                     class="basis-1/2 md:text-right">
-                    <a href="#"
+                    <a href="/partners"
                         class="inline-flex items-center font-medium text-orange-400 dark:text-orange-400 underline hover:underline">
                         Voir plus
                         <svg class="w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -1112,7 +1112,7 @@
             </h1>
 
             <div class="md:flex flex-row py-4 md:py-8" data-aos="zoom-in-up" data-aos-duration="800"
-                data-aos-delay="1000">
+                data-aos-delay="700">
                 <div class="md:w-1/3">
                     <img class="h-auto max-w-full rounded-lg pl-4" src="img/Image7.png" alt="">
                 </div>
@@ -1226,10 +1226,12 @@
                     <div class=" w-auto mt-4 md:mt-0">
                         <div class="border-dashed px-4 border-l-2 border-gray-700">
                             <div class="pt-2 sm:pt-2 ">
+                                <a href="{{ route('login') }} ">
                                 <button type="button" style="background-color: #F18700"
                                     class="font-bold rounded-none text-white text-center p-3 sm:p-4 md:p-5 lg:pl-12  lg:pr-12">
                                     REJOIGNEZ-NOUS
                                 </button>
+                                </a>
                             </div>
                         </div>
                     </div>

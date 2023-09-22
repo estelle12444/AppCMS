@@ -13,10 +13,10 @@
 
 
 
-    <div class="pt-32 pr-8 md:pr-26 bg-gradient-to-r from-orange-100 from-20% to-green-100 to-90%">
+    <div class="pt-32 md:pr-26 bg-gradient-to-r from-orange-100 from-20% to-green-100 to-90%">
         <div class="md:flex flex-col md:flex-row md:pl-32 md:pr-16 pb-10 px-6">
             <div class="md:w-1/2">
-                <img data-aos="zoom-in-left" data-aos-duration="1000" data-aos-delay="500" src="img/plan.png" alt="">
+                <img data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="500" src="img/plan.png" alt="">
             </div>
 
             <div data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="800" class="md:w-1/2 ">
@@ -54,7 +54,7 @@
     </div>
 
     <div  class=" bg-gradient-to-r from-orange-100 from-20%  to-green-100 to-90%">
-        <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="800" class=" px-6 md:grid grid-cols-5 gap-4  pt-5 pr-32 py-10 md:pl-20 md:pb-5 lg:pl-40 lg:pb-10">
+        <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="800" class=" px-4 md:px-6 grid md:grid-cols-5  grid-cols-2 gap-2 md:gap-4   md:pr-32 md:py-10  md:pb-5 lg:pl-40 lg:pb-10">
             <div class="bg-amber-500 font-extrabold rounded-lg p-4 " style=" height:100px ">
                 <p class="text-white text-center  ">
                     <strong> ADMINISTRATION
@@ -64,7 +64,7 @@
             <div class="bg-green-500 rounded-lg p-4 ">
                 <p class="text-white text-center  ">
                     PRODUCTION ZONE
-                    <br>
+                    <br class="hidden md:hidden">
                     <strong>(Assembly Industries)</strong>
                 </p>
 
@@ -125,7 +125,7 @@
 
     </div>
     <div class="bg-gradient-to-r from-gray-100 from-20%  to-orange-100 to-90%">
-        <div class="  max-w-full md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mx-auto px-4 md:px-24 pt-16  ">
+        <div class="  max-w-full md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mx-auto px-4 md:px-20 pt-16  ">
 
             <h1 data-aos="zoom-in-up" data-aos-duration="1500" data-aos-delay="1000" class="mb-24 text-4xl md:text-5xl text-center font-bold tracking-tight text-gray-900">INVESTISSEZ SUR CES PROJETS D'AVENIR
             </h1>
@@ -218,7 +218,7 @@
                     <h5 class="mb-2 text-2xl pt-4 font-bold tracking-tight text-gray-900 dark:text-white">
                         Immeubles à bureaux
                     </h5>
-                    <p data-aos="zoom-in-left" class="text-justify pb-20  md:pr-2  ">
+                    <p data-aos="zoom-in-right" class="text-justify pb-20  md:pr-2  ">
                         Cette zone inclut une zone économique TIC-soft, ayant pour objet l’hébergement des entreprises œuvrant
                         dans le secteur des TIC. Les infrastructures d’accueil de ce type d’entreprises répond à des standards
                         internationaux, en vue de répondre aux exigences des multinationales (Microsoft, Oracle, Apple, Google)
@@ -258,7 +258,7 @@
                     <div data-aos="zoom-in-down" data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="500" class="h-auto bg-no-repeat max-w-full rounded-lg bg-cover"
                         style="background-image: url('img/slider/pepiniere.png')">
                         <div class=" mx-auto max-w-screen-xl text-center pt-64 lg:pt-64">
-                            <p class="  font-extrabold tracking-tight leading-none text-white md:text-2xl lg:text-lg">
+                            <p class=" text-2xl   font-extrabold tracking-tight leading-none text-white md:text-2xl lg:text-lg">
                                 Pépinière
                                 <br>
                                 d'entreprises
@@ -268,7 +268,7 @@
                     <div data-aos="zoom-in-down" data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="800" class="h-auto bg-no-repeat max-w-full rounded-lg bg-cover"
                         style="background-image: url('img/slider/tech.png')">
                         <div class=" mx-auto max-w-screen-xl text-center pt-64 lg:pt-64">
-                            <p class=" font-extrabold tracking-tight leading-none text-white md:text-2xl lg:text-lg">
+                            <p class=" text-2xl  font-extrabold tracking-tight leading-none text-white md:text-2xl lg:text-lg">
                                 Produits
                                 <br> technologiques
                             </p>
@@ -277,7 +277,7 @@
                     <div data-aos="zoom-in-down"  data-aos-duration="1500" data-aos-delay="1100"class="h-auto bg-no-repeat max-w-full rounded-lg bg-cover"
                         style="background-image: url('img/slider/immeuble.png')">
                         <div class=" mx-auto max-w-screen-xl text-center pt-64 lg:pt-64">
-                            <p class=" text-4xl font-extrabold tracking-tight leading-none text-white md:text-2xl lg:text-lg">
+                            <p class=" text-2xl  font-extrabold tracking-tight leading-none text-white md:text-2xl lg:text-lg">
                                 Hebergements
                                 <br> d'entreprises
                             </p>

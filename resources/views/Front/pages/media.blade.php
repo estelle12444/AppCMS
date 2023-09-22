@@ -48,10 +48,12 @@
                                     Ensemble, innovons au cœur de l'Afrique.
                                 </p>
                                 <div class="pt-4  ">
+                                    <a href="{{ route('login') }} ">
                                     <button type="button" style="background-color: #F18700"
                                         class="font-bold rounded-none text-white text-center p-3 sm:p-4 md:p-5 lg:pl-12  lg:pr-12">
                                         REJOIGNEZ-NOUS
                                     </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>

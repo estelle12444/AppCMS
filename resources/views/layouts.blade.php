@@ -34,7 +34,7 @@
 <body style="overflow-x: hidden">
 
     <!-- Preloader-->
-    <div id="preloader-area" style="display:block">
+    <div id="preloader-area" style="display:block;overflow-x: hidden">
         <div class="lds-ripple">
             <div></div>
             <div></div>
