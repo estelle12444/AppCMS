@@ -94,7 +94,7 @@
     </div>
     <div class="bg-gradient-to-r from-orange-100 from-20%  to-green-100 to-90%">
         <section  style="overflow-x: hidden" class="">
-            <div class="pl-4 py-20 xl:pl-20 xl:pr-32 xl:pt-24">
+            <div class="pl-4 py-20 xl:px-32 xl:pt-24">
                 <div class="bg-no-repeat "style="background-image: url(img/background/font_logo.png)">
                     <div data-aos="zoom-in-up" data-aos-delay="700" data-aos-delay="500">
                         <div>
@@ -132,15 +132,15 @@
                 </div>
             </div>
 
-            <div class="2xl:px-32 xl:px-0 bg-no-repeat">
+            <div class="xl:px-20 md:px-4 bg-no-repeat">
 
                 <div class="xl:flex flex-row pt-16" style="background-image: url(img/Image8.png)">
-                    <div data-aos="fade-right" data-aos-delay="700" data-aos-delay="500" class="xl:w-1/2 xl:pl-24 px-5">
-                        <h1 class=" font-bold tracking-tight text-3xl md:text-5xl xl:text-5xl">
+                    <div data-aos="fade-right" data-aos-delay="700" data-aos-delay="500" class="xl:w-1/2 xl:pl-16 px-5">
+                        <h1 class=" font-bold tracking-tight text-slate-600 text-3xl md:text-5xl xl:text-5xl">
                             DÉCOUVREZ 8 AVANTAGES UNIQUES AU VITIB
                         </h1>
                         <p
-                            class="xl:text-center xl:text-justify md:text-justify text-justify   xl:text-lg xl:tracking-tight pt-4 md:pt-8 xl:pt-8 xl:pr-16">
+                            class="xl:text-center xl:text-justify md:text-justify text-justify  xl:text-lg xl:tracking-tight pt-4 md:pt-8 xl:pt-8 xl:pr-16">
                             Le VITIB offre un écosystème favorable et attractif pour les entreprises technologiques qui
                             cherchent à développer leurs activités en Afrique de l'Ouest. En combinant avantages fiscaux,
                             infrastructures modernes, accès à un marché en pleine croissance et soutien gouvernemental, le
@@ -372,11 +372,11 @@
 
             <div class=" px-6 md:py-8 md:px-8 bg-no-repeat"
                 style="background-image: url(img/background/vert.png);background-size:cover">
-                <div class="xl:px-4  md:px-8 px-2 xl:pl-10 xl:pr-16 ">
+                <div class="xl:px-32  md:px-8 px-2  ">
                     <div class="xl:flex flex-row ">
                         <div data-aos="zoom-in-right" data-aos-delay="700" data-aos-delay="500"
                             class="xl:basis-1/2 xl:text-lg xl:text-left md:text-center">
-                            <h1 class="text-3xl md:text-5xl xl:text-5xl font-bold">
+                            <h1 class="text-3xl text-slate-600 md:text-5xl xl:text-5xl font-bold">
                                 Projets & Services
                             </h1>
                             <p class="pt-4 xl:pt-8 pb-4 xl:pb-8 xl:text-lg ">Investissez sur ses opportunités dans un lieu
@@ -471,8 +471,6 @@
                     </div>
                 </div>
 
-
-
                 <div data-aos-anchor-placement="bottom-center" data-aos-delay="700" data-aos-delay="500"
                     class="xl:flex flex-col pt-10 xl:pt-20 md:pt-16 md:pb-10 pb-12 xl:pb-24 px-6 xl:px-32">
                     <div class="px-2 xl:px-0">
@@ -544,8 +542,8 @@
 
 
                 <div class="xl:flex flex-col bg-repeat-x" style="background-image: url('img/Image6.png')">
-                    <div class="  xl:py-12 md:py-8 xl:px-24 md:px-0">
-                        <h1 class="text-2xl xl:text-4xl md:text-4xl pb-4 xl:pb-24 text-center font-bold text-slate-600 space"
+                    <div class="  xl:py-10 md:py-8 xl:px-24 md:px-0">
+                        <h1 class="text-2xl xl:text-4xl md:text-4xl pb-4 xl:pb-8 text-center font-bold text-slate-600 space"
                             data-aos="zoom-in-up" data-aos-delay="700" data-aos-delay="500">
                             COMMENT NOUS REJOINDRE
                         </h1>
