@@ -3,9 +3,9 @@
 
 @section('content')
     <section class="bg-center bg-no-repeat  bg-blend-multiply" style="background-image: url(img/page_5/annonce.png)">
-        <div class="px-4 mx-auto max-w-screen-xl text-center py-20 lg:pb-20 lg:pt-32">
+        <div class="px-4 mx-auto max-w-screen-xl text-center py-20 md:pt-20  lg:py-0">
             <h1 data-aos="zoom-in" data-aos-duration="500"data-aos-delay="700"
-                class=" text-4xl font-extrabold uppercase tracking-tight leading-none text-white md:text-5xl lg:text-6xl ">
+                class=" text-4xl font-extrabold uppercase tracking-tight leading-none text-white md:pt-20 pt-10 lg:pb-20 lg:pt-32 xl:text-5xl lg:text-6xl ">
                 ANNONCES</h1>
         </div>
     </section>
@@ -13,7 +13,7 @@
 
         <div class="pt-16">
             <div data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="200"
-                class="  flex items-center justify-center py-4 md:py-8 flex-wrap">
+                class="  flex items-center justify-center py-4 xl:py-8 flex-wrap">
                 <button type="button" onclick="setContent('tous')"
                     class="text-amber-500 hover:text-white border border-amber-500 bg-white hover:bg-amber-500 focus:ring-4 focus:outline-none focus:ring-amber-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:border-amber-500 dark:text-amber-500 dark:hover:text-white dark:hover:bg-amber-500 dark:bg-gray-900 dark:focus:ring-amber-800">
                     Tous
@@ -42,14 +42,14 @@
         {{-- Appels d'Offres --}}
 
         <div id="bloc-tender"
-            class=" lg:pr-24 pl-4 bloc lg:pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+            class=" lg:px-24 pl-2 bloc  grid grid-cols-1  lg:grid-cols-3 gap-3">
 
             @forelse ($tenders as $tender)
             <div class="px-4 py-10">
                 <div data-aos="zoom-in"
-                    class="  max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    class="  md:mx-auto  max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
-                        <img class="h-48 md:h-48 lg:h-52 w-full " src="{{ asset('img/annonce/appel_offre.jpg') }}"
+                        <img class="h-48 xl:h-48 lg:h-52 w-full " src="{{ asset('img/annonce/appel_offre.jpg') }}"
                             alt="" />
                     </a>
                     <div class="p-5 ">
@@ -122,8 +122,8 @@
             @empty
                 <div data-aos="zoom-in" class="empty  justify-center h-full">
                     <div
-                        class=" max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <img class="h-48 md:h-48 lg:h-52 w-full " src="{{ asset('img/annonce/appel_offre.jpg') }}"
+                        class=" md:mx-auto  max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        <img class="h-48 xl:h-48 lg:h-52 w-full " src="{{ asset('img/annonce/appel_offre.jpg') }}"
                             alt="" />
                         <div class="p-5">
                             <h3 class="text-lg">Pas de résultats de recherche</h3>
@@ -136,14 +136,14 @@
 
         {{-- Appels à Candidature --}}
         <div id="bloc-career"
-            class="  lg:pr-24 pl-4 bloc lg:pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 ">
+            class="  lg:px-24 pl-2 bloc  grid grid-cols-1 lg:grid-cols-3 gap-3 ">
 
             @forelse ($careers as $career)
             <div class="px-4 py-10">
                 <div
-                    class=" flex items-center max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    class=" flex items-center md:mx-auto  max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
-                        <img class="h-48 md:h-48 lg:h-52 w-full " src="{{ asset('img/annonce/candidature.png') }}"
+                        <img class="h-48 xl:h-48 lg:h-52 w-full " src="{{ asset('img/annonce/candidature.png') }}"
                             alt="" />
                     </a>
                     <div class="p-5 ">
@@ -216,8 +216,8 @@
             @empty
                 <div class=" empty  justify-center h-full">
                     <div
-                        class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <img class="h-48 md:h-48 lg:h-52 w-full" src="{{ asset('img/annonce/candidature.png') }}"
+                        class="md:mx-auto  max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        <img class="h-48 xl:h-48 lg:h-52 w-full" src="{{ asset('img/annonce/candidature.png') }}"
                             alt="" />
                         <div class="p-5">
                             <h3 class="text-lg">Pas d'appel à candidature </h3>
@@ -232,13 +232,13 @@
 
         {{--  Demandes de Cotation --}}
         <div id="bloc-quotation"
-            class="  lg:pr-24 pl-4 bloc lg:pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+            class="  lg:px-24 pl-2 bloc grid grid-cols-1   lg:grid-cols-3 gap-3">
             @forelse ($quotations as $quotation)
             <div class="px-4 py-10">
                 <div
-                    class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    class=" md:mx-auto  max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
-                        <img class="h-48 md:h-48 lg:h-52 w-full " src="{{ asset('img/annonce/cotation.png') }}"
+                        <img class="h-48 xl:h-48 lg:h-52 w-full " src="{{ asset('img/annonce/cotation.png') }}"
                             alt="" />
                     </a>
                     <div class="p-5 ">
@@ -302,7 +302,7 @@
             @empty
                 <div class=" empty justify-center h-full">
                     <div
-                        class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        class=" md:mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <img class="w-48 h-auto mx-auto mt-5 rounded-lg" src="{{ asset('img/annonce/cotation.png') }}"
                             alt="" />
                         <div class="p-5">
@@ -316,13 +316,13 @@
 
         {{-- Offres d'emploi --}}
         <div id="bloc-job"
-            class=" lg:pr-24 pl-4 bloc lg:pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 ">
+            class=" lg:px-24 pl-2 bloc  grid grid-cols-1  lg:grid-cols-3 gap-3 ">
             @forelse ($jobs as $job)
             <div class="px-4 py-10">
                 <div data-aos="zoom-in"
-                    class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    class="md:mx-auto  max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
-                        <img class="h-48 md:h-48 lg:h-52 w-full " src="{{ asset('img/annonce/offre_emploi.jpg') }}"
+                        <img class="h-48 xl:h-48 lg:h-52 w-full " src="{{ asset('img/annonce/offre_emploi.jpg') }}"
                             alt="" />
                     </a>
                     <div class="p-5 ">
@@ -385,7 +385,7 @@
             @empty
                 <div class="justify-center h-full">
                     <div
-                        class=" empty max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        class=" empty md:mx-auto  max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <img class="w-48 h-auto mx-auto mt-5 rounded-lg"
                             src="{{ asset('img/annonce/offre_emploi.jpg') }}" alt="" />
                         <div class="p-5">
@@ -398,13 +398,13 @@
         </div>
         {{-- Demande de manifestion --}}
         <div id="bloc-event"
-            class="lg:pr-24 pl-4 bloc lg:pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 ">
+            class="lg:px-24 pl-2 bloc  grid grid-cols-1  lg:grid-cols-3 gap-3 ">
             @forelse ($events as $event)
             <div class="px-4 py-10">
                 <div data-aos="zoom-in"
-                    class=" max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    class=" md:mx-auto  max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
-                        <img class="h-48 md:h-48 lg:h-52 w-full " src="{{ asset('storage/' . $event->image) }}"
+                        <img class="h-48 xl:h-48 lg:h-52 w-full " src="{{ asset('storage/' . $event->image) }}"
                             alt="" />
                     </a>
                     <div class="p-5 ">
@@ -468,7 +468,7 @@
             @empty
                 <div data-aos="zoom-in" class="flex items-center justify-center h-full">
                     <div
-                        class="empty  max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        class="empty  md:mx-auto  max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <img class="w-48 h-auto mx-auto mt-5 rounded-lg"
                             src="https://abc-signaletique.fr/822-large_default/panneau-point-d-exclamation-refd868.jpg"
                             alt="" />

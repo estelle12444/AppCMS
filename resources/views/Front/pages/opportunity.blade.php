@@ -2,9 +2,10 @@
 
 
 @section('content')
-<section class="bg-center bg-no-repeat bg-blend-multiply" style="background-image: url(img/slider/header_1.png)">
-    <div class="px-4 mx-auto max-w-screen-xl text-center py-20 lg:pb-48 lg:pt-32">
-        <h1 data-aos="zoom-in-up" data-aos-duration="1500" data-aos-delay="500" class="uppercase mb-4 text-4xl font-extrabold tracking-tight leading-none text-white sm:text-5xl lg:text-6xl">
+<section class="bg-center bg-no-repeat  bg-blend-multiply" style="background-image: url(img/page_5/annonce.png)">
+    <div class="px-4 mx-auto max-w-screen-xl text-center py-16 md:pt-20  lg:py-0">
+        <h1 data-aos="zoom-in" data-aos-duration="500"data-aos-delay="700"
+            class=" text-4xl font-extrabold uppercase tracking-tight leading-none text-white md:pt-8 pt-10 lg:pb-20 lg:pt-32 xl:text-5xl lg:text-6xl ">
             <p>Projets, Services</p>
             <p class="pt-8">& Opportunités</p>
         </h1>
@@ -13,39 +14,39 @@
 
 
 
-    <div class="pt-32 md:pr-26 bg-gradient-to-r from-orange-100 from-20% to-green-100 to-90%">
-        <div class="md:flex flex-col md:flex-row md:pl-32 md:pr-16 pb-10 px-6">
-            <div class="md:w-1/2">
+    <div class="pt-16 xl:pt-32 md:pt-16 xl:pr-26 bg-gradient-to-r from-orange-100 from-20% to-green-100 to-90%">
+        <div class="xl:flex flex-col xl:flex-row xl:pl-32 xl:pr-16 pb-10 px-6 md:ml-6 ">
+            <div class="xl:w-1/2  ">
                 <img data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="500" src="img/plan.png" alt="">
             </div>
 
-            <div data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="800" class="md:w-1/2 ">
-                <h1 class="md:text-4xl text-3xl md:pr-16 pt-4 font-bold tracking-tight">
+            <div data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="800" class="xl:w-1/2 ">
+                <h1 class="xl:text-4xl md:text-4xl text-3xl xl:pr-16 pt-4 font-bold tracking-tight">
                     UN LIEU PENSÉ POUR VOS BESOINS.
                 </h1>
-                <h3 class="pt-8 font-bold md:text-lg">
+                <h3 class="pt-8 font-bold xl:text-lg">
                     #1 Zone Franche de la Biotechnologie : 624 hectares
                 </h3>
-                <p class="pt-4 md:pt-8 md:text-lg">
+                <p class="pt-4 xl:pt-8 xl:text-lg">
                     La phase 1 de développement est divisée en 3 sous-zones principales
                 </p>
                 <div class="flex items-center pt-4 rounded-lg" role="alert">
                     <div class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-green-500 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
                         <img src="img/icon/check.png" alt="">
                     </div>
-                    <div class="ml-3 md:text-lg font-normal">Zone Franche avec accès restreint.</div>
+                    <div class="ml-3 xl:text-lg font-normal">Zone Franche avec accès restreint.</div>
                 </div>
-                <div class="flex items-center pb-4 md:pb-0 md:rounded-lg" role="alert">
+                <div class="flex items-center pb-4 xl:pb-0 xl:rounded-lg" role="alert">
                     <div class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-green-500 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
                         <img src="img/icon/check.png" alt="">
                     </div>
-                    <div class="ml-3 md:text-lg font-normal">Cette zone accueillera les industries de la biotechnologie, les industries d'assemblage et les immeubles de bureaux.</div>
+                    <div class="ml-3 xl:text-lg font-normal">Cette zone accueillera les industries de la biotechnologie, les industries d'assemblage et les immeubles de bureaux.</div>
                 </div>
-                <div class="flex items-center pb-4 md:pb-0 md:rounded-lg" role="alert">
+                <div class="flex items-center pb-4 xl:pb-0 xl:rounded-lg" role="alert">
                     <div class="inline-flex items-center flex-shrink-0 w-8 h-8 text-green-500 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
                         <img src="img/icon/check.png" alt="">
                     </div>
-                    <p class="ml-3 md:text-lg font-normal">
+                    <p class="ml-3 xl:text-lg font-normal">
                         Zone résidentielle prévue hors des limites de la Zone Franche
                     </p>
                 </div>
@@ -53,8 +54,8 @@
         </div>
     </div>
 
-    <div  class=" bg-gradient-to-r from-orange-100 from-20%  to-green-100 to-90%">
-        <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="800" class=" px-4 md:px-6 grid md:grid-cols-5  grid-cols-2 gap-2 md:gap-4   md:pr-32 md:py-10  md:pb-5 lg:pl-40 lg:pb-10">
+    <div style="overflow-x: hidden" class=" bg-gradient-to-r from-orange-100 from-20%  to-green-100 to-90% ">
+        <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="800" class=" xl:py-10  lg:pb-10 md:px-4 px-4 lg:pr-0  xl:px-24 grid xl:grid-cols-5 md:grid-cols-2  grid-cols-2 gap-2 xl:gap-4   ">
             <div class="bg-amber-500 font-extrabold rounded-lg p-4 " style=" height:100px ">
                 <p class="text-white text-center  ">
                     <strong> ADMINISTRATION
@@ -64,7 +65,7 @@
             <div class="bg-green-500 rounded-lg p-4 ">
                 <p class="text-white text-center  ">
                     PRODUCTION ZONE
-                    <br class="hidden md:hidden">
+                    <br class="hidden xl:hidden">
                     <strong>(Assembly Industries)</strong>
                 </p>
 
@@ -125,150 +126,170 @@
 
     </div>
     <div class="bg-gradient-to-r from-gray-100 from-20%  to-orange-100 to-90%">
-        <div class="  max-w-full md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mx-auto px-4 md:px-20 pt-16  ">
+        <div class="  max-w-full xl:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mx-auto px-4 xl:px-16  pt-16  ">
 
-            <h1 data-aos="zoom-in-up" data-aos-duration="1500" data-aos-delay="1000" class="mb-24 text-4xl md:text-5xl text-center font-bold tracking-tight text-gray-900">INVESTISSEZ SUR CES PROJETS D'AVENIR
+            <h1 data-aos="zoom-in-up" data-aos-duration="1500" data-aos-delay="1000" class="mb-24 text-4xl xl:text-5xl md:text-4xl text-center font-bold tracking-tight text-gray-900">
+                INVESTISSEZ SUR CES PROJETS D'AVENIR
             </h1>
 
-            <div class=" grid grid-cols-1 md:grid-cols-2 gap-2">
+            <div class=" grid grid-cols-1 xl:grid-cols-2 gap-2 md:px-2">
                 <div data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="700">
-                    <img class="h-auto max-w-full rounded-lg  md:pr-10" src="img/city.png" alt="">
-                    <h5 class="mb-2 text-2xl pt-4 font-bold tracking-tight text-gray-900 dark:text-white">
+                    <img class="h-auto max-w-full rounded-lg  xl:pr-10 md:pl-12 xl:pl-0 xl:pl-0" src="img/city.png" alt="">
+                    <div class="md:px-12 md:py-4 xl:px-0 xl:py-0">
+                    <h5 class="mb-2 text-2xl pt-4  font-bold tracking-tight text-gray-900 dark:text-white">
                         Entrepôts à louer
                     </h5>
-                    <p class="text-justify   md:pr-16">
+                    <p class="text-justify   xl:pr-10 md:pr-10  ">
                         Ce projet vise à créer des infrastructures de type entrepôts, pouvant abriter les chaines d’assemblage
                         de divers produits TIC, ainsi que des espaces de stockage complémentaires pour des industriels et des
                         usagers de la ZBTIC.
                     </p>
                 </div>
+                </div>
                 <div data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="700" class="">
-                    <img class="h-auto max-w-full rounded-lg " src="img/immeuble.png" alt="">
+                    <img class="h-auto max-w-full rounded-lg md:pl-12 xl:pl-0 " src="img/immeuble.png" alt="">
+                    <div class="md:px-12 md:py-4 xl:px-0 xl:py-0">
                     <h5 class="mb-2 text-2xl pt-4 font-bold tracking-tight text-gray-900 dark:text-white">
                         Immeubles à bureaux
                     </h5>
-                    <p class="text-justify pb-20 md:pr-2   ">
+                    <p class="text-justify pb-20  xl:pr-0 md:pr-6  ">
                         Cette zone inclut une zone économique TIC-soft, ayant pour objet l’hébergement des entreprises œuvrant
                         dans le secteur des TIC. Les infrastructures d’accueil de ce type d’entreprises répond à des standards
                         internationaux, en vue de répondre aux exigences des multinationales (Microsoft, Oracle, Apple, Google)
                         attendues dans le parc technologique de la zone franche. Ce sont un total de plus de 20 000 employés qui
                         sont attendus dans la zone.
                     </p>
+                    </div>
                 </div>
                 <div data-aos="zoom-in-up" data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="700">
-                    <img class="h-auto max-w-full rounded-lg md:pr-10" src="img/Picture9.png" alt="">
+                    <img class="h-auto max-w-full rounded-lg  md:pl-12 xl:pl-0  xl:pr-10" src="img/Picture9.png" alt="">
+                    <div class="md:px-12 md:py-4 xl:px-0 xl:py-0">
                     <h5 class="mb-2 text-2xl pt-4 font-bold tracking-tight text-gray-900 dark:text-white">
                         Promotion Immobilière Bloc A
                     </h5>
-                    <p class="text-justify   md:pr-16">
+                    <p class="text-justify   xl:pr-10 md:pr-10">
                         Cette promotion immobilière doit prendre en compte un compte un programme spécifique d’habitants
                         réalisées à titre gracieux pour VITIB S.A. Le reste de la parcelle (80%) pourra être commercialisé. 2 Ce
                         projet doit inclure à la fois des habitations collectives de moyen et haut standing (appartements) et
                         des habitations pavillonnaires (villas).
                     </p>
+                    </div>
                 </div>
                 <div data-aos="zoom-in-up"data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="700">
-                    <img class="h-auto max-w-full rounded-lg " src="img/universite.png" alt="">
+                    <img class="h-auto max-w-full rounded-lg  md:pl-12 xl:pl-0  " src="img/universite.png" alt="">
+                    <div class="md:px-12 md:py-4 xl:px-0 xl:py-0">
                     <h5 class="mb-2 text-2xl pt-4 font-bold tracking-tight text-gray-900 dark:text-white">
                         Université
                     </h5>
-                    <p class="text-justify  pb-20  md:pr-2 ">
+                    <p class="text-justify  pb-20 xl:pr-0 md:pr-6   ">
                         Le Village de l’Innovation Technologique a pour vocation d’être le centre de la réflexion technologique
                         en Afrique de l’Ouest. La création d’un établissement académique de niveau universitaire permettra de
                         former les scientifiques et les managers de demain. L’établissement tirera avantage de la proximité des
                         entreprises installées au sein de la zone économique spéciale.</p>
                 </div>
+                </div>
                 <div data-aos="zoom-in-down "data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="700">
-                    <img class="h-auto max-w-full rounded-lg md:pr-10" src="img/hotel.png" alt="">
+                    <img class="h-auto max-w-full rounded-lg  md:pl-12 xl:pl-0  xl:pr-10" src="img/hotel.png" alt="">
+                    <div class="md:px-12 md:py-4 xl:px-0 xl:py-0">
                     <h5 class="mb-2 text-2xl pt-4 font-bold tracking-tight text-gray-900 dark:text-white">
                         Hôtels d’affaires
                     </h5>
-                    <p class="text-justify   md:pr-16">
+                    <p class="text-justify   xl:pr-10 md:pr-10">
                         Voisin du futur centre des Congrès du parc technologique, cet hôtel d’affaires offrira une solution
                         d’hébergement aux différents experts, cadres et visiteurs des sociétés en opération sur le site de la
                         ZBTIC.
                     </p>
+                    </div>
                 </div>
                 <div data-aos="zoom-in-up" data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="700">
-                    <img class="h-auto max-w-full rounded-lg " src="img/immobilier.png" alt="">
+                    <img class="h-auto max-w-full rounded-lg  md:pl-12 xl:pl-0  " src="img/immobilier.png" alt="">
+                    <div class="md:px-12 md:py-4 xl:px-0 xl:py-0">
                     <h5 class="mb-2 text-2xl pt-4 font-bold tracking-tight text-gray-900 dark:text-white">
                         Immeubles à bureaux
                     </h5>
-                    <p class="text-justify pb-20  md:pr-2 ">
+                    <p class="text-justify pb-20 xl:pr-0 md:pr-6  ">
                         Cette zone inclut une zone économique TIC-soft, ayant pour objet l’hébergement des entreprises œuvrant
                         dans le secteur des TIC. Les infrastructures d’accueil de ce type d’entreprises répond à des standards
                         internationaux, en vue de répondre aux exigences des multinationales (Microsoft, Oracle, Apple, Google)
                         attendues dans le parc technologique de la zone franche. Ce sont un total de plus de 20 000 employés qui
                         sont attendus dans la zone.
                     </p>
+                    </div>
                 </div>
                 <div data-aos="zoom-in-down"data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="700">
-                    <img class="h-auto max-w-full rounded-lg md:pr-10" src="img/centre.png" alt="">
+                    <img class="h-auto max-w-full rounded-lg  md:pl-12 xl:pl-0  xl:pr-10" src="img/centre.png" alt="">
+                    <div class="md:px-12 md:py-4 xl:px-0 xl:py-0">
                     <h5 class="mb-2 text-2xl pt-4 font-bold tracking-tight text-gray-900 dark:text-white">
                         Entrepôts à louer
                     </h5>
-                    <p class="text-justify    md:pr-16">
+                    <p class="text-justify    xl:pr-10 md:pr-10">
                         Ce projet vise à créer des infrastructures de type entrepôts, pouvant abriter les chaines d’assemblage
                         de divers produits TIC, ainsi que des espaces de stockage complémentaires pour des industriels et des
                         usagers de la ZBTIC.
                     </p>
+                    </div>
                 </div>
                 <div data-aos="zoom-in-up" data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="700">
-                    <img class="h-auto max-w-full rounded-lg " src="img/centre_cultu.png" alt="">
+                    <img class="h-auto max-w-full rounded-lg  md:pl-12 xl:pl-0  " src="img/centre_cultu.png" alt="">
+                    <div class="md:px-12 md:py-4 xl:px-0 xl:py-0">
                     <h5 class="mb-2 text-2xl pt-4 font-bold tracking-tight text-gray-900 dark:text-white">
                         Immeubles à bureaux
                     </h5>
-                    <p data-aos="zoom-in-right" class="text-justify pb-20  md:pr-2  ">
+                    <p data-aos="zoom-in-right" class="text-justify pb-20   xl:pr-0 md:pr-6 ">
                         Cette zone inclut une zone économique TIC-soft, ayant pour objet l’hébergement des entreprises œuvrant
                         dans le secteur des TIC. Les infrastructures d’accueil de ce type d’entreprises répond à des standards
                         internationaux, en vue de répondre aux exigences des multinationales (Microsoft, Oracle, Apple, Google)
                         attendues dans le parc technologique de la zone franche. Ce sont un total de plus de 20 000 employés qui
                         sont attendus dans la zone.
                     </p>
+                    </div>
                 </div>
                 <div data-aos="zoom-in-up"data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="700">
-                    <img class="h-auto max-w-full rounded-lg md:pr-10 " src="img/centre_commer.png" alt="">
+                    <img class="h-auto max-w-full rounded-lg  md:pl-12 xl:pl-0 xl:pl-0  xl:pr-10 " src="img/centre_commer.png" alt="">
+                    <div class="md:px-12 md:py-4 xl:px-0 xl:py-0">
                     <h5 class="mb-2 text-2xl pt-4 font-bold tracking-tight text-gray-900 dark:text-white">
                         Entrepôts à louer
                     </h5>
-                    <p class="text-justify    md:pr-16">
+                    <p class="text-justify    xl:pr-10 md:pr-10">
                         Ce projet vise à créer des infrastructures de type entrepôts, pouvant abriter les chaines d’assemblage
                         de divers produits TIC, ainsi que des espaces de stockage complémentaires pour des industriels et des
                         usagers de la ZBTIC.
                     </p>
+                    </div>
                 </div>
                 <div data-aos="zoom-in-down"data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="700">
-                    <img class="h-auto max-w-full rounded-lg " src="img/clinique.png" alt="">
+                    <img class="h-auto max-w-full rounded-lg  md:pl-12 xl:pl-0 xl:pl-0 xl:pl-0 " src="img/clinique.png" alt="">
+                    <div class="md:px-12 md:py-4 xl:px-0 xl:py-0">
                     <h5 class="mb-2 text-2xl pt-4 font-bold tracking-tight text-gray-900 dark:text-white">
                         Clinique médicale internationale
                     </h5>
-                    <p class="text-justify  md:pr-2  ">
+                    <p class="text-justify   xl:pr-0 md:pr-6 ">
                         Une clinique médicale de stature internationale correspondant aux standards internationaux, vise à
                         offrir à minima des services de médecine générale et des services spécialisés à la clientèle et aux
                         travailleurs de la ZBTIC.
                     </p>
                 </div>
-
+                </div>
             </div>
             <div class="pt-32">
                 <h1 data-aos="zoom-out" data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="700" class="mb-20 text-3xl text-center font-bold tracking-tight text-gray-900">
                     NOS SERVICES
                 </h1>
-                <div  class="grid  md:grid-cols-3 gap-4">
+                <div  class="grid  xl:grid-cols-3 gap-4 md:px-12 xl:px-0 ">
                     <div data-aos="zoom-in-down" data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="500" class="h-auto bg-no-repeat max-w-full rounded-lg bg-cover"
                         style="background-image: url('img/slider/pepiniere.png')">
-                        <div class=" mx-auto max-w-screen-xl text-center pt-64 lg:pt-64">
-                            <p class=" text-2xl   font-extrabold tracking-tight leading-none text-white md:text-2xl lg:text-lg">
+                        <div class=" mx-auto max-w-screen-xl text-center xl:py-0 xl:pt-64 md:py-24 ">
+                            <p class=" text-2xl   font-extrabold tracking-tight leading-none text-white xl:text-2xl lg:text-lg">
                                 Pépinière
                                 <br>
                                 d'entreprises
                             </p>
                         </div>
                     </div>
-                    <div data-aos="zoom-in-down" data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="800" class="h-auto bg-no-repeat max-w-full rounded-lg bg-cover"
+                    <div data-aos="zoom-in-down" data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="800" class=" md:py-10 xl:py-0 h-auto bg-no-repeat max-w-full rounded-lg bg-cover"
                         style="background-image: url('img/slider/tech.png')">
-                        <div class=" mx-auto max-w-screen-xl text-center pt-64 lg:pt-64">
-                            <p class=" text-2xl  font-extrabold tracking-tight leading-none text-white md:text-2xl lg:text-lg">
+                        <div class=" mx-auto max-w-screen-xl text-center xl:py-0 md:py-24 xl:pt-64 ">
+                            <p class=" text-2xl  font-extrabold tracking-tight leading-none text-white xl:text-2xl lg:text-lg">
                                 Produits
                                 <br> technologiques
                             </p>
@@ -276,8 +297,8 @@
                     </div>
                     <div data-aos="zoom-in-down"  data-aos-duration="1500" data-aos-delay="1100"class="h-auto bg-no-repeat max-w-full rounded-lg bg-cover"
                         style="background-image: url('img/slider/immeuble.png')">
-                        <div class=" mx-auto max-w-screen-xl text-center pt-64 lg:pt-64">
-                            <p class=" text-2xl  font-extrabold tracking-tight leading-none text-white md:text-2xl lg:text-lg">
+                        <div class=" mx-auto max-w-screen-xl text-center xl:py-0 md:py-24 xl:pt-64 ">
+                            <p class=" text-2xl  font-extrabold tracking-tight leading-none text-white xl:text-2xl lg:text-lg">
                                 Hebergements
                                 <br> d'entreprises
                             </p>
@@ -286,19 +307,19 @@
                 </div>
             </div>
 
-            <div class="pt-16 pb-8 sm:pt-32 md:pt-48 lg:pt-64">
+            <div class="pt-16 pb-8 sm:pt-32 xl:pt-48 lg:pt-64">
                 <h1 data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="500"
-                    class="mb-8 sm:mb-16 text-2xl sm:text-3xl md:text-4xl lg:text-4xl text-center font-bold tracking-tight text-gray-900">
+                    class="mb-8 sm:mb-16 text-2xl sm:text-3xl xl:text-4xl lg:text-4xl text-center font-bold tracking-tight text-gray-900">
                     REJOIGNEZ-NOUS
                 </h1>
 
                 <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="600"
                     class="flex flex-col sm:flex-row justify-center sm:justify-between leading-normal bg-center">
-                    <div class="w-full sm:w-1/2 mb-8 sm:mb-0 sm:pl-8 md:pl-24 ">
-                        <img class="h-64 sm:h-72 max-w-full mx-auto" src="img/join.png" alt="image description">
+                    <div class="w-full sm:w-1/2 mb-8 sm:mb-0 sm:pl-8 xl:pl-48  ">
+                        <img class="h-64 sm:h-72 max-w-full mx-auto " src="img/join.png" alt="image description">
                     </div>
-                    <div class="w-full sm:w-1/2 sm:mr-8 md:mr-24 lg:mr-48 px-6 ">
-                        <p class="font-normal text-justify text-gray-700 tracking-tight  pt-10 md:pt-0">
+                    <div class="w-full sm:w-1/2 sm:mr-8 xl:mr-24 px-6 ">
+                        <p class="font-normal text-justify text-gray-700 tracking-tight md:pt-0 pt-10 xl:pt-0">
                             Nous sommes fiers d'accueillir des entreprises innovantes qui transforment l'avenir de la Côte
                             d'Ivoire et de l'Afrique. Rejoignez-nous au VITIB et devenez acteur d'un écosystème florissant,
                             propice à l'épanouissement de votre entreprise. Contactez-nous dès aujourd'hui pour découvrir
@@ -307,7 +328,7 @@
                         </p>
                         <div class="pt-2 sm:pt-2 ">
                             <button type="button" style="background-color: #F18700"
-                                class="font-bold rounded-none text-white text-center p-3 sm:p-4 md:p-5 lg:pl-12  lg:pr-12">
+                                class="font-bold rounded-none text-white text-center p-3 sm:p-4 xl:p-5 lg:pl-12  lg:pr-12">
                                 REJOIGNEZ-NOUS
                             </button>
                         </div>

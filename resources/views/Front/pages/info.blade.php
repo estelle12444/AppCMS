@@ -3,8 +3,8 @@
 
 @section('content')
 <div class="  bg-gradient-to-r from-orange-100 from-20%  to-green-100 to-90%">
-        <div class="p-5 py-20 mx-2 md:mx-48">
-            <img src="{{ asset('img/annonce/appel_offre.jpg') }}"  style="width: 600px; height:400px;" class="md:py-8" alt="">
+        <div class="p-5 py-20 mx-2 xl:mx-48">
+            <img src="{{ asset('img/annonce/appel_offre.jpg') }}"  style="width: 600px; height:400px;" class="xl:py-8" alt="">
             <p class="pb-4" style="color: #F18700;">
                 Dossier d'Appel d'Offre N 0{{ $tender->id }}
             </p>
@@ -29,7 +29,7 @@
                     style="color: #F18700;">{{ $tender->limit_date }}</span> </h5> </p>
             <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 ">
 
-                <div class="md:flex flex-row py-4 md:py-8" >
+                <div class="xl:flex flex-row py-4 xl:py-8" >
             <div class="flex flex-row ml-2 pb-4">
                 <div class="w-1/5">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
