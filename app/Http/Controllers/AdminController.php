@@ -71,8 +71,10 @@ class AdminController extends Controller
     public function index()
     {
         $partners = Partner::all();
+        $sectors = Sector::all();
 
-        return view('Front.admin.partner.index', compact('partners'));
+
+        return view('Front.admin.partner.index', compact('partners','sectors'));
     }
 
 

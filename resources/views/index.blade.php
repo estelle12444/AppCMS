@@ -46,7 +46,7 @@
                             </span>
                         </span>
                         <video class="w-full rounded-lg" muted autoplay controls>
-                            <source src="videos/814dc43e870597176cad645798825c03.mp4" type="video/mp4">
+                            <source src="/videos/814dc43e870597176cad645798825c03.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
@@ -354,7 +354,7 @@
                             </div>
                         </div> --}}
                         <img data-aos="zoom-out-right" data-aos-delay="700" data-aos-delay="800"
-                            src="img/background/Parcours.svg" alt="">
+                            src="/img/background/Parcours.svg" alt="">
                     </div>
 
                     <div class="pt-4 xl:pt-8 text-center">
@@ -542,7 +542,7 @@
 
 
                 <div class="xl:flex flex-col bg-repeat-x" style="background-image: url('img/Image6.png')">
-                    <div class="  xl:py-10 md:py-8 xl:px-24 md:px-0">
+                    <div class="  xl:py-10 md:py-8 xl:px-14 md:px-0">
                         <h1 class="text-2xl xl:text-4xl md:text-4xl pb-4 xl:pb-8 text-center font-bold text-slate-600 space"
                             data-aos="zoom-in-up" data-aos-delay="700" data-aos-delay="500">
                             COMMENT NOUS REJOINDRE
@@ -550,14 +550,14 @@
 
                         <div class="xl:flex flex-row py-4 xl:py-8" data-aos="zoom-in-up" data-aos-delay="700"
                             data-aos-delay="700">
-                            <div class="xl:w-1/3 xl:mt-4  ">
+                            <div class="xl:w-1/3 xl:mt-6  ">
                                 <img class="h-auto max-w-full rounded-lg md:pl-8 " src="img/Image7.png" alt="">
                             </div>
                             <div class="xl:w-1/3  xl:pl-4 mt-2 xl:mt-4">
                                 <h2 class="font-bold xl:text-lg md:text-3xl">
                                     TÉLÉCHARGER DOSSIER DE DEMANDE D’AGRÉMENT
                                 </h2>
-                                <p class="text-justify xl:text-lg md:pt-10 xl:pt-4">
+                                <p class="text-justify xl:text-lg md:pt-10 xl:pt-2">
                                     Une opportunité exceptionnelle au VITIB.
                                     Bénéficiez d'avantages fiscaux, d'une infrastructure de pointe et d'un écosystème
                                     dynamique
@@ -573,7 +573,7 @@
                                     l'Afrique.
                                 </p>
                             </div>
-                            <div class="xl:w-1/3 xl:pl-4 xl:mt-4 xl:mt-0 ">
+                            <div class="xl:w-1/3 xl:pl-4 xl:mt-2 xl:mt-0 ">
                                 <div class=" xl:border-dashed xl:border-l-2 border-gray-700">
                                     <div class="flex flex-row ml-4 pb-4 py-6">
                                         <div class="xl:w-1/5">
@@ -665,7 +665,7 @@
                                         <div class="pt-2 sm:pt-2 ">
                                             <a href="{{ route('login') }} ">
                                             <button type="button" style="background-color: #F18700"
-                                                class="font-bold rounded-none text-white text-center p-3 sm:p-4 xl:p-5 lg:pl-12  lg:pr-12">
+                                                class="font-bold rounded-none text-white text-center  px-8 xl:px-16 md:px-12 md:py-2 py-2 xl:py-4 ">
                                                 REJOIGNEZ-NOUS
                                             </button>
                                             </a>

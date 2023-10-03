@@ -19,6 +19,7 @@ class AnnonceController extends Controller
         $quotations = Quotation::all();
         $events = Event::all();
 
+
         return view('Front.pages.anonce', compact( 'tenders','careers','jobs','quotations','events'));
     }
 
@@ -27,11 +28,12 @@ class AnnonceController extends Controller
     {
         return view('Front.pages.info', compact( 'tender'));
     }
+    
 
 
     public function show_job(Job $job)
     {
-        return view('Front.pages.job_', compact( 'job'));
+        return view('Front.pages.job', compact( 'job'));
     }
 
 

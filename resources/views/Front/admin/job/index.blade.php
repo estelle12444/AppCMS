@@ -12,10 +12,7 @@
     </div>
 
     <div class="section-body">
-        {{-- <h2 class="section-title">DataTables</h2>
-  <p class="section-lead">
-    We use 'DataTables' made by @SpryMedia. You can check the full documentation <a href="https://datatables.net/">here</a>.
-  </p> --}}
+
 
         <div class="row">
             <div class="col-12">
@@ -46,8 +43,8 @@
                                         <tr>
                                             <td>{{ $job->id }}</td>
                                             <td>{{ $job->title }}</td>
-                                            <td>{{ $job->content }}</td>
-                                            <td>{{ $job->resume }}</td>
+                                            <td>{{ Str::substr($job->content, 0, 150) . '...' }}</td>
+                                            <td>{{ Str::substr($job->content, 0, 150) . '...' }}</td>
                                             <td>{{ $job->limit_date }}</td>
 
                                             <td>

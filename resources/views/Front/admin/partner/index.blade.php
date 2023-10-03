@@ -12,11 +12,6 @@
         </div>
 
         <div class="section-body">
-            {{-- <h2 class="section-title">DataTables</h2>
-      <p class="section-lead">
-        We use 'DataTables' made by @SpryMedia. You can check the full documentation <a href="https://datatables.net/">here</a>.
-      </p> --}}
-
             <div class="row">
                 <div class="col-12">
                     <div class="card">
@@ -35,8 +30,7 @@
                                             <th>Secteur d'activite</th>
                                             <th>Description</th>
                                             <th>Logo</th>
-                                            {{-- <th>Date et Heure</th> --}}
-                                            <th >Action</th>
+                                            <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -45,8 +39,28 @@
                                                 <td>{{ $partner->id }}</td>
                                                 <td>{{ $partner->title }}</td>
 
-                                                <td> TECH</td>
-                                                <td>{{ $partner->content }}</td>
+                                                {{-- <td >@foreach ($sectors as $sector)
+
+                                                        @if ($partner->sectors->contains($sector->id))
+                                                            {{ $sector->nom }}
+                                                        @endif
+
+                                                @endforeach
+                                                </td> --}}
+                                                @php
+                                                    $matchingSectors = [];
+                                                    foreach ($sectors as $sector) {
+                                                        if ($partner->sectors->contains($sector->id)) {
+                                                            $matchingSectors[] = $sector->nom;
+                                                        }
+                                                    }
+                                                @endphp
+
+                                                <td>
+                                                    {{ implode(', ', $matchingSectors) }}
+                                                </td>
+
+                                                <td> {{ Str::substr($partner->content, 0, 150) . '...' }}</td>
 
                                                 <td>
                                                     <img alt="{{ $partner->title }}"
@@ -56,16 +70,20 @@
                                                 {{-- <td>{{ $partner->created_at }}</td> --}}
 
                                                 <td><a href="{{ route('Front.admin.partner.edit', $partner) }}"
-                                                    class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="" data-original-title="Edit"><i class="fas fa-pencil-alt"></i></a>
+                                                        class="btn btn-primary btn-action mr-1" data-toggle="tooltip"
+                                                        title="" data-original-title="Edit"><i
+                                                            class="fas fa-pencil-alt"></i></a>
 
                                                     <form action="{{ route('Front.admin.partner.destroy', $partner->id) }}"
                                                         method="POST" style="display: inline;">
                                                         @csrf
                                                         @method('DELETE')
                                                         <button type="submit"
-                                                        class="btn btn-danger btn-action trigger--fire-modal-6" onclick="return confirm('Êtes-vous sûr de vouloir supprimer ce secteur ?')"><i class="fas fa-trash"></i></button>
+                                                            class="btn btn-danger btn-action trigger--fire-modal-6"
+                                                            onclick="return confirm('Êtes-vous sûr de vouloir supprimer ce secteur ?')"><i
+                                                                class="fas fa-trash"></i></button>
 
-                                                </form>
+                                                    </form>
 
                                                 </td>
 
@@ -79,4 +97,4 @@
                 </div>
             </div>
         </div>
-        @endsection
+    @endsection

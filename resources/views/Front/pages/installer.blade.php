@@ -370,134 +370,137 @@
         class="xl:px-20 md:px-0 px-6 xl:py-24 bg-no-repeat  bg-gradient-to-r from-orange-100 from-10% via-30% to-green-100 to-90%">
         <div class="xl:flex flex-col bg-repeat-x" style="background-image: url('img/Image6.png')">
             <div class="  xl:py-12 md:py-8">
-                <h1 class="text-2xl xl:text-4xl md:text-4xl pb-4 xl:pb-24 text-center font-bold text-slate-600 space"
+                <h1 class="text-2xl xl:text-4xl md:text-4xl pb-4 xl:pb-8 text-center font-bold text-slate-600 space"
                     data-aos="zoom-in-up" data-aos-delay="700" data-aos-delay="500">
                     COMMENT NOUS REJOINDRE
                 </h1>
 
-                <div class="xl:flex flex-row py-4 xl:py-8 " data-aos="zoom-in-up" data-aos-delay="700"
-                    data-aos-delay="700">
-                    <div class="xl:w-1/3 ">
-                        <img class="h-auto max-w-full rounded-lg md:pl-20 xl:pl-4" src="img/Image7.png" alt="">
-                    </div>
-                    <div class="xl:w-1/3  mt-4 xl:mt-0 xl:pt-0  md:pt-8 md:px-20 xl:px-2 xl:pl-4 ">
-                        <h2 class="font-bold xl:text-lg md:text-3xl">
-                            TÉLÉCHARGER DOSSIER DE DEMANDE D’AGRÉMENT
-                        </h2>
-                        <p class="text-justify xl:text-lg md:pt-10 xl:pt-0">
-                            Une opportunité exceptionnelle au VITIB.
-                            Bénéficiez d'avantages fiscaux, d'une infrastructure de pointe et d'un écosystème
-                            dynamique
-                            propice à l'innovation. Immergez votre entreprise dans un environnement stratégique
-                            et
-                            prospère,
-                            prêt à accueillir les entreprises technologiques les plus prometteuses.
-                        </p>
+                <div class="xl:flex flex-row py-4 xl:py-8" data-aos="zoom-in-up" data-aos-delay="700"
+                data-aos-delay="700">
+                <div class="xl:w-1/3 xl:mt-6  ">
+                    <img class="h-auto max-w-full rounded-lg md:pl-8 " src="img/Image7.png" alt="">
+                </div>
+                <div class="xl:w-1/3  xl:pl-4 mt-2 xl:mt-4">
+                    <h2 class="font-bold xl:text-lg md:text-3xl">
+                        TÉLÉCHARGER DOSSIER DE DEMANDE D’AGRÉMENT
+                    </h2>
+                    <p class="text-justify xl:text-lg md:pt-10 xl:pt-2">
+                        Une opportunité exceptionnelle au VITIB.
+                        Bénéficiez d'avantages fiscaux, d'une infrastructure de pointe et d'un écosystème
+                        dynamique
+                        propice à l'innovation. Immergez votre entreprise dans un environnement stratégique
+                        et
+                        prospère,
+                        prêt à accueillir les entreprises technologiques les plus prometteuses.
+                    </p>
 
-                        <p class="text-justify xl:text-lg">
-                            Rejoignez-nous dès aujourd'hui et transformez l'avenir de votre entreprise au cœur
-                            de
-                            l'Afrique.
-                        </p>
-                    </div>
-                    <div class="xl:w-1/3 xl:pl-4 mt-4 xl:mt-0 md:mx-8 xl:mx-2 md:px-10  xl:px-0">
-                        <div class=" xl:border-dashed xl:border-l-2 border-gray-700 ">
-                            <div class="flex flex-row  pb-4 py-6">
-                                <div class="xl:w-1/5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-                                    </svg>
-                                </div>
-                                <div class="xl:w-3/5">
-                                    <a href="/download-pdf" class="underline hover:underline">
-                                        <p class="xl:text-lg">
-                                            Formulaire de demande d’agrément Pépinière
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="xl:w-1/5">
-                                    <a href="/download-pdf" class="underline hover:underline">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
-                                        </svg>
-                                    </a>
-                                </div>
-
-                                <div></div>
+                    <p class="text-justify xl:text-lg">
+                        Rejoignez-nous dès aujourd'hui et transformez l'avenir de votre entreprise au cœur
+                        de
+                        l'Afrique.
+                    </p>
+                </div>
+                <div class="xl:w-1/3 xl:pl-4 xl:mt-2 xl:mt-0 ">
+                    <div class=" xl:border-dashed xl:border-l-2 border-gray-700">
+                        <div class="flex flex-row ml-4 pb-4 py-6">
+                            <div class="xl:w-1/5">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                                </svg>
                             </div>
-                            <div class="flex flex-row  pb-4">
-                                <div class="xl:w-1/5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-                                    </svg>
-                                </div>
-                                <div class="xl:w-3/5">
-                                    <a href="/opportunity-pdf" class="underline hover:underline">
-                                        <p class="xl:text-lg">
-                                            Consulter la liste des opportunités d’investissement (investir au VITIB)
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="xl:w-1/5">
-                                    <a href="/opportunity-pdf" class="underline hover:underline">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
-                                        </svg>
-                                    </a>
-                                </div>
-
-                                <div></div>
+                            <div class="xl:w-3/5">
+                                <a href="/download-pdf" class="underline hover:underline">
+                                    <p class="xl:text-lg">
+                                        Formulaire de demande d’agrément Pépinière
+                                    </p>
+                                </a>
                             </div>
-                            <div class="flex flex-row  pb-4">
-                                <div class="w-1/5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <div class="xl:w-1/5">
+                                <a href="/download-pdf" class="underline hover:underline">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                        class="w-6 h-6">
                                         <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                                            d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
                                     </svg>
-                                </div>
-                                <div class="w-3/5">
-                                    <a href="/telecharger-pdf" class="underline hover:underline">
-                                        <p class="xl:text-lg">
-                                            Formulaire de demande d'agrement
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="w-1/5">
-                                    <a href="/telecharger-pdf" class="underline hover:underline">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
-                                        </svg>
-                                    </a>
-                                </div>
-
-                                <div></div>
+                                </a>
                             </div>
+
+                            <div></div>
                         </div>
-                        <div class=" w-auto mt-4 xl:mt-0  ">
-                            <div class="xl:border-dashed  xl:border-l-2 border-gray-700">
-                                <div class="pt-2 md:pt-2  ">
-                                    <a href="{{ route('login') }} ">
-                                        <button type="button" style="background-color: #F18700"
-                                            class="font-bold rounded-none text-white text-center p-3 sm:p-4 xl:p-5 md:px-12 xl:px-12">
-                                            REJOIGNEZ-NOUS
-                                        </button>
-                                    </a>
-                                </div>
+                        <div class="flex flex-row ml-4 pb-4">
+                            <div class="xl:w-1/5">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                                </svg>
+                            </div>
+                            <div class="xl:w-3/5">
+                                <a href="/opportunity-pdf" class="underline hover:underline">
+                                    <p class="xl:text-lg">
+                                        Consulter la liste des opportunités d’investissement (investir au VITIB)
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="xl:w-1/5">
+                                <a href="/opportunity-pdf" class="underline hover:underline">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                        class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div></div>
+                        </div>
+                        <div class="flex flex-row ml-4 pb-4">
+                            <div class="w-1/5">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                                </svg>
+                            </div>
+                            <div class="w-3/5">
+                                <a href="/telecharger-pdf" class="underline hover:underline">
+                                    <p class="xl:text-lg">
+                                        Formulaire de demande d'agrement
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="w-1/5">
+                                <a href="/telecharger-pdf" class="underline hover:underline">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                        class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class=" w-auto mt-4 xl:mt-0   ">
+                        <div class="xl:border-dashed px-4 xl:border-l-2 border-gray-700">
+                            <div class="pt-2 sm:pt-2 ">
+                                <a href="{{ route('login') }} ">
+                                <button type="button" style="background-color: #F18700"
+                                    class="font-bold rounded-none text-white text-center  px-8 xl:px-16 md:px-12 md:py-2 py-2 xl:py-4 ">
+                                    REJOIGNEZ-NOUS
+                                </button>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     </div>

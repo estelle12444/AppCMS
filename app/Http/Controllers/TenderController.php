@@ -5,14 +5,18 @@ namespace App\Http\Controllers;
 use App\Models\Tender;
 use Illuminate\Http\Request;
 
+
+
 class TenderController extends Controller
 {
     public function index()
     {
         $tenders = Tender::all();
+        
 
         return view('Front.admin.tender.index', compact('tenders'));
     }
+
 
     public function create()
     {
@@ -26,8 +30,8 @@ class TenderController extends Controller
             'content' => 'required',
             'resume' => 'nullable',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
-            'file' => 'nullable',
-            'limit_date'=>'nullable'
+            'file' => 'nullable|mimes:pdf,doc,docx,xls,xlsx,txt',
+            'limit_date' => 'nullable'
         ]);
 
         $tender = new Tender;
@@ -60,7 +64,7 @@ class TenderController extends Controller
             'resume' => 'nullable',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
             'file' => 'nullable',
-            'limit_date'=>'nullable'
+            'limit_date' => 'nullable'
         ]);
 
         $tender->title = $validatedData['title'];

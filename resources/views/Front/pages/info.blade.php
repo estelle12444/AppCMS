@@ -9,18 +9,37 @@
                 Dossier d'Appel d'Offre N 0{{ $tender->id }}
             </p>
 
-          
             <h5 class="mb-2 text-4xl tracking-tight  capitalize ">
                 Titre:
                 <span class="text-blue-800 text-center dark:text-white font-bold pt-8"> {{ $tender->title }}</span>
             </h5>
             <p class="mb-3 text-lg pt-16 text-justify font-normal text-gray-700 dark:text-gray-400 lowercase">
-                <h5 class="mb-2 text-4xl tracking-tight  capitalize "> Description:</h5> {{ $tender->content }}
+                <h5 class="mb-2 text-4xl tracking-tight  capitalize "> Description:</h5> @php
+                // Diviser le contenu en lignes
+                $lines = explode("\n", $tender->content);
+
+                // Initialiser une variable pour compter les lignes
+                $lineCount = 0;
+            @endphp
+
+            @foreach ($lines as $line)
+                {{ $line }}
+                @php
+                    // Incrémenter le compteur de lignes
+                    $lineCount++;
+
+                    // Ajouter un saut de ligne après chaque deux premières lignes
+                    if ($lineCount % 1 === 0) {
+                        echo '<br>';
+                    }
+                @endphp
+            @endforeach
+
 
             </p>
 
             <p class="mb-3 text-lg pt-4  text-justify  text-gray-700 dark:text-gray-400 lowercase">
-                <h5 class="mb-2 text-4xl tracking-tight  capitalize "> Resume:</h5> {{ $tender->resume }}
+                <h5 class="mb-2 text-4xl tracking-tight  capitalize "> Resume:</h5> {!! wordwrap($tender->resume, 100, "\n", true) !!}
 
             </p>
 
@@ -60,6 +79,12 @@
             </div>
                 </div>
             </p>
+            <a href="/home">
+                <button type="button" style="background-color: #F18700"
+                    class="pl-4 pr-4 pt-2 pb-2 font-medium rounded-none white text-center ">
+                   précédent
+                </button>
+            </a>
 
 
 

@@ -53,14 +53,17 @@
                             alt="" />
                     </a>
                     <div class="p-5 ">
+                        <a href="{{ route('Front.pages.info', $tender->id) }}">
                         <p class="pb-4" style="color: #F18700;">
                             Dossier d'Appel d'Offre N 0{{ $tender->id }}
                         </p>
+                        </a>
+                        <a href="{{ route('Front.pages.info', $tender->id) }}">
                         <h5 class="mb-2 text-xl font-bold tracking-tight text-blue-800 dark:text-white capitalize ">
                             {{ $tender->title }}</h5>
-
+                        </a>
                         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 lowercase">
-                            {{ Str::substr($tender->resume, 0, 100) . '...' }}
+                            {{ Str::substr($tender->resume, 0, 80) . '...' }}
 
                         </p>
                         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
@@ -243,7 +246,7 @@
                     </a>
                     <div class="p-5 ">
                         <p class="pb-4" style="color: #F18700;">
-                            Dossier d'Appel à candidature N 0{{ $quotation->id }}
+                            Demande de Cotation  N'0{{ $quotation->id }}
                         </p>
                         <h5 class="mb-2 text-xl font-bold tracking-tight text-blue-800 dark:text-white capitalize ">
                             {{ $quotation->title }}</h5>
@@ -275,13 +278,17 @@
                                 </svg>
                             </div>
                             <div class="w-3/5">
-                                <a href="{{ route('download_file') }}?filename={{ $quotation->file }}"
-                                    class="underline hover:underline">
-                                    <p class="text-lg">
-                                        Télécharger le fichier de candidature
-                                    </p>
-                                </a>
+                               @auth
+
+                                    <a href="{{ route('download_file') }}?filename={{ $quotation->file }}" class="underline hover:underline">
+                                        <p class="text-lg">Télécharger le fichier de candidature</p>
+                                    </a>
+                                @else
+                                    <p>Vous devez être inscrit pour télécharger le fichier.</p>
+                               @endauth
+
                             </div>
+
                             <div class="w-1/5">
                                 <a href="{{ route('download_file') }}?filename={{ $quotation->file }}"
                                     title="{{ $quotation->title }}" class="underline hover:underline">
@@ -327,7 +334,7 @@
                     </a>
                     <div class="p-5 ">
                         <p class="pb-4" style="color: #F18700;">
-                            Dossier d'Appel à candidature N 0{{ $job->id }}
+                            Dossier d'offre d'emploi N'0{{ $job->id }}
                         </p>
                         <h5 class="mb-2 text-xl font-bold tracking-tight text-blue-800 dark:text-white capitalize ">
                             {{ $job->title }}</h5>
@@ -409,7 +416,7 @@
                     </a>
                     <div class="p-5 ">
                         <p class="pb-4" style="color: #F18700;">
-                            Dossier d'Appel à candidature N 0{{ $event->id }}
+                            Demande de manifestation N'0{{ $event->id }}
                         </p>
                         <h5 class="mb-2 text-xl font-bold tracking-tight text-blue-800 dark:text-white capitalize ">
                             {{ $event->title }}</h5>

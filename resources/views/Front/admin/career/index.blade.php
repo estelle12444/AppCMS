@@ -45,8 +45,8 @@
                                             <tr>
                                                 <td>{{ $career->id }}</td>
                                                 <td>{{ $career->title }}</td>
-                                                <td>{{ $career->content }}</td>
-                                                <td>{{ $career->resume }}</td>
+                                                <td>{{ Str::substr($career->content, 0, 150) . '...' }}</td>
+                                                <td>{{ Str::substr($career->resume, 0, 150) . '...' }}</td>
                                                 <td>{{ $career->limit_date }}</td>
 
                                                 <td>

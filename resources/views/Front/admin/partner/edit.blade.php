@@ -50,15 +50,17 @@
                                     <div class="form-group row mb-4">
                                         <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"
                                             for="sectors">Secteurs d'activité</label>
-                                        <div class="col-sm-12 col-md-7">
-                                            <select class="js-example-basic-multiple" id="sectors" name="sectors[]"  multiple required>
-                                                @foreach ($sectors as $sector)
-                                                    <option
-                                                        value="{{ $sector->id }}"{{ $partner->sectors->contains($sector->id) ? ' selected' : '' }}>
-                                                        {{ $sector->nom }}</option>
-                                                @endforeach
-                                            </select>
-                                        </div>
+                                            <div class="col-sm-12 col-md-7">
+                                                <select class="js-example-basic-multiple form-control" id="sectors" name="sectors[]" multiple required>
+                                                    @foreach ($sectors as $sector)
+                                                        <option
+                                                            value="{{ $sector->id }}"{{ $partner->sectors->contains($sector->id) ? ' selected' : '' }}>
+                                                            {{ $sector->nom }}
+                                                        </option>
+                                                    @endforeach
+                                                </select>
+                                            </div>
+
                                     </div>
                                     <div class="form-group row mb-4">
                                         <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"></label>
@@ -74,4 +76,16 @@
 
             </div>
     </section>
+
+    <script>
+        $(document).ready(function() {
+            $('#sectors').select2({
+                tags: true,
+                tokenSeparators: [',', ' '],
+                placeholder: "Sélectionnez les secteurs",
+            });
+        });
+    </script>
+
+
 @endsection

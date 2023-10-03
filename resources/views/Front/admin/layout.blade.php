@@ -1,3 +1,7 @@
+<?php
+$url = $_SERVER['REQUEST_URI'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +10,10 @@
   <title>VITIB-ADMIN</title>
 
   <link href="img/favicon.ico" rel="icon">
-
+  <!-- CSS Libraries -->
+  <link rel="stylesheet" href="assets/modules/jqvmap/dist/jqvmap.min.css">
+  <link rel="stylesheet" href="assets/modules/weather-icon/css/weather-icons.min.css">
+  <link rel="stylesheet" href="assets/modules/weather-icon/css/weather-icons-wind.min.css">
   <!-- General CSS Files -->
   <link rel="stylesheet" href="{{asset('assets/modules/summernote/summernote-bs4.css')}}">
   <link rel="stylesheet" href="{{asset('assets/modules/bootstrap/css/bootstrap.min.css')}}">
@@ -17,12 +24,14 @@
 
   <!-- CSS Libraries -->
 
+
   <!-- Template CSS -->
   <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
   <link rel="stylesheet" href="{{asset('assets/css/components.css')}}">
 
 
 <!-- Start GA -->
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-94034622-3"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -34,6 +43,12 @@
 
 </script>
 <!-- /END GA --></head>
+
+<style>
+    .text-white{
+        color: #ffffff;
+    }
+</style>
 
 <body>
   <div id="app">
@@ -146,13 +161,12 @@
 
             </li>
             <li class="menu-header">Partenaires</li>
-            <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-handshake"></i> <span>Partenaire</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="/partner">Liste</a></li>
-                <li><a class="nav-link" href="/partner/create">Enregistrer</a></li>
-
-              </ul>
+            <li class="dropdown<?php echo ($url === '/partner' || $url === '/partner/') ? ' bg-primary text-white' : ''; ?>">
+                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-handshake"></i> <span>Partenaires</span></a>
+                <ul class="dropdown-menu">
+                    <li><a class="nav-link" href="/partner">Liste</a></li>
+                    <li><a class="nav-link" href="/partner/create">Enregistrer</a></li>
+                </ul>
             </li>
             <li class="menu-header">Secteurs d'activités</li>
             <li class="dropdown">
@@ -160,6 +174,15 @@
               <ul class="dropdown-menu">
                 <li><a class="nav-link" href="/sector">Liste</a></li>
                 <li><a class="nav-link" href="/sector/create">Enregistrer</a></li>
+
+              </ul>
+            </li>
+            <li class="menu-header">Comptes Entreprise</li>
+            <li class="dropdown">
+              <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-list"></i> <span>Comptes Entreprise</span></a>
+              <ul class="dropdown-menu">
+                <li><a class="nav-link" href="/company">Liste des Entreprises</a></li>
+                <li><a class="nav-link" href="#">Enregistrer</a></li>
 
               </ul>
             </li>
@@ -239,6 +262,8 @@
   <!-- JS Libraies -->
 
   <!-- Page Specific JS File -->
+   <script src="assets/modules/jqvmap/dist/jquery.vmap.min.js"></script>
+    <script src="assets/modules/jqvmap/dist/maps/jquery.vmap.world.js"></script>
 
   <!-- Template JS File -->
   <script src="{{asset('assets/js/scripts.js')}}"></script>
@@ -246,5 +271,8 @@
   <script src="{{asset('assets/js/features-post-create.js')}}"></script>
   <script src="{{asset('assets/modules/upload-preview/assets/js/jquery.uploadPreview.min.js')}}"></script>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="{{ asset('assets/js/page/index-0.js') }}"></script>
+   <script src="{{ asset('assets/modules/chart.min.js') }}"></script>
+
 </body>
 </html>

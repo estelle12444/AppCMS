@@ -34,14 +34,13 @@
                   <div class="form-group row mb-4">
                     <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Secteur d'activité</label>
                     <div class="col-sm-12 col-md-7">
-
-                      <select name="sectors[]" class="form-control selectric">
+                        <select name="sectors[]" class="form-control select2-tags" multiple>
                             @foreach ($sectors as $sector)
-                                <option value="{{$sector->id}}">{{$sector->nom}}</option>
+                                <option value="{{ $sector->id }}">{{ $sector->nom }}</option>
                             @endforeach
                         </select>
                     </div>
-                  </div>
+                </div>
                   <div class="form-group row mb-4">
                     <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Descriptif activité</label>
                     <div class="col-sm-12 col-md-7">
@@ -73,5 +72,14 @@
           </div>
     </div>
 </section>
+<script>
+    $(document).ready(function() {
+        $('.select2-tags').select2({
+            tags: true,
+            tokenSeparators: [',', ' '],
+            placeholder: "Sélectionnez les secteurs",
+        });
+    });
+</script>
 
 @endsection

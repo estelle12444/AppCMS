@@ -12,11 +12,6 @@
         </div>
 
         <div class="section-body">
-            {{-- <h2 class="section-title">DataTables</h2>
-      <p class="section-lead">
-        We use 'DataTables' made by @SpryMedia. You can check the full documentation <a href="https://datatables.net/">here</a>.
-      </p> --}}
-
             <div class="row">
                 <div class="col-12">
                     <div class="card">
@@ -46,8 +41,8 @@
                                             <tr>
                                                 <td>{{ $tender->id }}</td>
                                                 <td>{{ $tender->title }}</td>
-                                                <td>{{ $tender->content }}</td>
-                                                <td>{{ $tender->resume }}</td>
+                                                <td>{{ Str::substr($tender->content, 0, 150) . '...' }}</td>
+                                                <td>{{ Str::substr($tender->resume, 0, 150) . '...' }}</td>
                                                 <td>{{ $tender->limit_date }}</td>
 
                                                 <td>
@@ -82,11 +77,8 @@
                                                             class="btn btn-danger btn-action trigger--fire-modal-6"
                                                             onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet appel d\'offres?')"><i
                                                                 class="fas fa-trash"></i></button>
-
                                                     </form>
-
                                                 </td>
-
                                             </tr>
                                         @endforeach
                                     </tbody>

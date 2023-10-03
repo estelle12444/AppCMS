@@ -33,150 +33,6 @@
         </div>
     </section>
 
-
-    {{-- <section class="" style="height:1480px; ">
-    <div class="xl:px-32 px-12  relative bg-repeat-x " style="background-image: url(img/Image8.png);  ">
-
-        <div class="xl:flex flex-row ">
-            <div data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="500" class="basis-1/2">
-                <img src="img/dg.png" width="" alt="">
-            </div>
-            <div  data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="700" class="xl:basis-1/2 ">
-                <h2 class="font-bold text-5xl py-8">Mot du directeur Géneral</h2>
-                <p class="text-justify text-gray-600  text-lg tracking-tight">
-                    Bienvenue sur le site Internet du Village des Technologies de l’Information et de la Biotechnologie
-                    (VITIB
-                    SA).
-                <p class="text-justify text-gray-600 ">
-                    Ce site est une plateforme d’informations de qualité sur nos missions, nos objectifs. Les thématiques
-                    développées ici vous permettront d’avoir une meilleure visibilité de nos activités et les perspectives
-                    de
-                    partenariat avec le VITIB SA.
-                </p>
-
-                <p class=" text-justify text-gray-600">
-                    Le VITIB SA se veut un instrument de développement de la Côte d’Ivoire, particulièrement dans les
-                    domaines
-                    des Technologies de l’Information et de la Communication (TIC) ainsi que de la Biotechnologie,
-                    conformément
-                    à la vison de son Excellence Alassane OUATTARA, Président de la République, de faire de notre Pays un
-                    hub
-                    régional dans ce secteur. A ce titre, le VITIB, eu égard son statut de Zone économique spéciale, offre
-                    un
-                    cadre fiscal attractif aux entreprises désirant s’y installer.
-                </p>
-                <p class="text-justify text-gray-600">
-                    Notre ambition est d’être un vecteur puissant pour le développement de notre Pays et de la sous-région.
-                    Aussi, nous sommes résolument engagés, avec l’Etat de Côte d’Ivoire et nos partenaires, dans l’élan de
-                    création d’opportunités et d’emplois pour les jeunes, acteurs clés pour l’avenir.
-                </p>
-                <p class="text-justify text-gray-600">
-                    Vos opinions nous intéressent fortement et sera pour nous une source de motivation supplémentaire pour
-                    enrichir qualitativement nos offres et services ; nous serons heureux de les recevoir afin de faire de
-                    cette
-                    plateforme une source interactive de collaboration avec vous.
-                    Notre engagement et notre détermination nous feront avancer ensemble.
-
-                </p>
-                <p class="text-justify text-gray-600">
-                    Cordialement.
-                </p>
-
-                </p>
-                <div class="py-8" style="float:right">
-                    <h3 class="font-bold ">
-                        M. Mebeti Dosso
-                    </h3>
-                    <p>
-                        Directeur General du Vitib
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="xl:flex flex-row white absolute  left-0" style="background-image: url(img/blue.png); top:90%">
-            <div class="xl:basis-1/2 xl:pl-32 pl-6 xl:pr-8 pt-10  ">
-                <h2  class="font-bold text-4xl ">
-                    Notre vision
-                </h2>
-                <p  class="text-justify pt-8 pb-8  ">
-                    Notre vision est de devenir un pôle d’innovation et de développement technologique qui catalyse la
-                    croissance économique, encourage l’entrepreneuriat et transforme la zone en un hub technologique régional de
-                    renommée internationale. <br>
-                    Cette vision  inclut quelques éléments clés qui sont:
-                </p>
-                <h2 data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="500" class=" font-bold  tracking-tight ">
-                    1. Infrastructure de pointe :
-                </h2>
-                <p  data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="600" class="text-justify pt-4 pb-4   tracking-tight">
-
-                    Une zone techno pôle devrait disposer d'infrastructures modernes, telles que des centres de recherche, des
-                    laboratoires, des espaces de travail collaboratifs et des équipements technologiques de pointe.
-                    <br>Cela
-                    faciliterait le développement et la mise en œuvre de nouvelles technologies.
-                </p>
-                <h2  data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="700" class=" font-bold tracking-tight ">
-                    2. Collaboration entre les acteurs :
-                </h2>
-                 <p data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="800" class="text-justify pt-4 pb-4 tracking-tight ">
-
-                    Une vision forte serait de promouvoir la collaboration entre les entreprises, les universités, les centres
-                    de recherche et les gouvernements locaux. <br> En favorisant les partenariats stratégiques, les échanges de
-                    connaissances et les initiatives communes, on peut stimuler l'innovation et accélérer le développement
-                    technologique.
-                </p>
-
-                <h2  data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="600" class="font-bold font-bold  tracking-tight">
-                    3. Formation et développement des talents :
-                </h2>
-                 <p data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="700" class="text-justify pt-4 pb-4 tracking-tight ">
-
-                    Une zone techno pôle devrait s'engager à former et à développer une main-d'œuvre qualifiée.
-                    <br>Cela peut être
-                    réalisé en établissant des programmes de formation spécialisés, en offrant des opportunités d'apprentissage
-                    continu et en favorisant les interactions entre les étudiants, les chercheurs et les professionnels de
-                    l'industrie.
-                </p>
-
-            </div>
-            <div class="xl:basis-1/2 xl:pt-56 xl:pl-8 xl:pr-32">
-
-                <h2 data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="500" class=" font-bold  tracking-tight ">
-                    4. Soutien à l'entrepreneuriat :
-                </h2>
-                 <p data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="600"class="text-justify pt-4 pb-4 tracking-tight ">
-
-                    Encourager l'entrepreneuriat et la création de startups est essentiel pour stimuler l'innovation. <br> Une vision
-                    pour une zone techno pôle pourrait inclure des incubateurs d'entreprises, des fonds d'investissement,<br> des
-                    programmes d'accélération et un soutien financier pour les entrepreneurs afin de favoriser l'émergence de
-                    nouvelles entreprises technologiques.
-                </p>
-                <h2 data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="700" class="font-bold  tracking-tight ">
-                    5. Durabilité et responsabilité sociale :
-                </h2>
-                <p data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="800" class="text-justify pt-4 pb-4 tracking-tight">
-
-                    Une vision moderne pour une zone techno pôle devrait intégrer des principes de durabilité environnementale
-                    et de responsabilité sociale. <br>Il est important d'adopter des pratiques respectueuses de l'environnement, <br>de
-                    promouvoir l'énergie propre et d'encourager le développement de solutions technologiques qui contribuent à
-                    résoudre les défis sociaux et environnementaux.
-                </p>
-                <h2 data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="600" class=" font-bold  tracking-tight ">
-                    6. Image de marque et réputation :
-                </h2>
-                 <p data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="700" class="text-justify pt-4 pb-4 tracking-tight">
-
-                    Le fait d'être associé à VITIB Technopolis, un projet phare en matière de technologie et d'innovation en
-                    Cote d’Ivoire, peut améliorer la marque et la réputation de votre entreprise. <br> Elle témoigne de votre
-                    engagement en faveur de l'innovation, du progrès technologique et de la durabilité,ce qui peut attirer des
-                    investisseurs, des partenaires et des clients.
-                </p>
-
-            </div>
-        </div>
-    </div>
-
-    </section> --}}
     <section class="" style="min-height: 1480px;">
         <div class="xl:px-32 xl:px-12 xl:px-4 relative bg-repeat-x" style="background-image: url(img/Image8.png);">
 
@@ -788,129 +644,132 @@
                     COMMENT NOUS REJOINDRE
                 </h1>
 
-                <div class="xl:flex flex-row py-4 xl:py-8 " data-aos="zoom-in-up" data-aos-delay="700"
-                    data-aos-delay="700">
-                    <div class="xl:w-1/3 ">
-                        <img class="h-auto max-w-full rounded-lg md:pl-20 xl:pl-4" src="img/Image7.png" alt="">
-                    </div>
-                    <div class="xl:w-1/3  mt-4 xl:mt-0 xl:pt-0  md:pt-8 md:px-20 xl:px-2 xl:pl-4 ">
-                        <h2 class="font-bold xl:text-lg md:text-3xl">
-                            TÉLÉCHARGER DOSSIER DE DEMANDE D’AGRÉMENT
-                        </h2>
-                        <p class="text-justify xl:text-lg md:pt-10 xl:pt-0">
-                            Une opportunité exceptionnelle au VITIB.
-                            Bénéficiez d'avantages fiscaux, d'une infrastructure de pointe et d'un écosystème
-                            dynamique
-                            propice à l'innovation. Immergez votre entreprise dans un environnement stratégique
-                            et
-                            prospère,
-                            prêt à accueillir les entreprises technologiques les plus prometteuses.
-                        </p>
-
-                        <p class="text-justify xl:text-lg">
-                            Rejoignez-nous dès aujourd'hui et transformez l'avenir de votre entreprise au cœur
-                            de
-                            l'Afrique.
-                        </p>
-                    </div>
-                    <div class="xl:w-1/3 xl:pl-4 mt-4 xl:mt-0 md:mx-8 xl:mx-2 md:px-10  xl:px-0">
-                        <div class=" xl:border-dashed  xl:border-l-2 border-gray-700 ">
-                            <div class="flex flex-row xl:ml-4  pb-4 py-6">
-                                <div class="xl:w-1/5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-                                    </svg>
-                                </div>
-                                <div class="xl:w-3/5">
-                                    <a href="/download-pdf" class="underline hover:underline">
-                                        <p class="xl:text-lg">
-                                            Formulaire de demande d’agrément Pépinière
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="xl:w-1/5">
-                                    <a href="/download-pdf" class="underline hover:underline">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
-                                        </svg>
-                                    </a>
-                                </div>
-
-                                <div></div>
+                <div class="xl:flex flex-row py-4 xl:py-8" data-aos="zoom-in-up" data-aos-delay="700"
+                            data-aos-delay="700">
+                            <div class="xl:w-1/3 xl:mt-6  ">
+                                <img class="h-auto max-w-full rounded-lg md:pl-8 " src="img/Image7.png" alt="">
                             </div>
-                            <div class="flex flex-row xl:ml-4 pb-4">
-                                <div class="xl:w-1/5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-                                    </svg>
-                                </div>
-                                <div class="xl:w-3/5">
-                                    <a href="/opportunity-pdf" class="underline hover:underline">
-                                        <p class="xl:text-lg">
-                                            Consulter la liste des opportunités d’investissement (investir au VITIB)
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="xl:w-1/5">
-                                    <a href="/opportunity-pdf" class="underline hover:underline">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
-                                        </svg>
-                                    </a>
-                                </div>
+                            <div class="xl:w-1/3  xl:pl-4 mt-2 xl:mt-4">
+                                <h2 class="font-bold xl:text-lg md:text-3xl">
+                                    TÉLÉCHARGER DOSSIER DE DEMANDE D’AGRÉMENT
+                                </h2>
+                                <p class="text-justify xl:text-lg md:pt-10 xl:pt-2">
+                                    Une opportunité exceptionnelle au VITIB.
+                                    Bénéficiez d'avantages fiscaux, d'une infrastructure de pointe et d'un écosystème
+                                    dynamique
+                                    propice à l'innovation. Immergez votre entreprise dans un environnement stratégique
+                                    et
+                                    prospère,
+                                    prêt à accueillir les entreprises technologiques les plus prometteuses.
+                                </p>
 
-                                <div></div>
+                                <p class="text-justify xl:text-lg">
+                                    Rejoignez-nous dès aujourd'hui et transformez l'avenir de votre entreprise au cœur
+                                    de
+                                    l'Afrique.
+                                </p>
                             </div>
-                            <div class="flex flex-row xl:ml-4 pb-4">
-                                <div class="w-1/5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-                                    </svg>
-                                </div>
-                                <div class="w-3/5">
-                                    <a href="/telecharger-pdf" class="underline hover:underline">
-                                        <p class="xl:text-lg">
-                                            Formulaire de demande d'agrement
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="w-1/5">
-                                    <a href="/telecharger-pdf" class="underline hover:underline">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
-                                        </svg>
-                                    </a>
-                                </div>
+                            <div class="xl:w-1/3 xl:pl-4 xl:mt-2 xl:mt-0 ">
+                                <div class=" xl:border-dashed xl:border-l-2 border-gray-700">
+                                    <div class="flex flex-row ml-4 pb-4 py-6">
+                                        <div class="xl:w-1/5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                                            </svg>
+                                        </div>
+                                        <div class="xl:w-3/5">
+                                            <a href="/download-pdf" class="underline hover:underline">
+                                                <p class="xl:text-lg">
+                                                    Formulaire de demande d’agrément Pépinière
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="xl:w-1/5">
+                                            <a href="/download-pdf" class="underline hover:underline">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                    class="w-6 h-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                                                </svg>
+                                            </a>
+                                        </div>
 
-                                <div></div>
+                                        <div></div>
+                                    </div>
+                                    <div class="flex flex-row ml-4 pb-4">
+                                        <div class="xl:w-1/5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                                            </svg>
+                                        </div>
+                                        <div class="xl:w-3/5">
+                                            <a href="/opportunity-pdf" class="underline hover:underline">
+                                                <p class="xl:text-lg">
+                                                    Consulter la liste des opportunités d’investissement (investir au VITIB)
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="xl:w-1/5">
+                                            <a href="/opportunity-pdf" class="underline hover:underline">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                    class="w-6 h-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                                                </svg>
+                                            </a>
+                                        </div>
+
+                                        <div></div>
+                                    </div>
+                                    <div class="flex flex-row ml-4 pb-4">
+                                        <div class="w-1/5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                                            </svg>
+                                        </div>
+                                        <div class="w-3/5">
+                                            <a href="/telecharger-pdf" class="underline hover:underline">
+                                                <p class="xl:text-lg">
+                                                    Formulaire de demande d'agrement
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="w-1/5">
+                                            <a href="/telecharger-pdf" class="underline hover:underline">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                    class="w-6 h-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                                                </svg>
+                                            </a>
+                                        </div>
+
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class=" w-auto mt-4 xl:mt-0   ">
+                                    <div class="xl:border-dashed px-4 xl:border-l-2 border-gray-700">
+                                        <div class="pt-2 sm:pt-2 ">
+                                            <a href="{{ route('login') }} ">
+                                            <button type="button" style="background-color: #F18700"
+                                                class="font-bold rounded-none text-white text-center  px-8 xl:px-16 md:px-12 md:py-2 py-2 xl:py-4 ">
+                                                REJOIGNEZ-NOUS
+                                            </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class=" w-auto mt-4 xl:mt-0  ">
-                            <div class="xl:border-dashed  xl:border-l-2 border-gray-700">
-                                <div class="pt-2 md:pt-2 xl:ml-4 ">
-                                    <a href="{{ route('login') }} ">
-                                        <button type="button" style="background-color: #F18700"
-                                            class="font-bold rounded-none text-white text-center p-3 sm:p-4 xl:p-5 md:px-12 xl:px-12">
-                                            REJOIGNEZ-NOUS
-                                        </button>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

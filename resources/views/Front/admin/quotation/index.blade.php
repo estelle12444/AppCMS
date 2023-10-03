@@ -46,8 +46,8 @@
                                         <tr>
                                             <td>{{ $quotation->id }}</td>
                                             <td>{{ $quotation->title }}</td>
-                                            <td>{{ $quotation->content }}</td>
-                                            <td>{{ $quotation->resume }}</td>
+                                            <td>{{ Str::substr($quotation->content, 0, 150) . '...' }}</td>
+                                            <td>{{ Str::substr($quotation->resume, 0, 150) . '...' }}</td>
                                             <td>{{ $quotation->limit_date }}</td>
 
                                             <td>
