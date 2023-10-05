@@ -29,7 +29,7 @@
                     $lineCount++;
 
                     // Ajouter un saut de ligne après chaque deux premières lignes
-                    if ($lineCount % 1 === 0) {
+                    if ($lineCount % 2 === 0) {
                         echo '<br>';
                     }
                 @endphp

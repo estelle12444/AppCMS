@@ -35,7 +35,7 @@
                                         <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Descriptif
                                             activité</label>
                                         <div class="col-sm-12 col-md-7">
-                                            <textarea class="form-control" id="description" name="content" rows="3">{{ $partner->content }}</textarea>
+                                            <textarea class="form-control summernote-simple" id="description" name="content" rows="3">{{ $partner->content }}</textarea>
                                         </div>
                                     </div>
                                     <div class="form-group row mb-4">

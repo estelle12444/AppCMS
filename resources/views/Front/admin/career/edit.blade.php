@@ -34,13 +34,15 @@
                                 <div class="form-group row mb-4">
                                     <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Description de l'appel</label>
                                     <div class="col-sm-12 col-md-7">
-                                        <textarea class="form-control" id="description" name="content" rows="3">{{ $career->content }}</textarea>
+
+                                        <textarea name="content" class="form-control summernote-simple" rows="3">{{ $career->content }}</textarea>
                                     </div>
                                 </div>
                                 <div class="form-group row mb-4">
                                     <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Résumé</label>
                                     <div class="col-sm-12 col-md-7">
-                                        <textarea class="form-control" id="resume" name="resume" rows="3">{{ $career->resume }}</textarea>
+
+                                        <textarea class="form-control summernote-simple" rows="3" name="resume" rows="3">{{ $career->resume }}</textarea>
                                     </div>
                                 </div>
                                 <div class="form-group row mb-4">

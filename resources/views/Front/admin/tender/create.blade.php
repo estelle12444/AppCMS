@@ -37,7 +37,7 @@
                                     <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Description de
                                         l'Offre</label>
                                     <div class="col-sm-12 col-md-7">
-                                        <textarea name="content" class="form-control"></textarea>
+                                        <textarea name="content" class="form-control summernote-simple"></textarea>
                                         @error('content')
                                             <div class="alert alert-danger">{{ $message }}</div>
                                         @enderror
@@ -47,7 +47,7 @@
                                     <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Resume de
                                         l'Offre</label>
                                     <div class="col-sm-12 col-md-7">
-                                        <textarea name="resume" class="form-control"></textarea>
+                                        <textarea name="resume" class="form-control summernote-simple"></textarea>
                                         @error('resume')
                                             <div class="alert alert-danger">{{ $message }}</div>
                                         @enderror

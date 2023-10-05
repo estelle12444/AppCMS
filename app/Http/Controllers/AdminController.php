@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Auth;
 use App\Models\BusinessSector;
+use App\Models\Company;
 use App\Models\Partner;
 use App\Models\Sector;
 use App\Models\User;
@@ -23,8 +24,24 @@ class AdminController extends Controller
 
     public function dashboard()
     {
-        return view('Front.admin.home');
+        $companies = Company::all();
+        $activeCompaniesCount = Company::where('status', true)->count();
+
+        // Compter le nombre d'entreprises en attente
+        $pendingCompaniesCount = Company::where('status', false)->count();
+
+        return view('Front.admin.home', compact('companies','activeCompaniesCount', 'pendingCompaniesCount'));
     }
+
+    public function company()
+    {
+        $companies = Company::all();
+
+
+
+        return view('Front.admin.company.index', compact('companies'));
+    }
+
 
 
     public function logout()
@@ -74,7 +91,7 @@ class AdminController extends Controller
         $sectors = Sector::all();
 
 
-        return view('Front.admin.partner.index', compact('partners','sectors'));
+        return view('Front.admin.partner.index', compact('partners', 'sectors'));
     }
 
 

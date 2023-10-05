@@ -20,6 +20,7 @@ $url = $_SERVER['REQUEST_URI'];
   <link rel="stylesheet" href="{{asset('assets/modules/fontawesome/css/all.min.css')}}">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 
+
   <link rel="stylesheet" href="{{asset('assets/modules/jquery-selectric/selectric.css')}}">
 
   <!-- CSS Libraries -->
@@ -46,7 +47,7 @@ $url = $_SERVER['REQUEST_URI'];
 
 <style>
     .text-white{
-        color: #ffffff;
+        color:#fffff !important;
     }
 </style>
 
@@ -129,7 +130,7 @@ $url = $_SERVER['REQUEST_URI'];
             <div class="d-sm-none d-lg-inline-block">Bienvenue {{ app('App\Http\Controllers\AdminController')->getUsername() }}  </div></a>
             <div class="dropdown-menu dropdown-menu-right">
               <div class="dropdown-title">Connecté il y a 5 min</div>
-              <a href="features-profile.html" class="dropdown-item has-icon">
+              <a href="/profil_admin" class="dropdown-item has-icon">
                 <i class="far fa-user"></i> Profile
               </a>
 
@@ -146,7 +147,7 @@ $url = $_SERVER['REQUEST_URI'];
       </nav>
       <div class="main-sidebar sidebar-style-2">
         <aside id="sidebar-wrapper">
-          <div class="sidebar-brand  " style="margin-bottom:20px;margin-top:20px;">
+          <div class="sidebar-brand" style="margin-bottom:20px;margin-top:20px;">
             <a href="/home" >
                     <img src="{{asset('img/logo2.png')}}" width="200" alt="">
             </a>
@@ -161,69 +162,69 @@ $url = $_SERVER['REQUEST_URI'];
 
             </li>
             <li class="menu-header">Partenaires</li>
-            <li class="dropdown<?php echo ($url === '/partner' || $url === '/partner/') ? ' bg-primary text-white' : ''; ?>">
-                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-handshake"></i> <span>Partenaires</span></a>
+            <li class="dropdown">
+                <a href="#" class="nav-link has-dropdown <?php echo ($url === '/partner'||$url === '/partner/create') ? ' active bg-primary text-white' : ''; ?>" data-toggle="dropdown"><i class="fas fa-handshake"></i> <span class="">Partenaires</span></a>
                 <ul class="dropdown-menu">
-                    <li><a class="nav-link" href="/partner">Liste</a></li>
-                    <li><a class="nav-link" href="/partner/create">Enregistrer</a></li>
+                    <li><a class="nav-link<?php echo ($url === '/partner') ? ' active bg-primary text-white' : ''; ?>" href="/partner">Liste</a></li>
+                    <li><a class="nav-link<?php echo ($url === '/partner/create') ? ' active bg-primary text-white' : ''; ?>" href="/partner/create">Enregistrer</a></li>
                 </ul>
             </li>
             <li class="menu-header">Secteurs d'activités</li>
             <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-list"></i> <span>Secteurs</span></a>
+              <a href="#" class="nav-link has-dropdown <?php echo ($url === '/sector'||$url === '/sector/create') ? ' active bg-primary text-white' : ''; ?>" data-toggle="dropdown"><i class="fas fa-list"></i> <span>Secteurs</span></a>
               <ul class="dropdown-menu">
-                <li><a class="nav-link" href="/sector">Liste</a></li>
-                <li><a class="nav-link" href="/sector/create">Enregistrer</a></li>
+                <li><a class="nav-link <?php echo ($url === '/sector') ? ' active bg-primary text-white' : ''; ?>" href="/sector">Liste</a></li>
+                <li><a class="nav-link<?php echo ($url === '/sector/create') ? ' active bg-primary text-white' : ''; ?>" href="/sector/create">Enregistrer</a></li>
 
               </ul>
             </li>
             <li class="menu-header">Comptes Entreprise</li>
             <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-list"></i> <span>Comptes Entreprise</span></a>
+              <a href="#" class="nav-link has-dropdown <?php echo ($url === '/company'||$url === '/company/create') ? ' active bg-primary text-white' : ''; ?>" data-toggle="dropdown"><i class="fas fa-list"></i> <span>Comptes Entreprise</span></a>
               <ul class="dropdown-menu">
-                <li><a class="nav-link" href="/company">Liste des Entreprises</a></li>
-                <li><a class="nav-link" href="#">Enregistrer</a></li>
+                <li><a class="nav-link <?php echo ($url === '/company') ? ' active bg-primary text-white' : ''; ?>"  href="/company">Liste des Entreprises</a></li>
+                <li><a class="nav-link" href="/company/create">Enregistrer</a></li>
 
               </ul>
             </li>
-            <li class="menu-header">Appels d'Offres</li>
+            <li class="menu-header">Annonces</li>
             <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-briefcase"></i> <span>Appels d'Offres</span></a>
+              <a href="#" class="nav-link has-dropdown <?php echo ($url === '/tender'||$url === '/tender/create') ? ' active bg-primary text-white' : ''; ?>" data-toggle="dropdown"><i class="fas fa-briefcase"></i> <span>Appels d'Offres</span></a>
               <ul class="dropdown-menu">
-                <li><a class="nav-link" href="/tender">Liste des appels </a></li>
-                <li><a class="nav-link" href="/tender/create">Ajouter un appel d'offre</a></li>
+                <li><a class="nav-link <?php echo ($url === '/tender') ? ' active bg-primary text-white' : ''; ?>" href="/tender">Liste des appels </a></li>
+                <li><a class="nav-link<?php echo ($url === '/tender/create') ? ' active bg-primary text-white' : ''; ?>" href="/tender/create">Ajouter un appel d'offre</a></li>
               </ul>
             </li>
-            <li class="menu-header">Appels à Candidature</li>
+
             <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-users"></i> <span>Appels à Candidature</span></a>
+              <a href="#" class="nav-link has-dropdown <?php echo ($url === '/career'||$url === '/career/create') ? ' active bg-primary text-white' : ''; ?>" data-toggle="dropdown"><i class="fas fa-users"></i> <span>Appels à Candidature</span></a>
               <ul class="dropdown-menu">
-                <li><a class="nav-link" href="/career">Liste des appels </a></li>
-                <li><a class="nav-link" href="/career/create">Ajouter un appel d'offre</a></li>
+                <li><a class="nav-link <?php echo ($url === '/career') ? ' active bg-primary text-white' : ''; ?>" href="/career">Liste des appels </a></li>
+                <li><a class="nav-link <?php echo ($url === '/career/create') ? ' active bg-primary text-white' : ''; ?>" href="/career/create">Ajouter un appel d'offre</a></li>
               </ul>
             </li>
-            <li class="menu-header">Offres d'emploi</li>
+
             <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-user-plus"></i> <span>Offres d'emploi</span></a>
+              <a href="#" class="nav-link has-dropdown<?php echo ($url === '/job'||$url === '/job/create') ? ' active bg-primary text-white' : ''; ?>" data-toggle="dropdown"><i class="fas fa-user-plus"></i> <span>Offres d'emploi</span></a>
               <ul class="dropdown-menu">
-                <li><a class="nav-link" href="/job">Liste des offres </a></li>
-                <li><a class="nav-link" href="/job/create">Ajouter une offre</a></li>
+                <li><a class="nav-link <?php echo ($url === '/job') ? ' active bg-primary text-white' : ''; ?>" href="/job">Liste des offres </a></li>
+                <li><a class="nav-link<?php echo ($url === '/job/create') ? ' active bg-primary text-white' : ''; ?>" href="/job/create">Ajouter une offre</a></li>
               </ul>
             </li>
-            <li class="menu-header">Demande de manifestation</li>
+
             <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-folder"></i> <span>Demande de manifestation</span></a>
+              <a href="#" class="nav-link has-dropdown <?php echo ($url === '/event'||$url === '/event/create') ? ' active bg-primary text-white' : ''; ?>" data-toggle="dropdown"><i class="fas fa-folder"></i> <span>Demande de manifestation</span></a>
               <ul class="dropdown-menu">
-                <li><a class="nav-link" href="/event">Liste des demandes </a></li>
-                <li><a class="nav-link" href="/event/create">Ajouter une demande</a></li>
+                <li><a class="nav-link <?php echo ($url === '/event') ? ' active bg-primary text-white' : ''; ?>" href="/event">Liste des demandes </a></li>
+                <li><a class="nav-link <?php echo ($url === '/event/create') ? ' active bg-primary text-white' : ''; ?>" href="/event/create">Ajouter une demande</a></li>
               </ul>
             </li>
-            <li class="menu-header">Demande de Quotation</li>
+
             <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span>Demande de Quotation</span></a>
+              <a href="#" class="nav-link has-dropdown <?php echo ($url === '/quotation'||$url === '/quotation/create') ? ' active bg-primary text-white' : ''; ?>" data-toggle="dropdown"><i class="fas fa-columns"></i> <span>Demande de Quotation</span></a>
               <ul class="dropdown-menu">
-                <li><a class="nav-link" href="/quotation">Liste des demandes </a></li>
-                <li><a class="nav-link" href="/quotation/create">Ajouter une demande</a></li>
+                <li><a class="nav-link <?php echo ($url === '/quotation') ? ' active bg-primary text-white' : ''; ?>" href="/quotation">Liste des demandes </a></li>
+                <li><a class="nav-link <?php echo ($url === '/quotation/create') ? ' active bg-primary text-white' : ''; ?>" href="/quotation/create">Ajouter une demande</a></li>
               </ul>
             </li>
           </ul>
@@ -268,7 +269,8 @@ $url = $_SERVER['REQUEST_URI'];
   <!-- Template JS File -->
   <script src="{{asset('assets/js/scripts.js')}}"></script>
   <script src="{{asset('assets/js/custom.js')}}"></script>
-  <script src="{{asset('assets/js/features-post-create.js')}}"></script>
+
+
   <script src="{{asset('assets/modules/upload-preview/assets/js/jquery.uploadPreview.min.js')}}"></script>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <script src="{{ asset('assets/js/page/index-0.js') }}"></script>

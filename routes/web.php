@@ -4,6 +4,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AnnonceController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\CareerController;
+use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\DownloadController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\JobController;
@@ -75,6 +76,9 @@ Route::get('/join', function () {
     return view('Front.pages.join');
 });
 
+Route::get('/profil_admin', function () {
+    return view('Front.admin.profi_admin.index');
+});
 Route::get('/media', function () {
     return view('Front.pages.media');
 });
@@ -186,10 +190,7 @@ Route::get('/count/', function (Request $request) {
     return response()->file(storage_path('app/public/'.$filename));
 })->name('download_file');
 
-Route::get('/admin', function (Request $request) {
 
-    return view('Front.admin.home');
-});
 
 Route::get('/logout', [App\Http\Controllers\AdminController::class, 'logout'])->name('auth.login');
 
@@ -197,11 +198,31 @@ Route::get('/logout', [App\Http\Controllers\AdminController::class, 'logout'])->
 Auth::routes();
 
 Route::get('/profil', [App\Http\Controllers\ProfilController::class, 'index'])->name('Front.profil.home');
-Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('Front.admin.home');
+Route::get('/admin', [AdminController::class, 'dashboard'])->name('Front.admin.home');
 
 
-Route::get('/auth/register',  [RegisterController::class, 'create'])->name('auth.register');
-Route::post('auth',  [RegisterController::class, 'store'])->name('auth.login');
+// Route::get('/auth/register',  [RegisterController::class, 'create'])->name('auth.register');
+// Route::post('auth',  [RegisterController::class, 'store'])->name('auth.login');
+
+
+Route::get('/auth/register', [CompanyController::class,'step1']) ;
+Route::post('/auth/register', [CompanyController::class,'storeStep1'])->name('company.step1');
+
+
+
+Route::get('/auth/register-other',[CompanyController::class,'step2']);
+Route::post('/auth/register-other',  [CompanyController::class,'storeStep2'])->name('company.step2');
+
+
+Route::get('/company', [AdminController::class, 'company']);
+Route::get('/company/{company}/edit', [CompanyController::class, 'edit'])->name('Front.admin.company.info');
+
+Route::get('/auth/confirmation-page', function () {
+    return view('auth.confirmation-page');
+});
+
+Route::put('/valider-compagnie/{id}', [CompanyController::class, 'validerCompagnie'])->name('validerCompagnie');
+
 
 Route::get('/demande/{typeDeDemande}', [TypeDeDemandeController::class, 'form'])->name('Front.profil.form');
 

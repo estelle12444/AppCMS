@@ -5,9 +5,9 @@
 <section class="bg-center bg-no-repeat  bg-blend-multiply" style="background-image: url(img/page_5/annonce.png)">
     <div class="px-4 mx-auto max-w-screen-xl text-center py-16 md:pt-20  lg:py-0">
         <h1 data-aos="zoom-in" data-aos-duration="500"data-aos-delay="700"
-            class=" text-4xl font-extrabold uppercase tracking-tight leading-none text-white md:pt-8 pt-10 lg:pb-20 lg:pt-32 xl:text-5xl lg:text-6xl ">
+            class=" text-4xl font-extrabold uppercase tracking-tight leading-none text-white md:pt-8 pt-10 lg:pb-8 lg:pt-32 xl:text-5xl lg:text-6xl ">
             <p>Projets, Services</p>
-            <p class="pt-8">& Opportunités</p>
+            <p class="pt-8 ">& Opportunités</p>
         </h1>
     </div>
 </section>
@@ -275,36 +275,42 @@
                 <h1 data-aos="zoom-out" data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="700" class="mb-20 text-3xl text-center font-bold tracking-tight text-gray-900">
                     NOS SERVICES
                 </h1>
-                <div  class="grid  xl:grid-cols-3 gap-4 md:px-12 xl:px-0 ">
-                    <div data-aos="zoom-in-down" data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="500" class="h-auto bg-no-repeat max-w-full rounded-lg bg-cover"
-                        style="background-image: url('img/slider/pepiniere.png')">
-                        <div class=" mx-auto max-w-screen-xl text-center xl:py-0 xl:pt-64 md:py-24 ">
-                            <p class=" text-2xl   font-extrabold tracking-tight leading-none text-white xl:text-2xl lg:text-lg">
-                                Pépinière
-                                <br>
-                                d'entreprises
-                            </p>
-                        </div>
-                    </div>
-                    <div data-aos="zoom-in-down" data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="800" class=" md:py-10 xl:py-0 h-auto bg-no-repeat max-w-full rounded-lg bg-cover"
-                        style="background-image: url('img/slider/tech.png')">
-                        <div class=" mx-auto max-w-screen-xl text-center xl:py-0 md:py-24 xl:pt-64 ">
-                            <p class=" text-2xl  font-extrabold tracking-tight leading-none text-white xl:text-2xl lg:text-lg">
-                                Produits
-                                <br> technologiques
-                            </p>
-                        </div>
-                    </div>
-                    <div data-aos="zoom-in-down"  data-aos-duration="1500" data-aos-delay="1100"class="h-auto bg-no-repeat max-w-full rounded-lg bg-cover"
-                        style="background-image: url('img/slider/immeuble.png')">
-                        <div class=" mx-auto max-w-screen-xl text-center xl:py-0 md:py-24 xl:pt-64 ">
-                            <p class=" text-2xl  font-extrabold tracking-tight leading-none text-white xl:text-2xl lg:text-lg">
-                                Hebergements
-                                <br> d'entreprises
-                            </p>
-                        </div>
-                    </div>
+                <div data-aos="zoom-in-up" data-aos-duration="700" data-aos-delay="500"
+            class="  md:px-0 grid grid-cols-1 xl:grid-cols-4 md:grid-cols-2 md:gap-2 pt-24 md:py-8 xl:pt-4 ">
+            <div class="  h-auto xl:bg-no-repeat max-w-full rounded-lg" style="background-image: url('img/page_6/image3.png');background-size: cover;">
+                <div class="mx-auto max-w-screen-xl text-center xl:text-center pb-4 pt-24 md: pr-0 xl:pt-64">
+                    <p class="xl:text-lg font-extrabold tracking-tight leading-none text-white xl:text-2xl lg:text-lg">
+                        Pépinière
+                        <br>
+                        d'entreprises
+                    </p>
                 </div>
+            </div>
+            <div class="h-auto bg-no-repeat max-w-full rounded-lg" style="background-image: url('img/page_6/image4.png');background-size: cover;">
+                <div class="mx-auto max-w-screen-xl text-center xl:text-center pb-4 pt-24 xl:pt-64">
+                    <p class="xl:text-lg font-extrabold tracking-tight leading-none text-white xl:text-2xl lg:text-lg">
+                        Produits
+                        <br> technologiques
+                    </p>
+                </div>
+            </div>
+            <div class="h-auto bg-no-repeat max-w-full rounded-lg" style="background-image: url('img/page_6/image2.png');background-size: cover;">
+                <div class="mx-auto max-w-screen-xl text-center xl:text-center pb-4 pt-24 xl:pt-64">
+                    <p class="xl:text-lg font-extrabold tracking-tight leading-none text-white xl:text-2xl lg:text-lg">
+                        Hebergements
+                        <br>d'entreprises
+                    </p>
+                </div>
+            </div>
+            <div class="h-auto bg-no-repeat max-w-full rounded-lg" style="background-image: url('img/page_6/image5.png');background-size: cover;">
+                <div class="mx-auto max-w-screen-xl text-center xl:text-center pb-4 pt-24 xl:pt-64">
+                    <p class="xl:text-lg font-extrabold tracking-tight leading-none text-white xl:text-2xl lg:text-lg">
+                        Hebergements
+                        <br>d'entreprises
+                    </p>
+                </div>
+            </div>
+        </div>
             </div>
 
             <div class="pt-16 pb-8 sm:pt-32 xl:pt-48 lg:pt-64">
@@ -316,9 +322,9 @@
                 <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="600"
                     class="flex flex-col sm:flex-row justify-center sm:justify-between leading-normal bg-center">
                     <div class="w-full sm:w-1/2 mb-8 sm:mb-0 sm:pl-8 xl:pl-48  ">
-                        <img class="h-64 sm:h-72 max-w-full mx-auto " src="img/join.png" alt="image description">
+                        <img class="sm:h-auto md:h-auto xl:h-auto max-w-full lg:pt-4 " src="img/join.png" alt="image description">
                     </div>
-                    <div class="w-full sm:w-1/2 sm:mr-8 xl:mr-24 px-6 ">
+                    <div class="w-full sm:w-1/2  xl:mr-24  md:pl-2 lg:px-0">
                         <p class="font-normal text-justify text-gray-700 tracking-tight md:pt-0 pt-10 xl:pt-0">
                             Nous sommes fiers d'accueillir des entreprises innovantes qui transforment l'avenir de la Côte
                             d'Ivoire et de l'Afrique. Rejoignez-nous au VITIB et devenez acteur d'un écosystème florissant,

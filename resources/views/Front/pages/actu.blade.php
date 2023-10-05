@@ -91,12 +91,12 @@
     <div class="md:pt-24 py-20 pb-6 md:pb-10  ">
         <div class=" max-w-full md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mx-auto  xl:px-24 md:px-0 ">
 
-            <h1 data-aos="zoom-up" data-aos-duration="700" data-aos-delay="500"
+            <h1 data-aos="zoom-in-up" data-aos-duration="700" data-aos-delay="500"
                 class="mb-6 md:mb-10 text-2xl md:text-3xl text-center font-bold tracking-tight text-gray-900">
                 REJOIGNEZ-NOUS
             </h1>
 
-            <div data-aos="zoom-up" data-aos-duration="500" data-aos-delay="600"
+            <div data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="600"
                 class="flex flex-col sm:flex-row justify-center sm:justify-between leading-normal bg-center">
                 <div class="w-full sm:w-1/2 mb-2   xl:pl-24 lg:px-4  ">
                     <img class=" sm:h-auto md:h-auto xl:h-auto max-w-full lg:pt-4 " src="img/join.png" alt="image description">
