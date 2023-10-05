@@ -62,10 +62,10 @@
                         <h5 class="mb-2 text-xl font-bold tracking-tight text-blue-800 dark:text-white capitalize ">
                             {{ $tender->title }}</h5>
                         </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 lowercase">
-                            {{ Str::substr($tender->resume, 0, 80) . '...' }}
 
-                        </p>
+                        {{ Str::substr(strip_tags($tender->resume) , 0, 80) . '...' }}
+
+
                         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
 
                             <a href="{{ route('Front.pages.info', $tender->id) }}" id="voirPlusBtn"

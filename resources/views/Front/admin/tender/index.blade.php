@@ -41,8 +41,8 @@
                                             <tr>
                                                 <td>{{ $tender->id }}</td>
                                                 <td>{{ $tender->title }}</td>
-                                                <td>{{ Str::substr($tender->content, 0, 150) . '...' }}</td>
-                                                <td>{{ Str::substr($tender->resume, 0, 150) . '...' }}</td>
+                                                <td>{{ Str::substr(strip_tags($tender->content), 0, 150) . '...' }}</td>
+                                                <td>{{ Str::substr(strip_tags($tender->resume), 0, 150) . '...' }}</td>
                                                 <td>{{ $tender->limit_date }}</td>
 
                                                 <td>
