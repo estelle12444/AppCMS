@@ -33,7 +33,7 @@
                                         @foreach ($sectors as $sector)
                                             <tr>
                                                 <td>{{ $sector->id }}</td>
-                                                <td>{{ $sector->nom }}</td>
+                                                <td>{{  strip_tags($sector->nom) }}</td>
                                                 <td>
                                                     <a href="{{ route('Front.admin.sector.edit', $sector->id) }}"
                                                         class="btn btn-primary"><i class="fas fa-pencil-alt"></i></a>

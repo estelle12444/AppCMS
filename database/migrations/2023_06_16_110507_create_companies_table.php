@@ -24,15 +24,13 @@ return new class extends Migration
             $table->string('phone');
             $table->string('cellulaire')->nullable();
             $table->string('email');
-            $table->string('password');
+            //$table->string('password');
             $table->string('website_link')->nullable();
             $table->string('legal_agent')->nullable();
             $table->string('fonction')->nullable();
             $table->string('activity')->nullable();
             $table->enum('location_type', ['new_society', 'old_society'])->nullable();
-            $table->boolean('status');
 
-            $table->foreignIdFor(Role::class);
             $table->foreignIdFor(Partner::class)->nullable();
 
             //$table->string('clients')->nullable();

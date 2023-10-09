@@ -7,9 +7,10 @@ use Illuminate\Support\Facades\Mail;
 use App\Mail\CompanyRegistrationNotification;
 use App\Models\Company;
 use App\Models\Role;
+use App\Models\User;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Hash;
 
 class CompanyController extends Controller
 {
@@ -21,9 +22,10 @@ class CompanyController extends Controller
     public function storeStep1(Request $request)
     {
         // Validez les champs non-nullable
-        $defaultRole = Role::where('nom', 'User')->first();
+        $defaultRole = Role::where('nom', 'user')->first();
 
         $validator = Validator::make($request->all(), [
+
             'name' => 'required|string',
             'legal_form' => 'required|string',
             'RCCM' => 'required|string',
@@ -39,10 +41,24 @@ class CompanyController extends Controller
                 ->withErrors($validator)
                 ->withInput();
         }
-        $company = new Company($validator->validated());
-        $company->role_id = $defaultRole->id;
-        $company->status = false;
+        $validatedData = $validator->validated();
+        unset($validatedData['password']);
+
+        $company = new Company($validatedData);
         $company->save();
+
+
+
+        $user = new User([
+            'name' => $request->name,
+            'email' => $request->email,
+            'company_id' =>$company->id
+        ]);
+        $user->password = Hash::make($request->password);
+        $user->status = false;
+        $user->role_id = $defaultRole->id;
+        $user->save();
+
 
         session(['company_id_from_step1' => $company->id]);
         session(['company_email' => $request->input('email')]);
@@ -117,7 +133,7 @@ class CompanyController extends Controller
 
 
         // Retournez la vue avec les données
-        return view('Front.admin.company.info', compact('companies','completionPercentage'));
+        return view('Front.admin.company.info', compact('companies', 'completionPercentage'));
     }
 
     public function validerCompagnie($id)
@@ -130,13 +146,18 @@ class CompanyController extends Controller
             return redirect()->back()->with('error', 'Compagnie non trouvée.');
         }
 
+        $utilisateur = User::where('company_id', $compagnie->id)->first();
+
+        if (!$utilisateur) {
+            // Gérer le cas où l'utilisateur n'est pas trouvé
+            return redirect()->back()->with('error', 'Utilisateur non trouvé pour cette compagnie.');
+        }
+
         // Mettez à jour le statut de la compagnie à true (validée)
-        $compagnie->status = true;
-        $compagnie->save();
+        $utilisateur->status = true;
+        $utilisateur->save();
 
         // Redirigez l'administrateur vers le tableau de bord de la compagnie
         return redirect('/company')->with('success', 'La compagnie a été validée avec succès.');
     }
-
-
 }

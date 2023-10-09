@@ -4,43 +4,122 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Auth;
 use App\Models\BusinessSector;
+use App\Models\Career;
 use App\Models\Company;
+use App\Models\Event;
+use App\Models\Job;
 use App\Models\Partner;
+use App\Models\Quotation;
 use App\Models\Sector;
+use App\Models\Tender;
 use App\Models\User;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class AdminController extends Controller
 {
     public function getUsername()
     {
-        $user = Auth::user();
-        $username = $user->nom;
+        if (!Auth::check()) {
 
-        return $username;
+            return view('auth.login');
+        } else {
+            $user = Auth::user();
+            $username = $user->name;
+
+            return $username;
+        }
     }
 
 
     public function dashboard()
     {
+        $tenders = Tender::all();
+        $careers = Career::all();
+        $jobs = Job::all();
+        $quotations = Quotation::all();
+        $events = Event::all();
+
+        // Fusionner toutes les données en un seul tableau
+        $allAnnouncements = [];
+        foreach ($tenders as $tender) {
+            $allAnnouncements[] = [
+                'type' => 'Tender',
+                'date' => $tender->created_at,
+                'title' => $tender->title,
+                'content' => $tender->content,
+            ];
+        }
+        foreach ($careers as $career) {
+            $allAnnouncements[] = [
+                'type' => 'Career',
+                'date' => $career->created_at,
+                'title' => $career->position,
+                'content' => $career->content,
+            ];
+        }
+        foreach ($jobs as $job) {
+            $allAnnouncements[] = [
+                'type' => 'Job',
+                'date' => $job->created_at,
+                'title' => $job->position,
+                'content' => $job->content,
+            ];
+        }
+        foreach ($quotations as $quotation) {
+            $allAnnouncements[] = [
+                'type' => 'Quotation',
+                'date' => $quotation->created_at,
+                'title' => $quotation->title,
+                'content' => $quotation->content,
+            ];
+        }
+        foreach ($events as $event) {
+            $allAnnouncements[] = [
+                'type' => 'Event',
+                'date' => $event->created_at,
+                'title' => $event->title,
+                'content' => $event->content,
+            ];
+        }
+
+        // Tri par date pour obtenir les annonces les plus récentes
+        usort($allAnnouncements, function ($a, $b) {
+            return $b['date'] <=> $a['date'];
+        });
+
+        // Séparer les 5 annonces les plus récentes et les 5 annonces moins récentes
+        $recentAnnonces = array_slice($allAnnouncements, 0, 3);
+        $lessRecentAnnonces = array_slice($allAnnouncements, 5, 5);
+
+
+        ////////////
+
         $companies = Company::all();
-        $activeCompaniesCount = Company::where('status', true)->count();
+        $users = User::all();
+        $activeCompaniesCount = DB::table('companies')
+            ->join('users', 'companies.id', '=', 'users.company_id')
+            ->where('users.status', true)
+            ->count();
 
-        // Compter le nombre d'entreprises en attente
-        $pendingCompaniesCount = Company::where('status', false)->count();
+        $pendingCompaniesCount = DB::table('companies')
+            ->join('users', 'companies.id', '=', 'users.company_id')
+            ->where('users.status', false)
+            ->count();
 
-        return view('Front.admin.home', compact('companies','activeCompaniesCount', 'pendingCompaniesCount'));
+        return view('Front.admin.home', compact('companies', 'users', 'activeCompaniesCount', 'pendingCompaniesCount', 'recentAnnonces', 'lessRecentAnnonces'));
     }
 
     public function company()
     {
         $companies = Company::all();
+        $users = User::all();
 
-
-
-        return view('Front.admin.company.index', compact('companies'));
+        return view('Front.admin.company.index', compact('companies', 'users'));
     }
+
+
 
 
 

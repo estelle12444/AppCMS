@@ -40,17 +40,11 @@ class ProfilController extends Controller
     public function getUsername()
     {
         $user = Auth::user();
-        $username = $user->nom;
+        $username = $user->name;
 
         return $username;
     }
-    public function getLastname()
-    {
-        $user = Auth::user();
-        $lastname = $user->prenom;
 
-        return $lastname;
-    }
     public function getEmail()
     {
         $email = Auth::user();

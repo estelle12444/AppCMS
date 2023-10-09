@@ -4,6 +4,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AnnonceController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\CareerController;
+use App\Http\Controllers\CompanyAuthController;
 use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\DownloadController;
 use App\Http\Controllers\EventController;
@@ -192,7 +193,7 @@ Route::get('/count/', function (Request $request) {
 
 
 
-Route::get('/logout', [App\Http\Controllers\AdminController::class, 'logout'])->name('auth.login');
+Route::get('/logout', [App\Http\Controllers\CompanyAuthController::class, 'logout'])->name('auth.login');
 
 
 Auth::routes();
@@ -201,8 +202,10 @@ Route::get('/profil', [App\Http\Controllers\ProfilController::class, 'index'])->
 Route::get('/admin', [AdminController::class, 'dashboard'])->name('Front.admin.home');
 
 
-// Route::get('/auth/register',  [RegisterController::class, 'create'])->name('auth.register');
-// Route::post('auth',  [RegisterController::class, 'store'])->name('auth.login');
+
+Route::get('/check-session-status', 'AuthController@checkSessionStatus')->name('check-session-status');
+
+
 
 
 Route::get('/auth/register', [CompanyController::class,'step1']) ;
@@ -214,6 +217,12 @@ Route::get('/auth/register-other',[CompanyController::class,'step2']);
 Route::post('/auth/register-other',  [CompanyController::class,'storeStep2'])->name('company.step2');
 
 
+
+Route::get('/company/login', [CompanyAuthController::class, 'showLoginForm'])->name('auth.login');
+Route::post('/company/login', [CompanyAuthController::class, 'login']);
+
+
+
 Route::get('/company', [AdminController::class, 'company']);
 Route::get('/company/{company}/edit', [CompanyController::class, 'edit'])->name('Front.admin.company.info');
 
@@ -222,6 +231,15 @@ Route::get('/auth/confirmation-page', function () {
 });
 
 Route::put('/valider-compagnie/{id}', [CompanyController::class, 'validerCompagnie'])->name('validerCompagnie');
+
+
+
+
+// Route pour la liste des annonces récentes
+Route::get('/annonces-recentes', [AnnonceController::class, 'recentes'])->name('Front.admin.annonce.recent');
+
+// Route pour la liste des annonces moins récentes
+Route::get('/annonces-moins-recentes', [AnnonceController::class, 'moinsRecentes'])->name('Front.admin.annonce.moins-recent');
 
 
 Route::get('/demande/{typeDeDemande}', [TypeDeDemandeController::class, 'form'])->name('Front.profil.form');

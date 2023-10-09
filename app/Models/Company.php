@@ -4,9 +4,16 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Facades\Auth;
 
 class Company extends Model
+
 {
+    use HasFactory;
+    use Notifiable;
+
+
 
     protected $fillable = [
         'name',
@@ -18,15 +25,16 @@ class Company extends Model
         'phone',
         'cellulaire',
         'email',
-        'password',
+
         'website_link',
         'legal_agent',
         'fonction',
         'activity',
         'location_type',
-        'role_id',
-        'status'
+
     ];
+
+
 
 
     public function demandes()
@@ -92,7 +100,6 @@ class Company extends Model
         if ($this->RCCM) {
             $count++;
         }
-
 
 
         return $count;

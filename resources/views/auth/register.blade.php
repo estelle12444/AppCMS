@@ -187,6 +187,9 @@
                 <h3 class="fw-normal mb-5" style="color:#193487;text-align:center">
                     <strong>Créer un compte</strong>
                 </h3>
+                <div class="alert alert-info">
+                    Veuillez remplir tous les champs obligatoires (indiqués par *) et cocher la case de la politique de confidentialité.
+                </div>
                 <form method="POST" action="{{ route('company.step1') }}">
                     @csrf
                     <div class="row">
@@ -197,7 +200,7 @@
                                 <input type="text" id="form3Examplea4" name="name" value="{{ old('name') }}"
                                     required autocomplete="name"
                                     class=" form-control form-control-lg @error('name') is-invalid @enderror block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" />
-                                <label class="form-label" for="form3Examplea4">{{ __("Nom de l'entreprise") }}</label>
+                                <label class="form-label" for="form3Examplea4">{{ __("Nom de l'entreprise") }}*</label>
                             </div>
 
                             @error('name')
@@ -213,7 +216,7 @@
                                 <input type="text" id="form3Examplea5"
                                     class="form-control form-control-lg  @error('') is-invalid @enderror"
                                     value="{{ old('legal_form') }}" name="legal_form" required autocomplete="legal_form" autofocus />
-                                <label class="form-label" for="form3Examplea5">{{ __('Forme Juridique : ') }}</label>
+                                <label class="form-label" for="form3Examplea5">{{ __('Forme Juridique : ') }}*</label>
                             </div>
                             @error('legal_form')
                                 <span class="invalid-feedback" role="alert">
@@ -229,7 +232,7 @@
                                 <input type="text" id="form3Examplea4" name="RCCM" value="{{ old('RCCM') }}"
                                     required autocomplete="RCCM"
                                     class=" form-control form-control-lg @error('RCCM') is-invalid @enderror block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" />
-                                <label class="form-label" for="form3Examplea4">{{ __('Raison Sociale') }}</label>
+                                <label class="form-label" for="form3Examplea4">{{ __('Raison Sociale') }}*</label>
                             </div>
 
                             @error('RCCM')
@@ -247,7 +250,7 @@
                                     class="form-control form-control-lg  @error('activity') is-invalid @enderror" />
                                 <label class="form-label" for="form3Examplea8">
                                     {{ __("Activités à développer
-                                    en zone franche") }}</label>
+                                    en zone franche") }}*</label>
                             </div>
                             @error('activity')
                                 <span class="invalid-feedback" role="alert">
@@ -265,7 +268,7 @@
                                 <input type="text" id="form3Examplea4" name="siege" value="{{ old('siege') }}"
                                     required autocomplete="siege"
                                     class=" form-control form-control-lg @error('siege') is-invalid @enderror block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" />
-                                <label class="form-label" for="form3Examplea4">{{ __('Siège Social  ') }}</label>
+                                <label class="form-label" for="form3Examplea4">{{ __('Siège Social  ') }}*</label>
                             </div>
 
                             @error('siege')
@@ -282,7 +285,7 @@
                                     required
                                     class="form-control form-control-lg  @error('phone') is-invalid @enderror" />
                                 <label class="form-label" for="form3Examplea8">
-                                    {{ __('Téléphone ') }}</label>
+                                    {{ __('Téléphone ') }}*</label>
                             </div>
                             @error('telephone')
                                 <span class="invalid-feedback" role="alert">
@@ -302,7 +305,7 @@
                                 <input type="email" id="form3Examplea7" name="email" value="{{ old('email') }}"
                                     required autocomplete="email"
                                     class="form-control form-control-lg @error('email') is-invalid @enderror " />
-                                <label class="form-label" for="form3Examplea7">{{ __('Mail entreprise ') }}</label>
+                                <label class="form-label" for="form3Examplea7">{{ __('Mail entreprise ') }}*</label>
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -318,7 +321,7 @@
                                 <input type="password" id="form3Examplea5" name="password" required
                                     autocomplete="password"
                                     class="form-control form-control-lg @error('password') is-invalid @enderror " />
-                                <label class="form-label" for="form3Examplea5">{{ __('Mot de passe ') }}</label>
+                                <label class="form-label" for="form3Examplea5">{{ __('Mot de passe ') }}*</label>
                             </div>
                             @error('password')
                                 <span class="invalid-feedback" role="alert">
@@ -336,7 +339,7 @@
                             value="" id="form2Example3c" />
                         <label class="form-check-label " for="form2Example3">
                             Je suis d'accord avec <a href="#!"><u>la politique de
-                                    confidentialité</u></a> du site.
+                                    confidentialité</u></a> du site.*
                         </label>
                         @error('policy')
                             <span class="invalid-feedback" role="alert">

@@ -43,8 +43,9 @@
                                         <tr>
                                             <td>{{ $job->id }}</td>
                                             <td>{{ $job->title }}</td>
-                                            <td>{{ Str::substr($job->content, 0, 150) . '...' }}</td>
-                                            <td>{{ Str::substr($job->content, 0, 150) . '...' }}</td>
+
+                                            <td>{{ Str::substr(strip_tags($job->content), 0, 150) . '...' }}</td>
+                                            <td>{{ Str::substr(strip_tags($job->resume), 0, 150) . '...' }}</td>
                                             <td>{{ $job->limit_date }}</td>
 
                                             <td>

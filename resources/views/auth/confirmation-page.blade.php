@@ -28,7 +28,7 @@
                         <p>Un e-mail de confirmation a été envoyé à l'adresse que vous avez fournie.</p>
                         <p>Veuillez noter que l'administrateur devra vérifier vos informations et valider votre compte avant que vous puissiez accéder au tableau de bord.</p>
                         <p>Vous recevrez un e-mail de l'administrateur dès que votre compte sera validé.</p>
-                        <a href="https://vitib.ci/home" class="btn btn-primary">Retourner a la page d'accueil</a>
+                        <a href="/home" class="btn btn-primary">Retourner a la page d'accueil</a>
                     </div>
                 </div>
     </div>

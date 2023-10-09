@@ -40,8 +40,8 @@
                                             <tr>
                                                 <td>{{ $event->id }}</td>
                                                 <td>{{ $event->title }}</td>
-                                                <td>{{ Str::substr($event->content, 0, 150) . '...' }}</td>
-                                                <td>{{ Str::substr($event->resume, 0, 150) . '...' }}</td>
+                                                <td>{{ Str::substr(strip_tags($event->content), 0, 150) . '...' }}</td>
+                                                <td>{{ Str::substr(strip_tags($event->resume), 0, 150) . '...' }}</td>
                                                 <td>{{ $event->limit_date }}</td>
 
                                                 <td>

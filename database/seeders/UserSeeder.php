@@ -6,6 +6,7 @@ use App\Models\Role;
 use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 
 class UserSeeder extends Seeder
@@ -19,50 +20,32 @@ class UserSeeder extends Seeder
           $adminRole = Role::where('nom', 'admin')->first();
           $userRole = Role::where('nom', 'user')->first();
 
-          // Création des administrateurs
-          User::create([
-              'nom' => 'Admin1',
-              'prenom' => 'Admin1',
-              'email' => 'admin1@example.com',
-              'password' => Hash::make('password'),
-              'telephone' => '0123456789',
-              'adresse' => 'Adresse Admin1',
-              'role_id' => $adminRole->id,
-              'piece_identite'=>'passeport'
-          ]);
+          DB::table('users')->insert([
+            'name' => 'Admin2',
+            'email' => 'admin2@example.com',
+            'password' => Hash::make('password'),
+            'status' => true, // true pour actif, false pour inactif
+            'role_id' => $adminRole->id, // ID du rôle de l'utilisateur
+            'company_id' => 1, // ID de la société liée
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
 
-          User::create([
-              'nom' => 'Admin2',
-              'prenom' => 'Admin2',
-              'email' => 'admin2@example.com',
-              'password' => Hash::make('password'),
-              'telephone' => '9876543210',
-              'adresse' => 'Adresse Admin2',
-              'role_id' => $adminRole->id,
-              'piece_identite'=>'carte_identite'
-          ]);
+        DB::table('users')->insert([
+            'name' => 'BANDAMA',
+            'email' => 'user1@example.com',
+            'password' => Hash::make('password'),
+            'status' => true, // true pour actif, false pour inactif
+            'role_id' => $userRole->id, // ID du rôle de l'utilisateur
+            'company_id' => 1, // ID de la société liée
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
 
-          // Création des utilisateurs
-          User::create([
-              'nom' => 'BANDAMA',
-              'prenom' => 'PASCALE MARIE ESTELLE',
-              'email' => 'user1@example.com',
-              'password' => Hash::make('password'),
-              'telephone' => '5555555555',
-              'adresse' => 'Adresse User1',
-              'role_id' => $userRole->id,
-              'piece_identite'=>'passeport'
-          ]);
 
-          User::create([
-              'nom' => 'User2',
-              'prenom' => 'User2',
-              'email' => 'user2@example.com',
-              'password' => Hash::make('password'),
-              'telephone' => '1111111111',
-              'adresse' => 'Adresse User2',
-              'role_id' => $userRole->id,
-              'piece_identite'=>'carte_identite'
-          ]);
+
+
+
+
     }
 }

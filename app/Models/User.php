@@ -8,14 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class User extends Authenticatable
 {
     protected $fillable = [
-        'nom',
-        'prenom',
+        'name',
         'email',
         'password',
-        'telephone',
-        'adresse',
-        'role_id',
-        'piece_identite'
+        'status',
+        'company_id'
     ];
 
 
@@ -23,5 +20,11 @@ class User extends Authenticatable
     {
         return $this->belongsTo(Role::class);
     }
-    public $timestamps = false;
+
+    public function company()
+    {
+        return $this->belongsTo(Company::class,'company_id');
+    }
+
+
 }

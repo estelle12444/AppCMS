@@ -22,7 +22,7 @@
                 <h3 class="fw-normal mb-5" style="color:#193487;text-align:center">
                     <strong> CONNEXION</strong>
                 </h3>
-                <form method="POST" action="{{ route('login') }}" style="padding-left:10%">
+                <form method="POST" action="{{ route('auth.login') }}" style="padding-left:10%">
                     @csrf
 
                     <div class="" >
