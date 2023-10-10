@@ -29,7 +29,7 @@
 
                             <div class="form-outline ">
                                 <input type="text" id="form3Examplea4" name="taxpayer_account" value="{{ old('taxpayer_account') }}"
-                                    required autocomplete="taxpayer_account"
+                                     autocomplete="taxpayer_account"
                                     class=" form-control form-control-lg @error('taxpayer_account') is-invalid @enderror block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" />
                                 <label class="form-label" for="form3Examplea4">{{ __("Compte contribuable :") }}</label>
                             </div>
@@ -46,7 +46,7 @@
                             <div class="form-outline ">
                                 <input type="text" id="form3Examplea5"
                                     class="form-control form-control-lg  @error('') is-invalid @enderror"
-                                    value="{{ old('capital') }}" name="capital" required autocomplete="capital" autofocus />
+                                    value="{{ old('capital') }}" name="capital" autocomplete="capital" autofocus />
                                 <label class="form-label" for="form3Examplea5">{{ __('Capital social :') }}</label>
                             </div>
                             @error('capital')
@@ -61,7 +61,7 @@
 
                             <div class="form-outline ">
                                 <input type="text" id="form3Examplea4" name="cellulaire" value="{{ old('cellulaire') }}"
-                                    required autocomplete="cellulaire"
+                                     autocomplete="cellulaire"
                                     class=" form-control form-control-lg @error('cellulaire') is-invalid @enderror block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" />
                                 <label class="form-label" for="form3Examplea4">{{ __('Fax : ') }}</label>
                             </div>
@@ -77,7 +77,7 @@
 
                             <div class="form-outline ">
                                 <input type="text" id="form3Examplea8" name="website_link" value="{{ old('website_link') }}"
-                                    required
+
                                     class="form-control form-control-lg  @error('website_link') is-invalid @enderror" />
                                 <label class="form-label" for="form3Examplea8">
                                     {{ __("Site Internet :") }}</label>
@@ -96,7 +96,7 @@
 
                             <div class="form-outline ">
                                 <input type="text" id="form3Examplea4" name="legal_agent" value="{{ old('legal_agent') }}"
-                                    required autocomplete="legal_agent"
+                                     autocomplete="legal_agent"
                                     class=" form-control form-control-lg @error('siege') is-invalid @enderror block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" />
                                 <label class="form-label" for="form3Examplea4">{{ __('Representant legal  ') }}</label>
                             </div>
@@ -112,7 +112,7 @@
 
                             <div class="form-outline ">
                                 <input type="text" id="form3Examplea8" name="fonction" value="{{ old('fonction') }}"
-                                    required
+                               
                                     class="form-control form-control-lg  @error('fonction') is-invalid @enderror" />
                                 <label class="form-label" for="form3Examplea8">
                                     {{ __(' Fonction :') }}</label>

@@ -430,7 +430,7 @@
                         <br> --}}
 
                         <h2>Documents administratifs à transmettre en annexe :</h2>
-                       
+
 
                         <button type="button" class="btn btn-primary right text-white"
                             onclick="nextPart('part2', 'part3')">Continuer</button>
@@ -450,7 +450,7 @@
                     <form>
                         <p>Je/nous soussigné(s) .............
                             {{ app('App\Http\Controllers\ProfilController')->getUsername() }}
-                            {{ app('App\Http\Controllers\ProfilController')->getLastname() }}.................................................................................certifie/certifions
+                           .................................................................................certifie/certifions
                             que je suis/nous sommes autorisé(s) à remplir ce formulaire de demande d’agrément en vue de
                             notre installation à la
                             ZBTIC. J’accepte/nous acceptons de régler toutes les obligations appliquées à ladite demande.

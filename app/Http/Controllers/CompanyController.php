@@ -8,9 +8,11 @@ use App\Mail\CompanyRegistrationNotification;
 use App\Models\Company;
 use App\Models\Role;
 use App\Models\User;
+use App\Notifications\CompanyRegistrationNotification as NotificationsCompanyRegistrationNotification;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use League\CommonMark\Extension\CommonMark\Node\Inline\Code;
 
 class CompanyController extends Controller
 {
@@ -31,6 +33,7 @@ class CompanyController extends Controller
             'RCCM' => 'required|string',
             'siege' => 'required|string',
             'phone' => 'required|string',
+            'activity'=>'required|string',
             'email' => 'required|email',
             'password' => 'required|min:8',
 
@@ -82,7 +85,7 @@ class CompanyController extends Controller
             'website_link' => 'nullable|string',
             'legal_agent' => 'nullable|string',
             'fonction' => 'nullable|string',
-            'activity' => 'nullable|string',
+
             'location_type' => 'nullable|in:new_society,old_society',
         ]);
 
@@ -91,8 +94,7 @@ class CompanyController extends Controller
                 ->withErrors($validator)
                 ->withInput();
         }
-        // $adminEmail = 'bandamapascale@gmail.com'; // Adresse e-mail de l'administrateur
-        // Mail::to($adminEmail)->send(new CompanyRegistrationNotification($request->all()));
+
 
         // Récupérez l'ID de l'entreprise créée à l'étape 1
         $companyIdFromStep1 = session('company_id_from_step1');
@@ -105,14 +107,14 @@ class CompanyController extends Controller
             $company->fill($validator->validated());
             $company->save();
             $companyEmail = session('company_email');
+        //     $requestData = [
+        //         'company_name' => 'Nom de l\'entreprise',
+        //         // ... d'autres clés et valeurs
+        //     ];
 
+        // $adminEmail = 'support@documentivoire.ci'; // Adresse e-mail de l'administrateur
 
-
-            // if ($companyEmail) {
-            //  // Adresse e-mail de la compagnie
-            // $dashboardLink = 'https://vitib.ci/profil'; // Lien vers le tableau de bord
-            // Mail::to($companyEmail)->send(new CompanyInfoAccepted($dashboardLink, $companyEmail));
-            // }
+        // Mail::to($adminEmail)->send(new CompanyRegistrationNotification($request->all()));
             return redirect('/auth/confirmation-page');
         } else {
             return redirect('/auth/register-other')->with('error', 'Étape 1 doit être complétée en premier.');
@@ -122,6 +124,8 @@ class CompanyController extends Controller
     public function edit(int $companies)
     {
         $companies = Company::whereId($companies)->first();
+
+        $users = User::where('company_id', $companies->id)->first();
 
 
         // Calculez le pourcentage de complétion en fonction des champs renseignés
@@ -133,7 +137,7 @@ class CompanyController extends Controller
 
 
         // Retournez la vue avec les données
-        return view('Front.admin.company.info', compact('companies', 'completionPercentage'));
+        return view('Front.admin.company.info', compact('companies', 'completionPercentage','users'));
     }
 
     public function validerCompagnie($id)
@@ -156,6 +160,13 @@ class CompanyController extends Controller
         // Mettez à jour le statut de la compagnie à true (validée)
         $utilisateur->status = true;
         $utilisateur->save();
+
+        $companyEmail = session('company_email');
+        if ($companyEmail) {
+            // Adresse e-mail de la compagnie
+           $dashboardLink = 'https://vitib.ci/profil'; // Lien vers le tableau de bord
+           Mail::to($companyEmail)->send(new CompanyInfoAccepted($dashboardLink, $companyEmail));
+           }
 
         // Redirigez l'administrateur vers le tableau de bord de la compagnie
         return redirect('/company')->with('success', 'La compagnie a été validée avec succès.');

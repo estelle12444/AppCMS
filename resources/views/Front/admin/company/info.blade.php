@@ -19,7 +19,8 @@
                             <h4>Tous les details</h4>
                         </div>
                         <div class="card-body">
-                            <form action="{{ route('validerCompagnie', ['id' => $companies->id]) }}" method="POST" enctype="multipart/form-data">
+                            <form action="{{ route('validerCompagnie', ['id' => $companies->id]) }}" method="POST"
+                                enctype="multipart/form-data">
                                 @csrf
                                 @method('PUT')
 
@@ -32,11 +33,14 @@
                                 </div>
                                 <div class="form-group row mb-4">
                                     <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Process :</label>
-                                        <div class="col-sm-12 col-md-5">
-                                <div class="progress" data-height="10"  data-toggle="tooltip" title="{{ $completionPercentage }}%">
-                                    <div class="progress-bar bg-success" style="width: {{ $completionPercentage }}%;"></div>
+                                    <div class="col-sm-12 col-md-5">
+                                        <div class="progress" data-height="10" data-toggle="tooltip"
+                                            title="{{ $completionPercentage }}%">
+                                            <div class="progress-bar bg-success"
+                                                style="width: {{ $completionPercentage }}%;"></div>
+                                        </div>
+                                    </div>
                                 </div>
-                                        </div></div>
                                 <div class="form-group row mb-4">
                                     <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Raison social
                                         :</label>
@@ -135,14 +139,22 @@
                                     </div>
                                 </div>
 
-
-
-                                <div class="form-group row mb-4">
-                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"></label>
-                                    <div class="col-sm-12 col-md-7">
-                                        <button type="submit" class="btn btn-primary">Valider</button>
+                                @if ($users && $users->status)
+                                    <div class="form-group row mb-4">
+                                        <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"></label>
+                                        <div class="col-sm-12 col-md-7">
+                                            <button type="submit" class="btn btn-primary">Désactiver</button>
+                                        </div>
                                     </div>
-                                </div>
+                                @else
+                                    <div class="form-group row mb-4">
+                                        <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"></label>
+                                        <div class="col-sm-12 col-md-7">
+                                            <button type="submit" class="btn btn-primary">Valider</button>
+                                        </div>
+                                    </div>
+                                @endif
+
                             </form>
 
 
@@ -158,16 +170,15 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<script>
-    // Fonction pour mettre à jour la barre de progression
-    function updateProgressBar(percentage) {
-        $('#progress-bar').css('width', percentage + '%');
-        $('#progress-bar').attr('title', percentage + '%');
-    }
+    <script>
+        // Fonction pour mettre à jour la barre de progression
+        function updateProgressBar(percentage) {
+            $('#progress-bar').css('width', percentage + '%');
+            $('#progress-bar').attr('title', percentage + '%');
+        }
 
-    // Exemple : Mettez à jour la barre de progression avec un pourcentage (50% dans cet exemple)
-    var completionPercentage = {{ $completionPercentage }}; // Récupérez le pourcentage depuis le contrôleur
-    updateProgressBar(completionPercentage);
-</script>
-
-        @endsection
+        // Exemple : Mettez à jour la barre de progression avec un pourcentage (50% dans cet exemple)
+        var completionPercentage = {{ $completionPercentage }}; // Récupérez le pourcentage depuis le contrôleur
+        updateProgressBar(completionPercentage);
+    </script>
+@endsection

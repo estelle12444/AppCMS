@@ -127,7 +127,7 @@ $url = $_SERVER['REQUEST_URI'];
                         <li class="dropdown">
                             <a href="#" class="nav-link has-dropdown <?php echo $url === '/sector' || $url === '/sector/create' ? ' active bg-primary text-white' : ''; ?>"
                                 data-toggle="dropdown"><i class="fas fa-list"></i> <span>Secteurs</span></a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu" style="">
                                 <li><a class="nav-link <?php echo $url === '/sector' ? ' active bg-primary text-white' : ''; ?>" href="/sector">Liste</a></li>
                                 <li><a class="nav-link<?php echo $url === '/sector/create' ? ' active bg-primary text-white' : ''; ?>" href="/sector/create">Enregistrer</a></li>
 

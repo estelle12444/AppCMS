@@ -1,6 +1,20 @@
 @extends('auth.layout')
 @section('content')
+<style>
+ .toggle-password-icon {
+    cursor: pointer;
+}
 
+/* Style pour l'icône elle-même */
+.toggle-password-icon i {
+    font-size: 16px;
+    color: #666;
+}
+
+.toggle-password-icon i:hover {
+    color: #333;
+}
+</style>
 
     <div class="row g-0">
         <div class="col-lg-4">
@@ -42,20 +56,25 @@
                                 @enderror
                             </div>
                         </div>
-                        <div class="col-md-10 mb-4 pb-2" >
-                            <div class="form-outline ">
-                                <input type="password" id="form3Examplea5" name="password" required
-                                    autocomplete="password" autofocus
-                                    class="form-control form-control-lg @error('password') is-invalid @enderror " />
-                                <label class="form-label"
-                                    for="form3Examplea5">{{ __('Mot de passe ') }}</label>
+
+                        <div class="col-md-10 mb-4 pb-2">
+                            <div class="form-outline position-relative">
+                                <div class="input-group-text">
+                                    <input type="password" id="form3Examplea5" name="password" required autocomplete="password"
+                                           class="form-control form-control-lg @error('password') is-invalid @enderror toggle-password-input" />
+                                    <label class="form-label" for="form3Examplea5">{{ __('Mot de passe') }}*</label>
+                                    <div class="input-group-append">
+                                        <span class=" toggle-password-icon" id="togglePassword" onclick="togglePasswordVisibility('form3Examplea5')">
+                                            <i class="fas fa-eye-slash" id="toggleIcon"></i>
+                                        </span>
+                                    </div>
+                                </div>
                             </div>
                             @error('password')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
                             @enderror
-
                         </div>
 
                     </div>
@@ -95,4 +114,22 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function togglePasswordVisibility(inputId) {
+            var passwordInput = document.getElementById(inputId);
+            var toggleIcon = document.getElementById('toggleIcon');
+
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                toggleIcon.classList.remove('fa-eye-slash');
+                toggleIcon.classList.add('fa-eye');
+            } else {
+                passwordInput.type = 'password';
+                toggleIcon.classList.remove('fa-eye');
+                toggleIcon.classList.add('fa-eye-slash');
+            }
+        }
+    </script>
+
 @endsection

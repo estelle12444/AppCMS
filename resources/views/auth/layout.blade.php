@@ -22,8 +22,8 @@
   rel="stylesheet"
 />
 
-  <body >
-    <section class="h-100 h-custom gradient-custom-2" style="background-image: url('{{ asset('img/Picture5.png') }}');background-size:cover">
+  <body style="background-image: url('{{ asset('img/Picture5.png') }}');background-size:cover">
+    <section class="h-100 h-custom gradient-custom-2"style="background-image: url('{{ asset('img/Picture5.png') }}');background-size:cover" >
         <div class="container py-5 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col-12">

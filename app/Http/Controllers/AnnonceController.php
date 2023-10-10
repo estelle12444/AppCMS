@@ -58,8 +58,14 @@ class AnnonceController extends Controller
 
     public function recentes()
     {
+
         $allAnnouncements = $this->getAllAnnouncements();
         $recentAnnonces = $this->getRecentAnnouncements($allAnnouncements, 8);
+        if (is_null($recentAnnonces)) {
+            // Si $recentAnnonces est null, initialisez-le avec un tableau vide
+            $recentAnnonces = [];
+        }
+
 
         return view('Front.admin.annonce.recent', ['recentAnnonces' => $recentAnnonces]);
     }
@@ -68,6 +74,11 @@ class AnnonceController extends Controller
     {
         $allAnnouncements = $this->getAllAnnouncements();
         $lessRecentAnnonces = $this->getLessRecentAnnouncements($allAnnouncements, 5);
+        if (is_null($lessRecentAnnonces)) {
+            // Si $recentAnnonces est null, initialisez-le avec un tableau vide
+            $lessRecentAnnonces = [];
+        }
+
 
         return view('Front.admin.annonce.moins-recent', ['lessRecentAnnonces' => $lessRecentAnnonces]);
     }

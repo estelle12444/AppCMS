@@ -9,7 +9,7 @@
 
         <!-- Main Content -->
 
-        <section class="section">
+        <div class="section-body">
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                     <div class="card card-statistic-1">
@@ -21,7 +21,7 @@
                                 <h4>Total Admin</h4>
                             </div>
                             <div class="card-body">
-                                10
+                                1
                             </div>
                         </div>
                     </div>
@@ -33,7 +33,7 @@
                         </div>
                         <div class="card-wrap">
                             <div class="card-header">
-                                <h4>Nombre de téléchargement </h4>
+                                <h4>Téléchargements des dossiers de l'annonce </h4>
                             </div>
                             <div class="card-body">
                                 {{ \App\Models\PageCount::all()->sum('count') }}
@@ -76,7 +76,7 @@
                 <div class="col-lg-8 col-md-12 col-12 col-sm-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4>Statistique</h4>
+                            <h4>Statistique des visites du sites</h4>
                             <div class="card-header-action">
                                 <div class="btn-group">
                                     <a href="#" class="btn btn-primary">Semaine</a>
@@ -115,10 +115,10 @@
                         </div>
                     </div>
                 </div>
-                {{-- <div class="col-lg-4 col-md-12 col-12 col-sm-12">
+                <div class="col-lg-4 col-md-12 col-12 col-sm-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4>Récents Annonces</h4>
+                            <h4>Récentes Annonces</h4>
                         </div>
                         <div class="card-body">
                             <ul class="list-unstyled list-unstyled-border">
@@ -126,71 +126,25 @@
                                 <li class="media">
                                     <img class="mr-3 rounded-circle" width="50" src="{{ asset('assets/img/avatar/avatar-1.png') }}" alt="avatar">
                                     <div class="media-body">
-                                        <div class="float-right text-primary">{{ $annonce->created_at->diffForHumans() }}</div>
-                                        <div class="media-title">{{ $annonce->author }}</div>
-                                        <span class="text-small text-muted">{{ Str::limit($annonce->resume, 100) }}</span>
+                                        <div class="float-right text-primary">{{$annonce['date'] }}</div>
+                                        <div class="media-title">Titre: {{ strip_tags($annonce['title']) }}</div>
+                                        <span class="text-small text-muted"> {{strip_tags( $annonce['content'] )}}</span>
                                     </div>
                                 </li>
                                 @endforeach
                             </ul>
                             <div class="text-center pt-1 pb-1">
-                                <a href="#" class="btn btn-primary btn-lg btn-round">
-                                    View All
+                                <a href="/annonces-recentes" class="btn btn-primary btn-lg btn-round">
+                                     Voir plus
                                 </a>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
-
-            </div>
-
-            {{-- <div class="row">
-
-                <div class="col-lg-12 col-md-12 col-12 col-sm-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4>Liste des comptes Entreprises</h4>
-                            <div class="card-header-action">
-                                <a href="#" class="btn btn-primary">Voir plus</a>
-                            </div>
-                        </div>
-                        <div class="card-body p-0">
-                            <div class="table-responsive">
-                                <table class="table table-striped mb-0">
-                                    <thead>
-                                        <tr>
-                                            <th>Nom de l'entreprise</th>
-                                            <th>Secteur d'activité</th>
-                                            <th>Libellé</th>
-                                            <th>E-mail</th>
-                                            <th>Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        @for ($i = 1; $i <= 5; $i++)
-                                            <tr>
-                                                <td>Entreprise {{ $i }}</td>
-                                                <td>Secteur {{ $i }}</td>
-                                                <td>Libellé {{ $i }}</td>
-                                                <td>entreprise{{ $i }}@example.com</td>
-                                                <td>
-                                                    <button class="btn btn-success"> <i class="fas fa-check-circle"></i>
-                                                        Accepter</button>
-                                                    <button class="btn btn-danger"> <i
-                                                            class="fas fa-times-circle"></i>Refuser</button>
-                                                    <button class="btn btn-warning"><i class="fas fa-clock"></i>En
-                                                        attente</button>
-                                                </td>
-                                            </tr>
-                                        @endfor
-                                    </tbody>
-                                </table>
                             </div>
                         </div>
                     </div>
                 </div>
 
-            </div> --}}
+            </div>
+
+
             <div class="row">
                 <div class="col-12">
                     <div class="card">
@@ -272,9 +226,10 @@
                     </div>
                 </div>
             </div>
+        </div>
         </section>
 
-    </section>
+
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 

@@ -32,31 +32,37 @@
                             <div class="card-body">
                                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                                     <li class="nav-item">
-                                        <a class="nav-link active" id="tender-tab" data-toggle="tab" href="#tender" role="tab" aria-controls="tender" aria-selected="true">Appel d'offres</a>
+                                        <a class="nav-link active" id="tender-tab" data-toggle="tab" href="#tender" role="tab" aria-controls="tender" aria-selected="true">Appels d'offres</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" id="career-tab" data-toggle="tab" href="#career" role="tab" aria-controls="career" aria-selected="false">Appel à candidature</a>
+                                        <a class="nav-link" id="career-tab" data-toggle="tab" href="#career" role="tab" aria-controls="career" aria-selected="false">Appels à Candidature</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" id="job-tab" data-toggle="tab" href="#job" role="tab" aria-controls="job" aria-selected="false">Offres d'emploi</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" id="quotation-tab" data-toggle="tab" href="#quotation" role="tab" aria-controls="quotation" aria-selected="false">Demandes de cotation</a>
+                                        <a class="nav-link" id="quotation-tab" data-toggle="tab" href="#quotation" role="tab" aria-controls="quotation" aria-selected="false">Demande de quotation</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" id="event-tab" data-toggle="tab" href="#event" role="tab" aria-controls="event" aria-selected="false">Demande de manifestation</a>
+                                        <a class="nav-link" id="event-tab" data-toggle="tab" href="#event" role="tab" aria-controls="event" aria-selected="false">Demandes de manifestations</a>
                                     </li>
                                 </ul>
                                 <div class="tab-content" id="myTabContent">
+                                    @if(count($recentAnnonces) > 0)
+
                                     @foreach ($recentAnnonces as $annonce)
                                         <div class="tab-pane fade" id="{{ strtolower($annonce['type']) }}" role="tabpanel" aria-labelledby="{{ strtolower($annonce['type']) }}-tab">
-                                            <h2> Dossier N'{{ $annonce['id']}}</h2>
-                                        <p> Titre: {{ strip_tags($annonce['title']) }}</p>
-                                        
-                                            <p>Description: {{strip_tags( $annonce['content'] )}}</p>
-                                            <p>Date limite: {{$annonce['date'] }}</p>
+                                            <h2> Dossier N#{{ $annonce['id']}}</h2>
+                                            <p> Titre: {{ strip_tags($annonce['title']) }}</p>
+                                            <p>Description: {{ strip_tags($annonce['content']) }}</p>
+                                            <p>Date limite: {{ $annonce['date'] }}</p>
                                         </div>
                                     @endforeach
+                                @else
+                                    <div class="alert alert-info">
+                                        Il n'y a pas d'annonces récentes à afficher.
+                                    </div>
+                                @endif
                                 </div>
                         </div>
                     </div>
