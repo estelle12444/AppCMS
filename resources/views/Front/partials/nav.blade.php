@@ -38,24 +38,45 @@ $matches = preg_match('/^\/(annonce|info\/[^\/]+)/', $url);
                             class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                             <div class="px-4 py-3 text-sm text-gray-900 dark:text-white">
                                 <div>{{ app('App\Http\Controllers\ProfilController')->getUsername() }}</div>
-                                <div class="font-medium truncate">
+                                <div class="font-bold truncate">
                                     {{ app('App\Http\Controllers\ProfilController')->getEmail() }}</div>
                             </div>
                             <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
                                 aria-labelledby="avatarButton">
-                                <li>
+                                <li class="flex items-center">
                                     <a href="/profil"
-                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Tableau
-                                        de bord</a>
+                                        class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                            stroke="currentColor" class="w-6 h-6 mr-2">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                        </svg>
+                                        <span>Tableau de bord</span>
+                                    </a>
                                 </li>
-                                <li>
+
+                                {{-- <li>
                                     <a href="#"
                                         class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Paramètre</a>
-                                </li>
+                                </li> --}}
                             </ul>
-                            <div class="py-1">
-                                <a href="/logout"
-                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Déconnexion</a>
+                            <div class="py-1 flex items-center ">
+
+                                    <a href="/profil"
+                                        class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke="currentColor"
+                                            class="w-5 h-5 mr-2 text-red-500">
+                                            <path fill-rule="evenodd"
+                                                d="M3 4.25A2.25 2.25 0 015.25 2h5.5A2.25 2.25 0 0113 4.25v2a.75.75 0 01-1.5 0v-2a.75.75 0 00-.75-.75h-5.5a.75.75 0 00-.75.75v11.5c0 .414.336.75.75.75h5.5a.75.75 0 00.75-.75v-2a.75.75 0 011.5 0v2A2.25 2.25 0 0110.75 18h-5.5A2.25 2.25 0 013 15.75V4.25z"
+                                                clip-rule="evenodd" />
+                                            <path fill-rule="evenodd"
+                                                d="M6 10a.75.75 0 01.75-.75h9.546l-1.048-.943a.75.75 0 111.004-1.114l2.5 2.25a.75.75 0 010 1.114l-2.5 2.25a.75.75 0 11-1.004-1.114l1.048-.943H6.75A.75.75 0 016 10z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        <span class="text-red-500">Déconnexion</span>
+                                    </a>
+
+
                             </div>
                         </div>
                         <div class="font-medium dark:text-white">
@@ -76,7 +97,7 @@ $matches = preg_match('/^\/(annonce|info\/[^\/]+)/', $url);
                 @endif
             @endif
 
-            <p class=" pl-4 pt-4 xl:pt-0 xl:pl-0">
+            <p class=" pl-4 pt-4 xl:pt-2 xl:pl-8">
                 <strong style="color:  #F18700;">FR</strong> | EN
             </p>
 

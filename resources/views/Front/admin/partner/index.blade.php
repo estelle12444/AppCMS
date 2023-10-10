@@ -37,7 +37,7 @@
                                         @foreach ($partners as $partner)
                                             <tr>
                                                 <td>{{ $partner->id }}</td>
-                                                <td>{{ $partner->title }}</td>
+                                                <td style="width: 50px;">{{ $partner->title }}</td>
 
                                                 {{-- <td >@foreach ($sectors as $sector)
 
@@ -69,7 +69,7 @@
                                                 </td>
                                                 {{-- <td>{{ $partner->created_at }}</td> --}}
 
-                                                <td><a href="{{ route('Front.admin.partner.edit', $partner) }}"
+                                                <td style="width: 150px;"><a href="{{ route('Front.admin.partner.edit', $partner) }}"
                                                         class="btn btn-primary btn-action mr-1" data-toggle="tooltip"
                                                         title="" data-original-title="Edit"><i
                                                             class="fas fa-pencil-alt"></i></a>

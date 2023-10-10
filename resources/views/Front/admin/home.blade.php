@@ -79,8 +79,8 @@
                             <h4>Statistique des visites du sites</h4>
                             <div class="card-header-action">
                                 <div class="btn-group">
-                                    <a href="#" class="btn btn-primary">Semaine</a>
-                                    <a href="#" class="btn">Mois</a>
+                                    <a href="#" class="btn btn-primary">Mois</a>
+                                    <a href="#" class="btn"></a>
                                 </div>
                             </div>
                         </div>

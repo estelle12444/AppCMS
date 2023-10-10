@@ -66,13 +66,13 @@ $url = $_SERVER['REQUEST_URI'];
                         <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i
                                     class="fas fa-search"></i></a></li>
                     </ul>
-                    <div class="search-element">
+                    {{-- <div class="search-element">
                         <input class="form-control" type="search" placeholder="Rechercher" aria-label="Search"
                             data-width="250">
                         <button class="btn" type="submit"><i class="fas fa-search"></i></button>
                         <div class="search-backdrop"></div>
 
-                    </div>
+                    </div> --}}
                 </form>
 
                 <li class="dropdown"><a href="#" data-toggle="dropdown"
@@ -88,9 +88,9 @@ $url = $_SERVER['REQUEST_URI'];
                             <i class="far fa-user"></i> Profile
                         </a>
 
-                        <a href="features-settings.html" class="dropdown-item has-icon">
+                        {{-- <a href="features-settings.html" class="dropdown-item has-icon">
                             <i class="fas fa-cog"></i> Paramètre
-                        </a>
+                        </a> --}}
                         <div class="dropdown-divider"></div>
                         <a href="/logout" class="dropdown-item has-icon text-danger">
                             <i class="fas fa-sign-out-alt"></i> Déconnexion
@@ -248,8 +248,8 @@ $url = $_SERVER['REQUEST_URI'];
     <!-- JS Libraies -->
 
     <!-- Page Specific JS File -->
-    <script src="assets/modules/jqvmap/dist/jquery.vmap.min.js"></script>
-    <script src="assets/modules/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="{{asset('assets/modules/jqvmap/dist/jquery.vmap.min.js')}}"></script>
+    <script src="{{asset('assets/modules/jqvmap/dist/maps/jquery.vmap.world.js')}}"></script>
 
     <!-- Template JS File -->
     @stack('scripts')
