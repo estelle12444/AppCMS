@@ -144,14 +144,19 @@ $url = $_SERVER['REQUEST_URI'];
 
                             </ul>
                         </li>
-                        <li class="menu-header">Annonces Récentes et moins récentes</li>
-                        <li class="dropdown" ><a href="{{ route('Front.admin.annonce.recent') }}"
-                                class="nav-link{{ $url === '/annonces-recentes' ? 'active' : '' }}"><i class="fas fa-columns"></i>Annonces Récentes</a>
+                        <li class="menu-header">AnnoncesRécentes et moins récentes</li>
+                        <li class="dropdown" >
+                            <a href="#" class="nav-link has-dropdown <?php echo $url === '/annonces-recentes' || $url === '/annonces-moins-recentes' ? ' active bg-primary text-white' : ''; ?>"
+                                data-toggle="dropdown"><i class="fas fa-briefcase"></i> <span>Annonces Récentes & moins récentes</span></a>
+                            <ul class="dropdown-menu">
+                            <li><a href="{{ route('Front.admin.annonce.recent') }}"
+                                class="nav-link{{ $url === '/annonces-recentes' ? 'active' : '' }}">Annonces Récentes</a>
                         </li>
                         <li><a href="{{ route('Front.admin.annonce.moins-recent') }}"
-                                class="nav-link{{ $url === '/annonces-moins-recentes' ? 'active' : '' }}"><i class="fas fa-columns"></i>Annonces moins
+                                class="nav-link{{ $url === '/annonces-moins-recentes' ? 'active' : '' }}"> Annonces moins
                                 récentes</a></li>
-
+                            </ul>
+                        </li>
                         <li class="menu-header"> Gestion des differents types d'Annonces</li>
                         <li class="dropdown">
                             <a href="#" class="nav-link has-dropdown <?php echo $url === '/tender' || $url === '/tender/create' ? ' active bg-primary text-white' : ''; ?>"
