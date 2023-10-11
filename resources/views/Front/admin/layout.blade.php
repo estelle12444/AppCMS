@@ -11,10 +11,10 @@ $url = $_SERVER['REQUEST_URI'];
     <title>VITIB-ADMIN</title>
 
     <link href="img/favicon.ico" rel="icon">
-    <!-- CSS Libraries -->
+    {{-- <!-- CSS Libraries -->
     <link rel="stylesheet" href="assets/modules/jqvmap/dist/jqvmap.min.css">
     <link rel="stylesheet" href="assets/modules/weather-icon/css/weather-icons.min.css">
-    <link rel="stylesheet" href="assets/modules/weather-icon/css/weather-icons-wind.min.css">
+    <link rel="stylesheet" href="assets/modules/weather-icon/css/weather-icons-wind.min.css"> --}}
     <!-- General CSS Files -->
     <link rel="stylesheet" href="{{ asset('assets/modules/summernote/summernote-bs4.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/modules/bootstrap/css/bootstrap.min.css') }}">
@@ -231,7 +231,10 @@ $url = $_SERVER['REQUEST_URI'];
     </div>
 
     <!-- General JS Scripts -->
+    <script src="{{asset('assets/modules/chart.min.js')}}"></script>
     <script src="{{ asset('assets/modules/jquery.min.js') }}"></script>
+
+    <script src="{{asset('assets/modules/chocolat/dist/js/jquery.chocolat.min.js')}}"></script>
     <script src="{{ asset('assets/modules/popper.js') }}"></script>
 
     <script src="{{ asset('assets/modules/tooltip.js') }}"></script>
@@ -247,9 +250,9 @@ $url = $_SERVER['REQUEST_URI'];
 
     <!-- JS Libraies -->
 
-    <!-- Page Specific JS File -->
+    {{-- <!-- Page Specific JS File -->
     <script src="{{asset('assets/modules/jqvmap/dist/jquery.vmap.min.js')}}"></script>
-    <script src="{{asset('assets/modules/jqvmap/dist/maps/jquery.vmap.world.js')}}"></script>
+    <script src="{{asset('assets/modules/jqvmap/dist/maps/jquery.vmap.world.js')}}"></script> --}}
 
     <!-- Template JS File -->
     @stack('scripts')
@@ -259,7 +262,7 @@ $url = $_SERVER['REQUEST_URI'];
 
 
     <script src="{{ asset('assets/modules/upload-preview/assets/js/jquery.uploadPreview.min.js') }}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
     <script src="{{ asset('assets/js/page/index-0.js') }}"></script>
 
 

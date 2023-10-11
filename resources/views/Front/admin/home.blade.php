@@ -33,7 +33,7 @@
                         </div>
                         <div class="card-wrap">
                             <div class="card-header">
-                                <h4>Téléchargements des dossiers de l'annonce </h4>
+                                <h4>Fichiers de l'annonce télechargés</h4>
                             </div>
                             <div class="card-body">
                                 {{ \App\Models\PageCount::all()->sum('count') }}
@@ -229,9 +229,4 @@
         </div>
         </section>
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-    <!-- JavaScript pour initialiser le graphique -->
 @endsection
