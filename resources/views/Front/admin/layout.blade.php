@@ -146,11 +146,11 @@ $url = $_SERVER['REQUEST_URI'];
                         </li>
                         <li class="menu-header">Annonces Récentes et moins récentes</li>
                         <li class="dropdown" ><a href="{{ route('Front.admin.annonce.recent') }}"
-                                class="{{ $url === '/annonces-recentes' ? 'active' : '' }}">Annonces Récentes</a>
+                                class="nav-link has-dropdown {{ $url === '/annonces-recentes' ? 'active' : '' }}"><i class="fas fa-briefcase"></i> <span>Annonces Récentes</span></a>
                         </li>
                         <li><a href="{{ route('Front.admin.annonce.moins-recent') }}"
-                                class="{{ $url === '/annonces-moins-recentes' ? 'active' : '' }}">Annonces moins
-                                récentes</a></li>
+                                class="nav-link has-dropdown {{ $url === '/annonces-moins-recentes' ? 'active' : '' }}"><i class="fas fa-briefcase"></i> <span>Annonces moins
+                                récentes</a></span></li>
 
                         <li class="menu-header"> Gestion des differents types d'Annonces</li>
                         <li class="dropdown">
