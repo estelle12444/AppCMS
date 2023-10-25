@@ -1,3 +1,9 @@
+<?php
+$url = $_SERVER['REQUEST_URI'];
+$matches = preg_match('/^\/(profil|demande\/[^\/]+)/', $url);
+
+?>
+
 <!DOCTYPE html>
 <html :class="{ 'theme-!dark': !dark }" x-data="data()" lang="fr">
 
@@ -31,8 +37,12 @@
                 </a>
                 <ul class="mt-6">
                     <li class="relative px-6 py-3">
-                        <span class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
-                            aria-hidden="true"></span>
+                        <?php
+                         if ($url == '/profil') {
+                            echo '  <span class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
+                            aria-hidden="true"></span>';
+                        } ?>
+
                         <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
                             href="/profil">
                             <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round"
@@ -47,8 +57,13 @@
                 </ul>
                 <ul>
                     <li class="relative px-6 py-3">
+                        <?php
+                        if ($url == '/profil/demande') {
+                           echo '  <span class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
+                           aria-hidden="true"></span>';
+                       } ?>
                         <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
-                            href="/profil">
+                            href="/profil/demande">
                             <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round"
                                 stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                                 <path
@@ -59,29 +74,56 @@
                         </a>
                     </li>
                     <li class="relative px-6 py-3">
+                        <?php
+                        if ($url == '/profil/etat-demande') {
+                           echo '  <span class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
+                           aria-hidden="true"></span>';
+                       } ?>
                         <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
-                            href="cards.html">
+                            href="/profil/etat-demande">
                             <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round"
                                 stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                                 <path
                                     d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
                                 </path>
                             </svg>
-                            <span class="ml-4">Etat de la demande</span>
+                            <span class="ml-4">Suivre sa demande</span>
                         </a>
                     </li>
                     <li class="relative px-6 py-3">
+                        <?php
+                        if ($url == '/profil/document') {
+                           echo '  <span class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
+                           aria-hidden="true"></span>';
+                       } ?>
                         <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
-                            href="charts.html">
+                            href="/profil/document">
                             <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round"
                                 stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                                 <path d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path>
                                 <path d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path>
                             </svg>
-                            <span class="ml-4">Documents</span>
+                            <span class="ml-4">Documents founirs</span>
                         </a>
-
+                    </li>
                     <li class="relative px-6 py-3">
+                        <?php
+                        if ($url == '/profil/edit-profil') {
+                           echo '  <span class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
+                           aria-hidden="true"></span>';
+                       } ?>
+                        <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                            href="/profil/edit-profil">
+                            <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path>
+                                <path d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path>
+                            </svg>
+                            <span class="ml-4">Modifier ses informations</span>
+                        </a>
+                    </li>
+
+                    {{-- <li class="relative px-6 py-3">
                         <button
                             class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                             @click="togglePagesMenu" aria-haspopup="true">
@@ -136,7 +178,7 @@
                                 </li>
                             </ul>
                         </template>
-                    </li>
+                    </li> --}}
                 </ul>
                 <div class="px-6 my-6">
                     <button
@@ -163,7 +205,7 @@
             @keydown.escape="closeSideMenu">
             <div class="py-4 text-gray-500 dark:text-gray-400">
                 <a class="ml-6 text-lg font-bold text-gray-800 dark:text-gray-200" href="#">
-                    Windmill
+                    Tableau de bord
                 </a>
                 <ul class="mt-6">
                     <li class="relative px-6 py-3">
@@ -177,7 +219,7 @@
                                     d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
                                 </path>
                             </svg>
-                            <span class="ml-4">Dashboard</span>
+                            <span class="ml-4">Tableau de bord</span>
                         </a>
                     </li>
                 </ul>
@@ -191,7 +233,7 @@
                                     d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01">
                                 </path>
                             </svg>
-                            <span class="ml-4">Forms</span>
+                            <span class="ml-4">Liste des Demandes </span>
                         </a>
                     </li>
                     <li class="relative px-6 py-3">
@@ -203,7 +245,7 @@
                                     d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
                                 </path>
                             </svg>
-                            <span class="ml-4">Cards</span>
+                            <span class="ml-4">Suivre sa demande</span>
                         </a>
                     </li>
                     <li class="relative px-6 py-3">
@@ -226,10 +268,10 @@
                                     d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122">
                                 </path>
                             </svg>
-                            <span class="ml-4">Buttons</span>
+                            <span class="ml-4">Modifier ses informations</span>
                         </a>
                     </li>
-                    <li class="relative px-6 py-3">
+                    {{-- <li class="relative px-6 py-3">
                         <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                             href="modals.html">
                             <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round"
@@ -314,7 +356,7 @@
                         Create account
                         <span class="ml-2" aria-hidden="true">+</span>
                     </button>
-                </div>
+                </div> --}}
             </div>
         </aside>
         <div class="flex flex-col flex-1 w-full">
@@ -444,7 +486,7 @@
                                             <span>Profile</span>
                                         </a>
                                     </li>
-                                    <li class="flex">
+                                    {{-- <li class="flex">
                                         <a class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
                                             href="#">
                                             <svg class="w-4 h-4 mr-3" aria-hidden="true" fill="none"
@@ -457,7 +499,7 @@
                                             </svg>
                                             <span>Settings</span>
                                         </a>
-                                    </li>
+                                    </li> --}}
                                     <li class="flex">
                                         <a class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
                                             href="/logout">
@@ -468,7 +510,7 @@
                                                     d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1">
                                                 </path>
                                             </svg>
-                                            <span>Deconnexion</span>
+                                            <span>Déconnexion</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -479,8 +521,6 @@
             </header>
             <main class="h-full overflow-y-auto">
                 @yield('content')
-
-
             </main>
         </div>
     </div>

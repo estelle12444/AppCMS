@@ -201,6 +201,16 @@ Auth::routes();
 Route::get('/profil', [App\Http\Controllers\ProfilController::class, 'index'])->name('Front.profil.home');
 Route::get('/admin', [AdminController::class, 'dashboard'])->name('Front.admin.home');
 
+Route::get('/profil/demande', [App\Http\Controllers\ProfilController::class, 'demande'])->name('Front.profil.demande');
+
+
+Route::get('/profil/edit-profil', [App\Http\Controllers\ProfilController::class, 'editprofil'])->name('Front.profil.edit-profil');
+
+Route::get('/profil/etat-demande', [App\Http\Controllers\ProfilController::class, 'etatdemande'])->name('Front.profil.etat-demande');
+Route::get('/profil/document', [App\Http\Controllers\ProfilController::class, 'document'])->name('Front.profil.document');
+Route::get('/demande/{typeDeDemande}', [TypeDeDemandeController::class, 'form'])->name('Front.profil.form');
+Route::post('/demande/{typeDeDemande}/store', [TypeDeDemandeController::class, 'store'])->name('store');
+
 
 
 Route::get('/check-session-status', 'AuthController@checkSessionStatus')->name('check-session-status');
@@ -242,5 +252,4 @@ Route::get('/annonces-recentes', [AnnonceController::class, 'recentes'])->name('
 Route::get('/annonces-moins-recentes', [AnnonceController::class, 'moinsRecentes'])->name('Front.admin.annonce.moins-recent');
 
 
-Route::get('/demande/{typeDeDemande}', [TypeDeDemandeController::class, 'form'])->name('Front.profil.form');
 

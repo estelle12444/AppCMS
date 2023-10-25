@@ -14,14 +14,14 @@ class TypeDocumentTypeDemande extends Model
     public function typeDocuments()
     {
         return $this->belongsTo(
-            TypeDeDocument::class
+            TypeDeDocument::class,'type_de_document_id'
         );
     }
 
     public function typeDemandes()
     {
         return $this->belongsTo(
-            TypeDeDemande::class
+            TypeDeDemande::class,'type_de_demande_id'
 
         );
     }

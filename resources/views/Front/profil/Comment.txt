@@ -1,0 +1,234 @@
+   {{-- <br>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <h3> Avez-vous des actionnaires ? </h3>
+
+                                </div>
+                                <div class="col-md-7">
+
+                                    <div class="form-group">
+                                        <h5> <label for="response">Oui:</label>
+                                            <input type="checkbox" id="response" onchange="showForm(this.checked)">
+                                        </h5>
+                                        <h5><label for="response">Non:</label>
+                                            <input type="checkbox" id="response">
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div id="actionnaireForm" style="display: none;">
+                                <br>
+                                <h5> Présentation des actionnaires </h5>
+                                <br>
+                                <form>
+                                    <div id="actionnairesContainer">
+                                        <!-- Les champs pour chaque actionnaire seront ajoutés dynamiquement ici -->
+                                    </div>
+                                    <br>
+                                    <button type="button"
+                                        class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
+                                        onclick="ajouterActionnaire()">Ajouter
+                                        un
+                                        actionnaire</button>
+                                </form>
+                            </div>
+                            <br> --}}
+                            {{-- <h3> Prévisions de création d’emplois sur le territoire de la zone franche </h3>
+                        <br>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label for="field7" class="form-label"> Emplois directs </label>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="field7" class="form-label"> <strong>Cadres & Agents de
+                                            maitrise</strong>
+                                    </label>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="field7" class="form-label"> <strong> Employés</strong></label>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="field7" class="form-label"> <strong>Total</strong> </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label for="field7" class="form-label">Annee 1</label>
+
+                                </div>
+                                <div class="col-md-3">
+
+                                    <input type="text" class="form-control" id="field7">
+                                </div>
+                                <div class="col-md-3">
+
+                                    <input type="text" class="form-control" id="field7">
+                                </div>
+                                <div class="col-md-3">
+
+                                    <input type="text" class="form-control" id="field7">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label for="field7" class="form-label">Annee 2</label>
+
+                                </div>
+                                <div class="col-md-3">
+
+                                    <input type="text" class="form-control" id="field7">
+                                </div>
+                                <div class="col-md-3">
+
+                                    <input type="text" class="form-control" id="field7">
+                                </div>
+                                <div class="col-md-3">
+
+                                    <input type="text" class="form-control" id="field7">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label for="field7" class="form-label">Annee 3</label>
+
+                                </div>
+                                <div class="col-md-3">
+
+                                    <input type="text" class="form-control" id="field7">
+                                </div>
+                                <div class="col-md-3">
+
+                                    <input type="text" class="form-control" id="field7">
+                                </div>
+                                <div class="col-md-3">
+
+                                    <input type="text" class="form-control" id="field7">
+                                </div>
+                            </div>
+                        </form>
+                        <br>
+                        <h3> Prévisions de création d’emplois sur le territoire de la zone franche </h3>
+                        <br>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label for="field7" class="form-label"> Emplois directs </label>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="field7" class="form-label"> <strong>Cadres & Agents de
+                                            maitrise</strong>
+                                    </label>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="field7" class="form-label"> <strong> Employés</strong></label>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="field7" class="form-label"> <strong>Total</strong> </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label for="field7" class="form-label">Annee 1</label>
+
+                                </div>
+                                <div class="col-md-3">
+
+                                    <input type="text" class="form-control" id="field7">
+                                </div>
+                                <div class="col-md-3">
+
+                                    <input type="text" class="form-control" id="field7">
+                                </div>
+                                <div class="col-md-3">
+
+                                    <input type="text" class="form-control" id="field7">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label for="field7" class="form-label">Annee 2</label>
+
+                                </div>
+                                <div class="col-md-3">
+
+                                    <input type="text" class="form-control" id="field7">
+                                </div>
+                                <div class="col-md-3">
+
+                                    <input type="text" class="form-control" id="field7">
+                                </div>
+                                <div class="col-md-3">
+
+                                    <input type="text" class="form-control" id="field7">
+                                </div>
+                            </div>
+                            <br>
+
+                        </form>
+                        <br>
+                        <h3> Prévisions de création d’emplois sur le territoire de la zone franche </h3>
+                        <br>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label for="field7" class="form-label"> Emplois directs </label>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="field7" class="form-label"> <strong>Cadres & Agents de
+                                            maitrise</strong>
+                                    </label>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="field7" class="form-label"> <strong> Employés</strong></label>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="field7" class="form-label"> <strong>Total</strong> </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label for="field7" class="form-label">Annee 1</label>
+
+                                </div>
+                                <div class="col-md-3">
+
+                                    <input type="text" class="form-control" id="field7">
+                                </div>
+                                <div class="col-md-3">
+
+                                    <input type="text" class="form-control" id="field7">
+                                </div>
+                                <div class="col-md-3">
+
+                                    <input type="text" class="form-control" id="field7">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label for="field7" class="form-label">Annee 2</label>
+
+                                </div>
+                                <div class="col-md-3">
+
+                                    <input type="text" class="form-control" id="field7">
+                                </div>
+                                <div class="col-md-3">
+
+                                    <input type="text" class="form-control" id="field7">
+                                </div>
+                                <div class="col-md-3">
+
+                                    <input type="text" class="form-control" id="field7">
+                                </div>
+                            </div>
+                            <br>
+
+                        </form>
+                        <br> --}}
