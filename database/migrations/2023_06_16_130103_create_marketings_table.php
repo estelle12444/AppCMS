@@ -19,7 +19,6 @@ return new class extends Migration
             $table->text('concurrents')->nullable();
 
             $table->unsignedBigInteger('company_id');
-            $table->foreign('company_id')->references('id')->on('companies')->onDelete('cascade');
             $table->timestamps();
         });
     }

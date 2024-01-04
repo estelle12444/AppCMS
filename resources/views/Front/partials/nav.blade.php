@@ -177,7 +177,7 @@ $matches = preg_match('/^\/(annonce|info\/[^\/]+)/', $url);
                 <a href="{{ route('login') }}" class="xl:pl-6 ml-4">
                     <button type="button" style="background-color: #F18700"
                         class="pl-4 pr-4 pt-2 pb-2 font-extrabold rounded-none white text-center xl:inline">
-                        SE CONNECTER
+                        S'INSCRIRE
                     </button>
                 </a>
             @endif

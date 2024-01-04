@@ -15,13 +15,11 @@ return new class extends Migration
             $table->id();
 
             $table->string('fichier')->unique();
-
+            $table->string('nom_original')->nullable();
+            
             $table->unsignedBigInteger('type_de_document_id');
             $table->unsignedBigInteger('company_id');
-
-
-            $table->foreign('type_de_document_id')->references('id')->on('type_de_documents')->onDelete('cascade');
-            $table->foreign('company_id')->references('id')->on('companies')->onDelete('cascade');
+            // $table->unsignedBigInteger('demande_id');
             $table->timestamps();
         });
     }

@@ -18,7 +18,7 @@
                     class="mb-4 text-3xl sm:text-4xl xl:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none text-white">
                     LE VITIB VOUS SOUHAITE <br> LA BIENVENUE
                 </h1>
-                <br>
+                {{-- <br>
                 <p
                     class="mb-8 text-base xl:text-lg lg:text-md font-normal xl:text-center text-gray-100 sm:px-8 xl:px-16 lg:px-32">
                     Bienvenue au VITIB - Village des Technologies de l'Information et de la Biotechnologie, un <br
@@ -28,7 +28,7 @@
                     l'Afrique, le VITIB est une zone franche technologique qui offre un <br class="md:hidden xl:block">
                     environnement propice à la
                     croissance des entreprises technologiques.
-                </p>
+                </p> --}}
             </div>
         </div>
     </section>
@@ -39,14 +39,13 @@
             <div class="xl:flex flex-row  ">
                 <div data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="500"
                     class=" md:px-8 w-full xl:w-1/2  ">
-                    <img src="img/dg.png" width="" alt="">
+                    <img src="img/icon-index/dg.png" width="" alt="">
                 </div>
                 <div data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="700"
                     class=" md:px-8 xl:w-1/2  mx-4 xl:mr-24">
                     <h2 class="font-bold xl:text-5xl py-8 text-4xl md:text-5xl ">Mot du directeur Général</h2>
                     <p class="text-justify text-gray-600 xl:text-lg tracking-tight ">
-                        Bienvenue sur le site Internet du Village des Technologies de l’Information et de la Biotechnologie
-                        (VITIB SA).
+                        Bienvenue sur le site Internet du Village des Technologies de l’Information et de la Biotechnologie (VITIB SA).
                     </p>
                     <p class="text-justify text-gray-600">
                         Ce site est une plateforme d’informations de qualité sur nos missions, nos objectifs. Les
@@ -105,9 +104,9 @@
                 <div class="xl:flex flex-row white xl:absolute  xl:mt-6 left-0 py-6 xl:top-[90%] mt-24 xl:mt-0"
                     style="background-image: url(img/blue.png);">
                     <div class="xl:w-1/2 xl:pl-32 px-4 xl:pr-8 pt-10">
-                        <h2 class="font-bold text-4xl">
-                            Notre vision
-                        </h2>
+                        <h1 class="font-bold text-4xl">
+                            Mission
+                        </h1>
                         <p class="text-justify pt-8 pb-8">
                             Notre vision est de devenir un pôle d’innovation et de développement technologique qui catalyse
                             la
@@ -128,6 +127,7 @@
                             <br>Cela
                             faciliterait le développement et la mise en œuvre de nouvelles technologies.
                         </p>
+
                         <h2 data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="700"
                             class=" font-bold tracking-tight ">
                             2. Collaboration entre les acteurs :
@@ -164,7 +164,10 @@
 
                     </div>
 
-                    <div class="xl:w-1/2 xl:pt-56 xl:pl-8 xl:pr-32 px-4 ">
+                    <div class="xl:w-1/2 xl:pt-48 xl:pl-8 xl:pr-32 px-4 ">
+                        <h1 class="font-bold text-4xl pb-8">
+                            Valeur
+                        </h1>
                         <h2 data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="500"
                             class=" font-bold  tracking-tight ">
                             4. Soutien à l'entrepreneuriat :
@@ -215,17 +218,16 @@
 
                     </div>
                 </div>
+
             </div>
-
-
         </div>
     </section>
 
 
 
     <div
-        class="mx-auto px-5 xl:px-20  xl:py-12 md:px-8 md:py-8 py-4 lg:mt-32 bg-gradient-to-r from-gray-100 from-10% to-orange-100 to-90%">
-        <div class="xl:flex flex-col xl:flex-row py-16 xl:px-24">
+        class="  xl:py-12 md:py-8 py-4 lg:mt-32 ">
+        {{-- <div class="xl:flex flex-col xl:flex-row py-16 xl:px-24">
             <div class="xl:w-1/2">
                 <h1 data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="700"
                     class="font-bold text-3xl  md:text-5xl xl:text-6xl pl-4">
@@ -263,13 +265,13 @@
                     intelligente ».
                 </p>
             </div>
-        </div>
+        </div> --}}
     </div>
 
-    <div class="xl:flex flex-row xl:pl-32 relative px-4 " style="background-image: url(img/blue1.png)">
+    {{-- <div class="xl:flex flex-row xl:pl-32 relative px-4 " style="background-image: url(img/blue1.png)">
         <div class="xl:w-1/2">
             {{-- <img src="img/plan_carte.png" width="" alt=""> --}}
-            <div data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="500" id='carte-map' class="xl:py-4 ">
+            {{-- <div data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="500" id='carte-map' class="xl:py-4 ">
             </div>
         </div>
         <div class="xl:w-1/2  xl:pr-16 xl:pl-8 xl:pt-16 py-4">
@@ -296,6 +298,7 @@
             </div>
         </div>
     </div>
+    {{--
     <div class="relative xl:flex flex-row bg-gradient-to-r from-gray-100 from-20% to-orange-100 to-90%">
 
         <div class="xl:w-3/4 xl:pl-24 md:px-4 md:pb-24 xl:pb-32">
@@ -772,7 +775,7 @@
                         </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <script>
         //5.230592230474829, -3.757789933512643

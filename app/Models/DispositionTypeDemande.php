@@ -14,14 +14,14 @@ class DispositionTypeDemande extends Model
     public function disposition()
     {
         return $this->belongsTo(
-            Disposition::class
+            Disposition::class,'disposition_id'
         );
     }
 
     public function typeDemande()
     {
         return $this->belongsTo(
-            TypeDeDemande::class
+            TypeDeDemande::class,'type_de_demande_id'
 
         );
     }

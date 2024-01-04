@@ -13,12 +13,12 @@ class ObligationTypeDemande extends Model
 
     public function obligation()
     {
-        return $this->belongsTo(Obligation::class);
+        return $this->belongsTo(Obligation::class,'obligation_id');
     }
 
     public function typeDemande()
     {
-        return $this->belongsTo(TypeDeDemande::class);
+        return $this->belongsTo(TypeDeDemande::class,'type_de_demande_id');
     }
 
 }

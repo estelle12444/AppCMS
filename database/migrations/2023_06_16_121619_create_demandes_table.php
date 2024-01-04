@@ -19,10 +19,8 @@ return new class extends Migration
             $table->string('code')->unique();
 
             $table->unsignedBigInteger('type_de_demande_id');
-            $table->unsignedBigInteger('company_id');
+            $table->unsignedBigInteger('user_id');
 
-            $table->foreign('type_de_demande_id')->references('id')->on('type_de_demandes')->onDelete('cascade');
-            $table->foreign('company_id')->references('id')->on('companies')->onDelete('cascade');
             $table->timestamps();
         });
     }

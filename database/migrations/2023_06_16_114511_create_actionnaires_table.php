@@ -18,7 +18,6 @@ return new class extends Migration
             $table->decimal('percent', 5, 2);
 
             $table->unsignedBigInteger('company_id');
-            $table->foreign('company_id')->references('id')->on('companies')->onDelete('cascade');
             $table->timestamps();
         });
     }

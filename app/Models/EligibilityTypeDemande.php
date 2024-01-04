@@ -14,14 +14,14 @@ class EligibilityTypeDemande extends Model
     public function eligibility()
     {
         return $this->belongsTo(
-            Eligibility::class
+            Eligibility::class,'eligibility_id'
         );
     }
 
     public function typeDemande()
     {
         return $this->belongsTo(
-            TypeDeDemande::class
+            TypeDeDemande::class,'type_de_demande_id'
 
         );
     }

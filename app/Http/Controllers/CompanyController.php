@@ -129,7 +129,7 @@ class CompanyController extends Controller
 
 
         // Calculez le pourcentage de complétion en fonction des champs renseignés
-        $totalFields = 15; // Supposons qu'il y ait 10 champs au total
+        $totalFields = 15; 
         $fieldsRenseignes = $companies->countFieldsRenseignes(); // Créez cette méthode dans votre modèle
 
         // Calculez le pourcentage de complétion

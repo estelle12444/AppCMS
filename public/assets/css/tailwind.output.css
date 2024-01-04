@@ -697,10 +697,15 @@ print and (-ms-high-contrast:none) {
     background-color: rgba(225, 239, 254, var(--bg-opacity))
 }
 
+/* .bg-blue-500 {
+    --bg-opacity: 1;
+    background-color: #1e3583;
+    background-color: rgba(30,53,131, var(--bg-opacity))
+} */
 .bg-blue-500 {
     --bg-opacity: 1;
-    background-color: #3f83f8;
-    background-color: rgba(63, 131, 248, var(--bg-opacity))
+    background-color: #E28C3C;
+    background-color: rgba(226, 144, 60, var(--bg-opacity))
 }
 
 .bg-blue-600 {
@@ -1997,7 +2002,7 @@ print and (-ms-high-contrast:none) {
 }
 
 .focus\:shadow-outline-purple:focus {
-    box-shadow: 0 0 0 3px rgba(202, 191, 253, .45)
+    box-shadow: 0 0 0 3px rgba(30,53,131)
 }
 
 .theme-dark .dark\:focus\:shadow-outline-gray:focus {

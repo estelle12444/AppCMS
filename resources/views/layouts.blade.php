@@ -44,8 +44,6 @@
     </div>
     <!--  Preloader -->
 
-
-
     {{-- <div id="popup" class="popup">
         <div class="popup-content">
             <div id="mobileWarning" class="hidden">

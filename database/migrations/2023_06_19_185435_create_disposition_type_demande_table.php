@@ -15,10 +15,6 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('disposition_id');
             $table->unsignedBigInteger('type_de_demande_id');
-
-
-            $table->foreign('disposition_id')->references('id')->on('dispositions')->onDelete('cascade');
-            $table->foreign('type_de_demande_id')->references('id')->on('type_de_demandes')->onDelete('cascade');
             $table->timestamps();
         });
     }

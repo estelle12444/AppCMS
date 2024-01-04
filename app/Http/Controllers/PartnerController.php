@@ -59,8 +59,6 @@ class PartnerController extends Controller
         return view('Front.pages.etsagre', compact('sectors', 'partners','search_term', 'sector_id'));
 
 
-
-
         // $partners = Partner::whereHas('sectors', function () use ($data) {
         // })->where('title', 'like', '%' . $data['search_term'] . '%')->get();
 

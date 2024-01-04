@@ -30,7 +30,7 @@
             <br>
             <br> --}}
 
-            <div class="grid gap-6 mb-8 md:grid-cols-2 xl:grid-cols-4">
+            <div class="grid gap-3 mb-8  xl:grid-cols-4">
                 @foreach ($typeDemandes as $typeDemande)
                     <div class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
                         <div class="p-3 mr-4 text-green-500 bg-green-100 rounded-full dark:text-green-100 dark:bg-green-500">
@@ -44,7 +44,7 @@
                         <div>
                             <p class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">
                                 {{ $typeDemande->name }}
-                              
+
 
                             </p>
 
@@ -52,7 +52,7 @@
                                 href="{{ route('Front.profil.form', ['typeDeDemande' => $typeDemande->name]) }}">
 
                                 <button
-                                    class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                                    class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-blue-500 border border-transparent rounded-lg active:bg-blue-500 hover:bg-blue-500 focus:outline-none focus:shadow-outline-purple">
                                     Commencer </button>
                             </a>
 

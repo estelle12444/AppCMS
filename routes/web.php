@@ -6,6 +6,7 @@ use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\CareerController;
 use App\Http\Controllers\CompanyAuthController;
 use App\Http\Controllers\CompanyController;
+use App\Http\Controllers\DemandeController;
 use App\Http\Controllers\DownloadController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\JobController;
@@ -47,7 +48,7 @@ Route::get('/home', function () {
 });
 
 
-Route::match([ 'post'], '/home', function (Request $request) {
+Route::match(['post'], '/home', function (Request $request) {
     Newsletter::create($request->all());
     toastr()->success('Votre message a été enregistré avec succès');
     return redirect()->back();
@@ -84,7 +85,7 @@ Route::get('/media', function () {
     return view('Front.pages.media');
 });
 
-Route::get('/partners',[PartnerController::class, 'index']);
+Route::get('/partners', [PartnerController::class, 'index']);
 
 
 Route::get('/partners', [PartnerController::class, 'search'])->name('Front.admin.search');
@@ -116,7 +117,9 @@ Route::get('/messages', function (Request $request) {
 Route::get('/actu', function () {
     return view('Front.pages.actu');
 });
-Route::get('/info/{tender}',  [AnnonceController::class, 'show_tender']
+Route::get(
+    '/info/{tender}',
+    [AnnonceController::class, 'show_tender']
 )->name('Front.pages.info');
 
 Route::get('/annonce', [AnnonceController::class, 'index']);
@@ -131,64 +134,64 @@ Route::get('/opportunity-pdf', [DownloadController::class, 'opportunityPDF']);
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/partner', [AdminController::class, 'index'])->name('Front.admin.partner.index');
-    Route::get('/partner/create', [AdminController::class, 'create'])->name('Front.admin.partner.create');
-    Route::post('/partner', [AdminController::class, 'store'])->name('Front.admin.partner.store');
-    Route::delete('/partner/{partner}', [AdminController::class, 'destroy'])->name('Front.admin.partner.destroy');
-    Route::get('/partner/{partner}/edit', [AdminController::class, 'edit'])->name('Front.admin.partner.edit');
-    Route::put('/partner/{partner}', [AdminController::class, 'update'])->name('Front.admin.partner.update');
+Route::get('/partner/create', [AdminController::class, 'create'])->name('Front.admin.partner.create');
+Route::post('/partner', [AdminController::class, 'store'])->name('Front.admin.partner.store');
+Route::delete('/partner/{partner}', [AdminController::class, 'destroy'])->name('Front.admin.partner.destroy');
+Route::get('/partner/{partner}/edit', [AdminController::class, 'edit'])->name('Front.admin.partner.edit');
+Route::put('/partner/{partner}', [AdminController::class, 'update'])->name('Front.admin.partner.update');
 
 Route::get('/sector', [SectorController::class, 'index'])->name('Front.admin.sector.index');
-    Route::get('/sector/create', [SectorController::class, 'create'])->name('Front.admin.sector.create');
-    Route::post('/sector', [SectorController::class, 'store'])->name('Front.admin.sector.store');
-    Route::get('/sector/{sector}/edit', [SectorController::class, 'edit'])->name('Front.admin.sector.edit');
-    Route::put('/sector/{sector}', [SectorController::class, 'update'])->name('Front.admin.sector.update');
-    Route::delete('/sector/{sector}', [SectorController::class, 'destroy'])->name('Front.admin.sector.destroy');
+Route::get('/sector/create', [SectorController::class, 'create'])->name('Front.admin.sector.create');
+Route::post('/sector', [SectorController::class, 'store'])->name('Front.admin.sector.store');
+Route::get('/sector/{sector}/edit', [SectorController::class, 'edit'])->name('Front.admin.sector.edit');
+Route::put('/sector/{sector}', [SectorController::class, 'update'])->name('Front.admin.sector.update');
+Route::delete('/sector/{sector}', [SectorController::class, 'destroy'])->name('Front.admin.sector.destroy');
 
 
 Route::get('/tender', [TenderController::class, 'index'])->name('Front.admin.tender.index');
-    Route::get('/tender/create', [TenderController::class, 'create'])->name('Front.admin.tender.create');
-    Route::post('/tender', [TenderController::class, 'store'])->name('Front.admin.tender.store');
-    Route::delete('/tender/{tender}', [TenderController::class, 'destroy'])->name('Front.admin.tender.destroy');
-    Route::get('/tender/{tender}/edit', [TenderController::class, 'edit'])->name('Front.admin.tender.edit');
-    Route::put('/tender/{tender}',[TenderController::class, 'update'])->name('Front.admin.tender.update');
+Route::get('/tender/create', [TenderController::class, 'create'])->name('Front.admin.tender.create');
+Route::post('/tender', [TenderController::class, 'store'])->name('Front.admin.tender.store');
+Route::delete('/tender/{tender}', [TenderController::class, 'destroy'])->name('Front.admin.tender.destroy');
+Route::get('/tender/{tender}/edit', [TenderController::class, 'edit'])->name('Front.admin.tender.edit');
+Route::put('/tender/{tender}', [TenderController::class, 'update'])->name('Front.admin.tender.update');
 
 Route::get('/job', [JobController::class, 'index'])->name('Front.admin.job.index');
-    Route::get('/job/create', [JobController::class, 'create'])->name('Front.admin.job.create');
-    Route::post('/job', [JobController::class, 'store'])->name('Front.admin.job.store');
-    Route::delete('/job/{job}', [JobController::class, 'destroy'])->name('Front.admin.job.destroy');
-    Route::get('/job/{job}/edit', [JobController::class, 'edit'])->name('Front.admin.job.edit');
-    Route::put('/job/{job}',[JobController::class, 'update'])->name('Front.admin.job.update');
+Route::get('/job/create', [JobController::class, 'create'])->name('Front.admin.job.create');
+Route::post('/job', [JobController::class, 'store'])->name('Front.admin.job.store');
+Route::delete('/job/{job}', [JobController::class, 'destroy'])->name('Front.admin.job.destroy');
+Route::get('/job/{job}/edit', [JobController::class, 'edit'])->name('Front.admin.job.edit');
+Route::put('/job/{job}', [JobController::class, 'update'])->name('Front.admin.job.update');
 
 Route::get('/event', [EventController::class, 'index'])->name('Front.admin.event.index');
-    Route::get('/event/create', [EventController::class, 'create'])->name('Front.admin.event.create');
-    Route::post('/event', [EventController::class, 'store'])->name('Front.admin.event.store');
-    Route::delete('/event/{event}', [EventController::class, 'destroy'])->name('Front.admin.event.destroy');
-    Route::get('/event/{event}/edit', [EventController::class, 'edit'])->name('Front.admin.event.edit');
-    Route::put('/event/{event}',[EventController::class, 'update'])->name('Front.admin.event.update');
+Route::get('/event/create', [EventController::class, 'create'])->name('Front.admin.event.create');
+Route::post('/event', [EventController::class, 'store'])->name('Front.admin.event.store');
+Route::delete('/event/{event}', [EventController::class, 'destroy'])->name('Front.admin.event.destroy');
+Route::get('/event/{event}/edit', [EventController::class, 'edit'])->name('Front.admin.event.edit');
+Route::put('/event/{event}', [EventController::class, 'update'])->name('Front.admin.event.update');
 
 Route::get('/career', [CareerController::class, 'index'])->name('Front.admin.career.index');
-    Route::get('/career/create', [CareerController::class, 'create'])->name('Front.admin.career.create');
-    Route::post('/career', [CareerController::class, 'store'])->name('Front.admin.career.store');
-    Route::delete('/career/{career}', [CareerController::class, 'destroy'])->name('Front.admin.career.destroy');
-    Route::get('/career/{career}/edit', [CareerController::class, 'edit'])->name('Front.admin.career.edit');
-    Route::put('/career/{career}',[CareerController::class, 'update'])->name('Front.admin.career.update');
+Route::get('/career/create', [CareerController::class, 'create'])->name('Front.admin.career.create');
+Route::post('/career', [CareerController::class, 'store'])->name('Front.admin.career.store');
+Route::delete('/career/{career}', [CareerController::class, 'destroy'])->name('Front.admin.career.destroy');
+Route::get('/career/{career}/edit', [CareerController::class, 'edit'])->name('Front.admin.career.edit');
+Route::put('/career/{career}', [CareerController::class, 'update'])->name('Front.admin.career.update');
 
 Route::get('/quotation', [QuotationController::class, 'index'])->name('Front.admin.quotation.index');
-    Route::get('/quotation/create', [QuotationController::class, 'create'])->name('Front.admin.quotation.create');
-    Route::post('/quotation', [QuotationController::class, 'store'])->name('Front.admin.quotation.store');
-    Route::delete('/quotation/{quotation}', [QuotationController::class, 'destroy'])->name('Front.admin.quotation.destroy');
-    Route::get('/quotation/{quotation}/edit', [QuotationController::class, 'edit'])->name('Front.admin.quotation.edit');
-    Route::put('/quotation/{quotation}',[QuotationController::class, 'update'])->name('Front.admin.quotation.update');
+Route::get('/quotation/create', [QuotationController::class, 'create'])->name('Front.admin.quotation.create');
+Route::post('/quotation', [QuotationController::class, 'store'])->name('Front.admin.quotation.store');
+Route::delete('/quotation/{quotation}', [QuotationController::class, 'destroy'])->name('Front.admin.quotation.destroy');
+Route::get('/quotation/{quotation}/edit', [QuotationController::class, 'edit'])->name('Front.admin.quotation.edit');
+Route::put('/quotation/{quotation}', [QuotationController::class, 'update'])->name('Front.admin.quotation.update');
 
 
 
 Route::get('/count/', function (Request $request) {
     $filename = $request->query('filename');
-    $page = PageCount::firstOrCreate(['url'=> $filename], ['name'=> $filename, 'count'=>0, 'url'=>$filename]);
+    $page = PageCount::firstOrCreate(['url' => $filename], ['name' => $filename, 'count' => 0, 'url' => $filename]);
     $page->count = $page->count + 1;
     $page->save();
 
-    return response()->file(storage_path('app/public/'.$filename));
+    return response()->file(storage_path('app/public/' . $filename));
 })->name('download_file');
 
 
@@ -200,31 +203,34 @@ Auth::routes();
 
 Route::get('/profil', [App\Http\Controllers\ProfilController::class, 'index'])->name('Front.profil.home');
 Route::get('/admin', [AdminController::class, 'dashboard'])->name('Front.admin.home');
-
 Route::get('/profil/demande', [App\Http\Controllers\ProfilController::class, 'demande'])->name('Front.profil.demande');
 
 
-Route::get('/profil/edit-profil', [App\Http\Controllers\ProfilController::class, 'editprofil'])->name('Front.profil.edit-profil');
-
-Route::get('/profil/etat-demande', [App\Http\Controllers\ProfilController::class, 'etatdemande'])->name('Front.profil.etat-demande');
-Route::get('/profil/document', [App\Http\Controllers\ProfilController::class, 'document'])->name('Front.profil.document');
+Route::get('/profil/etat-demande', [App\Http\Controllers\DemandeController::class, 'etatdemande'])->name('Front.profil.etat-demande');
+Route::get('/profil/document', [App\Http\Controllers\ProfilController::class, 'userDocumentsByType'])->name('Front.profil.document');
 Route::get('/demande/{typeDeDemande}', [TypeDeDemandeController::class, 'form'])->name('Front.profil.form');
 Route::post('/demande/{typeDeDemande}/store', [TypeDeDemandeController::class, 'store'])->name('store');
 
 
+Route::get('/profil/{company}/edit/{typeDeDemande}',  [TypeDeDemandeController::class, 'editcompany'])->name('company-edit');
+Route::put('/profil/{company}/update/{typeDeDemande}', [TypeDeDemandeController::class, 'update'])->name('update-company');
+
+Route::get('/profil/document/{document}/edit', [TypeDeDemandeController::class, 'editdocument'])->name('documents.edit');
+Route::put('/profil/document/{document}/update', [TypeDeDemandeController::class, 'updatedocument'])->name('documents.update');
+Route::delete('/profil/documents/{document}', [TypeDeDemandeController::class, 'destroydocument'])->name('documents.destroy');
 
 Route::get('/check-session-status', 'AuthController@checkSessionStatus')->name('check-session-status');
 
+Route::get('/document/storage/{filepath}',[TypeDeDemandeController::class, 'retrieveDocument'])->name('documents.filename');
+
+
+Route::get('/auth/register', [CompanyController::class, 'step1']);
+Route::post('/auth/register', [CompanyController::class, 'storeStep1'])->name('company.step1');
 
 
 
-Route::get('/auth/register', [CompanyController::class,'step1']) ;
-Route::post('/auth/register', [CompanyController::class,'storeStep1'])->name('company.step1');
-
-
-
-Route::get('/auth/register-other',[CompanyController::class,'step2']);
-Route::post('/auth/register-other',  [CompanyController::class,'storeStep2'])->name('company.step2');
+Route::get('/auth/register-other', [CompanyController::class, 'step2']);
+Route::post('/auth/register-other',  [CompanyController::class, 'storeStep2'])->name('company.step2');
 
 
 
@@ -243,13 +249,13 @@ Route::get('/auth/confirmation-page', function () {
 Route::put('/valider-compagnie/{id}', [CompanyController::class, 'validerCompagnie'])->name('validerCompagnie');
 
 
-
-
 // Route pour la liste des annonces récentes
 Route::get('/annonces-recentes', [AnnonceController::class, 'recentes'])->name('Front.admin.annonce.recent');
 
 // Route pour la liste des annonces moins récentes
 Route::get('/annonces-moins-recentes', [AnnonceController::class, 'moinsRecentes'])->name('Front.admin.annonce.moins-recent');
 
-
+Route::get('/demandes', [DemandeController::class, 'index'])->name('demandes.index');
+// Exemple de route pour télécharger le document
+Route::get('/telecharger-document/{id}', [DemandeController::class, 'telechargerDocument'])->name('telecharger-document');
 

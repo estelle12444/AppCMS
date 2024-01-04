@@ -20,18 +20,18 @@ class CompanySeeder extends Seeder
 
 
         DB::table('companies')->insert([
-            'name' => 'Nom de la société',
-            'legal_form' => 'Forme juridique',
-            'RCCM' => 'Numéro RCCM',
-            'taxpayer_account' => 'Numéro de compte fiscal',
-            'capital' => 'Capital social',
-            'siege' => 'Siège social',
-            'phone' => 'Numéro de téléphone',
-            'cellulaire' => 'Numéro de téléphone cellulaire',
+            'name' => 'SAH ANALYTICS',
+            'legal_form' => 'DEVOOOZE',
+            'RCCM' => 'RCCM000031',
+            'taxpayer_account' => 'NC000934',
+            'capital' => '5000000',
+            'siege' => 'Abidjan',
+            'phone' => '+2250789340956',
+            'cellulaire' => '+225 21222409876',
             'email' => 'email@entreprise.com',
             'website_link' => 'http://www.exemple.com',
-            'legal_agent' => 'Agent légal',
-            'fonction' => 'Fonction',
+            'legal_agent' => 'Pascale',
+            'fonction' => 'DEV',
             'activity' => 'Activité',
             'location_type' => 'new_society',
             'partner_id' => null, // ID du partenaire lié (s'il y en a un)

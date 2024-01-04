@@ -82,7 +82,6 @@
                                                             class="btn btn-danger btn-action trigger--fire-modal-6"
                                                             onclick="return confirm('Êtes-vous sûr de vouloir supprimer ce secteur ?')"><i
                                                                 class="fas fa-trash"></i></button>
-
                                                     </form>
 
                                                 </td>

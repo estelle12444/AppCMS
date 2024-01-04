@@ -15,10 +15,6 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('obligation_id');
             $table->unsignedBigInteger('type_de_demande_id');
-
-
-            $table->foreign('obligation_id')->references('id')->on('obligations')->onDelete('cascade');
-            $table->foreign('type_de_demande_id')->references('id')->on('type_de_demandes')->onDelete('cascade');
             $table->timestamps();
         });
     }

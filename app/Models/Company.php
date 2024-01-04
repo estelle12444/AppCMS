@@ -35,8 +35,6 @@ class Company extends Model
     ];
 
 
-
-
     public function demandes()
     {
         return $this->belongsToMany(Demande::class);

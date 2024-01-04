@@ -45,9 +45,7 @@ class TypeDeDemande extends Model
     }
 
     public function typeDocuments(){
-        return $this->hasMany(TypeDeDocument::class,
-        'type_de_demande_type_de_document',
-        'type_de_document_id',
+        return $this->belongsToMany(TypeDeDocument::class,'type_de_demande_type_de_document','type_de_document_id',
         'type_de_demande_id');
     }
 }
