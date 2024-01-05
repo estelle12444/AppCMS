@@ -10,15 +10,14 @@
     </div>
 </section>
     <div class="bg-gradient-to-r from-orange-100 from-20%  to-gray-100 to-90%">
-
-        <div class="md:px-10  lg:grid lg:grid-cols-3 gap-3 pt-10 lg:pt-20 pr-6 lg:pr-48 pl-6 lg:pl-32">
+        {{-- <div class="md:px-10  lg:grid lg:grid-cols-3 gap-3 pt-10 lg:pt-20 pr-6 lg:pr-48 pl-6 lg:pl-32">
             <div class="lg:col-span-2">
-                <h1 data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="500"
+                <h1 data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="500"
                     class="xl:text-4xl text-3xl  md:text-4xl md:text-center xl:text-left md:pb-8 xl:pb-0 font-bold   pr-4 lg:pr-16 text-gray-600">
                     Rejoignez-nous dès aujourd'hui et transformez l'avenir de votre entreprise au cœur de
                     l'Afrique.
                 </h1>
-                <p data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="700"
+                <p data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="700"
                     class="pt-4 pb-5 lg:pt-10 text-center lg:text-justify text-base lg:text-lg">
                     L’État de Côte d’Ivoire permet aux entreprises nationales et internationales de faire <br
                         class="hidden 2xl:block">
@@ -33,27 +32,27 @@
             </div>
 
             <div class="lg:text-center md:pl-10 xl:pl-0 ">
-                <img data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="500" src="img/page_4/Image4.png"
+                <img data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="500" src="img/page_4/Image4.png"
                     alt="">
             </div>
-        </div>
-        <div class=" md:px-20 pt-20 px-4 xl:px-32 pb-20 xl:grid xl:grid-cols-3 grid-cols-1 gap-3 ">
+        </div> --}}
+        <div class=" md:px-20 pt-12 px-4 xl:px-32 pb-20 xl:grid xl:grid-cols-3 grid-cols-1 gap-3 ">
             <div class=" ">
-                <img data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="600" src="img/page_4/Image5.png"
+                <img data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="600" src="img/page_4/Image5.png"
                     alt="">
             </div>
             <div class="xl:col-span-2 xl:px-8 md:px-0">
-                <h1 data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="400"
+                <h1 data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="400"
                     class="xl:text-3xl text-4xl font-bold text-left py-8 md:py-6 xl:py-0 lg:pr-16 text-gray-600">
                     Eligibilité – Pré-requis
                 </h1>
-                <p data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="500"
+                <p data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="500"
                     class="pt-4 text-justify xl:text-lg">
                     Le bénéfice du régime de la ZBTIC est soumis à l’obtention d’un agrément délivré par l’EPE (VITIB S.A).
                     Pour ce faire, les sociétés désireuses de s’implanter sur la zone franche en qualité d’Entreprises
                     Utilisatrices doivent opérer dans les domaines d’activités suivants :
                 </p>
-                <div data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="400"
+                <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="400"
                     class="flex items-center pl-4 xl:pl-10 pt-4 rounded-lg" role="alert">
                     <div
                         class="inline-flex items-center flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
@@ -63,7 +62,7 @@
                         Biotechnologie
                     </p>
                 </div>
-                <div data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="500"
+                <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="500"
                     class="flex items-center pl-4 xl:pl-10 pt-4 rounded-lg" role="alert">
                     <div
                         class="inline-flex items-center flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
@@ -73,7 +72,7 @@
                         Technologies de l’Information et de la Communication
                     </p>
                 </div>
-                <div data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="600"
+                <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="600"
                     class="flex items-center pl-4 xl:pl-10 pt-4 rounded-lg" role="alert">
                     <div
                         class="inline-flex items-center flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
@@ -84,8 +83,8 @@
                     </p>
                 </div>
 
-                <p data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="700"
-                    class="pt-6 text-justify xl:text-lg">
+                <p data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="500"
+                    class="pt-4 text-justify xl:text-lg">
                     VITIB offre également des opportunités d’investissements dans l’immobilier en BOO et BOT sur 180 Ha en
                     aménagement, avec en vue la création d’une nouvelle ville. VITIB recherche des partenaires techniques et
                     financiers en mode PPP pour le financement et la réalisation de projets urbains sur la Zone Franche de
@@ -94,282 +93,437 @@
                 </p>
             </div>
         </div>
-
-        <section class="bg-center bg-no-repeat bg-gray-600 bg-blend-multiply"
-            style="background-image: url(img/page_4/terrain.jpg)">
-            <div class="px-4 mx-auto max-w-screen-xl text-center pt-8 pb-8 lg:pt-32 lg:pb-32">
-                <h1 data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="500"
-                    class="mb-4 text-3xl font-extrabold tracking-tight leading-none text-white xl:text-3xl lg:text-4xl">
-                    ACTIVITES ELIGIBLES</h1>
-            </div>
-        </section>
-
-        <div class="md:px-20 py-20 pr-4 xl:px-32 pl-4  md:py-20 xl:py-20">
-            <h1 data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="600"
-                class="text-2xl xl:text-4xl md:text-4xl font-bold text-center md:text-justify lg:text-justify">
-                Activités industrielles
-            </h1>
-            <div data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="700"
-                class="grid grid-cols-1 md:grid-cols-2 gap-3 md:py-4 xl:py-0">
-
-                <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
-                    <div
-                        class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
-                        <img src="img/icon/check.png" alt="">
-                    </div>
-                    <p class="ml-2 lg:ml-4 text-sm lg:text-md font-normal">
-                        Conception, fabrication et assemblage <br> de produits informatiques
-                    </p>
-                </div>
-
-                <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
-                    <div
-                        class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
-                        <img src="img/icon/check.png" alt="">
-                    </div>
-                    <p class="ml-2 lg:ml-4 text-sm lg:text-md font-normal">
-                        Conception, fabrication et assemblage <br> de produits télécoms et réseaux
-                    </p>
-                </div>
-
-                <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
-                    <div
-                        class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
-                        <img src="img/icon/check.png" alt="">
-                    </div>
-                    <p class="ml-2 lg:ml-4 text-sm lg:text-md font-normal">
-                        Conception, fabrication et assemblage <br> d'instruments de test et de recherche <br> biotechnologie
-                    </p>
-                </div>
-
-                <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
-                    <div
-                        class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
-                        <img src="img/icon/check.png" alt="">
-                    </div>
-                    <p class="ml-2 lg:ml-4 text-sm lg:text-md font-normal">
-                        Fabrication de produits biotechnologies <br> divers (médecine, pharmacie, agroalimentaire, <br>
-                        énergie, environnement, industrie, mines )
-                    </p>
-                </div>
-
-                <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
-                    <div
-                        class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
-                        <img src="img/icon/check.png" alt="">
-                    </div>
-                    <p class="ml-2 lg:ml-4 text-sm lg:text-md font-normal">
-                        Production de contenus audiovisuels
-                    </p>
-                </div>
-
-                <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
-                    <div
-                        class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
-                        <img src="img/icon/check.png" alt="">
-                    </div>
-                    <p class="ml-2 lg:ml-4 text-sm lg:text-md font-normal">
-                        Edition de logiciels et progiciels
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="700"
-            class=" md:px-20 px-4 sm:px-8 xl:px-16 lg:px-32 pb-8 sm:pb-16 xl:pb-24 lg:pb-32">
-            <h1 class="text-2xl xl:text-4xl md:text-4xl font-bold text-center md:text-justify lg:text-justify">
-                Recherche et développement
-            </h1>
-            <div data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="1000"
-                class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 lg:grid-cols-3 gap-4">
-                <div class="flex items-center pt-4 sm:pt-8 rounded-lg" role="alert">
-                    <div
-                        class="inline-flex items-center flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
-                        <img src="img/icon/check.png" alt="">
-                    </div>
-                    <p class="ml-4 text-sm sm:text-md font-normal">
-                        Conception, fabrication et assemblage <br>de produits informatiques
-                    </p>
-                </div>
-                <div class="flex items-center pt-4 sm:pt-8 rounded-lg" role="alert">
-                    <div
-                        class="inline-flex items-center flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
-                        <img src="img/icon/check.png" alt="">
-                    </div>
-                    <p class="ml-4 text-sm sm:text-md font-normal">
-                        Conception, fabrication et assemblage <br>de produits télécoms et réseaux
-                    </p>
-                </div>
-                <div class="flex items-center pt-4 sm:pt-8 rounded-lg" role="alert">
-                    <div
-                        class="inline-flex items-center flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
-                        <img src="img/icon/check.png" alt="">
-                    </div>
-                    <p class="ml-4 text-sm sm:text-md font-normal">
-                        Conception, fabrication et assemblage <br>d'instruments de test et de recherche <br>biotechnologie
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="px-4 md:px-20 py-4 lg:px-32 ">
-            <h1 data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="700"
-                class="text-2xl xl:text-4xl md:text-4xl font-bold text-center md:text-justify lg:text-justify">
-                Renforcement des capacités
-            </h1>
-            <div data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="700"
-                class="grid grid-cols-1 gap-3 xl:grid-cols-3 md:grid-cols-2">
-                <div class="flex items-center py-4 lg:py-8 rounded-lg" role="alert">
-                    <div
-                        class="inline-flex items-center flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
-                        <img src="img/icon/check.png" alt="">
-                    </div>
-                    <p class="ml-4 text-md font-normal">
-                        Conception, fabrication et assemblage de produits informatiques
-                    </p>
-                </div>
-
-                <div class="flex items-center py-4 lg:py-8 rounded-lg" role="alert">
-                    <div
-                        class="inline-flex items-center flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
-                        <img src="img/icon/check.png" alt="">
-                    </div>
-                    <p class="ml-4 text-md font-normal">
-                        Conception, fabrication et assemblage de produits télécoms et réseaux
-                    </p>
-                </div>
-
-                <div class="flex items-center py-4 lg:py-8 rounded-lg" role="alert">
-                    <div
-                        class="inline-flex items-center flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
-                        <img src="img/icon/check.png" alt="">
-                    </div>
-                    <p class="ml-4 text-md font-normal">
-                        Conception, fabrication et assemblage d'instruments de test et de recherche biotechnologie
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="500"
-            class="  md:px-20 px-4 py-4 lg:px-32">
-            <h1 class="text-2xl xl:text-4xl md:text-4xl font-bold text-center md:text-justify lg:text-justify">
-                Services à valeur ajoutée
-            </h1>
-            <p data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="600"
-                class="pt-6 pb-8 text-center sm:text-justify text-md">
-                Les services à valeur ajoutée sont des services dans le cadre desquels les fournisseurs "ajoutent une
-                valeur"
-                <br class="hidden xl:block">
-                aux informations fournies par le client en améliorant leur forme ou leur contenu ou en prévoyant leur
-                stockage
-                et leur recherche.
-            </p>
-            <div data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="700"
-                class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 lg:grid-cols-4 gap-6">
-                <div class="flex items-center rounded-lg p-4 bg-white shadow-md">
-                    <div
-                        class="inline-flex items-center flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
-                        <img src="img/icon/check.png" alt="">
-                    </div>
-                    <p class="ml-4 text-md font-normal">
-                        Conception, fabrication et assemblage <br>de produits informatiques
-                    </p>
-                </div>
-                <div class="flex items-center rounded-lg p-4 bg-white shadow-md">
-                    <div
-                        class="inline-flex items-center flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
-                        <img src="img/icon/check.png" alt="">
-                    </div>
-                    <p class="ml-4 text-md font-normal">
-                        Conception, fabrication et assemblage <br>de produits télécoms et réseaux
-                    </p>
-                </div>
-                <div class="flex items-center rounded-lg p-4 bg-white shadow-md">
-                    <div
-                        class="inline-flex items-center flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
-                        <img src="img/icon/check.png" alt="">
-                    </div>
-                    <p class="ml-4 text-md font-normal">
-                        Conception, fabrication et assemblage <br>
-                        d'instruments de test et de recherche <br>
-                        biotechnologie
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="500" class="md:px-20 px-4 xl:px-32 py-8">
-            <h1 class="text-2xl xl:text-4xl md:text-4xl font-bold text-center md:text-justify lg:text-justify">
-                Activités d'accompagnement
-            </h1>
-            <p data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="600"
-                class="pt-4 xl:pt-10 text-center md:text-left xl:text-justify text-base xl:text-md lg:text-lg">
-                Outre ces activités privilégiées, la ZBTIC accueille un ensemble de services d'accompagnement :
-            </p>
-            <div data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="700"
-                class="grid grid-cols-1 xl:grid-cols-2 md:grid-cols-2 gap-4">
-
-                <div class="flex items-center pt-6 xl:pt-8 rounded-lg" role="alert">
-                    <div
-                        class="inline-flex items-center flex-shrink-0 w-6 h-6 xl:w-8 xl:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
-                        <img src="img/icon/check.png" alt="">
-                    </div>
-                    <p class="ml-2 xl:ml-4 text-sm xl:text-md font-normal">
-                        Conception, fabrication et assemblage <br>de
-                        produits informatiques
-                    </p>
-                </div>
-
-                <div class="flex items-center pt-6 xl:pt-8 rounded-lg" role="alert">
-                    <div
-                        class="inline-flex items-center flex-shrink-0 w-6 h-6 xl:w-8 xl:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
-                        <img src="img/icon/check.png" alt="">
-                    </div>
-                    <p class="ml-2 xl:ml-4 text-sm xl:text-md font-normal">
-                        Conception, fabrication et assemblage <br>de
-                        produits télécoms et réseaux
-                    </p>
-                </div>
-
-                <div class="flex items-center pt-6 xl:pt-8 rounded-lg" role="alert">
-                    <div
-                        class="inline-flex items-center flex-shrink-0 w-6 h-6 xl:w-8 xl:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
-                        <img src="img/icon/check.png" alt="">
-                    </div>
-                    <p class="ml-2 xl:ml-4 text-sm xl:text-md font-normal">
-                        Conception, fabrication et assemblage <br>
-                        d'instruments de test et de recherche <br>
-                        biotechnologie
-                    </p>
-                </div>
-            </div>
-        </div>
-
         <div class="flex flex-col text-center xl:py-20 md:py-16 py-4">
-            <h1 data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="700"
+            <h1 data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="500"
                 class="text-2xl lg:text-4xl md:text-4xl font-bold uppercase">
                 Procédure d'agrément
             </h1>
             <div class="xl:py-8 py-4 xl:pt-20 xl:px-24 px-6 md:px-6 ">
-                <img data-aos="zoom-out-right" data-aos-duration="1000" data-aos-delay="800"
+                <img data-aos="zoom-out-right" data-aos-duration="500" data-aos-delay="600"
                     src="img/background/Parcours1.svg" alt="">
             </div>
         </div>
-        <div class="pt-4 xl:pt-8 pb-5 text-center">
+
+        {{-- <section class="bg-center bg-no-repeat bg-gray-600 bg-blend-multiply"
+            style="background-image: url(img/page_4/terrain.jpg)">
+            <div class="px-4 mx-auto max-w-screen-xl text-center pt-8 pb-8 lg:pt-32 lg:pb-32">
+                <h1 data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="500"
+                    class="mb-4 text-3xl font-extrabold tracking-tight leading-none text-white xl:text-3xl lg:text-4xl">
+                    ACTIVITES ELIGIBLES</h1>
+            </div>
+        </section> --}}
+
+
+        <div class="p-4 bg-white shadow-md">
+            {{-- <div class=" flex items-center xl:grid xl:grid-cols-2 grid-cols-1 gap-3 flex md:px-20 px-4 sm:px-8 xl:px-16 lg:px-32 pb-8 sm:pb-16 xl:pb-24 lg:pb-32  ">
+                <div class="xl:col-span-2">
+                <h1 data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="600"
+                    class="text-2xl xl:text-4xl md:text-4xl font-bold text-center md:text-justify lg:text-justify">
+                    Activités industrielles
+                </h1>
+                <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="700"
+                    class="grid grid-cols-1 md:grid-cols-1 gap-3 md:py-4 xl:py-0">
+
+                    <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
+                        <div
+                            class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                            <img src="img/icon/check.png" alt="">
+                        </div>
+                        <p class="ml-2 lg:ml-4 text-sm lg:text-md font-normal">
+                            Activités Industrielles
+                        </p>
+                    </div>
+
+                    <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
+                        <div
+                            class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                            <img src="img/icon/check.png" alt="">
+                        </div>
+                        <p class="ml-2 lg:ml-4 text-sm lg:text-md font-normal">
+                          Recherche et développement
+                        </p>
+                    </div>
+
+                    <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
+                        <div
+                            class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                            <img src="img/icon/check.png" alt="">
+                        </div>
+                        <p class="ml-2 lg:ml-4 text-sm lg:text-md font-normal">
+                            Activités d'accompagnement
+                        </p>
+                    </div>
+
+                    <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
+                        <div
+                            class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                            <img src="img/icon/check.png" alt="">
+                        </div>
+                        <p class="ml-2 lg:ml-4 text-sm lg:text-md font-normal">
+                            Renforcement des capacités
+                        </p>
+                    </div>
+
+                    <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
+                        <div
+                            class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                            <img src="img/icon/check.png" alt="">
+                        </div>
+                        <p class="ml-2 lg:ml-4 text-sm lg:text-md font-normal">
+                           Services à valeur ajoutée
+                        </p>
+                    </div>
+
+                </div>
+                </div>
+                <div class="xl:col-span-2">
+                    <!-- Ajoutez votre balise img avec la source de l'image ici -->
+                    <img src="img/page_4/Image4.png" alt="Description de l'image">
+                </div>
+
+            </div> --}}
+            <div class="flex md:px-20 px-4 sm:px-8 lg:pt-8 xl:px-16 lg:px-32 pb-8 sm:pb-16 xl:pb-16 lg:pb-24">
+                <div class="md:w-1/2">
+                    <h1 data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="800"
+                        class="text-2xl xl:text-4xl md:text-4xl font-bold text-center md:text-justify lg:text-justify">
+                        ACTIVITES ELLIGIBLES
+                    </h1>
+                    <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="700"
+                        class="grid grid-cols-1 md:grid-cols-1 gap-3 md:py-4 xl:py-0">
+
+                        <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
+                            <div
+                                class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                <img src="img/icon/check.png" alt="">
+                            </div>
+                            <p class="ml-2 lg:ml-4 text-sm lg:text-xl font-normal">
+                                Activités Industrielles
+                            </p>
+                        </div>
+
+                        <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
+                            <div
+                                class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                <img src="img/icon/check.png" alt="">
+                            </div>
+                            <p class="ml-2 lg:ml-4 text-sm lg:text-xl font-normal">
+                              Recherche et développement
+                            </p>
+                        </div>
+
+                        <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
+                            <div
+                                class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                <img src="img/icon/check.png" alt="">
+                            </div>
+                            <p class="ml-2 lg:ml-4 text-sm lg:text-xl font-normal">
+                                Activités d'accompagnement
+                            </p>
+                        </div>
+
+                        <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
+                            <div
+                                class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                <img src="img/icon/check.png" alt="">
+                            </div>
+                            <p class="ml-2 lg:ml-4 text-sm lg:text-xl font-normal">
+                                Renforcement des capacités
+                            </p>
+                        </div>
+
+                        <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
+                            <div
+                                class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                <img src="img/icon/check.png" alt="">
+                            </div>
+                            <p class="ml-2 lg:ml-4 text-sm lg:text-xl font-normal">
+                               Services à valeur ajoutée
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="img/icon-index/Group199.png" alt="Description de l'image">
+                </div>
+            </div>
+
+            <div class="flex items-center pb-2 sm:pb-10 xl:pb-10 lg:pb-6">
+                <div class="h-10 w-full bg-gray-200 flex items-center justify-center"  >
+                    <!-- Contenu à l'intérieur de la barre -->
+
+                    <button id="voirPlus"><span class="text-gray-600">Voir plus</span></button>
+                    <!-- Petite icône (fleche vers le bas) -->
+                    <svg class="h-6 w-6 text-gray-600 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+
+
+            </div>
+
+            <div id="info" class="hidden mt-4">
+
+                <div class=" md:px-20 px-4 sm:px-8 xl:px-16 lg:px-32 pb-8 sm:pb-16 xl:pb-24 lg:pb-32">
+                    <h1 data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="600"
+                        class="text-2xl xl:text-4xl md:text-4xl font-bold text-center md:text-justify lg:text-justify">
+                        Activités industrielles
+                    </h1>
+                    <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="700"
+                        class="grid grid-cols-1 md:grid-cols-2 gap-3 md:py-4 xl:py-0">
+
+                        <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
+                            <div
+                                class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                <img src="img/icon/check.png" alt="">
+                            </div>
+                            <p class="ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
+                                Conception, fabrication et assemblage <br> de produits informatiques
+                            </p>
+                        </div>
+
+                        <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
+                            <div
+                                class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                <img src="img/icon/check.png" alt="">
+                            </div>
+                            <p class="ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
+                                Conception, fabrication et assemblage <br> de produits télécoms et réseaux
+                            </p>
+                        </div>
+
+                        <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
+                            <div
+                                class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                <img src="img/icon/check.png" alt="">
+                            </div>
+                            <p class="ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
+                                Conception, fabrication et assemblage <br> d'instruments de test et de recherche <br> biotechnologie
+                            </p>
+                        </div>
+
+                        <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
+                            <div
+                                class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                <img src="img/icon/check.png" alt="">
+                            </div>
+                            <p class="ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
+                                Fabrication de produits biotechnologies <br> divers (médecine, pharmacie, agroalimentaire, <br>
+                                énergie, environnement, industrie, mines )
+                            </p>
+                        </div>
+
+                        <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
+                            <div
+                                class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                <img src="img/icon/check.png" alt="">
+                            </div>
+                            <p class="ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
+                                Production de contenus audiovisuels
+                            </p>
+                        </div>
+
+                        <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
+                            <div
+                                class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                <img src="img/icon/check.png" alt="">
+                            </div>
+                            <p class="ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
+                                Edition de logiciels et progiciels
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="700"
+                    class=" md:px-20 px-4 sm:px-8 xl:px-16 lg:px-32 pb-8 sm:pb-16 xl:pb-24 lg:pb-32">
+                    <h1 class="text-2xl xl:text-4xl md:text-4xl font-bold text-center md:text-justify lg:text-justify">
+                        Recherche et développement
+                    </h1>
+                    <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="500"
+                        class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 lg:grid-cols-3 gap-4">
+                        <div class="flex items-center pt-4 sm:pt-8 rounded-lg" role="alert">
+                            <div
+                                class="inline-flex items-center flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                <img src="img/icon/check.png" alt="">
+                            </div>
+                            <p class="ml-4 text-sm sm:text-md lg:text-lg  font-normal">
+                                Conception, fabrication et assemblage <br>de produits informatiques
+                            </p>
+                        </div>
+                        <div class="flex items-center pt-4 sm:pt-8 rounded-lg" role="alert">
+                            <div
+                                class="inline-flex items-center flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                <img src="img/icon/check.png" alt="">
+                            </div>
+                            <p class="ml-4 text-sm sm:text-md  lg:text-lg font-normal">
+                                Conception, fabrication et assemblage <br>de produits télécoms et réseaux
+                            </p>
+                        </div>
+                        <div class="flex items-center pt-4 sm:pt-8 rounded-lg" role="alert">
+                            <div
+                                class="inline-flex items-center flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                <img src="img/icon/check.png" alt="">
+                            </div>
+                            <p class="ml-4 text-sm sm:text-md  lg:text-lg font-normal">
+                                Conception, fabrication et assemblage <br>d'instruments de test et de recherche <br>biotechnologie
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="px-4 md:px-20 py-4 lg:px-20 ">
+                    <h1 data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="700"
+                        class="text-2xl xl:text-4xl md:text-4xl font-bold text-center md:text-justify lg:text-justify">
+                        Renforcement des capacités
+                    </h1>
+                    <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="700"
+                        class="grid grid-cols-1 gap-3 xl:grid-cols-3 md:grid-cols-2">
+                        <div class="flex items-center py-4 lg:py-8 rounded-lg" role="alert">
+                            <div
+                                class="inline-flex items-center flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                <img src="img/icon/check.png" alt="">
+                            </div>
+                            <p class="ml-4 sm:text-md lg:text-lg font-normal">
+                                Conception, fabrication et assemblage de produits informatiques
+                            </p>
+                        </div>
+
+                        <div class="flex items-center py-4 lg:py-8 rounded-lg" role="alert">
+                            <div
+                                class="inline-flex items-center flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                <img src="img/icon/check.png" alt="">
+                            </div>
+                            <p class="ml-4 sm:text-md lg:text-lg font-normal">
+                                Conception, fabrication et assemblage de produits télécoms et réseaux
+                            </p>
+                        </div>
+
+                        <div class="flex items-center py-4 lg:py-8 rounded-lg" role="alert">
+                            <div
+                                class="inline-flex items-center flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                <img src="img/icon/check.png" alt="">
+                            </div>
+                            <p class="ml-4 sm:text-md lg:text-lg font-normal">
+                                Conception, fabrication et assemblage d'instruments de test et de recherche biotechnologie
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="500"
+                    class="   md:px-20 px-4 sm:px-8 xl:px-16 lg:px-32 pb-8 sm:pb-16 xl:pb-24 lg:pb-32">
+                    <h1 class="text-2xl xl:text-4xl md:text-4xl font-bold text-center md:text-justify lg:text-justify">
+                        Services à valeur ajoutée
+                    </h1>
+                    <p data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="600"
+                        class="pt-6 pb-8 text-center sm:text-justify text-md lg:text-lg">
+                        Les services à valeur ajoutée sont des services dans le cadre desquels les fournisseurs "ajoutent une
+                        valeur"
+                        <br class="hidden xl:block">
+                        aux informations fournies par le client en améliorant leur forme ou leur contenu ou en prévoyant leur
+                        stockage
+                        et leur recherche.
+                    </p>
+                    <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="700"
+                        class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 lg:grid-cols-4 gap-6">
+                        <div class="flex items-center ">
+                            <div
+                                class="inline-flex items-center flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                <img src="img/icon/check.png" alt="">
+                            </div>
+                            <p class="ml-4 sm:text-md lg:text-lg font-normal">
+                                Conception, fabrication et assemblage <br>de produits informatiques
+                            </p>
+                        </div>
+                        <div class="flex items-center ">
+                            <div
+                                class="inline-flex items-center flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                <img src="img/icon/check.png" alt="">
+                            </div>
+                            <p class="ml-4 sm:text-md lg:text-lg font-normal">
+                                Conception, fabrication et assemblage <br>de produits télécoms et réseaux
+                            </p>
+                        </div>
+                        <div class="flex items-center ">
+                            <div
+                                class="inline-flex items-center flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                <img src="img/icon/check.png" alt="">
+                            </div>
+                            <p class="ml-4 sm:text-md lg:text-lg font-normal">
+                                Conception, fabrication et assemblage <br>
+                                d'instruments de test et de recherche <br>
+                                biotechnologie
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="500" class="md:px-20 px-4 xl:px-20 py-8">
+                    <h1 class="text-2xl xl:text-4xl md:text-4xl font-bold text-center md:text-justify lg:text-justify">
+                        Activités d'accompagnement
+                    </h1>
+                    <p data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="600"
+                        class="pt-4 xl:pt-10 text-center md:text-left xl:text-justify text-base xl:text-xl lg:text-lg">
+                        Outre ces activités privilégiées, la ZBTIC accueille un ensemble de services d'accompagnement :
+                    </p>
+                    <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="700"
+                        class="grid grid-cols-1 xl:grid-cols-2 md:grid-cols-2 gap-4">
+
+                        <div class="flex items-center pt-6 xl:pt-8 rounded-lg" role="alert">
+                            <div
+                                class="inline-flex items-center flex-shrink-0 w-6 h-6 xl:w-8 xl:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                <img src="img/icon/check.png" alt="">
+                            </div>
+                            <p class="ml-2 xl:ml-4 text-sm xl:text-lg font-normal">
+                                Conception, fabrication et assemblage <br>de
+                                produits informatiques
+                            </p>
+                        </div>
+
+                        <div class="flex items-center pt-6 xl:pt-8 rounded-lg" role="alert">
+                            <div
+                                class="inline-flex items-center flex-shrink-0 w-6 h-6 xl:w-8 xl:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                <img src="img/icon/check.png" alt="">
+                            </div>
+                            <p class="ml-2 xl:ml-4 text-sm xl:text-lg font-normal">
+                                Conception, fabrication et assemblage <br>de
+                                produits télécoms et réseaux
+                            </p>
+                        </div>
+
+                        <div class="flex items-center pt-6 xl:pt-8 rounded-lg" role="alert">
+                            <div
+                                class="inline-flex items-center flex-shrink-0 w-6 h-6 xl:w-8 xl:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                <img src="img/icon/check.png" alt="">
+                            </div>
+                            <p class="ml-2 xl:ml-4 text-sm xl:text-lg font-normal">
+                                Conception, fabrication et assemblage <br>
+                                d'instruments de test et de recherche <br>
+                                biotechnologie
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        {{-- <div class="pt-4 xl:pt-8 pb-5 text-center">
             <a href="{{ route('register') }}">
                 <button type="button" style="background-color: #F18700"
                     class="font-bold rounded-none white text-center px-8 xl:px-16 pt-3 pb-3 xl:pt-4 xl:pb-4 xl:pr-16">
                     REJOIGNEZ NOUS
                 </button>
             </a>
-        </div>
+        </div> --}}
     </div>
 
     <div
-        class="xl:px-20 md:px-0 px-6 xl:py-24 bg-no-repeat  bg-gradient-to-r from-orange-100 from-10% via-30% to-green-100 to-90%">
+        class="xl:px-20 md:px-0 px-6  bg-no-repeat  bg-gradient-to-r from-orange-100 from-20%  to-gray-100 to-90%">
         <div class="xl:flex flex-col bg-repeat-x" style="background-image: url('img/Image6.png')">
-            <div class="  xl:py-12 md:py-8">
+            <div class="  xl:py-8 md:py-8">
                 <h1 class="text-2xl xl:text-4xl md:text-4xl pb-4 xl:pb-8 text-center font-bold text-slate-600 space"
                     data-aos="zoom-in-up" data-aos-delay="700" data-aos-delay="500">
                     COMMENT NOUS REJOINDRE
@@ -382,9 +536,9 @@
                 </div>
                 <div class="xl:w-1/3  xl:pl-4 mt-2 xl:mt-4">
                     <h2 class="font-bold xl:text-lg md:text-3xl">
-                        TÉLÉCHARGER DOSSIER DE DEMANDE D’AGRÉMENT
+                        TÉLÉCHARGER LE DOSSIER DE DEMANDE D’AGRÉMENT
                     </h2>
-                    <p class="text-justify xl:text-lg md:pt-10 xl:pt-2">
+                    <p class="text-justify xl:text-xl md:pt-10 xl:pt-2">
                         Une opportunité exceptionnelle au VITIB.
                         Bénéficiez d'avantages fiscaux, d'une infrastructure de pointe et d'un écosystème
                         dynamique
@@ -394,7 +548,7 @@
                         prêt à accueillir les entreprises technologiques les plus prometteuses.
                     </p>
 
-                    <p class="text-justify xl:text-lg">
+                    <p class="text-justify xl:text-xl">
                         Rejoignez-nous dès aujourd'hui et transformez l'avenir de votre entreprise au cœur
                         de
                         l'Afrique.
@@ -413,7 +567,7 @@
                             <div class="xl:w-3/5">
                                 <a href="/download-pdf" class="underline hover:underline">
                                     <p class="xl:text-lg">
-                                        Formulaire de demande d’agrément Pépinière
+                                        Formulaire de demande d’agrément VITIB
                                     </p>
                                 </a>
                             </div>
@@ -469,7 +623,7 @@
                             <div class="w-3/5">
                                 <a href="/telecharger-pdf" class="underline hover:underline">
                                     <p class="xl:text-lg">
-                                        Formulaire de demande d'agrement
+                                        Formulaire de demande d'agrément Pépinière
                                     </p>
                                 </a>
                             </div>
@@ -507,3 +661,13 @@
 
     </div>
 @endsection
+@push('scripts')
+
+<script>
+    document.getElementById('voirPlus').addEventListener('click', function () {
+        var informationsSupplementaires = document.getElementById('info');
+        info.classList.toggle('hidden');
+    });
+</script>
+@endpush
+

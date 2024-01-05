@@ -86,19 +86,30 @@
      <div class="mx-auto w-full max-w-screen-xl">
          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4 md:px-16 py-6 lg:py-8">
              <div>
-                 <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                 <h2 class="mb-2 text-sm font-semibold text-gray-900 uppercase dark:text-white -translate-y-6">
                      <img src="{{ asset('img/Image11.png') }}" width="80" alt="logo">
                  </h2>
-                 <ul class="text-gray-700 dark:text-gray-400 font-medium">
+                 <ul class="text-gray-700 dark:text-gray-400 font-medium -translate-y-6">
                      <li class="mb-4">
                          B.P 605 Grand-Bassam
                      </li>
+                     <li class="mb-4">
+                        +(225) 27 21 31 29 00/31
+                    </li>
                      <li class="mb-4">
                          info@vitib.ci
                      </li>
                      <li class="mb-4">
                          Côte d'Ivoire
                      </li>
+                      <div class="">
+                        <a href="{{ route('login') }} ">
+                        <button type="button" style="background-color: #F18700"
+                            class=" xl:p-4 xl:px-8 rounded-none font-bold text-white text-left text-md">
+                            Rejoignez-nous
+                        </button>
+                    </a>
+                    </div>
                  </ul>
              </div>
              <div>

@@ -52,7 +52,7 @@
 
                                     @foreach ($recentAnnonces as $annonce)
                                         <div class="tab-pane fade" id="{{ strtolower($annonce['type']) }}" role="tabpanel" aria-labelledby="{{ strtolower($annonce['type']) }}-tab">
-                                            <h2> Dossier N#{{ $annonce['id']}}</h2>
+                                            <h2> Dossier N°{{ $annonce['id']}}</h2>
                                             <p> Titre: {{ strip_tags($annonce['title']) }}</p>
                                             <p>Description: {{ strip_tags($annonce['content']) }}</p>
                                             <p>Date limite: {{ $annonce['date'] }}</p>

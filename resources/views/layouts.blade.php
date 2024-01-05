@@ -95,5 +95,5 @@
 </script>
 
 <script src="{{ asset('js/script1.js') }}"></script>
-
+@stack('scripts')
  </html>

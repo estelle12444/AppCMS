@@ -7,16 +7,15 @@
             height: 300px
         }
     </style>
-    <section class="bg-center bg-no-repeat bg-slate-500 bg-blend-multiply" style="background-image: url(img/immobilier1.png)">
+    {{-- <section class="bg-center bg-no-repeat bg-slate-500 bg-blend-multiply" style="background-image: url(img/immobilier1.png)">
         <div class="container mx-auto px-4 flex items-center justify-center h-full ">
 
-            <div class="text-center py-16  xl:py-24">
+            <div class="text-center py-12  xl:py-20">
                 <br>
-                <br>
-                <br>
+
                 <h1
                     class="mb-4 text-3xl sm:text-4xl xl:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none text-white">
-                    LE VITIB VOUS SOUHAITE <br> LA BIENVENUE
+                    LE VITIB VOUS SOUHAITE <br><br> LA BIENVENUE
                 </h1>
                 {{-- <br>
                 <p
@@ -28,8 +27,17 @@
                     l'Afrique, le VITIB est une zone franche technologique qui offre un <br class="md:hidden xl:block">
                     environnement propice à la
                     croissance des entreprises technologiques.
-                </p> --}}
+                </p>
             </div>
+        </div>
+    </section> --}}
+    <section class="bg-center bg-no-repeat bg-slate-400 bg-blend-multiply" style="background-image: url(img/immobilier1.png)">
+        <div class="px-4 mx-auto max-w-screen-xl text-center py-16 md:pt-20  lg:py-0">
+            <h1 data-aos="zoom-in" data-aos-duration="500"data-aos-delay="700"
+                class=" text-4xl font-semibold text-white md:pt-8 pt-4 lg:pb-8 lg:pt-24 xl:text-5xl lg:text-6xl ">
+                <p>Ensemble, Bâtissons <span class="text-orange font-bold">la Ville Intelligente</span> N°<span class="text-orange xl:text-5xl font-bold">1</span> en Afrique </p>
+                <p class="pt-2 "></p>
+            </h1>
         </div>
     </section>
 
@@ -43,7 +51,7 @@
                 </div>
                 <div data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="700"
                     class=" md:px-8 xl:w-1/2  mx-4 xl:mr-24">
-                    <h2 class="font-bold xl:text-5xl py-8 text-4xl md:text-5xl ">Mot du directeur Général</h2>
+                    <h2 class="font-bold xl:text-5xl py-8 text-4xl md:text-5xl ">Mot du Directeur Général</h2>
                     <p class="text-justify text-gray-600 xl:text-lg tracking-tight ">
                         Bienvenue sur le site Internet du Village des Technologies de l’Information et de la Biotechnologie (VITIB SA).
                     </p>
@@ -104,8 +112,8 @@
                 <div class="xl:flex flex-row white xl:absolute  xl:mt-6 left-0 py-6 xl:top-[90%] mt-24 xl:mt-0"
                     style="background-image: url(img/blue.png);">
                     <div class="xl:w-1/2 xl:pl-32 px-4 xl:pr-8 pt-10">
-                        <h1 class="font-bold text-4xl">
-                            Mission
+                        <h1 class="font-bold text-4xl  pb-4 bg-[url('/public/img/icon-index/MOTIF.png')]  bg-8  bg-no-repeat bg-left ">
+                            Missions
                         </h1>
                         <p class="text-justify pt-8 pb-8">
                             Notre vision est de devenir un pôle d’innovation et de développement technologique qui catalyse
@@ -164,16 +172,15 @@
 
                     </div>
 
-                    <div class="xl:w-1/2 xl:pt-48 xl:pl-8 xl:pr-32 px-4 ">
-                        <h1 class="font-bold text-4xl pb-8">
-                            Valeur
+                    <div class="xl:w-1/2 xl:pt-32 xl:pl-8 xl:pr-32 px-4 ">
+                        <h1 class="font-bold text-4xl pb-4 bg-[url('/public/img/icon-index/MOTIF.png')]  bg-8  bg-no-repeat bg-left ">
+                            Valeurs
                         </h1>
                         <h2 data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="500"
                             class=" font-bold  tracking-tight ">
                             4. Soutien à l'entrepreneuriat :
                         </h2>
-                        <p data-aos="zoom-in-right" data-aos-duration="800"
-                            data-aos-delay="600"class="text-justify py-4 tracking-tight ">
+                        <p data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="600"class="text-justify py-4 tracking-tight pb-8 ">
 
                             Encourager l'entrepreneuriat et la création de startups est essentiel pour stimuler
                             l'innovation.
@@ -226,7 +233,7 @@
 
 
     <div
-        class="  xl:py-12 md:py-8 py-4 lg:mt-32 ">
+        class="  xl:py-12 md:py-8 py-4 lg:mt-28 ">
         {{-- <div class="xl:flex flex-col xl:flex-row py-16 xl:px-24">
             <div class="xl:w-1/2">
                 <h1 data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="700"

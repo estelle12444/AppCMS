@@ -154,15 +154,15 @@ $matches = preg_match('/^\/(annonce|info\/[^\/]+)/', $url);
                         class="block py-2 pl-3 pr-4 text-gray-700 <?php if ($url == '/actu') {
                             echo 'xl:text-orange-400 text-orange-400';
                         } ?> rounded xl:bg-transparent xl:hover:text-amber-500 xl:p-0 xl:dark:text-blue-500"
-                        aria-current="page">Actualités</a>
+                        aria-current="page">Galerie</a>
                 </li>
-                <li>
+                {{-- <li>
                     <a href="/media"
                         class="block py-2 pl-3 pr-4 text-gray-700 <?php if ($url == '/media') {
                             echo 'xl:text-orange-400 text-orange-400';
                         } ?> rounded xl:bg-transparent xl:hover:text-amber-500 xl:p-0 xl:dark:text-blue-500"
                         aria-current="page">Mediathèque</a>
-                </li>
+                </li> --}}
                 <li>
                     <a href="/annonce"
                         class="block py-2 pl-3 pr-4 text-gray-700 <?php if ($matches) {
@@ -174,7 +174,7 @@ $matches = preg_match('/^\/(annonce|info\/[^\/]+)/', $url);
 
             @if (!auth()->check() || !$status || !$sessionValid)
                 <!-- Afficher le bouton "SE CONNECTER" si l'utilisateur n'est pas connecté ou son statut est faux ou la session est expirée -->
-                <a href="{{ route('login') }}" class="xl:pl-6 ml-4">
+                <a href="{{ route('register') }}" class="xl:pl-6 ml-4">
                     <button type="button" style="background-color: #F18700"
                         class="pl-4 pr-4 pt-2 pb-2 font-extrabold rounded-none white text-center xl:inline">
                         S'INSCRIRE

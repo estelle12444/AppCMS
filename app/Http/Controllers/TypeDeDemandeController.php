@@ -121,7 +121,7 @@ class TypeDeDemandeController extends Controller
         $demande->save();
 
         foreach ($request->file('documents') as $key => $document) {
-            // dd($document);
+
             if ($document) {
 
                 if (!$document->isValid()) {

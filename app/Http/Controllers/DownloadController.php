@@ -7,8 +7,6 @@ use Illuminate\Http\Request;
 class DownloadController extends Controller
 {
 
-
-
     public function telechargerPDF()
     {
         $cheminFichier = storage_path('app/public/DEMANDE-DAGREMENT-VITIB.pdf.pdf'); // Chemin du fichier PDF à télécharger

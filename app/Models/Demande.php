@@ -31,8 +31,8 @@ class Demande extends Model
         $requiredTypeDocumentIds = $this->typeDemande->typeDocuments()->get()->pluck('id');
 
 
-        dump('addDoc',$addTypeDocumentIds);
-        dump('requiredDoc',$requiredTypeDocumentIds);
-        dd('ok');
+        // dump('addDoc',$addTypeDocumentIds);
+        // dump('requiredDoc',$requiredTypeDocumentIds);
+        // dd('ok');
     }
 }

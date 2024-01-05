@@ -4,7 +4,7 @@
 @section('content')
     <div class="p-8 xl:p-24 bg-gradient-to-r from-orange-100 via-gray-100 to-gray-100">
         <h1 class="text-gray-500 md:py-8 py-8 text-2xl xl:text-4xl md:text-4xl font-bold">
-            Actualités récentes
+            Actualités
         </h1>
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
             <!-- Colonne 1 : Vidéo -->
@@ -49,12 +49,12 @@
 
         <div data-aos="zoom-in-up" data-aos-duration="700" data-aos-delay="500"
             class="  md:px-0 grid grid-cols-1 xl:grid-cols-4 md:grid-cols-2 md:gap-2 pt-24 md:py-8 xl:pt-16 ">
-            <div class="  h-auto xl:bg-no-repeat max-w-full rounded-lg" style="background-image: url('img/page_6/image3.png');background-size: cover;">
-                <div class="mx-auto max-w-screen-xl text-center xl:text-center pb-4 pt-24 md: pr-0 xl:pt-64">
+
+            <div class="h-auto xl:bg-no-repeat max-w-full rounded-lg" style="background-image: url('img/page_6/image4.png');background-size: cover;">
+
+                <div class="mx-auto max-w-screen-xl text-center xl:text-center pb-4 pt-24 xl:pt-64">
                     <p class="xl:text-lg font-extrabold tracking-tight leading-none text-white xl:text-2xl lg:text-lg">
-                        Pépinière
-                        <br>
-                        d'entreprises
+                        Pépinière <br>d'entreprises
                     </p>
                 </div>
             </div>
@@ -87,7 +87,7 @@
 
 
     </div>
-    <div class="px-4 md:px-6 xl:px-32 bg-gradient-to-r from-orange-100 from-20%  to-gray-100 to-90%">
+    {{-- <div class="px-4 md:px-6 xl:px-32 bg-gradient-to-r from-orange-100 from-20%  to-gray-100 to-90%">
     <div class="md:pt-24 py-20 pb-6 md:pb-10  ">
         <div class=" max-w-full md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mx-auto  xl:px-24 md:px-0 ">
 
@@ -122,6 +122,6 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 
 @endsection

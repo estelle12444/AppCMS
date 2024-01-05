@@ -4,20 +4,20 @@
 @section('content')
     <section style="overflow-x: hidden">
         <div class="bg-gradient-to-r from-orange-100 via-gray-100 to-gray-100">
-            <div class=" xl:px-28 pt-16 xl:grid xl:grid-cols-2 xl:gap-8 xl:items-center pb-8">
+            <div class=" xl:px-20 pt-16 xl:grid xl:grid-cols-2 xl:gap-8 xl:items-center pb-8">
                 <div data-aos="zoom-out-left" data-aos-delay="700" data-aos-delay="500"
                     class="px-8 xl:pt-12 sm:px-8 xl:px-8 text-center xl:text-left">
-                    <h1 class="text-4xl md:text-5xl xl:text-6xl font-medium text-slate-600 tracking-tight">
-                        LE <span class="text-orange">VITIB</span> VOUS
+                    <h1 class=" text-slate-600 text-4xl md:text-5xl xl:text-8xl font-semibold  tracking-tight">
+                        BIENVENUE <br>
                     </h1>
-                    <h1 class="text-4xl md:text-5xl xl:text-6xl font-medium pt-4 xl:pt-8 text-slate-600">
-                        SOUHAITE LA
-                    </h1>
-                    <h1 class="text-4xl md:text-5xl xl:text-6xl font-medium pt-4 xl:pt-8 text-slate-600">
-                        BIENVENUE
+                    {{-- <h1 class="text-4xl md:text-5xl xl:text-6xl font-medium pt-4 xl:pt-8 text-slate-600">
+
+                    </h1> --}}
+                    <h1 class="text-4xl md:text-5xl xl:text-8xl font-semibold pt-4 xl:pt-8 text-slate-600">
+                        AU<span class="text-orange font-extrabold">  VITIB</span>
                     </h1>
                     <p class="text-xl xl:text-2xl md:text-2xl font-medium pt-4 xl:pt-8 text-slate-600">
-                        Le parc Technologique de Côte d'Ivoire
+                        Le Parc Technologique de Côte d'Ivoire
                     </p>
                     <div class="py-8 xl:pt-8 md:pt-8">
                         <a href="{{ route('login') }} ">
@@ -30,7 +30,7 @@
                 </div>
 
                 <div data-aos="zoom-out-right" data-aos-delay="700" data-aos-delay="800"
-                    class="xl:pr-24 bg-no-repeat bg-cover bg-center" style="background-image: url(img/Image9.png);">
+                    class=" bg-no-repeat bg-cover bg-center" style="background-image: url(img/Image9.png);">
                     <div
                         class="videoWrapper flex justify-center items-center rounded-lg border-solid border-4 border-gray-300">
                         <span class="absolute flex h-16 w-16">
@@ -45,7 +45,7 @@
                                 </svg>
                             </span>
                         </span>
-                        <video class="w-full rounded-lg" muted autoplay controls>
+                        <video class=" rounded-lg" muted autoplay controls>
                             <source src="/videos/814dc43e870597176cad645798825c03.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -193,7 +193,7 @@
             </div>
 
 
-            <div class=" px-6 md:py-8 md:px-8 bg-no-repeat"
+            {{-- <div class=" px-6 md:py-8 md:px-8 bg-no-repeat"
                 style="background-image: url(img/background/vert.png);background-size:cover">
                 <div class="xl:px-32  md:px-8 px-2  ">
                     <div class="xl:flex flex-row ">
@@ -290,7 +290,7 @@
                     </div>
                 </div>
 
-            </div>
+            </div> --}}
     </div>
     </section>
 @endsection

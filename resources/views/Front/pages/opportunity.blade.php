@@ -6,15 +6,15 @@
     <div class="px-4 mx-auto max-w-screen-xl text-center py-16 md:pt-20  lg:py-0">
         <h1 data-aos="zoom-in" data-aos-duration="500"data-aos-delay="700"
             class=" text-4xl font-extrabold uppercase tracking-tight leading-none text-white md:pt-8 pt-10 lg:pb-8 lg:pt-32 xl:text-5xl lg:text-6xl ">
-            <p>Projets, Services</p>
-            <p class="pt-8 ">& Opportunités</p>
+            <p>INVESTIR AU VITB</p>
+            <p class="pt-8 "></p>
         </h1>
     </div>
 </section>
 
 
 
-    <div class="pt-16 xl:pt-32 md:pt-16 xl:pr-26 bg-gradient-to-r from-orange-100 from-20% to-green-100 to-90%">
+    {{-- <div class="pt-16 xl:pt-32 md:pt-16 xl:pr-26 bg-gradient-to-r from-orange-100 from-20% to-green-100 to-90%">
         <div class="xl:flex flex-col xl:flex-row xl:pl-32 xl:pr-16 pb-10 px-6 md:ml-6 ">
             <div class="xl:w-1/2  ">
                 <img data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="500" src="img/plan.png" alt="">
@@ -52,10 +52,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
-    <div style="overflow-x: hidden" class=" bg-gradient-to-r from-orange-100 from-20%  to-green-100 to-90% ">
-        <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="800" class=" xl:py-10  lg:pb-10 md:px-4 px-4 lg:pr-0  xl:px-24 grid xl:grid-cols-5 md:grid-cols-2  grid-cols-2 gap-2 xl:gap-4   ">
+    <div  class=" bg-gradient-to-r from-orange-100 from-20%  to-green-100 to-90% ">
+        <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="800" class=" xl:py-10  lg:pb-10 md:px-4 px-4 lg:pr-0  xl:px-20 grid xl:grid-cols-5 md:grid-cols-2  grid-cols-2 gap-2 xl:gap-4 " style="overflow-x: hidden">
             <div class="bg-amber-500 font-extrabold rounded-lg p-4 " style=" height:100px ">
                 <p class="text-white text-center  ">
                     <strong> ADMINISTRATION
