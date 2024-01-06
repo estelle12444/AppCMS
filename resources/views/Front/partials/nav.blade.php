@@ -51,14 +51,9 @@ $matches = preg_match('/^\/(annonce|info\/[^\/]+)/', $url);
                                             <path stroke-linecap="round" stroke-linejoin="round"
                                                 d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
                                         </svg>
-                                        <span>Tableau de bord</span>
+                                        <span> {{__('layouts.nav.profil')}}</span>
                                     </a>
                                 </li>
-
-                                {{-- <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Paramètre</a>
-                                </li> --}}
                             </ul>
                             <div class="py-1 flex items-center ">
 
@@ -73,14 +68,14 @@ $matches = preg_match('/^\/(annonce|info\/[^\/]+)/', $url);
                                                 d="M6 10a.75.75 0 01.75-.75h9.546l-1.048-.943a.75.75 0 111.004-1.114l2.5 2.25a.75.75 0 010 1.114l-2.5 2.25a.75.75 0 11-1.004-1.114l1.048-.943H6.75A.75.75 0 016 10z"
                                                 clip-rule="evenodd" />
                                         </svg>
-                                        <span class="text-red-500">Déconnexion</span>
+                                        <span class="text-red-500">{{__('layouts.nav.logout')}}</span>
                                     </a>
 
 
                             </div>
                         </div>
                         <div class="font-medium dark:text-white">
-                            <div>Salut</div>
+                            <div>{{__('layouts.nav.greet')}}</div>
                             <div class="text-sm text-gray-500 dark:text-gray-400">
                                 {{ app('App\Http\Controllers\AdminController')->getUsername() }}
                             </div>
@@ -91,20 +86,20 @@ $matches = preg_match('/^\/(annonce|info\/[^\/]+)/', $url);
                     <a href="{{ route('login') }}" class="xl:pl-6">
                         <button type="button" style="background-color: #F18700"
                             class="pl-4  pr-4 pt-2 pb-2 font-extrabold rounded-none white text-center hidden xl:inline">
-                            SE CONNECTER
+                            {{__('layouts.nav.login')}}
                         </button>
                     </a>
                 @endif
             @endif
 
             <p class=" pl-4 pt-4 xl:pt-2 xl:pl-8">
-                <strong style="color:  #F18700;">FR</strong> | EN
+                <strong style="color:  #F18700;">{{ __('FR') }}</strong> | {{ __('EN') }}
             </p>
 
             <button data-collapse-toggle="navbar-sticky" type="button"
                 class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-700 rounded-lg xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                 aria-controls="navbar-sticky" aria-expanded="false">
-                <span class="sr-only">Open main menu</span>
+                <span class="sr-only">{{__('layouts.nav.open')}}</span>
                 <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 17 14">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -121,54 +116,47 @@ $matches = preg_match('/^\/(annonce|info\/[^\/]+)/', $url);
                         class="block py-2 pl-3 text-gray-700 <?php if ($url == '/home') {
                             echo 'xl:text-orange-400 text-orange-400';
                         } ?> rounded xl:bg-transparent xl:hover:text-amber-500 xl:p-0 xl:dark:text-blue-500"
-                        aria-current="page">Accueil</a>
+                        aria-current="page">{{__('layouts.nav.home')}}</a>
                 </li>
                 <li>
                     <a href="/about"
                         class="block py-2 pl-3 pr-4 text-gray-700 <?php if ($url == '/about') {
                             echo 'xl:text-orange-400 text-orange-400';
                         } ?> rounded xl:bg-transparent xl:hover:text-amber-500 xl:p-0 xl:dark:text-blue-500"
-                        aria-current="page">A propos</a>
+                        aria-current="page">{{__('layouts.nav.about')}}</a>
                 </li>
                 <li>
                     <a href="/opportunity"
                         class="block py-2 pl-3 pr-4 text-gray-700 <?php if ($url == '/opportunity') {
                             echo 'xl:text-orange-400 text-orange-400';
                         } ?> rounded xl:bg-transparent xl:hover:text-amber-500 xl:p-0 xl:dark:text-blue-500"
-                        aria-current="page">Opportunités</a>
+                        aria-current="page">{{__('layouts.nav.opportunities')}}</a>
                 </li>
                 <li>
                     <a href="/installer"
                         class="block py-2 pl-3 pr-4 text-gray-700 <?php if ($url == '/installer') {
                             echo 'xl:text-orange-400 text-orange-400';
                         } ?> rounded xl:bg-transparent xl:hover:text-amber-500 xl:p-0 xl:dark:text-blue-500"
-                        aria-current="page">S'implanter</a>
+                        aria-current="page">{{__('layouts.nav.install')}}</a>
                 </li>
                 <li>
                     <a href="/partners"
                         class="block py-2 pl-3 pr-4 text-gray-700 <?php echo str_starts_with($url, '/partners') ? 'xl:text-orange-400 text-orange-400' : ''; ?> rounded xl:bg-transparent xl:hover:text-amber-500 xl:p-0 xl:dark:text-blue-500"
-                        aria-current="page">Nos partenaires</a>
+                        aria-current="page">{{__('layouts.nav.partners')}}</a>
                 </li>
                 <li>
                     <a href="/actu"
                         class="block py-2 pl-3 pr-4 text-gray-700 <?php if ($url == '/actu') {
                             echo 'xl:text-orange-400 text-orange-400';
                         } ?> rounded xl:bg-transparent xl:hover:text-amber-500 xl:p-0 xl:dark:text-blue-500"
-                        aria-current="page">Galerie</a>
+                        aria-current="page">{{__('layouts.nav.galery')}}</a>
                 </li>
-                {{-- <li>
-                    <a href="/media"
-                        class="block py-2 pl-3 pr-4 text-gray-700 <?php if ($url == '/media') {
-                            echo 'xl:text-orange-400 text-orange-400';
-                        } ?> rounded xl:bg-transparent xl:hover:text-amber-500 xl:p-0 xl:dark:text-blue-500"
-                        aria-current="page">Mediathèque</a>
-                </li> --}}
                 <li>
                     <a href="/annonce"
                         class="block py-2 pl-3 pr-4 text-gray-700 <?php if ($matches) {
                             echo 'xl:text-orange-400 text-orange-400';
                         } ?> rounded xl:bg-transparent xl:hover:text-amber-500 xl:p-0 xl:dark:text-blue-500"
-                        aria-current="page">Annonces</a>
+                        aria-current="page">{{__('layouts.nav.news')}}</a>
                 </li>
             </ul>
 
@@ -177,7 +165,7 @@ $matches = preg_match('/^\/(annonce|info\/[^\/]+)/', $url);
                 <a href="{{ route('register') }}" class="xl:pl-6 ml-4">
                     <button type="button" style="background-color: #F18700"
                         class="pl-4 pr-4 pt-2 pb-2 font-extrabold rounded-none white text-center xl:inline">
-                        S'INSCRIRE
+                        {{__('layouts.nav.register')}}
                     </button>
                 </a>
             @endif

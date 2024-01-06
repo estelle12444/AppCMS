@@ -6,24 +6,20 @@
         <div class="bg-gradient-to-r from-orange-100 via-gray-100 to-gray-100">
             <div class=" xl:px-20 pt-16 xl:grid xl:grid-cols-2 xl:gap-8 xl:items-center pb-8">
                 <div data-aos="zoom-out-left" data-aos-delay="700" data-aos-delay="500"
-                    class="px-8 xl:pt-12 sm:px-8 xl:px-8 text-center xl:text-left">
-                    <h1 class=" text-slate-600 text-4xl md:text-5xl xl:text-8xl font-semibold  tracking-tight">
-                        BIENVENUE <br>
+                    class="px-8 xl:pt-12 sm:px-8 xl:px-8 text-center xl:text-left ">
+                    <div class="text-4xl md:text-5xl xl:text-8xl font-semibold pt-4 xl:pt-8 text-slate-600 uppercase">
+                    <h1 class="">
+                        {{ __('profil.layouts.requests.welcome') }}<br>{{ __('home.at') }}<span class="text-orange font-extrabold xl:pt-8 ">  VITIB</span>
                     </h1>
-                    {{-- <h1 class="text-4xl md:text-5xl xl:text-6xl font-medium pt-4 xl:pt-8 text-slate-600">
-
-                    </h1> --}}
-                    <h1 class="text-4xl md:text-5xl xl:text-8xl font-semibold pt-4 xl:pt-8 text-slate-600">
-                        AU<span class="text-orange font-extrabold">  VITIB</span>
-                    </h1>
+                </div>
                     <p class="text-xl xl:text-2xl md:text-2xl font-medium pt-4 xl:pt-8 text-slate-600">
-                        Le Parc Technologique de Côte d'Ivoire
+                        {{ __('home.technological_park_of_ivory_coast') }}
                     </p>
                     <div class="py-8 xl:pt-8 md:pt-8">
                         <a href="{{ route('login') }} ">
                         <button type="button" style="background-color: #F18700"
-                            class="px-8 xl:px-16 md:px-12 md:py-2 py-2 xl:py-4  rounded-none font-bold text-white text-center">
-                            REJOIGNEZ-NOUS
+                            class="px-8 xl:px-16 md:px-12 md:py-2 py-2 xl:py-4 uppercase rounded-none font-bold text-white text-center">
+                           {{__('layouts.footer.join_us')}}
                         </button>
                     </a>
                     </div>
@@ -61,45 +57,45 @@
 
     <div class="bg-gradient-to-r from-orange-100 from-20%  to-green-100 to-90%">
         <section  style="overflow-x: hidden" >
-
             <div class="grid grid-cols-1 md:grid-cols-2  xl:grid-cols-3  mx-auto gap-4">
                 <!-- Première partie -->
                 <div class="flex items-center justify-center  p-4">
                     <img src="{{asset('img/icon-index/Group 133.png')}}" alt="Logo 1" class="h-16 w-16 mr-4">
-                  <span class="text-lg">  Avantages fiscaux <br>et réglementaires</span>
+                    {!! __('') !!}
+                    <span class="text-lg">  {!! __('home.fiscal_and_regulatory_advantages') !!} </span>
                 </div>
 
                 <!-- Deuxième partie -->
 
                 <div class="flex items-center justify-center  p-4">
                     <img src="{{asset('img/icon-index/Group 136.png')}}" alt="Logo 5"  class="h-16 w-16 mr-4">
-                    <span class="text-lg">Avantages<br> douaniers</span>
+                    <span class="text-lg"> {!! __('home.customs_advantages') !!}</span>
                   </div>
 
                 <!-- Troisième partie -->
 
                 <div class="flex items-center justify-center p-4">
                     <img src="{{asset('img/icon-index/Group 138.png')}}" alt="Logo 7"  class="h-16 w-16 mr-4">
-                    <span  class="text-lg">Partenariats et <br>réseautage</span>
+                    <span  class="text-lg">{!! __('home.partneships') !!}</span>
                   </div>
 
                 <!-- Quatrième partie -->
 
                   <div class="flex items-center justify-center  p-4">
                     <img src="{{asset('img/icon-index/Group 132.png')}}" alt="Logo 2"  class="h-16 w-16 mr-4 ml-8">
-                    <span class="text-lg "> Un accès à un marché <br> en plein essor</span>
+                    <span class="text-lg ">  {!! __('home.access_to_a_thriving_market') !!}</span>
                   </div>
 
                 <!-- Cinquième partie -->
                 <div class="flex items-center justify-center p-4">
                     <img src="{{asset('img/icon-index/Group 135.png')}}" alt="Logo 4"  class="h-16 w-16 mr-4 ml-12">
-                    <span class="text-lg"> Soutien <br> gouvernemental</span>
+                    <span class="text-lg"> {!! __('home.government_support') !!}</span>
                   </div>
 
                 <!-- Sixième partie -->
                 <div class="flex items-center justify-center  p-4">
                     <img src="{{asset('img/icon-index/Group 137.png')}}" alt="Logo 6"  class="h-16 w-16 mr-4 ml-2">
-                    <span class="text-lg">Environnement <br>d'innovation</span>
+                    <span class="text-lg">{!! __('home.innovation_environment') !!}</span>
                   </div>
 
                 <!-- Septième partie -->
@@ -107,13 +103,13 @@
 
                 <div class="flex items-center justify-center  p-4">
                     <img src="{{asset('img/icon-index/Group 131.png')}}" alt="Logo 1" class="h-16 w-16  mr-12">
-                    <span class="text-lg -translate-x-8">Main d'oeuvre  <br>qualifiée</span>
+                    <span class="text-lg -translate-x-8">{!! __('home.skilled_workforce')!!}</span>
                   </div>
 
                 <!-- Huitième partie -->
                 <div class="flex items-center justify-center  p-4">
                   <img src="{{asset('img/icon-index/Group 134.png')}}" alt="Logo 3"  class="h-16 w-16 mr-4 ml-6 ">
-                  <span class="text-lg ">Infrastructure<br> de pointe</span>
+                  <span class="text-lg ">{!! __('home.state_of_the_art_infrastructure') !!}</span>
                 </div>
 
             </div>
@@ -122,21 +118,15 @@
                 <div class="bg-no-repeat "style="background-image: url(img/background/font_logo.png)">
                     <div data-aos="zoom-in-up" data-aos-delay="700" data-aos-delay="500">
                         <div>
-                            <h1 class=" text-center font-bold text-slate-600 text-3xl md:text-5xl xl:text-5xl sm:p-2 lg:p-6">
-                                INNOVEZ AU COEUR DE L'AFRIQUE
+                            <h1 class=" text-center font-bold text-slate-600 text-3xl md:text-5xl xl:text-5xl sm:p-2 lg:p-6 uppercase">
+                                 {!! __('home.innovate_in_the_heart_of_africa')!!}
                             </h1>
 
-                            <p class="text-center   xl:text-lg  pt-4 xl:pt-10">
-                                Bienvenue au VITIB - Village des Technologies de l'Information
-
-                                et de la Biotechnologie, <br class="hidden xl:block">un centre d'excellence dédié à
-                                l'innovation et
-                                au développement technologique en Côte d'Ivoire.
-                                <br class="hidden xl:block"> Situé au cœur de l'Afrique,
-
-                                en Côte d'Ivoire, le VITIB est une zone franche technologique qui <br
-                                    class="hidden xl:block"> offre un
-                                environnement propice à la croissance des entreprises technologiques.
+                            <p class="text-center   xl:text-lg  pt-4 xl:pt-10 ">
+                        {{ __('home.welcome_to_vitib') }}
+                        <br class="hidden xl:block">{{ __('home.excellence_in_innovation_and_technological_development') }}
+                                <br class="hidden xl:block">{{ __('home.located_in_the_heart_of_africa') }}
+                                <br class="hidden xl:block">{{ __('home.vitib_is_a_technology_free_zone') }}
                             </p>
                         </div>
                     </div>
@@ -144,7 +134,7 @@
                         <div class="sm:w-1/2 text-center sm:text-right sm:pt-4">
                             <a href="/about"
                                 class="inline-flex items-center font-medium text-orange-400 dark:text-orange-400 hover:underline">
-                                Voir plus
+                              {{ __('home.read_more') }}
                                 <svg class="w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                     fill="none" viewBox="0 0 14 10">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -161,34 +151,29 @@
                     <div >
                         <img src="img/city.png" class="h-64 xl:h-80 md:h-72 w-full pr-2 xl:pr-4 pl-2" alt="">
                     </div>
-                    <h1
-                        class="font-bold text-3xl  md:text-5xl xl:text-5xl pl-4 pt-8 md:pt-16 xl:pt-16">
-                        Un espace Tech <br> pour vous
-                    </h1>
-                    <p
-                        class="text-justify text-gray-600 pt-4 pl-2 md:pt-4 md:px-4 xl:pr-4">
-                        Nous sommes fiers de proposer un écosystème dynamique, où les entreprises peuvent prospérer grâce à des
-                        avantages fiscaux et réglementaires attractifs, ainsi qu'à une infrastructure de pointe. Le VITIB met à
-                        disposition des espaces de bureaux modernes, des laboratoires de recherche de pointe, une connectivité
-                        Internet haut débit et bien plus encore.
-                    </p>
-
-                </div>
+                    <div class="font-bold text-3xl  md:text-5xl xl:text-5xl pl-2 pt-8 md:pt-16 xl:pt-8">
+                        <h1>
+                        {!! __('home.tech_space_for_you') !!}
+                        </h1>
+                    </div>
+                    <div class="text-justify text-gray-600 pt-4 pl-2 md:pt-4 md:px-4 xl:pr-4"></div>
+                        <p>
+                            {{ __('home.proud_to_offer_dynamic_ecosystem') }}
+                        </p>
+                    </div>
                 <div class="xl:w-1/2 py-8 xl:py-0 " data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="700">
                     <img  src="img/tech.png"
                         class="h-64 xl:h-80 md:h-72  md:px-3 w-full" alt="">
-                    <h1
-                        class="font-bold text-3xl  md:px-4 md:text-5xl xl:text-5xl md:text-5xl pt-8 md:pt-16 xl:pt-16">
-                        Smart city
-                    </h1>
-                    <p
-                        class="text-justify  text-gray-600 py-4  md:pt-4 md:px-4">
-                        La ZBTIC est un territoire sur lequel s’appliquent des politiques fiscales et douanières avantageuses.
-                        La législation ivoirienne relative à la ZBTIC (loi N° 429-2004 du 30 août 2004) attribue le monopole de
-                        la gestion, de l’exploitation, de l’aménagement et de la promotion du Village de l’Innovation
-                        Technologique à l’entreprise VITIB S.A. A son tour, VITIB S.A. a fait concevoir un Plan de Masse
-                        conforme à un statut de ville intelligente (smart city).
-                    </p>
+                        <div class="font-bold text-3xl  md:px-4 md:text-5xl xl:text-5xl md:text-5xl pt-8 md:pt-16 xl:pt-10">
+                            <h1>
+                                {{ __('home.smart_city') }}
+                            </h1>
+                        </div>
+                        <div class="text-justify  text-gray-600 py-4  md:pt-4 md:px-4">
+                            <p>
+                                {{ __('home.zbtic_is_a_territory_with_favorable_tax_policies') }}
+                            </p>
+                        </div>
                 </div>
             </div>
 
