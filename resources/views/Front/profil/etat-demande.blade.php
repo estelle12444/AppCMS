@@ -2,7 +2,7 @@
 @section('content')
     <div class="container px-6 mx-auto grid">
         <h2 class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
-            {{ __('Suivre sa demande') }}
+            {{ __('profil.layouts.requests.follow') }}
         </h2>
         <!-- CTA -->
         <div class="card-body">
@@ -15,25 +15,25 @@
                 @if ($demandesCount > 0)
                     <div class="steps-container">
                         @foreach ($demandes as $demande)
-                        {{ $demande->checkIfDocIsCompleted()}} 
+                        {{ $demande->checkIfDocIsCompleted()}}
                             <div class="step">
                                 <span class="step-number">1</span>
-                                <span class="step-label">Soumission du formulaire
+                                <span class="step-label">{{__('profil.demande_state.step_1"')}}
                                     {{ $demande->typeDemande->name }}</span><br><br>
                                 <span
                                     class="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-full dark:bg-green-700 dark:text-green-100">
-                                    Envoyé
+                                    {{__('profil.demande_state.sent"')}}
                                 </span>
                             </div>
 
                             <!-- Étape 2 -->
                             <div class="step">
                                 <span class="step-number">2</span>
-                                <span class="step-label">Etude et analyse du dossier d'agrément</span><br><br>
+                                <span class="step-label">{{__('profil.demande_state.step_2"')}}</span><br><br>
 
                                     <span
                                         class="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-full dark:bg-green-700 dark:text-green-100">
-                                        Complet
+                                        {{__('profil.demande_state.complete"')}}
                                     </span>
 
 
@@ -50,38 +50,38 @@
                             <!-- Étape 3 -->
                             <div class="step">
                                 <span class="step-number">3</span>
-                                <span class="step-label">Décision du Comité d'agrement</span>
+                                <span class="step-label">{{__('profil.demande_state.step_3"')}}</span>
                                 <br><br>
                                 <span
                                     class="px-2 py-1 font-semibold leading-tight text-orange-700 bg-orange-100 rounded-full dark:text-white dark:bg-orange-600">
-                                    En cours
+                                    {{__('profil.demande_state.in_progress"')}}
                                 </span></p>
                             </div>
 
                             <!-- Étape 4 -->
                             <div class="step">
                                 <span class="step-number">4</span>
-                                <span class="step-label">Respect des engagement financiers</span>
+                                <span class="step-label">{{__('profil.demande_state.step_4"')}}</span>
                                 <br><br>
                                 <span
                                     class="px-2 py-1 font-semibold leading-tight text-orange-700 bg-orange-100 rounded-full dark:text-white dark:bg-orange-600">
-                                    En cours
+                                    {{__('profil.demande_state.in_progress"')}}
                                 </span></p>
                             </div>
                             <div class="step">
                                 <span class="step-number">5</span>
-                                <span class="step-label">Respect des engagements d'installation
+                                <span class="step-label">{{__('profil.demande_state.step_5"')}}
                                 </span>
                                 <br><br><span
                                     class="px-2 py-1 font-semibold leading-tight text-orange-700 bg-orange-100 rounded-full dark:text-white dark:bg-orange-600">
-                                    En cours
+                                    {{__('profil.demande_state.in_progress"')}}
                                 </span></p>
                             </div>
                     </div>
                 @endforeach
             </div>
         @else
-            <p>Aucune demande effectué </p>
+            <p>{{__('profil.demande_state.empty"')}}</p>
             @endif
         </div>
     </div>

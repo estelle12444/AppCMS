@@ -2,7 +2,7 @@
 @section('content')
     <div class="container px-6 mx-auto grid">
         <h2 class="mt-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
-            {{ __('Tableau de bord') }}
+            {{__('layouts.nav.profil')}}
         </h2>
         <!-- CTA -->
         <div class="card-body">
@@ -27,9 +27,9 @@
 
                         <div>
                             <p class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">
-                                Vous avez soumis  <strong class=" text-danger ">{{ $count }} </strong> {{ $type }}
+                                {!! __('profil.home.request_message', ['count' => $count, 'type'=> $type]) !!}
                             </p>
-                
+
                         </div>
 
                     </div>
@@ -40,7 +40,7 @@
 
             <div class="py-4">
 
-                <h5>Liste des demandes possibles</h5>
+                <h5>{{__('profil.home.list_request')}}</h5>
 
                 <div class="grid gap-4 mb-8 md:grid-cols-2 xl:grid-cols-4">
                     @foreach ($typeDemandes as $typeDemande)
@@ -62,7 +62,7 @@
                                 <a href="{{ route('Front.profil.form', ['typeDeDemande' => $typeDemande->name]) }}">
                                     <button
                                         class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-blue-500 border border-transparent rounded-lg active:bg-blue-100 hover:bg-blue-500 focus:outline-none focus:shadow-outline-purple">
-                                        Commencer </button>
+                                        {{__('profil.home.start')}} </button>
                                 </a>
 
                             </div>
@@ -73,7 +73,7 @@
 
             <div class="">
                 <h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">
-                    Annonces disponibles
+                    {{__('profil.home.new_available')}}
                 </h4>
                 <div class="w-full overflow-hidden rounded-lg shadow-xs">
                     <div class="w-full overflow-x-auto">
@@ -81,51 +81,53 @@
                             <thead>
                                 <tr
                                     class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
-                                    <th class="px-4 py-3">Categories</th>
-                                    <th class="px-4 py-3">Titre</th>
-                                    <th class="px-4 py-3">Description</th>
-                                    <th class="px-4 py-3">Date limite</th>
-                                    <th class="px-4 py-3">Action </th>
+                                    <th class="px-4 py-3">{{__('profil.home.categories')}}</th>
+                                    <th class="px-4 py-3">{{__('profil.home.title')}}</th>
+                                    <th class="px-4 py-3">{{__('profil.home.description')}}</th>
+                                    <th class="px-4 py-3">{{__('profil.home.date_end')}}</th>
+                                    <th class="px-4 py-3">{{__('profil.home.action')}}</th>
                                 </tr>
                             </thead>
                             <tbody class="bg-white divide-y dark:divide-gray-700 dark:bg-gray-800">
-                                <tr class="text-gray-700 dark:text-gray-400">
-                                    <td class="px-4 py-3">
-                                        <div class="flex items-center text-sm">
-                                            <!-- Avatar with inset shadow -->
-                                            <div class="relative hidden w-10 h-8 mr-3 rounded-full md:block">
-                                                <img class="object-cover w-full h-full rounded-full"
-                                                    src="{{ asset('img/annonce/appel_offre.jpg') }}" alt=""
-                                                    loading="lazy" />
-                                                <div class="absolute inset-0 rounded-full shadow-inner" aria-hidden="true">
+                                {{-- @foreach ($tenders as  $tender)
+                                    <tr class="text-gray-700 dark:text-gray-400">
+                                        <td class="px-4 py-3">
+                                            <div class="flex items-center text-sm">
+                                                <!-- Avatar with inset shadow -->
+                                                <div class="relative hidden w-10 h-8 mr-3 rounded-full md:block">
+                                                    <img class="object-cover w-full h-full rounded-full"
+                                                        src="{{ asset('img/annonce/appel_offre.jpg') }}" alt=""
+                                                        loading="lazy" />
+                                                    <div class="absolute inset-0 rounded-full shadow-inner" aria-hidden="true">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <p class="font-semibold">{{(__("layouts.footer.tender"))}}</p>
+
                                                 </div>
                                             </div>
-                                            <div>
-                                                <p class="font-semibold">Appels d'offre</p>
-
+                                        </td>
+                                        <td class="px-4 py-3 text-sm">
+                                            {{$tender->title}}
+                                        </td>
+                                        <td class="px-4 py-3 ">
+                                            <p class="text-md text-gray-600 dark:text-gray-400">
+                                                {{Str::limit($tender->content, 100, '...')}}
+                                            </p>
+                                        </td>
+                                        <td class="px-4 py-3 text-sm">
+                                            {{Carbon\Carbon::parse($tender->limit_date)->format('d/m/Y')}}
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            <div class="flex items-center space-x-4 text-sm">
+                                                <a href="/annonces">
+                                                    <button
+                                                        class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-blue-500 border border-transparent rounded-lg active:bg-blue-100 hover:bg-blue-500 focus:outline-none focus:shadow-outline-purple">
+                                                        {{(__("layouts.footer.submit"))}} </button></a>
                                             </div>
-                                        </div>
-                                    </td>
-                                    <td class="px-4 py-3 text-sm">
-                                       Recrutement de consultant
-                                    </td>
-                                    <td class="px-4 py-3 ">
-                                        <p class="text-md text-gray-600 dark:text-gray-400">
-                                           Avoir 3 ans d'expériences
-                                        </p>
-                                    </td>
-                                    <td class="px-4 py-3 text-sm">
-                                        6/10/2020
-                                    </td>
-                                    <td class="px-4 py-3">
-                                        <div class="flex items-center space-x-4 text-sm">
-                                            <a href="/annonces">
-                                                <button
-                                                    class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-blue-500 border border-transparent rounded-lg active:bg-blue-100 hover:bg-blue-500 focus:outline-none focus:shadow-outline-purple">
-                                                    Postuler </button></a>
-                                        </div>
-                                    </td>
-                                </tr>
+                                        </td>
+                                    </tr>
+                                @endforeach --}}
                             </tbody>
                         </table>
                     </div>

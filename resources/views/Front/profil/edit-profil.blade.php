@@ -13,7 +13,7 @@
             @endif
 
             <h2 class="mb-4 text-2xl font-semibold text-gray-600 dark:text-gray-300">
-                Vos Informations à notre disposition
+                {{__('profil.profil_edit.title')}}
             </h2>
             <div class="w-full overflow-hidden rounded-lg shadow-xs">
                 <div class="w-full overflow-x-auto">
@@ -21,11 +21,11 @@
                         <thead>
                             <tr
                                 class="text-xs font-semibold tracking-wide text-left text-white uppercase border-b dark:border-gray-700 bg-blue-500 dark:text-gray-400 dark:bg-gray-800">
-                                <th class="px-4 py-3">Entreprise</th>
-                                <th class="px-4 py-3">Demande </th>
-                                <th class="px-4 py-3">Date</th>
-                                <th class="px-4 py-3">Documents</th>
-                                <th class="px-4 py-3">Status</th>
+                                <th class="px-4 py-3">{{__('profil.profil_edit.company')}}</th>
+                                <th class="px-4 py-3">{{__('profil.profil_edit.demande')}}</th>
+                                <th class="px-4 py-3">{{__('profil.profil_edit.date')}}</th>
+                                <th class="px-4 py-3">{{__('profil.profil_edit.document')}}</th>
+                                <th class="px-4 py-3">{{__('profil.profil_edit.status')}}</th>
                             </tr>
                         </thead>
                         <tbody class="bg-white divide-y dark:divide-gray-700 dark:bg-gray-800">
@@ -53,7 +53,7 @@
                                                     @endif
                                                 </li>
                                             @empty
-                                                <li class="text-gray-600 dark:text-gray-400">Aucun document associé à cette demande.</li>
+                                                <li class="text-gray-600 dark:text-gray-400">{{__('profil.document.empty')}}</li>
                                             @endforelse
                                         </ul>
                                     </td>

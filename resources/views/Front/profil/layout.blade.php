@@ -1,9 +1,3 @@
-<?php
-$url = $_SERVER['REQUEST_URI'];
-$matches = preg_match('/^\/(profil|demande\/[^\/]+)/', $url);
-
-?>
-
 <!DOCTYPE html>
 <html :class="{ 'theme-!dark': !dark }" x-data="data()" lang="fr">
 
@@ -11,6 +5,7 @@ $matches = preg_match('/^\/(profil|demande\/[^\/]+)/', $url);
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vitib -Dashboard</title>
+    <link href="{{ asset('img/icon/icon.ico') }}" rel="icon">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="{{ asset('./assets/css/tailwind.output.css') }}" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
@@ -36,10 +31,7 @@ $matches = preg_match('/^\/(profil|demande\/[^\/]+)/', $url);
                 </a>
                 <ul class="mt-6">
                     <li class="relative px-6 py-3">
-                        <?php
-                        if ($url == '/profil') {
-                            echo '  <span class="absolute inset-y-0 left-0 w-1 bg-blue-500 rounded-tr-lg rounded-br-lg" aria-hidden="true"></span>';
-                        } ?>
+                        {!! request()->path() == 'profil' ? '  <span class="absolute inset-y-0 left-0 w-1 bg-blue-500 rounded-tr-lg rounded-br-lg"aria-hidden="true"></span>' : '' !!}
 
                         <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
                             href="/profil">
@@ -55,10 +47,7 @@ $matches = preg_match('/^\/(profil|demande\/[^\/]+)/', $url);
                 </ul>
                 <ul>
                     <li class="relative px-6 py-3">
-                        <?php
-                        if ($url == '/profil/demande') {
-                            echo '  <span class="absolute inset-y-0 left-0 w-1 bg-blue-500 rounded-tr-lg rounded-br-lg" aria-hidden="true"></span>';
-                        } ?>
+                        {!! request()->path() == 'profil/demande' ? '  <span class="absolute inset-y-0 left-0 w-1 bg-blue-500 rounded-tr-lg rounded-br-lg"aria-hidden="true"></span>' : '' !!}
                         <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                             href="/profil/demande">
                             <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round"
@@ -71,10 +60,7 @@ $matches = preg_match('/^\/(profil|demande\/[^\/]+)/', $url);
                         </a>
                     </li>
                     <li class="relative px-6 py-3">
-                        <?php
-                        if ($url == '/profil/etat-demande') {
-                            echo '  <span class="absolute inset-y-0 left-0 w-1 bg-blue-500 rounded-tr-lg rounded-br-lg"aria-hidden="true"></span>';
-                        } ?>
+                        {!! request()->path() == 'profil/etat-demande' ? '  <span class="absolute inset-y-0 left-0 w-1 bg-blue-500 rounded-tr-lg rounded-br-lg"aria-hidden="true"></span>' : '' !!}
                         <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                             href="/profil/etat-demande">
                             <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round"
@@ -87,11 +73,7 @@ $matches = preg_match('/^\/(profil|demande\/[^\/]+)/', $url);
                         </a>
                     </li>
                     <li class="relative px-6 py-3">
-                        <?php
-                        if ($url == '/profil/document') {
-                            echo '  <span class="absolute inset-y-0 left-0 w-1 bg-blue-500 rounded-tr-lg rounded-br-lg"
-                                                   aria-hidden="true"></span>';
-                        } ?>
+                        {!! request()->path() == 'profil/document' ? '  <span class="absolute inset-y-0 left-0 w-1 bg-blue-500 rounded-tr-lg rounded-br-lg" aria-hidden="true"></span>' : '' !!}
                         <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                             href="/profil/document">
                             <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round"
@@ -103,11 +85,7 @@ $matches = preg_match('/^\/(profil|demande\/[^\/]+)/', $url);
                         </a>
                     </li>
                     <li class="relative px-6 py-3">
-                        <?php
-                        if ($url == '/demandes') {
-                            echo '  <span class="absolute inset-y-0 left-0 w-1 bg-blue-500 rounded-tr-lg rounded-br-lg"
-                                                   aria-hidden="true"></span>';
-                        } ?>
+                        {!! request()->path() == 'demandes' ? '  <span class="absolute inset-y-0 left-0 w-1 bg-blue-500 rounded-tr-lg rounded-br-lg" aria-hidden="true"></span>' : '' !!}
                         <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                             href="{{route('demandes.index')}}">
                             <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round"
@@ -122,7 +100,7 @@ $matches = preg_match('/^\/(profil|demande\/[^\/]+)/', $url);
                 <div class="px-6 my-6">
                     <a href="/profil/demande"
                         class="flex items-center justify-between w-full px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-blue-500 border border-transparent rounded-lg active:bg-blue-500 hover:bg-blue-500 focus:outline-none focus:shadow-outline-purple">
-                        Nouvelle demande
+                        {{__('profil.layouts.requests.new')}}
                         <span class="ml-2" aria-hidden="true">+</span>
                     </a>
                 </div>
@@ -143,7 +121,7 @@ $matches = preg_match('/^\/(profil|demande\/[^\/]+)/', $url);
             @keydown.escape="closeSideMenu">
             <div class="py-4 text-gray-500 dark:text-gray-400">
                 <a class="ml-6 text-lg font-bold text-gray-800 dark:text-gray-200" href="#">
-                    Tableau de bord
+                    {{__('layouts.nav.profil')}}
                 </a>
                 <ul class="mt-6">
                     <li class="relative px-6 py-3">
@@ -157,7 +135,7 @@ $matches = preg_match('/^\/(profil|demande\/[^\/]+)/', $url);
                                     d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
                                 </path>
                             </svg>
-                            <span class="ml-4">Tableau de bord</span>
+                            <span class="ml-4">{{__('layouts.nav.profil')}}</span>
                         </a>
                     </li>
                 </ul>

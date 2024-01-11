@@ -105,7 +105,7 @@
                                                                     </path>
                                                                 </svg>
 
-                                                                <span>Télécharger</span>
+                                                                <span>{{__('profil.document.upload')}}</span>
                                                             </a>
                                                         @endif
                                                     </div>
@@ -115,7 +115,7 @@
                                     @else
                                         <div class="flex items-center py-2 px-6 bg-white rounded-lg">
                                             <p class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">
-                                                Aucun document associé à cette demande.
+                                                {{__('profil.document.empty')}}
                                             </p>
                                         </div>
                                     @endif
@@ -127,7 +127,7 @@
                     @else
                         <div class="flex items-center py-2 px-6 bg-white rounded-lg">
                             <p class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">
-                                Aucune demande associée à ce type de demande.
+                                {{__('profil.document.empty')}}
                             </p>
                         </div>
                     @endif
