@@ -138,7 +138,7 @@
     "installer.form_vitib":"<p>Formulaire de demande d’agrément VITIB</p>",
     "installer.opportunity_list":" <p> Consulter la liste des opportunités d’investissement (investir au VITIB)</p>",
     "installer.form_pepiniere":" <p>Formulaire de demande d'agrément Pépinière</p>",
-    
+
     "profil.home.request_message": "Vous avez soumis  <strong style='color:red;'>:count </strong> :type",
     "profil.home.list_request": "Liste des demandes possibles",
     "profil.home.new_available": "Liste des annonces disponibles",
