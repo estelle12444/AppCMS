@@ -74,16 +74,6 @@
                             </a>
 
                         </p>
-                        {{-- <div id="modal" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center hidden">
-                            <div class="bg-white rounded-lg p-8 max-w-md">
-                                <h2 class="text-2xl font-semibold mb-4" id="modalTitle">Titre du modal</h2>
-                                <p class="text-gray-700" id="modalDescription">Description du modal.</p>
-                                <!-- Ajoutez d'autres éléments ici si nécessaire -->
-                                <button id="fermerModal" class="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">
-                                    Fermer
-                                </button>
-                            </div>
-                        </div> --}}
 
                         <p> <span class="text-blue-800 font-bold"> Date limite:</span> <span
                                 style="color: #F18700;">{{ $tender->limit_date }}</span> </p>
@@ -168,17 +158,7 @@
                             </a>
 
                         </p>
-                        {{-- <div id="modal" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center hidden">
-                        <div class="bg-white rounded-lg p-8 max-w-md">
-                            <h2 class="text-2xl font-semibold mb-4" id="modalTitle">Titre du modal</h2>
-                            <p class="text-gray-700" id="modalDescription">Description du modal.</p>
-                            <!-- Ajoutez d'autres éléments ici si nécessaire -->
-                            <button id="fermerModal" class="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">
-                                Fermer
-                            </button>
-                        </div>
-                    </div> --}}
-
+                       
                         <p> <span class="text-blue-800 font-bold"> Date limite:</span> <span
                                 style="color: #F18700;">{{ $career->limit_date }}</span> </p>
                         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 ">
