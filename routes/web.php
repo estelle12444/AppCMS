@@ -183,7 +183,13 @@ Route::delete('/quotation/{quotation}', [QuotationController::class, 'destroy'])
 Route::get('/quotation/{quotation}/edit', [QuotationController::class, 'edit'])->name('Front.admin.quotation.edit');
 Route::put('/quotation/{quotation}', [QuotationController::class, 'update'])->name('Front.admin.quotation.update');
 
-
+Route::get('/language/{locale?}', function ($locale=null) {
+    if ($locale != null && in_array($locale, ['fr', 'en'])) {
+        app()->setLocale($locale);
+        session()->put('locale', $locale);
+    }
+    return redirect()->back();
+})->name('lang');
 
 Route::get('/count/', function (Request $request) {
     $filename = $request->query('filename');
