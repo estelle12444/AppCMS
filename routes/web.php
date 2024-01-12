@@ -38,6 +38,13 @@ use Illuminate\Support\Facades\Auth;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/language/{locale?}', function ($locale=null) {
+    if ($locale != null && in_array($locale, ['fr', 'en'])) {
+        app()->setLocale($locale);
+        session()->put('locale', $locale);
+    }
+    return redirect()->back();
+})->name('lang');
 
 Route::get('/', function () {
     return view('Front.landingg');
