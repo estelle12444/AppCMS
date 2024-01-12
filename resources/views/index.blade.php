@@ -60,9 +60,11 @@
             <div class="grid grid-cols-1 md:grid-cols-2  xl:grid-cols-3  mx-auto gap-4">
                 <!-- Première partie -->
                 <div class="flex items-center justify-center  p-4">
+                    <a href="">
                     <img src="{{asset('img/icon-index/Group 133.png')}}" alt="Logo 1" class="h-16 w-16 mr-4">
                     {!! __('') !!}
                     <span class="text-lg">  {!! __('home.fiscal_and_regulatory_advantages') !!} </span>
+                    </a>
                 </div>
 
                 <!-- Deuxième partie -->

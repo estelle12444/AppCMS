@@ -69,7 +69,7 @@
             </div>
             <div class="xl:py-8 py-4 xl:pt-20 xl:px-24 px-6 md:px-6 ">
                 <img data-aos="zoom-out-right" data-aos-duration="500" data-aos-delay="600"
-                    src="img/background/Parcours1.svg" alt="">
+                    src="{{asset('img/icon-installer/Parcours.png')}}" alt="">
             </div>
         </div>
 
@@ -81,17 +81,18 @@
                     class="text-2xl xl:text-4xl md:text-4xl font-bold text-center md:text-justify lg:text-justify">
                    {!!__('installer.eligible_activities_title')!!}
                 </div>
+                <div class="lg:pt-10"></div>
                 <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="700"
-                    class="grid grid-cols-1 md:grid-cols-1 gap-3 md:py-4 xl:py-6">
+                    class="grid grid-cols-1 md:grid-cols-1 gap-3">
                     <div class="bg-gray-100 rounded-lg p-4 flex items-center justify-between">
                         <!-- Icône à gauche -->
                         <div class="flex items-center">
                             <div
                                 class="inline-flex items-center flex-shrink-0 w-6 h-6 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
-                                <img src="img/icon/check.png" alt="">
+                                <img src="{{asset('img/icon-installer/Group.png')}}" alt="">
                             </div>
                             <!-- Texte ou d'autres éléments à côté de l'icône -->
-                            <div class="ml-2 lg:ml-4 text-sm lg:text-xl font-normal">
+                            <div class="ml-2 lg:ml-8 text-sm lg:text-xl font-normal">
                                 {!!__('installer.eligible_activities_industrial')!!}
                             </div>
                         </div>
@@ -117,7 +118,7 @@
                                         class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
                                         <img src="img/icon/check.png" alt="">
                                     </div>
-                                    <div class="ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
+                                    <div class="ml-2 lg:ml-8 text-sm lg:text-lg font-normal">
                                         {!!__('installer.industrial_activities_computer')!!}
                                     </div>
                                 </div>
@@ -176,9 +177,9 @@
                     <div class="bg-gray-100 rounded-lg p-4 flex items-center justify-between">
                         <div class="flex items-center">
                             <div class="inline-flex items-center flex-shrink-0 w-6 h-6 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
-                                <img src="img/icon/check.png" alt="">
+                                <img src="{{asset('img/icon-installer/Vector-1.png')}}" alt="">
                             </div>
-                            <div class="ml-2 lg:ml-4 text-sm lg:text-xl font-normal">
+                            <div class="ml-2 lg:ml-8 text-sm lg:text-xl font-normal">
                                 {!!__('installer.eligible_activities_research_development')!!}
                             </div>
                         </div>
@@ -231,10 +232,10 @@
                             <!-- Icône à gauche -->
                         <div class="flex items-center">
                             <div class="inline-flex items-center flex-shrink-0 w-6 h-6 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
-                                <img src="img/icon/check.png" alt="">
+                                <img src="{{asset('img/icon-installer/Vector.png')}}" alt="">
                             </div>
                                 <!-- Texte ou d'autres éléments à côté de l'icône -->
-                            <div class="ml-2 lg:ml-4 text-sm lg:text-xl font-normal">
+                            <div class="ml-2 lg:ml-8 text-sm lg:text-xl font-normal">
                                 {!!__('installer.eligible_activities_capacity building')!!}
                             </div>
                         </div>
@@ -287,11 +288,11 @@
                             <!-- Icône à gauche -->
                             <div class="flex items-center">
                                 <div class="inline-flex items-center flex-shrink-0 w-6 h-6 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
-                                    <img src="img/icon/check.png" alt="">
+                                    <img src="{{asset('img/icon-installer/Group 267.png')}}" alt="">
                                 </div>
 
                                 <!-- Texte ou d'autres éléments à côté de l'icône -->
-                                <div class="ml-2 lg:ml-4 text-sm lg:text-xl font-normal">
+                                <div class="ml-2 lg:ml-8 text-sm lg:text-xl font-normal">
                                     {!!__('installer.eligible_activities_services')!!}
                                 </div>
                             </div>
@@ -344,15 +345,15 @@
                             </div>
                     </div>
                 </div>
-                    </div>
+
                         <div class="bg-gray-100 rounded-lg p-4 flex items-center justify-between">
                             <!-- Icône à gauche -->
                             <div class="flex items-center">
                                 <div class="inline-flex items-center flex-shrink-0 w-6 h-6 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
-                                    <img src="img/icon/check.png" alt="">
+                                    <img src="{{asset('img/icon-installer/Group-1.png')}}" alt="">
                                 </div>
                                 <!-- Texte ou d'autres éléments à côté de l'icône -->
-                                <div class="ml-2 lg:ml-4 text-sm lg:text-xl font-normal">
+                                <div class="ml-2 lg:ml-8 text-sm lg:text-xl font-normal">
                                     {!!__('installer.eligible_activities_accompanying')!!}
                                 </div>
                             </div>
