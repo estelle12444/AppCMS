@@ -1,6 +1,10 @@
 {
+  "public/img/icon-index/MOTIF.png": {
+    "file": "assets/MOTIF-ee432dcb.png",
+    "src": "public/img/icon-index/MOTIF.png"
+  },
   "resources/css/app.css": {
-    "file": "assets/app-5470a188.css",
+    "file": "assets/app-30164eaf.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
