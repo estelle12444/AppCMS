@@ -7,7 +7,7 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-class Admin
+class AdminMiddleware
 {
     /**
      * Handle an incoming request.
@@ -17,11 +17,11 @@ class Admin
     public function handle(Request $request, Closure $next): Response
     {
 
-		if (optional(auth()->user())->role->nom == 'admin') {
+		if (auth()->user()?->role?->nom == 'admin') {
             return $next($request);
         }
 
-        return redirect()->route('auth.login')->with('error','You have not admin access');
+        return redirect()->back()->with('error','You have not admin access');
     }
 
 }

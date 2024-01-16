@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-class Profil
+class ProfilMiddleware
 {
     /**
      * Handle an incoming request.
@@ -15,10 +15,10 @@ class Profil
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (optional(auth()->user())->role->nom == 'profil') {
+        if (auth()->user()?->role?->nom == 'user') {
             return $next($request);
         }
 
-        return redirect()->route('auth.login')->with('error','You have not profil access');
+        return redirect()->back()->with('error','You have not profil access');
     }
 }

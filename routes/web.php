@@ -101,14 +101,14 @@ Route::get('/auth/register-other', [CompanyController::class, 'step2']);
 Route::post('/auth/register-other',  [CompanyController::class, 'storeStep2'])->name('company.step2');
 
 //login form
-Route::get('/company/login', [CompanyAuthController::class, 'showLoginForm'])->name('company.auth.login');
-Route::post('/company/login', [CompanyAuthController::class, 'login']);
+Route::get('/company/login', [CompanyAuthController::class, 'showLoginForm'])->name('company.auth.showLogin');
+Route::post('/company/login', [CompanyAuthController::class, 'login'])->name('company.auth.login');
 
-Route::get('/logout', [App\Http\Controllers\CompanyAuthController::class, 'logout']);
+Route::get('/logout', [App\Http\Controllers\CompanyAuthController::class, 'logout'])->name('company.auth.logout');
 
 Auth::routes();
 
-Route::middleware([Admin::class])->group(function () {
+Route::middleware(['admin'])->group(function () {
     Route::get('/admin', [AdminController::class, 'dashboard'])->name('Front.admin.home');
     Route::get('/partner', [AdminController::class, 'index'])->name('Front.admin.partner.index');
     Route::get('/partner/create', [AdminController::class, 'create'])->name('Front.admin.partner.create');
