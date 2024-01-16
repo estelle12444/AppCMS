@@ -21,6 +21,7 @@ use App\Http\Controllers\SectorController;
 use App\Http\Controllers\TenderController;
 use App\Http\Controllers\TypeDeDemandeController;
 use App\Http\Controllers\TypeDemandeController;
+use App\Http\Middleware\Admin;
 use App\Models\Newsletter;
 use App\Models\PageCount;
 use App\Models\Partner;
@@ -100,14 +101,15 @@ Route::get('/auth/register-other', [CompanyController::class, 'step2']);
 Route::post('/auth/register-other',  [CompanyController::class, 'storeStep2'])->name('company.step2');
 
 //login form
-Route::get('/company/login', [CompanyAuthController::class, 'showLoginForm'])->name('auth.login');
+Route::get('/company/login', [CompanyAuthController::class, 'showLoginForm'])->name('company.auth.login');
 Route::post('/company/login', [CompanyAuthController::class, 'login']);
 
-Route::get('/logout', [App\Http\Controllers\CompanyAuthController::class, 'logout'])->name('auth.login');
+Route::get('/logout', [App\Http\Controllers\CompanyAuthController::class, 'logout']);
 
 Auth::routes();
 
-Route::middleware(['admin'])->group(function () {
+Route::middleware([Admin::class])->group(function () {
+    Route::get('/admin', [AdminController::class, 'dashboard'])->name('Front.admin.home');
     Route::get('/partner', [AdminController::class, 'index'])->name('Front.admin.partner.index');
     Route::get('/partner/create', [AdminController::class, 'create'])->name('Front.admin.partner.create');
     Route::post('/partner', [AdminController::class, 'store'])->name('Front.admin.partner.store');
@@ -187,7 +189,7 @@ Route::get('/count/', function (Request $request) {
 Route::middleware(['profil'])->group(function () {
 
     Route::get('/profil', [App\Http\Controllers\ProfilController::class, 'index'])->name('Front.profil.home');
-    Route::get('/admin', [AdminController::class, 'dashboard'])->name('Front.admin.home');
+
     Route::get('/profil/demande', [App\Http\Controllers\ProfilController::class, 'demande'])->name('Front.profil.demande');
 
     Route::get('/profil/etat-demande', [App\Http\Controllers\DemandeController::class, 'etatdemande'])->name('Front.profil.etat-demande');
