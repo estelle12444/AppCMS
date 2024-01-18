@@ -80,7 +80,12 @@ Route::get('/join', function () {
 
 Route::get('/media', function () {
     return view('Front.pages.media');
-});
+})->name('media');
+
+
+Route::get('/actu/detail', function () {
+    return view('Front.pages.newsDetail');
+})->name('news.Detail');
 
 Route::get('/partners', [PartnerController::class, 'index']);
 Route::get('/installer', function () {return view('Front.pages.installer');});

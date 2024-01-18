@@ -1,7 +1,7 @@
 <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 bg-gradient-to-r">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/home" class="flex items-center">
-            <img src="{{ asset('img/slider/Logo-VILLAGE.svg') }}" width="150" alt="logo">
+            <img src="{{ asset('img/slider/LOGO-VITIB-SA.png') }}" width="150" alt="logo">
         </a>
         <div class="flex xl:order-2">
 

@@ -3,9 +3,9 @@
 
 @section('content')
     <div class="p-8 xl:p-24 bg-gradient-to-r from-orange-100 via-gray-100 to-gray-100">
-        <h1 class="text-gray-500 md:py-8 py-8 text-2xl xl:text-4xl md:text-4xl font-bold">
-            Actualités
-        </h1>
+        <div class=" md:py-4 py-4 text-2xl xl:text-2xl md:text-2xl font-bold text-gray-500">
+          <h1> Activités</h1>
+        </div>
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
             <!-- Colonne 1 : Vidéo -->
             <div class="lg:col-span-2">
@@ -16,49 +16,50 @@
                     </video>
                     <div class="overlay"></div>
                 </div>
-                <h1 class="text-lg lg:text-2xl pt-4 text-gray-500 text-center">
-                    <strong>
+                <h1 class="text-lg lg:text-2xl pt-4 text-gray-500">
+                    <a href="{{ route('news.Detail') }}">  <strong>
                         L'essor de l'économie des petits boulots sonne la fin pour ces travailleurs de l'ancien système
-                    </strong>
+                    </strong> </a>
                 </h1>
             </div>
 
             <!-- Colonne 2 : Images 1 et 2 avec texte superposé -->
             <div class="lg:col relative">
                 <!-- Image 1 -->
-                <div class="relative bg-no-repeat mb-4"
-                    style="background-image: url('img/page_6/carousel_petit.png'); background-size: cover; height: 0; padding-bottom: 55%;"></div>
+                <div class="relative bg-no-repeat mb-2"
+                    style="background-image: url('img/page_6/carousel_petit.png'); background-size: cover; height: 0; padding-bottom: 45%;"></div>
                 <!-- Texte 1 -->
-                <div class="absolute inset-0 flex items-center justify-center text-white text-center">
-                    <p class="text-lg font-bold tracking-tight leading-none mb-48 md:mb-96 lg:mb-72 md:text-2xl">
-                        <strong>Opportunité d'emploi:</strong><br>numérique, marketing
+                <div class=" flex items-center">
+                    <p class=" hover:text-amber-500 text-lg  mb-2 md:mb-0 lg:mb-0 lg:pl-4 md:text-lg">
+                        <a href="{{ route('news.Detail') }}">Opportunité d'emploi:<br>numérique, marketing</a>
                     </p>
                 </div>
 
                 <!-- Image 2 -->
                 <div class="relative bg-no-repeat"
-                    style="background-image: url('img/page_6/karaoke.png'); background-size: cover; height: 0; padding-bottom: 55%;"></div>
+                    style="background-image: url('img/page_6/karaoke.png'); background-size: cover; height: 0; padding-bottom: 45%;"></div>
                 <!-- Texte 2 -->
-                <div class="absolute inset-0 flex items-center justify-center text-white text-center">
-                    <p class="text-lg font-bold tracking-tight leading-none mt-48 px-2 lg:mt-36 md:mt-96 md:text-2xl ">
-                        Qu'est-il arrivé à la nouvelle vidéo virale ?
+                <div class="flex items-center justify-center text-center">
+                    <p class="hover:text-amber-500  text-lg tracking-tight leading-none px-2  md:text-lg ">
+                        <a href="{{ route('news.Detail') }}">   Qu'est-il arrivé à la nouvelle vidéo virale ?</a>
                     </p>
                 </div>
             </div>
         </div>
 
-        <div data-aos="zoom-in-up" data-aos-duration="700" data-aos-delay="500"
+        {{-- <div data-aos="zoom-in-up" data-aos-duration="700" data-aos-delay="500"
             class="  md:px-0 grid grid-cols-1 xl:grid-cols-4 md:grid-cols-2 md:gap-2 pt-24 md:py-8 xl:pt-16 ">
 
-            <div class="h-auto xl:bg-no-repeat max-w-full rounded-lg" style="background-image: url('img/page_6/image4.png');background-size: cover;">
+            <div class="h-auto xl:bg-no-repeat max-w-full rounded-lg relative" style="background-image: url('img/page_6/lit.png');background-size: cover;">
 
-                <div class="mx-auto max-w-screen-xl text-center xl:text-center pb-4 pt-24 xl:pt-64">
+                <div class="mx-auto max-w-screen-xl text-center xl:text-center absolute inset-0 flex flex-col justify-center">
                     <p class="xl:text-lg font-extrabold tracking-tight leading-none text-white xl:text-2xl lg:text-lg">
-                        Pépinière <br>d'entreprises
+                        Produits technologiques
                     </p>
+                    <p class="text-white text-sm mt-2">Texte accompagnatif 2</p>
                 </div>
             </div>
-            <div class="h-auto bg-no-repeat max-w-full rounded-lg" style="background-image: url('img/page_6/image4.png');background-size: cover;">
+            <div class="h-auto bg-no-repeat max-w-full rounded-lg" style="background-image: url('img/page_6/lit.png');background-size: cover;">
                 <div class="mx-auto max-w-screen-xl text-center xl:text-center pb-4 pt-24 xl:pt-64">
                     <p class="xl:text-lg font-extrabold tracking-tight leading-none text-white xl:text-2xl lg:text-lg">
                         Produits
@@ -82,46 +83,126 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </div> --}}
+        {{-- <div data-aos="zoom-in-in" data-aos-duration="700" data-aos-delay="500" class="md:px-0 grid grid-cols-1 xl:grid-cols-4 md:grid-cols-2 md:gap-2 pt-24 md:py-8 xl:pt-16">
 
-
-
-    </div>
-    {{-- <div class="px-4 md:px-6 xl:px-32 bg-gradient-to-r from-orange-100 from-20%  to-gray-100 to-90%">
-    <div class="md:pt-24 py-20 pb-6 md:pb-10  ">
-        <div class=" max-w-full md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mx-auto  xl:px-24 md:px-0 ">
-
-            <h1 data-aos="zoom-in-up" data-aos-duration="700" data-aos-delay="500"
-                class="mb-6 md:mb-10 text-2xl md:text-3xl text-center font-bold tracking-tight text-gray-900">
-                REJOIGNEZ-NOUS
-            </h1>
-
-            <div data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="600"
-                class="flex flex-col sm:flex-row justify-center sm:justify-between leading-normal bg-center">
-                <div class="w-full sm:w-1/2 mb-2   xl:pl-24 lg:px-4  ">
-                    <img class=" sm:h-auto md:h-auto xl:h-auto max-w-full lg:pt-4 " src="img/join.png" alt="image description">
-                </div>
-                <div class="w-full sm:w-1/2  xl:mr-24  md:pl-2 lg:px-0 ">
-                    <p class="font-normal text-justify text-gray-700 tracking-tight  pt-10 lg:pt-4 md:pt-0">
-                        Nous sommes fiers d'accueillir des entreprises innovantes qui transforment l'avenir de la Côte
-                        d'Ivoire et de l'Afrique. <br class="xl:block hidden">Rejoignez-nous au VITIB et devenez acteur
-                        d'un écosystème florissant,
-                        propice à l'épanouissement de votre entreprise. Contactez-nous dès aujourd'hui pour découvrir
-                        comment vous pouvez vous implantez et prospérer au sein de notre zone franche technologique.
-                        <br class="xl:block hidden">Ensemble, innovons au cœur de l'Afrique.
+            <div class="h-auto xl:bg-no-repeat max-w-full rounded-lg relative bg-[url('img/page_6/image4.png')] bg-cover">
+                <div class="mx-auto max-w-screen-xl text-center xl:text-center absolute inset-0 flex flex-col justify-center">
+                    <p class="xl:text-lg font-extrabold tracking-tight leading-none xl:text-2xl lg:text-lg">
+                        Pépinière d'entreprises
                     </p>
-                    <div class="pt-4 md:pt-2 lg:pt-4 xl:pt-6  ">
-                        <a href="{{ route('login') }} ">
-                            <button type="button" style="background-color: #F18700"
-                                class="font-bold rounded-none text-white text-center p-4 md:p-4 lg:p-5 xl:lg-6 lg:px-12  ">
-                                REJOIGNEZ-NOUS
-                            </button>
-                        </a>
+                    <p class=" text-sm mt-2">Texte accompagnatif 1</p>
+                </div>
+            </div>
+
+            <!-- Répétez la structure ci-dessus pour chaque image -->
+
+            <div class="h-auto bg-no-repeat max-w-full rounded-lg relative bg-[url('img/page_6/lit.png')] bg-cover" >
+                <div class="mx-auto max-w-screen-xl text-center xl:text-center absolute inset-0 flex flex-col justify-center">
+                    <p class="xl:text-lg font-extrabold tracking-tight leading-none  xl:text-2xl lg:text-lg">
+                        Produits technologiques
+                    </p>
+                    <p class="text-sm mt-2">Texte accompagnatif 2</p>
+                </div>
+            </div>
+
+            <!-- Répétez la structure ci-dessus pour chaque image -->
+
+        </div> --}}
+        <div class="pt-24 md:py-8 xl:pt-16">
+            <h3 class="py-4 xl:text-2xl md:text-2xl font-bold text-gray-500"> Autres Activités</h3>
+            <div  class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-2 ">
+                <div data-aos-duration="300" data-aos-delay="300" class="relative">
+                    <img src="img/actu/Group_94.png" alt="Image 2" class="w-full h-auto rounded-lg">
+                    <div class="flex flex-col  p-2">
+                        <p class="text-3xl hover:text-amber-500 font-bold mb-2"><a href="{{ route('news.Detail') }}"> Qu'es ce qui arrive à la nouvelle <br> Vidéo virale?</a></p>
+                        <p class="text-sm  text-left">Nous sommes fiers d'accueillir des entreprises innovantes qui <br>transforment l'avenir de la Côte d'Ivoire et de l'Afrique.</p>
                     </div>
                 </div>
+                <div data-aos-duration="300" data-aos-delay="300" class="relative">
+                    <img src="img/actu/Group_99.png" alt="Image 2" class="w-full h-auto rounded-lg">
+                    <div class="flex flex-col  p-4">
+                        <p class="text-3xl hover:text-amber-500 font-bold mb-2"><a href="{{ route('news.Detail') }}">  Qu'es ce qui arrive à la nouvelle  <br> IA, Chap Gpt?  </a></p>
+                        <p class="text-sm text-justify">Nous sommes fiers d'accueillir des entreprises innovantes qui <br>  transforment l'avenir de la Côte d'Ivoire et de l'Afrique.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
-</div> --}}
+        <div class=" bg-gradient-to-r from-gray-100 via-gray-100 to-gray-100">
+
+            <div class="md:py-8 py-2 text-lg font-bold px-8 xl:px-24">
+                <div class="flex items-center flex items-center justify-between">
+                    <h3 > Evénements en Images</h3>
+                    <div class="text-amber-500 hover:underline">
+                        <p>
+                        <a href="{{ route('media') }}"> Voir plus </a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div data-aos="fade-up" data-aos-duration="300" data-aos-delay="300" class=" px-8 xl:px-24 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-2">
+                <div >
+                    <img class="h-auto max-w-full rounded-lg" src="{{asset('img/actu/&.png')}}" alt="">
+                </div>
+
+                <div >
+                    <img class="h-auto max-w-full rounded-lg" src="{{asset('img/actu/1.png')}}" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="{{asset('img/actu/2.png')}}" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="{{asset('img/actu/3.png')}}" alt="">
+                </div>
+                <div >
+                    <img class="h-auto max-w-full rounded-lg" src="{{asset('img/actu/6.png')}}" alt="">
+                </div>
+                <div >
+                    <img class="h-auto max-w-full rounded-lg" src="{{asset('img/actu/7.png')}}" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="p-8 xl:p-24 bg-gradient-to-r from-orange-100 via-gray-100 to-gray-100">
+        <div data-aos="fade-up" data-aos-duration="300" data-aos-delay="300" class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 pt-24 md:py-8 xl:pt-16">
+            <div class="relative">
+                <img src="img/page_6/lit.png" alt="Image 1" class="w-full h-auto rounded-lg">
+                <div class="flex flex-col pt-4">
+                    <p class="text-xl hover:text-amber-500 font-bold mb-2"><a href="{{ route('news.Detail') }}"> Pépinière d'entreprises</a></p>
+                    <p class="text-sm  text-justify">Nous sommes fiers d'accueillir des entreprises innovantes qui transforment l'avenir de la Côte d'Ivoire et de l'Afrique.</p>
+                </div>
+            </div>
+
+            <!-- Répétez la structure ci-dessus pour chaque image -->
+
+            <div data-aos-duration="300" data-aos-delay="300" class="relative">
+                <img src="img/page_6/hgab.png" alt="Image 2" class="w-full h-auto rounded-lg">
+                <div class="flex flex-col  p-4">
+                    <p class="text-xl hover:text-amber-500 font-bold mb-2"><a href="{{ route('news.Detail') }}"> Produits technologiques</a></p>
+                    <p class="text-sm  text-justify">Nous sommes fiers d'accueillir des entreprises innovantes qui transforment l'avenir de la Côte d'Ivoire et de l'Afrique.</p>
+                </div>
+            </div>
+            <div data-aos-duration="300" data-aos-delay="300" class="relative">
+                <img src="img/page_6/femme.png" alt="Image 2" class="w-full h-auto rounded-lg">
+                <div class="flex flex-col  p-4">
+                    <p class="text-xl hover:text-amber-500 font-bold mb-2"><a href="{{ route('news.Detail') }}"> Produits technologiques</a></p>
+                    <p class="text-sm  text-justify">Nous sommes fiers d'accueillir des entreprises innovantes qui transforment l'avenir de la Côte d'Ivoire et de l'Afrique.</p>
+                </div>
+            </div>
+            <div data-aos-duration="300" data-aos-delay="300" class="relative">
+                <img src="img/page_6/femme.png" alt="Image 2" class="w-full h-auto rounded-lg">
+                <div class="flex flex-col  p-4">
+                    <p class="text-xl hover:text-amber-500 font-bold mb-2"><a href="{{ route('news.Detail') }}"> Produits technologiques</a></p>
+                    <p class="text-sm text-justify">Nous sommes fiers d'accueillir des entreprises innovantes qui transforment l'avenir de la Côte d'Ivoire et de l'Afrique.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 
 @endsection

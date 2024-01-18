@@ -10,13 +10,13 @@
     </div>
 </section>
 
-    <div class="pt-20 pr-8 pl-4 md:pr-16 md:pl-8 lg:pr-32 lg:pl-32" style="background-image: url(img/background/orange_vert.png); background-size: 100%;">
-
+    <div class="lg:text-4xl font-semibold pt-20 pr-8 pl-4 md:pr-16 md:pl-8 lg:pr-32 lg:pl-32" style="background-image: url(img/background/orange_vert.png); background-size: 100%;">
+       <h3>Nos partenaires agrées</h3>
     </div>
     @if (count($partners) > 0)
-    <div  id="search-results" class="grid grid-cols-1  md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-6 2xl:grid-cols-8 pt-10 pr-16 pl-16  md:pl-28 md:pr-32  pb-16" style="background-image: url(img/background/orange_vert.png); background-size: 100%;">
+    <div  id="search-results" class="grid grid-cols-3  md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-6 2xl:grid-cols-8 pt-10 pr-16 pl-16  md:pl-16 md:pr-16 pb-16 gap-3 xl:gap-0" style="background-image: url(img/background/orange_vert.png); background-size: 100%;">
         @foreach ($partners as $partner)
-        <div class="w-48  p-4 2xl:p-4  lg:p-4 md:p-4">
+        <div class="xl:p-4">
             <div class=" md:mx-auto max-w-lg bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <img class="h-auto max-w-full rounded-lg" src="{{ asset('storage/' . $partner->image) }}" alt="">
             </div>
