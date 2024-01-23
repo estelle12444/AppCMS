@@ -41,12 +41,12 @@
                                 </svg>
                             </span>
                         </span>
-                        <video class=" rounded-lg" muted autoplay controls>
-                            <source src="/videos/814dc43e870597176cad645798825c03.mp4" type="video/mp4">
+                        <video autoplay loop muted class="custom-video" poster="videos/792bd98f3e617786c850493560e11c45.png">
+                            <source src="videos/814dc43e870597176cad645798825c03.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
-                    </div>
-                    <div class="overlay"></div>
+                        <div class="overlay"></div>
+                </div>
                 </div>
             </div>
         </div>
