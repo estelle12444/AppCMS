@@ -7,9 +7,9 @@ use App\Models\Traits\ParentLanguageTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class BusinessPlan extends Model implements TranslateContracts
+class ActivityCompany extends Model
 {
-    use  HasFactory, ParentLanguageTrait;
+    use HasFactory;
 
-    protected $fillable = ['name', 'type_de_demande_id', 'translate_code', 'parent_id'];
+    protected $fillable = ['activity_id', 'company_id', 'status'];
 }

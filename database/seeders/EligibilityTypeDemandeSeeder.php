@@ -13,17 +13,10 @@ class EligibilityTypeDemandeSeeder extends Seeder
      */
     public function run(): void
     {
-        EligibilityTypeDemande::insert([
-            ['eligibility_id' => 1, 'type_de_demande_id' => 1,'created_at' => now(),'updated_at' => now()],
-            ['eligibility_id' => 2, 'type_de_demande_id' => 1,'created_at' => now(),'updated_at' => now()],
-            ['eligibility_id' => 3, 'type_de_demande_id' => 1,'created_at' => now(),'updated_at' => now()]
-        ]);
-
-        EligibilityTypeDemande::insert([
-            ['eligibility_id' => 1, 'type_de_demande_id' => 2,'created_at' => now(),'updated_at' => now()],
-            ['eligibility_id' => 2, 'type_de_demande_id' => 2,'created_at' => now(),'updated_at' => now()],
-            ['eligibility_id' => 3, 'type_de_demande_id' => 2,'created_at' => now(),'updated_at' => now()]
-        ]);
-
+        for ($i=1; $i < 2; $i++) {
+            for ($j=1; $j < 4; $j++) {
+                EligibilityTypeDemande::create(['eligibility_id' => $j, 'type_de_demande_id' => $i]);
+            }
+        }
     }
 }

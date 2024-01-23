@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class DispositionTypeDemande extends Model
 {
+    use HasFactory;
+
     protected $table = 'disposition_type_demande';
     protected $fillable = ['disposition_id', 'type_de_demande_id'];
 
@@ -22,7 +24,6 @@ class DispositionTypeDemande extends Model
     {
         return $this->belongsTo(
             TypeDeDemande::class,'type_de_demande_id'
-
         );
     }
 }

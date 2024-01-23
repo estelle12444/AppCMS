@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
+use App\Models\Eligibility;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
 
 class EligibilitySeeder extends Seeder
 {
@@ -13,22 +13,27 @@ class EligibilitySeeder extends Seeder
      */
     public function run(): void
     {
-        $eligibilities = [
+        $data = [
             [
-                'title' => 'Biotechnologie',
+                ['title' => 'Biotechnologie'],
+                ['title' => 'Technologies de l’Information et de la Communication'],
+                ['title' => 'Banques et Établissements financiers d’appui aux investissements réalisés dans la Zone Franche']
             ],
             [
-                'title' => 'Technologies de l’Information et de la Communication',
-            ],
-            [
-                'title' => 'Banques et Établissements financiers d’appui aux
-                investissements réalisés dans la Zone Franche',
-            ],
-            // Ajoutez d'autres enregistrements d'éligibilité ici
+                ['title' => 'Biotechnology'],
+                ['title' => 'Information and Communication Technologies'],
+                ['title' => 'Banks and financial institutions supporting investments in the Free Zone']
+            ]
         ];
 
-        foreach ($eligibilities as $eligibility) {
-            DB::table('eligibilities')->insert($eligibility);
+        foreach ($data[0] as $key => $row) {
+            $disposition = Eligibility::create($row);
+            $row_en = $data[1][$key];
+            $row_en = array_merge($row_en, [
+                'translate_code' => 'en',
+                'parent_id' => $disposition->id,
+            ]);
+            Eligibility::create($row_en);
         }
     }
 }

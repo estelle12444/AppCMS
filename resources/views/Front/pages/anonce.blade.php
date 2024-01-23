@@ -158,7 +158,7 @@
                             </a>
 
                         </p>
-                       
+
                         <p> <span class="text-blue-800 font-bold"> Date limite:</span> <span
                                 style="color: #F18700;">{{ $career->limit_date }}</span> </p>
                         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 ">

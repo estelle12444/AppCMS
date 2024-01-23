@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\TypeDeDemande;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
@@ -13,18 +14,25 @@ class TypeDemandeSeeder extends Seeder
      */
     public function run(): void
     {
-        $types = [
+        $data = [
             [
-                'name' => 'DEMANDE D\'AGREMENT VITIB',
+                ['name' => 'DEMANDE D\'AGREMENT VITIB'],
+                ['name' => 'DEMANDE D\'AGREMENT VITIB PEPINIERE'],
             ],
             [
-                'name' => 'DEMANDE D\'AGREMENT VITIB PEPINIERE',
-            ],
-            // Ajoutez d'autres enregistrements de types de demandes ici
+                ['name' => "APPLICATION FOR VITIB APPROVAL"],
+                ['name' => "APPLICATION FOR VITIB PEPINIERE APPROVAL"],
+            ]
         ];
 
-        foreach ($types as $type) {
-            DB::table('type_de_demandes')->insert($type);
+        foreach ($data[0] as $key => $row) {
+            $type = TypeDeDemande::create($row);
+            $row_en = $data[1][$key];
+            $row_en = array_merge($row_en, [
+                'translate_code' => 'en',
+                'parent_id' => $type->id,
+            ]);
+            TypeDeDemande::create($row_en);
         }
     }
 }

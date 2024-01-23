@@ -7,8 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Eligibility extends Model
 {
-  
-    protected $fillable = ['title'];
+    use HasFactory;
+
+    protected $fillable = ['title', 'translate_code', 'parent_id'];
     public function typeDemandes()
     {
         return $this->belongsToMany(

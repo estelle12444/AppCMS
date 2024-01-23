@@ -2,13 +2,16 @@
 
 namespace App\Models;
 
+use App\Models\Contracts\TranslateContracts;
+use App\Models\Traits\ParentLanguageTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Demande extends Model
+class Demande extends Model  implements TranslateContracts
 {
+    use HasFactory, ParentLanguageTrait;
 
-    protected $fillable = ['reference','title', 'version','code','type_de_demande_id','user_id', 'status'];
+    protected $fillable = ['reference','title', 'version','code','type_de_demande_id','user_id', 'status', 'parent_id', 'translate_code'];
 
     public function typeDemande()
     {

@@ -4,9 +4,6 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-use App\Models\Eligibility;
-use App\Models\Obligation;
-use App\Models\TypeDemande;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -23,27 +20,22 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
-        $this->call(SectorSeeder::class);
-        $this->call(PartnerSeeder::class);
-        $this->call(RoleSeeder::class);
-        $this->call(UserSeeder::class);
-        $this->call(CompanySeeder::class);
-
-        $this->call(EligibilitySeeder::class);
-        $this->call(DispositionSeeder::class);
-        $this->call(ObligationSeeder::class);
-        $this->call(TypeDemandeSeeder::class);
-
-        $this->call(EligibilityTypeDemandeSeeder::class);
-        $this->call(ObligationTypeDemandeSeeder::class);
-        $this->call(DispositionTypeDemandeSeeder::class);
-
-
-        $this->call(TypeDeDocumentSeeder::class);
-        $this->call(TypeDocumentTypeDemandeSeeder::class);
-        $this->call(BusinessPlanSeeder::class);
-
-
-
+        $this->call([
+            SectorSeeder::class,
+            PartnerSeeder::class,
+            RoleSeeder::class,
+            UserSeeder::class,
+            CompanySeeder::class,
+            EligibilitySeeder::class,
+            DispositionSeeder::class,
+            ObligationSeeder::class,
+            TypeDemandeSeeder::class,
+            EligibilityTypeDemandeSeeder::class,
+            ObligationTypeDemandeSeeder::class,
+            DispositionTypeDemandeSeeder::class,
+            TypeDeDocumentSeeder::class,
+            TypeDocumentTypeDemandeSeeder::class,
+            BusinessPlanSeeder::class
+        ]);
     }
 }

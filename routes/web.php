@@ -52,6 +52,7 @@ Route::get('/', function () {
 });
 
 Route::get('/home', function () {
+    dd(\App\Models\Role::first()->translator);
     return view('index');
 });
 

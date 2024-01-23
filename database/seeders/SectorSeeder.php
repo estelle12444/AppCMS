@@ -13,40 +13,77 @@ class SectorSeeder extends Seeder
      */
     public function run(): void
     {
-        $secteurs = [
-            ['nom' => 'TECH'],
-            ['nom' => 'AUDIO VISUEL'],
-            ['nom' => 'TIC'],
-            ['nom' => "FONDS D'INVESTISSEMENT"],
-            ['nom' => 'DATA CENTER'],
-            ['nom' => 'TELECOM'],
-            ['nom' => 'ENERGIE'],
-            ['nom' => 'BIOTECH'],
-            ['nom' => 'CALL CENTER'],
-            ['nom' => 'MONETIQUE'],
-            ['nom' => "COMPAGNIE D'INVESTISSEMENT"],
-            ['nom' => 'BIOTECHNOLOGIE'],
-            ['nom' => 'MEDICAL'],
-            ['nom' => 'TELECOM-ENERGIE'],
-            ['nom' => 'PHARMACEUTIQUE'],
-            ['nom' => 'ELECTRONIQUE'],
-            ['nom' => 'FORMATION-INCUBATION'],
-            ['nom' => 'IT'],
-            ['nom' => 'ARCHIVAGE DES DONNEES'],
-            ['nom' => 'DOUBLAGE'],
-            ['nom' => 'FORMATION IT'],
-            ['nom' => 'INFORMATIQUE'],
-            ['nom' => 'FINTECH'],
-            ['nom' => 'OBJETS CONNECTES'],
-            ['nom' => 'SECURITE'],
-            ['nom' => 'FORMATION'],
-            ['nom' => 'PRESSE EN LIGNE'],
-            ['nom' => 'INCUBATEUR'],
-            // Ajoutez d'autres secteurs d'activité ici
+        $data = [
+            [
+                ['nom' => 'TECH'],
+                ['nom' => 'AUDIO VISUEL'],
+                ['nom' => 'TIC'],
+                ['nom' => "FONDS D'INVESTISSEMENT"],
+                ['nom' => 'DATA CENTER'],
+                ['nom' => 'TELECOM'],
+                ['nom' => 'ENERGIE'],
+                ['nom' => 'BIOTECH'],
+                ['nom' => 'CALL CENTER'],
+                ['nom' => 'MONETIQUE'],
+                ['nom' => "COMPAGNIE D'INVESTISSEMENT"],
+                ['nom' => 'BIOTECHNOLOGIE'],
+                ['nom' => 'MEDICAL'],
+                ['nom' => 'TELECOM-ENERGIE'],
+                ['nom' => 'PHARMACEUTIQUE'],
+                ['nom' => 'ELECTRONIQUE'],
+                ['nom' => 'FORMATION-INCUBATION'],
+                ['nom' => 'IT'],
+                ['nom' => 'ARCHIVAGE DES DONNEES'],
+                ['nom' => 'DOUBLAGE'],
+                ['nom' => 'FORMATION IT'],
+                ['nom' => 'INFORMATIQUE'],
+                ['nom' => 'FINTECH'],
+                ['nom' => 'OBJETS CONNECTES'],
+                ['nom' => 'SECURITE'],
+                ['nom' => 'FORMATION'],
+                ['nom' => 'PRESSE EN LIGNE'],
+                ['nom' => 'INCUBATEUR'],
+            ],
+            [
+                ['nom' => 'TECH'],
+                ['nom' => 'AUDIO VISUAL'],
+                ['nom' => 'TIC'],
+                ['nom' => "INVESTMENT FUND"],
+                ['nom' => 'DATA CENTER'],
+                ['nom' => 'TELECOM'],
+                ['nom' => 'ENERGY'],
+                ['nom' => 'BIOTECH'],
+                ['nom' => 'CALL CENTER'],
+                ['nom' => 'MONETIQUE'],
+                ['nom' => "COMPAGNIE D'INVESTISSEMENT"],
+                ['nom' => 'BIOTECHNOLOGY'],
+                ['nom' => 'MEDICAL'],
+                ['nom' => 'TELECOM-ENERGIE'],
+                ['nom' => 'PHARMACEUTICAL'],
+                ['nom' => 'ELECTRONICS'],
+                ['nom' => 'TRAINING-INCUBATION'],
+                ['nom' => 'IT'],
+                ['nom' => 'DATA ARCHIVING'],
+                ['nom' => 'DOUBLAGE'],
+                ['nom' => 'IT TRAINING'],
+                ['nom' => 'COMPUTING'],
+                ['nom' => 'FINTECH'],
+                ['nom' => 'CONNECTED OBJECTS'],
+                ['nom' => 'SECURITY'],
+                ['nom' => 'TRAINING'],
+                ['nom' => 'ONLINE PRESS'],
+                ['nom' => 'INCUBATOR'],
+            ]
         ];
 
-        foreach ($secteurs as $secteur) {
-            Sector::create($secteur);
+        foreach ($data[0] as $key => $row) {
+            $secteur = Sector::create($row);
+            $row_en = $data[1][$key];
+            $row_en = array_merge($row_en, [
+                'translate_code' => 'en',
+                'parent_id' => $secteur->id,
+            ]);
+            Sector::create($row_en);
         }
 
     }
