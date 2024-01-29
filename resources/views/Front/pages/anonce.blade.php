@@ -4,9 +4,9 @@
 @section('content')
     <section class="bg-center bg-no-repeat  bg-blend-multiply" style="background-image: url(img/page_5/annonce.png)">
         <div class="px-4 mx-auto max-w-screen-xl text-center py-20 md:pt-20  lg:py-0">
-            <h1 data-aos="zoom-in" data-aos-duration="500"data-aos-delay="700"
+            <div data-aos="zoom-in" data-aos-duration="500"data-aos-delay="700"
                 class=" text-4xl font-extrabold uppercase tracking-tight leading-none text-white md:pt-20 pt-10 lg:pb-20 lg:pt-32 xl:text-5xl lg:text-6xl ">
-                ANNONCES</h1>
+                {!!__('news.title')!!} </div>
         </div>
     </section>
     <div class="  bg-gradient-to-r from-orange-100 from-20%  to-green-100 to-90%">
@@ -23,18 +23,17 @@
                     Appels d’offre</button>
                 <button type="button" onclick="setContent('#bloc-event')"
                     class="text-gray-900 border border-white hover:border-amber-500 dark:border-amber-500 dark:bg-amber-900 dark:hover:border-amber-700 bg-white focus:ring-4 focus:outline-none focus:ring-amber-500 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-amber-800">
-                    Demandes
-                    de manifestation</button>
+                    Demandes de manifestation</button>
                 <button type="button" onclick="setContent('#bloc-quotation')"
-                    class="text-gray-900 border border-white hover:border-amber-500 dark:border-amber-500 dark:bg-amber-900 dark:hover:border-amber-700 bg-white focus:ring-4 focus:outline-none focus:ring-amber-500 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-amber-800">Demandes
-                    de cotation</button>
+                    class="text-gray-900 border border-white hover:border-amber-500 dark:border-amber-500 dark:bg-amber-900 dark:hover:border-amber-700 bg-white focus:ring-4 focus:outline-none focus:ring-amber-500 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-amber-800">
+                    Demandes de cotation</button>
                 <button type="button" onclick="setContent('#bloc-career')"
                     class="text-gray-900 border border-white hover:border-amber-500 dark:border-amber-500 dark:bg-amber-900 dark:hover:border-amber-700 bg-white focus:ring-4 focus:outline-none focus:ring-amber-500 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-amber-800">
                     Appels à candidature</button>
 
                 <button type="button" onclick="setContent('#bloc-job')"
-                    class="text-gray-900 border border-white hover:border-amber-500 dark:border-amber-500 dark:bg-amber-900 dark:hover:border-amber-700 bg-white focus:ring-4 focus:outline-none focus:ring-amber-500 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-amber-800">Offres
-                    d’emploi</button>
+                    class="text-gray-900 border border-white hover:border-amber-500 dark:border-amber-500 dark:bg-amber-900 dark:hover:border-amber-700 bg-white focus:ring-4 focus:outline-none focus:ring-amber-500 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-amber-800">
+                    Offres d’emploi</button>
 
 
             </div>
@@ -70,7 +69,7 @@
 
                             <a href="{{ route('Front.pages.info', $tender->id) }}" id="voirPlusBtn"
                                 class=" hover:text-amber-500 text-blue-800 font-semibold py-2  rounded">
-                                Voir plus
+                                 {!!__('home.read_more')!!}
                             </a>
 
                         </p>
@@ -90,9 +89,9 @@
                             <div class="w-3/5">
                                 <a href="{{ route('download_file') }}?filename={{ $tender->file }}"
                                     class="underline hover:underline">
-                                    <p class="text-lg">
-                                        Télécharger le fichier de l'offre
-                                    </p>
+                                    <div class="text-lg">
+                                       <p>Télécharger le fichier de l'offre</p>
+                                    </div>
                                 </a>
                             </div>
                             <div class="w-1/5">
@@ -119,8 +118,12 @@
                         <img class="h-48 xl:h-48 lg:h-52 w-full " src="{{ asset('img/annonce/appel_offre.jpg') }}"
                             alt="" />
                         <div class="p-5">
-                            <h3 class="text-lg">Pas de résultats de recherche</h3>
-                            <p class="text-gray-500">Aucun résultat trouvé pour votre recherche.</p>
+                            <div class="text-lg">
+                                <h3>Pas de résultats de recherche</h3>
+                            </div>
+                            <div class="text-gray-500">
+                                <p>Aucun résultat trouvé pour votre recherche.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -154,11 +157,11 @@
 
                             <a href="{{ route('Front.pages.info', $career->id) }}" id="voirPlusBtn"
                                 class=" hover:text-amber-500 text-blue-800 font-semibold py-2  rounded">
-                                Voir plus
+                                {!!__('home.read_more')!!}
                             </a>
 
                         </p>
-                       
+
                         <p> <span class="text-blue-800 font-bold"> Date limite:</span> <span
                                 style="color: #F18700;">{{ $career->limit_date }}</span> </p>
                         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 ">
@@ -174,9 +177,9 @@
                             <div class="w-3/5">
                                 <a href="{{ route('download_file') }}?filename={{ $career->file }}"
                                     class="underline hover:underline">
-                                    <p class="text-lg">
-                                        Télécharger le fichier de candidature
-                                    </p>
+                                    <div class="text-lg">
+                                        <p>Télécharger le fichier de candidature</p>
+                                    </div>
                                 </a>
                             </div>
                             <div class="w-1/5">
