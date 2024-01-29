@@ -11,6 +11,7 @@ class Demande extends Model  implements TranslateContracts
 {
     use HasFactory, ParentLanguageTrait;
 
+    protected $with = ['child'];
     protected $fillable = ['reference','title', 'version','code','type_de_demande_id','user_id', 'status', 'parent_id', 'translate_code'];
 
     public function typeDemande()

@@ -3,11 +3,14 @@
 namespace Database\Seeders;
 
 use App\Models\Sector;
+use Database\Seeders\Trait\SeederTrait;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class SectorSeeder extends Seeder
 {
+    use SeederTrait;
+
     /**
      * Run the database seeds.
      */
@@ -76,15 +79,7 @@ class SectorSeeder extends Seeder
             ]
         ];
 
-        foreach ($data[0] as $key => $row) {
-            $secteur = Sector::create($row);
-            $row_en = $data[1][$key];
-            $row_en = array_merge($row_en, [
-                'translate_code' => 'en',
-                'parent_id' => $secteur->id,
-            ]);
-            Sector::create($row_en);
-        }
+        $this->insert($data, Sector::class);
 
     }
 }

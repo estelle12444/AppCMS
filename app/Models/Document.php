@@ -7,9 +7,9 @@ use App\Models\Traits\ParentLanguageTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Document extends Model implements TranslateContracts
+class Document extends Model
 {
-    use HasFactory, ParentLanguageTrait;
+    use HasFactory;
 
     protected $fillable = ['fichier', 'nom_original','type_de_document_id', 'company_id', "demande_id", 'parent_id', 'translate_code'];
 

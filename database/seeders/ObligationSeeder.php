@@ -3,11 +3,14 @@
 namespace Database\Seeders;
 
 use App\Models\Obligation;
+use Database\Seeders\Trait\SeederTrait;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class ObligationSeeder extends Seeder
 {
+    use SeederTrait;
+
     /**
      * Run the database seeds.
      */
@@ -140,14 +143,6 @@ class ObligationSeeder extends Seeder
             ]
         ];
 
-        foreach ($data[0] as $key => $row) {
-            $disposition = Obligation::create($row);
-            $row_en = $data[1][$key];
-            $row_en = array_merge($row_en, [
-                'translate_code' => 'en',
-                'parent_id' => $disposition->id,
-            ]);
-            Obligation::create($row_en);
-        }
+        $this->insert($data, Obligation::class);
     }
 }

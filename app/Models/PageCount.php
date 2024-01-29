@@ -7,9 +7,9 @@ use App\Models\Traits\ParentLanguageTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class PageCount extends Model implements TranslateContracts
+class PageCount extends Model
 {
-    use HasFactory, ParentLanguageTrait;
+    use HasFactory;
 
     protected $fillable = ['url', 'name', 'count', 'translate_code', 'parent_id'];
 }

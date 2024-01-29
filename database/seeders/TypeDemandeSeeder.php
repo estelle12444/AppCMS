@@ -3,12 +3,15 @@
 namespace Database\Seeders;
 
 use App\Models\TypeDeDemande;
+use Database\Seeders\Trait\SeederTrait;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
 class TypeDemandeSeeder extends Seeder
 {
+    use SeederTrait;
+
     /**
      * Run the database seeds.
      */
@@ -25,14 +28,6 @@ class TypeDemandeSeeder extends Seeder
             ]
         ];
 
-        foreach ($data[0] as $key => $row) {
-            $type = TypeDeDemande::create($row);
-            $row_en = $data[1][$key];
-            $row_en = array_merge($row_en, [
-                'translate_code' => 'en',
-                'parent_id' => $type->id,
-            ]);
-            TypeDeDemande::create($row_en);
-        }
+        $this->insert($data, TypeDeDemande::class);
     }
 }

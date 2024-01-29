@@ -4,11 +4,14 @@ namespace Database\Seeders;
 
 
 use App\Models\TypeDeDocument;
+use Database\Seeders\Trait\SeederTrait;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class TypeDeDocumentSeeder extends Seeder
 {
+    use SeederTrait;
+
     /**
      * Run the database seeds.
      */
@@ -33,14 +36,6 @@ class TypeDeDocumentSeeder extends Seeder
             ]
         ];
 
-        foreach ($data[0] as $key => $row) {
-            $type = TypeDeDocument::create($row);
-            $row_en = $data[1][$key];
-            $row_en = array_merge($row_en, [
-                'translate_code' => 'en',
-                'parent_id' => $type->id,
-            ]);
-            TypeDeDocument::create($row_en);
-        }
+        $this->insert($data, TypeDeDocument::class);
     }
 }

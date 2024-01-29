@@ -2,6 +2,7 @@
 
 namespace App\Models\Traits;
 
+use Illuminate\Contracts\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\App;
 
 trait ParentLanguageTrait
@@ -18,6 +19,11 @@ trait ParentLanguageTrait
             $translate[$field] = $cond ? $this->{$field} : $this->child?->{$field};
         }
         return $translate;
+    }
+
+    public function scopeOfLang(Builder $query, string $type): void
+    {
+        $query->where('translate_code', $type);
     }
 }
 

@@ -3,11 +3,14 @@
 namespace Database\Seeders;
 
 use App\Models\Disposition;
+use Database\Seeders\Trait\SeederTrait;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class DispositionSeeder extends Seeder
 {
+    use SeederTrait;
+
     /**
      * Run the database seeds.
      */
@@ -23,8 +26,7 @@ class DispositionSeeder extends Seeder
                 ['title' => 'Guichet unique','content' => 'pour l’assistance au traitement rapide des opérations administratives'],
                 ['title' => 'Titre de séjour', 'content' => ' pour les étrangers et leurs familles'],
                 ['title' => 'Aucune limite ', 'content' => 'sur les investissements étrangers et locaux']
-            ],
-            [
+            ],[
                 ['percent' => 0,'title' => '','content' => 'customs import and export duties'],
                 ['percent' => 0,'title' => '','content' => 'income tax for the first 5 years'],
                 ['title' => 'Exemption','content' => 'total tax exemption'],
@@ -33,17 +35,9 @@ class DispositionSeeder extends Seeder
                 ['title' => 'Guichet unique', 'content' => 'for assistance with the rapid processing of administrative operations'],
                 ['title' => 'Residence permit', 'content' => 'for foreigners and their families'],
                 ['title' => 'No limit ', 'content' => 'on foreign and local investments'],
-        ]
-    ];
+            ]
+        ];
 
-        foreach ($data[0] as $key => $row) {
-            $disposition = Disposition::create($row);
-            $row_en = $data[1][$key];
-            $row_en = array_merge($row_en, [
-                'translate_code' => 'en',
-                'parent_id' => $disposition->id,
-            ]);
-            Disposition::create($row_en);
-        }
+        $this->insert($data, Disposition::class);
     }
 }

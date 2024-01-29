@@ -11,6 +11,7 @@ class Disposition extends Model implements TranslateContracts
 {
     use HasFactory, ParentLanguageTrait;
 
+    protected $with = ['child'];
     protected $fillable = ['percent', 'title', 'content', 'parent_id', 'translate_code'];
 
     public function typeDemandes()

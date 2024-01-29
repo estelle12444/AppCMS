@@ -3,11 +3,13 @@
 namespace Database\Seeders;
 
 use App\Models\Eligibility;
+use Database\Seeders\Trait\SeederTrait;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class EligibilitySeeder extends Seeder
 {
+    use SeederTrait;
     /**
      * Run the database seeds.
      */
@@ -26,14 +28,6 @@ class EligibilitySeeder extends Seeder
             ]
         ];
 
-        foreach ($data[0] as $key => $row) {
-            $disposition = Eligibility::create($row);
-            $row_en = $data[1][$key];
-            $row_en = array_merge($row_en, [
-                'translate_code' => 'en',
-                'parent_id' => $disposition->id,
-            ]);
-            Eligibility::create($row_en);
-        }
+        $this->insert($data, Eligibility::class);
     }
 }

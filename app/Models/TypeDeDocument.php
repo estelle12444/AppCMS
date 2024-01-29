@@ -11,6 +11,7 @@ class TypeDeDocument extends Model implements TranslateContracts
 {
     use ParentLanguageTrait;
 
+    protected $with = ['child'];
     protected $fillable = ['name','translate_code', 'parent_id'];
 
     public function typeDemandes()

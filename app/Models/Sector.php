@@ -13,6 +13,7 @@ class Sector extends Model  implements TranslateContracts
 
     public $timestamps = false;
 
+    protected $with = ['child'];
     protected $fillable = ['nom', 'translate_code', 'parent_id'];
 
     public function partners()

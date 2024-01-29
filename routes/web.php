@@ -6,6 +6,7 @@ use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\CareerController;
 use App\Http\Controllers\CompanyAuthController;
 use App\Http\Controllers\CompanyController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DemandeController;
 use App\Http\Controllers\DownloadController;
 use App\Http\Controllers\EventController;
@@ -52,7 +53,6 @@ Route::get('/', function () {
 });
 
 Route::get('/home', function () {
-    dd(\App\Models\Role::first()->translator);
     return view('index');
 });
 
@@ -115,6 +115,8 @@ Route::get('/logout', [App\Http\Controllers\CompanyAuthController::class, 'logou
 Auth::routes();
 
 Route::middleware(['admin'])->group(function () {
+    Route::get('/admin', DashboardController::class)->name('Front.admin.home');
+
     Route::get('/admin', [AdminController::class, 'dashboard'])->name('Front.admin.home');
     Route::get('/partner', [AdminController::class, 'index'])->name('Front.admin.partner.index');
     Route::get('/partner/create', [AdminController::class, 'create'])->name('Front.admin.partner.create');
@@ -148,9 +150,9 @@ Route::middleware(['admin'])->group(function () {
     Route::get('/event', [EventController::class, 'index'])->name('Front.admin.event.index');
     Route::get('/event/create', [EventController::class, 'create'])->name('Front.admin.event.create');
     Route::post('/event', [EventController::class, 'store'])->name('Front.admin.event.store');
-    Route::delete('/event/{event}', [EventController::class, 'destroy'])->name('Front.admin.event.destroy');
-    Route::get('/event/{event}/edit', [EventController::class, 'edit'])->name('Front.admin.event.edit');
-    Route::put('/event/{event}', [EventController::class, 'update'])->name('Front.admin.event.update');
+    Route::delete('/event/{activity}', [EventController::class, 'destroy'])->name('Front.admin.event.destroy');
+    Route::get('/event/{activity}/edit', [EventController::class, 'edit'])->name('Front.admin.event.edit');
+    Route::put('/event/{activity}', [EventController::class, 'update'])->name('Front.admin.event.update');
 
     Route::get('/career', [CareerController::class, 'index'])->name('Front.admin.career.index');
     Route::get('/career/create', [CareerController::class, 'create'])->name('Front.admin.career.create');

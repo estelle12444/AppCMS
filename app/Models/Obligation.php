@@ -12,6 +12,7 @@ class Obligation extends Model implements TranslateContracts
     use ParentLanguageTrait;
 
     public $timestamps = true;
+    protected $with = ['child'];
     protected $fillable = ['title', 'content', 'cost', 'translate_code', 'parent_id'];
 
     public function typeDemandes()

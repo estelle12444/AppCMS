@@ -7,11 +7,11 @@ use App\Models\Traits\ParentLanguageTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Role extends Model implements TranslateContracts
+class Role extends Model
 {
-    use HasFactory, ParentLanguageTrait;
+    use HasFactory;
 
-    protected $fillable = ['name', 'translate_code', 'parent_id'];
+    protected $fillable = ['name'];
 
     public function users()
     {
