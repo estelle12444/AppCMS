@@ -1,7 +1,7 @@
 @extends('Front.admin.layout')
 
 @section('content')
-<section class="section">
+    <section class="section">
         <div class="section-header">
             <h1>Liste des Annonces </h1>
             <div class="section-header-breadcrumb">
@@ -10,7 +10,6 @@
                 <div class="breadcrumb-item">Liste</div>
             </div>
         </div>
-
         <div class="section-body">
             <div class="row">
                 <div class="col-12">
@@ -49,21 +48,21 @@
                                 </ul>
                                 <div class="tab-content" id="myTabContent">
                                     @if(count($recentAnnonces) > 0)
-
-                                    @foreach ($recentAnnonces as $annonce)
-                                        <div class="tab-pane fade" id="{{ strtolower($annonce['type']) }}" role="tabpanel" aria-labelledby="{{ strtolower($annonce['type']) }}-tab">
-                                            <h2> Dossier N°{{ $annonce['id']}}</h2>
-                                            <p> Titre: {{ strip_tags($annonce['title']) }}</p>
-                                            <p>Description: {{ strip_tags($annonce['content']) }}</p>
-                                            <p>Date limite: {{ $annonce['date'] }}</p>
+                                        @foreach ($recentAnnonces as $annonce)
+                                            <div class="tab-pane fade" id="{{ strtolower($annonce['type']) }}" role="tabpanel" aria-labelledby="{{ strtolower($annonce['type']) }}-tab">
+                                                <h2> Dossier N°{{ $annonce['id']}}</h2>
+                                                <p> Titre: {{ strip_tags($annonce['title']) }}</p>
+                                                <p>Description: {{ strip_tags($annonce['content']) }}</p>
+                                                <p>Date limite: {{ $annonce['date'] }}</p>
+                                            </div>
+                                        @endforeach
+                                    @else
+                                        <div class="alert alert-info">
+                                            Il n'y a pas d'annonces récentes à afficher.
                                         </div>
-                                    @endforeach
-                                @else
-                                    <div class="alert alert-info">
-                                        Il n'y a pas d'annonces récentes à afficher.
-                                    </div>
-                                @endif
+                                    @endif
                                 </div>
+                            </div>
                         </div>
                     </div>
                 </div>

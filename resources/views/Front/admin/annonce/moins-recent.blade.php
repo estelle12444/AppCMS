@@ -10,7 +10,6 @@
                 <div class="breadcrumb-item">Liste</div>
             </div>
         </div>
-
         <div class="section-body">
             <div class="row">
                 <div class="col-12">
@@ -28,36 +27,6 @@
                                 </form>
                             </div>
                         </div>
-
-
-                        {{-- <div class="col-12 col-sm-9 col-lg-9">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-12 col-sm-4">
-                                        <ul class="nav nav-pills flex-column" id="myTab4" role="tablist">
-                                            @foreach ($lessRecentAnnonces as $annonce)
-                                                <li class="nav-item">
-                                                    <a class="nav-link {{ $loop->first ? 'active' : '' }}" id="{{ strtolower($annonce['type']) }}-tab" data-toggle="tab" href="#{{ strtolower($annonce['type']) }}" role="tab" aria-controls="{{ strtolower($annonce['type']) }}" aria-selected="{{ $loop->first ? 'true' : 'false' }}">
-                                                        {{ $annonce['type'] }}
-                                                    </a>
-                                                </li>
-                                            @endforeach
-                                        </ul>
-                                    </div>
-                                    <div class="col-12 col-sm-8">
-                                        <div class="tab-content no-padding" id="myTab2Content">
-                                            @foreach ($lessRecentAnnonces as $annonce)
-                                                <div class="tab-pane fade {{ $loop->first ? 'show active' : '' }}" id="{{ strtolower($annonce['type']) }}" role="tabpanel" aria-labelledby="{{ strtolower($annonce['type']) }}-tab">
-                                                    <!-- Contenu pour {{ $annonce['type'] }} -->
-                                                    <h3>{{ $annonce['title'] }}</h3>
-                                                    <p>{{ $annonce['content'] }}</p>
-                                                </div>
-                                            @endforeach
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> --}}
                         <div class="col-12 col-sm-6 col-lg-12">
                             <div class="card-body">
                                 <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -101,12 +70,6 @@
                                     @endif
                                 </div>
                             </div>
-
-
-
-
-
-
                         </div>
                     </div>
                 </div>

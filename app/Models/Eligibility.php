@@ -2,13 +2,17 @@
 
 namespace App\Models;
 
+use App\Models\Contracts\TranslateContracts;
+use App\Models\Traits\ParentLanguageTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Eligibility extends Model
+class Eligibility extends Model implements TranslateContracts
 {
-  
-    protected $fillable = ['title'];
+    use HasFactory, ParentLanguageTrait;
+
+    protected $with = ['child'];
+    protected $fillable = ['title', 'translate_code', 'parent_id'];
     public function typeDemandes()
     {
         return $this->belongsToMany(

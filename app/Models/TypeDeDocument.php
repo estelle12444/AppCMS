@@ -2,12 +2,17 @@
 
 namespace App\Models;
 
+use App\Models\Contracts\TranslateContracts;
+use App\Models\Traits\ParentLanguageTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class TypeDeDocument extends Model
+class TypeDeDocument extends Model implements TranslateContracts
 {
-    protected $fillable = ['name'];
+    use ParentLanguageTrait;
+
+    protected $with = ['child'];
+    protected $fillable = ['name','translate_code', 'parent_id'];
 
     public function typeDemandes()
     {

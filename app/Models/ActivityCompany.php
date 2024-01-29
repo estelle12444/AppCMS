@@ -7,9 +7,9 @@ use App\Models\Traits\ParentLanguageTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class PageCount extends Model
+class ActivityCompany extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['url', 'name', 'count', 'translate_code', 'parent_id'];
+    protected $fillable = ['activity_id', 'company_id', 'status'];
 }

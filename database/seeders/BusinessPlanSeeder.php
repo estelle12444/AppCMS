@@ -13,30 +13,62 @@ class BusinessPlanSeeder extends Seeder
      */
     public function run(): void
     {
-
-        BusinessPlan::create(
+        $data = [
             [
-            'name' => 'Compte de résultats prévisionnel',
-            'type_de_demande_id'=>1
+                [
+                    ['name' => 'Compte de résultats prévisionnel'],
+                    ['name' => 'Plan des investissements et des sources de financement'],
+                    ['name' => 'L’organigramme de la société et le plan de recrutement'],
+                    ['name' => 'Évolution des Ventes'],
+                    ['name' => 'Évolution de la Marge brute'],
+                    ['name' => 'Évolution des charges d’exploitation'],
+                    ['name' => 'Compte de résultats prévisionnel sur 5 ans'],
+                    ['name' => 'Bilan des trois (3) derniers exercices pour une entreprise en exploitation'],
+                    ['name' => 'Plan de développement commercial'],
+                    ['name' => 'Plan de recherche et d’innovation']
+                ],
+                [
+                    ['name' => 'Solutions innovantes'],
+                    ['name' => 'Plan d’affaires'],
+                    ['name' => 'Compte de résultats prévisionnel sur 3 ans.'],
+                    ['name' => 'Plan de développement']
+                ]
+            ],
+            [
+                [
+                    ['name' => 'Income statement'],
+                    ['name' => 'Investment and financing plan'],
+                    ['name' => 'Company organization chart and recruitment plan'],
+                    ['name' => 'Sales development'],
+                    ['name' => 'Gross Margin Evolution'],
+                    ['name' => 'Operating expenses'],
+                    ['name' => '5-year forecast income statement'],
+                    ['name' => 'Balance sheet for the last three (3) years for a company in operation'],
+                    ['name' => 'Business development plan'],
+                    ['name' => 'Research and innovation plan']
+                ],
+                [
+                    ['name' => 'Innovative solutions'],
+                    ['name' => 'Business plan'],
+                    ['name' => '3-year projected income statement'],
+                    ['name' => 'Development plan']
+                ]
             ]
-    );
-        BusinessPlan::create(['name' => 'Plan des investissements et des sources de financement','type_de_demande_id'=>1]);
-        BusinessPlan::create(['name' => 'L’organigramme de la société et le plan de recrutement','type_de_demande_id'=>1]);
-        BusinessPlan::create(['name' => 'Évolution des Ventes','type_de_demande_id'=>1]);
-        BusinessPlan::create(['name' => 'Évolution de la Marge brute','type_de_demande_id'=>1]);
-        BusinessPlan::create(['name' => 'Évolution des charges d’exploitation','type_de_demande_id'=>1]);
-        BusinessPlan::create(['name' => 'Compte de résultats prévisionnel sur 5 ans','type_de_demande_id'=>1]);
-        BusinessPlan::create(['name' => 'Bilan des trois (3) derniers exercices pour une entreprise en exploitation','type_de_demande_id'=>1]);
-        BusinessPlan::create(['name' => 'Plan de développement commercial','type_de_demande_id'=>1]);
-        BusinessPlan::create(['name' => 'Plan de recherche et d’innovation','type_de_demande_id'=>1]);
-
-
-        BusinessPlan::create(['name' => 'Solutions innovantes','type_de_demande_id'=>2]);
-        BusinessPlan::create(['name' => 'Plan d’affaires','type_de_demande_id'=>2]);
-        BusinessPlan::create(['name' => 'Compte de résultats prévisionnel sur 3 ans.','type_de_demande_id'=>2]);
-        BusinessPlan::create(['name' => 'Plan de développement','type_de_demande_id'=>2]);
-
-
-
+        ];
+        $typeId = 0;
+        foreach ($data[0] as $group) {
+            foreach ($group as $key => $fr) {
+                $en = $data[1][$typeId][$key];
+                $fr['type_de_demande_id'] = $typeId;
+                $parent =  BusinessPlan::create($fr);
+                $en = array_merge($en, [
+                    'type_de_demande_id' => $typeId,
+                    'translate_code' => 'en',
+                    'parent_id' => $parent->id
+                ]);
+                BusinessPlan::create($en);
+            }
+            $typeId++;
+        }
     }
 }

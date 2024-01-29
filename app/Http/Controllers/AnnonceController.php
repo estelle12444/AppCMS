@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Activity;
 use App\Models\Career;
+use App\Models\Enums\ActivityTypeEnum;
 use App\Models\Event;
 use App\Models\Job;
 use App\Models\Quotation;
@@ -14,59 +16,35 @@ class AnnonceController extends Controller
 {
     public function index()
     {
-        $tenders = Tender::all();
-        $careers = Career::all();
-        $jobs = Job::all();
-        $quotations = Quotation::all();
-        $events = Event::all();
-
-
-        return view('Front.pages.anonce', compact('tenders', 'careers', 'jobs', 'quotations', 'events'));
+        $activities=Activity::ofType(
+            array_map(
+                fn($type) => $type->value,
+                [
+                    ActivityTypeEnum::CAREERS,
+                    ActivityTypeEnum::JOBS,
+                    ActivityTypeEnum::EVENTS,
+                    ActivityTypeEnum::QUOTATIONS,
+                    ActivityTypeEnum::TENDER,
+                ])
+            )->get()->groupBy('type');
+        dd($activities);
+        return view('Front.pages.anonce', compact('activities'));
     }
 
-
-    public function show_tender(Tender $tender)
+    public function show_tender(Activity $activity)
     {
-        return view('Front.pages.info', compact('tender'));
-    }
-
-
-
-    public function show_job(Job $job)
-    {
-        return view('Front.pages.job', compact('job'));
-    }
-
-
-    public function show_quotation(Quotation $quotation)
-    {
-        return view('Front.pages.quotation', compact('quotation'));
-    }
-
-
-    public function show_event(Event $event)
-    {
-        return view('Front.pages.event', compact('event'));
-    }
-
-
-    public function show_career(Career $career)
-    {
-        return view('Front.pages.career', compact('career'));
+        return view('Front.pages.info', compact('activity'));
     }
 
 
     public function recentes()
     {
-
         $allAnnouncements = $this->getAllAnnouncements();
         $recentAnnonces = $this->getRecentAnnouncements($allAnnouncements, 8);
         if (is_null($recentAnnonces)) {
             // Si $recentAnnonces est null, initialisez-le avec un tableau vide
             $recentAnnonces = [];
         }
-
-
         return view('Front.admin.annonce.recent', ['recentAnnonces' => $recentAnnonces]);
     }
 
@@ -78,8 +56,6 @@ class AnnonceController extends Controller
             // Si $recentAnnonces est null, initialisez-le avec un tableau vide
             $lessRecentAnnonces = [];
         }
-
-
         return view('Front.admin.annonce.moins-recent', ['lessRecentAnnonces' => $lessRecentAnnonces]);
     }
 

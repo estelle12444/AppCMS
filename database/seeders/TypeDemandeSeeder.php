@@ -2,29 +2,32 @@
 
 namespace Database\Seeders;
 
+use App\Models\TypeDeDemande;
+use Database\Seeders\Trait\SeederTrait;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
 class TypeDemandeSeeder extends Seeder
 {
+    use SeederTrait;
+
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        $types = [
+        $data = [
             [
-                'name' => 'DEMANDE D\'AGREMENT VITIB',
+                ['name' => 'DEMANDE D\'AGREMENT VITIB'],
+                ['name' => 'DEMANDE D\'AGREMENT VITIB PEPINIERE'],
             ],
             [
-                'name' => 'DEMANDE D\'AGREMENT VITIB PEPINIERE',
-            ],
-            // Ajoutez d'autres enregistrements de types de demandes ici
+                ['name' => "APPLICATION FOR VITIB APPROVAL"],
+                ['name' => "APPLICATION FOR VITIB PEPINIERE APPROVAL"],
+            ]
         ];
 
-        foreach ($types as $type) {
-            DB::table('type_de_demandes')->insert($type);
-        }
+        $this->insert($data, TypeDeDemande::class);
     }
 }

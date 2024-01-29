@@ -2,33 +2,32 @@
 
 namespace Database\Seeders;
 
+use App\Models\Eligibility;
+use Database\Seeders\Trait\SeederTrait;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
 
 class EligibilitySeeder extends Seeder
 {
+    use SeederTrait;
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        $eligibilities = [
+        $data = [
             [
-                'title' => 'Biotechnologie',
+                ['title' => 'Biotechnologie'],
+                ['title' => 'Technologies de l’Information et de la Communication'],
+                ['title' => 'Banques et Établissements financiers d’appui aux investissements réalisés dans la Zone Franche']
             ],
             [
-                'title' => 'Technologies de l’Information et de la Communication',
-            ],
-            [
-                'title' => 'Banques et Établissements financiers d’appui aux
-                investissements réalisés dans la Zone Franche',
-            ],
-            // Ajoutez d'autres enregistrements d'éligibilité ici
+                ['title' => 'Biotechnology'],
+                ['title' => 'Information and Communication Technologies'],
+                ['title' => 'Banks and financial institutions supporting investments in the Free Zone']
+            ]
         ];
 
-        foreach ($eligibilities as $eligibility) {
-            DB::table('eligibilities')->insert($eligibility);
-        }
+        $this->insert($data, Eligibility::class);
     }
 }
