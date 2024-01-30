@@ -188,6 +188,7 @@ Route::middleware(['admin'])->group(function () {
 
     Route::put('/valider-compagnie/{id}', [CompanyController::class, 'validerCompagnie'])->name('validerCompagnie');
 
+    Route::get('/annonce/applicant', [AdminController::class, 'applicantIndex']);
 });
 
 

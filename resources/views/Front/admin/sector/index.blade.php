@@ -16,7 +16,12 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4>Donnees</h4>
+                            <h4>Liste</h4>
+                            <div class="card-header-form">
+                                <a href="{{route('Front.admin.sector.create')}}" class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="" data-original-title="CREATE">
+                                    Enregistrer un secteur <i class="fas fa-user"></i>
+                                </a>
+                            </div>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">

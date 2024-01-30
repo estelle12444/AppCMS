@@ -7,16 +7,16 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <div class="flex justify-center ">
-                            <h4>Tables</h4>
-                            <a href="" class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="" data-original-title="CREATE">
-                                Ajouter une offre  <i class="fas fa-user"></i>
-                            </a>
+                            <h4>Données</h4>
+                            <div class="card-header-form">
+                                <a href="{{route('Front.admin.'.$route.'.create')}}" class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="" data-original-title="CREATE">
+                                    Ajouter une activité <i class="fas fa-plus"></i>
+                                </a>
                             </div>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table class="table table-striped" id="table-1">
+                                <table  id="activity" class="table table-striped" id="table-1">
                                     <thead>
                                         <tr>
                                             <th class="text-center">N</th>
@@ -70,9 +70,9 @@
                                                                 class="fas fa-trash"></i></button>
                                                     </form>
 
-                                                    <a href="" class="btn btn-primary btn-action mr-1" data-toggle="tooltip"
-                                                    title="" data-original-title="Edit"><i
-                                                        class="fas fa-user"></i></a>
+                                                    <a href="{{route('Front.admin.applicant')}}" class="btn btn-primary btn-action mr-1" data-toggle="tooltip"
+                                                    title="" data-original-title="Voir plus"><i
+                                                        class="fas fa-table"></i></a>
                                                 </td>
                                             </tr>
                                         @endforeach
@@ -86,3 +86,14 @@
         </div>
     </section>
 </div>
+@push('scripts')
+    <script>
+        new DataTable('#activity', {
+            paging: true,
+            pageLength: 15,
+            language: {
+                url: 'https://cdn.datatables.net/plug-ins/1.11.5/i18n/fr-FR.json'
+            }
+        });
+    </script>
+@endpush

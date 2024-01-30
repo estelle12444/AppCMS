@@ -144,24 +144,39 @@ $url = $_SERVER['REQUEST_URI'];
 
                             </ul>
                         </li>
-                        <li class="menu-header">Annonces </li>
+                        <li class="menu-header">Annonces et Actualités </li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link has-dropdown <?php echo $url === '/new' || $url === '/new/create' ? ' active bg-primary text-white' : ''; ?>"data-toggle="dropdown">
+                                <i class="fas fa-newspapper"></i> <span>Actualités</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="nav-link <?php echo $url === '/new' ? ' active bg-primary text-white' : ''; ?>" href="/new">Liste des actualités
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link <?php echo $url === '/new/create' ? ' active bg-primary text-white' : ''; ?>" href="/new/create">
+                                        Ajouter une actualité
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                         <li class="dropdown" >
                              <a href="#" class="nav-link has-dropdown <?php echo $url === '/annonces-recentes' || $url === '/annonces-moins-recentes' ? ' active bg-primary text-white' : ''; ?>"
                                 data-toggle="dropdown"><i class="fas fa-briefcase"></i> <span>Récentes & moins récentes</span></a>
                             <ul class="dropdown-menu">
-                            <li><a href="{{ route('Front.admin.annonce.recent') }}"
-                                class="nav-link{{ $url === '/annonces-recentes' ? 'active' : '' }}">Annonces Récentes</a>
-                        </li>
-                        <li><a href="{{ route('Front.admin.annonce.moins-recent') }}"
-                                class="nav-link{{ $url === '/annonces-moins-recentes' ? 'active' : '' }}"> Annonces moins
-                                récentes</a></li>
+                                <li><a href="{{ route('Front.admin.annonce.recent') }}"
+                                    class="nav-link{{ $url === '/annonces-recentes' ? 'active' : '' }}">Annonces Récentes</a>
+                                </li>
+                                <li><a href="{{ route('Front.admin.annonce.moins-recent') }}" class="nav-link{{ $url === '/annonces-moins-recentes' ? 'active' : '' }}">
+                                     Annonces moins récentes</a>
+                                </li>
                             </ul>
                         </li>
                         {{-- <li class="menu-header"> Gestion des differents types d'Annonces</li> --}}
                         <li class="dropdown">
                             <a href="#" class="nav-link has-dropdown <?php echo $url === '/tender' || $url === '/tender/create' ? ' active bg-primary text-white' : ''; ?>"
-                                data-toggle="dropdown"><i class="fas fa-briefcase"></i> <span>Appels
-                                    d'Offres</span></a>
+                                data-toggle="dropdown"><i class="fas fa-briefcase"></i> <span>Appels d'Offres</span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="nav-link <?php echo $url === '/tender' ? ' active bg-primary text-white' : ''; ?>" href="/tender">Liste des appels </a></li>
                                 <li><a class="nav-link<?php echo $url === '/tender/create' ? ' active bg-primary text-white' : ''; ?>" href="/tender/create">Ajouter un appel
@@ -170,20 +185,25 @@ $url = $_SERVER['REQUEST_URI'];
                         </li>
 
                         <li class="dropdown">
-                            <a href="#" class="nav-link has-dropdown <?php echo $url === '/career' || $url === '/career/create' ? ' active bg-primary text-white' : ''; ?>"
-                                data-toggle="dropdown"><i class="fas fa-users"></i> <span>Appels à
-                                    Candidature</span></a>
+                            <a href="#" class="nav-link has-dropdown <?php echo $url === '/career' || $url === '/career/create' ? ' active bg-primary text-white' : ''; ?>"data-toggle="dropdown">
+                                <i class="fas fa-users"></i> <span>Appels à Candidature</span>
+                            </a>
                             <ul class="dropdown-menu">
-                                <li><a class="nav-link <?php echo $url === '/career' ? ' active bg-primary text-white' : ''; ?>" href="/career">Liste des appels </a></li>
-                                <li><a class="nav-link <?php echo $url === '/career/create' ? ' active bg-primary text-white' : ''; ?>" href="/career/create">Ajouter un appel
-                                        d'offre</a></li>
+                                <li>
+                                    <a class="nav-link <?php echo $url === '/career' ? ' active bg-primary text-white' : ''; ?>" href="/career">Liste des appels
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link <?php echo $url === '/career/create' ? ' active bg-primary text-white' : ''; ?>" href="/career/create">
+                                        Ajouter un appel d'offre
+                                    </a>
+                                </li>
                             </ul>
                         </li>
 
                         <li class="dropdown">
                             <a href="#" class="nav-link has-dropdown<?php echo $url === '/job' || $url === '/job/create' ? ' active bg-primary text-white' : ''; ?>"
-                                data-toggle="dropdown"><i class="fas fa-user-plus"></i> <span>Offres
-                                    d'emploi</span></a>
+                                data-toggle="dropdown"><i class="fas fa-user-plus"></i> <span>Offres d'emploi</span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="nav-link <?php echo $url === '/job' ? ' active bg-primary text-white' : ''; ?>" href="/job">Liste des offres </a></li>
                                 <li><a class="nav-link<?php echo $url === '/job/create' ? ' active bg-primary text-white' : ''; ?>" href="/job/create">Ajouter une offre</a>
@@ -206,7 +226,7 @@ $url = $_SERVER['REQUEST_URI'];
                         <li class="dropdown">
                             <a href="#" class="nav-link has-dropdown <?php echo $url === '/quotation' || $url === '/quotation/create' ? ' active bg-primary text-white' : ''; ?>"
                                 data-toggle="dropdown"><i class="fas fa-columns"></i> <span>Demande de
-                                    Quotation</span></a>
+                                   Cotation</span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="nav-link <?php echo $url === '/quotation' ? ' active bg-primary text-white' : ''; ?>" href="/quotation">Liste des demandes </a>
                                 </li>
@@ -214,6 +234,8 @@ $url = $_SERVER['REQUEST_URI'];
                                         demande</a></li>
                             </ul>
                         </li>
+
+
                     </ul>
 
 
