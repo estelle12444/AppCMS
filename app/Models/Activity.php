@@ -19,4 +19,14 @@ class Activity extends Model implements TranslateContracts
     {
         $query->whereIn('type', $type);
     }
+
+    public function scopeActive(Builder $query): void
+    {
+        $query->where('limit_date', '>', now());
+    }
+
+    public function scopeDisable(Builder $query): void
+    {
+        $query->where('limit_date', '<', now());
+    }
 }

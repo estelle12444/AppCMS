@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Traits\AnnonceTrait;
 use App\Models\Activity;
 use App\Models\Career;
 use App\Models\Enums\ActivityTypeEnum;
@@ -14,6 +15,8 @@ use Illuminate\Support\Facades\DB;
 
 class AnnonceController extends Controller
 {
+    use AnnonceTrait;
+
     public function index()
     {
         $activities=Activity::ofType(
@@ -39,61 +42,13 @@ class AnnonceController extends Controller
 
     public function recentes()
     {
-        $allAnnouncements = $this->getAllAnnouncements();
-        $recentAnnonces = $this->getRecentAnnouncements($allAnnouncements, 8);
-        if (is_null($recentAnnonces)) {
-            // Si $recentAnnonces est null, initialisez-le avec un tableau vide
-            $recentAnnonces = [];
-        }
-        return view('Front.admin.annonce.recent', ['recentAnnonces' => $recentAnnonces]);
+        $recentAnnonces = $this->getAnnonces(offset: Activity::active()->count());
+        return view('Front.admin.annonce.recent', compact('recentAnnonces'));
     }
 
     public function moinsRecentes()
     {
-        $allAnnouncements = $this->getAllAnnouncements();
-        $lessRecentAnnonces = $this->getLessRecentAnnouncements($allAnnouncements, 5);
-        if (is_null($lessRecentAnnonces)) {
-            // Si $recentAnnonces est null, initialisez-le avec un tableau vide
-            $lessRecentAnnonces = [];
-        }
-        return view('Front.admin.annonce.moins-recent', ['lessRecentAnnonces' => $lessRecentAnnonces]);
-    }
-
-    private function getAllAnnouncements()
-    {
-        $announcements = [];
-        $models = ['Career', 'Job', 'Quotation', 'Event','Tender'];
-
-        foreach ($models as $model) {
-            $className = "\App\Models\\$model";
-            if (class_exists($className)) {
-                $data = app()->make($className)->all();
-                foreach ($data as $item) {
-                    $announcements[] = [
-                        'type' => $model,
-                        'date' => $item->created_at,
-                        'title' => $item->title ?? $item->position ?? '',
-                        'content' => $item->content,
-                        'id'=> $item->id
-                    ];
-                }
-            }
-        }
-
-        usort($announcements, function ($a, $b) {
-            return $b['date'] <=> $a['date'];
-        });
-
-        return $announcements;
-    }
-
-    private function getRecentAnnouncements($announcements, $count)
-    {
-        return array_slice($announcements, 0, $count);
-    }
-
-    private function getLessRecentAnnouncements($announcements, $count)
-    {
-        return array_slice($announcements, $count, $count);
+        $lessRecentAnnonces = $this->getAnnonces(active: false, offset: Activity::disable()->count());
+        return view('Front.admin.annonce.moins-recent', compact('lessRecentAnnonces'));
     }
 }

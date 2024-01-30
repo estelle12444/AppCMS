@@ -126,7 +126,7 @@
                                 <li class="media">
                                     <img class="mr-3 rounded-circle" width="50" src="{{ asset('assets/img/avatar/avatar-1.png') }}" alt="avatar">
                                     <div class="media-body">
-                                        <div class="float-right text-primary">{{$annonce['date'] }}</div>
+                                        <div class="float-right text-primary">{{$annonce['limit_date'] }}</div>
                                         <div class="media-title">Titre: {{ strip_tags($annonce['title']) }}</div>
                                         <span class="text-small text-muted"> {{strip_tags( $annonce['content'] )}}</span>
                                     </div>
