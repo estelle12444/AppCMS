@@ -48,12 +48,18 @@
                                 </ul>
                                 <div class="tab-content" id="myTabContent">
                                     @if(count($recentAnnonces) > 0)
-                                        @foreach ($recentAnnonces as $annonce)
-                                            <div class="tab-pane fade" id="{{ strtolower($annonce['type']) }}" role="tabpanel" aria-labelledby="{{ strtolower($annonce['type']) }}-tab">
-                                                <h2> Dossier N°{{ $annonce['id']}}</h2>
-                                                <p> Titre: {{ strip_tags($annonce['title']) }}</p>
-                                                <p>Description: {{ strip_tags($annonce['content']) }}</p>
-                                                <p>Date limite: {{ $annonce['date'] }}</p>
+                                        @foreach (collect($recentAnnonces)->groupBy('type') as $key => $group)
+                                            <div class="tab-pane fade" id="{{ $key }}" role="tabpanel" aria-labelledby="{{ $key }}-tab">
+                                                @php
+                                                    $paginator = paginate($group);
+                                                @endphp
+                                                @foreach ($paginator as $annonce)
+                                                    <h2> Dossier N°{{ $annonce['id']}}</h2>
+                                                    <p> Titre: {{ strip_tags($annonce['title']) }}</p>
+                                                    <p>Description: {{ strip_tags($annonce['content']) }}</p>
+                                                    <p>Date limite: {{ $annonce['limit_date'] }}</p>
+                                                @endforeach
+                                                {!! $paginator->links() !!}
                                             </div>
                                         @endforeach
                                     @else

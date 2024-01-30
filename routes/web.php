@@ -117,7 +117,7 @@ Auth::routes();
 Route::middleware(['admin'])->group(function () {
     Route::get('/admin', DashboardController::class)->name('Front.admin.home');
 
-    Route::get('/admin', [AdminController::class, 'dashboard'])->name('Front.admin.home');
+    // Route::get('/admin', [AdminController::class, 'dashboard'])->name('Front.admin.home');
     Route::get('/partner', [AdminController::class, 'index'])->name('Front.admin.partner.index');
     Route::get('/partner/create', [AdminController::class, 'create'])->name('Front.admin.partner.create');
     Route::post('/partner', [AdminController::class, 'store'])->name('Front.admin.partner.store');
