@@ -8,7 +8,7 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4>Modifier la Demande de manifestation</h4>
+                            <h4>{{$message}}</h4>
                         </div>
                         @php
                             $url = route('Front.admin.'.$route.'.update', ['activity' => $activity->id]);

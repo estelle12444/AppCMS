@@ -31,19 +31,16 @@
 </head>
 
 <body>
-
     <main>
-
         <section class="hero" id="hero">
             <div class="heroText">
                 <h4 class="text-white mt-5 mb-lg-4" data-aos="zoom-in" data-aos-delay="800" style="text-align: center">
                     <img src="img/logo2.png" width="150" alt="">
                 </h4>
 
-                <p class="text-secondary-white-color" data-aos="fade-up" data-aos-delay="1000">
-                    Parcourir notre <strong class="custom-underline"> <a href="/home" class="text-white ">site
-                            web</a></strong>
-                </p>
+                <div class="text-secondary-white-color" data-aos="fade-up" data-aos-delay="1000">
+                   <p> {!!__('landing.website_browsing.text')!!}<strong class="custom-underline"> <a href="/home" class="text-white "> {!!__('landing.website_browsing.link_text')!!}</a></strong></p>
+                </div>
             </div>
 
             <div class="videoWrapper">
@@ -64,30 +61,31 @@
             <div class="container mb-5 pb-lg-5">
                 <div class="row">
                     <div class="col-12">
-                        <h2 class="mb-3" data-aos="fade-up" style="color: #01943e">Village de l'Innovation
-                            Technologique</h2>
+                        <div class="mb-3" data-aos="fade-up" style="color: #01943e">
+                            {!! __('landing.innovation_village.title')!!}
+                        </div>
                     </div>
 
                     <div class="col-lg-6 col-12 mt-3 mb-lg-5">
-                        <p class="me-4" data-aos="fade-up" data-aos-delay="300">La zone choisie pour la ZBTIC présente
-                            une forte valeur écologique et paysagère. Elle est bordée par la Lagune Ebrié, qui s’étend
-                            le long de l’Océan Atlantique et constitue le plus grand système lagunaire de Côte d’Ivoire.
-                        </p>
+                            <div class="me-4" data-aos="fade-up" data-aos-delay="300">
+                                {!! __('landing.innovation_village.first.content')!!}
+                            </div>
+
                     </div>
 
                     <div class="col-lg-6 col-12 mt-lg-3 mb-lg-5">
-                        <p data-aos="fade-up" data-aos-delay="500">
-                            On y retrouve les mangroves et la forte biodiversité, caractéristiques de la commune de
-                            Grand-Bassam : des atouts qui présentent un fort potentiel de mise en valeur.
-                        </p>
+                        <div data-aos="fade-up" data-aos-delay="500">
+                            {!! __('landing.innovation_village.second.content')!!}
+                        </div>
                     </div>
 
                 </div>
 
 
             <div class="container">
-                <h3 style="color: orange">Dossier de Demande d'agrément</h3>
-                <P>Téléchargez les formulaires suivants :</P>
+                <div style="color: orange">{!! __('landing.agreement_application.document')!!}</div>
+
+                {!! __('landing.agreement_application.form')!!}
 
                 <span class="mr-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
@@ -96,7 +94,7 @@
                       </svg>
                 </span>
                 <span class="align-middle">
-                    <a href="/telecharger-pdf" download>   Formulaire de demande d’agrément</a>
+                    <a href="/telecharger-pdf" download> {!! __('installer.form_vitib')!!}</a>
                 </span>
                 <br>
 
@@ -107,7 +105,7 @@
                       </svg>
                 </span>
                 <span class="align-middle">
-                    <a href="/download-pdf" download>   Formulaire de demande d’agrément Pépinière</a>
+                    <a href="/download-pdf" download>    {!! __('installer.form_pepiniere')!!}</a>
                 </span>
                 <br>
                 <span class="mr-2">
@@ -117,7 +115,7 @@
                       </svg>
                 </span>
                 <span class="align-middle">
-                    <a href="/opportunity-pdf" download>  Consulter la liste des opportunités d’investissement (investir au VITIB)</a>
+                    <a href="/opportunity-pdf" download> {!! __('installer.opportunity_list')!!}</a>
                 </span>
 
             </div>

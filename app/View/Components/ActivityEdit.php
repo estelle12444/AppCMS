@@ -11,7 +11,7 @@ class ActivityEdit extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct(public $activity, public string $route, public $header)
+    public function __construct(public $activity, public string $route, public $header, public string $message)
     {
         //
     }

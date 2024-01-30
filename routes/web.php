@@ -168,6 +168,13 @@ Route::middleware(['admin'])->group(function () {
     Route::get('/quotation/{quotation}/edit', [QuotationController::class, 'edit'])->name('Front.admin.quotation.edit');
     Route::put('/quotation/{quotation}', [QuotationController::class, 'update'])->name('Front.admin.quotation.update');
 
+    Route::get('/new', [CareerController::class, 'index'])->name('Front.admin.new.index');
+    Route::get('/new/create', [CareerController::class, 'create'])->name('Front.admin.new.create');
+    Route::post('/new', [CareerController::class, 'store'])->name('Front.admin.new.store');
+    Route::delete('/new/{new}', [CareerController::class, 'destroy'])->name('Front.admin.new.destroy');
+    Route::get('/new/{new}/edit', [CareerController::class, 'edit'])->name('Front.admin.new.edit');
+    Route::put('/new/{new}', [CareerController::class, 'update'])->name('Front.admin.new.update');
+
     Route::get('/annonces-recentes', [AnnonceController::class, 'recentes'])->name('Front.admin.annonce.recent');
     // Route pour la liste des annonces moins récentes
     Route::get('/annonces-moins-recentes', [AnnonceController::class, 'moinsRecentes'])->name('Front.admin.annonce.moins-recent');

@@ -4,7 +4,8 @@ namespace App\Models\Enums;
 
 use Illuminate\Support\Facades\Session;
 
-enum ActivityTypeEnum:string {
+enum ActivityTypeEnum: string
+{
     case CAREERS = 'careers';
     case EVENTS =  'events';
     case JOBS = 'jobs';
@@ -12,98 +13,202 @@ enum ActivityTypeEnum:string {
     case TENDER = 'tender';
     case NEWS = 'news';
 
-    public function getTypeText(): string {
+    public function getTypeText(): string
+    {
         $cond = Session::get('locale') == 'fr';
 
         return match ($this) {
-            ActivityTypeEnum::CAREERS =>  $cond ? "Appels à Candidature" : '',
-            ActivityTypeEnum::EVENTS => $cond ? 'Demande de manifestation': '',
-            ActivityTypeEnum::QUOTATIONS => $cond ? 'Page Not Found': '',
-            ActivityTypeEnum::TENDER => $cond ? "Appels d'Offres": '',
-            ActivityTypeEnum::JOBS => $cond ? "Appels d'offres" : '',
+            ActivityTypeEnum::CAREERS =>  $cond ? "Appels à Candidature" : 'Careers',
+            ActivityTypeEnum::EVENTS => $cond ? 'Demande de manifestation' : 'Events',
+            ActivityTypeEnum::QUOTATIONS => $cond ? 'Demande de cotation' : 'Quotation',
+            ActivityTypeEnum::TENDER => $cond ? "Appels d'Offres" : 'Tenders',
+            ActivityTypeEnum::JOBS => $cond ? "Offres d'emploi" : 'Jobs',
         };
     }
 
-    public function getHeaderCreate(){
+    public function getHeaderCreate()
+    {
         return match ($this) {
-            ActivityTypeEnum::CAREERS => "Appels à Candidature",
-            ActivityTypeEnum::EVENTS => '<div class="section-header">
-                                            <h1>Liste des demandes de manifestations</h1>
+            ActivityTypeEnum::CAREERS => '<div class="section-header">
+                                            <h1>Liste des Appels à Candidature</h1>
                                             <div class="section-header-breadcrumb">
-                                                <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
-                                                <div class="breadcrumb-item"><a href="#">Demandes de manifestations</a></div>
-                                                <div class="breadcrumb-item">Liste</div>
+                                               <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
+                                                <div class="breadcrumb-item"><a href="#">Appels à Candidature</a></div>
+                                                <div class="breadcrumb-item">Création</div>
                                             </div>
                                         </div>',
-            ActivityTypeEnum::QUOTATIONS => 'Page Not Found',
+            ActivityTypeEnum::EVENTS => '<div class="section-header">
+                                                <h1>Liste des demandes de manifestations</h1>
+                                                <div class="section-header-breadcrumb">
+                                                    <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
+                                                    <div class="breadcrumb-item"><a href="#">Demandes de manifestations</a></div>
+                                                    <div class="breadcrumb-item">Création</div>
+                                                </div>
+                                        </div>',
+            ActivityTypeEnum::QUOTATIONS => ' <div class="section-header">
+                                                    <h1>Liste des Demandes de Cotations</h1>
+                                                    <div class="section-header-breadcrumb">
+                                                        <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
+                                                        <div class="breadcrumb-item"><a href="#">Demandes de Cotations</a></div>
+                                                        <div class="breadcrumb-item">Création</div>
+                                                    </div>
+                                                </div> ',
             ActivityTypeEnum::TENDER => '<div class="section-header">
                                             <h1>Liste des appels d\'offres</h1>
+                                                <div class="section-header-breadcrumb">
+                                                    <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
+                                                    <div class="breadcrumb-item"><a href="#">Appels d\'offres</a></div>
+                                                    <div class="breadcrumb-item">Création</div>
+                                                </div>
+                                        </div>',
+            ActivityTypeEnum::JOBS => '<div class="section-header">
+                                            <h1>Liste des offres d\'emploi</h1>
+                                                <div class="section-header-breadcrumb">
+                                                    <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
+                                                    <div class="breadcrumb-item"><a href="#">Offres d\'emploi</a></div>
+                                                    <div class="breadcrumb-item">Création</div>
+                                                </div>
+                                        </div>',
+            ActivityTypeEnum::NEWS => '<div class="section-header">
+                                        <h1>Liste des Actualités</h1>
                                             <div class="section-header-breadcrumb">
                                                 <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
-                                                <div class="breadcrumb-item"><a href="#">Appels d\'offres</a></div>
-                                                <div class="breadcrumb-item">Liste</div>
+                                                <div class="breadcrumb-item"><a href="#">Actualités</a></div>
+                                                <div class="breadcrumb-item">Création</div>
                                             </div>
-                                        </div>',
-            ActivityTypeEnum::JOBS => "Appels d'offres",
+                                    </div>'
         };
     }
 
-    public function getHeaderEdit(){
+    public function getHeaderEdit()
+    {
         return match ($this) {
-            ActivityTypeEnum::CAREERS => "Appels à Candidature",
+            ActivityTypeEnum::CAREERS => '<div class="section-header">
+                                                <h1>Liste des Appels à Candidature</h1>
+                                                <div class="section-header-breadcrumb">
+                                                    <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
+                                                    <div class="breadcrumb-item"><a href="#">Appels à Candidature</a></div>
+                                                    <div class="breadcrumb-item">Edition</div>
+                                                </div>
+                                            </div>',
             ActivityTypeEnum::EVENTS => '<div class="section-header">
-                                            <h1>Liste des demandes de manifestations</h1>
-                                            <div class="section-header-breadcrumb">
-                                                <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
-                                                <div class="breadcrumb-item"><a href="#">Demandes de manifestations</a></div>
-                                                <div class="breadcrumb-item">Liste</div>
-                                            </div>
+                                                <h1>Liste des demandes de manifestations</h1>
+                                                <div class="section-header-breadcrumb">
+                                                    <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
+                                                    <div class="breadcrumb-item"><a href="#">Demandes de manifestations</a></div>
+                                                    <div class="breadcrumb-item">Edition</div>
+                                                </div>
                                         </div>',
-            ActivityTypeEnum::QUOTATIONS => 'Page Not Found',
+            ActivityTypeEnum::QUOTATIONS => '  <div class="section-header">
+                                                    <h1>Liste des Demandes de Cotations</h1>
+                                                    <div class="section-header-breadcrumb">
+                                                        <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
+                                                        <div class="breadcrumb-item"><a href="#">Demandes de Cotations</a></div>
+                                                        <div class="breadcrumb-item">Edition</div>
+                                                    </div>
+                                                </div> ',
             ActivityTypeEnum::TENDER => '<div class="section-header">
-                                            <h1>Liste des appels d\'offres</h1>
+                                                <h1>Liste des appels d\'offres</h1>
+                                                <div class="section-header-breadcrumb">
+                                                    <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
+                                                    <div class="breadcrumb-item"><a href="#">Appels d\'offres</a></div>
+                                                    <div class="breadcrumb-item">Edition</div>
+                                                </div>
+                                        </div>',
+            ActivityTypeEnum::JOBS => '<div class="section-header">
+                                            <h1>Liste des offres d\'emploi</h1>
                                             <div class="section-header-breadcrumb">
                                                 <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
-                                                <div class="breadcrumb-item"><a href="#">Appels d\'offres</a></div>
-                                                <div class="breadcrumb-item">Liste</div>
+                                                <div class="breadcrumb-item"><a href="#">Offres d\'emploi</a></div>
+                                                <div class="breadcrumb-item">Edition</div>
                                             </div>
                                         </div>',
-            ActivityTypeEnum::JOBS => "Appels d'offres",
+            ActivityTypeEnum::NEWS => '<div class="section-header">
+                                        <h1>Liste des Actualités</h1>
+                                            <div class="section-header-breadcrumb">
+                                                <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
+                                                <div class="breadcrumb-item"><a href="#">Actualités</a></div>
+                                                <div class="breadcrumb-item">Edition</div>
+                                            </div>
+                                    </div>',
         };
     }
 
-    public function getHeaderIndex(){
+    public function getHeaderIndex()
+    {
         return match ($this) {
-            ActivityTypeEnum::CAREERS => "Appels à Candidature",
+            ActivityTypeEnum::CAREERS => '<div class="section-header">
+                                                <h1>Liste des appels d\'offres</h1>
+                                                <div class="section-header-breadcrumb">
+                                                    <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
+                                                    <div class="breadcrumb-item"><a href="#">Appels à Candidature</a></div>
+                                                    <div class="breadcrumb-item">Liste</div>
+                                                </div>
+                                            </div>',
             ActivityTypeEnum::EVENTS => '<div class="section-header">
-                                            <h1>Liste des demandes de manifestations</h1>
-                                            <div class="section-header-breadcrumb">
-                                                <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
-                                                <div class="breadcrumb-item"><a href="#">Demandes de manifestations</a></div>
-                                                <div class="breadcrumb-item">Liste</div>
-                                            </div>
+                                                <h1>Liste des demandes de manifestations</h1>
+                                                <div class="section-header-breadcrumb">
+                                                    <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
+                                                    <div class="breadcrumb-item"><a href="#">Demandes de manifestations</a></div>
+                                                    <div class="breadcrumb-item">Liste</div>
+                                                </div>
                                         </div>',
-            ActivityTypeEnum::QUOTATIONS => 'Page Not Found',
+            ActivityTypeEnum::QUOTATIONS => '  <div class="section-header">
+                                                    <h1>Liste des Demandes de Cotations</h1>
+                                                    <div class="section-header-breadcrumb">
+                                                        <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
+                                                        <div class="breadcrumb-item"><a href="#">Demandes de Cotations</a></div>
+                                                        <div class="breadcrumb-item">Liste</div>
+                                                    </div>
+                                                </div> ',
             ActivityTypeEnum::TENDER => '<div class="section-header">
-                                            <h1>Liste des appels d\'offres</h1>
+                                                <h1>Liste des appels d\'offres</h1>
+                                                <div class="section-header-breadcrumb">
+                                                    <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
+                                                    <div class="breadcrumb-item"><a href="#">Appels d\'offres</a></div>
+                                                    <div class="breadcrumb-item">Liste</div>
+                                                </div>
+                                        </div>',
+            ActivityTypeEnum::JOBS => '<div class="section-header">
+                                            <h1>Liste des offres d\'emploi</h1>
                                             <div class="section-header-breadcrumb">
                                                 <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
-                                                <div class="breadcrumb-item"><a href="#">Appels d\'offres</a></div>
+                                                <div class="breadcrumb-item"><a href="#">Offres d\'emploi</a></div>
                                                 <div class="breadcrumb-item">Liste</div>
                                             </div>
                                         </div>',
-            ActivityTypeEnum::JOBS => "Appels d'offres",
-        };
+            ActivityTypeEnum::NEWS => '<div class="section-header">
+                                        <h1>Liste des offres d\'emploi</h1>
+                                            <div class="section-header-breadcrumb">
+                                                <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
+                                                <div class="breadcrumb-item"><a href="#">Actualités</a></div>
+                                                <div class="breadcrumb-item">Liste</div>
+                                            </div>
+                                    </div>',
+            };
     }
 
-    public function getMessageDelete(){
+    public function getMessageDelete()
+    {
         return match ($this) {
             ActivityTypeEnum::CAREERS => "Êtes-vous sûr de vouloir supprimer cet appel d'offres?",
-            ActivityTypeEnum::EVENTS => 'Demande de manifestation',
-            ActivityTypeEnum::QUOTATIONS => 'Page Not Found',
+            ActivityTypeEnum::EVENTS => 'Êtes-vous sûr de vouloir supprimer cette  demande de manifestation',
+            ActivityTypeEnum::QUOTATIONS => 'Êtes-vous sûr de vouloir supprimer cette  demande de cotatation',
             ActivityTypeEnum::TENDER => "Êtes-vous sûr de vouloir supprimer cet appel d\'offres?",
-            ActivityTypeEnum::JOBS => "Appels d'offres",
+            ActivityTypeEnum::JOBS => "Êtes-vous sûr de vouloir supprimer cette offre d'emploi",
+            ActivityTypeEnum::NEWS => "Êtes-vous sûr de vouloir supprimer cette  actualités",
+        };
+    }
+
+    public function getMessageEdit()
+    {
+        return match ($this) {
+            ActivityTypeEnum::CAREERS => "Modifier l'appel à candidature",
+            ActivityTypeEnum::EVENTS => 'Modifier la Demande de manifestation',
+            ActivityTypeEnum::QUOTATIONS => 'Modifier la demande de cotation',
+            ActivityTypeEnum::TENDER => "Modifier l'appel d'offre",
+            ActivityTypeEnum::JOBS => "Modifier l'offre  d'emploi",
+            ActivityTypeEnum::JOBS => "Modifier l'actualité",
         };
     }
 }
-

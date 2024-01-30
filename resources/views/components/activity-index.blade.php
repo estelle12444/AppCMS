@@ -7,7 +7,12 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
+                            <div class="flex justify-center ">
                             <h4>Tables</h4>
+                            <a href="" class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="" data-original-title="CREATE">
+                                Ajouter une offre  <i class="fas fa-user"></i>
+                            </a>
+                            </div>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -64,6 +69,10 @@
                                                             onclick="return confirm('{{$message}}')"><i
                                                                 class="fas fa-trash"></i></button>
                                                     </form>
+
+                                                    <a href="" class="btn btn-primary btn-action mr-1" data-toggle="tooltip"
+                                                    title="" data-original-title="Edit"><i
+                                                        class="fas fa-user"></i></a>
                                                 </td>
                                             </tr>
                                         @endforeach
