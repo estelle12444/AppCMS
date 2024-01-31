@@ -91,7 +91,7 @@ Route::get('/actu/detail', function () {
 Route::get('/partners', [PartnerController::class, 'index']);
 Route::get('/installer', function () {return view('Front.pages.installer');});
 Route::get('/actu', function () {  return view('Front.pages.actu');});
-Route::get('/info/{tender}',[AnnonceController::class, 'show_tender'])->name('Front.pages.info');
+Route::get('/info/{activity}',[AnnonceController::class, 'show_tender'])->name('Front.pages.info');
 Route::get('/annonce', [AnnonceController::class, 'index']);
 
 

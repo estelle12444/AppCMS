@@ -14,6 +14,8 @@ trait AnnonceTrait
 
         if($active) {
             $builder = $builder->active();
+        }else{
+            $builder = $builder->disable();
         }
 
         return $builder->ofLang('fr')->ofType(array_map(

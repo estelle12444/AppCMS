@@ -6,17 +6,17 @@
         <div class="p-5 py-20 mx-2 xl:mx-48">
             <img src="{{ asset('img/annonce/appel_offre.jpg') }}"  style="width: 600px; height:400px;" class="xl:py-8" alt="">
             <p class="pb-4" style="color: #F18700;">
-                Dossier d'Appel d'Offre N 0{{ $tender->id }}
+                Dossier d'Appel d'Offre N 0{{ $activity->id }}
             </p>
 
             <h5 class="mb-2 text-4xl tracking-tight  capitalize ">
                 Titre:
-                <span class="text-blue-800 text-center dark:text-white font-bold pt-8"> {{ $tender->title }}</span>
+                <span class="text-blue-800 text-center dark:text-white font-bold pt-8"> {{ $activity->title }}</span>
             </h5>
 
                 <h5 class="mb-2 text-4xl tracking-tight  capitalize "> Description:</h5> @php
                 // Diviser le contenu en lignes
-                $lines = explode("\n", strip_tags($tender->content));
+                $lines = explode("\n", strip_tags($activity->content));
 
                 // Initialiser une variable pour compter les lignes
                 $lineCount = 0;
@@ -39,13 +39,13 @@
 
 
             <p class="mb-3 text-lg pt-4  text-justify  text-gray-700 dark:text-gray-400 lowercase">
-                <h5 class="mb-2 text-4xl tracking-tight  capitalize "> Resume:</h5> {!! wordwrap(strip_tags($tender->resume), 100, "\n", true) !!}
+                <h5 class="mb-2 text-4xl tracking-tight  capitalize "> Resume:</h5> {!! wordwrap(strip_tags($activity->resume), 100, "\n", true) !!}
 
             </p>
 
             <p class="text-blue-800 font-bold pt-8">
                 <h5 class="mb-2 text-4xl tracking-tight  capitalize "> Date Limite: <span
-                    style="color: #F18700;">{{ $tender->limit_date }}</span> </h5> </p>
+                    style="color: #F18700;">{{ $activity->limit_date }}</span> </h5> </p>
             <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 ">
 
                 <div class="xl:flex flex-row py-4 xl:py-8" >
@@ -58,14 +58,14 @@
                     </svg>
                 </div>
                 <div class="w-3/5">
-                    <a href="{{ asset('storage/' . $tender->file) }}" class="underline hover:underline">
+                    <a href="{{ asset('storage/' . $activity->file) }}" class="underline hover:underline">
                         <p class="text-lg">
                             Télécharger le fichier de l'offre
                         </p>
                     </a>
                 </div>
                 <div class="w-1/5">
-                    <a href="{{ asset('storage/' . $tender->file) }}" title="{{ $tender->title }}"
+                    <a href="{{ asset('storage/' . $activity->file) }}" title="{{ $activity->title }}"
                         class="underline hover:underline">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-6 h-6">
