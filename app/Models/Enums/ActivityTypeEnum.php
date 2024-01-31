@@ -13,6 +13,17 @@ enum ActivityTypeEnum: string
     case TENDER = 'tender';
     case NEWS = 'news';
 
+    public function getImage():string
+    {
+        return match ($this) {
+            ActivityTypeEnum::CAREERS =>  asset('img/annonce/candidature.png'),
+            ActivityTypeEnum::EVENTS => "https://abc-signaletique.fr/822-large_default/panneau-point-d-exclamation-refd868.jpg",
+            ActivityTypeEnum::QUOTATIONS => asset('img/annonce/cotation.png'),
+            ActivityTypeEnum::TENDER => asset('img/annonce/appel_offre.jpg'),
+            ActivityTypeEnum::JOBS => asset('img/annonce/offre_emploi.jpg'),
+        };
+    }
+
     public function getTypeText(): string
     {
         $cond = Session::get('locale') == 'fr';

@@ -19,19 +19,21 @@ class AnnonceController extends Controller
 
     public function index()
     {
-        $activities=Activity::ofType(
-            array_map(
-                fn($type) => $type->value,
-                [
-                    ActivityTypeEnum::CAREERS,
-                    ActivityTypeEnum::JOBS,
-                    ActivityTypeEnum::EVENTS,
-                    ActivityTypeEnum::QUOTATIONS,
-                    ActivityTypeEnum::TENDER,
-                ])
-            )->get()->groupBy('type');
-        dd($activities);
-        return view('Front.pages.anonce', compact('activities'));
+        $activities = $this->getAnnonces(offset: Activity::active()->count());
+        $keys = collect($activities)->map(function($item) {
+            return $item['type'];
+        })->unique()->toArray();
+
+        $empties = array_diff(array_map(
+            fn($type) => $type->value, [
+                ActivityTypeEnum::CAREERS,
+                ActivityTypeEnum::JOBS,
+                ActivityTypeEnum::EVENTS,
+                ActivityTypeEnum::QUOTATIONS,
+                ActivityTypeEnum::TENDER,
+            ]),$keys);
+
+        return view('Front.pages.anonce', compact('activities', 'empties'));
     }
 
     public function show_tender(Activity $activity)
