@@ -9,7 +9,7 @@
 
             <div class="form-group">
                 <label for="name">{{__('profil.document_edit.name')}}</label>
-                <input type="text" name="name" value="{{ $document->name }}" class="form-control">
+                <input type="text" name="name" value="{{ $document->translator['name'] }}" class="form-control">
             </div>
 
             <div class="form-group">

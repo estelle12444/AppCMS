@@ -6,11 +6,13 @@ use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\CareerController;
 use App\Http\Controllers\CompanyAuthController;
 use App\Http\Controllers\CompanyController;
+use App\Http\Controllers\ContentController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DemandeController;
 use App\Http\Controllers\DownloadController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\JobController;
+use App\Http\Controllers\NewController;
 use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\PartnerController;
 use App\Models\Message;
@@ -83,6 +85,9 @@ Route::get('/media', function () {
     return view('Front.pages.media');
 })->name('media');
 
+Route::get('/avantages/{query?}', function ($query = null) {
+    return view('Front.pages.avantagesDetail',['query' => $query]);
+})->name('avantages.Detail');
 
 Route::get('/actu/detail', function () {
     return view('Front.pages.newsDetail');
@@ -90,9 +95,9 @@ Route::get('/actu/detail', function () {
 
 Route::get('/partners', [PartnerController::class, 'index']);
 Route::get('/installer', function () {return view('Front.pages.installer');});
-Route::get('/actu', function () {  return view('Front.pages.actu');});
+Route::get('/actu', [NewController::class, 'newIndex']);
 Route::get('/info/{activity}',[AnnonceController::class, 'show_tender'])->name('Front.pages.info');
-Route::get('/annonce', [AnnonceController::class, 'index']);
+Route::get('/annonce', [AnnonceController::class, 'index'])->name('annonce');
 
 
 // file download
@@ -136,16 +141,16 @@ Route::middleware(['admin'])->group(function () {
     Route::get('/tender', [TenderController::class, 'index'])->name('Front.admin.tender.index');
     Route::get('/tender/create', [TenderController::class, 'create'])->name('Front.admin.tender.create');
     Route::post('/tender', [TenderController::class, 'store'])->name('Front.admin.tender.store');
-    Route::delete('/tender/{tender}', [TenderController::class, 'destroy'])->name('Front.admin.tender.destroy');
-    Route::get('/tender/{tender}/edit', [TenderController::class, 'edit'])->name('Front.admin.tender.edit');
-    Route::put('/tender/{tender}', [TenderController::class, 'update'])->name('Front.admin.tender.update');
+    Route::delete('/tender/{activity}', [TenderController::class, 'destroy'])->name('Front.admin.tender.destroy');
+    Route::get('/tender/{activity}/edit', [TenderController::class, 'edit'])->name('Front.admin.tender.edit');
+    Route::put('/tender/{activity}', [TenderController::class, 'update'])->name('Front.admin.tender.update');
 
     Route::get('/job', [JobController::class, 'index'])->name('Front.admin.job.index');
     Route::get('/job/create', [JobController::class, 'create'])->name('Front.admin.job.create');
     Route::post('/job', [JobController::class, 'store'])->name('Front.admin.job.store');
-    Route::delete('/job/{job}', [JobController::class, 'destroy'])->name('Front.admin.job.destroy');
-    Route::get('/job/{job}/edit', [JobController::class, 'edit'])->name('Front.admin.job.edit');
-    Route::put('/job/{job}', [JobController::class, 'update'])->name('Front.admin.job.update');
+    Route::delete('/job/{activity}', [JobController::class, 'destroy'])->name('Front.admin.job.destroy');
+    Route::get('/job/{activity}/edit', [JobController::class, 'edit'])->name('Front.admin.job.edit');
+    Route::put('/job/{activity}', [JobController::class, 'update'])->name('Front.admin.job.update');
 
     Route::get('/event', [EventController::class, 'index'])->name('Front.admin.event.index');
     Route::get('/event/create', [EventController::class, 'create'])->name('Front.admin.event.create');
@@ -157,23 +162,23 @@ Route::middleware(['admin'])->group(function () {
     Route::get('/career', [CareerController::class, 'index'])->name('Front.admin.career.index');
     Route::get('/career/create', [CareerController::class, 'create'])->name('Front.admin.career.create');
     Route::post('/career', [CareerController::class, 'store'])->name('Front.admin.career.store');
-    Route::delete('/career/{career}', [CareerController::class, 'destroy'])->name('Front.admin.career.destroy');
-    Route::get('/career/{career}/edit', [CareerController::class, 'edit'])->name('Front.admin.career.edit');
-    Route::put('/career/{career}', [CareerController::class, 'update'])->name('Front.admin.career.update');
+    Route::delete('/career/{activity}', [CareerController::class, 'destroy'])->name('Front.admin.career.destroy');
+    Route::get('/career/{activity}/edit', [CareerController::class, 'edit'])->name('Front.admin.career.edit');
+    Route::put('/career/{activity}', [CareerController::class, 'update'])->name('Front.admin.career.update');
 
     Route::get('/quotation', [QuotationController::class, 'index'])->name('Front.admin.quotation.index');
     Route::get('/quotation/create', [QuotationController::class, 'create'])->name('Front.admin.quotation.create');
     Route::post('/quotation', [QuotationController::class, 'store'])->name('Front.admin.quotation.store');
-    Route::delete('/quotation/{quotation}', [QuotationController::class, 'destroy'])->name('Front.admin.quotation.destroy');
-    Route::get('/quotation/{quotation}/edit', [QuotationController::class, 'edit'])->name('Front.admin.quotation.edit');
-    Route::put('/quotation/{quotation}', [QuotationController::class, 'update'])->name('Front.admin.quotation.update');
+    Route::delete('/quotation/{activity}', [QuotationController::class, 'destroy'])->name('Front.admin.quotation.destroy');
+    Route::get('/quotation/{activity}/edit', [QuotationController::class, 'edit'])->name('Front.admin.quotation.edit');
+    Route::put('/quotation/{activity}', [QuotationController::class, 'update'])->name('Front.admin.quotation.update');
 
-    Route::get('/new', [CareerController::class, 'index'])->name('Front.admin.new.index');
-    Route::get('/new/create', [CareerController::class, 'create'])->name('Front.admin.new.create');
-    Route::post('/new', [CareerController::class, 'store'])->name('Front.admin.new.store');
-    Route::delete('/new/{new}', [CareerController::class, 'destroy'])->name('Front.admin.new.destroy');
-    Route::get('/new/{new}/edit', [CareerController::class, 'edit'])->name('Front.admin.new.edit');
-    Route::put('/new/{new}', [CareerController::class, 'update'])->name('Front.admin.new.update');
+    Route::get('/new', [NewController::class, 'index'])->name('Front.admin.new.index');
+    Route::get('/new/create', [NewController::class, 'create'])->name('Front.admin.new.create');
+    Route::post('/new', [NewController::class, 'store'])->name('Front.admin.new.store');
+    Route::delete('/new/{activity}', [NewController::class, 'destroy'])->name('Front.admin.new.destroy');
+    Route::get('/new/{activity}/edit', [NewController::class, 'edit'])->name('Front.admin.new.edit');
+    Route::put('/new/{activity}', [NewController::class, 'update'])->name('Front.admin.new.update');
 
     Route::get('/annonces-recentes', [AnnonceController::class, 'recentes'])->name('Front.admin.annonce.recent');
     // Route pour la liste des annonces moins récentes
@@ -187,8 +192,13 @@ Route::middleware(['admin'])->group(function () {
     });
 
     Route::put('/valider-compagnie/{id}', [CompanyController::class, 'validerCompagnie'])->name('validerCompagnie');
-
     Route::get('/annonce/applicant', [AdminController::class, 'applicantIndex'])->name('applicantIndex');
+
+    Route::get('/content', [ContentController::class, 'ContentIndex'])->name('ContentIndex');
+    Route::get('/content/pages/{key}', [ContentController::class, 'ContentPage'])->name('ContentPage');
+    Route::get('/content/pages/{key}/edit', [ContentController::class, 'ContentPageEdit'])->name('ContentPageEdit');
+    Route::put('/content/pages/{key}',[ContentController::class, 'saveContent'])->name('saveContent');
+
 });
 
 

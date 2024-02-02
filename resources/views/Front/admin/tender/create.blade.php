@@ -3,6 +3,6 @@
 
 <x-activity-create
         route="tender"
-        :message="\App\Models\Enums\ActivityTypeEnum::TENDERS->getMessageDelete()"
-        :header="App\Models\Enums\ActivityTypeEnum::TENDERS->getHeaderIndex()"/>
+        :message="\App\Models\Enums\ActivityTypeEnum::TENDER->getMessageDelete()"
+        :header="App\Models\Enums\ActivityTypeEnum::TENDER->getHeaderIndex()"/>
 @endsection

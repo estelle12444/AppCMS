@@ -15,8 +15,7 @@
                 <div class="flex items-center">
                     @foreach($demandesCountByType as $type => $count)
                     <div class="flex items-center py-2 px-6 mx-4 bg-white rounded-lg ">
-                        <div
-                            class="p-3 mr-4 text-orange-700 bg-orange-100 rounded-full dark:text-orange-700 dark:bg-orange-100">
+                        <div class="p-3 mr-4 text-orange-700 bg-orange-100 rounded-full dark:text-orange-700 dark:bg-orange-100">
                             <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round"
                                 stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                                 <path
@@ -24,24 +23,18 @@
                                 </path>
                             </svg>
                         </div>
-
                         <div>
                             <p class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">
                                 {!! __('profil.home.request_message', ['count' => $count, 'type'=> $type]) !!}
                             </p>
-
                         </div>
-
                     </div>
                     @endforeach
                 </div>
-
             </div>
 
             <div class="py-4">
-
                 <h5>{{__('profil.home.list_request')}}</h5>
-
                 <div class="grid gap-4 mb-8 md:grid-cols-2 xl:grid-cols-4">
                     @foreach ($typeDemandes as $typeDemande)
                         <div class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
@@ -56,15 +49,13 @@
                             </div>
                             <div>
                                 <p class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">
-                                    {{ $typeDemande->name }}
+                                    {{ $typeDemande->translator['name'] }}
                                 </p>
-
                                 <a href="{{ route('Front.profil.form', ['typeDeDemande' => $typeDemande->name]) }}">
-                                    <button
-                                        class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-blue-500 border border-transparent rounded-lg active:bg-blue-100 hover:bg-blue-500 focus:outline-none focus:shadow-outline-purple">
-                                        {{__('profil.home.start')}} </button>
+                                    <button class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-blue-500 border border-transparent rounded-lg active:bg-blue-100 hover:bg-blue-500 focus:outline-none focus:shadow-outline-purple">
+                                        {{__('profil.home.start')}}
+                                     </button>
                                 </a>
-
                             </div>
                         </div>
                     @endforeach
@@ -79,8 +70,7 @@
                     <div class="w-full overflow-x-auto">
                         <table class="w-full whitespace-no-wrap">
                             <thead>
-                                <tr
-                                    class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
+                                <tr class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
                                     <th class="px-4 py-3">{{__('profil.home.categories')}}</th>
                                     <th class="px-4 py-3">{{__('profil.home.title')}}</th>
                                     <th class="px-4 py-3">{{__('profil.home.description')}}</th>

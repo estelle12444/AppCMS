@@ -9,7 +9,7 @@ class SectorController extends Controller
 {
     public function index()
     {
-        $sectors = Sector::all();
+        $sectors = Sector::query()->ofLang('fr')->latest()->get();
 
         return view('Front.admin.sector.index', compact('sectors'));
     }
@@ -25,7 +25,7 @@ class SectorController extends Controller
             'nom' => 'required',
         ]);
 
-        $sector = new Sector;
+        $sector = new Sector();
         $sector->nom = $validatedData['nom'];
         $sector->save();
 

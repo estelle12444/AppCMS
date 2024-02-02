@@ -70,7 +70,7 @@
                                                                 class="fas fa-trash"></i></button>
                                                     </form>
 
-                                                    <a href="{{route('Front.admin.applicant')}}" class="btn btn-primary btn-action mr-1" data-toggle="tooltip"
+                                                    <a href="{{route('applicantIndex')}}" class="btn btn-primary btn-action mr-1" data-toggle="tooltip"
                                                     title="" data-original-title="Voir plus"><i
                                                         class="fas fa-table"></i></a>
                                                 </td>

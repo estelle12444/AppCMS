@@ -60,10 +60,14 @@
                                                     $paginator = paginate($group);
                                                 @endphp
                                                 @foreach ($paginator as $annonce)
-                                                    <h2> Dossier N°{{ $annonce['id']}}</h2>
-                                                    <p> Titre: {{ strip_tags($annonce['title']) }}</p>
-                                                    <p>Description: {{ strip_tags($annonce['content']) }}</p>
-                                                    <p>Date limite: {{ $annonce['limit_date'] }}</p>
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h2>Dossier N°{{ $annonce['id']}}</h2>
+                                                            <p>Titre: {{ strip_tags($annonce['title']) }}</p>
+                                                            <p>Description: {{ strip_tags($annonce['content']) }}</p>
+                                                            <p>Date limite: {{ $annonce['limit_date'] }}</p>
+                                                        </div>
+                                                    </div>
                                                 @endforeach
                                                 {!! $paginator->links() !!}
                                             </div>
@@ -79,5 +83,6 @@
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 @endsection

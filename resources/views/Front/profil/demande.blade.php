@@ -43,24 +43,17 @@
                         </div>
                         <div>
                             <p class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">
-                                {{ $typeDemande->name }}
-
-
+                                {{ $typeDemande->translator['name'] }}
                             </p>
-
-                            <a
-                                href="{{ route('Front.profil.form', ['typeDeDemande' => $typeDemande->name]) }}">
-
-                                <button
-                                    class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-blue-500 border border-transparent rounded-lg active:bg-blue-500 hover:bg-blue-500 focus:outline-none focus:shadow-outline-purple">
-                                    {{__("profil.home.start")}} </button>
+                            <a href="{{ route('Front.profil.form', ['typeDeDemande' => $typeDemande->name]) }}">
+                                <button class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-blue-500 border border-transparent rounded-lg active:bg-blue-500 hover:bg-blue-500 focus:outline-none focus:shadow-outline-purple">
+                                    {{__("profil.home.start")}}
+                                </button>
                             </a>
-
                         </div>
                     </div>
                 @endforeach
             </div>
         </div>
-
     </div>
 @endsection

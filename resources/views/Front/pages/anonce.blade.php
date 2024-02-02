@@ -16,7 +16,7 @@
                 class="  flex items-center justify-center py-4 xl:py-8 flex-wrap">
                 <button type="button" onclick="setContent('tous')"
                     class="text-amber-500 hover:text-white border border-amber-500 bg-white hover:bg-amber-500 focus:ring-4 focus:outline-none focus:ring-amber-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:border-amber-500 dark:text-amber-500 dark:hover:text-white dark:hover:bg-amber-500 dark:bg-gray-900 dark:focus:ring-amber-800">
-                    Tous
+                    {!!__('news.all')!!}
                 </button>
                 <button type="button" onclick="setContent('#bloc-tender')"
                     class="text-gray-900 border border-white hover:border-amber-500 dark:border-amber-500 dark:bg-amber-900 dark:hover:border-amber-700 bg-white focus:ring-4 focus:outline-none focus:ring-amber-500 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-amber-800">
@@ -72,7 +72,7 @@
                                     </a>
                                 </p>
                                 <p>
-                                    <span class="text-blue-800 font-bold"> Date limite:</span>
+                                    <span class="text-blue-800 font-bold"> {!!__('news.limit.date')!!}</span>
                                     <span style="color: #F18700;">{{ $activity['limit_date'] }}</span>
                                 </p>
                                 @if(!is_null($activity['file']))
@@ -89,7 +89,7 @@
                                                 <a href="{{ route('download_file') }}?filename={{ $activity['file'] }}"
                                                     class="underline hover:underline">
                                                     <div class="text-lg">
-                                                    <p>Télécharger le fichier de l'offre</p>
+                                                        {!!__('news.download.tender')!!}
                                                     </div>
                                                 </a>
                                             </div>
@@ -125,10 +125,10 @@
                             alt="" />
                         <div class="p-5">
                             <div class="text-lg">
-                                <h3>Pas de résultats de recherche</h3>
+                                {!!__('news.no.result.title')!!}
                             </div>
                             <div class="text-gray-500">
-                                <p>Aucun résultat trouvé pour votre recherche.</p>
+                                {!!__('news.no.result')!!}
                             </div>
                         </div>
                     </div>
@@ -183,31 +183,4 @@
         }
     </script>
 
-
-
-    {{-- <script>
-        const voirPlusBtn = document.getElementById("voirPlusBtn");
-        const modal = document.getElementById("modal");
-        const modalTitle = document.getElementById("modalTitle");
-        const modalDescription = document.getElementById("modalDescription");
-        const fermerModal = document.getElementById("fermerModal");
-
-        voirPlusBtn.addEventListener("click", function () {
-            // Remplacez ces valeurs par celles que vous souhaitez afficher dans le modal
-            const titre = "Titre du contenu";
-            const description = "Description du contenu.";
-
-            // Remplit le contenu du modal avec les valeurs
-            modalTitle.textContent = titre;
-            modalDescription.textContent = description;
-
-            // Affiche le modal
-            modal.classList.remove("hidden");
-        });
-
-        fermerModal.addEventListener("click", function () {
-            // Ferme le modal en le cachant
-            modal.classList.add("hidden");
-        });
-    </script> --}}
 @endsection

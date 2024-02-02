@@ -8,9 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Mail\Mailables\Content;
 
 class PartnerController extends Controller
-
 {
-
 
     public function index()
     {

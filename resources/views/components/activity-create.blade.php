@@ -8,39 +8,40 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4>Enregistrement </h4>
+                            <h2 id="form-header">Enregistrement en version française</h2>
                         </div>
                         <div class="card-body">
-                            <form action="{{ route('Front.admin.'.$route.'.store') }}"
-                                method="POST"enctype="multipart/form-data">
+                            <div class="alert alert-info">
+                                Please fill out the form in both English and French to ensure accurate and complete submission. Use the language switch button provided to navigate between the two versions of the form.
+                            </div>
+                            <!-- Step 1: French version -->
+                            <form action="{{ route('Front.admin.'.$route.'.store') }}" method="POST" enctype="multipart/form-data">
                                 @csrf
+                                <input type="hidden" name="lang[0][translate_code]" value="fr">
                                 <div class="form-group row mb-4">
-                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Titre de
-                                        l'offre</label>
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Titre</label>
                                     <div class="col-sm-12 col-md-7">
-                                        <input name="title" type="text" class="form-control">
-                                        @error('title')
+                                        <input name="lang[0][title]" type="text" class="form-control">
+                                        @error("lang.0.title")
                                             <div class="alert alert-danger">{{ $message }}</div>
                                         @enderror
                                     </div>
                                 </div>
 
                                 <div class="form-group row mb-4">
-                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Description de
-                                        l'Offre</label>
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Description</label>
                                     <div class="col-sm-12 col-md-7">
-                                        <textarea name="content" class="form-control summernote-simple"></textarea>
-                                        @error('content')
+                                        <textarea name="lang[0][content]" class="form-control summernote-simple"></textarea>
+                                        @error('lang.0.content')
                                             <div class="alert alert-danger">{{ $message }}</div>
                                         @enderror
                                     </div>
                                 </div>
                                 <div class="form-group row mb-4">
-                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Resume de
-                                        l'Offre</label>
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Resume </label>
                                     <div class="col-sm-12 col-md-7">
-                                        <textarea name="resume" class="form-control summernote-simple"></textarea>
-                                        @error('resume')
+                                        <textarea name="lang[0][resume]" class="form-control summernote-simple"></textarea>
+                                        @error('lang.0.resume')
                                             <div class="alert alert-danger">{{ $message }}</div>
                                         @enderror
                                     </div>
@@ -48,9 +49,9 @@
                                 <div class="form-group row mb-4">
                                     <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Date Limite</label>
                                     <div class="col-sm-12 col-md-7">
-                                        <input name="limit_date" type="datetime-local" class="form-control">
+                                        <input name="lang[0][limit_date]" type="datetime-local" class="form-control">
 
-                                        @error('limit_date')
+                                        @error('lang.0.limit_date')
                                             <div class="alert alert-danger">{{ $message }}</div>
                                         @enderror
                                     </div>
@@ -59,7 +60,7 @@
                                 <div class="form-group row mb-4">
                                     <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Image</label>
                                     <div class="input-group col-sm-12 col-md-7">
-                                        <input type="file" name="image" class="form-control" id="inputGroupFile04"
+                                        <input type="file" name="lang[0][image]" class="form-control" id="inputGroupFile04"
                                             aria-describedby="inputGroupFileAddon04" aria-label="Upload"
                                             accept=".png, .jpg, .jpeg" >
                                     </div>
@@ -75,7 +76,7 @@
                                     <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Documents ci-joints
                                     </label>
                                     <div class="input-group col-sm-12 col-md-7">
-                                        <input type="file" name="file" class="form-control" id="inputGroupFile04"
+                                        <input type="file" name="lang[0][file]" class="form-control" id="inputGroupFile04"
                                             aria-describedby="inputGroupFileAddon04" aria-label="Upload"
                                             accept=".pdf, .txt, .docx">
                                         <small id="inputGroupFileAddon04" class="form-text text-muted">Sélectionnez un
@@ -86,7 +87,83 @@
                                 <div class="form-group row mb-4">
                                     <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"></label>
                                     <div class="col-sm-12 col-md-7">
-                                        <button class="btn btn-primary" type="submit">Envoyer</button>
+                                        <button id="nextButton" class="btn btn-primary" type="button" onclick="switchToEnglish()">Suivant (Switch to English)</button>
+                                    </div>
+                                </div>
+                            <!-- Step 2: English version (initially hidden) -->
+                                <div class="card-header">
+                                     <h2 id="form-header">Enregistrement en version anglaise</h2>
+                                </div>
+
+                                <input type="hidden" name="lang[1][translate_code]" value="en">
+
+                                <div class="form-group row mb-4">
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"> Title</label>
+                                    <div class="col-sm-12 col-md-7">
+                                        <input name="lang[1][title]" type="text" class="form-control">
+                                        @error('lang.1.title')
+                                            <div class="alert alert-danger">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+                                </div>
+
+                                <div class="form-group row mb-4">
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Description</label>
+                                    <div class="col-sm-12 col-md-7">
+                                        <textarea name="lang[1][content]" class="form-control summernote-simple"></textarea>
+                                        @error('lang.1.content')
+                                            <div class="alert alert-danger">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+                                </div>
+
+                                <div class="form-group row mb-4">
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"> Summary</label>
+                                    <div class="col-sm-12 col-md-7">
+                                        <textarea name="lang[1][resume]" class="form-control summernote-simple"></textarea>
+                                        @error('lang.1.resume')
+                                            <div class="alert alert-danger">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+                                </div>
+
+                                <div class="form-group row mb-4">
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Application Deadline</label>
+                                    <div class="col-sm-12 col-md-7">
+                                        <input name="lang[1][limit_date]" type="datetime-local" class="form-control">
+                                        @error('lang.1.limit_date')
+                                            <div class="alert alert-danger">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+                                </div>
+
+                                <div class="form-group row mb-4">
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Image</label>
+                                    <div class="input-group col-sm-12 col-md-7">
+                                        <input type="file" name="lang[1][image]" class="form-control" id="inputGroupFile04"
+                                            aria-describedby="inputGroupFileAddon04" aria-label="Upload" accept=".png, .jpg, .jpeg">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row mb-4">
+                                    <div class="col-md-7 offset-md-3">
+                                        <img id="imagePreview" src="#" alt="Image Preview" style="display: none; max-width: 100%; max-height: 300px;">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row mb-4">
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Attached Documents</label>
+                                    <div class="input-group col-sm-12 col-md-7">
+                                        <input type="file" name="lang[1][file]" class="form-control" id="inputGroupFile04"
+                                            aria-describedby="inputGroupFileAddon04" aria-label="Upload" accept=".pdf, .txt, .docx">
+                                        <small id="inputGroupFileAddon04" class="form-text text-muted">Select a document (.pdf, .txt, .docx).</small>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row mb-4">
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"></label>
+                                    <div class="col-sm-12 col-md-7">
+                                        <button class="btn btn-primary" type="submit">Submit</button>
                                     </div>
                                 </div>
                             </form>
@@ -118,6 +195,11 @@
         document.querySelector('input[name="image"]').addEventListener('change', function() {
             previewImage(this);
         });
+        function switchToEnglish() {
+            document.getElementById('form-header').innerText = 'Registration in English version';
+            document.getElementById('frenchForm').style.display = 'none';
+            document.getElementById('englishForm').style.display = 'block';
+        }
     </script>
 
 </div>

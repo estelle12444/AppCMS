@@ -2,7 +2,7 @@
 @section('content')
 <x-activity-edit
             route="tender"
-            :header="App\Models\Enums\ActivityTypeEnum::TENDERS->getHeaderEdit()"
+            :header="App\Models\Enums\ActivityTypeEnum::TENDER->getHeaderEdit()"
             :$activity
-            :message="App\Models\Enums\ActivityTypeEnum::TENDERS->getMessageEdit()"/>
+            :message="App\Models\Enums\ActivityTypeEnum::TENDER->getMessageEdit()"/>
 @endsection
