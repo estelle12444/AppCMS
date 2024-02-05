@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Rule;
 
@@ -105,25 +106,46 @@ class ContentController extends Controller
 
     public function saveContent(Request $request, $key){
         $max = config("translate_rule")[$key];
+        $isSuccess = true;
 
-        $validated = $request->validate([
-            'en.content' => ['required', "max:$max"],
-            'fr.content' => ['required', "max:$max"]
+        $validator = Validator::make($request->all() ,[
+            'en.content' => 'required',
+            'fr.content' => 'required'
         ]);
+
+        $validator->after(function ($validator) use($request, $max) {
+            foreach ($request->all() as $key => $value) {
+                if(in_array($key, ['en', 'fr'])){
+                    $value = strip_tags($value['content']);
+                    if(strlen($value) > $max){
+                        $validator->errors()->add(
+                            "$key.content", "Le nombre de caractèrer maximum autorisé est $max"
+                        );
+                    }
+                }
+            }
+        });
+
+        $validated = $validator->validate();
 
         foreach ($validated as $ind => $value) {
             $json = json_decode(file_get_contents(resource_path("lang/$ind.json")));
             $json->$key = $value['content'];
-            dd($json);
-            file_put_contents(resource_path("lang/$ind.json"), $json, FILE_APPEND | LOCK_EX);
+            $isSuccess = file_put_contents(resource_path("lang/$ind.json"), json_encode($json, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
         }
-        $pages = collect(['layouts', 'profil.layouts', 'home', 'about', 'opportunity', "installer", "landing", "news", "actu", "info", "profil.home", "profil.company", "profil.document", "profil.profil_edit", "profil.demande_state", "profil.form"]);
 
-        $page = $pages->where(function($value) use ($key) {
-            return Str::startsWith($key, $value);
-        })->first();
+        if($isSuccess){
+            $pages = collect(['layouts', 'profil.layouts', 'home', 'about', 'opportunity', "installer", "landing", "news", "actu", "info", "profil.home", "profil.company", "profil.document", "profil.profil_edit", "profil.demande_state", "profil.form"]);
 
-        return redirect()->route("ContentPage", ['key' => $page])->with('success', "Texte modifié avec succès.");
+            $page = $pages->where(function($value) use ($key) {
+                return Str::startsWith($key, $value);
+            })->first();
+
+            return redirect()->route("ContentPage", ['key' => $page])->with('success', "Texte modifié avec succès.");
+        }else{
+            return redirect()->back()->with('error', 'Erreur lors de la modification');
+        }
+
     }
 
 }
