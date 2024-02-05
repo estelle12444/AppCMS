@@ -148,13 +148,13 @@
     "landing.website_browsing.link_text":"site web",
     "news.title":"<h1>ANNONCES</h1>",
     "news.all":"Tous",
+
     "news.download.job":"Télécharger le fichier de l'offre",
     "news.no.result.title":"<h3>Pas de résultats de recherche</h3>",
     "news.no.result":"<p>Aucun résultat trouvé pour votre recherche.</p>",
     "news.download.tender":"<p>Télécharger le fichier de candidature</p>",
     "news.limit.date":"Date limite:",
     "news.text.download":" <p>Vous devez être inscrit pour télécharger le fichier.</p>",
-
     "info.job":"Dossier d'Appel d'Offre N 0",
     "info.title":"Titre:",
     "info.describe":"  Description:",
@@ -184,6 +184,7 @@
     "profil.company.form.fax": "Fax :",
     "profil.company.form.email": "Email :",
     "profil.company.form.website": "Site Internet  :",
+
     "profil.company.form.job": " Fonction :",
     "profil.company.form.agent": "Représentant légal:",
     "profil.company.title": "Modifier les informations de l'entreprise",
@@ -197,6 +198,7 @@
     "profil.profil_edit.title": "Vos Informations à notre disposition",
     "profil.profil_edit.company": "Entreprise",
     "profil.profil_edit.demande": "Demande",
+
     "profil.profil_edit.date": "Date",
     "profil.profil_edit.document": "Documents",
     "profil.profil_edit.status": "Status",
@@ -209,6 +211,8 @@
     "profil.demande_state.in_progress": "En cours",
     "profil.demande_state.sent": "Envoyé",
     "profil.demande_state.complete": "Complet",
+
+    
     "profil.form.title": "FORMULAIRE DE :title",
     "profil.form.part1_title1": "ZONE FRANCHE - AVANTAGES FISCAUX ET DOUANIERS",
     "profil.from.description1": "<p>En vertu de la Loi 2004-429 du 30 août 2004, l’État de Côte d’Ivoire permet aux entreprises nationales et internationales de faire des affaires, de bénéficier des avantages qu’offre ladite loi, pour créer des emplois et promouvoir l’exportation à partir de la zone franche de la biotechnologie et des technologies de l’information et de la communication (ZBTIC), située dans la commune de Grand-Bassam.</p><br>",

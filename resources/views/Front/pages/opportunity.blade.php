@@ -195,11 +195,11 @@
                 <div class="xl:flex flex-row ">
                     <div data-aos="zoom-in-right" data-aos-delay="700" data-aos-delay="500" class="xl:basis-1/2 xl:text-lg xl:text-left md:text-center">
                         <div class="text-3xl text-slate-600 md:text-5xl xl:text-5xl font-bold">
-                            {!! __('opportunity_section_title') !!}
+                            {!! __('opportunity.section_title') !!}
                         </div>
 
                         <div class="pt-4 xl:pt-8 pb-4 xl:pb-8 xl:text-lg ">
-                            {!! __('opportunity_section_subtitle') !!}
+                            {!! __('opportunity.section_subtitle') !!}
                         </div>
                         <div class="grid grid-cols-2 xl:grid-cols-2 gap-2 xl:gap-2 xl:px-0 md:px-16 pt-4">
                             <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="200"class="flex items-center  rounded-lg " role="alert">
@@ -207,7 +207,7 @@
                                     <img src="img/icon/check.png" alt="">
                                 </div>
                                 <div class="ml-2 xl:ml-4 text-md font-normal">
-                                    {!! __('opportunity_office_buildings') !!}
+                                    {!! __('opportunity.office_buildings') !!}
                                 </div>
                             </div>
 
@@ -216,7 +216,7 @@
                                         <img src="img/icon/check.png" alt="">
                                 </div>
                                 <div class="ml-4 text-md font-normal">
-                                    {!! __('opportunity_university') !!}
+                                    {!! __('opportunity.university') !!}
                                 </div>
                             </div>
                             <div data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="500"class="flex items-center  pt-8 rounded-lg " role="alert">
@@ -224,7 +224,7 @@
                                         <img src="img/icon/check.png" alt="">
                                 </div>
                                 <div class="ml-4 text-md font-normal">
-                                    {!! __('opportunity_warehouses_for_rent') !!}
+                                    {!! __('opportunity.warehouses_for_rent') !!}
                                 </div>
                             </div>
                             <div data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="500" class="flex items-center  pt-8 rounded-lg " role="alert">
@@ -233,7 +233,7 @@
                                     <img src="img/icon/check.png" alt="">
                                 </div>
                                 <div class="ml-4 text-md font-normal">
-                                    {!! __('opportunity_international_medical_clinic') !!}
+                                    {!! __('opportunity.international_medical_clinic') !!}
                                 </div>
                             </div>
 
@@ -242,7 +242,7 @@
                                         <img src="img/icon/check.png" alt="">
                                 </div>
                                 <div class="ml-4 text-md font-normal">
-                                    {!! __('opportunity_commercial_alley') !!}
+                                    {!! __('opportunity.commercial_alley') !!}
                                 </div>
                             </div>
                             <div data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="500" class="flex items-center pt-8 rounded-lg " role="alert">
@@ -250,7 +250,7 @@
                                     <img src="img/icon/check.png" alt="">
                                 </div>
                                 <div class="ml-4 text-md font-normal">
-                                    {!! __('opportunity_cultural_center') !!}
+                                    {!! __('opportunity.cultural_center') !!}
                                 </div>
                             </div>
 

@@ -11,11 +11,11 @@ class ContentController extends Controller
     public function contentIndex(){
         $pages = [
             'layouts' => [
-                "title" => "",
+                "title" => "header et Footer",
                 "count" => 33
             ],
             'profil.layouts' => [
-                "title" => "",
+                "title" => "Tableau de Bord profil",
                 "count" => 8
             ],
             'home' => [
@@ -35,7 +35,7 @@ class ContentController extends Controller
                 "count" => 33
             ],
             'landing' => [
-                "title" => "",
+                "title" => "page d'atterrissage",
                 "count" => 7
             ],
             'news' => [
@@ -43,7 +43,7 @@ class ContentController extends Controller
                 "count" =>8
             ],
             'actu'=>[
-                "title"=>"Gallery",
+                "title"=>"Gallérie",
                 "count" =>1
             ],
             'info' => [
@@ -59,15 +59,15 @@ class ContentController extends Controller
                 "count" => 14
             ],
             'profil.document' => [
-                "title" => "",
+                "title" => "Liste des documents transmis",
                 "count" => 6
             ],
             'profil.profil_edit' => [
-                "title" => "",
+                "title" => "Modifications des informations client ",
                 "count" => 6
             ],
             'profil.demande_state' => [
-                "title" => "",
+                "title" => "Liste des demades",
                 "count" => 9
             ],
             'profil.form' => [

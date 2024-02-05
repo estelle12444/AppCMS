@@ -5,9 +5,9 @@
 <div class="bg-gradient-to-r from-orange-100 from-20%  to-green-100 to-90%">
     <div class="p-5 py-20 mx-2 xl:mx-48">
         <div class="max-w-2xl mx-auto p-6">
-            <img src="{{asset('img/icon-index/advantage.jpg')}}" alt="News Image" class="w-full h-64 object-cover mb-4 rounded-lg">
-            <h1 class="text-3xl font-bold mb-2">{!! $query!!}</h1>
-            <p class="text-gray-600 text-sm mb-4">Date de publication : 16 janvier 2024</p>
+            <img src="https://placehold.co/400" alt="News Image" class="w-full h-64 object-cover mb-4 rounded-lg">
+            <h1 class="text-3xl font-bold mb-2"></h1>
+            <p class="font-bold text-lg mb-4">Date de publication : 16 janvier 2024</p>
 
             <div class="prose max-w-none text-justify">
                 <p>

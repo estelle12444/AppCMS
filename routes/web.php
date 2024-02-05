@@ -11,6 +11,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DemandeController;
 use App\Http\Controllers\DownloadController;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\JobController;
 use App\Http\Controllers\NewController;
 use App\Http\Controllers\NewsletterController;
@@ -54,9 +55,8 @@ Route::get('/', function () {
     return view('Front.landingg');
 });
 
-Route::get('/home', function () {
-    return view('index');
-});
+Route::get('/home',[HomeController::class,'index'])->name('index');
+
 
 Route::match(['post'], '/home', function (Request $request) {
     Newsletter::create($request->all());
@@ -85,9 +85,7 @@ Route::get('/media', function () {
     return view('Front.pages.media');
 })->name('media');
 
-Route::get('/avantages/{query?}', function ($query = null) {
-    return view('Front.pages.avantagesDetail',['query' => $query]);
-})->name('avantages.Detail');
+Route::get('/avantages/{query}',[HomeController::class,'avantages'] )->name('avantages.Detail');
 
 Route::get('/actu/detail', function () {
     return view('Front.pages.newsDetail');
