@@ -8,7 +8,6 @@ use Illuminate\Database\Seeder;
 
 class SectorSeeder extends Seeder
 {
-    use SeederTrait;
 
     /**
      * Run the database seeds.
@@ -80,5 +79,19 @@ class SectorSeeder extends Seeder
 
         $this->insert($data, Sector::class);
 
+    }
+
+    public function insert($data, $class){
+        $model = app()->make($class);
+        foreach ($data[0] as $key => $row) {
+            $french = $model::create($row);
+            $english = $data[1][$key];
+            $model::create(
+                array_merge($english, [
+                    'translate_code' => 'en',
+                    'parent_id' => $french->id,
+                ])
+            );
+        }
     }
 }
