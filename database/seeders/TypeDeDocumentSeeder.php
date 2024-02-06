@@ -4,7 +4,6 @@ namespace Database\Seeders;
 
 
 use App\Models\TypeDeDocument;
-use Database\Seeders\Trait\SeederTrait;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
