@@ -8,7 +8,6 @@ use Illuminate\Database\Seeder;
 
 class DispositionSeeder extends Seeder
 {
-    use SeederTrait;
 
     /**
      * Run the database seeds.
@@ -38,5 +37,18 @@ class DispositionSeeder extends Seeder
         ];
 
         $this->insert($data, Disposition::class);
+    }
+    public function insert($data, $class){
+        $model = app()->make($class);
+        foreach ($data[0] as $key => $row) {
+            $french = $model::create($row);
+            $english = $data[1][$key];
+            $model::create(
+                array_merge($english, [
+                    'translate_code' => 'en',
+                    'parent_id' => $french->id,
+                ])
+            );
+        }
     }
 }

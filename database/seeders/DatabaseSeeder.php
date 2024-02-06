@@ -20,21 +20,21 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
         $this->call([
-            // SectorSeeder::class,
+             SectorSeeder::class,
             PartnerSeeder::class,
-            // RoleSeeder::class,
-            // UserSeeder::class,
-            // CompanySeeder::class,
-            // EligibilitySeeder::class,
-            // DispositionSeeder::class,
-            // ObligationSeeder::class,
-            // TypeDemandeSeeder::class,
-            // EligibilityTypeDemandeSeeder::class,
-            // ObligationTypeDemandeSeeder::class,
-            // DispositionTypeDemandeSeeder::class,
-            // TypeDeDocumentSeeder::class,
-            // TypeDocumentTypeDemandeSeeder::class,
-            // BusinessPlanSeeder::class
+            RoleSeeder::class,
+            UserSeeder::class,
+            CompanySeeder::class,
+            EligibilitySeeder::class,
+            DispositionSeeder::class,
+            ObligationSeeder::class,
+            TypeDemandeSeeder::class,
+            EligibilityTypeDemandeSeeder::class,
+            ObligationTypeDemandeSeeder::class,
+            DispositionTypeDemandeSeeder::class,
+            TypeDeDocumentSeeder::class,
+            TypeDocumentTypeDemandeSeeder::class,
+            BusinessPlanSeeder::class
         ]);
     }
 }
