@@ -144,6 +144,17 @@ $url = $_SERVER['REQUEST_URI'];
 
                             </ul>
                         </li>
+                        <li class="menu-header">Management de Contenus</li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link has-dropdown <?php echo $url === '/content'  ? ' active bg-primary text-white' : ''; ?>"
+                                data-toggle="dropdown"><i class="fas fa-list"></i> <span>Management de Contenus</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link <?php echo $url === '/content' ? ' active bg-primary text-white' : ''; ?>" href="/content">Informations</a>
+                                </li>
+                                {{-- <li><a class="nav-link" href="/company/create">Enregistrer</a></li> --}}
+
+                            </ul>
+                        </li>
                         <li class="menu-header">Annonces et Actualités </li>
                         <li class="dropdown">
                             <a href="#" class="nav-link has-dropdown <?php echo $url === '/new' || $url === '/new/create' ? ' active bg-primary text-white' : ''; ?>"data-toggle="dropdown">

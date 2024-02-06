@@ -196,7 +196,7 @@ Route::middleware(['admin'])->group(function () {
     Route::get('/content/pages/{key}', [ContentController::class, 'ContentPage'])->name('ContentPage');
     Route::get('/content/pages/{key}/edit', [ContentController::class, 'ContentPageEdit'])->name('ContentPageEdit');
     Route::put('/content/pages/{key}',[ContentController::class, 'saveContent'])->name('saveContent');
-
+    Route::get('/content/pages/{key}/group',[ContentController::class, 'ContentPageEditGroup'])->name('ContentPageGroup');
 });
 
 

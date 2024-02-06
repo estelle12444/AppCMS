@@ -108,7 +108,7 @@
                 class="flex flex-col p-4 xl:p-0 mt-4 font-medium border border-gray-100 rounded-lg xl:flex-row xl:space-x-4 xl:mt-0 xl:border-0 dark:bg-gray-800 xl:dark:bg-gray-900 dark:border-gray-700">
                 <li>
                     <a href="/home"
-                        class="block py-2 pl-3 text-gray-700 {{ request()->path() == 'home' ? 'xl:text-orange-400 text-orange-400' : ''}} rounded xl:bg-transparent xl:hover:text-amber-500 xl:p-0 xl:dark:text-blue-500"
+                        class="block py-2 pl-3 text-gray-700 {{ preg_match('/^\/(home|avantages\/[^\/]+)/',request()->path()) ? 'xl:text-orange-400 text-orange-400' : ''}} rounded xl:bg-transparent xl:hover:text-amber-500 xl:p-0 xl:dark:text-blue-500"
                         aria-current="page">{{__('layouts.nav.home')}}</a>
                 </li>
                 <li>

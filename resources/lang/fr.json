@@ -40,6 +40,7 @@
     "profil.layouts.requests.message":"Messages",
     "profil.layouts.requests.welcome":"Bienvenue",
     "profil.layouts.requests.profile":"Profil",
+    "home.carousel.welcome":"AU",
     "home.at":"AU",
     "home.technological_park_of_ivory_coast":"Le Parc Technologique de Côte d'Ivoire",
     "home.fiscal_and_regulatory_advantages":"Avantages fiscaux <br> et réglementaires",
@@ -212,7 +213,7 @@
     "profil.demande_state.sent": "Envoyé",
     "profil.demande_state.complete": "Complet",
 
-    
+
     "profil.form.title": "FORMULAIRE DE :title",
     "profil.form.part1_title1": "ZONE FRANCHE - AVANTAGES FISCAUX ET DOUANIERS",
     "profil.from.description1": "<p>En vertu de la Loi 2004-429 du 30 août 2004, l’État de Côte d’Ivoire permet aux entreprises nationales et internationales de faire des affaires, de bénéficier des avantages qu’offre ladite loi, pour créer des emplois et promouvoir l’exportation à partir de la zone franche de la biotechnologie et des technologies de l’information et de la communication (ZBTIC), située dans la commune de Grand-Bassam.</p><br>",

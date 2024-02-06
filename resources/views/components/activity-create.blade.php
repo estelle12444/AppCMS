@@ -12,7 +12,7 @@
                         </div>
                         <div class="card-body">
                             <div class="alert alert-info">
-                                Please fill out the form in both English and French to ensure accurate and complete submission. Use the language switch button provided to navigate between the two versions of the form.
+                                Veuillez remplir le formulaire à la fois en anglais et en français pour garantir une soumission précise et complète. Utilisez le bouton de commutation de langue fourni pour naviguer entre les deux versions du formulaire.
                             </div>
                             <!-- Step 1: French version -->
                             <form action="{{ route('Front.admin.'.$route.'.store') }}" method="POST" enctype="multipart/form-data">

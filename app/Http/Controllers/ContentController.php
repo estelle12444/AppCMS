@@ -11,52 +11,63 @@ class ContentController extends Controller
 {
     public function contentIndex(){
         $pages = [
-            'layouts' => [
-                "title" => "header et Footer",
+            'home' => [
+                "title" => "Accueil/Home",
+                "count" => 20
+            ],
+            'about' => [
+                "title" => "'A propos'/About us",
+                "count" => 9
+            ],
+            'opportunity' => [
+                "title" => " 'Opportunités' / Opportunity",
+                "count" => 26
+            ],
+            'installer' => [
+                "title" => " 'S'implanter' / Installer",
                 "count" => 33
             ],
-            'profil.layouts' => [
-                "title" => "Tableau de Bord profil",
+
+            'news' => [
+                "title" => "'Annonce'/ News",
+                "count" =>8
+            ],
+
+            'info' => [
+                "title" => " Info , Detail de l'annonce",
+                "count" => 6
+            ],
+            'actu'=>[
+                "title"=>"Gallérie/ Gallery",
+                "count" =>1
+            ],
+
+        ];
+        $head= [
+            'landing' => [
+                "title" => "Site: page d'atterrissage",
+                "count" => 7
+            ],
+            'layouts.nav' => [
+                "title" => "Entête du site /Site of Header",
+                "count" => 14
+            ],
+            'layouts.footer' => [
+                "title" => "Pied de page/ Footer ",
+                "count" => 19
+            ]
+        ];
+        $profil = [
+            'layouts' => [
+                "title" => "Siebar / Bar de navigation",
                 "count" => 8
             ],
             'home' => [
                 "title" => "Accueil",
-                "count" => 20
-            ],
-            'about' => [
-                "title" => "A propos",
-                "count" => 9
-            ],
-            'opportunity' => [
-                "title" => "Opportunité",
-                "count" => 26
-            ],
-            'installer' => [
-                "title" => "S'implanter",
-                "count" => 33
-            ],
-            'landing' => [
-                "title" => "page d'atterrissage",
-                "count" => 7
-            ],
-            'news' => [
-                "title" => " Actualités",
-                "count" =>8
-            ],
-            'actu'=>[
-                "title"=>"Gallérie",
-                "count" =>1
-            ],
-            'info' => [
-                "title" => "Detail de l'annonce",
-                "count" => 6
-            ],
-            'profil.home' => [
-                "title" => " Accueil du dashboard du client",
                 "count" => 10
             ],
             'profil.company' => [
-                "title" => "Formulaire des entreprises",
+                "title" => "Informations de l'entreprise",
                 "count" => 14
             ],
             'profil.document' => [
@@ -64,20 +75,21 @@ class ContentController extends Controller
                 "count" => 6
             ],
             'profil.profil_edit' => [
-                "title" => "Modifications des informations client ",
+                "title" => "Modifications des informations",
                 "count" => 6
             ],
             'profil.demande_state' => [
-                "title" => "Liste des demades",
+                "title" => "Liste des demandes à effectuer",
                 "count" => 9
             ],
             'profil.form' => [
-                "title" => "",
+                "title" => "Formulaire",
                 "count" => 23
             ]
         ];
 
-        return view('Front.admin.content.index',compact('pages'));
+
+        return view('Front.admin.content.index',compact('pages','profil','head'));
     }
 
     public function contentPage($key){
@@ -89,7 +101,7 @@ class ContentController extends Controller
                 return Str::startsWith($index, $key);
             })->toArray();
         }
-        return view('Front.admin.content.page', compact('contents'));
+        return view('Front.admin.content.page', compact('contents','key'));
     }
 
     public function contentPageEdit($key){
@@ -146,6 +158,10 @@ class ContentController extends Controller
             return redirect()->back()->with('error', 'Erreur lors de la modification');
         }
 
+    }
+
+    public function ContentPageEditGroup(){
+        return view('Front.admin.content.edit-group');
     }
 
 }

@@ -7,9 +7,12 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h4>Edition </h4>
+                    <h2 class="text-center text-primary">Modification d'un élement existant ::{{$key}}</h2>
                 </div>
                 <div class="card-body">
+                    <div class="alert alert-info">
+                         Veuillez remplir le formulaire à la fois en anglais et en français pour garantir une soumission précise et complète. Utilisez le bouton de commutation de langue fourni pour naviguer entre les deux versions du formulaire.
+                    </div>
                     <form action="{{route('saveContent',['key'=>$key])}}" method="POST" enctype="multipart/form-data">
                         @csrf
                         @method('PUT')

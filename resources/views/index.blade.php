@@ -58,60 +58,17 @@
 
     <div class="bg-gradient-to-r from-orange-100 from-20%  to-green-100 to-90%">
         <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mx-auto gap-4 ">
-            <!-- Première partie -->
+            @foreach($avantages as $avantage)
             <div class="flex items-center justify-center p-4">
-                <a href="{{ route('avantages.Detail', ['query' => 'home.fiscal_and_regulatory_advantage']) }}"
-                    class="flex items-center hover:text-amber-500">
-                    <div class="h-16 w-16 mr-4">
-                        <img src="{{ asset('img/icon-index/Group 133.png') }}" alt="Logo 1">
-                    </div>
-                    <span class="text-lg">{!! __('home.fiscal_and_regulatory_advantages') !!}</span>
-                </a>
+                    <a href="{{ route('avantages.Detail', ['query' => $avantage['routeName']]) }}"
+                        class="flex items-center hover:text-amber-500">
+                        <div class="h-16 w-16 mr-4">
+                            <img src="{{ asset($avantage['imgPath']) }}" alt="{{ $avantage['altText'] }}">
+                        </div>
+                        <span class="text-lg">{!! __($avantage['translationKey']) !!}</span>
+                    </a>
             </div>
-
-
-            <!-- Deuxième partie -->
-            <div class="flex items-center justify-center p-4">
-                <a href="{{ route('avantages.Detail', ['query' => __('home.customs_advantages')]) }}"
-                    class="flex items-center hover:text-amber-500">
-                    <img src="{{ asset('img/icon-index/Group 136.png') }}" alt="Logo 5" class="h-16 w-16 mr-4">
-                    <span class="text-lg">{!! __('home.customs_advantages') !!}</span>
-                </a>
-            </div>
-
-            <!-- Troisième partie -->
-            <div class="flex items-center justify-center p-4">
-                <a href="{{ route('avantages.Detail', ['query' => __('home.partnerships')]) }}" class="flex items-center hover:text-amber-500">
-                    <img src="{{ asset('img/icon-index/Group 138.png') }}" alt="Logo 7" class="h-16 w-16 mr-4">
-                    <span class="text-lg">{!! __('home.partneships') !!}</span>
-                </a>
-            </div>
-
-
-            <!-- ... (Repeat for other sections) -->
-            <div class="flex items-center justify-center p-4">
-                <a href="{{ route('avantages.Detail', ['query' => __('home.access_to_a_thriving_market')]) }}"
-                    class="flex items-center hover:text-amber-500">
-                    <img src="{{ asset('img/icon-index/Group 132.png') }}" alt="Logo 7" class="h-16 w-16 mr-4 ml-2">
-                    <span class="text-lg">{!! __('home.access_to_a_thriving_market') !!}</span>
-                </a>
-            </div>
-
-            <div class="flex items-center justify-center p-4">
-                <a href="{{ route('avantages.Detail', ['query' => __('home.skilled_workforce')]) }}"
-                    class="flex items-center hover:text-amber-500">
-                    <img src="{{ asset('img/icon-index/Group 131.png') }}" alt="Logo 7" class="h-16 w-16 mr-4 ml-6 ">
-                    <span class="text-lg ">{!! __('home.skilled_workforce') !!}</span>
-                </a>
-            </div>
-
-            <div class="flex items-center justify-center p-4">
-                <a href="{{ route('avantages.Detail', ['query' => __('home.state_of_the_art_infrastructure')]) }}"
-                    class="flex items-center hover:text-amber-500">
-                    <img src="{{ asset('img/icon-index/Group 134.png') }}" alt="Logo 7" class="h-16 w-16 mr-4">
-                    <span class="text-lg">{!! __('home.state_of_the_art_infrastructure') !!}</span>
-                </a>
-            </div>
+            @endforeach
 
         </div>
 
