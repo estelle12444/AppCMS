@@ -13,18 +13,19 @@
                 <h3 class="text-3xl font-bold mb-4"> {{ $activity->translator['title'] }}</h3>
 
                 <div class="prose max-w-none text-justify mb-4">
-                    <p> {!! __('info.job.describe') !!}:
+                   <h2> <strong> {!! __('info.job.describe') !!}</strong></h2>
+                    <p>
                         {{ strip_tags($activity->translator['content']) }}
                     </p>
 
                 </div>
                 <div class="prose max-w-none text-justify mb-4">
-                    <p> {!! __('info.job.resume') !!}:
+                    <p> {!! __('info.job.resume') !!}
                         {{ strip_tags($activity->translator['resume']) }}
                     </p>
                 </div>
                 <div class="prose max-w-none text-justify mb-4">
-                    <p> {!! __('info.job.limit.date') !!}:
+                    <p> {!! __('info.job.limit_date') !!}
                         {{ strip_tags($activity->translator['limit_date'] ) }}
                     </p>
                 </div>
