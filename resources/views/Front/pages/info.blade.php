@@ -41,7 +41,7 @@
                             </svg>
                         </div>
                         <div class="w-3/5">
-                            <a href="{{ asset('storage/' . $activity->file) }}" class="underline hover:underline">
+                            <a href="{{ asset('storage/' . $activity->translator['file']) }}" class="underline hover:underline">
                                 <div class="text-lg">
                                     {!! __('news.job.download.tender') !!}
                                 </div>

@@ -14,7 +14,7 @@
                             $url = route('Front.admin.' . $route . '.update', ['activity' => $activity->id]);
                         @endphp
                         <div class="card-body">
-                            <form action="$url" method="POST" enctype="multipart/form-data">
+                            <form action="{{$url}}" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 @method('PUT')
                                 <input type="hidden" name="lang[0][translate_code]" value="fr">
@@ -74,7 +74,7 @@
                                 <div class="form-group row mb-4">
                                     <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Attached Documents</label>
                                     <div class="input-group col-sm-12 col-md-7">
-                                        <input type="file" name="lang[1][file]" class="form-control" id="inputGroupFile04"
+                                        <input type="file" name="lang[0][file]" class="form-control" id="inputGroupFile04"
                                             aria-describedby="inputGroupFileAddon04" aria-label="Upload" accept=".pdf, .txt, .docx">
                                         <small id="inputGroupFileAddon04" class="form-text text-muted">Select a document (.pdf, .txt, .docx).</small>
                                     </div>
@@ -135,7 +135,7 @@
                                     <div class="col-sm-12 col-md-7">
                                         <div class="custom-file">
                                             <input type="file" class="form-control-file" id="image"
-                                                value="{{ $activity->image }}" name="image">
+                                                value="{{ $activity->image }}" name=" lang[1][image]">
                                         </div>
                                     </div>
                                 </div>

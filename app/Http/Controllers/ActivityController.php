@@ -80,7 +80,7 @@ abstract class ActivityController extends Controller
         $activity->resume = $data['resume'];
         $activity->translate_code = $data['translate_code'];
         $activity->limit_date = $data['limit_date'];
-
+   
         if (!is_null($data['image'])) {
             if(is_null($activity)){
                 Storage::disk('public')->delete($activity->image);
@@ -88,6 +88,15 @@ abstract class ActivityController extends Controller
 
             $imagePath = $data['image']->store($this->folder, 'public');
             $activity->image = $imagePath;
+        }
+
+        if (!is_null($data['file'])) {
+            if(is_null($activity)){
+                Storage::disk('public')->delete($activity->file);
+            }
+
+            $filePath = $data['file']->store($this->folder, 'public');
+            $activity->file = $filePath;
         }
 
         if(!is_null($french)){
