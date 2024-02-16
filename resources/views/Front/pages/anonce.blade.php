@@ -45,6 +45,7 @@
                     $type = \App\Models\Enums\ActivityTypeEnum::tryFrom($key);
                 @endphp
                 @foreach ($paginator as $activity)
+                   
                     <div class="px-4 py-10">
                         <div data-aos="zoom-in"
                             class="  md:mx-auto  max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
@@ -66,11 +67,11 @@
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
                                     <a href="{{ route('Front.pages.info', $activity['id']) }}" id="voirPlusBtn"
                                         class=" hover:text-amber-500 text-blue-800 font-semibold py-2  rounded">
-                                        {!!__('home.read_more')!!}
+                                        {!!__('home.button.read_more')!!}
                                     </a>
                                 </p>
                                 <p>
-                                    <span class="text-blue-800 font-bold"> {!!__('news.limit.date')!!}</span>
+                                    <span class="text-blue-800 font-bold"> {!!__('news.job.limit.date')!!}</span>
                                     <span style="color: #F18700;">{{ $activity['limit_date'] }}</span>
                                 </p>
                                 @if(!is_null($activity['file']))
@@ -87,7 +88,7 @@
                                                 <a href="{{ route('download_file') }}?filename={{ $activity['file'] }}"
                                                     class="underline hover:underline">
                                                     <div class="text-lg">
-                                                        {!!__('news.download.tender')!!}
+                                                        {!!__('news.job.download.tender')!!}
                                                     </div>
                                                 </a>
                                             </div>

@@ -41,7 +41,6 @@ class AnnonceController extends Controller
         return view('Front.pages.info', compact('activity'));
     }
 
-
     public function recentes()
     {
         $recentAnnonces = $this->getAnnonces(offset: Activity::active()->count());
