@@ -9,12 +9,12 @@
                     class="px-8 xl:pt-12 sm:px-8 xl:px-8 text-center xl:text-left ">
                     <div class="text-4xl md:text-5xl xl:text-8xl font-semibold pt-4 xl:pt-8 text-slate-600 uppercase">
                         <h1 class="">
-                            {{ __('profil.layouts.requests.welcome') }}<br>{{ __('home.at') }}<span
+                            {{ __('home.carousel.left.welcome') }}<br>{{ __('home.carousel.left.at') }}<span
                                 class="text-orange font-extrabold xl:pt-8 "> VITIB</span>
                         </h1>
                     </div>
                     <p class="text-xl xl:text-2xl md:text-2xl font-medium pt-4 xl:pt-8 text-slate-600">
-                        {{ __('home.technological_park_of_ivory_coast') }}
+                        {{ __('home.carousel.left.technological') }}
                     </p>
                     <div class="py-8 xl:pt-8 md:pt-8">
                         <a href="{{ route('login') }} ">
@@ -78,15 +78,15 @@
                     <div>
                         <h1
                             class=" text-center font-bold text-slate-600 text-3xl md:text-5xl xl:text-5xl sm:p-2 lg:p-6 uppercase">
-                            {!! __('home.innovate_in_the_heart_of_africa') !!}
+                            {!! __('home.presentation.title') !!}
                         </h1>
 
                         <p class="text-center   xl:text-lg  pt-4 xl:pt-10 ">
-                            {{ __('home.welcome_to_vitib') }}
+                            {{ __('home.presentation.subtitle') }}
                             <br
-                                class="hidden xl:block">{{ __('home.excellence_in_innovation_and_technological_development') }}
-                            <br class="hidden xl:block">{{ __('home.located_in_the_heart_of_africa') }}
-                            <br class="hidden xl:block">{{ __('home.vitib_is_a_technology_free_zone') }}
+                                class="hidden xl:block">{{ __('home.presentation.content1') }}
+                            <br class="hidden xl:block">{{ __('home.presentation.content2') }}
+                            <br class="hidden xl:block">{{ __('home.presentation.content3') }}
                         </p>
                     </div>
                 </div>
@@ -94,7 +94,7 @@
                     <div class="sm:w-1/2 text-center sm:text-right sm:pt-4">
                         <a href="/about"
                             class="inline-flex items-center font-medium text-orange-400 dark:text-orange-400 hover:underline">
-                            {{ __('home.read_more') }}
+                            {{ __('home.button.read_more') }}
                             <svg class="w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                                 viewBox="0 0 14 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -113,24 +113,24 @@
                 </div>
                 <div class="font-bold text-3xl  md:text-5xl xl:text-5xl pl-2 pt-8 md:pt-16 xl:pt-8">
                     <h1>
-                        {!! __('home.tech_space_for_you') !!}
+                        {!! __('home.presentation2.tech_space_for_you') !!}
                     </h1>
                 </div>
                 <div class="text-justify text-gray-600 pt-4 pl-2 md:pt-4 md:px-4 xl:pr-4"></div>
                 <p>
-                    {{ __('home.proud_to_offer_dynamic_ecosystem') }}
+                    {{ __('home.presentation2.proud_to_offer_dynamic_ecosystem') }}
                 </p>
             </div>
             <div class="xl:w-1/2 py-8 xl:py-0 " data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="700">
                 <img src="img/tech.png" class="h-64 xl:h-80 md:h-72  md:px-3 w-full" alt="">
                 <div class="font-bold text-3xl  md:px-4 md:text-5xl xl:text-5xl md:text-5xl pt-8 md:pt-16 xl:pt-10">
                     <h1>
-                        {{ __('home.smart_city') }}
+                        {{ __('home.presentation2.smart_city') }}
                     </h1>
                 </div>
                 <div class="text-justify  text-gray-600 py-4  md:pt-4 md:px-4">
                     <p>
-                        {{ __('home.zbtic_is_a_territory_with_favorable_tax_policies') }}
+                        {{ __('home.presentation2.zbtic_is_a_territory_with_favorable_tax_policies') }}
                     </p>
                 </div>
             </div>

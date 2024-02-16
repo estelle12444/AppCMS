@@ -108,38 +108,39 @@
                 class="flex flex-col p-4 xl:p-0 mt-4 font-medium border border-gray-100 rounded-lg xl:flex-row xl:space-x-4 xl:mt-0 xl:border-0 dark:bg-gray-800 xl:dark:bg-gray-900 dark:border-gray-700">
                 <li>
                     <a href="/home"
-                        class="block py-2 pl-3 text-gray-700 {{ preg_match('/^\/(home|avantages\/[^\/]+)/',request()->path()) ? 'xl:text-orange-400 text-orange-400' : ''}} rounded xl:bg-transparent xl:hover:text-amber-500 xl:p-0 xl:dark:text-blue-500"
-                        aria-current="page">{{__('layouts.nav.home')}}</a>
+                        class="block py-2 pl-3 text-gray-700 {{ preg_match('(home|avantages.*)',request()->path()) ? 'xl:text-orange-400 text-orange-400' : ''}} rounded xl:bg-transparent xl:hover:text-amber-500 xl:p-0 xl:dark:text-blue-500"
+                        aria-current="page">{{__('layouts.nav.menu.home')}}</a>
                 </li>
+
                 <li>
                     <a href="/about"
                         class="block py-2 pl-3 pr-4 text-gray-700 {{ request()->path() == 'about' ? 'xl:text-orange-400 text-orange-400' : ''}} rounded xl:bg-transparent xl:hover:text-amber-500 xl:p-0 xl:dark:text-blue-500"
-                        aria-current="page">{{__('layouts.nav.about')}}</a>
+                        aria-current="page">{{__('layouts.nav.menu.about')}}</a>
                 </li>
                 <li>
                     <a href="/opportunity"
                         class="block py-2 pl-3 pr-4 text-gray-700 {{ request()->path() == 'opportunity' ? 'xl:text-orange-400 text-orange-400' : ''}} rounded xl:bg-transparent xl:hover:text-amber-500 xl:p-0 xl:dark:text-blue-500"
-                        aria-current="page">{{__('layouts.nav.opportunities')}}</a>
+                        aria-current="page">{{__('layouts.nav.menu.opportunities')}}</a>
                 </li>
                 <li>
                     <a href="/installer"
                         class="block py-2 pl-3 pr-4 text-gray-700 {{ request()->path() == 'installer' ? 'xl:text-orange-400 text-orange-400' : ''}} rounded xl:bg-transparent xl:hover:text-amber-500 xl:p-0 xl:dark:text-blue-500"
-                        aria-current="page">{{__('layouts.nav.install')}}</a>
+                        aria-current="page">{{__('layouts.nav.menu.install')}}</a>
                 </li>
                 <li>
                     <a href="/partners"
                         class="block py-2 pl-3 pr-4 text-gray-700 {{ str_starts_with(request()->path(), 'partners') ? 'xl:text-orange-400 text-orange-400' : ''}} rounded xl:bg-transparent xl:hover:text-amber-500 xl:p-0 xl:dark:text-blue-500"
-                        aria-current="page">{{__('layouts.nav.partners')}}</a>
+                        aria-current="page">{{__('layouts.nav.menu.partners')}}</a>
                 </li>
                 <li>
                     <a href="/actu"
                         class="block py-2 pl-3 pr-4 text-gray-700 {{ request()->path() == 'actu' ? 'xl:text-orange-400 text-orange-400' : ''}} rounded xl:bg-transparent xl:hover:text-amber-500 xl:p-0 xl:dark:text-blue-500"
-                        aria-current="page">{{__('layouts.nav.galery')}}</a>
+                        aria-current="page">{{__('layouts.nav.menu.galery')}}</a>
                 </li>
                 <li>
                     <a href="/annonce"
                         class="block py-2 pl-3 pr-4 text-gray-700 {{ preg_match('/^\/(annonce|info\/[^\/]+)/',request()->path()) ? 'xl:text-orange-400 text-orange-400' : ''}} rounded xl:bg-transparent xl:hover:text-amber-500 xl:p-0 xl:dark:text-blue-500"
-                        aria-current="page">{{__('layouts.nav.news')}}</a>
+                        aria-current="page">{{__('layouts.nav.menu.news')}}</a>
                 </li>
             </ul>
 

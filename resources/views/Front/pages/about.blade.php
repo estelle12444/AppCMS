@@ -30,17 +30,17 @@
                 <div data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="700"
                     class=" md:px-8 xl:w-1/2  mx-4 xl:mr-24">
                     <div  class="font-bold xl:text-5xl py-8 text-4xl md:text-5xl ">
-                        {!! __('about.director_general_message_title') !!}
+                        {!! __('about.director.title') !!}
                     </div>
                     <div class="text-justify text-gray-600 xl:text-lg tracking-tight ">
-                        {!! __('about.director_general_message') !!}
+                        {!! __('about.director.message') !!}
                     </div>
                     <div class="py-8" style="float:right ">
                         <div class="font-bold">
-                            {!! __('about.director_general_name') !!}
+                            {!! __('about.director.name') !!}
                         </div>
 
-                        {!! __('about.director_general') !!}
+                        {!! __('about.director') !!}
                     </div>
                 </div>
 

@@ -9,91 +9,138 @@ use Illuminate\Validation\Rule;
 
 class ContentController extends Controller
 {
+    private function data(){
+        return [
+            [
+                'title' => 'Dispositions',
+                'id' => 'layouts',
+                'items' => [
+                    'layouts' => 'Tous les élements de Dispositions ',
+                    'layouts.nav' => 'Entête du site\ Header',
+                    'layouts.nav.menu' => 'Menu de l\'Entête ',
+                    'layouts.footer' => 'Pied de page/ Footer',
+                    'layouts.footer.address' => 'Adresse ou contact',
+                    'layouts.footer.ads' => 'Annonce du Footer',
+                    'layouts.footer.newsletter' => ' Newsletter',
+                    'layouts.footer.social' => ' réseau social',
+                    'layouts.footer.copyright' => ' Copyright',
+                ]
+            ],
+            [
+                'title' => 'Administration Client',
+                'id' => 'profil',
+                'items' => [
+                    'profil'=>'Adminstration Client',
+                    'profil.layouts' =>"Bar de navigation",
+                    'profil.layouts.requests' =>'Demandes effectuées',
+                    'profil.layouts.documents' => 'Documents founirs',
+                    'profil.home'=>'Accueil',
+                    'profil.company'=>'Données Entreprises',
+                    'profil.company.form' => ' Champs du Formulaire',
+                    'profil.document_edit' => 'Modification du document',
+                    'profil.profil_edit' => 'Modifications des informations',
+                    'profil.demande_state' => 'Etat de la demande'
+                ]
+            ],
+            [
+                'title' => 'Accueil/Home',
+                'id' => 'home',
+                'items' => [
+                    'home' => ' Tous le contenu Accueil/Home',
+                    'home.carousel'=>"Texte introductif",
+                    'home.carousel.left'=>'Texte introductif 2',
+                    'home.advantages'=>'Les titres des avantages',
+                    'home.presentation'=>'Contenu de la presentation',
+                    'home.presentation2'=>'Contenu des autres avantages',
+
+                ]
+            ],
+            [
+                'title' => 'A propos/About us',
+                'id' => 'about',
+                'items' => [
+                    'about' => 'Tous',
+                    'about.vision'=>'Notre vision',
+                    'about.director'=>' Mot du directeur',
+                    'about.mission'=>'Notre mission',
+                    'about.value'=>'Nos Valeurs',
+                ]
+            ],
+            [
+                'title' => 'Opportunités / Opportunity',
+                'id' => 'opportunity',
+                'items' => [
+                    'opportunity' => 'Tous',
+                    'opportunity.zone'=>'Domaines d\'activités',
+                    'opportunity.projects'=>'Nos projets',
+                    'opportunity.projects.future_projects'=>'Nos futurs projets',
+                    'opportunity.section'=>'Autres Opportunités',
+
+                ]
+            ],
+            [
+                'title' => 'S\'implanter / Installer',
+                'id' => 'installer',
+                'items' => [
+                    'installer' => 'Tous voir',
+                    'installer.carousel'=>' Le texte introductif',
+                    'installer.section.eligibility'=>'Les différents eligibilités',
+                    'installer.section.eligibility.prerequisites'=>'Les prérequies de nos éligibilités',
+                    'installer.section.eligibility.activities'=>'Nos activités éligibles',
+                    'installer.section.eligibility.industrial'=>'Nos activités éligibles industrielles',
+                    'installer.section.value_added'=>'Notre valeur ajoutée',
+                    'installer.join_us'=>'Nous rejoindre'
+                ]
+            ],
+            [
+                'title' => 'Annonces',
+                'id' => 'new',
+                'items' => [
+                    'news' => 'Annonce/ News',
+                    'news.job'=>'Offres en Génerales',
+                    'news.job.no'=>'Offres',
+                    'news.job.no.result'=>'En cas de non-resultat',
+                ]
+            ],
+            [
+                'title' => 'Détail de l\'offre',
+                'id' => 'info',
+                'items' => [
+                    'info' => 'Détail de l\'annonce',
+                    'info.job'=>'Détail de l\'offre',
+                ]
+            ],
+            [
+                'title' => 'Actualités',
+                'id' => 'actu',
+                'items' => [
+                    'actu'=>'Gallérie',
+                    'actu.event'=>'Evénements',
+                ]
+            ],
+            [
+                'title' => 'Site: page d\'natterrissage',
+                'id' => 'landing',
+                'items' => [
+                    'landing' => 'Tous Savoir',
+                    'landing.innovation_village'=>'Village de l\'innovation',
+                    'landing.agreement_application'=>'Documents d\'agrément',
+                    'landing.website_browsing'=>'lien du naviguation',
+
+                ]
+            ]
+        ];
+    }
+
     public function contentIndex(){
-        $pages = [
-            'home' => [
-                "title" => "Accueil/Home",
-                "count" => 20
-            ],
-            'about' => [
-                "title" => "'A propos'/About us",
-                "count" => 9
-            ],
-            'opportunity' => [
-                "title" => " 'Opportunités' / Opportunity",
-                "count" => 26
-            ],
-            'installer' => [
-                "title" => " 'S'implanter' / Installer",
-                "count" => 33
-            ],
+        $sections = $this->data();
 
-            'news' => [
-                "title" => "'Annonce'/ News",
-                "count" =>8
-            ],
-
-            'info' => [
-                "title" => " Info , Detail de l'annonce",
-                "count" => 6
-            ],
-            'actu'=>[
-                "title"=>"Gallérie/ Gallery",
-                "count" =>1
-            ],
-
-        ];
-        $head= [
-            'landing' => [
-                "title" => "Site: page d'atterrissage",
-                "count" => 7
-            ],
-            'layouts.nav' => [
-                "title" => "Entête du site /Site of Header",
-                "count" => 14
-            ],
-            'layouts.footer' => [
-                "title" => "Pied de page/ Footer ",
-                "count" => 19
-            ]
-        ];
-        $profil = [
-            'layouts' => [
-                "title" => "Siebar / Bar de navigation",
-                "count" => 8
-            ],
-            'home' => [
-                "title" => "Accueil",
-                "count" => 10
-            ],
-            'profil.company' => [
-                "title" => "Informations de l'entreprise",
-                "count" => 14
-            ],
-            'profil.document' => [
-                "title" => "Liste des documents transmis",
-                "count" => 6
-            ],
-            'profil.profil_edit' => [
-                "title" => "Modifications des informations",
-                "count" => 6
-            ],
-            'profil.demande_state' => [
-                "title" => "Liste des demandes à effectuer",
-                "count" => 9
-            ],
-            'profil.form' => [
-                "title" => "Formulaire",
-                "count" => 23
-            ]
-        ];
-
-
-        return view('Front.admin.content.index',compact('pages','profil','head'));
+        return view('Front.admin.content.index',compact('sections'));
     }
 
     public function contentPage($key){
         $contents = [];
+        $title = '';
 
         foreach (['fr', 'en'] as $id) {
             $json = json_decode(file_get_contents(resource_path("lang/$id.json")), true);
@@ -101,7 +148,13 @@ class ContentController extends Controller
                 return Str::startsWith($index, $key);
             })->toArray();
         }
-        return view('Front.admin.content.page', compact('contents','key'));
+
+        if(count($contents['fr']) > 0){
+            $titles =  array_merge(...array_map(fn($section) => $section['items'], $this->data()));
+            $title = $titles[$key];
+        }
+
+        return view('Front.admin.content.page', compact('contents','key', 'title'));
     }
 
     public function contentPageEdit($key){

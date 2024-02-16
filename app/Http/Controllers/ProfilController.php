@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Traits\AnnonceTrait;
+use App\Models\Activity;
 use App\Models\Company;
 use App\Models\Document;
+use App\Models\Enums\ActivityTypeEnum;
 use App\Models\TypeDeDemande;
 use App\Models\TypeDocumentTypeDemande;
 use App\Models\User;
@@ -28,28 +31,34 @@ class ProfilController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
+
+    use AnnonceTrait;
+    
     public function index()
     {
-        $typeDemandes = TypeDeDemande::all();
-
+        $typeDemandes = TypeDeDemande::ofLang('fr')->get();
         $user = auth()->user();
-
         $demandesCountByType = [];
-
         foreach ($typeDemandes as $typeDemande) {
-            $demandesCountByType[$typeDemande->name] = $user->demandes()->where('type_de_demande_id', $typeDemande->id)->count();
+            $demandesCountByType[$typeDemande->translator['name']] = $user->demandes()->where('type_de_demande_id', $typeDemande->id)->count();
         }
         View::share('typeDemandes', $typeDemandes);
         View::share('demandesCountByType', $demandesCountByType);
+    //Catégorie activities
 
-        return view('Front.profil.home', compact('typeDemandes', 'demandesCountByType'));
+        $activities = $this->getAnnonces(offset: Activity::active()->count());
+        $keys = collect($activities)->map(function($item) {
+            return $item['type'];
+        })->unique()->toArray();
+
+        return view('Front.profil.home', compact('typeDemandes', 'demandesCountByType','activities'));
     }
 
 
 
     public function demande()
     {
-        $typeDemandes = TypeDeDemande::all();
+        $typeDemandes = TypeDeDemande::ofLang('fr')->get();
         return view('Front.profil.demande', compact('typeDemandes'));
     }
 
@@ -62,7 +71,7 @@ class ProfilController extends Controller
             'demandes' => function ($query) use ($userId) {
                 $query->with('documents')->where('user_id', $userId);
             },
-        ])->get();
+        ])->ofLang('fr')->get();
 
 
         return view('Front.profil.document', compact('typesDeDemande'));
@@ -89,11 +98,9 @@ class ProfilController extends Controller
         return $email;
     }
 
-
-
     public function getCount()
     {
-        $typeDemandes = TypeDeDemande::all();
+        $typeDemandes = TypeDeDemande::ofLang('fr')->get();
         $user = auth()->user();
         $demandesCountByType = [];
 
@@ -102,7 +109,7 @@ class ProfilController extends Controller
         foreach ($typeDemandes as $typeDemande) {
             $count = $user->demandes()->where('type_de_demande_id', $typeDemande->id)->count();
             $demandesCountByType[] = [
-                'type' => $typeDemande->name,
+                'type' => $typeDemande->translator['name'],
                 'count' => $count,
             ];
 

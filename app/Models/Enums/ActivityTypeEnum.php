@@ -2,6 +2,7 @@
 
 namespace App\Models\Enums;
 
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Session;
 
 enum ActivityTypeEnum: string
@@ -21,12 +22,13 @@ enum ActivityTypeEnum: string
             ActivityTypeEnum::QUOTATIONS => asset('img/annonce/cotation.png'),
             ActivityTypeEnum::TENDER => asset('img/annonce/appel_offre.jpg'),
             ActivityTypeEnum::JOBS => asset('img/annonce/offre_emploi.jpg'),
+            ActivityTypeEnum::NEWS => asset('img/annonce/appel_offre.jpg'),
         };
     }
 
     public function getTypeText(): string
     {
-        $cond = Session::get('locale') == 'fr';
+        $cond = App::getLocale() == 'fr';
 
         return match ($this) {
             ActivityTypeEnum::CAREERS =>  $cond ? "Appels à Candidature" : 'Careers',
@@ -34,6 +36,7 @@ enum ActivityTypeEnum: string
             ActivityTypeEnum::QUOTATIONS => $cond ? 'Demande de cotation' : 'Quotation',
             ActivityTypeEnum::TENDER => $cond ? "Appels d'Offres" : 'Tenders',
             ActivityTypeEnum::JOBS => $cond ? "Offres d'emploi" : 'Jobs',
+            ActivityTypeEnum::NEWS => $cond ? "Annonces" : 'News',
         };
     }
 
@@ -219,7 +222,7 @@ enum ActivityTypeEnum: string
             ActivityTypeEnum::QUOTATIONS => 'Modifier la demande de cotation',
             ActivityTypeEnum::TENDER => "Modifier l'appel d'offre",
             ActivityTypeEnum::JOBS => "Modifier l'offre  d'emploi",
-            ActivityTypeEnum::JOBS => "Modifier l'actualité",
+            ActivityTypeEnum::NEWS => "Modifier l'actualité",
         };
     }
 }

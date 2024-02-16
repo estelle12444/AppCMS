@@ -14,22 +14,40 @@ class TypeDocumentTypeDemandeSeeder extends Seeder
      */
     public function run(): void
     {
-        $document1 = [1, 2, 3, 4];
-        $typeDemandeId1 = 1;
+        $documentFr1 = [1, 3, 5, 7];
+        $typeDemandeIdFr1 = 1;
 
-        $document2 = [1,2,3,4,5,6];
-        $typeDemandeId2 = 2;
+        $documentAn1 = [2, 4, 6, 8];
+        $typeDemandeIdAn1 = 2;
 
-        foreach ($document1 as $document) {
+        $documentFr2 = [1, 3, 5, 7,9,11];
+        $typeDemandeIdFr2 = 3;
+
+        $documentAn2 = [2, 4, 6, 8,10,12];
+        $typeDemandeIdAn2 = 4;
+
+        foreach ($documentFr1 as $document) {
             TypeDocumentTypeDemande::create([
                 'type_de_document_id' => $document,
-                'type_de_demande_id' => $typeDemandeId1
+                'type_de_demande_id' => $typeDemandeIdFr1
             ]);
         }
-        foreach ($document2 as $document) {
+        foreach ($documentAn1 as $document) {
             TypeDocumentTypeDemande::create([
                 'type_de_document_id' => $document,
-                'type_de_demande_id' => $typeDemandeId2
+                'type_de_demande_id' => $typeDemandeIdAn1
+            ]);
+        }
+        foreach ($documentFr2 as $document) {
+            TypeDocumentTypeDemande::create([
+                'type_de_document_id' => $document,
+                'type_de_demande_id' => $typeDemandeIdFr2
+            ]);
+        }
+        foreach ($documentAn2 as $document) {
+            TypeDocumentTypeDemande::create([
+                'type_de_document_id' => $document,
+                'type_de_demande_id' => $typeDemandeIdAn2
             ]);
         }
     }

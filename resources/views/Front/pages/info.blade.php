@@ -8,23 +8,23 @@
                 <img src="{{ asset('img/annonce/appel_offre.jpg') }}" alt="News Image" class="w-full h-64 object-cover mb-4 rounded-lg">
 
                 <div class="pb-4" style="color: #F18700;">
-                    <p> {!! __('info.job') !!} N 0{{ $activity->id }}</p>
+                    <p> {!! __('info.job.name') !!} N 0{{ $activity->id }}</p>
                 </div>
                 <h3 class="text-3xl font-bold mb-4"> {{ $activity->translator['title'] }}</h3>
 
                 <div class="prose max-w-none text-justify mb-4">
-                    <p> {!! __('info.describe') !!}:
+                    <p> {!! __('info.job.describe') !!}:
                         {{ strip_tags($activity->translator['content']) }}
                     </p>
 
                 </div>
                 <div class="prose max-w-none text-justify mb-4">
-                    <p> {!! __('info.resume') !!}:
+                    <p> {!! __('info.job.resume') !!}:
                         {{ strip_tags($activity->translator['resume']) }}
                     </p>
                 </div>
                 <div class="prose max-w-none text-justify mb-4">
-                    <p> {!! __('info.limit.date') !!}:
+                    <p> {!! __('info.job.limit.date') !!}:
                         {{ strip_tags($activity->translator['limit_date'] ) }}
                     </p>
                 </div>
@@ -42,7 +42,7 @@
                         <div class="w-3/5">
                             <a href="{{ asset('storage/' . $activity->file) }}" class="underline hover:underline">
                                 <div class="text-lg">
-                                    {!! __('news.download.tender') !!}
+                                    {!! __('news.job.download.tender') !!}
                                 </div>
                             </a>
                         </div>
@@ -64,7 +64,7 @@
                 <a href="{{route('annonce')}}">
                     <button type="button" style="background-color: #F18700"
                         class="pl-4 pr-4 pt-2 pb-2 font-medium rounded-none white text-center ">
-                        {!! __('info.previous') !!}
+                        {!! __('info.job.previous') !!}
                     </button>
                 </a>
             </div>

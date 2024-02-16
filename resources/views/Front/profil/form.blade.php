@@ -12,7 +12,7 @@
             @endif
             <div class="lg:container text-gray-600 dark:text-gray-400" style="text-align: justify;padding:0 60 60 60;">
                 <div class="min-w-0 p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
-                    <h3 class="text-center"> {{ __('profil.form.title', [ 'title' => $typeDeDemande->name]) }} </h3>
+                    <h3 class="text-center"> {{ __('profil.form.title', [ 'title' => $typeDeDemande->translator['name']]) }} </h3>
                     <hr><br>
                     <div id="part1">
                         <h5 class="">{{ __('profil.form.part1_title1') }}</h5>
@@ -38,6 +38,7 @@
                         <h5 class="lg:px-10 md:px-0">{{ __('profil.form.part1_title4') }}</h5>
                         <P class="text-justify lg:px-10 md:px-0">{{ __('profil.form.part1_description4') }}</P>
                         <ol>
+                            
                             @foreach ($eligibilities as $eligibility)
                                 <li> <strong>{{ $loop->iteration }} </strong>: {{ $eligibility->eligibility->translator['title'] }} </li>
                                 <!-- Afficher d'autres détails de l'obligation selon vos besoins -->

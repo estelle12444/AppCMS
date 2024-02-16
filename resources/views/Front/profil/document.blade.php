@@ -14,7 +14,7 @@
 
             @foreach ($typesDeDemande as $typeDeDemande)
                 <div class="mb-4">
-                    <h2 class="text-xl font-semibold">{{ $typeDeDemande->translator->name }}</h2>
+                    <h2 class="text-xl font-semibold">{{ $typeDeDemande->translator['name'] }}</h2>
                     @if ($typeDeDemande->demandes->count() > 0)
                         <div class="grid gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-1 xl:grid-cols-6">
                             @foreach ($typeDeDemande->demandes as $demande)

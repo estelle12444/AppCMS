@@ -158,7 +158,7 @@ $url = $_SERVER['REQUEST_URI'];
                         <li class="menu-header">Annonces et Actualités </li>
                         <li class="dropdown">
                             <a href="#" class="nav-link has-dropdown <?php echo $url === '/new' || $url === '/new/create' ? ' active bg-primary text-white' : ''; ?>"data-toggle="dropdown">
-                                <i class="fas fa-newspapper"></i> <span>Actualités</span>
+                                <i class="fa fa-th-list"></i> <span>Actualités</span>
                             </a>
                             <ul class="dropdown-menu">
                                 <li>

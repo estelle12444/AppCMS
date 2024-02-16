@@ -6,7 +6,7 @@ use App\Models\Activity;
 use App\Models\Enums\ActivityTypeEnum;
 use Illuminate\Http\Request;
 
-class NewController extends Controller
+class NewController extends ActivityController
 {
     protected $folder = 'new';
     protected $type = ActivityTypeEnum::NEWS;

@@ -27,23 +27,24 @@ use Illuminate\Support\Facades\Storage;
 
 class TypeDeDemandeController extends Controller
 {
-    public function index()
-    {
-        $typeDemandes = TypeDeDemande::all();
-        return view('Front.demande.index', compact('typeDemandes'));
-    }
 
     public function form(Request $request, TypeDeDemande $typeDeDemande)
     {
-        $obligations = ObligationTypeDemande::with('obligation')->where('type_de_demande_id', $typeDeDemande->id)
-            ->get();
-        $dispositions = DispositionTypeDemande::with('disposition')->where('type_de_demande_id', $typeDeDemande->id)
-            ->get();
+        $obligations = ObligationTypeDemande::whereHas('obligation', function ($query) {
+            $query->ofLang('fr');
+        })->where('type_de_demande_id', $typeDeDemande->id)->get();
 
-        $eligibilities = EligibilityTypeDemande::with('eligibility')->where('type_de_demande_id', $typeDeDemande->id)
-            ->get();
-        $documentsType = TypeDocumentTypeDemande::with('typeDocuments')->where('type_de_demande_id', $typeDeDemande->id)
-            ->get();
+        $dispositions = DispositionTypeDemande::whereHas('disposition', function ($query) {
+            $query->ofLang('fr');
+        })->where('type_de_demande_id', $typeDeDemande->id)->get();
+
+        $eligibilities = EligibilityTypeDemande::whereHas('eligibility', function ($query) {
+            $query->ofLang('fr');
+        })->where('type_de_demande_id', $typeDeDemande->id)->get();
+
+        $documentsType = TypeDocumentTypeDemande::whereHas('typeDocuments', function ($query) {
+            $query->ofLang('fr');
+        })->where('type_de_demande_id', $typeDeDemande->id)->get();
 
 
         if (Auth::check()) {
@@ -53,7 +54,7 @@ class TypeDeDemandeController extends Controller
                 return view('Front.profil.form',  compact('company', 'typeDeDemande', 'obligations', 'dispositions', 'eligibilities', 'documentsType'));
             }
         }
-        session()->flash('error', 'Vous devez être connecté et associé à une entreprise pour accéder à cette page.');
+        session()->flash('error', trans('account.message',));
 
         return redirect()->route('login');
     }
@@ -150,7 +151,8 @@ class TypeDeDemandeController extends Controller
     public function retrieveDocument(string $filepath)
     {
         return Response::make(
-            Storage::disk('public')->get('documents/'.$filepath), 200,
+            Storage::disk('public')->get('documents/' . $filepath),
+            200,
             ['content-type' => Storage::disk('public')->mimeType($filepath)]
         );
     }

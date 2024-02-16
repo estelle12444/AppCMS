@@ -14,63 +14,43 @@ class ObligationTypeDemandeSeeder extends Seeder
      */
     public function run(): void
     {
+        $obligationFr1 = [1, 3, 5, 7,9,11,13,15,17];
+        $typeDemandeIdFr1 = 1;
 
+        $obligationAn1 = [2, 4, 6, 8,10,12,14,16,18];
+        $typeDemandeIdAn1 = 2;
 
-        ObligationTypeDemande::insert([
-            [
-                'obligation_id' => 1,
-                'type_de_demande_id' => 1
-            ],
-            [
-                'obligation_id' => 2,
-                'type_de_demande_id' => 1
-            ],
-            [
-                'obligation_id' => 3,
-                'type_de_demande_id' => 1
-            ],
-            [
-                'obligation_id' => 4,
-                'type_de_demande_id' => 1
-            ],
-            [
-                'obligation_id' => 5,
-                'type_de_demande_id' => 1
-            ],
-            [
-                'obligation_id' => 6,
-                'type_de_demande_id' => 1
-            ],
-            [
-                'obligation_id' => 7,
-                'type_de_demande_id' => 1
-            ],
-            [
-                'obligation_id' => 8,
-                'type_de_demande_id' => 1
-            ],
-            [
-                'obligation_id' => 9,
-                'type_de_demande_id' => 1
-            ],
-            [
-                'obligation_id' => 10,
-                'type_de_demande_id' => 2
-            ],
-            [
-                'obligation_id' => 2,
-                'type_de_demande_id' => 2
-            ],
-            [
-                'obligation_id' => 3,
-                'type_de_demande_id' => 2
-            ],
-            [
-                'obligation_id' => 4,
-                'type_de_demande_id' => 2
-            ],
+        $obligationFr2 = [19, 3, 5, 7];
+        $typeDemandeIdFr2 = 3;
 
-        ]);
+        $obligationAn2 = [20, 4, 6, 8];
+        $typeDemandeIdAn2 = 4;
+
+        foreach ($obligationFr1 as $obligation) {
+            ObligationTypeDemande::create([
+                'obligation_id' => $obligation,
+                'type_de_demande_id' => $typeDemandeIdFr1
+            ]);
+        }
+        foreach ($obligationAn1 as $obligation) {
+            ObligationTypeDemande::create([
+                'obligation_id' => $obligation,
+                'type_de_demande_id' => $typeDemandeIdAn1
+            ]);
+        }
+        foreach ($obligationFr2 as $obligation) {
+            ObligationTypeDemande::create([
+                'obligation_id' => $obligation,
+                'type_de_demande_id' => $typeDemandeIdFr2
+            ]);
+        }
+        foreach ($obligationAn2 as $obligation) {
+            ObligationTypeDemande::create([
+                'obligation_id' => $obligation,
+                'type_de_demande_id' => $typeDemandeIdAn2
+            ]);
+        }
+
 
     }
 }

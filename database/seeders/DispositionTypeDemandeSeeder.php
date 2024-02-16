@@ -13,23 +13,40 @@ class DispositionTypeDemandeSeeder extends Seeder
      */
     public function run(): void
     {
+        $dispositionFr1 = [1, 3, 5,7,9,11];
+        $typeDemandeIdFr1 = 1;
 
-        $dispositions1 = [1, 2, 3, 4, 5, 6];
-        $typeDemandeId1 = 1;
+        $dispositionAn1 = [2, 4, 6,8,10,12];
+        $typeDemandeIdAn1 = 2;
 
-        $dispositions2 = [1,2,3,4,5,6,7,8];
-        $typeDemandeId2 = 2;
+        $dispositionFr2 = [1, 3, 5,7,9,11,13,15];
+        $typeDemandeIdFr2 = 3;
 
-        foreach ($dispositions1 as $disposition) {
+        $dispositionAn2 = [2, 4, 6,8,10,12,14,16];
+        $typeDemandeIdAn2 = 4;
+
+        foreach ($dispositionFr1 as $disposition) {
             DispositionTypeDemande::create([
                 'disposition_id' => $disposition,
-                'type_de_demande_id' => $typeDemandeId1
+                'type_de_demande_id' => $typeDemandeIdFr1
             ]);
         }
-        foreach ($dispositions2 as $disposition) {
+        foreach ($dispositionAn1 as $disposition) {
             DispositionTypeDemande::create([
                 'disposition_id' => $disposition,
-                'type_de_demande_id' => $typeDemandeId2
+                'type_de_demande_id' => $typeDemandeIdAn1
+            ]);
+        }
+        foreach ($dispositionFr2 as $disposition) {
+            DispositionTypeDemande::create([
+                'disposition_id' => $disposition,
+                'type_de_demande_id' => $typeDemandeIdFr2
+            ]);
+        }
+        foreach ($dispositionAn2 as $disposition) {
+            DispositionTypeDemande::create([
+                'disposition_id' => $disposition,
+                'type_de_demande_id' => $typeDemandeIdAn2
             ]);
         }
     }

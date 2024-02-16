@@ -34,8 +34,6 @@
                 <button type="button" onclick="setContent('#bloc-jobs')"
                     class="text-gray-900 border border-white hover:border-amber-500 dark:border-amber-500 dark:bg-amber-900 dark:hover:border-amber-700 bg-white focus:ring-4 focus:outline-none focus:ring-amber-500 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-amber-800">
                     {{ \App\Models\Enums\ActivityTypeEnum::JOBS->getTypeText() }}</button>
-
-
             </div>
         </div>
 

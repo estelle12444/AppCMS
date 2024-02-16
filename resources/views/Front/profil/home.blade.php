@@ -79,45 +79,51 @@
                                 </tr>
                             </thead>
                             <tbody class="bg-white divide-y dark:divide-gray-700 dark:bg-gray-800">
-                                {{-- @foreach ($tenders as  $tender)
-                                    <tr class="text-gray-700 dark:text-gray-400">
-                                        <td class="px-4 py-3">
-                                            <div class="flex items-center text-sm">
-                                                <!-- Avatar with inset shadow -->
-                                                <div class="relative hidden w-10 h-8 mr-3 rounded-full md:block">
-                                                    <img class="object-cover w-full h-full rounded-full"
-                                                        src="{{ asset('img/annonce/appel_offre.jpg') }}" alt=""
-                                                        loading="lazy" />
-                                                    <div class="absolute inset-0 rounded-full shadow-inner" aria-hidden="true">
+                                @foreach (collect($activities)->groupBy('type') as $key => $group)
+                                    @php
+                                        $paginator = paginate($group);
+                                        $type = \App\Models\Enums\ActivityTypeEnum::tryFrom($key);
+                                    @endphp
+                                    @foreach ($paginator as $tender)
+                                        <tr class="text-gray-700 dark:text-gray-400">
+                                            <td class="px-4 py-3">
+                                                <div class="flex items-center text-sm">
+                                                    <!-- Avatar with inset shadow -->
+                                                    <div class="relative hidden w-10 h-8 mr-3 rounded-full md:block">
+                                                        <img class="object-cover w-full h-full rounded-full"
+                                                            src="{{ $key != 'events' ? $type->getImage() : asset('storage/'.$tender['image']) }}" alt=""
+                                                            loading="lazy" />
+                                                        <div class="absolute inset-0 rounded-full shadow-inner" aria-hidden="true">
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                       <p class="font-semibold">{{ $type->getTypeText()}}</p>
+
                                                     </div>
                                                 </div>
-                                                <div>
-                                                    <p class="font-semibold">{{(__("layouts.footer.tender"))}}</p>
-
+                                            </td>
+                                            <td class="px-4 py-3 text-sm">
+                                                {{ $tender['title']}}
+                                            </td>
+                                            <td class="px-4 py-3 ">
+                                                <p class="text-md text-gray-600 dark:text-gray-400">
+                                                    {{ Str::limit(strip_tags($tender['content']), 100, '...') }}
+                                                </p>
+                                            </td>
+                                            <td class="px-4 py-3 text-sm">
+                                                {{Carbon\Carbon::parse($tender['limit_date'])->format('d/m/Y')}}
+                                            </td>
+                                            <td class="px-4 py-3">
+                                                <div class="flex items-center space-x-4 text-sm">
+                                                    <a href="/annonces">
+                                                        <button
+                                                            class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-blue-500 border border-transparent rounded-lg active:bg-blue-100 hover:bg-blue-500 focus:outline-none focus:shadow-outline-purple">
+                                                            {{(__("layouts.footer.submit"))}} </button></a>
                                                 </div>
-                                            </div>
-                                        </td>
-                                        <td class="px-4 py-3 text-sm">
-                                            {{$tender->title}}
-                                        </td>
-                                        <td class="px-4 py-3 ">
-                                            <p class="text-md text-gray-600 dark:text-gray-400">
-                                                {{Str::limit($tender->content, 100, '...')}}
-                                            </p>
-                                        </td>
-                                        <td class="px-4 py-3 text-sm">
-                                            {{Carbon\Carbon::parse($tender->limit_date)->format('d/m/Y')}}
-                                        </td>
-                                        <td class="px-4 py-3">
-                                            <div class="flex items-center space-x-4 text-sm">
-                                                <a href="/annonces">
-                                                    <button
-                                                        class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-blue-500 border border-transparent rounded-lg active:bg-blue-100 hover:bg-blue-500 focus:outline-none focus:shadow-outline-purple">
-                                                        {{(__("layouts.footer.submit"))}} </button></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                @endforeach --}}
+                                            </td>
+                                        </tr>
+                                    @endforeach
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
