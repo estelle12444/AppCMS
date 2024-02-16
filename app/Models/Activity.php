@@ -13,6 +13,7 @@ class Activity extends Model implements TranslateContracts
     use HasFactory, ParentLanguageTrait;
 
     protected $with = ['child'];
+    protected $appends = ['translator'];
     protected $fillable = ['title', 'content', 'resume', 'image', 'file', 'limit_date', 'type','translate_code', 'parent_id'];
 
     public function scopeOfType(Builder $query, array $type): void

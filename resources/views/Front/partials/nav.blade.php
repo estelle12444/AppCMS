@@ -52,7 +52,7 @@
                             </ul>
                             <div class="py-1 flex items-center ">
 
-                                    <a href="/profil"
+                                    <a href="{{route('logout')}}"
                                         class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke="currentColor"
                                             class="w-5 h-5 mr-2 text-red-500">
@@ -87,9 +87,18 @@
                 @endif
             @endif
 
-            <p class=" pl-4 pt-4 xl:pt-2 xl:pl-8">
-                <strong style="color:  #F18700;"><a style="text-decoration:none;cursor:pointer;" href="{{ route('lang', ['locale' => 'fr']) }}">{{ __('FR') }}</a></strong> | <a  style="text-decoration:none;cursor:pointer;" href="{{ route('lang', ['locale' => 'en']) }}">{{ __('EN') }} </a>
+            <p class="pl-4 pt-4 xl:pt-2 xl:pl-8">
+
+                <a style="text-decoration:none;cursor:pointer;color: {{ app()->getLocale() == 'fr' ? '#F18700' : '#000000' }}; font-weight: {{ app()->getLocale() == 'fr' ? 'bold' : 'normal' }}"
+                    href="{{ app()->getLocale() == 'en' ? route('lang', ['locale' => 'fr']) : '#' }}">{{ __('FR') }}</a>
+                |
+                <a style="text-decoration:none;cursor:pointer; color: {{ app()->getLocale() == 'en' ? ' #F18700' : '#000000' }}; font-weight: {{ app()->getLocale() == 'fr' ? 'normal' : ' bold' }}"
+                    href="{{ app()->getLocale() == 'fr' ? route('lang', ['locale' => 'en']) : '#' }}">{{ __('EN') }} </a>
+
             </p>
+
+
+
 
             <button data-collapse-toggle="navbar-sticky" type="button"
                 class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-700 rounded-lg xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"

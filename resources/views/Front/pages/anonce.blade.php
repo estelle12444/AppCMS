@@ -45,13 +45,12 @@
                     $type = \App\Models\Enums\ActivityTypeEnum::tryFrom($key);
                 @endphp
                 @foreach ($paginator as $activity)
-                   
                     <div class="px-4 py-10">
                         <div data-aos="zoom-in"
                             class="  md:mx-auto  max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                             <a href="#">
                                 <img class="h-48 xl:h-48 lg:h-52 w-full"
-                                    src="{{ $key != 'events' ? $type->getImage() : asset('storage/'.$activity['image']) }}" alt="" />
+                                    src="{{ $key != 'events' ? $type->getImage() : asset('storage/'.$activity['translator']['image']) }}" alt="" />
                             </a>
                             <div class="p-5 ">
                                 <a href="{{ route('Front.pages.info', $activity['id']) }}">
@@ -61,9 +60,9 @@
                                 </a>
                                 <a href="{{ route('Front.pages.info', $activity['id']) }}">
                                 <h5 class="mb-2 text-xl font-bold tracking-tight text-blue-800 dark:text-white capitalize ">
-                                    {{ $activity['title'] }}</h5>
+                                    {{ $activity['translator']['title'] }}</h5>
                                 </a>
-                                {{ Str::limit(strip_tags($activity['resume']), 100, '...') }}
+                                {{ Str::limit(strip_tags($activity['translator']['resume']), 100, '...') }}
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
                                     <a href="{{ route('Front.pages.info', $activity['id']) }}" id="voirPlusBtn"
                                         class=" hover:text-amber-500 text-blue-800 font-semibold py-2  rounded">
@@ -72,7 +71,7 @@
                                 </p>
                                 <p>
                                     <span class="text-blue-800 font-bold"> {!!__('news.job.limit.date')!!}</span>
-                                    <span style="color: #F18700;">{{ $activity['limit_date'] }}</span>
+                                    <span style="color: #F18700;">{{ $activity['translator']['limit_date'] }}</span>
                                 </p>
                                 @if(!is_null($activity['file']))
                                     <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 ">
@@ -85,7 +84,7 @@
                                                 </svg>
                                             </div>
                                             <div class="w-3/5">
-                                                <a href="{{ route('download_file') }}?filename={{ $activity['file'] }}"
+                                                <a href="{{ route('download_file') }}?filename={{ $activity['translator']['file'] }}"
                                                     class="underline hover:underline">
                                                     <div class="text-lg">
                                                         {!!__('news.job.download.tender')!!}
@@ -93,8 +92,8 @@
                                                 </a>
                                             </div>
                                             <div class="w-1/5">
-                                                <a href="{{ route('download_file') }}?filename={{ $activity['file'] }}"
-                                                    title="{{ $activity['title'] }}" class="underline hover:underline">
+                                                <a href="{{ route('download_file') }}?filename={{ $activity['translator']['file'] }}"
+                                                    title="{{ $activity['translator']['title'] }}" class="underline hover:underline">
                                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                                         stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -124,10 +123,10 @@
                             alt="" />
                         <div class="p-5">
                             <div class="text-lg">
-                                {!!__('news.no.result.title')!!}
+                                {!!__('news.job.no.result.title')!!}
                             </div>
                             <div class="text-gray-500">
-                                {!!__('news.no.result')!!}
+                                {!!__('news.job.no.result')!!}
                             </div>
                         </div>
                     </div>
