@@ -103,11 +103,11 @@
                                                 </div>
                                             </td>
                                             <td class="px-4 py-3 text-sm">
-                                                {{ $tender['title']}}
+                                                {{ Str::limit(strip_tags($tender['title']), 30, '...')}}
                                             </td>
                                             <td class="px-4 py-3 ">
                                                 <p class="text-md text-gray-600 dark:text-gray-400">
-                                                    {{ Str::limit(strip_tags($tender['content']), 100, '...') }}
+                                                    {{ Str::limit(strip_tags($tender['content']), 50, '...') }}
                                                 </p>
                                             </td>
                                             <td class="px-4 py-3 text-sm">

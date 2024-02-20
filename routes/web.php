@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AnnonceController;
+use App\Http\Controllers\ApplicantController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\CareerController;
 use App\Http\Controllers\CompanyAuthController;
@@ -190,7 +191,7 @@ Route::middleware(['admin'])->group(function () {
     });
 
     Route::put('/valider-compagnie/{id}', [CompanyController::class, 'validerCompagnie'])->name('validerCompagnie');
-    Route::get('/annonce/applicant', [AdminController::class, 'applicantIndex'])->name('applicantIndex');
+    Route::get('/activities/{activity}/applicants',[ApplicantController::class, 'applicantIndex'])->name('Front.admin.activities.applicants');
 
     Route::get('/content', [ContentController::class, 'ContentIndex'])->name('ContentIndex');
     Route::get('/content/pages/{key}', [ContentController::class, 'ContentPage'])->name('ContentPage');

@@ -70,9 +70,9 @@
                                                                 class="fas fa-trash"></i></button>
                                                     </form>
 
-                                                    <a href="{{route('applicantIndex')}}" class="btn btn-primary btn-action mr-1" data-toggle="tooltip"
-                                                    title="" data-original-title="Voir plus"><i
-                                                        class="fas fa-table"></i></a>
+                                                    <a href="{{route('Front.admin.'.$route.'.applicants', $activity)}}" class="btn btn-primary btn-action mr-1" data-toggle="tooltip"
+                                                    title="" data-original-title="Voir les postulants"><i
+                                                        class="fas fa-users"></i></a>
                                                 </td>
                                             </tr>
                                         @endforeach

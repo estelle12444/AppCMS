@@ -23,7 +23,6 @@ class AdminController extends Controller
     public function getUsername()
     {
         if (!Auth::check()) {
-
             return view('auth.login');
         } else {
             $user = Auth::user();
@@ -41,11 +40,7 @@ class AdminController extends Controller
         return view('Front.admin.company.index', compact('companies', 'users'));
     }
 
-    public function applicantIndex(){
-
-        return view('Front.admin.annonce.applicant-Index');
-    }
-
+   
     public function logout()
     {
         Auth::logout();

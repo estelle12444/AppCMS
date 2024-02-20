@@ -51,7 +51,7 @@
                                         <span> {{ __('layouts.nav.profil') }}</span>
                                     </a>
                                     <?php else: ?>
-                                    <a href="{{route('Front.profil.home')}}"
+                                    <a href="{{route('Front.profil.home ')}}"
                                         class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                             stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
