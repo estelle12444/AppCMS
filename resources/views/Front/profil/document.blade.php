@@ -19,7 +19,7 @@
                         <div class="grid gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-1 xl:grid-cols-6">
                             @foreach ($typeDeDemande->demandes as $demande)
                                 <div class="mb-4">
-                                    <h3 class="text-lg font-medium">{{ $demande->translator['nom_demande'] }}</h3>
+                                    <h3 class="text-lg font-medium">{{ $demande->name }}</h3>
 
                                     @if ($demande->documents->count() > 0)
                                         <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">

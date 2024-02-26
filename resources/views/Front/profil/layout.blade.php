@@ -31,7 +31,9 @@
                 </a>
                 <ul class="mt-6">
                     <li class="relative px-6 py-3">
-                        {!! request()->path() == 'profil' ? '  <span class="absolute inset-y-0 left-0 w-1 bg-blue-500 rounded-tr-lg rounded-br-lg"aria-hidden="true"></span>' : '' !!}
+                        {!! request()->path() == 'profil'
+                            ? '  <span class="absolute inset-y-0 left-0 w-1 bg-blue-500 rounded-tr-lg rounded-br-lg"aria-hidden="true"></span>'
+                            : '' !!}
 
                         <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
                             href="/profil">
@@ -41,13 +43,15 @@
                                     d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
                                 </path>
                             </svg>
-                            <span class="ml-4">{{__('layouts.nav.profil')}}</span>
+                            <span class="ml-4">{{ __('layouts.nav.profil') }}</span>
                         </a>
                     </li>
                 </ul>
                 <ul>
                     <li class="relative px-6 py-3">
-                        {!! request()->path() == 'profil/demande' ? '  <span class="absolute inset-y-0 left-0 w-1 bg-blue-500 rounded-tr-lg rounded-br-lg"aria-hidden="true"></span>' : '' !!}
+                        {!! request()->path() == 'profil/demande'
+                            ? '  <span class="absolute inset-y-0 left-0 w-1 bg-blue-500 rounded-tr-lg rounded-br-lg"aria-hidden="true"></span>'
+                            : '' !!}
                         <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                             href="/profil/demande">
                             <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round"
@@ -56,11 +60,13 @@
                                     d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01">
                                 </path>
                             </svg>
-                            <span class="ml-4">{{__('profil.layouts.requests.index')}} </span>
+                            <span class="ml-4">{{ __('profil.layouts.requests.index') }} </span>
                         </a>
                     </li>
                     <li class="relative px-6 py-3">
-                        {!! request()->path() == 'profil/etat-demande' ? '  <span class="absolute inset-y-0 left-0 w-1 bg-blue-500 rounded-tr-lg rounded-br-lg"aria-hidden="true"></span>' : '' !!}
+                        {!! request()->path() == 'profil/etat-demande'
+                            ? '  <span class="absolute inset-y-0 left-0 w-1 bg-blue-500 rounded-tr-lg rounded-br-lg"aria-hidden="true"></span>'
+                            : '' !!}
                         <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                             href="/profil/etat-demande">
                             <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round"
@@ -69,11 +75,13 @@
                                     d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
                                 </path>
                             </svg>
-                            <span class="ml-4">{{__('profil.layouts.requests.follow')}}</span>
+                            <span class="ml-4">{{ __('profil.layouts.requests.follow') }}</span>
                         </a>
                     </li>
                     <li class="relative px-6 py-3">
-                        {!! request()->path() == 'profil/document' ? '  <span class="absolute inset-y-0 left-0 w-1 bg-blue-500 rounded-tr-lg rounded-br-lg" aria-hidden="true"></span>' : '' !!}
+                        {!! request()->path() == 'profil/document'
+                            ? '  <span class="absolute inset-y-0 left-0 w-1 bg-blue-500 rounded-tr-lg rounded-br-lg" aria-hidden="true"></span>'
+                            : '' !!}
                         <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                             href="/profil/document">
                             <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round"
@@ -81,26 +89,43 @@
                                 <path d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path>
                                 <path d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path>
                             </svg>
-                            <span class="ml-4">{{__('profil.layouts.documents')}}</span>
+                            <span class="ml-4">{{ __('profil.layouts.documents') }}</span>
                         </a>
                     </li>
                     <li class="relative px-6 py-3">
-                        {!! request()->path() == 'demandes' ? '  <span class="absolute inset-y-0 left-0 w-1 bg-blue-500 rounded-tr-lg rounded-br-lg" aria-hidden="true"></span>' : '' !!}
+                        {!! request()->path() == 'demandes'
+                            ? '  <span class="absolute inset-y-0 left-0 w-1 bg-blue-500 rounded-tr-lg rounded-br-lg" aria-hidden="true"></span>'
+                            : '' !!}
                         <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
-                            href="{{route('demandes.index')}}">
+                            href="{{ route('demandes.index') }}">
                             <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round"
                                 stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                                 <path d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path>
                                 <path d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path>
                             </svg>
-                            <span class="ml-4">{{__('profil.layouts.requests.edit')}}</span>
+                            <span class="ml-4">{{ __('profil.layouts.requests.edit') }}</span>
+                        </a>
+                    </li>
+                    <li class="relative px-6 py-3">
+                        {!! request()->path() == 'applicants'
+                            ? '  <span class="absolute inset-y-0 left-0 w-1 bg-blue-500 rounded-tr-lg rounded-br-lg" aria-hidden="true"></span>'
+                            : '' !!}
+                        <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                            href="{{ route('applications.index') }}">
+                            <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                                <path
+                                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01">
+                                </path>
+                            </svg>
+                            <span class="ml-4">{{ __('Candidature') }}</span>
                         </a>
                     </li>
                 </ul>
                 <div class="px-6 my-6">
                     <a href="/profil/demande"
                         class="flex items-center justify-between w-full px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-blue-500 border border-transparent rounded-lg active:bg-blue-500 hover:bg-blue-500 focus:outline-none focus:shadow-outline-purple">
-                        {{__('profil.layouts.requests.new')}}
+                        {{ __('profil.layouts.requests.new') }}
                         <span class="ml-2" aria-hidden="true">+</span>
                     </a>
                 </div>
@@ -113,7 +138,8 @@
             x-transition:leave="transition ease-in-out duration-150" x-transition:leave-start="opacity-100"
             x-transition:leave-end="opacity-0"
             class="fixed inset-0 z-10 flex items-end bg-black bg-opacity-50 sm:items-center sm:justify-center"></div>
-        <aside class="fixed inset-y-0 z-20 flex-shrink-0 w-64 mt-16 overflow-y-auto bg-white dark:bg-gray-800 md:hidden"
+        <aside
+            class="fixed inset-y-0 z-20 flex-shrink-0 w-64 mt-16 overflow-y-auto bg-white dark:bg-gray-800 md:hidden"
             x-show="isSideMenuOpen" x-transition:enter="transition ease-in-out duration-150" aria-label=""
             x-transition:enter-start="opacity-0 transform -translate-x-20" x-transition:enter-end="opacity-100"
             x-transition:leave="transition ease-in-out duration-150" x-transition:leave-start="opacity-100"
@@ -121,7 +147,7 @@
             @keydown.escape="closeSideMenu">
             <div class="py-4 text-gray-500 dark:text-gray-400">
                 <a class="ml-6 text-lg font-bold text-gray-800 dark:text-gray-200" href="#">
-                    {{__('layouts.nav.profil')}}
+                    {{ __('layouts.nav.profil') }}
                 </a>
                 <ul class="mt-6">
                     <li class="relative px-6 py-3">
@@ -135,7 +161,7 @@
                                     d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
                                 </path>
                             </svg>
-                            <span class="ml-4">{{__('layouts.nav.profil')}}</span>
+                            <span class="ml-4">{{ __('layouts.nav.profil') }}</span>
                         </a>
                     </li>
                 </ul>
@@ -149,7 +175,7 @@
                                     d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01">
                                 </path>
                             </svg>
-                            <span class="ml-4">{{__('profil.layouts.requests.index')}}</span>
+                            <span class="ml-4">{{ __('profil.layouts.requests.index') }}</span>
                         </a>
                     </li>
                     <li class="relative px-6 py-3">
@@ -161,7 +187,7 @@
                                     d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
                                 </path>
                             </svg>
-                            <span class="ml-4">{{__('profil.layouts.requests.follow')}}</span>
+                            <span class="ml-4">{{ __('profil.layouts.requests.follow') }}</span>
                         </a>
                     </li>
 
@@ -174,13 +200,13 @@
                                     d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122">
                                 </path>
                             </svg>
-                            <span class="ml-4">{{__('profil.layouts.requests.edit')}}</span>
+                            <span class="ml-4">{{ __('profil.layouts.requests.edit') }}</span>
                         </a>
                     </li>
                     <div class="px-6 my-6">
                         <a href="/profil/demande"
                             class="flex items-center justify-between w-full px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-blue-500 border border-transparent rounded-lg active:bg-blue-500 hover:bg-blue-500 focus:outline-none focus:shadow-outline-purple">
-                            {{__('profil.layouts.requests.new')}}
+                            {{ __('profil.layouts.requests.new') }}
                             <span class="ml-2" aria-hidden="true">+</span>
                         </a>
                     </div>
@@ -210,58 +236,49 @@
                                         clip-rule="evenodd"></path>
                                 </svg> --}}
                             </div>
-                             {{-- <input
+                            {{-- <input
                                 class="w-full pl-8 pr-2 text-sm text-gray-700 placeholder-gray-600 bg-gray-100 border-0 rounded-md dark:placeholder-gray-500 dark:focus:shadow-outline-gray dark:focus:placeholder-gray-600 dark:bg-gray-700 dark:text-gray-200 focus:placeholder-gray-500 focus:bg-white focus:border-purple-300 focus:outline-none focus:shadow-outline-purple form-input"
                                 type="text" placeholder="Search ...." aria-label="Search" /> --}}
-                    </div>
+                        </div>
                     </div>
                     <ul class="flex items-center flex-shrink-0 space-x-6">
-
                         <!-- Notifications menu -->
+
                         <li class="relative">
                             <button
                                 class="relative align-middle rounded-md focus:outline-none focus:shadow-outline-purple"
                                 @click="toggleNotificationsMenu" @keydown.escape="closeNotificationsMenu"
                                 aria-label="Notifications" aria-haspopup="true">
-                                <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" style="color:rgb(226, 144, 60)">
+                                <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                                    style="color:rgb(226, 144, 60)">
                                     <path
                                         d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z">
                                     </path>
                                 </svg>
                                 <!-- Notification badge -->
-
-                                <span aria-hidden="true"
-                                    class="absolute top-0 right-0 inline-block w-3 h-3 transform translate-x-1 -translate-y-1 bg-red-600 border-2 border-white rounded-full dark:border-gray-800"></span>
+                                @include('components.badge-notification', ['demandesCountByType' => $demandesCountByType ?? []])
                             </button>
                             <template x-if="isNotificationsMenuOpen">
                                 <ul x-transition:leave="transition ease-in duration-150"
                                     x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0"
                                     @click.away="closeNotificationsMenu" @keydown.escape="closeNotificationsMenu"
                                     class="absolute right-0 w-56 p-2 mt-2 space-y-2 text-gray-600 bg-white border border-gray-100 rounded-md shadow-md dark:text-gray-300 dark:border-gray-700 dark:bg-gray-700">
-                                    <li class="flex">
-                                        <a class="inline-flex items-center justify-between w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
-                                            href="#">
-                                            <span>{{__('profil.layouts.requests.message')}}</span>
-                                            <span
-                                                class="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-600 bg-red-100 rounded-full dark:text-red-100 dark:bg-red-600">
-                                                13
-                                            </span>
-                                        </a>
-                                    </li>
+                                    @include('components.notification', ['demandesCountByType' => $demandesCountByType ?? []])
                                 </ul>
                             </template>
 
                         </li>
+
                         <!-- Profile menu -->
-                        <li style=" color:rgb(226, 144, 60)"> {{__('profil.layouts.requests.welcome')}} {{ app('App\Http\Controllers\ProfilController')->getUsername() }} </li>
+                        <li style=" color:rgb(226, 144, 60)"> {{ __('profil.layouts.requests.welcome') }}
+                            {{ app('App\Http\Controllers\ProfilController')->getUsername() }} </li>
                         <li class="relative">
                             <button class="align-middle rounded-full focus:shadow-outline-purple focus:outline-none"
                                 @click="toggleProfileMenu" @keydown.escape="closeProfileMenu" aria-label="Account"
                                 aria-haspopup="true">
 
                                 <img class="object-cover w-8 h-8 rounded-full"
-                                    src="{{asset('img/icon/default.png')}}"
-                                    alt="" aria-hidden="true" />
+                                    src="{{ asset('img/icon/default.png') }}" alt="" aria-hidden="true" />
                             </button>
                             <template x-if="isProfileMenuOpen">
                                 <ul x-transition:leave="transition ease-in duration-150"
@@ -293,7 +310,7 @@
                                                     d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1">
                                                 </path>
                                             </svg>
-                                            <span>{{__('layouts.nav.logout')}}</span>
+                                            <span>{{ __('layouts.nav.logout') }}</span>
                                         </a>
                                     </li>
                                 </ul>

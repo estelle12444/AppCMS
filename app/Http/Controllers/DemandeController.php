@@ -20,7 +20,6 @@ class DemandeController extends Controller
     public function index()
     {
         $demandes = auth()->user()->demandes;
-
         return view('Front.profil.edit-profil', compact('demandes'));
     }
 

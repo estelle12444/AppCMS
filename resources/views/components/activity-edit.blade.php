@@ -9,6 +9,11 @@
                     <div class="card">
                         <div class="card-header">
                             <h4>{{ $message }}</h4>
+                            <div class="card-header-form">
+                                <a href="{{route('Front.admin.'.$route.'.index')}}" class="btn btn-danger btn-action mr-1" data-toggle="tooltip" title="" data-original-title="retourner">
+                                    Retour <i class="fas fa-sign-out-alt"></i>
+                                </a>
+                            </div>
                         </div>
                         @php
                             $url = route('Front.admin.' . $route . '.update', ['activity' => $activity->id]);

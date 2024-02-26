@@ -11,7 +11,7 @@
                 </div>
                 <div class="card-body">
                     <div class="alert alert-info">
-                         Veuillez remplir le formulaire à la fois en anglais et en français pour garantir une soumission précise et complète. 
+                         Veuillez remplir le formulaire à la fois en anglais et en français pour garantir une soumission précise et complète.
                     </div>
                     <form action="{{route('saveContent',['key'=>$key])}}" method="POST" enctype="multipart/form-data">
                         @csrf
@@ -41,6 +41,9 @@
                             <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"></label>
                             <div class="col-sm-12 col-md-7">
                                 <button type="submit" class="btn btn-primary">Modifier</button>
+                                <a href="{{ route('ContentPage', ['key' => $key]) }}" class=" ml-24 float-right btn btn-danger btn-action mr-1" data-toggle="tooltip" title="" data-original-title="retourner">
+                                    Retour <i class="fas fa-sign-out-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </form>

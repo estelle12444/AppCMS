@@ -55,4 +55,12 @@ class Company extends Model
         }
         return $count;
     }
+    public function activities()
+    {
+        return $this->belongsToMany(Activity::class, 'activity_companies');
+    }
+    public function applicants()
+    {
+        return $this->belongsTo(Applicant::class);
+    }
 }

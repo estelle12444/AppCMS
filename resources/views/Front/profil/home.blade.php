@@ -75,7 +75,9 @@
                                     <th class="px-4 py-3">{{__('profil.home.title')}}</th>
                                     <th class="px-4 py-3">{{__('profil.home.description')}}</th>
                                     <th class="px-4 py-3">{{__('profil.home.date_end')}}</th>
+                                    <th class="px-4 py-3">Fichier joints</th>
                                     <th class="px-4 py-3">{{__('profil.home.action')}}</th>
+
                                 </tr>
                             </thead>
                             <tbody class="bg-white divide-y dark:divide-gray-700 dark:bg-gray-800">
@@ -107,15 +109,18 @@
                                             </td>
                                             <td class="px-4 py-3 ">
                                                 <p class="text-md text-gray-600 dark:text-gray-400">
-                                                    {{ Str::limit(strip_tags($tender['content']), 50, '...') }}
+                                                    {{ Str::limit(strip_tags($tender['content']), 30, '...') }}
                                                 </p>
                                             </td>
                                             <td class="px-4 py-3 text-sm">
                                                 {{Carbon\Carbon::parse($tender['limit_date'])->format('d/m/Y')}}
                                             </td>
+                                            <td class="px-4 py-3 text-sm">
+                                                <a href="{{ asset('storage/' . $tender['translator']['file']) }}" > Voir plus</a>
+                                            </td>
                                             <td class="px-4 py-3">
                                                 <div class="flex items-center space-x-4 text-sm">
-                                                    <a href="/annonces">
+                                                    <a href="{{route('application.form',[$tender['id']])}}">
                                                         <button
                                                             class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-blue-500 border border-transparent rounded-lg active:bg-blue-100 hover:bg-blue-500 focus:outline-none focus:shadow-outline-purple">
                                                             {{(__("layouts.footer.submit"))}} </button></a>

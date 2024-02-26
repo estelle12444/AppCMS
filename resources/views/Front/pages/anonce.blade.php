@@ -60,7 +60,7 @@
                                 </a>
                                 <a href="{{ route('Front.pages.info', $activity['id']) }}">
                                 <h5 class="mb-2 text-xl font-bold tracking-tight text-blue-800 dark:text-white capitalize ">
-                                    {{ $activity['translator']['title'] }}</h5>
+                                    {{ Str::limit(strip_tags($activity['translator']['title']), 120, '...') }}</h5>
                                 </a>
                                 {{ Str::limit(strip_tags($activity['translator']['resume']), 100, '...') }}
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">

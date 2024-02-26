@@ -9,6 +9,9 @@
                         <div class="card-header">
                             <h4>Données</h4>
                             <div class="card-header-form">
+                                <a href="{{route('Front.admin.'.$route.'.index')}}" class="btn btn-danger btn-action mr-1" data-toggle="tooltip" title="" data-original-title="retourner">
+                                    Retour <i class="fas fa-sign-out-alt"></i>
+                                </a>
                                 <a href="{{route('Front.admin.'.$route.'.create')}}" class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="" data-original-title="CREATE">
                                     Ajouter une activité <i class="fas fa-plus"></i>
                                 </a>
@@ -69,8 +72,7 @@
                                                             onclick="return confirm('{{$message}}')"><i
                                                                 class="fas fa-trash"></i></button>
                                                     </form>
-
-                                                    <a href="{{route('Front.admin.'.$route.'.applicants', $activity)}}" class="btn btn-primary btn-action mr-1" data-toggle="tooltip"
+                                                    <a href="{{route('Front.admin.activities.applicants', $activity->id)}}" class="btn btn-primary btn-action mr-1" data-toggle="tooltip"
                                                     title="" data-original-title="Voir les postulants"><i
                                                         class="fas fa-users"></i></a>
                                                 </td>

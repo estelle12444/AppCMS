@@ -21,6 +21,7 @@ use App\Models\Message;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PdfController;
+use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\QuotationController;
 use App\Http\Controllers\SectorController;
 use App\Http\Controllers\TenderController;
@@ -191,13 +192,17 @@ Route::middleware(['admin'])->group(function () {
     });
 
     Route::put('/valider-compagnie/{id}', [CompanyController::class, 'validerCompagnie'])->name('validerCompagnie');
-    Route::get('/activities/{activity}/applicants',[ApplicantController::class, 'applicantIndex'])->name('Front.admin.activities.applicants');
+    Route::get('admin/activities/{activity}/applicants',[ApplicantController::class, 'applicantIndex'])->name('Front.admin.activities.applicants');
 
     Route::get('/content', [ContentController::class, 'ContentIndex'])->name('ContentIndex');
     Route::get('/content/pages/{key}', [ContentController::class, 'ContentPage'])->name('ContentPage');
     Route::get('/content/pages/{key}/edit', [ContentController::class, 'ContentPageEdit'])->name('ContentPageEdit');
     Route::put('/content/pages/{key}',[ContentController::class, 'saveContent'])->name('saveContent');
     Route::get('/content/pages/{key}/group',[ContentController::class, 'ContentPageEditGroup'])->name('ContentPageGroup');
+
+    Route::post('applicant/accepter/{id}', [ApplicantController::class, 'accepter'])->name('accepter');
+    Route::post('applicant/refuser/{id}', [ApplicantController::class, 'refuser'])->name('refuser');
+
 });
 
 
@@ -213,7 +218,7 @@ Route::get('/count/', function (Request $request) {
 
 Route::middleware(['profil'])->group(function () {
 
-    Route::get('/profil', [App\Http\Controllers\ProfilController::class, 'index'])->name('Front.profil.home');
+    Route::get('/profil', [ProfilController::class, 'index'])->name('Front.profil.home');
 
     Route::get('/profil/demande', [App\Http\Controllers\ProfilController::class, 'demande'])->name('Front.profil.demande');
 
@@ -238,6 +243,13 @@ Route::middleware(['profil'])->group(function () {
     Route::get('/demandes', [DemandeController::class, 'index'])->name('demandes.index');
     // Exemple de route pour télécharger le document
     Route::get('/telecharger-document/{id}', [DemandeController::class, 'telechargerDocument'])->name('telecharger-document');
+
+    Route::get('/applicant/form/{activity}', [ApplicantController::class, 'showForm'])->name('application.form');
+    Route::post('/submit-applicant/{activity}', [ApplicantController::class, 'store'])->name('application.store');
+    Route::get('/applicants', [ApplicantController::class, 'applications'])->name('applications.index');
+    Route::get('/download/{filename}', [ApplicantController::class,'downloadAttachment'])->name('download.attachment');
+
+
 });
 
 

@@ -6,10 +6,23 @@
         <div class="section-body">
             <div class="row">
                 <div class="col-12">
+
                     <div class="card">
                         <div class="card-header">
-                            <h2 id="form-header">Enregistrement en version française</h2>
+                            <div class="row">
+                                <div class="col">
+                                    <h2 id="form-header">Enregistrement en version française</h2>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="card-header-form">
+                                        <a href="{{ route('Front.admin.'.$route.'.index') }}" class="btn btn-danger btn-action mr-1" data-toggle="tooltip" title="Retour">
+                                            retour <i class="fas fa-sign-out-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
                         <div class="card-body">
                             <div class="alert alert-info">
                                 Veuillez remplir le formulaire à la fois en anglais et en français pour garantir une soumission précise et complète. Utilisez le bouton de commutation de langue fourni pour naviguer entre les deux versions du formulaire.

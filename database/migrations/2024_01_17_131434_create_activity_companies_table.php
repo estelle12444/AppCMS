@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->foreignIdFor(Activity::class);
             $table->foreignIdFor(Company::class);
-            $table->string('status');
+            $table->string('status')->nullable();
             $table->timestamps();
         });
     }

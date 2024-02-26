@@ -6,8 +6,13 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header-form">
-                    <a class="btn btn-primary btn-action mr-1 float-right" href="{{ route('ContentPageGroup', ['key' => $key]) }}">Formulaire groupé</a>
-                    <h2 class="text-primary">Page: <strong class="capitalcase">{{$title}}</strong></h2>
+                    {{-- <a class="btn btn-primary btn-action mr-1 " href="{{ route('ContentPageGroup', ['key' => $key]) }}">Formulaire groupé</a> --}}
+
+                        <a href="{{ route('ContentIndex') }}" class="mt-4 mr-4 float-right btn btn-danger btn-action mr-1" data-toggle="tooltip" title="" data-original-title="retourner">
+                            Retour <i class="fas fa-sign-out-alt"></i>
+                        </a>
+
+                    <h2 class="text-primary mt-4 ml-4">Page: <strong class="capitalcase">{{$title}}</strong></h2>
                 </div>
 
                 <div class="card-body">

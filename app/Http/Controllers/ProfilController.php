@@ -33,7 +33,7 @@ class ProfilController extends Controller
      */
 
     use AnnonceTrait;
-    
+
     public function index()
     {
         $typeDemandes = TypeDeDemande::ofLang('fr')->get();
@@ -72,8 +72,6 @@ class ProfilController extends Controller
                 $query->with('documents')->where('user_id', $userId);
             },
         ])->ofLang('fr')->get();
-
-
         return view('Front.profil.document', compact('typesDeDemande'));
     }
 
