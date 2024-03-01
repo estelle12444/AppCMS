@@ -109,7 +109,7 @@
                         <div class=" md:px-20 px-4 sm:px-8 xl:px-16 lg:px-32 pb-8 sm:pb-16 xl:pb-24 lg:pb-32">
                             <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="600"
                                 class="text-2xl xl:text-4xl md:text-4xl font-bold text-center md:text-justify lg:text-justify">
-                                {!!__('installer.industrial_activities_title')!!}
+                                {!!__('installer.section.eligibility.industrial.activities_title')!!}
                             </div>
                             <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="700"
                                 class="grid grid-cols-1 md:grid-cols-2 gap-3 md:py-4 xl:py-0">
@@ -119,7 +119,7 @@
                                         <img src="img/icon/check.png" alt="">
                                     </div>
                                     <div class="ml-2 lg:ml-8 text-sm lg:text-lg font-normal">
-                                        {!!__('installer.section.eligibility.industrial.computer')!!}
+                                        {!!__('installer.section.eligibility.industrial.activities_computer')!!}
                                     </div>
                                 </div>
 
@@ -179,7 +179,7 @@
                             <div class="inline-flex items-center flex-shrink-0 w-6 h-6 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
                                 <img src="{{asset('img/icon-installer/Vector-1.png')}}" alt="">
                             </div>
-                            <div class="ml-2 lg:ml-8 text-sm lg:text-xl font-normal">
+                            <div class="ml-2 lg:ml-8 text-lg lg:text-xl font-normal">
                                 {!!__('installer.section.eligibility.activities.research_development')!!}
                             </div>
                         </div>
@@ -194,7 +194,7 @@
                     </div>
                     <div id="info2" class="hidden mt-4">
                         <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="700"
-                            class=" md:px-20 px-4 sm:px-8 xl:px-16 lg:px-32 pb-8 sm:pb-16 xl:pb-24 lg:pb-32">
+                            class=" text-2xl xl:text-4xl md:text-4xl font-bold text-center md:text-justify lg:text-justify ">
                             {!!__('installer.section.eligibility.activities.research_development_title')!!}
                             <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="500"
                                 class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 lg:grid-cols-3 gap-4">
@@ -249,7 +249,7 @@
                     <div id="info3" class="hidden mt-4">
                         <div class="px-4 md:px-20 py-4 lg:px-20 ">
                                 <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="700"
-                                    class="text-2xl xl:text-4xl md:text-4xl font-bold text-center md:text-justify lg:text-justify">
+                                    class="text-2xl xl:text-4xl md:text-4xl font-bold text-center md:text-justify lg:text-justify ">
                                     {!!__('installer.section.capacity_building')!!}
                                 </div>
                                 <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="700" class="grid grid-cols-1 gap-3 xl:grid-cols-3 md:grid-cols-2">
@@ -307,7 +307,7 @@
                         </div>
                         <div id="info4" class="hidden mt-4">
                             <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="500" class="md:px-20 px-4 sm:px-8 xl:px-16 lg:px-32 pb-8 sm:pb-8 xl:pb-8 lg:pb-8">
-                                <div class="text-2xl xl:text-4xl md:text-4xl font-bold text-center md:text-justify lg:text-justify">
+                                <div class="text-2xl xl:text-4xl md:text-4xl font-bold text-center md:text-justify lg:text-justify ">
                                     {!!__('installer.section.value_added.title')!!}
                                 </div>
                                 <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="600"

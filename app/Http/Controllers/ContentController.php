@@ -47,8 +47,7 @@ class ContentController extends Controller
                 'id' => 'home',
                 'items' => [
                     'home' => ' Tous le contenu Accueil/Home',
-                    'home.carousel'=>"Texte introductif",
-                    'home.carousel.left'=>'Texte introductif 2',
+                    'home.carousel.left'=>"Texte introductif",
                     'home.advantages'=>'Les titres des avantages',
                     'home.presentation'=>'Contenu de la presentation',
                     'home.presentation2'=>'Contenu des autres avantages',
@@ -179,9 +178,10 @@ class ContentController extends Controller
         ]);
 
         $validator->after(function ($validator) use($request, $max) {
-            foreach ($request->all() as $key => $value) {
+            foreach ($request->all() as $key => $field) {
                 if(in_array($key, ['en', 'fr'])){
-                    $value = strip_tags($value['content']);
+                    $value = strip_tags($field['content']);
+                    //dd(strlen($field['content']), $field['content'], strlen($value), $value, $max);
                     if(strlen($value) > $max){
                         $validator->errors()->add(
                             "$key.content", "Le nombre de caractèrer maximum autorisé est $max"

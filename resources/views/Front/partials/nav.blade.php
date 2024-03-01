@@ -48,7 +48,7 @@
                                             <path stroke-linecap="round" stroke-linejoin="round"
                                                 d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
                                         </svg>
-                                        <span> {{ __('layouts.nav.profil') }}</span>
+                                        <span {{App\Helper::test('home.carousel.left.welcome') }} class="partie relative"> {!! __('layouts.nav.profil') !!}</span>
                                     </a>
                                     <?php else: ?>
                                     <a href="{{route('Front.profil.home')}}"
@@ -58,7 +58,7 @@
                                             <path stroke-linecap="round" stroke-linejoin="round"
                                                 d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
                                         </svg>
-                                        <span> {{ __('layouts.nav.profil') }}</span>
+                                        <span> {!! __('layouts.nav.profil') !!}</span>
                                     </a>
                                     <?php endif; ?>
 
@@ -77,12 +77,12 @@
                                             d="M6 10a.75.75 0 01.75-.75h9.546l-1.048-.943a.75.75 0 111.004-1.114l2.5 2.25a.75.75 0 010 1.114l-2.5 2.25a.75.75 0 11-1.004-1.114l1.048-.943H6.75A.75.75 0 016 10z"
                                             clip-rule="evenodd" />
                                     </svg>
-                                    <span class="text-red-500">{{ __('layouts.nav.logout') }}</span>
+                                    <span class="text-red-500 partie relative" {{App\Helper::test('layouts.nav.logout') }}>{!! __('layouts.nav.logout') !!}</span>
                                 </a>
                             </div>
                         </div>
                         <div class="font-medium dark:text-white">
-                            <div>{{ __('layouts.nav.greet') }}</div>
+                            <div class="partie relative"  {{App\Helper::test('layouts.nav.greet') }}>{{ __('layouts.nav.greet') }}</div>
                             <div class="text-sm text-gray-500 dark:text-gray-400">
                                 {{ app('App\Http\Controllers\AdminController')->getUsername() }}
                             </div>
@@ -125,39 +125,39 @@
             <ul
                 class="flex flex-col p-4 xl:p-0 mt-4 font-medium border border-gray-100 rounded-lg xl:flex-row xl:space-x-4 xl:mt-0 xl:border-0 dark:bg-gray-800 xl:dark:bg-gray-900 dark:border-gray-700">
                 <li>
-                    <a href="/home"
-                        class="block py-2 pl-3 text-gray-700 {{ preg_match('(home|avantages.*)', request()->path()) ? 'xl:text-orange-400 text-orange-400' : '' }} rounded xl:bg-transparent xl:hover:text-amber-500 xl:p-0 xl:dark:text-blue-500"
+                    <a href="/home" {{App\Helper::test('layouts.nav.menu.home') }}
+                        class="partie relative block py-2 pl-3 text-gray-700 {{ preg_match('(home|avantages.*)', request()->path()) ? 'xl:text-orange-400 text-orange-400' : '' }} rounded xl:bg-transparent xl:hover:text-amber-500 xl:p-0 xl:dark:text-blue-500"
                         aria-current="page">{{ __('layouts.nav.menu.home') }}</a>
                 </li>
 
                 <li>
-                    <a href="/about"
-                        class="block py-2 pl-3 pr-4 text-gray-700 {{ request()->path() == 'about' ? 'xl:text-orange-400 text-orange-400' : '' }} rounded xl:bg-transparent xl:hover:text-amber-500 xl:p-0 xl:dark:text-blue-500"
+                    <a href="/about" {{App\Helper::test('layouts.nav.menu.about') }}
+                        class="partie relative block py-2 pl-3 pr-4 text-gray-700 {{ request()->path() == 'about' ? 'xl:text-orange-400 text-orange-400' : '' }} rounded xl:bg-transparent xl:hover:text-amber-500 xl:p-0 xl:dark:text-blue-500"
                         aria-current="page">{{ __('layouts.nav.menu.about') }}</a>
                 </li>
                 <li>
-                    <a href="/opportunity"
-                        class="block py-2 pl-3 pr-4 text-gray-700 {{ request()->path() == 'opportunity' ? 'xl:text-orange-400 text-orange-400' : '' }} rounded xl:bg-transparent xl:hover:text-amber-500 xl:p-0 xl:dark:text-blue-500"
+                    <a href="/opportunity" {{App\Helper::test('layouts.nav.menu.opportunities') }}
+                        class="partie relative block py-2 pl-3 pr-4 text-gray-700 {{ request()->path() == 'opportunity' ? 'xl:text-orange-400 text-orange-400' : '' }} rounded xl:bg-transparent xl:hover:text-amber-500 xl:p-0 xl:dark:text-blue-500"
                         aria-current="page">{{ __('layouts.nav.menu.opportunities') }}</a>
                 </li>
                 <li>
-                    <a href="/installer"
-                        class="block py-2 pl-3 pr-4 text-gray-700 {{ request()->path() == 'installer' ? 'xl:text-orange-400 text-orange-400' : '' }} rounded xl:bg-transparent xl:hover:text-amber-500 xl:p-0 xl:dark:text-blue-500"
+                    <a href="/installer" {{App\Helper::test('layouts.nav.menu.install') }}
+                        class="partie relative block py-2 pl-3 pr-4 text-gray-700 {{ request()->path() == 'installer' ? 'xl:text-orange-400 text-orange-400' : '' }} rounded xl:bg-transparent xl:hover:text-amber-500 xl:p-0 xl:dark:text-blue-500"
                         aria-current="page">{{ __('layouts.nav.menu.install') }}</a>
                 </li>
                 <li>
-                    <a href="/partners"
-                        class="block py-2 pl-3 pr-4 text-gray-700 {{ str_starts_with(request()->path(), 'partners') ? 'xl:text-orange-400 text-orange-400' : '' }} rounded xl:bg-transparent xl:hover:text-amber-500 xl:p-0 xl:dark:text-blue-500"
+                    <a href="/partners" {{App\Helper::test('layouts.nav.menu.partners') }}
+                        class="partie relative block py-2 pl-3 pr-4 text-gray-700 {{ str_starts_with(request()->path(), 'partners') ? 'xl:text-orange-400 text-orange-400' : '' }} rounded xl:bg-transparent xl:hover:text-amber-500 xl:p-0 xl:dark:text-blue-500"
                         aria-current="page">{{ __('layouts.nav.menu.partners') }}</a>
                 </li>
                 <li>
-                    <a href="/actu"
-                        class="block py-2 pl-3 pr-4 text-gray-700 {{ request()->path() == 'actu' ? 'xl:text-orange-400 text-orange-400' : '' }} rounded xl:bg-transparent xl:hover:text-amber-500 xl:p-0 xl:dark:text-blue-500"
+                    <a href="/actu"{{App\Helper::test('layouts.nav.menu.galery') }}
+                        class=" partie relative block py-2 pl-3 pr-4 text-gray-700 {{ request()->path() == 'actu' ? 'xl:text-orange-400 text-orange-400' : '' }} rounded xl:bg-transparent xl:hover:text-amber-500 xl:p-0 xl:dark:text-blue-500"
                         aria-current="page">{{ __('layouts.nav.menu.galery') }}</a>
                 </li>
                 <li>
-                    <a href="/annonce"
-                        class="block py-2 pl-3 pr-4 text-gray-700 {{ preg_match('/^\/(annonce|info\/[^\/]+)/', request()->path()) ? 'xl:text-orange-400 text-orange-400' : '' }} rounded xl:bg-transparent xl:hover:text-amber-500 xl:p-0 xl:dark:text-blue-500"
+                    <a href="/annonce" {{App\Helper::test('layouts.nav.menu.news') }}
+                        class="partie relative block py-2 pl-3 pr-4 text-gray-700 {{ preg_match('/^\/(annonce|info\/[^\/]+)/', request()->path()) ? 'xl:text-orange-400 text-orange-400' : '' }} rounded xl:bg-transparent xl:hover:text-amber-500 xl:p-0 xl:dark:text-blue-500"
                         aria-current="page">{{ __('layouts.nav.menu.news') }}</a>
                 </li>
             </ul>

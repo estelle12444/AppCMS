@@ -41,7 +41,7 @@
                             <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"></label>
                             <div class="col-sm-12 col-md-7">
                                 <button type="submit" class="btn btn-primary">Modifier</button>
-                                <a href="{{ route('ContentPage', ['key' => $key]) }}" class=" ml-24 float-right btn btn-danger btn-action mr-1" data-toggle="tooltip" title="" data-original-title="retourner">
+                                <a href="{{ route('ContentIndex') }}" class=" ml-24 float-right btn btn-danger btn-action mr-1" data-toggle="tooltip" title="" data-original-title="retourner">
                                     Retour <i class="fas fa-sign-out-alt"></i>
                                 </a>
                             </div>

@@ -28,6 +28,12 @@
 
     <link href="css/templatemo-nomad-force.css" rel="stylesheet">
 
+    <style>
+        .success {
+            color: #01943e !important
+        }
+    </style>
+
 </head>
 
 <body>
@@ -39,7 +45,8 @@
                 </h4>
 
                 <div class="text-secondary-white-color" data-aos="fade-up" data-aos-delay="1000">
-                   <p> {!!__('landing.website_browsing.text')!!}<strong class="custom-underline"> <a href="/home" class="text-white "> {!!__('landing.website_browsing.link_text')!!}</a></strong></p>
+                    <p class="text-white font-extrabold"> {!! __('landing.website_browsing.text') !!}<strong class="custom-underline"> <a
+                                href="/home" class="text-white "> {!! __('landing.website_browsing.link_text') !!}</a></strong></p>
                 </div>
             </div>
 
@@ -61,64 +68,73 @@
             <div class="container mb-5 pb-lg-5">
                 <div class="row">
                     <div class="col-12">
-                        <div class="mb-3" data-aos="fade-up" style="color: #01943e">
-                            {!! __('landing.innovation_village.title')!!}
+                        <div class="mb-3 success" data-aos="fade-up">
+                            {!! __('landing.innovation_village.title') !!}
                         </div>
                     </div>
 
                     <div class="col-lg-6 col-12 mt-3 mb-lg-5">
-                            <div class="me-4" data-aos="fade-up" data-aos-delay="300">
-                                {!! __('landing.innovation_village.first.content')!!}
-                            </div>
+                        <div class="me-4" data-aos="fade-up" data-aos-delay="300">
+                            {!! __('landing.innovation_village.first.content') !!}
+                        </div>
 
                     </div>
 
                     <div class="col-lg-6 col-12 mt-lg-3 mb-lg-5">
                         <div data-aos="fade-up" data-aos-delay="500">
-                            {!! __('landing.innovation_village.second.content')!!}
+                            {!! __('landing.innovation_village.second.content') !!}
                         </div>
                     </div>
 
                 </div>
 
 
-            <div class="container">
-                <div style="color: orange">{!! __('landing.agreement_application.document')!!}</div>
+                <div class="container">
+                    <div style="color: orange !important;">{!! __('landing.agreement_application.document') !!}</div>
 
-                {!! __('landing.agreement_application.form')!!}
+                    {!! __('landing.agreement_application.form') !!}
 
-                <span class="mr-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
-                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-                      </svg>
-                </span>
-                <span class="align-middle">
-                    <a href="/telecharger-pdf" download> {!! __('installer.form_vitib')!!}</a>
-                </span>
-                <br>
+                    <span class="mr-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-download" viewBox="0 0 16 16">
+                            <path
+                                d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                            <path
+                                d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                        </svg>
+                    </span>
+                    <span class="align-middle">
+                        <a href="/telecharger-pdf" download> {!! __('installer.join_us.form_vitib') !!}</a>
+                    </span>
+                    <br>
 
-                <span class="mr-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
-                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-                      </svg>
-                </span>
-                <span class="align-middle">
-                    <a href="/download-pdf" download>    {!! __('installer.form_pepiniere')!!}</a>
-                </span>
-                <br>
-                <span class="mr-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
-                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-                      </svg>
-                </span>
-                <span class="align-middle">
-                    <a href="/opportunity-pdf" download> {!! __('installer.opportunity_list')!!}</a>
-                </span>
-
-            </div>
+                    <span class="mr-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-download" viewBox="0 0 16 16">
+                            <path
+                                d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                            <path
+                                d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                        </svg>
+                    </span>
+                    <span class="align-middle">
+                        <a href="/download-pdf" download> {!! __('installer.join_us.form_pepiniere') !!}</a>
+                    </span>
+                    <br>
+                    <span class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-download" viewBox="0 0 16 16">
+                            <path
+                                d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                            <path
+                                d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                        </svg>
+                    </span>
+                    <span class="align-middle"></span>
+                    <a href="/opportunity-pdf" download>
+                        {!! __('installer.join_us.opportunity_list') !!}
+                    </a>
+                </div>
         </section>
 
 
@@ -314,7 +330,7 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script src="js/jquery.sticky.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>

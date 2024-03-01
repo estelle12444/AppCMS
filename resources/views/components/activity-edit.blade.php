@@ -79,9 +79,9 @@
                                 <div class="form-group row mb-4">
                                     <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Attached Documents</label>
                                     <div class="input-group col-sm-12 col-md-7">
-                                        <input type="file" name="lang[0][file]" class="form-control" id="inputGroupFile04"
+                                        <input type="file" name="lang[0][file]" class="form-control" id="inputGroupFile10"
                                             aria-describedby="inputGroupFileAddon04" aria-label="Upload" accept=".pdf, .txt, .docx">
-                                        <small id="inputGroupFileAddon04" class="form-text text-muted">Select a document (.pdf, .txt, .docx).</small>
+                                        <small id="inputGroupFileAddon10" class="form-text text-muted">Select a document (.pdf, .txt, .docx).</small>
                                     </div>
                                 </div>
 

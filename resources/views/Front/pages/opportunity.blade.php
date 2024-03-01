@@ -4,8 +4,7 @@
 @section('content')
 <section class="bg-center bg-no-repeat  bg-blend-multiply" style="background-image: url(img/page_5/annonce.png)">
     <div class="px-4 mx-auto max-w-screen-xl text-center py-16 md:pt-20  lg:py-0">
-        <h1 data-aos="zoom-in" data-aos-duration="500"data-aos-delay="700"
-            class=" text-4xl font-extrabold uppercase tracking-tight leading-none text-white md:pt-8 pt-10 lg:pb-8 lg:pt-32 xl:text-5xl lg:text-6xl ">
+        <h1 data-aos="zoom-in" data-aos-duration="500"data-aos-delay="700" {{App\Helper::test('opportunity.zone.title') }}  class=" partie relative text-4xl font-extrabold uppercase tracking-tight leading-none text-white md:pt-8 pt-10 lg:pb-8 lg:pt-32 xl:text-5xl lg:text-6xl ">
             {!! __('opportunity.zone.title') !!}
             <p class="pt-8 "></p>
         </h1>
@@ -13,37 +12,37 @@
 </section>
     <div  class=" bg-gradient-to-r from-orange-100 from-20%  to-green-100 to-90% ">
         <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="800" class=" xl:py-10 lg:py-4  lg:pb-10 md:px-4 px-4 lg:pr-0  xl:px-20 grid xl:grid-cols-5 md:grid-cols-2  grid-cols-2 gap-2 xl:gap-4 " style="overflow-x: hidden">
-            <div class="bg-amber-500 font-extrabold rounded-lg p-4 text-white text-center " style=" height:100px ">
+            <div {{App\Helper::test('opportunity.zone.administration_zone') }}  class=" partie relative bg-amber-500 font-extrabold rounded-lg p-4 text-white text-center " style=" height:100px ">
                 {!! __('opportunity.zone.administration_zone') !!}
             </div>
-            <div class="bg-green-500  font-extrabold rounded-lg p-4 text-white text-center  ">
+            <div {{App\Helper::test('opportunity.zone.production_zone_assembly_industries') }}  class=" partie relative bg-green-500  font-extrabold rounded-lg p-4 text-white text-center  ">
                 {!! __('opportunity.zone.production_zone_assembly_industries') !!}
             </div>
-            <div class="bg-orange-200  font-extrabold rounded-lg pt-2 text-white text-center " style=" height:100px ">
+            <div {{App\Helper::test('opportunity.zone.production_zone_biotechnology_industries') }}  class=" partie relative bg-orange-200  font-extrabold rounded-lg pt-2 text-white text-center " style=" height:100px ">
                 {!! __('opportunity.zone.production_zone_biotechnology_industries') !!}
             </div>
 
-            <div class="bg-yellow-300  font-extrabold rounded-lg p-4 text-white text-center">
+            <div {{App\Helper::test('opportunity.zone.production_zone_offices') }}  class=" partie relative bg-yellow-300  font-extrabold rounded-lg p-4 text-white text-center">
                 {!! __('opportunity.zone.production_zone_offices') !!}
             </div>
 
-            <div class="bg-purple-300 font-extrabold rounded-lg p-4 text-white text-center">
+            <div {{App\Helper::test('opportunity.zone.future_development') }}  class=" partie relative bg-purple-300 font-extrabold rounded-lg p-4 text-white text-center">
                 {!! __('opportunity.zone.future_development') !!}
             </div>
-            <div class="bg-amber-800 font-extrabold rounded-lg p-4 text-white text-center ">
+            <div {{App\Helper::test('opportunity.zone.logistics_zone') }}  class=" partie relative bg-amber-800 font-extrabold rounded-lg p-4 text-white text-center ">
                 {!! __('opportunity.zone.logistics_zone') !!}
             </div>
-            <div class="bg-pink-300 font-extrabold rounded-lg p-4 text-white text-center ">
+            <div {{App\Helper::test('opportunity.zone.residential_zone') }}  class=" partie relative bg-pink-300 font-extrabold rounded-lg p-4 text-white text-center ">
                 {!! __('opportunity.zone.residential_zone') !!}
             </div>
 
-            <div class="bg-slate-700 font-extrabold rounded-lg p-4 text-white text-center">
+            <div {{App\Helper::test('opportunity.zone.bus_station') }}  class=" partie relative bg-slate-700 font-extrabold rounded-lg p-4 text-white text-center">
                 {!! __('opportunity.zone.bus_station') !!}
             </div>
-            <div class="bg-green-400 font-extrabold rounded-lg p-4 text-white text-center">
+            <div {{App\Helper::test('pportunity.zone.green_zone') }}  class=" partie relative bg-green-400 font-extrabold rounded-lg p-4 text-white text-center">
                 {!! __('opportunity.zone.green_zone') !!}
             </div>
-            <div class="bg-gray-400 font-extrabold rounded-lg p-4 text-white text-center">
+            <div {{App\Helper::test('opportunity.zone.utility') }}  class=" partie relative bg-gray-400 font-extrabold rounded-lg p-4 text-white text-center">
                 {!! __('opportunity.zone.utility') !!}
             </div>
         </div>
@@ -72,10 +71,10 @@
                 <div data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="700" class="flex py-4 lg:py-10 flex-col md:flex-row items-center">
                     <div class="md:w-1/2">
                         <div class="md:px-0  xl:px-0 xl:pr-8">
-                            <div class="mb-2 text-2xl lg:text-4xl  font-bold tracking-tight text-gray-900 dark:text-white">
+                            <div {{App\Helper::test('opportunity.projects.promotion_block_a_title') }}  class=" partie relative mb-2 text-2xl lg:text-4xl  font-bold tracking-tight text-gray-900 dark:text-white">
                                 {!! __('opportunity.projects.promotion_block_a_title') !!}
                             </div>
-                            <div  class="text-justify ">
+                            <div {{App\Helper::test('opportunity.projects.promotion_block_a_description') }}  class=" partie relative  text-justify ">
                                 {!! __('opportunity.projects.promotion_block_a_description') !!}
                             </div>
                         </div>
@@ -90,10 +89,10 @@
                     </div>
                     <div class="md:w-1/2">
                         <div class="md:px-0  xl:px-0">
-                            <div class="mb-2 text-2xl lg:text-4xl  font-bold tracking-tight text-gray-900 dark:text-white">
+                            <div {{App\Helper::test('opportunity.projects.future_projects.office_buildings') }}  class=" partie relative mb-2 text-2xl lg:text-4xl  font-bold tracking-tight text-gray-900 dark:text-white">
                                 {!! __('opportunity.projects.future_projects.office_buildings') !!}
                             </div>
-                            <div  class="text-justify ">
+                            <div {{App\Helper::test('opportunity.future_projects.office_buildings_description') }}  class=" partie relative text-justify ">
                                 {!! __('opportunity.projects.future_projects.office_buildings_description') !!}
                             </div>
                         </div>
@@ -102,10 +101,10 @@
                 <div data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="700" class="flex py-4 lg:py-10 flex-col md:flex-row items-center">
                     <div class="md:w-1/2">
                         <div class="md:px-0  xl:px-0 xl:pr-8">
-                            <div class="mb-2 text-4xl  font-bold tracking-tight text-gray-900 dark:text-white">
+                            <div {{App\Helper::test('opportunity.projects.business_hotels_title') }}  class=" partie relative mb-2 text-4xl  font-bold tracking-tight text-gray-900 dark:text-white">
                                 {!! __('opportunity.projects.business_hotels_title') !!}
                             </div>
-                            <div  class="text-justify ">
+                            <div {{App\Helper::test('opportunity.projects.business_hotels_description') }}  class=" partie relative text-justify ">
                                 {!! __('opportunity.projects.business_hotels_description') !!}
                             </div>
                         </div>
@@ -120,10 +119,10 @@
                     </div>
                     <div class="md:w-1/2">
                         <div class="md:px-0  xl:px-0">
-                            <div class="mb-2 text-2xl lg:text-4xl  font-bold tracking-tight text-gray-900 dark:text-white">
+                            <div {{App\Helper::test('opportunity.projects.university_title') }}  class=" partie relative mb-2 text-2xl lg:text-4xl  font-bold tracking-tight text-gray-900 dark:text-white">
                                 {!! __('opportunity.projects.university_title') !!}
                             </div>
-                            <div  class="text-justify ">
+                            <div {{App\Helper::test('opportunity.projects.university_description') }}  class=" partie relative text-justify ">
                                 {!! __('opportunity.projects.university_description') !!}
                             </div>
                         </div>
@@ -132,10 +131,10 @@
                 <div data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="700" class="flex py-4 lg:py-10 flex-col md:flex-row items-center">
                     <div class="md:w-1/2">
                         <div class="md:px-0  xl:px-0 xl:pr-8">
-                            <div class="mb-2 text-2xl lg:text-4xl  font-bold tracking-tight text-gray-900 dark:text-white">
+                            <div {{App\Helper::test('opportunity.projects.promotion_block_b_title') }}  class=" partie relative mb-2 text-2xl lg:text-4xl  font-bold tracking-tight text-gray-900 dark:text-white">
                                 {!! __('opportunity.projects.promotion_block_b_title') !!}
                             </div>
-                            <div  class="text-justify ">
+                            <div  {{App\Helper::test('opportunity.projects.promotion_block_a_description') }}  class=" partie relative text-justify ">
                                 {!! __('opportunity.projects.promotion_block_a_description') !!}
                             </div>
                         </div>
@@ -150,10 +149,10 @@
                     </div>
                     <div class="md:w-1/2">
                         <div class="md:px-0  xl:px-0">
-                            <div class="mb-2 text-2xl lg:text-4xl  font-bold tracking-tight text-gray-900 dark:text-white">
+                            <div {{App\Helper::test('opportunity.projects.international_medical_clinic_title') }}  class=" partie relative mb-2 text-2xl lg:text-4xl  font-bold tracking-tight text-gray-900 dark:text-white">
                                 {!! __('opportunity.projects.international_medical_clinic_title') !!}
                             </div>
-                            <div  class="text-justify ">
+                            <div {{App\Helper::test('opportunity.projects.international_medical_clinic_description') }}  class=" partie relative text-justify ">
                                 {!! __('opportunity.projects.international_medical_clinic_description') !!}
                             </div>
                         </div>
@@ -162,10 +161,10 @@
                 <div data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="700" class="flex py-4 lg:py-10 flex-col md:flex-row items-center">
                     <div class="md:w-1/2">
                         <div class="md:px-0  xl:px-0 xl:pr-8">
-                            <div class="mb-2 text-2xl lg:text-4xl  font-bold tracking-tight text-gray-900 dark:text-white">
+                            <div {{App\Helper::test('opportunity.projects.cultural_center_title') }}  class=" partie relative mb-2 text-2xl lg:text-4xl  font-bold tracking-tight text-gray-900 dark:text-white">
                                 {!! __('opportunity.projects.cultural_center_title') !!}
                             </div>
-                            <div  class="text-justify ">
+                            <div {{App\Helper::test('opportunity.projects.promotion_block_a_description') }}  class=" partie relative text-justify ">
                                 {!! __('opportunity.projects.promotion_block_a_description') !!}
                             </div>
                         </div>
@@ -180,10 +179,10 @@
                     </div>
                     <div class="md:w-1/2">
                         <div class="md:px-0  xl:px-0">
-                            <div class="mb-2 text-2xl lg:text-4xl  font-bold tracking-tight text-gray-900 dark:text-white">
+                            <div {{App\Helper::test('opportunity.projects.future_projects.office_buildings') }}  class=" partie relative mb-2 text-2xl lg:text-4xl  font-bold tracking-tight text-gray-900 dark:text-white">
                                 {!! __('opportunity.projects.future_projects.office_buildings') !!}
                             </div>
-                            <div  class="text-justify ">
+                            <div {{App\Helper::test('opportunity.projects.future_projects.office_buildings_description') }}  class=" partie relative  text-justify ">
                                 {!! __('opportunity.projects.future_projects.office_buildings_description') !!}
                             </div>
                         </div>
@@ -194,11 +193,11 @@
             <div class=" px-6 md:py-8 lg:py-20 md:px-2 bg-no-repeat" >
                 <div class="xl:flex flex-row ">
                     <div data-aos="zoom-in-right" data-aos-delay="700" data-aos-delay="500" class="xl:basis-1/2 xl:text-lg xl:text-left md:text-center">
-                        <div class="text-3xl text-slate-600 md:text-5xl xl:text-5xl font-bold">
+                        <div {{App\Helper::test('opportunity.section.title') }}  class=" partie relative text-3xl text-slate-600 md:text-5xl xl:text-5xl font-bold">
                             {!! __('opportunity.section.title') !!}
                         </div>
 
-                        <div class="pt-4 xl:pt-8 pb-4 xl:pb-8 xl:text-lg ">
+                        <div {{App\Helper::test('opportunity.section.subtitle') }}  class=" partie relative pt-4 xl:pt-8 pb-4 xl:pb-8 xl:text-lg ">
                             {!! __('opportunity.section.subtitle') !!}
                         </div>
                         <div class="grid grid-cols-2 xl:grid-cols-2 gap-2 xl:gap-2 xl:px-0 md:px-16 pt-4">
@@ -206,7 +205,7 @@
                                 <div class="inline-flex items-center  flex-shrink-0 w-6 h-6 xl:w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
                                     <img src="img/icon/check.png" alt="">
                                 </div>
-                                <div class="ml-2 xl:ml-4 text-md font-normal">
+                                <div {{App\Helper::test('opportunity.section.office_buildings') }}  class=" partie relative ml-2 xl:ml-4 text-md font-normal">
                                     {!! __('opportunity.section.office_buildings') !!}
                                 </div>
                             </div>
@@ -215,7 +214,7 @@
                                 <div class="inline-flex items-center  flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
                                         <img src="img/icon/check.png" alt="">
                                 </div>
-                                <div class="ml-4 text-md font-normal">
+                                <div {{App\Helper::test('opportunity.section.university') }}  class=" partie relative ml-4 text-md font-normal">
                                     {!! __('opportunity.section.university') !!}
                                 </div>
                             </div>
@@ -223,7 +222,7 @@
                                 <div class="inline-flex items-center  flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
                                         <img src="img/icon/check.png" alt="">
                                 </div>
-                                <div class="ml-4 text-md font-normal">
+                                <div {{App\Helper::test('opportunity.section.warehouses_for_rent') }}  class=" partie relative ml-4 text-md font-normal">
                                     {!! __('opportunity.section.warehouses_for_rent') !!}
                                 </div>
                             </div>
@@ -232,7 +231,7 @@
                                     class="inline-flex items-center  flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
                                     <img src="img/icon/check.png" alt="">
                                 </div>
-                                <div class="ml-4 text-md font-normal">
+                                <div  {{App\Helper::test('opportunity.section.international_medical_clinic') }}  class=" partie relative ml-4 text-md font-normal">
                                     {!! __('opportunity.section.international_medical_clinic') !!}
                                 </div>
                             </div>
@@ -241,7 +240,7 @@
                                 <div class="inline-flex items-center  flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
                                         <img src="img/icon/check.png" alt="">
                                 </div>
-                                <div class="ml-4 text-md font-normal">
+                                <div {{App\Helper::test('opportunity.section.commercial_alley') }}  class=" partie relative ml-4 text-md font-normal">
                                     {!! __('opportunity.section.commercial_alley') !!}
                                 </div>
                             </div>
@@ -249,7 +248,7 @@
                                 <div class="inline-flex items-center  flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
                                     <img src="img/icon/check.png" alt="">
                                 </div>
-                                <div class="ml-4 text-md font-normal">
+                                <div {{App\Helper::test('opportunity.section.cultural_center') }}  class=" partie relative ml-4 text-md font-normal">
                                     {!! __('opportunity.section.cultural_center') !!}
                                 </div>
                             </div>
@@ -260,7 +259,7 @@
                                 <div >
                                     <a href="/opportunity"
                                         class="inline-flex items-center font-medium text-orange-400 dark:text-orange-400 hover:underline">
-                                        {{__('home.button.read_more')}}
+                                        {!!__('home.button.read_more')!!}
                                         <svg class="w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                             fill="none" viewBox="0 0 14 10">
                                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"

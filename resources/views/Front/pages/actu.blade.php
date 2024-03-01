@@ -74,7 +74,7 @@
                     <h3> {!!__('actu.event.image')!!}</h3>
                     <div class="text-amber-500 hover:underline">
                         <p>
-                        <a href="{{ route('media') }}">  {!!__('home.read_more')!!} </a>
+                        <a href="{{ route('media') }}">  {!!__('home.button.read_more')!!} </a>
                         </p>
                     </div>
                 </div>

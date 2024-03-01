@@ -2,7 +2,7 @@
 @section('content')
     <div class="container px-6 mx-auto grid">
         <h2 class="mt-6 text-2xl font-semibold text-gray-700 dark:text-gray-200">
-            {{__('layouts.nav.profil')}}
+            {!! __('layouts.nav.profil')!!}
         </h2>
         <!-- CTA -->
         <div class="card-body">
@@ -34,7 +34,7 @@
             </div>
 
             <div class="py-4">
-                <h5>{{__('profil.home.list_request')}}</h5>
+                <h5>{!!__('profil.home.list_request')!!}</h5>
                 <div class="grid gap-4 mb-8 md:grid-cols-2 xl:grid-cols-4">
                     @foreach ($typeDemandes as $typeDemande)
                         <div class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
@@ -53,7 +53,7 @@
                                 </p>
                                 <a href="{{ route('Front.profil.form', ['typeDeDemande' => $typeDemande->name]) }}">
                                     <button class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-blue-500 border border-transparent rounded-lg active:bg-blue-100 hover:bg-blue-500 focus:outline-none focus:shadow-outline-purple">
-                                        {{__('profil.home.start')}}
+                                        {!!__('profil.home.start') !!}
                                      </button>
                                 </a>
                             </div>
@@ -64,19 +64,19 @@
 
             <div class="">
                 <h4 class="mb-4 text-lg font-semibold text-gray-600 dark:text-gray-300">
-                    {{__('profil.home.new_available')}}
+                    {!!__('profil.home.new_available')!!}
                 </h4>
                 <div class="w-full overflow-hidden rounded-lg shadow-xs">
                     <div class="w-full overflow-x-auto">
                         <table class="w-full whitespace-no-wrap">
                             <thead>
                                 <tr class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
-                                    <th class="px-4 py-3">{{__('profil.home.categories')}}</th>
-                                    <th class="px-4 py-3">{{__('profil.home.title')}}</th>
-                                    <th class="px-4 py-3">{{__('profil.home.description')}}</th>
-                                    <th class="px-4 py-3">{{__('profil.home.date_end')}}</th>
+                                    <th class="px-4 py-3">{!! __('profil.home.categories') !!}</th>
+                                    <th class="px-4 py-3">{!! __('profil.home.title') !!}</th>
+                                    <th class="px-4 py-3">{!! __('profil.home.description') !!}</th>
+                                    <th class="px-4 py-3">{!! __('profil.home.date_end') !!}</th>
                                     <th class="px-4 py-3">Fichier joints</th>
-                                    <th class="px-4 py-3">{{__('profil.home.action')}}</th>
+                                    <th class="px-4 py-3">{!! __('profil.home.action') !!}</th>
 
                                 </tr>
                             </thead>
@@ -123,7 +123,7 @@
                                                     <a href="{{route('application.form',[$tender['id']])}}">
                                                         <button
                                                             class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-blue-500 border border-transparent rounded-lg active:bg-blue-100 hover:bg-blue-500 focus:outline-none focus:shadow-outline-purple">
-                                                            {{(__("layouts.footer.submit"))}} </button></a>
+                                                            {!! (__("layouts.footer.submit"))!!} </button></a>
                                                 </div>
                                             </td>
                                         </tr>

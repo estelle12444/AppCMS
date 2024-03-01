@@ -6,22 +6,22 @@
                      <img src="{{ asset('img/Image11.png') }}" width="80" alt="logo">
                  </h2>
                  <ul class="text-gray-700 dark:text-gray-400 font-medium -translate-y-6">
-                     <li class="mb-4">
+                     <li {{App\Helper::test('layouts.footer.address.value') }}  class=" partie relative mb-4">
                         {{__('layouts.footer.address.value')}}
                      </li>
-                     <li class="mb-4">
+                     <li {{App\Helper::test('layouts.footer.address.phone') }}  class=" partie relative mb-4">
                         {{__('layouts.footer.address.phone')}}
                     </li>
-                     <li class="mb-4">
+                     <li {{App\Helper::test('layouts.footer.address.email') }}  class=" partie relative mb-4">
                         {{__('layouts.footer.address.email')}}
                      </li>
-                     <li class="mb-4">
+                     <li {{App\Helper::test('layouts.footer.address.country') }}  class=" partie relative mb-4">
                         {{__('layouts.footer.address.country')}}
                      </li>
                       <div class="">
                         <a href="{{ route('login') }} ">
                         <button type="button" style="background-color: #F18700"
-                            class=" xl:p-4 xl:px-8 rounded-none font-bold text-white text-left text-md">
+                        {{App\Helper::test('layouts.footer.join_us') }}  class=" partie relative xl:p-4 xl:px-8 rounded-none font-bold text-white text-left text-md">
                             {{__('layouts.footer.join_us')}}
                         </button>
                     </a>
@@ -29,24 +29,24 @@
                  </ul>
              </div>
              <div>
-                 <h2 class="mb-6 text-2xl font-semibold text-gray-900 dark:text-white">{{__('layouts.footer.ads.menu')}}</h2>
+                 <h2 {{App\Helper::test('layouts.footer.ads.menu') }}  class=" partie relative mb-6 text-2xl font-semibold text-gray-900 dark:text-white">{{__('layouts.footer.ads.menu')}}</h2>
                  <ul class="text-gray-700 dark:text-gray-400 font-medium">
-                     <li class="mb-4">
+                     <li {{App\Helper::test('layouts.nav.menu.home') }}  class=" partie relative mb-4">
                          <a href="/home" class="hover:underline">{{__('layouts.nav.menu.home')}}</a>
                      </li>
-                     <li class="mb-4">
+                     <li {{App\Helper::test('layouts.nav.menu.about') }}  class=" partie relative mb-4">
                          <a href="/about" class="hover:underline">{{__('layouts.nav.menu.about')}}</a>
                      </li>
-                     <li class="mb-4">
+                     <li {{App\Helper::test('layouts.nav.menu.partners') }}  class=" partie relative mb-4">
                          <a href="/etsagre" class="hover:underline">{{__('layouts.nav.menu.partners')}}</a>
                      </li>
-                     <li class="mb-4">
+                     <li {{App\Helper::test('layouts.nav.menu.install') }}  class=" partie relative mb-4">
                          <a href="/installer" class="hover:underline">{{__('layouts.nav.menu.install')}}</a>
                      </li>
-                     <li class="mb-4">
+                     <li {{App\Helper::test('layouts.nav.menu.opportunities') }}  class=" partie relative mb-4">
                          <a href="/opportunity" class="hover:underline">{{__('layouts.nav.menu.opportunities')}}</a>
                      </li>
-                     <li class="mb-4">
+                     <li {{App\Helper::test('layouts.nav.menu.galery') }}  class=" partie relative mb-4">
                          <a href="/media" class="hover:underline">{{__('layouts.nav.menu.galery')}}</a>
                      </li>
                  </ul>

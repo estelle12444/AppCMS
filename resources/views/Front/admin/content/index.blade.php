@@ -19,7 +19,7 @@
                                             </h2>
 
                                         </div>
-                                        <div id="collapse{{ $section['id'] }}" class="collapse show" aria-labelledby="{{ $section['id'] }}Section"
+                                        <div id="collapse{{ $section['id']}}" class="collapse show" aria-labelledby="{{ $section['id'] }}Section"
                                             data-parent="#accordion{{ $section['id'] }}">
                                             <div class="card-body">
                                                 @foreach ($section['items'] as $key => $title)

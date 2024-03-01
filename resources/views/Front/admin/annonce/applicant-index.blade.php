@@ -95,8 +95,7 @@
 
                                                                     @if (is_array($attachments))
                                                                         @foreach ($attachments as $attachment)
-                                                                            <p><a href="{{ asset('storage/attachments' . $attachment) }}"
-                                                                                    target="_blank">{{ Str::limit(strip_tags($attachment), 20, '...') }}</a>
+                                                                            <p><a h href="{{ route('download.attachment', ['filename' => $attachment]) }}" target="_blank">{{ Str::limit(strip_tags($attachment), 20, '...') }}</a>
                                                                             </p>
                                                                         @endforeach
                                                                     @else

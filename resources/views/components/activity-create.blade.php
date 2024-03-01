@@ -73,8 +73,8 @@
                                 <div class="form-group row mb-4">
                                     <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Image</label>
                                     <div class="input-group col-sm-12 col-md-7">
-                                        <input type="file" name="lang[0][image]" class="form-control" id="inputGroupFile04"
-                                            aria-describedby="inputGroupFileAddon04" aria-label="Upload"
+                                        <input type="file" name="lang[0][image]" class="form-control" id="inputGroupFile09"
+                                            aria-describedby="inputGroupFileAddon09" aria-label="Upload"
                                             accept=".png, .jpg, .jpeg" >
                                     </div>
                                 </div>
@@ -89,10 +89,10 @@
                                     <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Documents ci-joints
                                     </label>
                                     <div class="input-group col-sm-12 col-md-7">
-                                        <input type="file" name="lang[0][file]" class="form-control" id="inputGroupFile04"
-                                            aria-describedby="inputGroupFileAddon04" aria-label="Upload"
+                                        <input type="file" name="lang[0][file]" class="form-control" id="inputGroupFile08"
+                                            aria-describedby="inputGroupFileAddon08" aria-label="Upload"
                                             accept=".pdf, .txt, .docx">
-                                        <small id="inputGroupFileAddon04" class="form-text text-muted">Sélectionnez un
+                                        <small id="inputGroupFileAddon08" class="form-text text-muted">Sélectionnez un
                                             document (.pdf, .txt, .docx).</small>
                                     </div>
                                 </div>
@@ -153,8 +153,8 @@
                                 <div class="form-group row mb-4">
                                     <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Image</label>
                                     <div class="input-group col-sm-12 col-md-7">
-                                        <input type="file" name="lang[1][image]" class="form-control" id="inputGroupFile04"
-                                            aria-describedby="inputGroupFileAddon04" aria-label="Upload" accept=".png, .jpg, .jpeg">
+                                        <input type="file" name="lang[1][image]" class="form-control" id="inputGroupFile06"
+                                            aria-describedby="inputGroupFileAddon06" aria-label="Upload" accept=".png, .jpg, .jpeg">
                                     </div>
                                 </div>
 
@@ -167,9 +167,9 @@
                                 <div class="form-group row mb-4">
                                     <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Attached Documents</label>
                                     <div class="input-group col-sm-12 col-md-7">
-                                        <input type="file" name="lang[1][file]" class="form-control" id="inputGroupFile04"
-                                            aria-describedby="inputGroupFileAddon04" aria-label="Upload" accept=".pdf, .txt, .docx">
-                                        <small id="inputGroupFileAddon04" class="form-text text-muted">Select a document (.pdf, .txt, .docx).</small>
+                                        <input type="file" name="lang[1][file]" class="form-control" id="inputGroupFile05"
+                                            aria-describedby="inputGroupFileAddon05" aria-label="Upload" accept=".pdf, .txt, .docx">
+                                        <small id="inputGroupFileAddon05" class="form-text text-muted">Select a document (.pdf, .txt, .docx).</small>
                                     </div>
                                 </div>
 

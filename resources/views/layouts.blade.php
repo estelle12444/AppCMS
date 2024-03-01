@@ -88,8 +88,43 @@
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
     AOS.init();
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var parties = document.querySelectorAll(".partie");
+        var userRole = @json(Auth::user()->role ?? '{}');
+        if (userRole.nom === 'admin') {
+            parties.forEach(function(partie) {
+                partie.addEventListener("mouseover", function(e) {
+                    const tag = e.target.getAttribute("data-tag");
+                    const tagList = [...document.querySelectorAll(`[data-tag='${tag}']`)];
+                    tagList.forEach((node)=>{
+                        node.style.border = "2px dashed #ff0000";
+                        const button = document.createElement('button');
+                        button.setAttribute('data-tag', tag);
+                        button.classList = "editButton absolute bottom-4 right-0 p-2 bg-gray-800 text-white rounded-full"
+                        button.innerHTML = `
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
+                            </svg>
+                        `;
+                        node.append(button);
+                    })
+                });
+
+                partie.addEventListener("mouseleave", function(e) {
+                    const tag = e.target.getAttribute("data-tag");
+                    const tagList = [...document.querySelectorAll(`[data-tag='${tag}']`)];
+                    tagList.forEach((node)=>{
+                        node.style.border = "";
+                        node.removeChild(node.getElementsByTagName('button')[0]);
+                    })
+                });
+            });
+        }
+    });
 </script>
+
 
 <script src="{{ asset('js/script1.js') }}"></script>
 @stack('scripts')
- </html>
+</html>

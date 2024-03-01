@@ -1,5 +1,5 @@
 {
-    "layouts.nav.profil": "Dashboard",
+    "layouts.nav.profil": "<b>Dashboard</b>",
     "layouts.nav.logout": "Disconnect",
     "layouts.nav.greet": "Hi",
     "layouts.nav.login": "TO LOG IN",
@@ -10,7 +10,7 @@
     "layouts.nav.menu.install": "Getting established",
     "layouts.nav.menu.partners": "Our partners",
     "layouts.nav.menu.galery": "Gallery",
-    "layouts.nav.menu.media": "Media library",
+    "layouts.nav.menu.media": "Media",
     "layouts.nav.menu.news": "Advertisement",
     "layouts.nav.register": "REGISTER",
     "layouts.footer.address.value": "B.P 605 Grand-Bassam",
@@ -33,7 +33,7 @@
     "layouts.footer.social.linkedin": "linkedin",
     "layouts.footer.submit": "apply",
     "layouts.footer.copyright": " © VITIB 2023 | All rights reserved. Design by SaH Analytics Int",
-    "profil.layouts.requests.index": "List of Requests ",
+    "profil.layouts.requests.index": "<u>List of Requests</u>",
     "profil.layouts.requests.follow": "Follow your request",
     "profil.layouts.documents": "Documents provided",
     "profil.layouts.requests.edit": "Modify your information",
@@ -41,8 +41,7 @@
     "profil.layouts.requests.message": "Messages",
     "profil.layouts.requests.welcome": "Welcome",
     "profil.layouts.requests.profile": "Profile",
-
-    "home.carousel.left.welcome":"welcome",
+    "home.carousel.left.welcome": "welcome",
     "home.carousel.left.at": "AT",
     "home.carousel.left.technological": "The Ivory Coast Technology Park",
     "home.advantages.fiscal_and_regulatory_advantages": "Fiscal advantages <br> and regulatory",
@@ -112,7 +111,7 @@
     "installer.section.eligibility.prerequisites.subtitle": "<p>Benefit from the ZBTIC regime is subject to obtaining approval issued by the EPE (VITIB S.A). </p>",
     "installer.section.eligibility.prerequisites.biotechnology": " <p>Biotechnology</p>",
     "installer.section.eligibility.prerequisites.information": " <p> Information and Communication Technologies</p>",
-    "installer.section.eligibility.prerequisites.banks": "<p>  Banks and financial establishments supporting investments made in the Free Zone.</p>",
+    "installer.section.eligibility.prerequisites.banks": "<p> Banks and financial establishments supporting investments made in the Free Zone.</p>",
     "installer.section.eligibility.prerequisites.vitib": "<p>VITIB also offers investment opportunities in BOO and BOT real estate on 180 Ha under development, with the creation of a new city in mind.VITIB is looking for technical and financial partners in PPP mode to finance and implement urban projects in the Grand-Bassam Free Zone. In addition, a 62-hectare residential and commercial zone has been set aside to provide local housing solutions for nearly 20,000 ZBTIC employees. </p>",
     "installer.section.approval_procedure": "<h1> Approval procedure<h1>",
     "installer.section.eligibility.activities.title": "<h1> ELIGIBLE ACTIVITIES</h1>",
@@ -141,7 +140,6 @@
     "installer.join_us.form_vitib": "<p>VITIB approval application form</p>",
     "installer.join_us.opportunity_list": " <p> Consult the list of investment opportunities (invest in VITIB)</p>",
     "installer.join_us.form_pepiniere": " <p>Nursery approval application form</p>",
-
     "landing.innovation_village.title": "<h2>Technological Innovation Village</h2>",
     "landing.innovation_village.first.content": " <p>The area chosen for the ZBTIC has a strong ecological and landscape value. </p>",
     "landing.innovation_village.second.content": " <p>There we find the mangroves and the strong biodiversity, characteristics of the commune of Grand-Bassam: assets which have strong development potential.</p>",
@@ -151,24 +149,20 @@
     "landing.website_browsing.link_text": "website",
     "news.title": "<h1>ADVERTISEMENT</h1>",
     "news.all": "All",
-
     "news.job.download.job": "Download the offer file",
     "news.job.no.result.title": "<h3>No search results</h3>",
     "news.job.no.result": "<p>No results found for your search.</p>",
     "news.job.download.tender": "<p>Download the application file</p>",
     "news.job.limit.date": "Deadline:",
     "news.job.text.download": " <p>You must be registered to download the file.</p>",
-
-    "info.job.name":"Tender Dossier",
-    "info.job.title":"Title:",
-    "info.job.describe":"  Description:",
-    "info.job.resume":"Resume:",
-    "info.job.limit_date":" Deadline:",
-    "info.job.previous":" previous",
-    "actu.event.image":"Events in Pictures ",
-
-
-    "account.message":"You must be logged in and associated with a company to access this page.",
+    "info.job.name": "Tender Dossier",
+    "info.job.title": "Title:",
+    "info.job.describe": "  Description:",
+    "info.job.resume": "Resume:",
+    "info.job.limit_date": " Deadline:",
+    "info.job.previous": " previous",
+    "actu.event.image": "Events in Pictures ",
+    "account.message": "You must be logged in and associated with a company to access this page.",
     "profil.home.request_message": "You submitted  <strong style='color:red;'>:count </strong> :type",
     "profil.home.list_request": "List of possible requests",
     "profil.home.new_available": "List of available announcements",
@@ -237,4 +231,4 @@
     "profil.form.previous": "Previous",
     "profil.form.undertaking": "Commitment",
     "profil.form.undertaking_text": "I/we the undersigned .............:fullname........................ certify that I am/we are authorized to complete this approval application form with a view to our installation at ZBTIC. I/we agree to pay all obligations applied to said request. I/We certify that all information given is correct except for errors or omissions on my/our part."
-  }
+}

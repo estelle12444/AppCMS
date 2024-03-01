@@ -8,8 +8,8 @@
     </style>
     <section class="bg-center bg-no-repeat bg-slate-400 bg-blend-multiply" style="background-image: url(img/immobilier1.png)">
         <div class="px-4 mx-auto max-w-screen-xl text-center py-16 md:pt-20  lg:py-0 mb-2" >
-            <div data-aos="zoom-in" data-aos-duration="500"data-aos-delay="700"
-            class=" text-4xl font-semibold text-white md:pt-8 pt-4 lg:pb-8 lg:pt-24 xl:text-5xl lg:text-6xl ">
+            <div data-aos="zoom-in" data-aos-duration="500"data-aos-delay="700" {{App\Helper::test('about.vision') }}
+            class=" partie relative text-4xl font-semibold text-white md:pt-8 pt-4 lg:pb-8 lg:pt-24 xl:text-5xl lg:text-6xl ">
                 {{-- <p>Ensemble, Bâtissons
                     <span class="text-orange ">la Ville Intelligente</span>
                      N°
@@ -29,40 +29,40 @@
                 </div>
                 <div data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="700"
                     class=" md:px-8 xl:w-1/2  mx-4 xl:mr-24">
-                    <div  class="font-bold xl:text-5xl py-8 text-4xl md:text-5xl ">
+                    <div  class=" partie relative font-bold xl:text-5xl py-8 text-4xl md:text-5xl "  {{App\Helper::test('about.director.title') }}>
                         {!! __('about.director.title') !!}
                     </div>
-                    <div class="text-justify text-gray-600 xl:text-lg tracking-tight ">
+                    <div class="partie relative text-justify text-gray-600 xl:text-lg tracking-tight " {{App\Helper::test('about.director.message') }}>
                         {!! __('about.director.message') !!}
                     </div>
                     <div class="py-8" style="float:right ">
-                        <div class="font-bold">
+                        <div class="partie relative font-bold"  {{App\Helper::test('about.director.name') }}>
                             {!! __('about.director.name') !!}
                         </div>
 
-                        {!! __('about.director') !!}
+                      <span class="partie relative"  {{App\Helper::test('about.director') }}> {!! __('about.director') !!}</span>
                     </div>
                 </div>
 
                 <div class="xl:flex flex-row white xl:absolute  xl:mt-6 left-0 py-6 xl:top-[90%] mt-24 xl:mt-0"
                     style="background-image: url(img/blue.png);">
                     <div class="xl:w-1/2 xl:pl-32 px-4 xl:pr-8 pt-10">
-                        <div class="font-bold text-4xl  pb-4 bg-[url('/public/img/icon-index/MOTIF.png')]  bg-8  bg-no-repeat bg-left ">
+                        <div {{App\Helper::test('about.mission.title') }} class="partie relative font-bold text-4xl  pb-4 bg-[url('/public/img/icon-index/MOTIF.png')]  bg-8  bg-no-repeat bg-left ">
                             {!! __('about.mission.title') !!}
                         </div>
-                        <div class="text-justify pt-8 pb-8">
+                        <div {{App\Helper::test('about.mission.describe') }} class="partie relative text-justify pt-8 pb-8">
                             {!! __('about.mission.describe') !!}
                         </div>
-                        <div data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="500"class=" text-justify tracking-tight ">
+                        <div {{App\Helper::test('about.mission.content') }} data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="500" class=" partie relative text-justify tracking-tight ">
                             {!! __('about.mission.content') !!}
                         </div>
                     </div>
 
                     <div class=" xl:w-1/2 xl:pt-32 xl:pl-8 xl:pr-32 px-4 ">
-                        <div class="font-bold text-4xl pb-4 bg-[url('/public/img/icon-index/MOTIF.png')]  bg-8  bg-no-repeat bg-left ">
+                        <div {{App\Helper::test('about.value.title') }}  class=" partie relative font-bold text-4xl pb-4 bg-[url('/public/img/icon-index/MOTIF.png')]  bg-8  bg-no-repeat bg-left ">
                             {!! __('about.value.title') !!}
                         </div>
-                        <div data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="500" class="text-justify tracking-tight">
+                        <div {{App\Helper::test('about.value.content') }} data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="500" class=" partie relative text-justify tracking-tight">
                             {!! __('about.value.content') !!}
                         </div>
                     </div>
