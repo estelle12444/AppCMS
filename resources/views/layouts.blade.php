@@ -8,6 +8,8 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
     <link href="{{ asset('img/icon/icon.ico') }}" rel="icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sceditor@3/minified/themes/default.min.css" />
+
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
@@ -56,6 +58,48 @@
     </div>
     <hr>
     @yield('content')
+    <div id="modalId" class="fixed hidden z-50 inset-0 bg-gray-900 bg-opacity-60 overflow-y-auto h-full w-full px-4">
+        <div class="relative top-40 mx-auto shadow-xl rounded-md bg-white max-w-md">
+            <div class="flex justify-end p-2">
+                <button onclick="closeModal('modalId')" type="button"
+                    class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="p-6 pt-0 text-center">
+                <form id="confirmForm" action="/api/save" method="POST" enctype="multipart/form-data">
+                    @csrf
+                    <div class="form-group row mb-4">
+                        <input type="hidden" name="tag">
+                        <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Texte français</label>
+                        <div class="col-sm-12 col-md-7">
+                            <input class="form-control" type="text" id="description_fr" name="fr" />
+                            <div style="display:none;" id="error-fr" class="alert alert-danger"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group row mb-4">
+                        <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Texte anglais</label>
+                        <div class="col-sm-12 col-md-7">
+                            <input class="form-control" type="text" id="description_en" name="en" />
+                            <div style="display:none;" id="error-en" class="alert alert-danger"></div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center space-x-4">
+                        <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded-lg mr-2">Save</button>
+                        <button type="button" onclick="closeModal('modalId')"
+                            class="px-4 py-2 bg-gray-300 text-gray-800 rounded-lg">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
 
     <hr>
 
@@ -65,12 +109,11 @@
 
 @include('Front.partials.footer')
 <!-- Footer End -->
-
-
-
+<script src="{{ asset('assets/modules/jquery.min.js') }}"></script>
 <!-- Library Javascript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/sceditor@3/minified/sceditor.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sceditor@3/minified/formats/bbcode.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -81,13 +124,35 @@
             $("#preloader-area").hide();
         }, 1500);
     })
-
 </script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
     AOS.init();
+
+    const openModal = function(modalId) {
+        document.getElementById(modalId).style.display = 'block';
+        document.getElementsByTagName('body')[0].classList.add('overflow-y-hidden');
+    }
+
+    const closeModal = function(modalId) {
+        document.getElementById(modalId).style.display = 'none';
+        document.getElementsByTagName('body')[0].classList.remove('overflow-y-hidden');
+    }
+
+    // Close all modals when press ESC
+    document.onkeydown = function(event) {
+        event = event || window.event;
+        if (event.keyCode === 27) {
+            document.getElementsByTagName('body')[0].classList.remove('overflow-y-hidden')
+            let modals = document.getElementsByClassName('modal');
+            Array.prototype.slice.call(modals).forEach(i => {
+                i.style.display = 'none'
+            })
+        }
+    };
+
 
     document.addEventListener("DOMContentLoaded", function() {
         var parties = document.querySelectorAll(".partie");
@@ -96,35 +161,144 @@
             parties.forEach(function(partie) {
                 partie.addEventListener("mouseover", function(e) {
                     const tag = e.target.getAttribute("data-tag");
-                    const tagList = [...document.querySelectorAll(`[data-tag='${tag}']`)];
-                    tagList.forEach((node)=>{
+                    // console.log(e.target)
+                    const tagList = document.querySelectorAll(`[data-tag='${tag}']`);
+                    tagList.forEach((node) => {
                         node.style.border = "2px dashed #ff0000";
-                        const button = document.createElement('button');
-                        button.setAttribute('data-tag', tag);
-                        button.classList = "editButton absolute bottom-4 right-0 p-2 bg-gray-800 text-white rounded-full"
-                        button.innerHTML = `
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
-                            </svg>
-                        `;
-                        node.append(button);
-                    })
+                        const button = createEditButton(node,
+                        "modalId"); // Passer l'ID du modal
+                        node.appendChild(button); // Ajouter le bouton à l'élément
+
+                    });
+                    requestAnimationFrame()
                 });
 
                 partie.addEventListener("mouseleave", function(e) {
                     const tag = e.target.getAttribute("data-tag");
-                    const tagList = [...document.querySelectorAll(`[data-tag='${tag}']`)];
-                    tagList.forEach((node)=>{
+                    const tagList = document.querySelectorAll(`[data-tag='${tag}']`);
+                    tagList.forEach((node) => {
                         node.style.border = "";
-                        node.removeChild(node.getElementsByTagName('button')[0]);
-                    })
+                        const button = node.querySelector(
+                        '.editButton'); // Sélectionner le bouton
+                        if (button) {
+                            button.parentNode.removeChild(button); // Retirer le bouton
+                        }
+                    });
                 });
             });
         }
+    });
+
+    function createEditButton(parentElement, modalId) {
+        const button = document.createElement('button');
+        button.classList.add("editButton", "absolute", "bottom-4", "right-0", "p-2", "bg-gray-800", "text-white",
+            "rounded-full");
+        button.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
+        </svg>`;
+
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            openModalWithData(modalId, e.target.getAttribute("data-tag") || e.target.parentNode.getAttribute(
+                "data-tag") || e.target.parentNode.parentNode.getAttribute("data-tag"));
+            openModal(modalId);
+
+        });
+        return button;
+    }
+
+    function openModalWithData(modalId, tag) {
+        displayError('en');
+        displayError('fr');
+
+        const modal = document.getElementById(modalId);
+        document.querySelector("input[name='tag']").value = tag;
+
+        // les données de l'API
+        fetch("/api/content/", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "X-CSRF-Token": "{{ csrf_token() }}"
+                },
+                body: JSON.stringify({
+                    tag
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("description_fr").value = data.fr;
+                document.getElementById("description_en").value = data.en;
+
+                modal.style.display = 'block';
+                document.getElementsByTagName('body')[0].classList.add('overflow-y-hidden');
+            })
+            .catch(error => console.error('Erreur lors de la récupération du contenu:', error));
+    }
+
+    function displayError(lang, error=""){
+        let htmlEl = document.getElementById(`error-${lang}`);
+        if(error !== ""){
+            htmlEl.style.display = "block";
+            const message = error === "validation.max.string" ? `Nombre de charactère supérieur à la limite autorisée`: `Texte obligatoire`;
+            htmlEl.innerHTML = message;
+        }else{
+            htmlEl.style.display = "none";
+        }
+
+    }
+
+    let confirmForm = document.getElementById("confirmForm");
+
+    confirmForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        let description_fr = document.getElementById("description_fr").value;
+        let description_en = document.getElementById("description_en").value;
+        let tag = document.querySelector("input[name='tag']").value;
+
+        if (description_fr.trim() === "" || description_en.trim() === "") {
+            alert("Saisir une valeur dans les deux champs de texte!");
+            return;
+        }
+
+        let formData = new FormData(e.target);
+        let data = {};
+        formData.forEach((value, key) => {
+            data[key] = value;
+        });
+        data["tag"] = tag;
+
+        fetch("/api/save", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "X-CSRF-Token": "{{ csrf_token() }}"
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert("Modification effectué avec success");
+                    window.location.reload();
+                } else {
+                    for (let lang in data.errors) {
+                        displayError(lang, data.errors[lang][0])
+                    }
+                }
+            })
+            .catch(error => {
+
+                console.error("Une erreur s'est produite lors de la soumission du formulaire:", error);
+                alert(
+                    "Une erreur s'est produite lors de la soumission du formulaire. Veuillez réessayer plus tard.");
+            });
     });
 </script>
 
 
 <script src="{{ asset('js/script1.js') }}"></script>
 @stack('scripts')
+
 </html>

@@ -7,6 +7,8 @@
             <div class=" xl:px-20 pt-16 xl:grid xl:grid-cols-2 xl:gap-8 xl:items-center pb-8">
                 <div  data-aos="zoom-out-left" data-aos-delay="500" class="px-8 xl:pt-12 sm:px-8 xl:px-8 text-center xl:text-left ">
                     <div class="text-4xl md:text-5xl xl:text-8xl font-semibold pt-4 xl:pt-8 text-slate-600 uppercase">
+                        <!-- Modal -->
+
                         <h1 >
                            <span {{App\Helper::test('home.carousel.left.welcome') }} class="partie relative">{!! __('home.carousel.left.welcome') !!} </span> <br>
                            <span {{App\Helper::test('home.carousel.left.at') }} class="partie relative">{!!  __('home.carousel.left.at') !!}</span>
@@ -26,12 +28,6 @@
                             </button>
                         </a>
                     </div>
-                    {{-- <button  class="editButton absolute bottom-4 right-0 p-2 bg-gray-800 text-white rounded-full"
-                        style="display: none;">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
-                          </svg>
-                    </button>  --}}
                 </div>
 
                 <div data-aos="zoom-out-right" data-aos-delay="700" data-aos-delay="800"

@@ -202,6 +202,7 @@ Route::middleware(['admin'])->group(function () {
 
     Route::post('applicant/accepter/{id}', [ApplicantController::class, 'accepter'])->name('accepter');
     Route::post('applicant/refuser/{id}', [ApplicantController::class, 'refuser'])->name('refuser');
+    
 
 });
 

@@ -21,7 +21,7 @@
                         <div class="form-group row mb-4">
                             <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Texte français</label>
                             <div class="col-sm-12 col-md-7">
-                                <textarea class="form-control summernote-simple" id="description" name="fr[content]" rows="3">{{ $contents['fr'][$key] }}</textarea>
+                                <textarea class="form-control summernote-simple" id="description_fr" name="fr[content]" rows="3">{{ $contents['fr'][$key] }}</textarea>
                                 @error('fr.content')
                                     <div class="alert alert-danger">{{ $message }}</div>
                                 @enderror
@@ -31,7 +31,7 @@
                         <div class="form-group row mb-4">
                             <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Texte anglais</label>
                             <div class="col-sm-12 col-md-7">
-                                <textarea class="form-control summernote-simple" id="description" name="en[content]" rows="3">{{ $contents['en'][$key] }}</textarea>
+                                <textarea class="form-control summernote-simple" id="description_en" name="en[content]" rows="3">{{ $contents['en'][$key] }}</textarea>
                                 @error('en.content')
                                     <div class="alert alert-danger">{{ $message }}</div>
                                 @enderror

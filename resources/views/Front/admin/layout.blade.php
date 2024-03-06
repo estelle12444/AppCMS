@@ -274,7 +274,6 @@ $url = $_SERVER['REQUEST_URI'];
 
     <script src="{{asset('assets/modules/chocolat/dist/js/jquery.chocolat.min.js')}}"></script>
     <script src="{{ asset('assets/modules/popper.js') }}"></script>
-
     <script src="{{ asset('assets/modules/tooltip.js') }}"></script>
 
     <script src="{{ asset('assets/modules/bootstrap/js/bootstrap.min.js') }}"></script>
@@ -300,7 +299,6 @@ $url = $_SERVER['REQUEST_URI'];
 
 
     <script src="{{ asset('assets/modules/upload-preview/assets/js/jquery.uploadPreview.min.js') }}"></script>
-
     <script src="{{ asset('assets/js/page/index-0.js') }}"></script>
 
 

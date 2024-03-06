@@ -7,6 +7,17 @@
                 <div class="card">
                     <div class="container mt-4">
                         @foreach ($sections as $section)
+                        <h2 class="text-center mb-4">
+                            @if ($section['id'] == 'home')
+                                Gestion des pages
+                            @elseif ($section['id'] == 'layouts')
+                                Gestion des élements d'entête et de pied de page
+                            @elseif ($section['id'] == 'profil')
+                                Gestion de l'espace administration client
+                            @else
+
+                            @endif
+                        </h2>
                             <div class="card">
                                 <div class="container mt-4">
                                     {{-- Section: {{ $section['title'] }} --}}
