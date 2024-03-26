@@ -52,33 +52,33 @@
                  </ul>
              </div>
              <div>
-                 <h2 class="mb-6 text-2xl font-semibold text-gray-900 dark:text-white">{{__('layouts.footer.ads.job')}}</h2>
+                 <h2 {{App\Helper::test('layouts.footer.ads.job') }} class="partie relative mb-6 text-2xl font-semibold text-gray-900 dark:text-white">{{__('layouts.footer.ads.job')}}</h2>
                  <ul class="text-gray-700 dark:text-gray-400 font-medium">
                      <li class="mb-4">
-                         <a href="/annonce" class="hover:underline">{{__('layouts.footer.ads.tender')}}</a>
+                         <a href="/annonce"   {{App\Helper::test('layouts.footer.ads.tender') }} class="partie relative hover:underline">{{__('layouts.footer.ads.tender')}}</a>
                      </li>
                      <li class="mb-4">
-                         <a href="/annonce" class="hover:underline">{{__('layouts.footer.ads.event')}}</a>
+                         <a href="/annonce" {{App\Helper::test('layouts.footer.ads.event') }} class="partie relative hover:underline">{{__('layouts.footer.ads.event')}}</a>
                      </li>
                      <li class="mb-4">
-                         <a href="/annonce" class="hover:underline">{{__('layouts.footer.ads.quotation')}}</a>
+                         <a href="/annonce" {{App\Helper::test('layouts.footer.ads.quotation') }} class="partie relative hover:underline">{{__('layouts.footer.ads.quotation')}}</a>
                      </li>
                      <li class="mb-4">
-                         <a href="/annonce" class="hover:underline">{{__('layouts.footer.ads.career')}}</a>
+                         <a href="/annonce" {{App\Helper::test('layouts.footer.ads.career') }} class="partie relative hover:underline">{{__('layouts.footer.ads.career')}}</a>
                      </li>
                      <li class="mb-4">
-                         <a href="/annonce" class="hover:underline">{{__('layouts.footer.ads.job')}}</a>
+                         <a href="/annonce" {{App\Helper::test('layouts.footer.ads.job') }} class="partie relative hover:underline">{{__('layouts.footer.ads.job')}}</a>
                      </li>
                      <li class="mb-4">
-                         <a href="/annonce" class="hover:underline">{{__('layouts.footer.newsletter')}}</a>
+                         <a href="/annonce" {{App\Helper::test('layouts.footer.newsletter') }} class="partie relative hover:underline">{{__('layouts.footer.newsletter')}}</a>
                      </li>
                  </ul>
              </div>
              <div>
-                 <h2 class="mb-6 text-3xl font-semibold text-gray-900 dark:text-white">{{__('layouts.footer.newsletter')}}</h2>
+                 <h2 {{App\Helper::test('layouts.footer.newsletter') }} class="partie mb-6 text-3xl font-semibold text-gray-900 dark:text-white">{{__('layouts.footer.newsletter')}}</h2>
                  <ul class="text-gray-700 dark:text-gray-400 font-medium">
                      <li class="mb-4">
-                         <p class="py-2">
+                         <p {{App\Helper::test('layouts.footer.newsletter.description') }} class="partie relative py-2">
                             {{__('layouts.footer.newsletter.description')}}
                          </p>
                      </li>
@@ -107,7 +107,7 @@
                                      <div class="alert alert-danger">{{ $message }}</div>
                                  @enderror
                              <button type="submit" style="background-color: #F18700;"
-                                 class="pt-3 text-white hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                             {{App\Helper::test('layouts.footer.social.follow') }} class="partie relative pt-3 text-white hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                  {{__('layouts.footer.social.follow')}}
                              </button>
                          </form>

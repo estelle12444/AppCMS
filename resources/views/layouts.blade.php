@@ -15,7 +15,6 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
-
     <link href="{{ asset('css/indexx.css') }}" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
@@ -23,6 +22,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
+
+
     <style>
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
@@ -78,7 +79,8 @@
                         <input type="hidden" name="tag">
                         <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Texte français</label>
                         <div class="col-sm-12 col-md-7">
-                            <input class="form-control" type="text" id="description_fr" name="fr" />
+                            <input id="description_fr" type="text" name="fr" class="form-control">
+                            {{-- <textarea id="description_fr" name="fr" class="form-control"></textarea> --}}
                             <div style="display:none;" id="error-fr" class="alert alert-danger"></div>
                         </div>
                     </div>
@@ -87,20 +89,20 @@
                         <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Texte anglais</label>
                         <div class="col-sm-12 col-md-7">
                             <input class="form-control" type="text" id="description_en" name="en" />
+                            {{-- <textarea id="description_en" name="en" class="form-control"></textarea> --}}
                             <div style="display:none;" id="error-en" class="alert alert-danger"></div>
                         </div>
                     </div>
                     <div class="flex justify-center space-x-4">
-                        <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded-lg mr-2">Save</button>
+                        <button type="submit"
+                            class="px-4 py-2 bg-blue-500 text-white rounded-lg mr-2">Enregistrer</button>
                         <button type="button" onclick="closeModal('modalId')"
-                            class="px-4 py-2 bg-gray-300 text-gray-800 rounded-lg">Cancel</button>
+                            class="px-4 py-2 bg-gray-300 text-gray-800 rounded-lg">Annuler</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-
-
     <hr>
 
 </body>
@@ -117,6 +119,9 @@
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.tiny.cloud/1/d58j15ovrhva2cvk6zlqhfver1ayuy6r7xf4ez5h5kfsqxq5/tinymce/6/tinymce.min.js"
+    referrerpolicy="origin"></script>
+
 
 <script type="text/javascript">
     $(document).ready(function(e) {
@@ -131,78 +136,89 @@
 <script>
     AOS.init();
 
+
     const openModal = function(modalId) {
         document.getElementById(modalId).style.display = 'block';
-        document.getElementsByTagName('body')[0].classList.add('overflow-y-hidden');
+        document.body.classList.add('overflow-y-hidden');
     }
 
     const closeModal = function(modalId) {
         document.getElementById(modalId).style.display = 'none';
-        document.getElementsByTagName('body')[0].classList.remove('overflow-y-hidden');
+        document.body.classList.remove('overflow-y-hidden');
     }
 
-    // Close all modals when press ESC
-    document.onkeydown = function(event) {
-        event = event || window.event;
-        if (event.keyCode === 27) {
-            document.getElementsByTagName('body')[0].classList.remove('overflow-y-hidden')
-            let modals = document.getElementsByClassName('modal');
-            Array.prototype.slice.call(modals).forEach(i => {
-                i.style.display = 'none'
-            })
-        }
-    };
-
-
     document.addEventListener("DOMContentLoaded", function() {
-        var parties = document.querySelectorAll(".partie");
-        var userRole = @json(Auth::user()->role ?? '{}');
+        const userRole = @json(Auth::user()->role ?? '{}');
         if (userRole.nom === 'admin') {
+            const parties = document.querySelectorAll(".partie");
             parties.forEach(function(partie) {
-                partie.addEventListener("mouseover", function(e) {
-                    const tag = e.target.getAttribute("data-tag");
-                    // console.log(e.target)
-                    const tagList = document.querySelectorAll(`[data-tag='${tag}']`);
-                    tagList.forEach((node) => {
-                        node.style.border = "2px dashed #ff0000";
-                        const button = createEditButton(node,
-                        "modalId"); // Passer l'ID du modal
-                        node.appendChild(button); // Ajouter le bouton à l'élément
-
-                    });
-                    requestAnimationFrame()
-                });
-
-                partie.addEventListener("mouseleave", function(e) {
-                    const tag = e.target.getAttribute("data-tag");
-                    const tagList = document.querySelectorAll(`[data-tag='${tag}']`);
-                    tagList.forEach((node) => {
-                        node.style.border = "";
-                        const button = node.querySelector(
-                        '.editButton'); // Sélectionner le bouton
-                        if (button) {
-                            button.parentNode.removeChild(button); // Retirer le bouton
-                        }
-                    });
-                });
+                partie.addEventListener("mouseover", handleMouseOver);
+                partie.addEventListener("mouseleave", handleMouseLeave);
+                partie.editButtonAdded = false;
             });
         }
+        tinymce.init({
+            selector: 'textarea',
+            plugins: 'textcolor colorpicker',
+            toolbar: 'undo redo | styles | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media | forecolor backcolor emoticons',
+            menubar: ' edit view  format tools table ',
+            height: 200,
+            setup: function(editor) {
+                editor.on('init', function() {
+                    this.getDoc().body.style.fontFamily =
+                        'Arial, Helvetica, sans-serif'; // Changer la police par défaut si nécessaire
+                });
+            }
+        });
     });
+
+    function handleMouseOver(e) {
+        const tag = e.target.getAttribute("data-tag")  || e.currentTarget.getAttribute("data-tag");
+        const tagList = document.querySelectorAll(`[data-tag='${tag}']`);
+        tagList.forEach((node) => {
+            node.style.border = "2px dashed #ff0000";
+            // const button = createEditButton(node, "modalId");
+            // node.appendChild(button);
+            // node.editButtonAdded = true;
+            const button = node.querySelector('.editButton');
+
+            // Create and append the button only if it doesn't exist
+            if (!button) {
+                const newButton = createEditButton(node, "modalId");
+                node.appendChild(newButton);
+                node.editButtonAdded = true;
+            }
+        });
+        //requestAnimationFrame(() => {}); // Utiliser requestAnimationFrame si nécessaire
+    }
+
+    function handleMouseLeave(e) {
+        const tag = e.target.getAttribute("data-tag");
+        const tagList = document.querySelectorAll(`[data-tag='${tag}']`);
+        tagList.forEach((node) => {
+            node.style.border = "";
+            const button = node.querySelector('.editButton');
+            if (button && node.editButtonAdded) {
+                button.parentNode.removeChild(button);
+            }
+            node.editButtonAdded = false;
+        });
+    }
 
     function createEditButton(parentElement, modalId) {
         const button = document.createElement('button');
-        button.classList.add("editButton", "absolute", "bottom-4", "right-0", "p-2", "bg-gray-800", "text-white",
+        button.classList.add("editButton", "absolute", "bottom","right-0", "p-2", "bg-gray-800", "text-white",
             "rounded-full");
         button.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
-        </svg>`;
+                <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
+            </svg>`;
 
         button.addEventListener('click', function(e) {
             e.preventDefault();
-            openModalWithData(modalId, e.target.getAttribute("data-tag") || e.target.parentNode.getAttribute(
-                "data-tag") || e.target.parentNode.parentNode.getAttribute("data-tag"));
+            const tag = e.target.getAttribute("data-tag") || e.target.parentNode.getAttribute("data-tag") || e
+                .target.parentNode.parentNode.getAttribute("data-tag");
+            openModalWithData(modalId, tag);
             openModal(modalId);
-
         });
         return button;
     }
@@ -227,43 +243,46 @@
             })
             .then(response => response.json())
             .then(data => {
+                console.log(tinyMCE.get("description_fr"), tinyMCE.get("description_en"))
                 document.getElementById("description_fr").value = data.fr;
                 document.getElementById("description_en").value = data.en;
+                // tinyMCE.activeEditor.get("description_fr").setContent(data.fr);
+                // tinyMCE.activeEditor.get("description_en").setContent(data.en);
 
                 modal.style.display = 'block';
-                document.getElementsByTagName('body')[0].classList.add('overflow-y-hidden');
+                document.body.classList.add('overflow-y-hidden');
             })
             .catch(error => console.error('Erreur lors de la récupération du contenu:', error));
     }
 
-    function displayError(lang, error=""){
+    function displayError(lang, error = "") {
         let htmlEl = document.getElementById(`error-${lang}`);
-        if(error !== ""){
+        if (error !== "") {
             htmlEl.style.display = "block";
-            const message = error === "validation.max.string" ? `Nombre de charactère supérieur à la limite autorisée`: `Texte obligatoire`;
+            const message = error === "validation.max.string" ? `Nombre de caractères supérieur à la limite autorisée` :
+                `Texte obligatoire`;
             htmlEl.innerHTML = message;
-        }else{
+        } else {
             htmlEl.style.display = "none";
         }
-
     }
 
-    let confirmForm = document.getElementById("confirmForm");
+    const confirmForm = document.getElementById("confirmForm");
 
     confirmForm.addEventListener("submit", (e) => {
         e.preventDefault();
 
-        let description_fr = document.getElementById("description_fr").value;
-        let description_en = document.getElementById("description_en").value;
-        let tag = document.querySelector("input[name='tag']").value;
+        const description_fr = document.getElementById("description_fr").value;
+        const description_en = document.getElementById("description_en").value;
+        const tag = document.querySelector("input[name='tag']").value;
 
         if (description_fr.trim() === "" || description_en.trim() === "") {
             alert("Saisir une valeur dans les deux champs de texte!");
             return;
         }
 
-        let formData = new FormData(e.target);
-        let data = {};
+        const formData = new FormData(e.target);
+        const data = {};
         formData.forEach((value, key) => {
             data[key] = value;
         });
@@ -280,7 +299,7 @@
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
-                    alert("Modification effectué avec success");
+                    alert("Modification effectuée avec succès");
                     window.location.reload();
                 } else {
                     for (let lang in data.errors) {
@@ -289,10 +308,10 @@
                 }
             })
             .catch(error => {
-
                 console.error("Une erreur s'est produite lors de la soumission du formulaire:", error);
                 alert(
-                    "Une erreur s'est produite lors de la soumission du formulaire. Veuillez réessayer plus tard.");
+                    "Une erreur s'est produite lors de la soumission du formulaire. Veuillez réessayer plus tard."
+                );
             });
     });
 </script>

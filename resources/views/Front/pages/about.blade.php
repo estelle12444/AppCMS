@@ -8,7 +8,7 @@
     </style>
     <section class="bg-center bg-no-repeat bg-slate-400 bg-blend-multiply" style="background-image: url(img/immobilier1.png)">
         <div class="px-4 mx-auto max-w-screen-xl text-center py-16 md:pt-20  lg:py-0 mb-2" >
-            <div data-aos="zoom-in" data-aos-duration="500"data-aos-delay="700" {{App\Helper::test('about.vision') }}
+            <div data-aos="zoom-in" data-aos-duration="500" data-aos-delay="700" {{App\Helper::test('about.vision') }}
             class=" partie relative text-4xl font-semibold text-white md:pt-8 pt-4 lg:pb-8 lg:pt-24 xl:text-5xl lg:text-6xl ">
                 {{-- <p>Ensemble, Bâtissons
                     <span class="text-orange ">la Ville Intelligente</span>
@@ -32,15 +32,14 @@
                     <div  class=" partie relative font-bold xl:text-5xl py-8 text-4xl md:text-5xl "  {{App\Helper::test('about.director.title') }}>
                         {!! __('about.director.title') !!}
                     </div>
-                    <div class="partie relative text-justify text-gray-600 xl:text-lg tracking-tight " {{App\Helper::test('about.director.message') }}>
-                        {!! __('about.director.message') !!}
+                    <div class="text-justify text-gray-600 xl:text-lg tracking-tight partie relative  " {{App\Helper::test('about.director.message') }} >
+                        <span class="" > {!! __('about.director.message') !!} </span>
                     </div>
                     <div class="py-8" style="float:right ">
                         <div class="partie relative font-bold"  {{App\Helper::test('about.director.name') }}>
                             {!! __('about.director.name') !!}
                         </div>
-
-                      <span class="partie relative"  {{App\Helper::test('about.director') }}> {!! __('about.director') !!}</span>
+                      <div class="partie relative"  {{App\Helper::test('about.director') }}> {!! __('about.director') !!}</div>
                     </div>
                 </div>
 
@@ -53,7 +52,7 @@
                         <div {{App\Helper::test('about.mission.describe') }} class="partie relative text-justify pt-8 pb-8">
                             {!! __('about.mission.describe') !!}
                         </div>
-                        <div {{App\Helper::test('about.mission.content') }} data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="500" class=" partie relative text-justify tracking-tight ">
+                        <div {{App\Helper::test('about.mission.content') }} data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="500" class=" partie relative text-justify tracking-tight ">
                             {!! __('about.mission.content') !!}
                         </div>
                     </div>

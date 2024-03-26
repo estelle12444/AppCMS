@@ -5,7 +5,7 @@
     <section class="bg-center bg-no-repeat  bg-blend-multiply" style="background-image: url(img/page_5/annonce.png)">
         <div class="px-4 mx-auto max-w-screen-xl text-center py-20 md:pt-20  lg:py-0">
             <div data-aos="zoom-in" data-aos-duration="500"data-aos-delay="700"
-                class=" text-4xl font-extrabold uppercase tracking-tight leading-none text-white md:pt-20 pt-10 lg:pb-20 lg:pt-32 xl:text-5xl lg:text-6xl ">
+            class=" partie relative text-4xl font-extrabold uppercase tracking-tight leading-none text-white md:pt-20 pt-10 lg:pb-20 lg:pt-32 xl:text-5xl lg:text-6xl ">
                 {!!__('news.title')!!} </div>
         </div>
     </section>
@@ -65,12 +65,12 @@
                                 {{ Str::limit(strip_tags($activity['translator']['resume']), 100, '...') }}
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
                                     <a href="{{ route('Front.pages.info', $activity['id']) }}" id="voirPlusBtn"
-                                        class=" hover:text-amber-500 text-blue-800 font-semibold py-2  rounded">
+                                    class=" partie relative hover:text-amber-500 text-blue-800 font-semibold py-2  rounded">
                                         {!!__('home.button.read_more')!!}
                                     </a>
                                 </p>
                                 <p>
-                                    <span class="text-blue-800 font-bold"> {!!__('news.job.limit.date')!!}</span>
+                                    <span class=" partie relative text-blue-800 font-bold"> {!!__('news.job.limit.date')!!}</span>
                                     <span style="color: #F18700;">{{ $activity['translator']['limit_date'] }}</span>
                                 </p>
                                 @if(!is_null($activity['file']))
@@ -86,7 +86,7 @@
                                             <div class="w-3/5">
                                                 <a href="{{ route('download_file') }}?filename={{ $activity['translator']['file'] }}"
                                                     class="underline hover:underline">
-                                                    <div class="text-lg">
+                                                    <div class=" partie relative text-lg">
                                                         {!!__('news.job.download.tender')!!}
                                                     </div>
                                                 </a>
@@ -122,10 +122,10 @@
                         <img class="h-48 xl:h-48 lg:h-52 w-full " src="{{ $type->getImage() }}"
                             alt="" />
                         <div class="p-5">
-                            <div class="text-lg">
+                            <div class=" partie relative text-lg">
                                 {!!__('news.job.no.result.title')!!}
                             </div>
-                            <div class="text-gray-500">
+                            <div class=" partie relative text-gray-500">
                                 {!!__('news.job.no.result')!!}
                             </div>
                         </div>
