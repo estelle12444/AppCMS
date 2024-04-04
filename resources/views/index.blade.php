@@ -8,7 +8,7 @@
             <div  data-aos="zoom-out-left" data-aos-delay="500" class="px-8 xl:pt-12 sm:px-8 xl:px-8 text-center xl:text-left ">
                 <div class="text-4xl md:text-5xl xl:text-8xl font-semibold text-slate-600 uppercase">
                     <!-- Modal -->
-                    <h1 {{App\Helper::test('home.carousel.left.at') }} class=" pt-24 md:pt-20  lg:py-0 partie relative " >
+                    <h1 {{App\Helper::test('home.carousel.left.at') }} class=" pt-28 md:pt-20  lg:py-0 partie relative " >
 
                         {!!  __('home.carousel.left.at') !!}
                     </h1>
