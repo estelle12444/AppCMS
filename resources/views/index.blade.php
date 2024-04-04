@@ -4,11 +4,11 @@
 @section('content')
 <section class="overflow-x-hidden" >
     <div class="bg-gradient-to-r from-orange-100 via-gray-100 to-gray-100">
-        <div class=" xl:px-20 pt-48 lg:pt-16 md:pt-20 xl:grid xl:grid-cols-2 xl:gap-8 xl:items-center pb-8">
+        <div class=" xl:px-20 pt-52 lg:pt-16 md:pt-20 xl:grid xl:grid-cols-2 xl:gap-8 xl:items-center pb-8">
             <div  data-aos="zoom-out-left" data-aos-delay="500" class="px-8 xl:pt-12 sm:px-8 xl:px-8 text-center xl:text-left ">
-                <div class="text-3xl md:text-5xl xl:text-8xl font-semibold text-slate-600 uppercase">
+                <div class="text-4xl md:text-5xl xl:text-8xl font-semibold text-slate-600 uppercase">
                     <!-- Modal -->
-                    <h1 {{App\Helper::test('home.carousel.left.at') }} class=" pt-24  pb-16 md:pt-20  lg:py-0 partie relative " >
+                    <h1 {{App\Helper::test('home.carousel.left.at') }} class=" pt-32 md:pt-20  lg:py-0 partie relative " >
 
                         {!!  __('home.carousel.left.at') !!}
                     </h1>
