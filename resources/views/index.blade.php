@@ -6,14 +6,10 @@
     <div class="bg-gradient-to-r from-orange-100 via-gray-100 to-gray-100">
         <div class=" xl:px-20 pt-28 lg:pt-16 md:pt-20 xl:grid xl:grid-cols-2 xl:gap-8 xl:items-center pb-8">
             <div  data-aos="zoom-out-left" data-aos-delay="500" class="px-8 xl:pt-12 sm:px-8 xl:px-8 text-center xl:text-left ">
-                <div class="text-6xl md:text-6xl xl:text-8xl font-semibold  xl:pt-8 text-slate-600 uppercase">
+                <div class="text-3xl md:text-6xl xl:text-8xl font-semibold  xl:pt-8 text-slate-600 uppercase">
                     <!-- Modal -->
-                    <h1 {{App\Helper::test('home.carousel.left.at') }} class=" pt-48 xl:pt-0 lg:pt-0 partie relative " >
-                       {{-- <span {{App\Helper::test('home.carousel.left.welcome') }} class="partie relative " >{!! __('home.carousel.left.welcome') !!} </span> <br>
-                       <span {{App\Helper::test('home.carousel.left.at') }} class="partie relative">{!!  __('home.carousel.left.at') !!}</span>
-                       <span class="text-orange font-extrabold xl:pt-8 ">
-                         VITIB
-                        </span> --}}
+                    <h1 {{App\Helper::test('home.carousel.left.at') }} class=" partie relative " >
+
                         {!!  __('home.carousel.left.at') !!}
                     </h1>
                 </div>
