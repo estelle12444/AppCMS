@@ -8,7 +8,7 @@
             <div  data-aos="zoom-out-left" data-aos-delay="500" class="px-8 xl:pt-12 sm:px-8 xl:px-8 text-center xl:text-left ">
                 <div class="text-6xl md:text-6xl xl:text-8xl font-semibold  xl:pt-8 text-slate-600 uppercase">
                     <!-- Modal -->
-                    <h1 {{App\Helper::test('home.carousel.left.at') }} class=" py-20 partie relative " >
+                    <h1 {{App\Helper::test('home.carousel.left.at') }} class=" pt-48 xl:pt-0 lg:pt-0 partie relative " >
                        {{-- <span {{App\Helper::test('home.carousel.left.welcome') }} class="partie relative " >{!! __('home.carousel.left.welcome') !!} </span> <br>
                        <span {{App\Helper::test('home.carousel.left.at') }} class="partie relative">{!!  __('home.carousel.left.at') !!}</span>
                        <span class="text-orange font-extrabold xl:pt-8 ">
