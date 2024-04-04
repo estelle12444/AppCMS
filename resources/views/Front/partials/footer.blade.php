@@ -21,7 +21,7 @@
                       <div class="">
                         <a href="{{ route('login') }} ">
                         <button type="button" style="background-color: #F18700"
-                        {{App\Helper::test('layouts.footer.join_us') }}  class=" partie relative xl:p-4 xl:px-8 rounded-none font-bold text-white text-left text-md">
+                        {{App\Helper::test('layouts.footer.join_us') }}  class=" partie relative px-8 py-4 xl:p-4 xl:px-8 rounded-none font-bold text-white text-left text-md">
                             {{__('layouts.footer.join_us')}}
                         </button>
                     </a>

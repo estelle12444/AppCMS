@@ -99,7 +99,7 @@
                 @endif
             @endif
 
-            <p class="pl-4 pt-4 xl:pt-2 xl:pl-8">
+            <p class="pt-2 px-8 xl:pt-2 xl:pl-8">
                 <a style="text-decoration:none;cursor:pointer;color: {{ app()->getLocale() == 'fr' ? '#F18700' : '#000000' }}; font-weight: {{ app()->getLocale() == 'fr' ? 'bold' : 'normal' }}"
                     href="{{ app()->getLocale() == 'en' ? route('lang', ['locale' => 'fr']) : '#' }}">{{ __('FR') }}</a>
                 |
@@ -108,9 +108,10 @@
                 </a>
 
             </p>
+            <br>
 
             <button data-collapse-toggle="navbar-sticky" type="button"
-                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-700 rounded-lg xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                class="inline-flex items-center p-2 w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 justify-center text-sm text-gray-700 rounded-lg xl:hidden hover:bg-gray-300 focus:ring-blue-500"
                 aria-controls="navbar-sticky" aria-expanded="false">
                 <span class="sr-only">{{ __('layouts.nav.open') }}</span>
                 <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"

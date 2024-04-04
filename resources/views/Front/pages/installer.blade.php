@@ -3,7 +3,7 @@
 
 @section('content')
 <section class="bg-center bg-no-repeat  bg-blend-multiply" style="background-image: url(img/page_5/annonce.png)">
-    <div class="px-4 mx-auto max-w-screen-xl text-center py-20 md:pt-20  lg:py-0">
+    <div class="px-4 mx-auto max-w-screen-xl text-center pt-24  pb-16 md:pt-20  lg:py-0">
         <div data-aos="zoom-in" data-aos-duration="500"data-aos-delay="700" {{App\Helper::test('installer.carousel.title') }} class=" partie relative text-4xl font-extrabold uppercase tracking-tight leading-none text-white md:pt-20 pt-10 lg:pb-20 lg:pt-32 xl:text-5xl lg:text-6xl ">
                 {!!__('installer.carousel.title')!!}
         </div>

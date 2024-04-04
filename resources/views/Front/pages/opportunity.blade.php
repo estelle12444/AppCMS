@@ -3,7 +3,7 @@
 
 @section('content')
 <section class="bg-center bg-no-repeat  bg-blend-multiply" style="background-image: url(img/page_5/annonce.png)">
-    <div class="px-4 mx-auto max-w-screen-xl text-center py-16 md:pt-20  lg:py-0">
+    <div class="px-4 mx-auto max-w-screen-xl text-center pt-24 pb-16  md:pt-20  lg:py-0">
         <h1 data-aos="zoom-in" data-aos-duration="500"data-aos-delay="700" {{App\Helper::test('opportunity.zone.title') }}  class=" partie relative text-4xl font-extrabold uppercase tracking-tight leading-none text-white md:pt-8 pt-10 lg:pb-8 lg:pt-32 xl:text-5xl lg:text-6xl ">
             {!! __('opportunity.zone.title') !!}
             <p class="pt-8 "></p>
@@ -11,7 +11,7 @@
     </div>
 </section>
 <div  class=" bg-gradient-to-r from-orange-100 from-20%  to-green-100 to-90% ">
-    <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="800" class=" xl:py-10 lg:py-4  lg:pb-10 md:px-4 px-4 lg:pr-0  xl:px-20 grid xl:grid-cols-5 md:grid-cols-2  grid-cols-2 gap-2 xl:gap-4 " style="overflow-x: hidden">
+    <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="800" class=" xl:py-10 lg:py-4 pt-10 lg:pb-10 md:px-4 px-4 lg:pr-0  xl:px-20 grid xl:grid-cols-5 md:grid-cols-2  grid-cols-2 gap-2 xl:gap-4 " style="overflow-x: hidden">
         <div {{App\Helper::test('opportunity.zone.administration_zone') }}  class=" partie relative bg-amber-500 font-extrabold rounded-lg p-4 text-white text-center " style=" height:100px ">
             {!! __('opportunity.zone.administration_zone') !!}
         </div>

@@ -7,7 +7,7 @@
         }
     </style>
     <section class="bg-center bg-no-repeat bg-slate-400 bg-blend-multiply" style="background-image: url(img/immobilier1.png)">
-        <div class="px-4 mx-auto max-w-screen-xl text-center py-16 md:pt-20  lg:py-0 mb-2" >
+        <div class="px-4 mx-auto max-w-screen-xl text-center py-12 pt-24  lg:py-0 mb-2" >
             <div data-aos="zoom-in" data-aos-duration="500" data-aos-delay="700" {{App\Helper::test('about.vision') }}
             class=" partie relative text-4xl font-semibold text-white md:pt-8 pt-4 lg:pb-8 lg:pt-24 xl:text-5xl lg:text-6xl ">
                 {{-- <p>Ensemble, Bâtissons
