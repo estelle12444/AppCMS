@@ -49,7 +49,7 @@
                                 <div class="tab-content" id="myTabContent">
                                     @if(count($recentAnnonces) > 0)
                                         @foreach (collect($recentAnnonces)->groupBy('type') as $key => $group)
-                                            <div class="tab-pane fade" id="{{ $key }}" role="tabpanel" aria-labelledby="{{ $key }}-tab">
+                                            <div class="tab-pane fade" role="tabpanel" aria-labelledby="{{ $key }}-tab">
                                                 @php
                                                     $paginator = paginate($group);
                                                 @endphp
