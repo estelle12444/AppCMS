@@ -57,7 +57,7 @@
                                         <h4>Liste des Candidatures pour l'Activité "{{ $activity->type }}
                                             N°{{ $activity->id }}"</h4>
                                         <div class="card-header-form">
-                                            <a href="" class="btn btn-danger btn-action mr-1" data-toggle="tooltip"
+                                            <a href="{{route('Front.admin.activities.applicants')}}" class="btn btn-danger btn-action mr-1" data-toggle="tooltip"
                                                 title="" data-original-title="retourner">
                                                 Retour <i class="fas fa-sign-out-alt"></i>
                                             </a>
