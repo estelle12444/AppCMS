@@ -202,7 +202,7 @@ Route::middleware(['admin'])->group(function () {
 
     Route::post('applicant/accepter/{id}', [ApplicantController::class, 'accepter'])->name('accepter');
     Route::post('applicant/refuser/{id}', [ApplicantController::class, 'refuser'])->name('refuser');
-    
+
 
 });
 
@@ -252,25 +252,3 @@ Route::middleware(['profil'])->group(function () {
 
 
 });
-
-
-
-
-// Route::get('/partners', [PartnerController::class, 'search'])->name('Front.admin.search');
-// Route::get('/partners', [PartnerController::class, 'search_process'])->name('Front.admin.search_process');
-
-
-// Route::get('/form', function () {
-//     return view('Front.pages.form');
-// });
-
-// Route::post('/contact', function (Request $request) {
-//     Message::create($request->all());
-//     toastr()->success('Votre message a été enregistré avec succès');
-//     return redirect()->back();
-// })->name('contact');
-
-// Route::get('/messages', function (Request $request) {
-//     $messages = Message::all();
-//     return view('message', compact('messages'));
-// });

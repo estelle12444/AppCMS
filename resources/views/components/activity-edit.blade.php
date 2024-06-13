@@ -67,7 +67,7 @@
                                         @enderror
                                     </div>
                                 </div>
-                                <div class="form-group row mb-4">
+                                {{-- <div class="form-group row mb-4">
                                     <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Image </label>
                                     <div class="col-sm-12 col-md-7">
                                         <div class="custom-file">
@@ -75,7 +75,7 @@
                                                 value="{{ $activity->image }}" name="lang[0][image]">
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
                                 <div class="form-group row mb-4">
                                     <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Attached Documents</label>
                                     <div class="input-group col-sm-12 col-md-7">
@@ -135,7 +135,7 @@
                                         @enderror
                                     </div>
                                 </div>
-                                <div class="form-group row mb-4">
+                                {{-- <div class="form-group row mb-4">
                                     <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Image </label>
                                     <div class="col-sm-12 col-md-7">
                                         <div class="custom-file">
@@ -143,7 +143,7 @@
                                                 value="{{ $activity->image }}" name=" lang[1][image]">
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
                                 <div class="form-group row mb-4">
                                     <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Fichier
                                     </label>

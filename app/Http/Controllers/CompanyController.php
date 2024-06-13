@@ -102,19 +102,10 @@ class CompanyController extends Controller
 
         if ($companyIdFromStep1) {
             $company = Company::find($companyIdFromStep1);
-
-
             $company->fill($validator->validated());
             $company->save();
             $companyEmail = session('company_email');
-        //     $requestData = [
-        //         'company_name' => 'Nom de l\'entreprise',
-        //         // ... d'autres clés et valeurs
-        //     ];
 
-        // $adminEmail = 'support@documentivoire.ci'; // Adresse e-mail de l'administrateur
-
-        // Mail::to($adminEmail)->send(new CompanyRegistrationNotification($request->all()));
             return redirect('/auth/confirmation-page');
         } else {
             return redirect('/auth/register-other')->with('error', 'Étape 1 doit être complétée en premier.');
@@ -129,7 +120,7 @@ class CompanyController extends Controller
 
 
         // Calculez le pourcentage de complétion en fonction des champs renseignés
-        $totalFields = 15; 
+        $totalFields = 15;
         $fieldsRenseignes = $companies->countFieldsRenseignes(); // Créez cette méthode dans votre modèle
 
         // Calculez le pourcentage de complétion

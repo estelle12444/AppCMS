@@ -22,7 +22,7 @@ class ContentController extends Controller
                     'home' => ' Tous le contenu Accueil/Home',
                     'home.carousel.left' => "Texte introductif",
                     'home.advantages' => 'Les titres des avantages',
-                    'home.presentation' => 'Contenu de la presentation',
+                    'home.presentation' => 'Contenu de la présentation',
                     'home.presentation2' => 'Contenu des autres avantages',
 
                 ]
@@ -56,8 +56,8 @@ class ContentController extends Controller
                 'items' => [
                     'installer' => 'Tous voir',
                     'installer.carousel' => ' Le texte introductif',
-                    'installer.section.eligibility' => 'Les différents eligibilités',
-                    'installer.section.eligibility.prerequisites' => 'Les prérequies de nos éligibilités',
+                    'installer.section.eligibility' => 'Les différents éligibilités',
+                    'installer.section.eligibility.prerequisites' => 'Les prérequis de nos éligibilités',
                     'installer.section.eligibility.activities' => 'Nos activités éligibles',
                     'installer.section.eligibility.industrial' => 'Nos activités éligibles industrielles',
                     'installer.section.value_added' => 'Notre valeur ajoutée',

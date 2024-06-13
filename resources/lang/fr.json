@@ -1,4 +1,5 @@
 {
+    "logo_uri": "img/slider/LOGO-VITIB-SA.png",
     "layouts.nav.profil": "<b>Tableau de <i>bord</i></b>",
     "layouts.nav.logout": "Déconnexion",
     "layouts.nav.greet": "Salut",
@@ -41,7 +42,6 @@
     "profil.layouts.requests.message": "Messages",
     "profil.layouts.requests.welcome": "Bienvenue",
     "profil.layouts.requests.profile": "Profil",
-    "home.carousel.left.welcome": "Bienvenu",
     "home.carousel.left.at": "Bienvenue Au  <span style='color:#F18700;     font-family: 'font-extrabold', sans-serif;font-weight: 800 '> VITIB </span>",
     "home.carousel.left.technological": "Le Parc Technologique de Côte d'Ivoire",
     "home.advantages.fiscal_and_regulatory_advantages": "Avantages fiscaux <br> et réglementaires",

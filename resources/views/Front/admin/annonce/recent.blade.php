@@ -6,7 +6,7 @@
             <h1>Liste des Annonces </h1>
             <div class="section-header-breadcrumb">
                 <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
-                <div class="breadcrumb-item"><a href="#">Company</a></div>
+                <div class="breadcrumb-item"><a href="#">Annonces</a></div>
                 <div class="breadcrumb-item">Liste</div>
             </div>
         </div>
@@ -15,58 +15,70 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4>Annonces  récentes</h4>
-                            <div class="card-header-form">
-                                <form>
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Search">
-                                        <div class="input-group-btn">
-                                            <button class="btn btn-primary"><i class="fas fa-search"></i></button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
+                            <h4>Annonces récentes</h4>
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-12">
-                            <div class="card-body">
-                                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" id="tender-tab" data-toggle="tab" href="#tender" role="tab" aria-controls="tender" aria-selected="true">Appels d'offres</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="career-tab" data-toggle="tab" href="#career" role="tab" aria-controls="career" aria-selected="false">Appels à Candidature</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="job-tab" data-toggle="tab" href="#job" role="tab" aria-controls="job" aria-selected="false">Offres d'emploi</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="quotation-tab" data-toggle="tab" href="#quotation" role="tab" aria-controls="quotation" aria-selected="false">Demande de quotation</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="event-tab" data-toggle="tab" href="#event" role="tab" aria-controls="event" aria-selected="false">Demandes de manifestations</a>
-                                    </li>
+
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <ul class="nav flex-column nav-pills" id="myTab" role="tablist">
+                                    @foreach (collect($recentAnnonces)->groupBy('type') as $key => $group)
+                                        <li class="nav-item">
+                                            <a class="nav-link @if ($loop->first) active @endif"
+                                                id="{{ $key }}-tab" data-toggle="tab" href="#{{ $key }}"
+                                                role="tab" aria-controls="{{ $key }}"
+                                                aria-selected="@if ($loop->first) true @else false @endif">
+                                                @if ($key == 'tender')
+                                                    Appels d'offres
+                                                @elseif ($key == 'careers')
+                                                    Appels à Candidatures
+                                                @elseif ($key == 'jobs')
+                                                    Offres d'emploi
+                                                @elseif ($key == 'quotations')
+                                                    Demandes de Cotation
+                                                @elseif ($key == 'events')
+                                                    Demandes de manifestation
+                                                @endif
+                                            </a>
+                                        </li>
+                                    @endforeach
                                 </ul>
+                            </div>
+                            <div class="col-lg-9">
                                 <div class="tab-content" id="myTabContent">
-                                    @if(count($recentAnnonces) > 0)
-                                        @foreach (collect($recentAnnonces)->groupBy('type') as $key => $group)
-                                            <div class="tab-pane fade" id="{{ $key }}" role="tabpanel" aria-labelledby="{{ $key }}-tab">
-                                                @php
-                                                    $paginator = paginate($group);
-                                                @endphp
-                                                @foreach ($paginator as $annonce)
-                                                    <h2> Dossier N°{{ $annonce['id']}}</h2>
-                                                    <p> Titre: {{ strip_tags($annonce['title']) }}</p>
-                                                    <p>Description: {{ strip_tags($annonce['content']) }}</p>
-                                                    <p>Date limite: {{ $annonce['limit_date'] }}</p>
-                                                @endforeach
-                                                {!! $paginator->links() !!}
-                                            </div>
-                                        @endforeach
-                                    @else
-                                        <div class="alert alert-info">
-                                            Il n'y a pas d'annonces récentes à afficher.
+                                    @foreach (collect($recentAnnonces)->groupBy('type') as $key => $group)
+                                        <div class="tab-pane fade @if ($loop->first) show active @endif"
+                                            id="{{ $key }}" role="tabpanel"
+                                            aria-labelledby="{{ $key }}-tab">
+
+                                            @php
+                                                $paginator = paginate($group);
+                                            @endphp
+                                            @foreach ($paginator as $annonce)
+                                                <div class="card-body shadow p-3 mb-5 bg-white rounded">
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <h6 class="mb-2 text-info ">Dossier <br> N°{{ $annonce['id'] }}
+                                                            </h6>
+                                                            <p>Date limite: <br> <strong>
+                                                                    {{ $annonce['limit_date'] }}</strong></p>
+                                                        </div>
+                                                        <div class="col-md-9">
+                                                            <h3 class="mb-3 text-primary">
+                                                                {{ strip_tags($annonce['title']) }}
+                                                            </h3>
+                                                            <p> {{ strip_tags($annonce['content']) }}</p>
+                                                            <a href="{{ route('Front.admin.activities.applicants', $annonce['id']) }}"
+                                                                class="btn btn-info btn-action mr-1" data-toggle="tooltip"
+                                                                title="" data-original-title="Voir les candidatures">
+                                                                Personnes inscrites <i class="fas fa-users"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            @endforeach
+                                            {!! $paginator->links() !!}
+
                                         </div>
-                                    @endif
+                                    @endforeach
                                 </div>
                             </div>
                         </div>

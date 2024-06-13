@@ -23,6 +23,7 @@ class Applicant extends Model
         'skills',
         'cover_letter',
         'attachments',
+        'status'
     ];
 
     public function activity()

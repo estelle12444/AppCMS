@@ -14,7 +14,7 @@ class SectorSeeder extends Seeder
      */
     public function run(): void
     {
-        $data = [
+       Sector::create(
             [
                 ['nom' => 'TECH'],
                 ['nom' => 'AUDIO VISUEL'],
@@ -44,54 +44,57 @@ class SectorSeeder extends Seeder
                 ['nom' => 'FORMATION'],
                 ['nom' => 'PRESSE EN LIGNE'],
                 ['nom' => 'INCUBATEUR'],
-            ],
-            [
-                ['nom' => 'TECH'],
-                ['nom' => 'AUDIO VISUAL'],
-                ['nom' => 'TIC'],
-                ['nom' => "INVESTMENT FUND"],
-                ['nom' => 'DATA CENTER'],
-                ['nom' => 'TELECOM'],
-                ['nom' => 'ENERGY'],
-                ['nom' => 'BIOTECH'],
-                ['nom' => 'CALL CENTER'],
-                ['nom' => 'MONETIQUE'],
-                ['nom' => "COMPAGNIE D'INVESTISSEMENT"],
-                ['nom' => 'BIOTECHNOLOGY'],
-                ['nom' => 'MEDICAL'],
-                ['nom' => 'TELECOM-ENERGIE'],
-                ['nom' => 'PHARMACEUTICAL'],
-                ['nom' => 'ELECTRONICS'],
-                ['nom' => 'TRAINING-INCUBATION'],
-                ['nom' => 'IT'],
-                ['nom' => 'DATA ARCHIVING'],
-                ['nom' => 'DOUBLAGE'],
-                ['nom' => 'IT TRAINING'],
-                ['nom' => 'COMPUTING'],
-                ['nom' => 'FINTECH'],
-                ['nom' => 'CONNECTED OBJECTS'],
-                ['nom' => 'SECURITY'],
-                ['nom' => 'TRAINING'],
-                ['nom' => 'ONLINE PRESS'],
-                ['nom' => 'INCUBATOR'],
+
             ]
-        ];
+       );
+           // ,
+            // [
+            //     ['nom' => 'TECH'],
+            //     ['nom' => 'AUDIO VISUAL'],
+            //     ['nom' => 'TIC'],
+            //     ['nom' => "INVESTMENT FUND"],
+            //     ['nom' => 'DATA CENTER'],
+            //     ['nom' => 'TELECOM'],
+            //     ['nom' => 'ENERGY'],
+            //     ['nom' => 'BIOTECH'],
+            //     ['nom' => 'CALL CENTER'],
+            //     ['nom' => 'MONETIQUE'],
+            //     ['nom' => "COMPAGNIE D'INVESTISSEMENT"],
+            //     ['nom' => 'BIOTECHNOLOGY'],
+            //     ['nom' => 'MEDICAL'],
+            //     ['nom' => 'TELECOM-ENERGIE'],
+            //     ['nom' => 'PHARMACEUTICAL'],
+            //     ['nom' => 'ELECTRONICS'],
+            //     ['nom' => 'TRAINING-INCUBATION'],
+            //     ['nom' => 'IT'],
+            //     ['nom' => 'DATA ARCHIVING'],
+            //     ['nom' => 'DOUBLAGE'],
+            //     ['nom' => 'IT TRAINING'],
+            //     ['nom' => 'COMPUTING'],
+            //     ['nom' => 'FINTECH'],
+            //     ['nom' => 'CONNECTED OBJECTS'],
+            //     ['nom' => 'SECURITY'],
+            //     ['nom' => 'TRAINING'],
+            //     ['nom' => 'ONLINE PRESS'],
+            //     ['nom' => 'INCUBATOR'],
+            // ]
 
-        $this->insert($data, Sector::class);
+
+        // $this->insert($data, Sector::class);
 
     }
 
-    public function insert($data, $class){
-        $model = app()->make($class);
-        foreach ($data[0] as $key => $row) {
-            $french = $model::create($row);
-            $english = $data[1][$key];
-            $model::create(
-                array_merge($english, [
-                    'translate_code' => 'en',
-                    'parent_id' => $french->id,
-                ])
-            );
-        }
-    }
+    // public function insert($data, $class){
+    //     $model = app()->make($class);
+    //     foreach ($data[0] as $key => $row) {
+    //         $french = $model::create($row);
+    //         $english = $data[1][$key];
+    //         $model::create(
+    //             array_merge($english, [
+    //                 'translate_code' => 'en',
+    //                 'parent_id' => $french->id,
+    //             ])
+    //         );
+    //     }
+    // }
 }

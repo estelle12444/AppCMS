@@ -122,8 +122,8 @@
                         <div {{App\Helper::test('opportunity.projects.university_title') }}  class=" partie relative mb-2 text-2xl lg:text-4xl  font-bold tracking-tight text-gray-900 dark:text-white">
                             {!! __('opportunity.projects.university_title') !!}
                         </div>
-                        <div {{App\Helper::test('opportunity.projects.university_description') }}  class=" partie relative text-justify ">
-                            {!! __('opportunity.projects.university_description') !!}
+                        <div {{App\Helper::test('opportunity.university_description') }}  class=" partie relative text-justify ">
+                            {!! __('opportunity.university_description') !!}
                         </div>
                     </div>
                 </div>

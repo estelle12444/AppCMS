@@ -1,8 +1,8 @@
 <nav
     class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 bg-gradient-to-r">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="/home" class="flex items-center">
-            <img src="{{ asset('img/slider/LOGO-VITIB-SA.png') }}" width="150" alt="logo">
+        <a href="/home" class="flex items-center" style="width:150px">
+            <img src="{{asset(__('logo_uri'))}}" alt="logo">
         </a>
         <div class="flex xl:order-2">
 
@@ -106,16 +106,13 @@
                 <a style="text-decoration:none;cursor:pointer; color: {{ app()->getLocale() == 'en' ? ' #F18700' : '#000000' }}; font-weight: {{ app()->getLocale() == 'fr' ? 'normal' : ' bold' }}"
                     href="{{ app()->getLocale() == 'fr' ? route('lang', ['locale' => 'en']) : '#' }}">{{ __('EN') }}
                 </a>
-
             </p>
-            <br>
 
             <button data-collapse-toggle="navbar-sticky" type="button"
                 class="inline-flex items-center p-2 w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 justify-center text-sm text-gray-700 rounded-lg xl:hidden hover:bg-gray-300 focus:ring-blue-500"
-                aria-controls="navbar-sticky" aria-expanded="false">
+                aria-controls="navbar-sticky"  onclick="document.getElementById('navbar-sticky').classList.toggle('hidden')">
                 <span class="sr-only">{{ __('layouts.nav.open') }}</span>
-                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                    viewBox="0 0 17 14">
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M1 1h15M1 7h15M1 13h15" />
                 </svg>

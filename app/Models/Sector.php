@@ -7,14 +7,14 @@ use App\Models\Traits\ParentLanguageTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Sector extends Model  implements TranslateContracts
+class Sector extends Model
 {
-    use HasFactory, ParentLanguageTrait;
+    use HasFactory;
 
     public $timestamps = false;
 
-    protected $with = ['child'];
-    protected $fillable = ['nom', 'translate_code', 'parent_id'];
+    // protected $with = ['child'];
+    protected $fillable = ['nom'];
 
     public function partners()
     {

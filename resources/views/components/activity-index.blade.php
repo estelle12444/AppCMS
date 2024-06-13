@@ -13,7 +13,7 @@
                                     Retour <i class="fas fa-sign-out-alt"></i>
                                 </a>
                                 <a href="{{route('Front.admin.'.$route.'.create')}}" class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="" data-original-title="CREATE">
-                                    Ajouter une activité <i class="fas fa-plus"></i>
+                                    Ajouter <i class="fas fa-plus"></i>
                                 </a>
                             </div>
                         </div>
@@ -25,9 +25,9 @@
                                             <th class="text-center">N</th>
                                             <th>Titre</th>
                                             <th>Description</th>
-                                            <th>Resume</th>
+                                            <th>Resumé</th>
                                             <th>Date limite</th>
-                                            <th>Image</th>
+                                            {{-- <th>Image</th> --}}
                                             <th>Fichier</th>
                                             {{-- <th>Date et Heure</th> --}}
                                             <th>Action</th>
@@ -37,15 +37,15 @@
                                         @foreach ($activities as $activity)
                                             <tr>
                                                 <td>{{ $activity->id }}</td>
-                                                <td>{{ $activity->title }}</td>
-                                                <td>{{ $stripTags($activity->content, 150) }}</td>
-                                                <td>{{ $stripTags($activity->resume, 150) }}</td>
+                                                <td>{{ $stripTags($activity->title, 50) }}</td>
+                                                <td>{{ $stripTags($activity->content, 50) }}</td>
+                                                <td>{{ $stripTags($activity->resume, 10) }}</td>
                                                 <td>{{ $activity->limit_date }}</td>
-                                                <td>
+                                                {{-- <td>
                                                     <img alt="{{ $activity->title }}"
                                                         src="{{ asset('storage/' . $activity->image) }}" data-toggle="tooltip"
                                                         width="50">
-                                                </td>
+                                                </td> --}}
                                                 <td>
                                                     <a href="{{ asset('storage/' . $activity->file) }}"
                                                         title="{{ $activity->title }}">
@@ -73,8 +73,8 @@
                                                                 class="fas fa-trash"></i></button>
                                                     </form>
                                                     <a href="{{route('Front.admin.activities.applicants', $activity->id)}}" class="btn btn-primary btn-action mr-1" data-toggle="tooltip"
-                                                    title="" data-original-title="Voir les postulants"><i
-                                                        class="fas fa-users"></i></a>
+                                                    title="" data-original-title="Voir les postulants">
+                                                    <i class="fas fa-users"></i></a>
                                                 </td>
                                             </tr>
                                         @endforeach

@@ -140,7 +140,7 @@ $url = $_SERVER['REQUEST_URI'];
                             <ul class="dropdown-menu">
                                 <li><a class="nav-link <?php echo $url === '/company' ? ' active bg-primary text-white' : ''; ?>" href="/company">Liste des Entreprises</a>
                                 </li>
-                                <li><a class="nav-link" href="/company/create">Enregistrer</a></li>
+                                {{-- <li><a class="nav-link" href="/company/create">Enregistrer</a></li> --}}
 
                             </ul>
                         </li>

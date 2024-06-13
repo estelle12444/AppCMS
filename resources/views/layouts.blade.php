@@ -36,13 +36,13 @@
 <body style="overflow-x: hidden">
 
     <!-- Preloader-->
-    <div id="preloader-area" style="display:block;overflow-x: hidden">
+    {{-- <div id="preloader-area" style="display:block;overflow-x: hidden">
         <div class="lds-ripple">
             <div></div>
             <div></div>
         </div>
     </div>
-    <!--  Preloader -->
+    <!--  Preloader --> --}}
 
     {{-- <div id="popup" class="popup">
         <div class="popup-content">
@@ -314,10 +314,18 @@
                 );
             });
     });
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuButton = document.querySelector('[data-collapse-toggle="navbar-sticky"]');
+        const navbar = document.getElementById('navbar-sticky');
+
+        menuButton.addEventListener('click', function() {
+            navbar.classList.toggle('hidden');
+        });
+    });
 </script>
 
 
-<script src="{{ asset('js/script1.js') }}"></script>
+{{-- <script src="{{ asset('js/script1.js') }}"></script> --}}
 @stack('scripts')
 
 </html>

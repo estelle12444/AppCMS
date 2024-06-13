@@ -9,7 +9,7 @@ class SectorController extends Controller
 {
     public function index()
     {
-        $sectors = Sector::query()->ofLang('fr')->latest()->get();
+        $sectors = Sector::all();
 
         return view('Front.admin.sector.index', compact('sectors'));
     }
