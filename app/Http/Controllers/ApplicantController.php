@@ -13,8 +13,8 @@ class ApplicantController extends Controller
 {
     public function applicantIndex(Activity $activity)
     {
-        $applications = Applicant::where('activity_id',$activity->id)->get();
-        return view('Front.admin.annonce.applicant-index', compact('activity', 'applications'));
+        $applications = Applicant::all();
+        return view('Front.admin.annonce.applicant-Index', compact('activity', 'applications'));
     }
 
     public function accepter($id)

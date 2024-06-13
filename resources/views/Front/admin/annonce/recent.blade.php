@@ -45,38 +45,24 @@
                             </div>
                             <div class="col-lg-9">
                                 <div class="tab-content" id="myTabContent">
-                                    @foreach (collect($recentAnnonces)->groupBy('type') as $key => $group)
-                                        <div class="tab-pane fade @if ($loop->first) show active @endif"
-                                            id="{{ $key }}" role="tabpanel"
-                                            aria-labelledby="{{ $key }}-tab">
-
-                                            @php
-                                                $paginator = paginate($group);
-                                            @endphp
-                                            @foreach ($paginator as $annonce)
-                                                <div class="card-body shadow p-3 mb-5 bg-white rounded">
-                                                    <div class="row">
-                                                        <div class="col-md-3">
-                                                            <h6 class="mb-2 text-info ">Dossier <br> N°{{ $annonce['id'] }}
-                                                            </h6>
-                                                            <p>Date limite: <br> <strong>
-                                                                    {{ $annonce['limit_date'] }}</strong></p>
-                                                        </div>
-                                                        <div class="col-md-9">
-                                                            <h3 class="mb-3 text-primary">
-                                                                {{ strip_tags($annonce['title']) }}
-                                                            </h3>
-                                                            <p> {{ strip_tags($annonce['content']) }}</p>
-                                                            <a href="{{ route('Front.admin.activities.applicants', $annonce['id']) }}"
-                                                                class="btn btn-info btn-action mr-1" data-toggle="tooltip"
-                                                                title="" data-original-title="Voir les candidatures">
-                                                                Personnes inscrites <i class="fas fa-users"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            @endforeach
-                                            {!! $paginator->links() !!}
-
+                                    @if(count($recentAnnonces) > 0)
+                                        @foreach (collect($recentAnnonces)->groupBy('type') as $key => $group)
+                                            <div class="tab-pane fade" id="{{ $key }}" role="tabpanel" aria-labelledby="{{ $key }}-tab">
+                                                @php
+                                                    $paginator = paginate($group);
+                                                @endphp
+                                                @foreach ($paginator as $annonce)
+                                                    <h2> Dossier N°{{ $annonce['id']}}</h2>
+                                                    <p> Titre: {{ strip_tags($annonce['title']) }}</p>
+                                                    <p>Description: {{ strip_tags($annonce['content']) }}</p>
+                                                    <p>Date limite: {{ $annonce['limit_date'] }}</p>
+                                                @endforeach
+                                                {!! $paginator->links() !!}
+                                            </div>
+                                        @endforeach
+                                    @else
+                                        <div class="alert alert-info">
+                                            Il n'y a pas d'annonces récentes à afficher.
                                         </div>
                                     @endforeach
                                 </div>
