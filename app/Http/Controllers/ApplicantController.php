@@ -14,13 +14,13 @@ class ApplicantController extends Controller
     public function applicantIndex(Activity $activity)
     {
         $applications = Applicant::all();
-        return view('Front.admin.annonce.applicant-Index', compact('activity', 'applications'));
+        return view('Front.admin.annonce.applicant-index', compact('activity', 'applications'));
     }
 
     public function accepter($id)
     {
         $application = Applicant::findOrFail($id);
-        $application->update(['status' => 'accepté']);
+        $application->update(['status' => 'accepter']);
 
         return  redirect()->back()->with('success', 'Candidature acceptée avec succès!');
     }
@@ -28,7 +28,7 @@ class ApplicantController extends Controller
     public function refuser($id)
     {
         $application = Applicant::findOrFail($id);
-        $application->update(['status' => 'refusé']);
+        $application->update(['status' => 'refuser']);
         return redirect()->back()->with('success', 'Candidature refusée avec succès!');
     }
 

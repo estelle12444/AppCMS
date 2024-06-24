@@ -75,12 +75,10 @@ $url = $_SERVER['REQUEST_URI'];
                     </div> --}}
                 </form>
 
-                <li class="dropdown"><a href="#" data-toggle="dropdown"
-                        class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-                        <img alt="image" src="{{ asset('assets/img/avatar/avatar-1.png') }}"
-                            class="rounded-circle mr-1">
-                        <div class="d-sm-none d-lg-inline-block">Bienvenue
-                            {{ app('App\Http\Controllers\AdminController')->getUsername() }} </div>
+                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                        <img alt="" src="{{ asset('assets/img/avatar/avatar-1.png') }}" class="rounded-circle mr-1">
+                        <div class="d-sm-none d-lg-inline-block">Bienvenue {{ app('App\Http\Controllers\AdminController')->getUsername() }} </div>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right">
                         <div class="dropdown-title">Connecté il y a 5 min</div>
@@ -101,9 +99,9 @@ $url = $_SERVER['REQUEST_URI'];
             </nav>
             <div class="main-sidebar sidebar-style-2">
                 <aside id="sidebar-wrapper">
-                    <div class="sidebar-brand" style="margin-bottom:20px;margin-top:20px;">
+                    <div class="">
                         <a href="/home">
-                            <img src="{{ asset('img/logo2.png') }}" width="200" alt="">
+                            <img src="{{asset(__('image.logo_url'))}}" width="200"  alt="">
                         </a>
                     </div>
 

@@ -83,19 +83,16 @@ Route::get('/join', function () {
     return view('Front.pages.join');
 });
 
-Route::get('/media', function () {
-    return view('Front.pages.media');
-})->name('media');
+Route::get('/media',  [NewController::class,'media'])->name('media');
 
 Route::get('/avantages/{query}',[HomeController::class,'avantages'] )->name('avantages.Detail');
 
-Route::get('/actu/detail', function () {
-    return view('Front.pages.newsDetail');
-})->name('news.Detail');
+Route::get('/actu/detail/{activity}',  [NewController::class,'newsDetail'] )->name('news.Detail');
+
 
 Route::get('/partners', [PartnerController::class, 'index']);
 Route::get('/installer', function () {return view('Front.pages.installer');});
-Route::get('/actu', [NewController::class, 'newIndex']);
+Route::get('/actu', [NewController::class, 'newIndex'])->name('actu');
 Route::get('/info/{activity}',[AnnonceController::class, 'show_tender'])->name('Front.pages.info');
 Route::get('/annonce', [AnnonceController::class, 'index'])->name('annonce');
 
@@ -196,6 +193,11 @@ Route::middleware(['admin'])->group(function () {
 
     Route::get('/content', [ContentController::class, 'ContentIndex'])->name('ContentIndex');
     Route::get('/content/pages/{key}', [ContentController::class, 'ContentPage'])->name('ContentPage');
+
+    Route::get('/content/Image/{key}/edit', [ContentController::class, 'imageContentPage'])->name('ImageContentPage');
+    Route::put('/content/Image/{key}',[ContentController::class, 'imageSaveContent'])->name('ImagesaveContent');
+
+
     Route::get('/content/pages/{key}/edit', [ContentController::class, 'ContentPageEdit'])->name('ContentPageEdit');
     Route::put('/content/pages/{key}',[ContentController::class, 'saveContent'])->name('saveContent');
     Route::get('/content/pages/{key}/group',[ContentController::class, 'ContentPageEditGroup'])->name('ContentPageGroup');

@@ -14,8 +14,8 @@
                                 Gestion des élements d'entête et de pied de page
                             @elseif ($section['id'] == 'profil')
                                 Gestion de l'espace administration client
-                            @else
-
+                            @elseif ($section['id'] == 'image')
+                                Gestion des Images
                             @endif
                         </h2>
                             <div class="card">
@@ -23,8 +23,7 @@
                                     {{-- Section: {{ $section['title'] }} --}}
                                     <div class="accordion" id="accordion{{ $section['id'] }}">
                                         <div class="card-header " id="{{ $section['id'] }}Section">
-                                            <h2 class="mb-0 btn-link" data-toggle="collapse" data-target="#collapse{{ $section['id'] }}"
-                                                aria-expanded="true" aria-controls="collapse{{ $section['id'] }}">
+                                            <h2 class="mb-0 btn-link" data-toggle="collapse" data-target="#collapse{{ $section['id'] }}" aria-expanded="true" aria-controls="collapse{{ $section['id'] }}">
                                                 {{ $section['title'] }}
                                                 <i class='fa fa-chevron-down'></i>
                                             </h2>
@@ -39,13 +38,20 @@
                                                             <div class="col-md-6 text-left">
                                                                 <h6 class="card-title text-primary">{{ $title }}</h6>
                                                             </div>
-                                                            <div class="col-md-6 text-right">
-                                                                <a href="{{ route('ContentPage', ['key' => $key]) }}"
-                                                                    class="btn btn-primary btn-action" data-toggle="tooltip"
-                                                                    title="Voir plus">
-                                                                    <i class="fas fa-edit"></i> Modifier
-                                                                </a>
-                                                            </div>
+                                                                @if(Str::startsWith($key, 'image'))
+                                                                <div class="col-md-6 text-right">
+                                                                    <a href="{{ route('ImageContentPage', ['key' => $key]) }}" class="btn btn-primary btn-action" data-toggle="tooltip" title="Voir plus">
+                                                                        <i class="fas fa-edit"></i> Modifier
+                                                                    </a>
+                                                                </div>
+                                                            @else
+
+                                                                <div class="col-md-6 text-right">
+                                                                    <a href="{{ route('ContentPage', ['key' => $key]) }}" class="btn btn-primary btn-action" data-toggle="tooltip" title="Voir plus">
+                                                                        <i class="fas fa-edit"></i> Modifier
+                                                                    </a>
+                                                                </div>
+                                                            @endif
                                                         </div>
                                                     </div>
                                                 @endforeach

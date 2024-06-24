@@ -36,7 +36,7 @@ enum ActivityTypeEnum: string
             ActivityTypeEnum::QUOTATIONS => $cond ? 'Demande de cotation' : 'Quotation',
             ActivityTypeEnum::TENDER => $cond ? "Appels d'Offres" : 'Tenders',
             ActivityTypeEnum::JOBS => $cond ? "Offres d'emploi" : 'Jobs',
-            ActivityTypeEnum::NEWS => $cond ? "Annonces" : 'News',
+            ActivityTypeEnum::NEWS => $cond ? "Actualités" : 'News',
         };
     }
 
@@ -44,7 +44,7 @@ enum ActivityTypeEnum: string
     {
         return match ($this) {
             ActivityTypeEnum::CAREERS => '<div class="section-header">
-                                            <h1>Liste des Appels à Candidature</h1>
+                                            <h1>Enregistrement des Appels à Candidature</h1>
                                             <div class="section-header-breadcrumb">
                                                <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
                                                 <div class="breadcrumb-item"><a href="#">Appels à Candidature</a></div>
@@ -52,7 +52,7 @@ enum ActivityTypeEnum: string
                                             </div>
                                         </div>',
             ActivityTypeEnum::EVENTS => '<div class="section-header">
-                                                <h1>Liste des demandes de manifestations</h1>
+                                                <h1>Enregistrement des demandes de manifestations</h1>
                                                 <div class="section-header-breadcrumb">
                                                     <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
                                                     <div class="breadcrumb-item"><a href="#">Demandes de manifestations</a></div>
@@ -60,15 +60,15 @@ enum ActivityTypeEnum: string
                                                 </div>
                                         </div>',
             ActivityTypeEnum::QUOTATIONS => ' <div class="section-header">
-                                                    <h1>Liste des Demandes de Cotations</h1>
+                                                    <h1>Enregistrement  des Demandes de Quotations</h1>
                                                     <div class="section-header-breadcrumb">
                                                         <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
-                                                        <div class="breadcrumb-item"><a href="#">Demandes de Cotations</a></div>
+                                                        <div class="breadcrumb-item"><a href="#">Demandes de Quotations</a></div>
                                                         <div class="breadcrumb-item">Création</div>
                                                     </div>
                                                 </div> ',
             ActivityTypeEnum::TENDER => '<div class="section-header">
-                                            <h1>Liste des appels d\'offres</h1>
+                                            <h1>Enregistrement  des appels d\'offres</h1>
                                                 <div class="section-header-breadcrumb">
                                                     <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
                                                     <div class="breadcrumb-item"><a href="#">Appels d\'offres</a></div>
@@ -76,7 +76,7 @@ enum ActivityTypeEnum: string
                                                 </div>
                                         </div>',
             ActivityTypeEnum::JOBS => '<div class="section-header">
-                                            <h1>Liste des offres d\'emploi</h1>
+                                            <h1>Enregistrement  des offres d\'emploi</h1>
                                                 <div class="section-header-breadcrumb">
                                                     <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
                                                     <div class="breadcrumb-item"><a href="#">Offres d\'emploi</a></div>
@@ -84,7 +84,7 @@ enum ActivityTypeEnum: string
                                                 </div>
                                         </div>',
             ActivityTypeEnum::NEWS => '<div class="section-header">
-                                        <h1>Liste des Actualités</h1>
+                                        <h1>Enregistrement  des Actualités</h1>
                                             <div class="section-header-breadcrumb">
                                                 <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
                                                 <div class="breadcrumb-item"><a href="#">Actualités</a></div>
@@ -98,7 +98,7 @@ enum ActivityTypeEnum: string
     {
         return match ($this) {
             ActivityTypeEnum::CAREERS => '<div class="section-header">
-                                                <h1>Liste des Appels à Candidature</h1>
+                                                <h1>Edition des Appels à Candidature</h1>
                                                 <div class="section-header-breadcrumb">
                                                     <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
                                                     <div class="breadcrumb-item"><a href="#">Appels à Candidature</a></div>
@@ -106,7 +106,7 @@ enum ActivityTypeEnum: string
                                                 </div>
                                             </div>',
             ActivityTypeEnum::EVENTS => '<div class="section-header">
-                                                <h1>Liste des demandes de manifestations</h1>
+                                                <h1>Edition des demandes de manifestations</h1>
                                                 <div class="section-header-breadcrumb">
                                                     <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
                                                     <div class="breadcrumb-item"><a href="#">Demandes de manifestations</a></div>
@@ -114,7 +114,7 @@ enum ActivityTypeEnum: string
                                                 </div>
                                         </div>',
             ActivityTypeEnum::QUOTATIONS => '  <div class="section-header">
-                                                    <h1>Liste des Demandes de Cotations</h1>
+                                                    <h1>Edition des Demandes de Quotations</h1>
                                                     <div class="section-header-breadcrumb">
                                                         <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
                                                         <div class="breadcrumb-item"><a href="#">Demandes de Cotations</a></div>
@@ -122,7 +122,7 @@ enum ActivityTypeEnum: string
                                                     </div>
                                                 </div> ',
             ActivityTypeEnum::TENDER => '<div class="section-header">
-                                                <h1>Liste des appels d\'offres</h1>
+                                                <h1>Edition des appels d\'offres</h1>
                                                 <div class="section-header-breadcrumb">
                                                     <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
                                                     <div class="breadcrumb-item"><a href="#">Appels d\'offres</a></div>
@@ -130,7 +130,7 @@ enum ActivityTypeEnum: string
                                                 </div>
                                         </div>',
             ActivityTypeEnum::JOBS => '<div class="section-header">
-                                            <h1>Liste des offres d\'emploi</h1>
+                                            <h1>Edition des offres d\'emploi</h1>
                                             <div class="section-header-breadcrumb">
                                                 <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
                                                 <div class="breadcrumb-item"><a href="#">Offres d\'emploi</a></div>
@@ -138,7 +138,7 @@ enum ActivityTypeEnum: string
                                             </div>
                                         </div>',
             ActivityTypeEnum::NEWS => '<div class="section-header">
-                                        <h1>Liste des Actualités</h1>
+                                        <h1>Edition des Actualités</h1>
                                             <div class="section-header-breadcrumb">
                                                 <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
                                                 <div class="breadcrumb-item"><a href="#">Actualités</a></div>
@@ -168,7 +168,7 @@ enum ActivityTypeEnum: string
                                                 </div>
                                         </div>',
             ActivityTypeEnum::QUOTATIONS => '  <div class="section-header">
-                                                    <h1>Liste des Demandes de Cotations</h1>
+                                                    <h1>Liste des Demandes de Quotations</h1>
                                                     <div class="section-header-breadcrumb">
                                                         <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
                                                         <div class="breadcrumb-item"><a href="#">Demandes de Cotations</a></div>
@@ -192,7 +192,7 @@ enum ActivityTypeEnum: string
                                             </div>
                                         </div>',
             ActivityTypeEnum::NEWS => '<div class="section-header">
-                                        <h1>Liste des offres d\'emploi</h1>
+                                        <h1>Liste des Actualités</h1>
                                             <div class="section-header-breadcrumb">
                                                 <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
                                                 <div class="breadcrumb-item"><a href="#">Actualités</a></div>

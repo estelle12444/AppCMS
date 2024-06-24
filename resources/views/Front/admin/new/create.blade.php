@@ -2,7 +2,8 @@
 @section('content')
 
 <x-activity-create
-        route="quotation"
-        :message="\App\Models\Enums\ActivityTypeEnum::QUOTATIONS->getMessageDelete()"
-        :header="App\Models\Enums\ActivityTypeEnum::QUOTATIONS->getHeaderIndex()"/>
+        route="new"
+        :message="\App\Models\Enums\ActivityTypeEnum::NEWS->getMessageDelete()"
+        :header="App\Models\Enums\ActivityTypeEnum::NEWS->getHeaderIndex()"
+        type="{{ \App\Models\Enums\ActivityTypeEnum::NEWS }}"/>
 @endsection

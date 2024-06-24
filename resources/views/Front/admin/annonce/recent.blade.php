@@ -34,9 +34,9 @@
                                                 @elseif ($key == 'jobs')
                                                     Offres d'emploi
                                                 @elseif ($key == 'quotations')
-                                                    Demandes de Cotation
+                                                    Demandes de Quotations
                                                 @elseif ($key == 'events')
-                                                    Demandes de manifestation
+                                                    Demandes de manifestations
                                                 @endif
                                             </a>
                                         </li>
@@ -64,7 +64,7 @@
                                         <div class="alert alert-info">
                                             Il n'y a pas d'annonces récentes à afficher.
                                         </div>
-                                    @endforeach
+                                    @endif
                                 </div>
                             </div>
                         </div>

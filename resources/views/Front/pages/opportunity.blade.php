@@ -15,7 +15,7 @@
         <div {{App\Helper::test('opportunity.zone.administration_zone') }}  class=" partie relative bg-amber-500 font-extrabold rounded-lg p-4 text-white text-center " style=" height:100px ">
             {!! __('opportunity.zone.administration_zone') !!}
         </div>
-        <div {{App\Helper::test('opportunity.zone.production_zone_assembly_industries') }}  class=" partie relative bg-green-500  font-extrabold rounded-lg p-4 text-white text-center  ">
+        <div {{App\Helper::test('opportunity.zone.production_zone_assembly_industries') }}  class="partie relative bg-green-500  font-extrabold rounded-lg p-4 text-white text-center  ">
             {!! __('opportunity.zone.production_zone_assembly_industries') !!}
         </div>
         <div {{App\Helper::test('opportunity.zone.production_zone_biotechnology_industries') }}  class=" partie relative bg-orange-200  font-extrabold rounded-lg pt-2 text-white text-center " style=" height:100px ">
@@ -39,7 +39,7 @@
         <div {{App\Helper::test('opportunity.zone.bus_station') }}  class=" partie relative bg-slate-700 font-extrabold rounded-lg p-4 text-white text-center">
             {!! __('opportunity.zone.bus_station') !!}
         </div>
-        <div {{App\Helper::test('pportunity.zone.green_zone') }}  class=" partie relative bg-green-400 font-extrabold rounded-lg p-4 text-white text-center">
+        <div {{App\Helper::test('opportunity.zone.green_zone') }}  class=" partie relative bg-green-400 font-extrabold rounded-lg p-4 text-white text-center">
             {!! __('opportunity.zone.green_zone') !!}
         </div>
         <div {{App\Helper::test('opportunity.zone.utility') }}  class=" partie relative bg-gray-400 font-extrabold rounded-lg p-4 text-white text-center">
@@ -54,8 +54,8 @@
         </div>
         <div class="grid grid-cols-1 xl:grid-cols-1 gap-2 md:px-2">
             <div data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="700" class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2">
-                    <img class="h-52 w-full rounded-lg md:pr-8 mb-4 md:mb-0" src="img/city.png" alt="">
+                <div {{App\Helper::test('image.opportunity.warehouses') }}  class="partie relative md:w-1/2">
+                    <img class="h-52 w-full rounded-lg md:pr-8 mb-4 md:mb-0" src="{{asset(__('image.opportunity.warehouses'))}}" alt="">
                 </div>
                 <div class="md:w-1/2">
                     <div class="md:px-0  xl:px-0">
@@ -79,13 +79,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="md:w-1/2">
-                    <img class="h-52 w-full rounded-lg  mb-4 md:mb-0" src="img/Picture9.png" alt="">
+                <div {{App\Helper::test('image.opportunity.promotion') }}  class="partie relative md:w-1/2">
+                    <img class="h-52 w-full rounded-lg  mb-4 md:mb-0" src="{{asset(__('image.opportunity.promotion'))}}" alt="">
                 </div>
             </div>
             <div data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="700" class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2">
-                    <img class="h-52 w-full rounded-lg md:pr-8 mb-4 md:mb-0" src="img/immeuble.png" alt="">
+                <div {{App\Helper::test('image.opportunity.office') }}  class="partie relative md:w-1/2">
+                    <img class="h-52 w-full rounded-lg md:pr-8 mb-4 md:mb-0" src="{{asset(__('image.opportunity.office'))}}" alt="">
                 </div>
                 <div class="md:w-1/2">
                     <div class="md:px-0  xl:px-0">
@@ -109,21 +109,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="md:w-1/2">
-                    <img class="h-52 w-full rounded-lg  mb-4 md:mb-0" src="img/hotel.png" alt="">
+                <div {{App\Helper::test('image.opportunity.business_hotels') }}  class=" partie relative md:w-1/2">
+                    <img class="h-52 w-full rounded-lg  mb-4 md:mb-0" src="{{asset(__('image.opportunity.business_hotels'))}}" alt="">
                 </div>
             </div>
             <div data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="700" class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2">
-                    <img class="h-52 w-full rounded-lg md:pr-8 mb-4 md:mb-0" src="img/universite.png" alt="">
+                <div {{App\Helper::test('image.opportunity.university') }}  class=" partie relative  md:w-1/2">
+                    <img class="h-52 w-full rounded-lg md:pr-8 mb-4 md:mb-0" src="{{asset(__('image.opportunity.university'))}}" alt="">
                 </div>
                 <div class="md:w-1/2">
                     <div class="md:px-0  xl:px-0">
                         <div {{App\Helper::test('opportunity.projects.university_title') }}  class=" partie relative mb-2 text-2xl lg:text-4xl  font-bold tracking-tight text-gray-900 dark:text-white">
                             {!! __('opportunity.projects.university_title') !!}
                         </div>
-                        <div {{App\Helper::test('opportunity.university_description') }}  class=" partie relative text-justify ">
-                            {!! __('opportunity.university_description') !!}
+                        <div {{App\Helper::test('opportunity.projects.university_description') }}  class=" partie relative text-justify ">
+                            {!! __('opportunity.projects.university_description') !!}
                         </div>
                     </div>
                 </div>
@@ -139,13 +139,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="md:w-1/2">
-                    <img class="h-52 w-full rounded-lg  mb-4 md:mb-0" src="img/immobilier.png" alt="">
+                <div {{App\Helper::test('image.opportunity.immobilier') }}  class=" partie relative md:w-1/2">
+                    <img class="h-52 w-full rounded-lg  mb-4 md:mb-0" src="{{asset(__('image.opportunity.immobilier'))}}" alt="">
                 </div>
             </div>
             <div data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="700" class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2">
-                    <img class="h-52 w-full rounded-lg md:pr-8 mb-4 md:mb-0" src="img/clinique.png" alt="">
+                <div {{App\Helper::test('image.opportunity.clinic') }}  class=" partie relative md:w-1/2">
+                    <img class="h-52 w-full rounded-lg md:pr-8 mb-4 md:mb-0" src="{{asset(__('image.opportunity.clinic'))}}" alt="">
                 </div>
                 <div class="md:w-1/2">
                     <div class="md:px-0  xl:px-0">
@@ -169,13 +169,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="md:w-1/2">
-                    <img class="h-52 w-full rounded-lg  mb-4 md:mb-0" src="img/centre_cultu.png" alt="">
+                <div {{App\Helper::test('image.opportunity.centre_cultu') }}  class=" partie relative md:w-1/2">
+                    <img class="h-52 w-full rounded-lg  mb-4 md:mb-0" src="{{asset(__('image.opportunity.centre_cultu'))}}" alt="">
                 </div>
             </div>
             <div data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="700" class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2">
-                    <img class="h-52 w-full rounded-lg md:pr-8 mb-4 md:mb-0" src="img/centre_commer.png" alt="">
+                <div {{App\Helper::test('image.opportunity.centre_commer') }}  class=" partie relative  md:w-1/2">
+                    <img class="h-52 w-full rounded-lg md:pr-8 mb-4 md:mb-0" src="{{asset(__('image.opportunity.centre_commer'))}}" alt="">
                 </div>
                 <div class="md:w-1/2">
                     <div class="md:px-0  xl:px-0">
@@ -269,8 +269,8 @@
                         </div>
                     </div>
                     <div data-aos="zoom-in-right" data-aos-delay="700" data-aos-delay="700" class="xl:basis-1/2">
-                        <div>
-                            <img src="img/Image4.png" alt="">
+                        <div {{App\Helper::test('image.opportunity.project_service') }}  class=" partie relative" >
+                            <img src="{{asset(__('image.opportunity.project_service'))}}" alt="">
                         </div>
                     </div>
                 </div>

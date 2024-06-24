@@ -25,8 +25,7 @@
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-
-                                <table class="table">
+                                <table class="table" id="SectorTable">
                                     <thead>
                                         <tr>
                                             <th>#</th>
@@ -61,3 +60,8 @@
                 </div>
             </div>
         @endsection
+
+
+        <script>
+            
+        </script>

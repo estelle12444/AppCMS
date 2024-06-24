@@ -30,14 +30,17 @@
                         </thead>
                         <tbody>
                             @foreach ($contents['fr'] as $key => $content)
+
                                 <tr>
                                     <td class="">{!! strip_tags($content) !!}</td>
                                     <td>{!! strip_tags($contents['en'][$key]) !!}</td>
                                     <td>
-                                        <a href="{{ route('ContentPageEdit', ['key' => $key]) }}" class="btn btn-danger btn-action mr-1" data-toggle="tooltip"
-                                            title="Voir plus" data-original-title="Voir plus">
-                                            <i class="fas fa-edit"></i>
-                                        </a>
+
+                                            <a href="{{ route('ContentPageEdit', ['key' => $key]) }}" class="btn btn-danger btn-action mr-1" data-toggle="tooltip"
+                                                title="Voir plus" data-original-title="Voir plus">
+                                                <i class="fas fa-edit"></i>
+                                            </a>
+                                        
                                     </td>
                                 </tr>
                             @endforeach

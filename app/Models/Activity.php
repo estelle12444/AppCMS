@@ -38,4 +38,9 @@ class Activity extends Model implements TranslateContracts
     {
         return $this->belongsTo(Applicant::class);
     }
+
+    public function images()
+    {
+        return $this->hasMany(ActivityImage::class);
+    }
 }

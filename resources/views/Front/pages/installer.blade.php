@@ -11,8 +11,8 @@
 </section>
 <div class="bg-gradient-to-r from-orange-100 from-20%  to-gray-100 to-90%">
     <div class=" md:px-20 pt-12 px-4 xl:px-32 pb-20 xl:grid xl:grid-cols-3 grid-cols-1 gap-3 ">
-        <div class="">
-            <img data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="600" src="img/page_4/Image5.png"alt="">
+        <div {{App\Helper::test('image.installer.eligibilite') }} class="partie relative">
+            <img data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="600" src="{{asset(__('image.installer.eligibilite'))}}"alt="">
         </div>
         <div class="xl:col-span-2 xl:px-8 md:px-0">
             <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="400"  {{App\Helper::test('installer.section.eligibility.prerequisites.title') }} class=" partie relative xl:text-3xl text-4xl font-bold text-left py-8 md:py-6 xl:py-0 lg:pr-16 text-gray-600">
@@ -57,9 +57,9 @@
         <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="500" {{App\Helper::test('installer.section.approval_procedure') }} class=" partie relative text-2xl lg:text-4xl md:text-4xl font-bold uppercase">
             {!!__('installer.section.approval_procedure')!!}
         </div>
-        <div class="xl:py-8 py-4 xl:pt-20 xl:px-24 px-6 md:px-6 ">
-            <img data-aos="zoom-out-right" data-aos-duration="500" data-aos-delay="600"
-                src="{{asset('img/icon-installer/Parcours.png')}}" alt="">
+        <div {{App\Helper::test('image.installer.procedure') }} class=" partie relative  xl:py-8 py-4 xl:pt-20 xl:px-24 px-6 md:px-6 ">
+            <img  data-aos="zoom-out-right" data-aos-duration="500" data-aos-delay="600"
+                src="{{asset(__('image.installer.procedure'))}}" alt="">
         </div>
     </div>
 
@@ -405,8 +405,8 @@
             </div>
             <div class="xl:flex flex-row py-4 xl:py-8" data-aos="zoom-in-up" data-aos-delay="700"
             data-aos-delay="700">
-            <div class="xl:w-1/3 xl:mt-6  ">
-            <img class="h-auto max-w-full rounded-lg md:pl-8 " src="img/Image7.png" alt="">
+            <div {{App\Helper::test('installer.join_us.title') }} class=" partie relative xl:w-1/3 xl:mt-6  ">
+            <img class="h-auto max-w-full rounded-lg md:pl-8 " src="{{asset(__('image.installer.join_us'))}}" alt="">
             </div>
             <div class="xl:w-1/3  xl:pl-4 mt-2 xl:mt-4">
             <div {{App\Helper::test('installer.join_us.subtitle') }} class=" partie relative font-bold xl:text-lg md:text-3xl">

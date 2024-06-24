@@ -4,5 +4,6 @@
         :$activities
         route="new"
         :message="\App\Models\Enums\ActivityTypeEnum::NEWS->getMessageDelete()"
-        :header="App\Models\Enums\ActivityTypeEnum::NEWS->getHeaderIndex()"/>
+        :header="App\Models\Enums\ActivityTypeEnum::NEWS->getHeaderIndex()"
+        type="{{ \App\Models\Enums\ActivityTypeEnum::NEWS }}"/>
 @endsection

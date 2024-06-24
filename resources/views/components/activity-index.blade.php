@@ -1,5 +1,6 @@
 <div>
     <!-- Waste no more time arguing what a good man should be, be one. - Marcus Aurelius -->
+    @props(['route', 'message', 'header', 'type'])
     <section class="section">
         {!! $header !!}
         <div class="section-body">
@@ -22,15 +23,19 @@
                                 <table  id="activity" class="table table-striped" id="table-1">
                                     <thead>
                                         <tr>
-                                            <th class="text-center">N</th>
+                                            <th class="text-center">N°</th>
                                             <th>Titre</th>
                                             <th>Description</th>
                                             <th>Resumé</th>
                                             <th>Date limite</th>
-                                            {{-- <th>Image</th> --}}
-                                            <th>Fichier</th>
+                                            @if($type == 'news')
+                                                <th>Image de Couverture</th>
+                                            @else
+                                                <th>Image</th>
+                                                <th>Document associé</th>
+                                            @endif
                                             {{-- <th>Date et Heure</th> --}}
-                                            <th>Action</th>
+                                            <th>Actions</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -41,39 +46,51 @@
                                                 <td>{{ $stripTags($activity->content, 50) }}</td>
                                                 <td>{{ $stripTags($activity->resume, 10) }}</td>
                                                 <td>{{ $activity->limit_date }}</td>
-                                                {{-- <td>
-                                                    <img alt="{{ $activity->title }}"
-                                                        src="{{ asset('storage/' . $activity->image) }}" data-toggle="tooltip"
-                                                        width="50">
-                                                </td> --}}
+
+                                            @if($type == 'news')
                                                 <td>
-                                                    <a href="{{ asset('storage/' . $activity->file) }}"
-                                                        title="{{ $activity->title }}">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                                                            class="w-4 h-4">
-                                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                                d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-                                                        </svg>
-                                                    </a>
+                                                    @if ($activity->image)
+                                                        <img alt="{{ $activity->title }}"
+                                                            src="{{ asset('storage/' .$activity->image) }}" data-toggle="tooltip"  style="height: 60px; width:auto">
+                                                    @else
+                                                        pas d'image
+                                                    @endif
                                                 </td>
+                                            @else
+                                                <td>
+                                                    @if ($activity->image)
+                                                        <img alt="{{ $activity->title }}"
+                                                            src="{{ asset('storage/' .$activity->image) }}" data-toggle="tooltip"  style="height: 60px; width:auto">
+                                                    @else
+                                                        pas d'image
+                                                    @endif
+                                                </td>
+                                                <td >
+                                                    @if ($activity->file)
+
+                                                            <a href="{{ asset('storage/' .$activity->file)  }}" title="{{ $activity->title }}" >
+                                                                <svg  style="height: 40px;width:40px; color:aqua" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"/></svg>
+                                                            </a>
+                                                    @else
+                                                        pas de document
+
+                                                    @endif
+                                                </td>
+
+                                            @endif
                                                 {{-- <td>{{ $partner->created_at }}</td> --}}
                                                 <td>
                                                     <a href="{{ route('Front.admin.'.$route.'.edit', $activity) }}" class="btn btn-primary btn-action mr-1" data-toggle="tooltip"
-                                                        title="" data-original-title="Edit"><i
-                                                            class="fas fa-pencil-alt"></i></a>
+                                                        title="" data-original-title="Edit"><i class="fas fa-pencil-alt"></i></a>
 
                                                     <form action="{{ route('Front.admin.'.$route.'.destroy', $activity->id) }}"
                                                         method="POST" style="display: inline;">
                                                         @csrf
                                                         @method('DELETE')
-                                                        <button type="submit"
-                                                            class="btn btn-danger btn-action trigger--fire-modal-6"
-                                                            onclick="return confirm('{{$message}}')"><i
+                                                        <button type="submit"class="btn btn-danger btn-action trigger--fire-modal-6" onclick="return confirm('{{$message}}')"><i
                                                                 class="fas fa-trash"></i></button>
                                                     </form>
-                                                    <a href="{{route('Front.admin.activities.applicants', $activity->id)}}" class="btn btn-primary btn-action mr-1" data-toggle="tooltip"
-                                                    title="" data-original-title="Voir les postulants">
+                                                    <a href="{{route('Front.admin.activities.applicants', $activity->id)}}" class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="" data-original-title="Voir les postulants">
                                                     <i class="fas fa-users"></i></a>
                                                 </td>
                                             </tr>

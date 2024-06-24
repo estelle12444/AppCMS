@@ -1,9 +1,11 @@
 <nav
     class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 bg-gradient-to-r">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="/home" class="flex items-center" style="width:150px">
-            <img src="{{asset(__('logo_uri'))}}" alt="logo">
-        </a>
+        <div {{App\Helper::test('image.logo_url') }} class="partie relative ">
+            <a href="/home" class="flex items-center" style="width:150px">
+                <img src="{{asset(__('image.logo_url'))}}" alt="logo">
+            </a>
+         </div>
         <div class="flex xl:order-2">
 
             @if (auth()->check())
@@ -150,7 +152,7 @@
                 </li>
                 <li>
                     <a href="/actu"{{App\Helper::test('layouts.nav.menu.galery') }}
-                        class=" partie relative block py-2 pl-3 pr-4 text-gray-700 {{ request()->path() == 'actu' ? 'xl:text-orange-400 text-orange-400' : '' }} rounded xl:bg-transparent xl:hover:text-amber-500 xl:p-0 xl:dark:text-blue-500"
+                        class=" partie relative block py-2 pl-3 pr-4 text-gray-700 {{ str_starts_with(request()->path(), 'actu')|| str_starts_with(request()->path(), 'media') ? 'xl:text-orange-400 text-orange-400' : '' }} rounded xl:bg-transparent xl:hover:text-amber-500 xl:p-0 xl:dark:text-blue-500"
                         aria-current="page">{{ __('layouts.nav.menu.galery') }}</a>
                 </li>
                 <li>

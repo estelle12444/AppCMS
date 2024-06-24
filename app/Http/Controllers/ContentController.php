@@ -14,7 +14,18 @@ class ContentController extends Controller
     private function data()
     {
         return [
+            [
+                'title' => 'Toutes les Images',
+                'id' => 'image',
+                'items' => [
+                    // 'image.logo_url'=>" Le logo",
+                    // 'video_url'=>"La vidéo de présentation",
+                    // 'image.home' => ' Toutes les images de Accueil/Home',
+                    'image.home.tech' => "Image section gauche",
+                    'image.home.smart' => 'Image section droite',
 
+                ]
+            ],
             [
                 'title' => 'Accueil/Home',
                 'id' => 'home',
@@ -138,7 +149,6 @@ class ContentController extends Controller
     public function contentIndex()
     {
         $sections = $this->data();
-
         return view('Front.admin.content.index', compact('sections'));
     }
 
@@ -162,6 +172,8 @@ class ContentController extends Controller
         return view('Front.admin.content.page', compact('contents', 'key', 'title'));
     }
 
+
+
     public function contentPageEdit($key)
     {
         $contents = [];
@@ -173,6 +185,19 @@ class ContentController extends Controller
             })->toArray();
         }
         return view('Front.admin.content.edit', compact('contents', 'key'));
+    }
+
+    public function imageContentPage($key)
+    {
+        $contents = [];
+
+        foreach (['en', 'fr'] as $id) {
+            $json = json_decode(file_get_contents(resource_path("lang/$id.json")), true);
+            $contents[$id] = collect($json)->where(function ($value, $index) use ($key) {
+                return $index === $key;
+            })->toArray();
+        }
+        return view('Front.admin.content.edit-image', compact('contents', 'key'));
     }
 
     public function saveContent(Request $request, $key)
@@ -206,7 +231,7 @@ class ContentController extends Controller
         }
 
         if ($isSuccess) {
-            $pages = collect(['layouts', 'profil.layouts', 'home', 'about', 'opportunity', "installer", "landing", "news", "actu", "info", "profil.home", "profil.company", "profil.document", "profil.profil_edit", "profil.demande_state", "profil.form"]);
+            $pages = collect(['image','layouts', 'profil.layouts', 'home', 'about', 'opportunity', "installer", "landing", "news", "actu", "info", "profil.home", "profil.company", "profil.document", "profil.profil_edit", "profil.demande_state", "profil.form"]);
 
             $page = $pages->where(function ($value) use ($key) {
                 return Str::startsWith($key, $value);
@@ -217,6 +242,48 @@ class ContentController extends Controller
             return redirect()->back()->with('error', 'Erreur lors de la modification');
         }
     }
+
+
+    public function imageSaveContent(Request $request, $key)
+    {
+        // Validation des fichiers téléchargés
+        $validator = Validator::make($request->all(), [
+            'en.content' => 'required|file|mimes:png,jpg,jpeg|max:2048',
+            'fr.content' => 'required|file|mimes:png,jpg,jpeg|max:2048',
+        ]);
+
+
+        if ($validator->fails()) {
+            return redirect()->back()->withErrors($validator)->withInput();
+        }
+
+        foreach (['en', 'fr'] as $lang) {
+            if ($request->hasFile("$lang.content")) {
+                $file = $request->file("$lang.content");
+                $filename = $file->getClientOriginalName();
+                $filePath = $file->storeAs('public/images', $filename);
+
+                $storagePath = 'storage/' . str_replace('public/', '', $filePath);
+
+                $jsonPath = resource_path("lang/$lang.json");
+                $json = [];
+
+                if (file_exists($jsonPath)) {
+                    $json = json_decode(file_get_contents($jsonPath), true);
+                }
+
+                $json[$key] =  $storagePath;
+                $isSuccess = file_put_contents($jsonPath, json_encode($json, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
+
+                if (!$isSuccess) {
+                    return redirect()->back()->with('error', 'Erreur lors de la modification');
+                }
+            }
+        }
+
+        return redirect()->route("ContentIndex")->with('success', "Image ajoutée avec succès.");
+    }
+
 
     public function ContentPageEditGroup()
     {

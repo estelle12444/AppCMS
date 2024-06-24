@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Activity;
+use App\Models\ActivityImage;
 use App\Models\Enums\ActivityTypeEnum;
 use Illuminate\Support\Facades\Storage;
 
@@ -11,6 +12,7 @@ abstract class ActivityController extends Controller
 {
     protected $folder;
     protected $type;
+
 
     public function index()
     {
@@ -32,13 +34,31 @@ abstract class ActivityController extends Controller
             'lang.*.resume' => 'nullable',
             'lang.*.image' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
             'lang.*.file' => 'nullable',
-            'lang.*.limit_date'=>'nullable'
+            'lang.*.limit_date'=>'nullable',
+            'additional_images.*' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
+
         ]);
 
         $french = $this->save(data: $validatedData['lang'][0]);
         $this->save(data: $validatedData['lang'][1], french: $french);
 
+        if ($request->hasFile('additional_images')) {
+            $this->saveAdditionalImages($request->file('additional_images'), $french);
+        }
+
         return redirect()->route("Front.admin.$this->folder.index")->with('success', $this->type->getTypeText()." ajouté avec succès.");
+    }
+
+
+    protected function saveAdditionalImages(array $images, $activity)
+    {
+        foreach ($images as $image) {
+            $path = $image->store('activities','public');
+            ActivityImage::create([
+                'activity_id' => $activity->id,
+                'path' => $path,
+            ]);
+        }
     }
 
     public function edit(Activity $activity)
@@ -55,19 +75,40 @@ abstract class ActivityController extends Controller
             'lang.*.resume' => 'nullable',
             'lang.*.image' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
             'lang.*.file' => 'nullable',
-            'lang.*.limit_date'=>'nullable'
+            'lang.*.limit_date'=>'nullable',
+            'additional_images.*' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
+
         ]);
 
         $french = $this->save(data: $validatedData['lang'][0], activity: $activity);
         $this->save(data: $validatedData['lang'][1], activity: $activity->child, french: $french);
+
+        if ($request->hasFile('additional_images')) {
+            $this->saveAdditionalImages($request->file('additional_images'), $french);
+        }
 
         return redirect()->route("Front.admin.$this->folder.index")->with('success', $this->type->getTypeText()." ajouté avec succès.");
     }
 
     public function destroy(Activity $activity)
     {
+        $this->deleteActivityImages($activity);
         $activity->delete();
         return redirect()->route("Front.admin.$this->folder.index")->with('success', $this->type->getTypeText()." supprimé avec succès.");
+    }
+
+    private function deleteActivityImages(Activity $activity)
+    {
+        // Retrieve all associated images for the activity
+        $activityImages = ActivityImage::where('activity_id', $activity->id)->get();
+
+        // Delete each image file and its database record
+        foreach ($activityImages as $image) {
+            if (Storage::exists($image->path)) {
+                Storage::delete($image->path);
+            }
+            $image->delete();
+        }
     }
 
     private function save($data, ?Activity $activity=null, $french=null){

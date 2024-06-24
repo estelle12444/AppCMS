@@ -3,10 +3,10 @@
 @section('content')
     <section class="section">
         <div class="section-header">
-            <h1>Postulants</h1>
+            <h1>Candidatures</h1>
             <div class="section-header-breadcrumb">
                 <div class="breadcrumb-item active"><a href="/admin">Dashboard</a></div>
-                <div class="breadcrumb-item"><a href="#">Postulant</a></div>
+                <div class="breadcrumb-item"><a href="#">Candidatures</a></div>
                 <div class="breadcrumb-item">Liste</div>
             </div>
         </div>
@@ -46,11 +46,11 @@
                                             <table class="table" >
                                                 <thead>
                                                     <tr>
-                                                        <th>ID</th>
+                                                        <th>N°</th>
                                                         <th>Nom</th>
                                                         <th>Email</th>
                                                         <th>Portfolio</th>
-                                                        <th>Fichiers joints</th>
+                                                        <th>Documents joints</th>
                                                         <th>Statut</th>
                                                         <th>Actions</th>
                                                     </tr>
@@ -82,7 +82,7 @@
                                                             <td>{{ $application->status }}</td>
                                                             <td>
                                                                 <!-- Affichez le bouton "Accepter" si le statut est "en_attente" -->
-                                                                @if (($application->status === 'en_attente') | ($application->status === 'refusé'))
+                                                                @if (($application->status === 'en_attente') | ($application->status === 'refuser'))
                                                                     <form action="{{ route('accepter', $application->id) }}" method="POST">
                                                                         @csrf
                                                                         <button type="submit" class="btn btn-success">Accepter</button>

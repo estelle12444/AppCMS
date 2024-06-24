@@ -36,13 +36,13 @@
 <body style="overflow-x: hidden">
 
     <!-- Preloader-->
-    {{-- <div id="preloader-area" style="display:block;overflow-x: hidden">
+    <div id="preloader-area" style="display:block;overflow-x: hidden">
         <div class="lds-ripple">
             <div></div>
             <div></div>
         </div>
     </div>
-    <!--  Preloader --> --}}
+    <!--  Preloader -->
 
     {{-- <div id="popup" class="popup">
         <div class="popup-content">
@@ -103,6 +103,47 @@
             </div>
         </div>
     </div>
+
+
+    {{-- ################## --}}
+
+    <div id="imageModalId" class="fixed hidden z-50 inset-0 bg-gray-900 bg-opacity-60 overflow-y-auto h-full w-full px-4">
+        <div class="relative top-40 mx-auto shadow-xl rounded-md bg-white max-w-md">
+            <div class="flex justify-end p-2">
+                <button onclick="closeModal('imageModalId')" type="button"
+                    class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="p-6 pt-0 text-center">
+                <form id="imageForm" action="/api/saveImage" method="POST" enctype="multipart/form-data">
+                    @csrf
+                    <div class="form-group row mb-4">
+                        <input type="hidden" name="imageTag">
+                        <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Image actuelle</label>
+                        <div class="col-sm-12 col-md-7">
+                            <img id="currentImage" src="" alt="Image actuelle" class="max-w-full h-auto" />
+                        </div>
+                    </div>
+                    <div class="form-group row mb-4">
+                        <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Nouvelle image</label>
+                        <div class="col-sm-12 col-md-7">
+                            <input type="file" name="newImage" class="form-control">
+                            <div style="display:none;" id="error-image" class="alert alert-danger"></div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center space-x-4">
+                        <button id="submitImage" type="submit" class="px-4 py-2 bg-blue-500 text-white rounded-lg mr-2">Enregistrer</button>
+                        <button type="button" onclick="closeModal('imageModalId')" class="px-4 py-2 bg-gray-300 text-gray-800 rounded-lg">Annuler</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <hr>
 
 </body>
@@ -147,41 +188,74 @@
         document.body.classList.remove('overflow-y-hidden');
     }
 
-    document.addEventListener("DOMContentLoaded", function() {
-        const userRole = @json(Auth::user()->role ?? '{}');
-        if (userRole.nom === 'admin') {
-            const parties = document.querySelectorAll(".partie");
-            parties.forEach(function(partie) {
-                partie.addEventListener("mouseover", handleMouseOver);
-                partie.addEventListener("mouseleave", handleMouseLeave);
-                partie.editButtonAdded = false;
-            });
+
+        const openModalImage = function(tag) {
+            "use strict"
+            console.log(submitImage)
+            openModal('imageModalId')
+            // const modal = document.getElementById('imageModalId');
+            // console.log(modal,imageModalId)
+            document.querySelector("input[name='imageTag']").value = tag;
+
+            // Fetch and display the current image
+            fetchImageData(tag)
+                .then(imageUrl => {
+                    document.getElementById("currentImage").src = imageUrl;
+                    modal.style.display = 'block';
+                    document.body.classList.add('overflow-y-hidden');
+                })
+                .catch(error => console.error('Erreur lors de la récupération de l\'image:', error));
         }
-        tinymce.init({
-            selector: 'textarea',
-            plugins: 'textcolor colorpicker',
-            toolbar: 'undo redo | styles | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media | forecolor backcolor emoticons',
-            menubar: ' edit view  format tools table ',
-            height: 200,
-            setup: function(editor) {
-                editor.on('init', function() {
-                    this.getDoc().body.style.fontFamily =
-                        'Arial, Helvetica, sans-serif'; // Changer la police par défaut si nécessaire
+
+        const fetchImageData = function(tag) {
+            return fetch("/api/image/", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "X-CSRF-Token": "{{ csrf_token() }}"
+                    },
+                    body: JSON.stringify({ tag })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    return data.imageUrl;
+                });
+        }
+
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const userRole = @json(Auth::user()->role ?? '{}');
+            if (userRole.nom === 'admin') {
+                const parties = document.querySelectorAll(".partie");
+                parties.forEach(function(partie) {
+                    partie.addEventListener("mouseover", handleMouseOver);
+                    partie.addEventListener("mouseleave", handleMouseLeave);
+                    partie.editButtonAdded = false;
                 });
             }
+            tinymce.init({
+                selector: 'textarea',
+                plugins: 'textcolor colorpicker',
+                toolbar: 'undo redo | styles | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media | forecolor backcolor emoticons',
+                menubar: ' edit view  format tools table ',
+                height: 200,
+                setup: function(editor) {
+                    editor.on('init', function() {
+                        this.getDoc().body.style.fontFamily =
+                            'Arial, Helvetica, sans-serif'; // Changer la police par défaut si nécessaire
+                    });
+                }
+            });
         });
-    });
 
     function handleMouseOver(e) {
         const tag = e.target.getAttribute("data-tag")  || e.currentTarget.getAttribute("data-tag");
         const tagList = document.querySelectorAll(`[data-tag='${tag}']`);
+
+
         tagList.forEach((node) => {
             node.style.border = "2px dashed #ff0000";
-            // const button = createEditButton(node, "modalId");
-            // node.appendChild(button);
-            // node.editButtonAdded = true;
             const button = node.querySelector('.editButton');
-
             // Create and append the button only if it doesn't exist
             if (!button) {
                 const newButton = createEditButton(node, "modalId");
@@ -189,7 +263,7 @@
                 node.editButtonAdded = true;
             }
         });
-        //requestAnimationFrame(() => {}); // Utiliser requestAnimationFrame si nécessaire
+
     }
 
     function handleMouseLeave(e) {
@@ -205,6 +279,10 @@
         });
     }
 
+    function getTag(domEl){
+        return !domEl.getAttribute("data-tag") ? getTag(domEl.parentNode) : domEl.getAttribute("data-tag");
+    }
+
     function createEditButton(parentElement, modalId) {
         const button = document.createElement('button');
         button.classList.add("editButton", "absolute", "bottom","right-0", "p-2", "bg-gray-800", "text-white",
@@ -215,113 +293,131 @@
 
         button.addEventListener('click', function(e) {
             e.preventDefault();
-            const tag = e.target.getAttribute("data-tag") || e.target.parentNode.getAttribute("data-tag") || e
-                .target.parentNode.parentNode.getAttribute("data-tag");
-            openModalWithData(modalId, tag);
-            openModal(modalId);
-        });
+
+            const tag = getTag(e.target);
+
+                // console.log('Bandama', tag, tag && tag.startsWith("image."));
+                if (tag && tag.startsWith("image.")) {
+
+                    const url = generateImageEditUrl(tag);
+                        // Rediriger vers l'URL générée
+                        window.location.href = url;
+                    //const url = generateImageEditUrl(tag);
+                    // openModalImage(url);
+                }else{
+                    openModalWithData(modalId, tag);
+                    openModal(modalId);
+
+                }
+        }, false);
+        function generateImageEditUrl(tag) {
+            const key = tag;  // Extraire la partie clé du tag
+            return `/content/Image/${key}/edit`;
+        }
         return button;
     }
 
-    function openModalWithData(modalId, tag) {
-        displayError('en');
-        displayError('fr');
+        function openModalWithData(modalId, tag) {
+            displayError('en');
+            displayError('fr');
 
-        const modal = document.getElementById(modalId);
-        document.querySelector("input[name='tag']").value = tag;
+            const modal = document.getElementById(modalId);
+            document.querySelector("input[name='tag']").value = tag;
 
-        // les données de l'API
-        fetch("/api/content/", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    "X-CSRF-Token": "{{ csrf_token() }}"
-                },
-                body: JSON.stringify({
-                    tag
+            // les données de l'API
+            fetch("/api/content/", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "X-CSRF-Token": "{{ csrf_token() }}"
+                    },
+                    body: JSON.stringify({
+                        tag
+                    })
                 })
-            })
-            .then(response => response.json())
-            .then(data => {
-                console.log(tinyMCE.get("description_fr"), tinyMCE.get("description_en"))
-                document.getElementById("description_fr").value = data.fr;
-                document.getElementById("description_en").value = data.en;
-                // tinyMCE.activeEditor.get("description_fr").setContent(data.fr);
-                // tinyMCE.activeEditor.get("description_en").setContent(data.en);
+                .then(response => response.json())
+                .then(data => {
+                    //console.log(tinyMCE.get("description_fr"), tinyMCE.get("description_en"))
+                    document.getElementById("description_fr").value = data.fr;
+                    document.getElementById("description_en").value = data.en;
+                    // tinyMCE.activeEditor.get("description_fr").setContent(data.fr);
+                    // tinyMCE.activeEditor.get("description_en").setContent(data.en);
 
-                modal.style.display = 'block';
-                document.body.classList.add('overflow-y-hidden');
-            })
-            .catch(error => console.error('Erreur lors de la récupération du contenu:', error));
-    }
-
-    function displayError(lang, error = "") {
-        let htmlEl = document.getElementById(`error-${lang}`);
-        if (error !== "") {
-            htmlEl.style.display = "block";
-            const message = error === "validation.max.string" ? `Nombre de caractères supérieur à la limite autorisée` :
-                `Texte obligatoire`;
-            htmlEl.innerHTML = message;
-        } else {
-            htmlEl.style.display = "none";
-        }
-    }
-
-    const confirmForm = document.getElementById("confirmForm");
-
-    confirmForm.addEventListener("submit", (e) => {
-        e.preventDefault();
-
-        const description_fr = document.getElementById("description_fr").value;
-        const description_en = document.getElementById("description_en").value;
-        const tag = document.querySelector("input[name='tag']").value;
-
-        if (description_fr.trim() === "" || description_en.trim() === "") {
-            alert("Saisir une valeur dans les deux champs de texte!");
-            return;
+                    modal.style.display = 'block';
+                    document.body.classList.add('overflow-y-hidden');
+                })
+                .catch(error => console.error('Erreur lors de la récupération du contenu:', error));
         }
 
-        const formData = new FormData(e.target);
-        const data = {};
-        formData.forEach((value, key) => {
-            data[key] = value;
-        });
-        data["tag"] = tag;
+        function displayError(lang, error = "") {
+            let htmlEl = document.getElementById(`error-${lang}`);
+            if (error !== "") {
+                htmlEl.style.display = "block";
+                const message = error === "validation.max.string" ? `Nombre de caractères supérieur à la limite autorisée` :
+                    `Texte obligatoire`;
+                htmlEl.innerHTML = message;
+            } else {
+                htmlEl.style.display = "none";
+            }
+        }
 
-        fetch("/api/save", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    "X-CSRF-Token": "{{ csrf_token() }}"
-                },
-                body: JSON.stringify(data)
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    alert("Modification effectuée avec succès");
-                    window.location.reload();
-                } else {
-                    for (let lang in data.errors) {
-                        displayError(lang, data.errors[lang][0])
-                    }
-                }
-            })
-            .catch(error => {
-                console.error("Une erreur s'est produite lors de la soumission du formulaire:", error);
-                alert(
-                    "Une erreur s'est produite lors de la soumission du formulaire. Veuillez réessayer plus tard."
-                );
+        const confirmForm = document.getElementById("confirmForm");
+
+        confirmForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            const description_fr = document.getElementById("description_fr").value;
+            const description_en = document.getElementById("description_en").value;
+            const tag = document.querySelector("input[name='tag']").value;
+
+            if (description_fr.trim() === "" || description_en.trim() === "") {
+                alert("Saisir une valeur dans les deux champs de texte!");
+                return;
+            }
+
+            const formData = new FormData(e.target);
+            const data = {};
+            formData.forEach((value, key) => {
+                data[key] = value;
             });
-    });
-    document.addEventListener('DOMContentLoaded', function() {
-        const menuButton = document.querySelector('[data-collapse-toggle="navbar-sticky"]');
-        const navbar = document.getElementById('navbar-sticky');
+            data["tag"] = tag;
 
-        menuButton.addEventListener('click', function() {
-            navbar.classList.toggle('hidden');
+            fetch("/api/save", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "X-CSRF-Token": "{{ csrf_token() }}"
+                    },
+                    body: JSON.stringify(data)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        alert("Modification effectuée avec succès");
+                        window.location.reload();
+                    } else {
+                        for (let lang in data.errors) {
+                            displayError(lang, data.errors[lang][0])
+                        }
+                    }
+                })
+                .catch(error => {
+                    console.error("Une erreur s'est produite lors de la soumission du formulaire:", error);
+                    alert(
+                        "Une erreur s'est produite lors de la soumission du formulaire. Veuillez réessayer plus tard."
+                    );
+                });
         });
-    });
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.querySelector('[data-collapse-toggle="navbar-sticky"]');
+            const navbar = document.getElementById('navbar-sticky');
+
+            menuButton.addEventListener('click', function() {
+                navbar.classList.toggle('hidden');
+            });
+        });
+
+
 </script>
 
 

@@ -1,8 +1,9 @@
 @extends('Front.admin.layout')
 @section('content')
 <x-activity-edit
-        route="quotation"
-        :header="App\Models\Enums\ActivityTypeEnum::QUOTATIONS->getHeaderEdit()"
+        route="new"
+        :header="App\Models\Enums\ActivityTypeEnum::NEWS->getHeaderEdit()"
         :$activity
-        :message="App\Models\Enums\ActivityTypeEnum::QUOTATIONS->getMessageEdit()"/>
+        :message="App\Models\Enums\ActivityTypeEnum::NEWS->getMessageEdit()"
+        type="{{ \App\Models\Enums\ActivityTypeEnum::NEWS }}"/>
 @endsection

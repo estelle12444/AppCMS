@@ -5,10 +5,13 @@
     <div class="  bg-gradient-to-r from-orange-100 from-20%  to-green-100 to-90%">
         <div class="p-5 py-20 mx-2 xl:mx-48">
             <div class="max-w-2xl mx-auto p-6">
-                <img src="{{ asset('img/annonce/appel_offre.jpg') }}" alt="News Image" class="w-full h-64 object-cover mb-4 rounded-lg">
-
+                @if($activity->image)
+                    <img alt="{{ $activity->translator['title']}}" src="{{ asset('storage/' .$activity->image) }}" data-toggle="tooltip"  style="height: 60px; width:auto">
+                @else
+                    <img src="{{ asset('img/annonce/appel_offre.jpg') }}" alt="News Info" class="w-full h-64 object-cover mb-4 rounded-lg">
+                @endif
                 <div class="pb-4" style="color: #F18700;">
-                    <p> {!! __('info.job.name') !!} N 0{{ $activity->id }}</p>
+                    <p> {!! __('info.job.name') !!} N °{{ $activity->id }}</p>
                 </div>
                 <h3 class="text-3xl font-bold mb-4"> {{ $activity->translator['title'] }}</h3>
 
