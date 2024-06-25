@@ -66,7 +66,7 @@
                             <div data-aos-duration="300" data-aos-delay="300" class="relative">
                                 <img src="{{asset('storage/' .  $last_second_new->translator['image'])}}" alt="activite_other" class="rounded-lg h-48 xl:h-96 lg:h-80 w-full">
                                 <div class="flex flex-col ">
-                                    <p class=" fixed-size md:text-3xl text-xl hover:text-amber-500 font-bold my-3 " style="text-transform:lowercase">
+                                    <p class=" fixed-size md:text-3xl text-xl hover:text-amber-500 font-bold my-3 " style="text-transform:uppercase">
                                         <a href="{{ route('news.Detail', ['activity' => $last_second_new->id]) }}">
                                             {!! Str::limit(strip_tags($last_second_new->translator['title']), 100, '...') !!}
                                         </a>

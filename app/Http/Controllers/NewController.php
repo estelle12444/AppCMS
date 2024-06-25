@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Activity;
 use App\Models\Enums\ActivityTypeEnum;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class NewController extends ActivityController
 {
@@ -39,6 +40,16 @@ class NewController extends ActivityController
     public function newsDetail(Activity $activity) {
         // $activity = Activity::findOrFail($id);
         $additionalImages = $activity->images;
+        
+        if (Auth::check() ) {
+            $activityKey = 'viewed_activity_' . $activity->id;
+
+            if (!session()->has($activityKey)) {
+
+                $activity->increment('views');
+                session([$activityKey => true]);
+            }
+        }
 
         return view('Front.pages.newsDetail',compact('activity','additionalImages'));
 

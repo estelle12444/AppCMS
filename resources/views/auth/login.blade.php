@@ -20,7 +20,7 @@
         <div class="col-lg-4">
             <div class="p-5">
                 <img aria-hidden="true" class="" width="250" style="margin-top:20px"
-                    src="{{ asset('../img/logo2.png') }}" alt="Office" />
+                    src="{{asset(__('image.logo_url'))}}" alt="Office" />
                 <br>
                 <h3 class="fw-normal mb-10" style="color:#193487; padding-top :50px"> <strong>
                         Rejoignez-nous

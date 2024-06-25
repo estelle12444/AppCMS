@@ -14,7 +14,7 @@ class Activity extends Model implements TranslateContracts
 
     protected $with = ['child'];
     protected $appends = ['translator'];
-    protected $fillable = ['title', 'content', 'resume', 'image', 'file', 'limit_date', 'type', 'translate_code', 'parent_id'];
+    protected $fillable = ['title', 'content', 'resume', 'image', 'file', 'limit_date', 'type', 'translate_code', 'parent_id','views'];
 
     public function scopeOfType(Builder $query, array $type): void
     {

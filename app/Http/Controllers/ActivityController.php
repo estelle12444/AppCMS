@@ -16,7 +16,7 @@ abstract class ActivityController extends Controller
 
     public function index()
     {
-        $activities = Activity::ofLang('fr')->ofType([$this->type->value])->get();
+        $activities = Activity::ofLang('fr')->ofType([$this->type->value])->orderBy('created_at', 'desc')->get();
         return view("Front.admin.$this->folder.index", compact('activities'));
     }
 
@@ -118,7 +118,7 @@ abstract class ActivityController extends Controller
         $activity->type = $this->type->value;
         $activity->title = $data['title'];
         $activity->content = $data['content'];
-        $activity->resume = $data['resume'];
+        $activity->resume = $data['resume']?? null;
         $activity->translate_code = $data['translate_code'];
         $activity->limit_date = $data['limit_date'];
 

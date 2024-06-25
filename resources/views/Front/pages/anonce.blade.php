@@ -2,7 +2,7 @@
 
 
 @section('content')
-    <section class="bg-center bg-no-repeat  bg-blend-multiply" style="background-image: url(img/page_5/annonce.png)">
+    <section class="bg-center bg-no-repeat  bg-blend-multiply" style="background-image: url(img/page_5/annonce.png); background-size: cover;">
         <div class="px-4 mx-auto max-w-screen-xl text-center pt-24  pb-16 md:pt-20  lg:py-0">
             <div data-aos="zoom-in" data-aos-duration="500"data-aos-delay="700"
             class=" partie relative text-4xl font-extrabold uppercase tracking-tight leading-none text-white md:pt-20 pt-10 lg:pb-20 lg:pt-32 xl:text-5xl lg:text-6xl ">
@@ -53,15 +53,29 @@
                                     src="{{ $key != 'events' ? $type->getImage() : asset('storage/'.$activity['translator']['image']) }}" alt="" />
                             </a>
                             <div class="p-5 ">
-                                <a href="{{ route('Front.pages.info', $activity['id']) }}">
-                                    <p class="pb-4" style="color: #F18700;">
-                                        {{$type->getTypeText()}} N°{{ $activity['id'] }}
-                                    </p>
+                                <a href="{{ route('Front.pages.info', $activity['id']) }}" class="flex items-center">
+                                    <p class="pb-4" style="color: #F18700;">  {{$type->getTypeText()}} N°{{ $activity['id'] }} </p>
+                                    @if(Auth::check() && Auth::user()->role->nom == 'admin')
+                                        <span  class="flex items-center" style="width: 60px;right: 0;position: absolute;/* float: right; */">
+                                            <span class="text-amber-500 font-bold">{{ $activity['views'] }}</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-2 text-amber-500" style="height:16px; width:auto; margin-left:5px">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                            </svg>
+                                        </span>
+
+                                    @endif
                                 </a>
                                 <a href="{{ route('Front.pages.info', $activity['id']) }}">
-                                <h5 class="mb-2 text-xl font-bold tracking-tight text-blue-800 dark:text-white capitalize ">
-                                    {{ Str::limit(strip_tags($activity['translator']['title']), 120, '...') }}</h5>
-                                </a>
+                                <h5 class="mb-2 text-xl font-bold tracking-tight text-blue-800 dark:text-white uppercase ">
+                                    <a href="{{ route('Front.pages.info', $activity['id']) }}" id="voirPlusBtn"
+                                    class=" partie relative hover:text-amber-500 text-blue-800 font-semibold py-2  rounded">
+                                         {{ Str::limit(strip_tags($activity['translator']['title']), 120, '...') }}
+                                    </a>
+
+                                </h5>
+                            </a>
+
                                 {{ Str::limit(strip_tags($activity['translator']['resume']), 100, '...') }}
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
                                     <a href="{{ route('Front.pages.info', $activity['id']) }}" id="voirPlusBtn"
@@ -73,6 +87,8 @@
                                     <span class=" partie relative text-blue-800 font-bold"> {!!__('news.job.limit.date')!!}</span>
                                     <span style="color: #F18700;">{{ $activity['translator']['limit_date'] }}</span>
                                 </p>
+
+
                                 @if(!is_null($activity['file']))
                                     <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 ">
                                         <div class="flex flex-row ml-2 pb-4">

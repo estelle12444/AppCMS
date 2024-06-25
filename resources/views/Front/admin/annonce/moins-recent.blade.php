@@ -16,7 +16,7 @@
                     <div class="card">
                         <div class="card-header">
                             <h4>Annonces moins récentes</h4>
-                            
+
                         </div>
 
 
@@ -24,11 +24,33 @@
                             <div class="col-lg-3">
                                 <ul class="nav flex-column nav-pills" id="myTab" role="tablist">
                                     @foreach (collect($lessRecentAnnonces)->groupBy('type') as $key => $group)
+                                    @php
+                                        $route = '';
+                                        $message='';
+                                        switch ($key) {
+                                            case 'tender':
+                                                $route = 'tender';
+                                                $message='Êtes-vous sûr de vouloir supprimer cet appel d\'offres? ';
+                                                break;
+                                            case 'careers':
+                                                $route = 'Êtes-vous sûr de vouloir supprimer cet appel d\'offres?';
+                                                break;
+                                            case 'jobs':
+                                                $route = 'Êtes-vous sûr de vouloir supprimer cette offre d\'emploi';
+                                                break;
+                                            case 'quotations':
+                                                $route = 'Êtes-vous sûr de vouloir supprimer cette  demande de cotatation';
+                                                break;
+                                            case 'events':
+                                                $route = 'Êtes-vous sûr de vouloir supprimer cette  demande de manifestation';
+                                                break;
+                                        }
+                                    @endphp
+
                                         <li class="nav-item">
-                                            <a class="nav-link @if ($loop->first) active @endif"
-                                                id="{{ $key }}-tab" data-toggle="tab" href="#{{ $key }}"
-                                                role="tab" aria-controls="{{ $key }}"
+                                            <a class="nav-link @if ($loop->first) active @endif" id="{{ $key }}-tab" data-toggle="tab" href="#{{ $key }}"  role="tab" aria-controls="{{ $key }}"
                                                 aria-selected="@if ($loop->first) true @else false @endif">
+
                                                 @if ($key == 'tender')
                                                     Appels d'offres
                                                 @elseif ($key == 'careers')
@@ -69,10 +91,18 @@
                                                                 {{ strip_tags($annonce['title']) }}
                                                             </h3>
                                                             <p> {{ strip_tags($annonce['content']) }}</p>
+
                                                             <a href="{{ route('Front.admin.activities.applicants', $annonce['id']) }}"
                                                                 class="btn btn-info btn-action mr-1" data-toggle="tooltip"
                                                                 title="" data-original-title="Voir les candidatures">
                                                                 Personnes inscrites <i class="fas fa-users"></i></a>
+
+                                                                <form action="{{ route('Front.admin.'.$route.'.destroy', $annonce['id']) }}" method="POST" style="display: inline;">
+                                                                    @csrf
+                                                                    @method('DELETE')
+                                                                    <button type="submit"class="btn btn-danger btn-action trigger--fire-modal-6" onclick="return confirm('{{$message}}')">
+                                                                        <i class="fas fa-trash"></i></button>
+                                                                </form>
                                                         </div>
                                                     </div>
                                                 </div>

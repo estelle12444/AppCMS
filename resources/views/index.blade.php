@@ -52,19 +52,23 @@
 
 </section>
 <div class=" bg-gradient-to-r from-orange-100 from-20%  to-green-100 to-90%">
-    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mx-auto gap-4 ">
-        @foreach ($avantages as $avantage)
-            <div class="flex items-center justify-center p-4">
-                <a href="{{ route('avantages.Detail', ['query' => $avantage['routeName']]) }}" class="flex items-center hover:text-amber-500">
-                    <div class="h-16 w-16 mr-4">
-                        <img src="{{ asset($avantage['imgPath']) }}" alt="{{ $avantage['altText'] }}">
-                    </div>
-                    <span class="partie relative"  data-id="{{ $avantage['id'] }}" {{App\Helper::test($avantage['translationKey']) }} >{!! __($avantage['translationKey']) !!}</span>
-                </a>
-            </div>
-        @endforeach
+    @if($avantages)
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mx-auto gap-4 ">
+            @foreach ($avantages as $avantage)
+                <div class="flex items-center justify-center p-4">
+                    <a href="{{ route('avantages.Detail', ['activity' => $avantage->id]) }}" class="flex items-center hover:text-amber-500">
+                        <div class="h-16 w-16 mr-4" >
+                            <img src="{{ asset('storage/' . $avantage->translator['image']) }}" alt="{{ $avantage->translator['image'] }}">
+                        </div>
+                        <div class="h-16 w-80">
+                            <span class="partie relative"  data-id="{{ $avantage->id }}" >{!!  __($avantage->translator['title'])  !!}</span>
+                        </div>
+                    </a>
 
-    </div>
+                </div>
+            @endforeach
+        </div>
+    @endif
 
     <div class="pl-4 py-20 xl:px-24 xl:pt-24">
         <div class="bg-no-repeat "style="background-image: url(img/background/font_logo.png)">

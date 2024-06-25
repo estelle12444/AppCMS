@@ -18,12 +18,25 @@ class ContentController extends Controller
                 'title' => 'Toutes les Images',
                 'id' => 'image',
                 'items' => [
-                    // 'image.logo_url'=>" Le logo",
-                    // 'video_url'=>"La vidéo de présentation",
+                    'image.logo_url'=>" Le logo",
+                    // 'video.home.url'=>"La vidéo de présentation",
                     // 'image.home' => ' Toutes les images de Accueil/Home',
                     'image.home.tech' => "Image section gauche",
                     'image.home.smart' => 'Image section droite',
-
+                    "image.about.dg"=> "Photo du directeur Géneral",
+                    "image.opportunity.warehouses"=> "img/city.png",
+                    "image.opportunity.promotion"=> "img/Picture9.png",
+                    "image.opportunity.office"=> "img/immeuble.png",
+                    "image.opportunity.business_hotels"=> "img/hotel.png",
+                    "image.opportunity.university"=> "img/universite.png",
+                    "image.opportunity.immobilier"=> "img/immobilier.png",
+                    "image.opportunity.clinic"=> "img/clinique.png",
+                    "image.opportunity.centre_cultu"=> "img/centre_cultu.png",
+                    "image.opportunity.centre_commer"=> "img/centre_commer.png",
+                    "image.opportunity.project_service"=> "img/Image4.png",
+                    "image.installer.eligibilite"=> "Page ''",
+                    "image.installer.procedure"=> "img/icon-installer/Parcours.png",
+                    "image.installer.join_us"=> "img/Image7.png",
                 ]
             ],
             [

@@ -2,62 +2,26 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Activity;
+use App\Models\Enums\ActivityTypeEnum;
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class HomeController extends ActivityController
 {
-    public function index(){
-        $avantages = [
-            [
-                'id'=>1,
-                'routeName' => 'avantage1',
-                'imgPath' => 'img/icon-index/Group 133.png',
-                'altText' => 'Logo Avantage 1',
-                'translationKey' => 'home.advantages.fiscal_and_regulatory_advantages', // Assurez-vous que cette clé est définie dans vos fichiers de langues
-            ],
-            [
-                'id'=>2,
-                'routeName' => 'avantage2',
-                'imgPath' => 'img/icon-index/Group 136.png',
-                'altText' => 'Logo Avantage 2',
-                'translationKey' => 'home.advantages.customs_advantages', // Assurez-vous que cette clé est définie dans vos fichiers de langues
-            ],
-            [
-                'id'=>3,
-                'routeName' => 'avantage3',
-                'imgPath' => 'img/icon-index/Group 138.png',
-                'altText' => 'Logo Avantage 2',
-                'translationKey' => 'home.advantages.partneships', // Assurez-vous que cette clé est définie dans vos fichiers de langues
-            ],
-            [
-                'id'=>4,
-                'routeName' => 'avantage4',
-                'imgPath' => 'img/icon-index/Group 132.png',
-                'altText' => 'Logo Avantage 4',
-                'translationKey' => 'home.advantages.access_to_a_thriving_market', // Assurez-vous que cette clé est définie dans vos fichiers de langues
-            ],
-            [
-                'id'=>5,
-                'routeName' => 'avantage5',
-                'imgPath' => 'img/icon-index/Group 138.png',
-                'altText' => 'Logo Avantage 5',
-                'translationKey' => 'home.advantages.skilled_workforce', // Assurez-vous que cette clé est définie dans vos fichiers de langues
-            ],
-            [
-                'id'=>6,
-                'routeName' => 'avantage6',
-                'imgPath' => 'img/icon-index/Group 134.png',
-                'altText' => 'Logo Avantage 6',
-                'translationKey' => 'home.advantages.state_of_the_art_infrastructure', // Assurez-vous que cette clé est définie dans vos fichiers de langues
-            ],
+    protected $folder = 'advantage';
+    protected $type = ActivityTypeEnum::ADVANTAGES;
 
+    public function Advantageindex(){
 
-        ];
+        $avantages = Activity::ofLang('fr')->ofType([$this->type->value])->get();
+
         return view('index',compact('avantages'));
     }
 
-    public function avantages($query){
-        return view('Front.pages.avantagesDetail',compact('query'));
+    public function avantages(Activity $activity){
+
+        $additionalImages = $activity->images;
+        return view('Front.pages.avantagesDetail',compact('activity','additionalImages'));
     }
 
 

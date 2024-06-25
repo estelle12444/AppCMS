@@ -57,7 +57,7 @@ Route::get('/', function () {
     return view('Front.landingg');
 });
 
-Route::get('/home',[HomeController::class,'index'])->name('index');
+Route::get('/home',[HomeController::class,'Advantageindex'])->name('index');
 
 
 Route::match(['post'], '/home', function (Request $request) {
@@ -85,7 +85,7 @@ Route::get('/join', function () {
 
 Route::get('/media',  [NewController::class,'media'])->name('media');
 
-Route::get('/avantages/{query}',[HomeController::class,'avantages'] )->name('avantages.Detail');
+Route::get('/avantages/{activity}',[HomeController::class,'avantages'] )->name('avantages.Detail');
 
 Route::get('/actu/detail/{activity}',  [NewController::class,'newsDetail'] )->name('news.Detail');
 
@@ -176,6 +176,15 @@ Route::middleware(['admin'])->group(function () {
     Route::delete('/new/{activity}', [NewController::class, 'destroy'])->name('Front.admin.new.destroy');
     Route::get('/new/{activity}/edit', [NewController::class, 'edit'])->name('Front.admin.new.edit');
     Route::put('/new/{activity}', [NewController::class, 'update'])->name('Front.admin.new.update');
+
+
+    Route::get('/advantage', [HomeController::class, 'index'])->name('Front.admin.advantage.index');
+    Route::get('/advantage/create', [HomeController::class, 'create'])->name('Front.admin.advantage.create');
+    Route::post('/advantage', [HomeController::class, 'store'])->name('Front.admin.advantage.store');
+    Route::delete('/advantage/{activity}', [HomeController::class, 'destroy'])->name('Front.admin.advantage.destroy');
+    Route::get('/advantage/{activity}/edit', [HomeController::class, 'edit'])->name('Front.admin.advantage.edit');
+    Route::put('/advantage/{activity}', [HomeController::class, 'update'])->name('Front.admin.advantage.update');
+
 
     Route::get('/annonces-recentes', [AnnonceController::class, 'recentes'])->name('Front.admin.annonce.recent');
     // Route pour la liste des annonces moins récentes

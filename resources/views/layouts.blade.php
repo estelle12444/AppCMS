@@ -23,7 +23,9 @@
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
 
-
+        <link href="https://cdn.jsdelivr.net/npm/@heroicons/react@latest/dist/index.css" rel="stylesheet">
+        <!-- Lightbox CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
     <style>
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
@@ -153,6 +155,8 @@
 @include('Front.partials.footer')
 <!-- Footer End -->
 <script src="{{ asset('assets/modules/jquery.min.js') }}"></script>
+<!-- Lightbox JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 <!-- Library Javascript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sceditor@3/minified/sceditor.min.js"></script>
@@ -297,7 +301,7 @@
             const tag = getTag(e.target);
 
                 // console.log('Bandama', tag, tag && tag.startsWith("image."));
-                if (tag && tag.startsWith("image.")) {
+                if (tag && (tag.startsWith("image.") || tag.startsWith("video."))) {
 
                     const url = generateImageEditUrl(tag);
                         // Rediriger vers l'URL générée

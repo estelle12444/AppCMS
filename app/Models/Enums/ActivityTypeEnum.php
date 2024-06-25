@@ -13,6 +13,7 @@ enum ActivityTypeEnum: string
     case QUOTATIONS = 'quotations';
     case TENDER = 'tender';
     case NEWS = 'news';
+    case ADVANTAGES= 'advantages';
 
     public function getImage():string
     {
@@ -22,7 +23,7 @@ enum ActivityTypeEnum: string
             ActivityTypeEnum::QUOTATIONS => asset('img/annonce/cotation.png'),
             ActivityTypeEnum::TENDER => asset('img/annonce/appel_offre.jpg'),
             ActivityTypeEnum::JOBS => asset('img/annonce/offre_emploi.jpg'),
-            ActivityTypeEnum::NEWS => asset('img/annonce/appel_offre.jpg'),
+
         };
     }
 
@@ -37,6 +38,7 @@ enum ActivityTypeEnum: string
             ActivityTypeEnum::TENDER => $cond ? "Appels d'Offres" : 'Tenders',
             ActivityTypeEnum::JOBS => $cond ? "Offres d'emploi" : 'Jobs',
             ActivityTypeEnum::NEWS => $cond ? "Actualités" : 'News',
+            ActivityTypeEnum::ADVANTAGES => $cond ? "Avantages" : 'Advantages',
         };
     }
 
@@ -90,8 +92,17 @@ enum ActivityTypeEnum: string
                                                 <div class="breadcrumb-item"><a href="#">Actualités</a></div>
                                                 <div class="breadcrumb-item">Création</div>
                                             </div>
-                                    </div>'
-        };
+                                    </div>',
+
+            ActivityTypeEnum::ADVANTAGES => '<div class="section-header">
+                                <h1>Enregistrement  des Avantages</h1>
+                                    <div class="section-header-breadcrumb">
+                                        <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
+                                        <div class="breadcrumb-item"><a href="#">Avantages</a></div>
+                                        <div class="breadcrumb-item">Création</div>
+                                    </div>
+                            </div>'
+                        };
     }
 
     public function getHeaderEdit()
@@ -145,6 +156,14 @@ enum ActivityTypeEnum: string
                                                 <div class="breadcrumb-item">Edition</div>
                                             </div>
                                     </div>',
+            ActivityTypeEnum::ADVANTAGES => '<div class="section-header">
+                                    <h1>Edition des Avantages</h1>
+                                        <div class="section-header-breadcrumb">
+                                            <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
+                                            <div class="breadcrumb-item"><a href="#">Avantages</a></div>
+                                            <div class="breadcrumb-item">Edition</div>
+                                        </div>
+                                </div>',
         };
     }
 
@@ -199,6 +218,14 @@ enum ActivityTypeEnum: string
                                                 <div class="breadcrumb-item">Liste</div>
                                             </div>
                                     </div>',
+            ActivityTypeEnum::ADVANTAGES => '<div class="section-header">
+                                    <h1>Liste des Avantages</h1>
+                                        <div class="section-header-breadcrumb">
+                                            <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
+                                            <div class="breadcrumb-item"><a href="#">Avantages</a></div>
+                                            <div class="breadcrumb-item">Liste</div>
+                                        </div>
+                                </div>',
             };
     }
 
@@ -211,6 +238,7 @@ enum ActivityTypeEnum: string
             ActivityTypeEnum::TENDER => "Êtes-vous sûr de vouloir supprimer cet appel d\'offres?",
             ActivityTypeEnum::JOBS => "Êtes-vous sûr de vouloir supprimer cette offre d'emploi",
             ActivityTypeEnum::NEWS => "Êtes-vous sûr de vouloir supprimer cette  actualités",
+            ActivityTypeEnum::ADVANTAGES => "Êtes-vous sûr de vouloir supprimer cet avantage",
         };
     }
 
@@ -223,6 +251,7 @@ enum ActivityTypeEnum: string
             ActivityTypeEnum::TENDER => "Modifier l'appel d'offre",
             ActivityTypeEnum::JOBS => "Modifier l'offre  d'emploi",
             ActivityTypeEnum::NEWS => "Modifier l'actualité",
+            ActivityTypeEnum::ADVANTAGES => "Modifier l'avantage",
         };
     }
 }

@@ -4,5 +4,6 @@
         route="quotation"
         :header="App\Models\Enums\ActivityTypeEnum::QUOTATIONS->getHeaderEdit()"
         :$activity
-        :message="App\Models\Enums\ActivityTypeEnum::QUOTATIONS->getMessageEdit()"/>
+        :message="App\Models\Enums\ActivityTypeEnum::QUOTATIONS->getMessageEdit()"
+        type="{{ \App\Models\Enums\ActivityTypeEnum::QUOTATIONS }}"/>
 @endsection

@@ -11,6 +11,7 @@ use App\Models\Job;
 use App\Models\Quotation;
 use App\Models\Tender;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
 class AnnonceController extends Controller
@@ -38,6 +39,17 @@ class AnnonceController extends Controller
 
     public function show_tender(Activity $activity)
     {
+        if (Auth::check() ) {
+            $userId = auth()->id();
+            $activityKey = 'viewed_activity_' . $activity->id;
+
+            if (!session()->has($activityKey)) {
+
+                $activity->increment('views');
+                session([$activityKey => true]);
+            }
+        }
+
         return view('Front.pages.info', compact('activity'));
     }
 

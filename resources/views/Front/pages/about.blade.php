@@ -6,9 +6,16 @@
             height: 300px
         }
     </style>
-    <section class="bg-center bg-no-repeat bg-slate-400 bg-blend-multiply" style="background-image: url(img/immobilier1.png)">
+    {{-- <section class="bg-center bg-no-repeat bg-slate-400 bg-blend-multiply" style="background-image: url(img/immobilier1.png)">
         <div class="px-4 mx-auto max-w-screen-xl text-center py-12 pt-24  mb-2 lg:py-6" >
-            <div data-aos="zoom-in" data-aos-duration="500" data-aos-delay="700" {{App\Helper::test('about.vision') }} class=" partie relative text-4xl font-semibold text-white md:pt-8 pt-4 lg:pb-8 lg:pt-32 xl:text-5xl lg:text-6xl ">
+            <div data-aos="zoom-in" data-aos-duration="500" data-aos-delay="700" {{App\Helper::test('about.vision') }} class=" partie relative text-4xl font-semibold text-white md:pt-8 pt-4 lg:pb-8 lg:pt-32 xl:pt-24 xl:text-5xl lg:text-6xl ">
+                {!! __('about.vision')!!}
+            </div>
+        </div>
+    </section> --}}
+    <section class="bg-center bg-no-repeat bg-slate-400  bg-blend-multiply" style="background-image: url(img/immobilier1.png); background-size: cover;">
+        <div class="px-4 mx-auto max-w-screen-xl text-center pt-24  pb-16 md:pt-20  lg:py-0">
+            <div data-aos="zoom-in" data-aos-duration="500"data-aos-delay="700" {{App\Helper::test('about.vision') }} class=" partie relative text-4xl font-extrabold uppercase tracking-tight leading-none text-white md:pt-20 pt-10 lg:pb-20 lg:pt-32 xl:text-5xl lg:text-6xl ">
                 {!! __('about.vision')!!}
             </div>
         </div>

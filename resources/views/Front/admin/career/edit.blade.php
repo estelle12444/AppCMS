@@ -4,5 +4,6 @@
         route="career"
         :header="App\Models\Enums\ActivityTypeEnum::CAREERS->getHeaderEdit()"
         :$activity
-        :message="App\Models\Enums\ActivityTypeEnum::CAREERS->getMessageEdit()"/>
+        :message="App\Models\Enums\ActivityTypeEnum::CAREERS->getMessageEdit()"
+        type="{{ \App\Models\Enums\ActivityTypeEnum::CAREERS }}"/>
 @endsection

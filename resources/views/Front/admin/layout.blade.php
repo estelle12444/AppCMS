@@ -142,6 +142,7 @@ $url = $_SERVER['REQUEST_URI'];
 
                             </ul>
                         </li>
+
                         <li class="menu-header">Management de Contenus</li>
                         <li class="dropdown">
                             <a href="#" class="nav-link has-dropdown <?php echo $url === '/content'  ? ' active bg-primary text-white' : ''; ?>"
@@ -154,6 +155,15 @@ $url = $_SERVER['REQUEST_URI'];
                             </ul>
                         </li>
                         <li class="menu-header">Annonces et Actualités </li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link has-dropdown <?php echo $url === '/advantage' || $url === '/advantage/create' ? ' active bg-primary text-white' : ''; ?>"
+                                data-toggle="dropdown"><i class="fas fa-briefcase"></i> <span>Avantages</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link <?php echo $url === '/advantage' ? ' active bg-primary text-white' : ''; ?>" href="/advantage">Liste des avantages </a></li>
+                                <li><a class="nav-link<?php echo $url === '/advantage/create' ? ' active bg-primary text-white' : ''; ?>" href="/advantage/create">Ajouter un avantage
+                                        </a></li>
+                            </ul>
+                        </li>
                         <li class="dropdown">
                             <a href="#" class="nav-link has-dropdown <?php echo $url === '/new' || $url === '/new/create' ? ' active bg-primary text-white' : ''; ?>"data-toggle="dropdown">
                                 <i class="fa fa-th-list"></i> <span>Actualités</span>

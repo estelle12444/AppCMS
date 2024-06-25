@@ -32,7 +32,7 @@
                                 <input type="hidden" name="lang[0][translate_code]" value="fr">
 
                                 <div class="form-group row mb-4">
-                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Titre </label>
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3" for="titre">Titre </label>
                                     <div class="col-sm-12 col-md-7">
                                         <input name="lang[0][title]" type="text" id="name" class="form-control" value="{{ $activity->translator['title']  }}" required>
                                         @error('lang.0.title')
@@ -42,7 +42,7 @@
                                 </div>
 
                                 <div class="form-group row mb-4">
-                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Description de la demande</label>
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3" for="description">Description </label>
                                     <div class="col-sm-12 col-md-7">
                                         <textarea class="form-control summernote-simple" id="description" name="lang[0][content]" rows="3">{{ $activity->content }}</textarea>
                                         @error('lang.0.content')
@@ -50,17 +50,19 @@
                                         @enderror
                                     </div>
                                 </div>
-                                <div class="form-group row mb-4">
-                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Résumé</label>
-                                    <div class="col-sm-12 col-md-7">
-                                        <textarea class="form-control summernote-simple" id="resume" name="lang[0][resume]" rows="3" required title="Ce champ doit être très bref car il apparaît sur la page d'annonce dans la carte" >{{ $activity->resume }}</textarea>
-                                        @error('lang.0.resume')
-                                            <div class="alert alert-danger">{{ $message }}</div>
-                                        @enderror
+                                @if($type !== "advantages")
+                                    <div class="form-group row mb-4">
+                                        <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3" for="résumé">Résumé</label>
+                                        <div class="col-sm-12 col-md-7">
+                                            <textarea class="form-control summernote-simple" id="resume" name="lang[0][resume]" rows="3" required title="Ce champ doit être très bref car il apparaît sur la page d'annonce dans la carte" >{{ $activity->resume }}</textarea>
+                                            @error('lang.0.resume')
+                                                <div class="alert alert-danger">{{ $message }}</div>
+                                            @enderror
+                                        </div>
                                     </div>
-                                </div>
+                                @endif
                                 <div class="form-group row mb-4">
-                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Date Limite</label>
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3" for="deadline">Date Limite</label>
                                     <div class="col-sm-12 col-md-7">
                                         <input name="lang[0][limit_date]" type="datetime-local" class="form-control" value="{{ $activity->limit_date }}">
 
@@ -81,10 +83,20 @@
                                 <div class="form-group row mb-4">
                                     <div class="col-md-7 offset-md-3">
                                         @if (!empty($activity->image))
-                                            <img id="imagePreview09" src="{{ asset('storage/' .$activity->image) }}" alt="Prévisualisation" style="display: none; max-width: 100%; max-height: 300px;">
-                                            @else
-                                        <img id="imagePreview09" src="#"  style="max-width: 100%; max-height: 300px;">
+                                            <img id="imagePreview09" src="{{ asset('storage/' .$activity->image) }}" alt="Prévisualisation" style=" max-width: 100%; max-height: 300px;">
+                                        @elseif($type == 'tender')
+                                            <img id="imagePreview09" src="{{ asset('img/annonce/appel_offre.jpg') }}"  style="max-width: 100%; max-height: 300px;">
                                             <!-- Remplacez 'placeholder-image.jpg' par le chemin de votre image de remplacement par défaut si aucune image existante -->
+                                        @elseif($type == 'career')
+                                            <img id="imagePreview09" src="{{ asset('img/annonce/candidature.png') }}"  style="max-width: 100%; max-height: 300px;">
+                                        @elseif($type == 'event')
+                                            <img id="imagePreview09" src="{{ asset('img/annonce/cotation.png') }}"  style="max-width: 100%; max-height: 300px;">
+                                        @elseif($type == 'job')
+                                            <img id="imagePreview09" src="{{ asset('img/annonce/offre_emploi.jpg') }}"  style="max-width: 100%; max-height: 300px;">
+                                        @elseif($type == 'advantages')
+                                            <img id="imagePreview" src="{{ asset('storage/' .$activity->image) }}"  style="max-width: 100%; max-height: 300px;">
+                                        @else
+                                            <img id="imagePreview09" src=""  style="max-width: 100%; max-height: 300px;">
                                         @endif
                                     </div>
                                 </div>
@@ -101,7 +113,7 @@
 
                                 @if($type !== 'news')
                                     <div class="form-group row mb-4">
-                                        <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Documents ci-joints</label>
+                                        <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3" for="documents">Documents ci-joints</label>
                                         <div class=" col-sm-12 col-md-7">
                                             <input type="file" name="lang[0][file]" class="form-control" id="inputGroupFile08" aria-describedby="inputGroupFileAddon08"                                        aria-label="Upload" accept=".pdf, .txt, .docx">
                                             <small id="inputGroupFileAddon08" class="form-text text-muted">Sélectionnez un document (.pdf, .txt, .docx).</small>
@@ -116,7 +128,7 @@
                                 <input type="hidden" name="lang[1][translate_code]" value="en">
 
                                 <div class="form-group row mb-4">
-                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Title</label>
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3" for="title">Title</label>
                                     <div class="col-sm-12 col-md-7">
                                         <input name="lang[1][title]" type="text" id="name" class="form-control"
                                             value="{{ $activity->translator['title']  }}" required>
@@ -127,7 +139,7 @@
                                 </div>
 
                                 <div class="form-group row mb-4">
-                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Description</label>
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3" for="description">Description</label>
                                     <div class="col-sm-12 col-md-7">
                                         <textarea class="form-control summernote-simple" id="description" name="lang[1][content]" rows="3"
                                             value="">{{ $activity->translator['content']  }}</textarea>
@@ -136,16 +148,19 @@
                                         @enderror
                                     </div>
                                 </div>
-                                <div class="form-group row mb-4">
-                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3" for="summary">Summary</label>
-                                    <div class="col-sm-12 col-md-7">
-                                        <textarea class="form-control summernote-simple" id="resume" name="lang[1][resume]" rows="3"
-                                            value="{{ $activity->translator['resume']  }}"></textarea>
-                                        @error('lang.1.resume')
-                                            <div class="alert alert-danger">{{ $message }}</div>
-                                        @enderror
+
+                                @if($type !== "advantages")
+                                    <div class="form-group row mb-4">
+                                        <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3" for="summary">Summary</label>
+                                        <div class="col-sm-12 col-md-7">
+                                            <textarea class="form-control summernote-simple" id="resume" name="lang[1][resume]" rows="3"
+                                                value="">{{ $activity->translator['resume']  }}</textarea>
+                                            @error('lang.1.resume')
+                                                <div class="alert alert-danger">{{ $message }}</div>
+                                            @enderror
+                                        </div>
                                     </div>
-                                </div>
+                                @endif
                                 <div class="form-group row mb-4">
                                     <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3" for="deadline">Application
                                         Deadline</label>
@@ -169,7 +184,7 @@
 
                                 @if($type !== 'news')
                                     <div class="form-group row mb-4">
-                                        <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Attached Documents
+                                        <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3" for="attached-document">Attached Documents
                                         </label>
                                         <div class="input-group col-sm-12 col-md-7">
                                             <input type="file" name="lang[1][file]" class="form-control" id="inputGroupFile05"

@@ -11,7 +11,6 @@
     border-left: 5px solid #1a73e8; /* Blue left border */
     margin-bottom: 15px; /* Space below the resume */
     border-radius: 5px; /* Rounded corners */
-
 }
 
 .description {
@@ -37,21 +36,34 @@ h6 svg {
 <div class=" bg-gradient-to-r from-orange-100 from-20%  to-green-100 to-90%">
     <div class="p-5 py-20 mx-2 xl:mx-48">
         <div class="max-w-2xl mx-auto p-6">
-            <img src="{{asset('storage/' .  $activity->translator['image'])}}" alt="News" class="w-full h-64 object-cover mb-4 rounded-lg">
+            <img src="{{asset('storage/' .  $activity->translator['image'])}}" alt="News" class="img-fluid object-cover mb-4 rounded-lg">
 
-            <h1 class="text-3xl font-bold mb-4">{{$activity->translator['title']}}</h1>
+            <h1 class="text-3xl font-bold mb-4  uppercase">{{$activity->translator['title']}}</h1>
 
-            <h4 class="text-gray-600 font-medium text-md mb-4 text-md">
+            <h4 class="text-gray-600 font-medium text-md mb-4 text-md flex items-center"style="position:relative">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5 mr-2">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                           d="M8 7V3m8 4V3M3 11h18M4 21h16a2 2 0 002-2V7a2 2 0 00-2-2H4a2 2 0 00-2 2v12a2 2 0 002 2z"/>
                 </svg>
 
-                Date de publication :  {!! $activity->translator['limit_date'] !!}</h4>
+                Date: {!! $activity->translator['limit_date'] !!}
+                    @if(Auth::check() && Auth::user()->role->nom == 'admin')
+                        <span  class="flex items-center" style="width: 30px;right: 0;position: absolute;margin-top:-25px">
+                            <span class="text-gray-600  font-bold">{{ $activity['views'] }}</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-2 text-gray-600 " style="height:16px; width:auto; margin-left:5px">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                            </svg>
+                        </span>
+                 @endif
+
+            </h4>
 
             <div class="prose max-w-none text-justify mb-4" >
+                <h2> <strong>{!! __('info.job.resume')!!}</strong></h2>
                 <div class="resume"> {!! $activity->translator['resume'] !!} </div>
                 <br>
+                <h2> <strong> {!! __('info.job.describe') !!}</strong></h2>
                 <div class="description">{!! $activity->translator['content'] !!}</div>
                 <br>
 
@@ -89,7 +101,7 @@ h6 svg {
                 @endif
             </div>
 
-            @if ($additionalImages && count($additionalImages) > 0)
+            {{-- @if ($additionalImages && count($additionalImages) > 0)
                 <div class="similar-news mb-8">
                     <h2 class="text-2xl font-bold mb-4">Images associées</h2>
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
@@ -103,7 +115,24 @@ h6 svg {
                         @endforeach
                     </div>
                 </div>
+            @endif --}}
+            @if ($additionalImages && count($additionalImages) > 0)
+                <div class="similar-news mb-8">
+                    <h2 class="text-2xl font-bold mb-4">Images associées</h2>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-4">
+                        @foreach ($additionalImages as $image)
+                            <div class="relative mb-3">
+                                <a href="{{ asset('storage/'.$image->path) }}" data-lightbox="additional-images" data-title="additional-images">
+                                    <div class="h-48 w-48 bg-gray-200 overflow-hidden">
+                                        <img src="{{ asset('storage/'.$image->path) }}" alt="additionnelle" class="h-full w-full object-cover">
+                                    </div>
+                                </a>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
             @endif
+
                 <button type="button" style="background-color: #F18700" class="pl-4 pr-4 pt-2 pb-2 font-medium rounded-none white " >
                     <a href="{{route('actu')}}">  Retour </a>
                 </button>

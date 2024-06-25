@@ -54,16 +54,18 @@
                                         @enderror
                                     </div>
                                 </div>
-                                <div class="form-group row mb-4">
-                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Résumé </label>
-                                    <div class="col-sm-12 col-md-7">
-                                        <textarea name="lang[0][resume]" class="form-control summernote-simple" required
-                                            title="Ce champ doit être très bref car il apparaît sur la page d'annonce dans la carte"></textarea>
-                                        @error('lang.0.resume')
-                                            <div class="alert alert-danger">{{ $message }}</div>
-                                        @enderror
+                                @if($type !== "advantages")
+                                    <div class="form-group row mb-4">
+                                        <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Résumé </label>
+                                        <div class="col-sm-12 col-md-7">
+                                            <textarea name="lang[0][resume]" class="form-control summernote-simple" required
+                                                title="Ce champ doit être très bref car il apparaît sur la page d'annonce dans la carte"></textarea>
+                                            @error('lang.0.resume')
+                                                <div class="alert alert-danger">{{ $message }}</div>
+                                            @enderror
+                                        </div>
                                     </div>
-                                </div>
+                                @endif
                                 <div class="form-group row mb-4">
                                     <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Date
                                         Limite</label>
@@ -143,16 +145,17 @@
                                         @enderror
                                     </div>
                                 </div>
-
-                                <div class="form-group row mb-4">
-                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"> Summary</label>
-                                    <div class="col-sm-12 col-md-7">
-                                        <textarea name="lang[1][resume]" class="form-control summernote-simple"></textarea>
-                                        @error('lang.1.resume')
-                                            <div class="alert alert-danger">{{ $message }}</div>
-                                        @enderror
+                                @if($type !== "advantages")
+                                    <div class="form-group row mb-4">
+                                        <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"> Summary</label>
+                                        <div class="col-sm-12 col-md-7">
+                                            <textarea name="lang[1][resume]" class="form-control summernote-simple"></textarea>
+                                            @error('lang.1.resume')
+                                                <div class="alert alert-danger">{{ $message }}</div>
+                                            @enderror
+                                        </div>
                                     </div>
-                                </div>
+                                @endif
 
                                 <div class="form-group row mb-4">
                                     <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Application Deadline</label>
@@ -246,7 +249,7 @@
             if (file) {
                 const img = new Image();
                 img.onload = function() {
-                    if (img.width < 690 || img.height < 500) {
+                    if (img.width >= 690 || img.height >= 500) {
                         imageSizeError.style.display = 'block';
                         event.target.value = '';
                     } else {
