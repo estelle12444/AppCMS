@@ -90,8 +90,10 @@
                                                         <button type="submit"class="btn btn-danger btn-action trigger--fire-modal-6" onclick="return confirm('{{$message}}')"><i
                                                                 class="fas fa-trash"></i></button>
                                                     </form>
-                                                    <a href="{{route('Front.admin.activities.applicants', $activity->id)}}" class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="" data-original-title="Voir les postulants">
-                                                    <i class="fas fa-users"></i></a>
+                                                    @if ($type !== 'advantages' && $type !== 'news')
+                                                        <a href="{{route('Front.admin.activities.applicants', $activity->id)}}" class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="" data-original-title="Voir les postulants">
+                                                        <i class="fas fa-users"></i></a>
+                                                    @endif
                                                 </td>
                                             </tr>
                                         @endforeach
