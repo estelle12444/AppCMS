@@ -80,14 +80,14 @@
                         <div data-aos-duration="300" data-aos-delay="300" class="relative">
                             <img src="img/actu/Group_94.png" alt="Image 2" class="w-full h-auto rounded-lg">
                             <div class="flex flex-col  p-2">
-                                <p class="md:text-3xl text-xl hover:text-amber-500 font-bold mb-2"><a href="{{ route('news.Detail') }}"> Qu'es ce qui arrive à la nouvelle <br> Vidéo virale?</a></p>
+                                <p class="md:text-3xl text-xl hover:text-amber-500 font-bold mb-2"><a href="#"> Qu'es ce qui arrive à la nouvelle <br> Vidéo virale?</a></p>
                                 <p class="text-sm  text-left">Nous sommes fiers d'accueillir des entreprises innovantes qui <br>transforment l'avenir de la Côte d'Ivoire et de l'Afrique.</p>
                             </div>
                         </div>
                         <div data-aos-duration="300" data-aos-delay="300" class="relative">
                             <img src="img/actu/Group_99.png" alt="file_default" class="w-full h-auto rounded-lg">
                             <div class="flex flex-col  p-2">
-                                <p class="md:text-3xl text-xl hover:text-amber-500 font-bold mb-2"><a href="{{ route('news.Detail') }}">  Qu'es ce qui arrive à la nouvelle  <br> IA, Chap Gpt?  </a></p>
+                                <p class="md:text-3xl text-xl hover:text-amber-500 font-bold mb-2"><a href="#">  Qu'es ce qui arrive à la nouvelle  <br> IA, Chap Gpt?  </a></p>
                                 <p class="text-sm text-justify">Nous sommes fiers d'accueillir des entreprises innovantes qui <br>  transforment l'avenir de la Côte d'Ivoire et de l'Afrique.</p>
                             </div>
                         </div>
@@ -156,14 +156,14 @@
                     <div data-aos-duration="300" data-aos-delay="300" class="relative">
                         <img src="img/page_6/femme.png" alt="Image 2" class="w-full h-auto rounded-lg">
                         <div class="flex flex-col  p-2">
-                            <p class="text-xl hover:text-amber-500 font-bold mb-2"><a href="{{ route('news.Detail') }}"> Produits technologiques</a></p>
+                            <p class="text-xl hover:text-amber-500 font-bold mb-2"><a href="#"> Produits technologiques</a></p>
                             <p class="text-sm text-justify">Nous sommes fiers d'accueillir des entreprises innovantes qui transforment l'avenir de la Côte d'Ivoire et de l'Afrique.</p>
                         </div>
                     </div>
                     <div data-aos-duration="300" data-aos-delay="300" class="relative">
                         <img src="img/page_6/femme.png" alt="Image 2" class="w-full h-auto rounded-lg">
                         <div class="flex flex-col  p-2">
-                            <p class="text-xl hover:text-amber-500 font-bold mb-2"><a href="{{ route('news.Detail') }}"> Produits technologiques</a></p>
+                            <p class="text-xl hover:text-amber-500 font-bold mb-2"><a href="#"> Produits technologiques</a></p>
                             <p class="text-sm text-justify">Nous sommes fiers d'accueillir des entreprises innovantes qui transforment l'avenir de la Côte d'Ivoire et de l'Afrique.</p>
                         </div>
                     </div>
