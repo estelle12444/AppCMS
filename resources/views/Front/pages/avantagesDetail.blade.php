@@ -40,7 +40,7 @@
         <div class="p-5 py-20 mx-2 xl:mx-48">
             <div class="max-w-2xl mx-auto p-6">
                 @if($activity->image)
-                    <img alt="{{ $activity->translator['title']}}" src="{{ asset('storage/' .$activity->image) }}" data-toggle="tooltip"  class="w-full h-80 object-cover mb-4 rounded-lg">
+                    <img alt="{{ $activity->translator['title']}}" src="{{ asset('storage/' .$activity->image) }}" data-toggle="tooltip"  class="w-16 h-16 object-cover mb-4 rounded-lg">
                 @else
                     <img src="https://placehold.co/400" alt="News Info" class="w-full h-80 object-cover mb-4 rounded-lg">
                 @endif
