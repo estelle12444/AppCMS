@@ -23,6 +23,7 @@ $url = $_SERVER['REQUEST_URI'];
 
 
     <link rel="stylesheet" href="{{ asset('assets/modules/jquery-selectric/selectric.css') }}">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
 
     <!-- CSS Libraries -->
 
@@ -63,8 +64,7 @@ $url = $_SERVER['REQUEST_URI'];
                     <ul class="navbar-nav mr-3">
                         <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i
                                     class="fas fa-bars"></i></a></li>
-                        <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i
-                                    class="fas fa-search"></i></a></li>
+                        <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
                     </ul>
                     {{-- <div class="search-element">
                         <input class="form-control" type="search" placeholder="Rechercher" aria-label="Search"
@@ -82,17 +82,20 @@ $url = $_SERVER['REQUEST_URI'];
                     </a>
                     <div class="dropdown-menu dropdown-menu-right">
                         <div class="dropdown-title">Connecté il y a 5 min</div>
-                        <a href="/profil_admin" class="dropdown-item has-icon">
+                        <a href="{{ route('admin.profile') }}" class="dropdown-item has-icon">
                             <i class="far fa-user"></i> Profile
                         </a>
+                        @if(app('App\Http\Controllers\AdminController')->getId() == 1)
+                            <a href="{{ route('admin.settings') }}" class="dropdown-item has-icon">
+                                <i class="fas fa-cog"></i> Paramètres
+                            </a>
+                        @endif
 
-                        {{-- <a href="features-settings.html" class="dropdown-item has-icon">
-                            <i class="fas fa-cog"></i> Paramètre
-                        </a> --}}
-                        <div class="dropdown-divider"></div>
-                        <a href="/logout" class="dropdown-item has-icon text-danger">
-                            <i class="fas fa-sign-out-alt"></i> Déconnexion
-                        </a>
+
+                            <div class="dropdown-divider"></div>
+                            <a href="/logout" class="dropdown-item has-icon text-danger">
+                                <i class="fas fa-sign-out-alt"></i> Déconnexion
+                            </a>
                     </div>
                 </li>
                 </ul>
@@ -300,7 +303,7 @@ $url = $_SERVER['REQUEST_URI'];
     <script src="{{asset('assets/modules/jqvmap/dist/maps/jquery.vmap.world.js')}}"></script> --}}
 
     <!-- Template JS File -->
-    @stack('scripts')
+
 
     <script src="{{ asset('assets/js/scripts.js') }}"></script>
     <script src="{{ asset('assets/js/custom.js') }}"></script>
@@ -308,6 +311,10 @@ $url = $_SERVER['REQUEST_URI'];
 
     <script src="{{ asset('assets/modules/upload-preview/assets/js/jquery.uploadPreview.min.js') }}"></script>
     <script src="{{ asset('assets/js/page/index-0.js') }}"></script>
+
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    @stack('scripts')
+
 
 
 </body>

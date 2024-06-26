@@ -118,6 +118,14 @@ Auth::routes();
 
 Route::middleware(['admin'])->group(function () {
     Route::get('/admin', DashboardController::class)->name('Front.admin.home');
+    Route::get('/profil_admin', [AdminController::class, 'profile'])->name('admin.profile');
+    Route::post('/profil_admin', [AdminController::class, 'updateProfile'])->name('admin.profile.update');
+    Route::get('/parametres', [AdminController::class, 'settings'])->name('admin.settings');
+    Route::post('/parametres', [AdminController::class, 'storeAdmin'])->name('admin.store');
+    Route::get('/register_user', [AdminController::class, 'createAdmin'])->name('admin.create');
+    Route::put('/admin/{user}/update',  [AdminController::class, 'updateUser'])->name('admin.update');
+      Route::delete('admin/{user}/destroy',  [AdminController::class, 'destroyUser'])->name('admin.destroy');
+
 
     // Route::get('/admin', [AdminController::class, 'dashboard'])->name('Front.admin.home');
     Route::get('/partner', [AdminController::class, 'index'])->name('Front.admin.partner.index');

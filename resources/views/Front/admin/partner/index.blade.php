@@ -17,10 +17,15 @@
                     <div class="card">
                         <div class="card-header">
                             <h4>Tables</h4>
+                            <div class="card-header-form">
+                                <a href="{{route('Front.admin.partner.create')}}" class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="" data-original-title="CREATE">
+                                    Enregistrer un partenaire <i class="fas fa-user"></i>
+                                </a>
+                            </div>
                         </div>
                         <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-striped" id="table-1">
+
+                                <table class="table table-responsive table-striped" id="Partnertable">
                                     <thead>
                                         <tr>
                                             <th class="text-center">
@@ -90,10 +95,24 @@
                                         @endforeach
                                     </tbody>
                                 </table>
-                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     @endsection
+    @push('scripts')
+    <script >
+          $(document).ready(function() {
+            $('#Partnertable').DataTable({
+                paging: true,
+                pageLength: 15,
+                language: {
+                    url: 'https://cdn.datatables.net/plug-ins/1.11.5/i18n/fr-FR.json'
+                }
+            });
+        });
+
+    </script>
+    @endpush

@@ -26,6 +26,7 @@
         <link href="https://cdn.jsdelivr.net/npm/@heroicons/react@latest/dist/index.css" rel="stylesheet">
         <!-- Lightbox CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+
     <style>
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
