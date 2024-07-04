@@ -181,3 +181,10 @@
         </div>
     </section>
 @endsection
+@push('scripts')
+<script>
+    function confirmDelete(message) {
+        return confirm(message);
+    }
+</script>
+@endpush
