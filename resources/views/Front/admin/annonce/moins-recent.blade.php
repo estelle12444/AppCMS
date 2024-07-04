@@ -73,51 +73,57 @@
                             </div>
                             <div class="col-lg-9">
                                 <div class="tab-content" id="myTabContent">
-                                    @foreach (collect($lessRecentAnnonces)->groupBy('type') as $key => $group)
-                                        <div class="tab-pane fade @if ($loop->first) show active @endif"
-                                            id="{{ $key }}" role="tabpanel"
-                                            aria-labelledby="{{ $key }}-tab">
+                                    @if(count($lessRecentAnnonces) > 0)
+                                        @foreach (collect($lessRecentAnnonces)->groupBy('type') as $key => $group)
+                                            <div class="tab-pane fade @if ($loop->first) show active @endif"
+                                                id="{{ $key }}" role="tabpanel"
+                                                aria-labelledby="{{ $key }}-tab">
 
-                                            @php
-                                                $paginator = paginate($group);
-                                            @endphp
-                                            @foreach ($paginator as $annonce)
-                                                <div class="card-body shadow p-3 mb-5 bg-white rounded">
-                                                    <div class="row">
-                                                        <div class="col-md-3">
-                                                            <h6 class="mb-2 text-info ">Dossier <br> N°{{ $annonce['id'] }}
-                                                            </h6>
-                                                            <p>Date limite: <br> <strong>
-                                                                    {{ $annonce['limit_date'] }}</strong></p>
-                                                        </div>
-                                                        <div class="col-md-9">
-                                                            <h3 class="mb-3 text-primary">
-                                                                {{ strip_tags($annonce['title']) }}
-                                                            </h3>
-                                                            <p> {{ strip_tags($annonce['content']) }}</p>
+                                                @php
+                                                    $paginator = paginate($group);
+                                                @endphp
+                                                @foreach ($paginator as $annonce)
+                                                    <div class="card-body shadow p-3 mb-5 bg-white rounded">
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <h6 class="mb-2 text-info ">Dossier <br> N°{{ $annonce['id'] }}
+                                                                </h6>
+                                                                <p>Date limite: <br> <strong>
+                                                                        {{ $annonce['limit_date'] }}</strong></p>
+                                                            </div>
+                                                            <div class="col-md-9">
+                                                                <h3 class="mb-3 text-primary">
+                                                                    {{ strip_tags($annonce['title']) }}
+                                                                </h3>
+                                                                <p> {{ strip_tags($annonce['content']) }}</p>
 
-                                                            <a href="{{ route('Front.admin.activities.applicants', $annonce['id']) }}"
-                                                                class="btn btn-info btn-action mr-1" data-toggle="tooltip"
-                                                                title="" data-original-title="Voir les candidatures">
-                                                                Personnes inscrites <i class="fas fa-users"></i></a>
+                                                                <a href="{{ route('Front.admin.activities.applicants', $annonce['id']) }}"
+                                                                    class="btn btn-info btn-action mr-1" data-toggle="tooltip"
+                                                                    title="" data-original-title="Voir les candidatures">
+                                                                    Personnes inscrites <i class="fas fa-users"></i></a>
 
 
-                                                                <a href="{{ route('Front.admin.'.$route.'.destroy', $annonce['id']) }}" class="btn btn-danger btn-action trigger--fire-modal-6" onclick="event.preventDefault(); if(confirmDelete('Êtes-vous sûr de vouloir supprimer cet élément ?')) document.getElementById('delete-form-{{ $annonce['id'] }}').submit();">
-                                                                     <i class="fas fa-trash"></i>
-                                                                 </a>
+                                                                    <a href="{{ route('Front.admin.'.$route.'.destroy', $annonce['id']) }}" class="btn btn-danger btn-action trigger--fire-modal-6" onclick="event.preventDefault(); if(confirmDelete('Êtes-vous sûr de vouloir supprimer cet élément ?')) document.getElementById('delete-form-{{ $annonce['id'] }}').submit();">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </a>
 
-                                                             <form id="delete-form-{{ $annonce['id'] }}" action="{{ route('Front.admin.'.$route.'.destroy', $annonce['id']) }}" method="POST" style="display: none;">
-                                                                 @csrf
-                                                                 @method('DELETE')
-                                                             </form>
+                                                                <form id="delete-form-{{ $annonce['id'] }}" action="{{ route('Front.admin.'.$route.'.destroy', $annonce['id']) }}" method="POST" style="display: none;">
+                                                                    @csrf
+                                                                    @method('DELETE')
+                                                                </form>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            @endforeach
-                                            {!! $paginator->links() !!}
+                                                @endforeach
+                                                {!! $paginator->links() !!}
 
+                                            </div>
+                                        @endforeach
+                                    @else
+                                        <div class="alert alert-info">
+                                            Il n'y a pas d'annonces moins récentes à afficher.
                                         </div>
-                                    @endforeach
+                                    @endif
                                 </div>
                             </div>
                         </div>
