@@ -33,16 +33,20 @@
                                                 $message='Êtes-vous sûr de vouloir supprimer cet appel d\'offres? ';
                                                 break;
                                             case 'careers':
-                                                $route = 'Êtes-vous sûr de vouloir supprimer cet appel d\'offres?';
+                                                $route = 'career';
+                                                $message = 'Êtes-vous sûr de vouloir supprimer cet appel d\'offres?';
                                                 break;
                                             case 'jobs':
-                                                $route = 'Êtes-vous sûr de vouloir supprimer cette offre d\'emploi';
+                                                $route = 'job';
+                                                $message = 'Êtes-vous sûr de vouloir supprimer cette offre d\'emploi?';
                                                 break;
                                             case 'quotations':
-                                                $route = 'Êtes-vous sûr de vouloir supprimer cette  demande de cotatation';
+                                                $route = 'quotation';
+                                                $message = 'Êtes-vous sûr de vouloir supprimer cette  demande de cotation?';
                                                 break;
                                             case 'events':
-                                                $route = 'Êtes-vous sûr de vouloir supprimer cette  demande de manifestation';
+                                                 $route = 'event';
+                                                $message = 'Êtes-vous sûr de vouloir supprimer cette  demande de manifestation?';
                                                 break;
                                         }
                                     @endphp
@@ -97,12 +101,15 @@
                                                                 title="" data-original-title="Voir les candidatures">
                                                                 Personnes inscrites <i class="fas fa-users"></i></a>
 
-                                                                <form action="{{ route('Front.admin.'.$route.'.destroy', $annonce['id']) }}" method="POST" style="display: inline;">
-                                                                    @csrf
-                                                                    @method('DELETE')
-                                                                    <button type="submit"class="btn btn-danger btn-action trigger--fire-modal-6" onclick="return confirm('{{$message}}')">
-                                                                        <i class="fas fa-trash"></i></button>
-                                                                </form>
+
+                                                                <a href="{{ route('Front.admin.'.$route.'.destroy', $annonce['id']) }}" class="btn btn-danger btn-action trigger--fire-modal-6" onclick="event.preventDefault(); if(confirmDelete('Êtes-vous sûr de vouloir supprimer cet élément ?')) document.getElementById('delete-form-{{ $annonce['id'] }}').submit();">
+                                                                     <i class="fas fa-trash"></i>
+                                                                 </a>
+
+                                                             <form id="delete-form-{{ $annonce['id'] }}" action="{{ route('Front.admin.'.$route.'.destroy', $annonce['id']) }}" method="POST" style="display: none;">
+                                                                 @csrf
+                                                                 @method('DELETE')
+                                                             </form>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -123,3 +130,11 @@
         </div>
     </section>
 @endsection
+
+@push('scripts')
+<script>
+    function confirmDelete(message) {
+        return confirm(message);
+    }
+</script>
+@endpush

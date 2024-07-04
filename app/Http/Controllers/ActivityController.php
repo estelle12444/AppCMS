@@ -94,7 +94,8 @@ abstract class ActivityController extends Controller
     {
         $this->deleteActivityImages($activity);
         $activity->delete();
-        return redirect()->route("Front.admin.$this->folder.index")->with('success', $this->type->getTypeText()." supprimé avec succès.");
+
+        return redirect()->back()->with('success', $this->type->getTypeText()." supprimé avec succès.");
     }
 
     private function deleteActivityImages(Activity $activity)

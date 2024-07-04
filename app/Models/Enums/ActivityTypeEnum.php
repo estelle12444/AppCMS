@@ -109,7 +109,7 @@ enum ActivityTypeEnum: string
     {
         return match ($this) {
             ActivityTypeEnum::CAREERS => '<div class="section-header">
-                                                <h1>Edition des Appels à Candidature</h1>
+                                                <h1>Edition des Appels à Candidatures</h1>
                                                 <div class="section-header-breadcrumb">
                                                     <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
                                                     <div class="breadcrumb-item"><a href="#">Appels à Candidature</a></div>
@@ -125,7 +125,7 @@ enum ActivityTypeEnum: string
                                                 </div>
                                         </div>',
             ActivityTypeEnum::QUOTATIONS => '  <div class="section-header">
-                                                    <h1>Edition des Demandes de Quotations</h1>
+                                                    <h1>Edition des Demandes de Cotations</h1>
                                                     <div class="section-header-breadcrumb">
                                                         <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
                                                         <div class="breadcrumb-item"><a href="#">Demandes de Cotations</a></div>
@@ -232,13 +232,13 @@ enum ActivityTypeEnum: string
     public function getMessageDelete()
     {
         return match ($this) {
-            ActivityTypeEnum::CAREERS => "Êtes-vous sûr de vouloir supprimer cet appel d'offres?",
+            ActivityTypeEnum::CAREERS => "Êtes-vous sûr de vouloir supprimer cet appel à candidature?",
             ActivityTypeEnum::EVENTS => 'Êtes-vous sûr de vouloir supprimer cette  demande de manifestation',
-            ActivityTypeEnum::QUOTATIONS => 'Êtes-vous sûr de vouloir supprimer cette  demande de cotatation',
-            ActivityTypeEnum::TENDER => "Êtes-vous sûr de vouloir supprimer cet appel d\'offres?",
-            ActivityTypeEnum::JOBS => "Êtes-vous sûr de vouloir supprimer cette offre d'emploi",
-            ActivityTypeEnum::NEWS => "Êtes-vous sûr de vouloir supprimer cette  actualités",
-            ActivityTypeEnum::ADVANTAGES => "Êtes-vous sûr de vouloir supprimer cet avantage",
+            ActivityTypeEnum::QUOTATIONS => 'Êtes-vous sûr de vouloir supprimer cette  demande de cotation',
+            ActivityTypeEnum::TENDER => "Êtes-vous sûr de vouloir supprimer cet appel d\'offre?",
+            ActivityTypeEnum::JOBS => "Êtes-vous sûr de vouloir supprimer cette offre d'emploi?",
+            ActivityTypeEnum::NEWS => "Êtes-vous sûr de vouloir supprimer cette  actualité?",
+            ActivityTypeEnum::ADVANTAGES => "Êtes-vous sûr de vouloir supprimer cet avantage?",
         };
     }
 
