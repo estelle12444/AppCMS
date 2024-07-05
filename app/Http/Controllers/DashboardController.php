@@ -28,7 +28,7 @@ class DashboardController extends Controller
 
         $adminCount = User::where('role_id', 1)->count();
 
-        return view('Front.admin.home', compact('companies', 'users', 'activeCompaniesCount', 'pendingCompaniesCount', 'recentAnnonces', 'lessRecentAnnonces'));;
+        return view('Front.admin.home', compact('adminCount','companies', 'users', 'activeCompaniesCount', 'pendingCompaniesCount', 'recentAnnonces', 'lessRecentAnnonces'));;
     }
 
     private function getCompanyCount(bool $status){

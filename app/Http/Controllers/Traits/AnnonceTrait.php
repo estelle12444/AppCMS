@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\App;
 
 trait AnnonceTrait
 {
-    private function getAnnonces($active=true, $offset=5){
+    private function getAnnonces($active=true, $offset=4){
         $builder = Activity::query()->latest();
 
         if($active) {

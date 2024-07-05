@@ -18,10 +18,10 @@
                         </div>
                         <div class="card-wrap">
                             <div class="card-header">
-                                <h4>Total Administrateur</h4>
+                                <h4>Admins</h4>
                             </div>
                             <div class="card-body">
-                                1
+                                {{ $adminCount}}
                             </div>
                         </div>
                     </div>
@@ -33,7 +33,7 @@
                         </div>
                         <div class="card-wrap">
                             <div class="card-header">
-                                <h4>Annonces télechargés</h4>
+                                <h4>Annonces Télechargées</h4>
                             </div>
                             <div class="card-body">
                                 {{ \App\Models\PageCount::all()->sum('count') }}
@@ -48,7 +48,7 @@
                         </div>
                         <div class="card-wrap">
                             <div class="card-header">
-                                <h4> Comptes entreprises en attente :</h4>
+                                <h4>Entreprises en attente</h4>
                             </div>
                             <div class="card-body">
                                 {{ $pendingCompaniesCount }}
@@ -63,7 +63,7 @@
                         </div>
                         <div class="card-wrap">
                             <div class="card-header">
-                                <h4> Comptes entreprises actifs :</h4>
+                                <h4>Entreprises actives</h4>
                             </div>
                             <div class="card-body">
                                 {{ $activeCompaniesCount }}
@@ -80,7 +80,7 @@
                             <div class="card-header-action">
                                 <div class="btn-group">
                                     <a href="#" class="btn btn-primary">Mois</a>
-                                    <a href="#" class="btn"></a>
+                                    {{-- <a href="#" class="btn btn-adn"></a> --}}
                                 </div>
                             </div>
                         </div>
@@ -128,9 +128,9 @@
                                             src="{{ asset('assets/img/avatar/avatar-1.png') }}" alt="avatar">
                                         <div class="media-body">
                                             <div class="float-right text-primary">{{ $annonce['limit_date'] }}</div>
-                                            <div class="media-title">Titre: {{ strip_tags($annonce['title']) }}</div>
+                                            <div class="media-title">Titre: {{ substr(strip_tags($annonce['title']), 0, 32) }}{{ strlen(strip_tags($annonce['title'])) > 32 ? '...' : '' }}</div>
                                             <span class="text-small text-muted">
-                                                {{ strip_tags($annonce['content']) }}</span>
+                                                {{ substr(strip_tags($annonce['content']), 0, 91) }}{{ strlen(strip_tags($annonce['content'])) > 91 ? '...' : '' }}</span>
                                         </div>
                                     </li>
                                 @endforeach
@@ -160,31 +160,17 @@
                             <div class="table-responsive">
                                 <table class="table table-striped">
                                     <tr>
-                                        {{-- <th>
-                                            <div class="custom-checkbox custom-control">
-                                                <input type="checkbox" data-checkboxes="mygroup" data-checkbox-role="dad"
-                                                    class="custom-control-input" id="checkbox-all">
-                                                <label for="checkbox-all" class="custom-control-label">&nbsp;</label>
-                                            </div>
-                                        </th> --}}
                                         <th>Nom de l'entreprise</th>
                                         <th>Raison Sociale</th>
                                         <th>Siège Social</th>
                                         <th>Date_de_creation</th>
-                                        <th>Process</th>
+
                                         <th>Status</th>
                                         <th>Action</th>
                                     </tr>
                                     @foreach ($companies as $company)
                                         <tr>
 
-                                            {{-- <td class="p-0 text-center">
-                                            <div class="custom-checkbox custom-control">
-                                                <input type="checkbox" data-checkboxes="mygroup"
-                                                    class="custom-control-input" id="checkbox-1">
-                                                <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
-                                            </div>
-                                        </td> --}}
                                             <td>{{ Str::substr(strip_tags($company->name), 0, 20) . '...' }}</td>
                                             <td class="align-middle">
                                                 {{ Str::substr(strip_tags($company->RCCM), 0, 20) . '...' }}
@@ -193,12 +179,6 @@
                                                 {{ Str::substr(strip_tags($company->siege), 0, 20) . '...' }}
                                             </td>
                                             <td>{{ $company->created_at }}</td>
-
-                                            <td>
-                                                {{-- <div class="progress" data-height="4" data-toggle="tooltip" title="{{ $completionPercentage }}%">
-                                                <div class="progress-bar bg-success" style="width: {{ $completionPercentage }}%;"></div>
-                                            </div> --}}
-                                            </td>
                                             <td>
 
 
