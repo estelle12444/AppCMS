@@ -82,6 +82,7 @@ class ContentController extends Controller
                     'installer.carousel' => ' Le texte introductif',
                     'installer.section.eligibility' => 'Les Eligibilités',
                     'installer.section.eligibility.prerequisites' => 'Prérequis des Eligibilités',
+                    'installer.section.eligibility.industrial'=>'Activités Eligibles (les sous titres)',
                     'installer.section.eligibility.industrial.1' => 'Activités Industrielles',
                     'installer.section.eligibility.industrial.2' => 'Recherche et développement',
                     'installer.section.eligibility.industrial.3' => ' Renforcement des capacités',

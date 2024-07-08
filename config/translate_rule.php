@@ -120,7 +120,7 @@ return [
     "installer.section.eligibility.activities.accompanying"=> 100,
     "installer.section.eligibility.activities.capacity_building"=>100 ,
     "installer.section.eligibility.activities.services"=>100,
-    "installer.section.eligibility.industrial.activities_title"=>100,
+    "installer.section.eligibility.industrial.1.activities_title"=>100,
     "installer.section.eligibility.industrial.1.activities_computer_1"=>140,
     "installer.section.eligibility.industrial.2.activities_computer_2"=>140,
     "installer.section.eligibility.industrial.3.activities_computer_3"=>140,
