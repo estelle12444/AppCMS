@@ -55,7 +55,7 @@ class ContentController extends Controller
                 'title' => 'A propos/About us',
                 'id' => 'about',
                 'items' => [
-                    'about' => 'Tous',
+                    'about' => 'Voir Tout',
                     'about.vision' => 'Notre vision',
                     'about.director' => ' Mot du directeur',
                     'about.mission' => 'Notre mission',
@@ -66,7 +66,7 @@ class ContentController extends Controller
                 'title' => 'Opportunités / Opportunity',
                 'id' => 'opportunity',
                 'items' => [
-                    'opportunity' => 'Tous',
+                    'opportunity' => 'Voir Tout',
                     'opportunity.zone' => 'Domaines d\'activités',
                     'opportunity.projects' => 'Nos projets',
                     'opportunity.projects.future_projects' => 'Nos futurs projets',
@@ -78,12 +78,15 @@ class ContentController extends Controller
                 'title' => 'S\'implanter / Installer',
                 'id' => 'installer',
                 'items' => [
-                    'installer' => 'Tous voir',
+                    'installer' => 'Voir Tout',
                     'installer.carousel' => ' Le texte introductif',
-                    'installer.section.eligibility' => 'Les différents éligibilités',
-                    'installer.section.eligibility.prerequisites' => 'Les prérequis de nos éligibilités',
-                    'installer.section.eligibility.activities' => 'Nos activités éligibles',
-                    'installer.section.eligibility.industrial' => 'Nos activités éligibles industrielles',
+                    'installer.section.eligibility' => 'Les Eligibilités',
+                    'installer.section.eligibility.prerequisites' => 'Prérequis des Eligibilités',
+                    'installer.section.eligibility.industrial.1' => 'Activités Industrielles',
+                    'installer.section.eligibility.industrial.2' => 'Recherche et développement',
+                    'installer.section.eligibility.industrial.3' => ' Renforcement des capacités',
+                    'installer.section.eligibility.industrial.4' => 'Services à valeur ajoutée ',
+                    'installer.section.eligibility.industrial.5' => "Activités d'accompagnement",
                     'installer.section.value_added' => 'Notre valeur ajoutée',
                     'installer.join_us' => 'Nous rejoindre'
                 ]
@@ -118,7 +121,7 @@ class ContentController extends Controller
                 'title' => 'Site: page d\'atterrissage',
                 'id' => 'landing',
                 'items' => [
-                    'landing' => 'Tous Savoir',
+                    'landing' => 'Voir Tout',
                     'landing.innovation_village' => 'Village de l\'innovation',
                     'landing.agreement_application' => 'Documents d\'agrément',
                     'landing.website_browsing' => 'lien du naviguation',

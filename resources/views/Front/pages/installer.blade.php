@@ -70,61 +70,62 @@
             </div>
             <div class="lg:pt-10"></div>
             <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="700" class="grid grid-cols-1 md:grid-cols-1 gap-3">
-                <div class="bg-gray-100 rounded-lg p-4 flex items-center justify-between">
+                 <div class="bg-gray-100 rounded-lg p-4 flex items-center justify-between">
                     <!-- Icône à gauche -->
                     <div class="flex items-center">
-                        <div
-                            class="inline-flex items-center flex-shrink-0 w-6 h-6 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                        <div class="inline-flex items-center flex-shrink-0 w-6 h-6 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
                             <img src="{{asset('img/icon-installer/Group.png')}}" alt="">
                         </div>
                         <!-- Texte ou d'autres éléments à côté de l'icône -->
-                        <div {{App\Helper::test('installer.section.eligibility.activities.industrial') }} class=" partie relative ml-2 lg:ml-8 text-sm lg:text-xl font-normal">
-                            {!!__('installer.section.eligibility.activities.industrial')!!}
+                        <div {{App\Helper::test('installer.section.eligibility.industrial.1.activities_title') }} class=" partie relative ml-2 lg:ml-8 text-sm lg:text-xl font-normal">
+                            {!!__('installer.section.eligibility.industrial.1.activities_title')!!}
                         </div>
                     </div>
                     <!-- Icône d'accordéon à droite -->
                     <button class="focus:outline-none" id="etape1">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                            class="w-6 h-6 text-gray-500">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
-                            </path>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-gray-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"> </path>
                         </svg>
                     </button>
                 </div>
                 <div id="info1" class="hidden mt-4">
                     <div class=" md:px-20 px-4 sm:px-8 xl:px-16 lg:px-32 pb-8 sm:pb-16 xl:pb-24 lg:pb-32">
-                        <div {{App\Helper::test('installer.section.eligibility.industrial.activities_title') }} data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="600" class=" partie relative text-2xl xl:text-4xl md:text-4xl font-bold text-center md:text-justify lg:text-justify">
-                            {!!__('installer.section.eligibility.industrial.activities_title')!!}
+                        <div {{App\Helper::test('installer.section.eligibility.industrial.1.activities_title') }} data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="600" class=" partie relative text-2xl xl:text-4xl md:text-4xl font-bold text-center md:text-justify lg:text-justify">
+                            {!!__('installer.section.eligibility.industrial.1.activities_title')!!}
                         </div>
-                        <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="700"
-                            class="grid grid-cols-1 md:grid-cols-2 gap-3 md:py-4 xl:py-0">
+                        <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="700" class="grid grid-cols-1 md:grid-cols-2 gap-3 md:py-4 xl:py-0">
                             <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
-                                <div
-                                    class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                <div class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
                                     <img src="img/icon/check.png" alt="">
                                 </div>
-                                <div {{App\Helper::test('installer.section.eligibility.industrial.activities_computer') }} class="partie relative ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
-                                    {!!__('installer.section.eligibility.industrial.activities_computer')!!}
+                                <div {{App\Helper::test('installer.section.eligibility.industrial.1.activities_computer_1') }} class="partie relative ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
+                                    {!!__('installer.section.eligibility.industrial.1.activities_computer_1')!!}
                                 </div>
                             </div>
 
                             <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
-                                <div
-                                    class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                <div class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
                                     <img src="img/icon/check.png" alt="">
                                 </div>
-                                <div  {{App\Helper::test('installer.section.eligibility.industrial.telecom') }} class=" partie relative ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
-                                    {!!__('installer.section.eligibility.industrial.telecom')!!}
+                                <div  {{App\Helper::test('installer.section.eligibility.industrial.1.telecom_1') }} class=" partie relative ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
+                                    {!!__('installer.section.eligibility.industrial.1.telecom_1')!!}
                                 </div>
                             </div>
 
                             <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
-                                <div
-                                    class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                <div class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
                                     <img src="img/icon/check.png" alt="">
                                 </div>
-                                <div {{App\Helper::test('installer.section.eligibility.industrial.biotechnology') }}  class=" partie relative ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
-                                    {!!__('installer.section.eligibility.industrial.biotechnology')!!}
+                                <div {{App\Helper::test('installer.section.eligibility.1.industrial.biotechnology_1') }}  class=" partie relative ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
+                                    {!!__('installer.section.eligibility.industrial.1.biotechnology_1')!!}
+                                </div>
+                            </div>
+                            <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
+                                <div class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                    <img src="img/icon/check.png" alt="">
+                                </div>
+                                <div {{App\Helper::test('installer.section.eligibility.1.industrial.audiovisual_1') }} class=" partie relative ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
+                                    {!!__('installer.section.eligibility.industrial.1.audiovisual_1')!!}
                                 </div>
                             </div>
                             <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
@@ -132,28 +133,8 @@
                                     class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
                                     <img src="img/icon/check.png" alt="">
                                 </div>
-                                <div {{App\Helper::test('installer.section.eligibility.industrial.audiovisual') }} class=" partie relative ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
-                                    {!!__('installer.section.eligibility.industrial.audiovisual')!!}
-                                </div>
-                            </div>
-
-                            <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
-                                <div
-                                    class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
-                                    <img src="img/icon/check.png" alt="">
-                                </div>
-                                <div {{App\Helper::test('installer.section.eligibility.industrial.audiovisual') }} class=" partie relative ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
-                                    {!!__('installer.section.eligibility.industrial.audiovisual')!!}
-                                </div>
-                            </div>
-
-                            <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
-                                <div
-                                    class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
-                                    <img src="img/icon/check.png" alt="">
-                                </div>
-                                <div {{App\Helper::test('installer.section.eligibility.industrial.software') }} class=" partie relative ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
-                                    {!!__('installer.section.eligibility.industrial.software')!!}
+                                <div {{App\Helper::test('installer.section.eligibility.1.industrial.software_1') }} class=" partie relative ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
+                                    {!!__('installer.section.eligibility.industrial.1.software_1')!!}
                                 </div>
                             </div>
                         </div>
@@ -164,27 +145,24 @@
                         <div class="inline-flex items-center flex-shrink-0 w-6 h-6 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
                             <img src="{{asset('img/icon-installer/Vector-1.png')}}" alt="">
                         </div>
-                        <div {{App\Helper::test('installer.section.eligibility.activities.research_development') }} class=" partie relative ml-2 lg:ml-8 text-lg lg:text-xl font-normal">
-                            {!!__('installer.section.eligibility.activities.research_development')!!}
+                        <div {{App\Helper::test('installer.section.eligibility.industrial.2.activities.research_development_title') }} class=" partie relative ml-2 lg:ml-8 text-lg lg:text-xl font-normal">
+                            {!!__('installer.section.eligibility.industrial.2.activities.research_development_title')!!}
                         </div>
                     </div>
                     <!-- Icône d'accordéon à droite -->
                     <button class="focus:outline-none" id="etape2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor" class="w-6 h-6 text-gray-500">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
-                            </path>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-gray-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"> </path>
                         </svg>
                     </button>
                 </div>
                 <div id="info2" class="hidden mt-4">
-                    <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="500" {{App\Helper::test('installer.section.eligibility.activities.research_development_title') }} class=" partie relative text-2xl xl:text-4xl md:text-4xl font-bold text-center md:text-justify lg:text-justify ">
-                        {!!__('installer.section.eligibility.activities.research_development_title')!!}
-                        <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="500"
-                            class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 lg:grid-cols-3 gap-4">
+                    <div class="md:px-20 px-4 sm:px-8 xl:px-16 lg:px-32 pb-8 sm:pb-16 xl:pb-24 lg:pb-32">
+                    <div  {{App\Helper::test('iinstaller.section.eligibility.industrial.2.activities.research_development_title') }} class=" partie relative text-2xl xl:text-4xl md:text-4xl font-bold text-center md:text-justify lg:text-justify ">
+                        {!!__('installer.section.eligibility.industrial.2.activities.research_development_title')!!}
+                        {{-- <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="500" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 lg:grid-cols-3 gap-4">
                             <div class="flex items-center pt-4 sm:pt-8 rounded-lg" role="alert">
-                                <div
-                                    class="inline-flex items-center flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                <div  class="inline-flex items-center flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
                                     <img src="img/icon/check.png" alt="">
                                 </div>
                                 <div {{App\Helper::test('installer.section.eligibility.industrial.activities_computer') }} class=" partie relative ml-4 text-sm sm:text-md lg:text-lg  font-normal">
@@ -192,8 +170,7 @@
                                 </div>
                             </div>
                             <div class="flex items-center pt-4 sm:pt-8 rounded-lg" role="alert">
-                                <div
-                                    class="inline-flex items-center flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                <div class="inline-flex items-center flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
                                     <img src="img/icon/check.png" alt="">
                                 </div>
                                 <div {{App\Helper::test('installer.section.eligibility.industrial.telecom') }} class=" partie relative ml-4 text-sm sm:text-md  lg:text-lg font-normal">
@@ -201,12 +178,57 @@
                                 </div>
                             </div>
                             <div class="flex items-center pt-4 sm:pt-8 rounded-lg" role="alert">
-                                <div
-                                    class="inline-flex items-center flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                <div class="inline-flex items-center flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
                                     <img src="img/icon/check.png" alt="">
                                 </div>
                                 <div {{App\Helper::test('installer.section.eligibility.industrial.biotechnology.products') }} class=" partie relative ml-4 text-sm sm:text-md  lg:text-lg font-normal">
                                     {!!__('installer.section.eligibility.industrial.biotechnology.products')!!}
+                                </div>
+                            </div>
+                        </div> --}}
+                    </div>
+                        <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="700" class="grid grid-cols-1 md:grid-cols-2 gap-3 md:py-4 xl:py-0">
+                            <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
+                                <div class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                    <img src="img/icon/check.png" alt="">
+                                </div>
+                                <div {{App\Helper::test('installer.section.eligibility.industrial.2.activities_computer_2') }} class="partie relative ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
+                                    {!!__('installer.section.eligibility.industrial.2.activities_computer_2')!!}
+                                </div>
+                            </div>
+
+                            <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
+                                <div class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                    <img src="img/icon/check.png" alt="">
+                                </div>
+                                <div  {{App\Helper::test('installer.section.eligibility.industrial.2.telecom_2') }} class=" partie relative ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
+                                    {!!__('installer.section.eligibility.industrial.2.telecom_2')!!}
+                                </div>
+                            </div>
+
+                            <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
+                                <div class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                    <img src="img/icon/check.png" alt="">
+                                </div>
+                                <div {{App\Helper::test('installer.section.eligibility.industrial.2.biotechnology_2') }}  class=" partie relative ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
+                                    {!!__('installer.section.eligibility.industrial.2.biotechnology_2')!!}
+                                </div>
+                            </div>
+                            <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
+                                <div class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                    <img src="img/icon/check.png" alt="">
+                                </div>
+                                <div {{App\Helper::test('installer.section.eligibility.industrial.2.audiovisual_2') }} class=" partie relative ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
+                                    {!!__('installer.section.eligibility.industrial.2.audiovisual_2')!!}
+                                </div>
+                            </div>
+                            <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
+                                <div
+                                    class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                    <img src="img/icon/check.png" alt="">
+                                </div>
+                                <div {{App\Helper::test('installer.section.eligibility.industrial.2.software_2') }} class=" partie relative ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
+                                    {!!__('installer.section.eligibility.industrial.2.software_2')!!}
                                 </div>
                             </div>
                         </div>
@@ -219,8 +241,8 @@
                             <img src="{{asset('img/icon-installer/Vector.png')}}" alt="">
                         </div>
                             <!-- Texte ou d'autres éléments à côté de l'icône -->
-                        <div {{App\Helper::test('installer.section.eligibility.activities.capacity_building') }} class=" partie relative ml-2 lg:ml-8 text-sm lg:text-xl font-normal">
-                            {!!__('installer.section.eligibility.activities.capacity_building')!!}
+                        <div {{App\Helper::test('installer.section.eligibility.industrial.3.capacity_building') }} class=" partie relative ml-2 lg:ml-8 text-sm lg:text-xl font-normal">
+                            {!!__('installer.section.eligibility.industrial.3.capacity_building')!!}
                         </div>
                     </div>
                         <!-- Icône d'accordéon à droite -->
@@ -232,11 +254,10 @@
                 </div>
                 <div id="info3" class="hidden mt-4">
                     <div class="px-4 md:px-20 py-4 lg:px-20 ">
-                            <div {{App\Helper::test('installer.section.capacity_building') }} data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="700"
-                            class=" partie relative text-2xl xl:text-4xl md:text-4xl font-bold text-center md:text-justify lg:text-justify ">
-                                {!!__('installer.section.capacity_building')!!}
-                            </div>
-                            <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="700" class="grid grid-cols-1 gap-3 xl:grid-cols-3 md:grid-cols-2">
+                        <div {{App\Helper::test('installer.section.eligibility.industrial.3.capacity_building') }} data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="700" class=" partie relative text-2xl xl:text-4xl md:text-4xl font-bold text-center md:text-justify lg:text-justify ">
+                            {!!__('installer.section.eligibility.industrial.3.capacity_building')!!}
+                        </div>
+                            {{-- <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="700" class="grid grid-cols-1 gap-3 xl:grid-cols-3 md:grid-cols-2">
                                 <div class="flex items-center py-4 lg:py-8 rounded-lg" role="alert">
                                     <div class="inline-flex items-center flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
                                         <img src="img/icon/check.png" alt="">
@@ -261,45 +282,85 @@
                                         class="inline-flex items-center flex-shrink-0 w-8 h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
                                         <img src="img/icon/check.png" alt="">
                                     </div>
-                                    <div {{App\Helper::test('installer.section.eligibility.industrial.biotechnology.productse') }} class=" partie relative ml-4 sm:text-md lg:text-lg font-normal">
+                                    <div {{App\Helper::test('installer.section.eligibility.industrial.biotechnology.products') }} class=" partie relative ml-4 sm:text-md lg:text-lg font-normal">
                                         {!!__('installer.section.eligibility.industrial.biotechnology.products')!!}
+                                    </div>
+                                </div>
+                            </div> --}}
+                            <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="700" class="grid grid-cols-1 md:grid-cols-2 gap-3 md:py-4 xl:py-0">
+                                <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
+                                    <div class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                        <img src="img/icon/check.png" alt="">
+                                    </div>
+                                    <div {{App\Helper::test('installer.section.eligibility.industrial.3.activities_computer_3') }} class="partie relative ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
+                                        {!!__('installer.section.eligibility.industrial.3.activities_computer_3')!!}
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
+                                    <div class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                        <img src="img/icon/check.png" alt="">
+                                    </div>
+                                    <div  {{App\Helper::test('installer.section.eligibility.industrial.3.telecom_3') }} class=" partie relative ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
+                                        {!!__('installer.section.eligibility.industrial.3.telecom_3')!!}
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
+                                    <div class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                        <img src="img/icon/check.png" alt="">
+                                    </div>
+                                    <div {{App\Helper::test('installer.section.eligibility.industrial.3.biotechnology_3') }}  class=" partie relative ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
+                                        {!!__('installer.section.eligibility.industrial.3.biotechnology_3')!!}
+                                    </div>
+                                </div>
+                                <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
+                                    <div class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                        <img src="img/icon/check.png" alt="">
+                                    </div>
+                                    <div {{App\Helper::test('installer.section.eligibility.industrial.3.audiovisual_3') }} class=" partie relative ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
+                                        {!!__('installer.section.eligibility.industrial.3.audiovisual_3')!!}
+                                    </div>
+                                </div>
+                                <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
+                                    <div
+                                        class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                        <img src="img/icon/check.png" alt="">
+                                    </div>
+                                    <div {{App\Helper::test('installer.section.eligibility.industrial.3.software_3') }} class=" partie relative ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
+                                        {!!__('installer.section.eligibility.industrial.3.software_3')!!}
                                     </div>
                                 </div>
                             </div>
                     </div>
                 </div>
                     <div class="bg-gray-100 rounded-lg p-4 flex items-center justify-between">
-                        <!-- Icône à gauche -->
                         <div class="flex items-center">
                             <div class="inline-flex items-center flex-shrink-0 w-6 h-6 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
                                 <img src="{{asset('img/icon-installer/Group 267.png')}}" alt="">
                             </div>
 
-                            <!-- Texte ou d'autres éléments à côté de l'icône -->
                             <div {{App\Helper::test('installer.section.eligibility.activities.services') }} class=" partie relative ml-2 lg:ml-8 text-sm lg:text-xl font-normal">
                                 {!!__('installer.section.eligibility.activities.services')!!}
                             </div>
                         </div>
                         <!-- Icône d'accordéon à droite -->
                         <button class="focus:outline-none" id="etape4">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                                class="w-6 h-6 text-gray-500">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7"></path>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-gray-500">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
                     </div>
                     <div id="info4" class="hidden mt-4">
-                        <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="500" class="md:px-20 px-4 sm:px-8 xl:px-16 lg:px-32 pb-8 sm:pb-8 xl:pb-8 lg:pb-8">
-                            <div  {{App\Helper::test('installer.section.value_added.title') }} class="text-2xl xl:text-4xl md:text-4xl font-bold text-center md:text-justify lg:text-justify ">
-                                {!!__('installer.section.value_added.title')!!}
+                        <div class="px-4 md:px-20 py-4 lg:px-20">
+                            <div  {{App\Helper::test('installer.section.eligibility.industrial.4.value_added.title') }} class=" partie relative text-2xl xl:text-4xl md:text-4xl font-bold text-center md:text-justify lg:text-justify ">
+                                {!!__('installer.section.eligibility.industrial.4.value_added.title')!!}
                             </div>
-                            <div {{App\Helper::test('installer.section.value_added.content') }} data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="600"
-                                class=" partie relative pt-6 pb-8  sm:text-justify text-md lg:text-lg">
+                            <div {{App\Helper::test('installer.section.value_added.content') }} data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="600"class=" partie relative pt-6 pb-3  sm:text-justify text-md lg:text-lg">
                                 {!!__('installer.section.value_added.content')!!}
                             </div>
                         </div>
-                        <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="700"
+                        {{-- <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="700"
                             class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 lg:grid-cols-4 gap-6">
                             <div class="flex items-center ">
                                 <div
@@ -328,6 +389,51 @@
                                     {!!__('installer.section.eligibility.industrial.biotechnology.products')!!}
                                 </div>
                             </div>
+                        </div> --}}
+                        <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="700" class="grid grid-cols-1 md:grid-cols-2 gap-3 md:pb-4 xl:py-0">
+                            <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
+                                <div class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                    <img src="img/icon/check.png" alt="">
+                                </div>
+                                <div {{App\Helper::test('installer.section.eligibility.industrial.activities_computer_4') }} class="partie relative ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
+                                    {!!__('installer.section.eligibility.industrial.4.activities_computer_4')!!}
+                                </div>
+                            </div>
+
+                            <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
+                                <div class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                    <img src="img/icon/check.png" alt="">
+                                </div>
+                                <div  {{App\Helper::test('installer.section.eligibility.industrial.4.telecom_4') }} class=" partie relative ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
+                                    {!!__('installer.section.eligibility.industrial.4.telecom_4')!!}
+                                </div>
+                            </div>
+
+                            <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
+                                <div class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                    <img src="img/icon/check.png" alt="">
+                                </div>
+                                <div {{App\Helper::test('installer.section.eligibility.industrial.biotechnology_4') }}  class=" partie relative ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
+                                    {!!__('installer.section.eligibility.industrial.4.biotechnology_4')!!}
+                                </div>
+                            </div>
+                            <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
+                                <div class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                    <img src="img/icon/check.png" alt="">
+                                </div>
+                                <div {{App\Helper::test('installer.section.eligibility.industrial.4.audiovisual_4') }} class=" partie relative ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
+                                    {!!__('installer.section.eligibility.industrial.4.audiovisual_4')!!}
+                                </div>
+                            </div>
+                            <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
+                                <div
+                                    class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                    <img src="img/icon/check.png" alt="">
+                                </div>
+                                <div {{App\Helper::test('installer.section.eligibility.industrial.4.software_4') }} class=" partie relative ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
+                                    {!!__('installer.section.eligibility.industrial.4.software_4')!!}
+                                </div>
+                            </div>
                         </div>
                      </div>
 
@@ -338,8 +444,8 @@
                                 <img src="{{asset('img/icon-installer/Group-1.png')}}" alt="">
                             </div>
                             <!-- Texte ou d'autres éléments à côté de l'icône -->
-                            <div {{App\Helper::test('installer.section.eligibility.activities.accompanying') }} class=" partie relative ml-2 lg:ml-8 text-sm lg:text-xl font-normal">
-                                {!!__('installer.section.eligibility.activities.accompanying')!!}
+                            <div {{App\Helper::test('installer.section.eligibility.industrial.5.activities_accompanying.title') }} class=" partie relative ml-2 lg:ml-8 text-sm lg:text-xl font-normal">
+                                {!!__('installer.section.eligibility.industrial.5.activities_accompanying.title')!!}
                             </div>
                         </div>
                         <!-- Icône d'accordéon à droite -->
@@ -352,16 +458,14 @@
                         </button>
                     </div>
                     <div id="info5" class="hidden mt-4">
-                        <div data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="500" class="md:px-20 px-4 xl:px-32 py-8">
-                            <div class="text-2xl xl:text-4xl md:text-4xl font-bold text-center md:text-justify lg:text-justify">
-                                <span class=" partie relative">   {!!__('installer.section.activities_accompanying.title')!!} </span>
+                        <div data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="500" class="md:px-20 px-4 sm:px-8 xl:px-16 lg:px-32 pb-4 sm:pb-4 xl:pb-8 lg:pb-4">
+                            <div {{App\Helper::test('installer.section.eligibility.industrial.5.activities_accompanying.title') }}  class="text-2xl xl:text-4xl md:text-4xl font-bold text-center md:text-justify lg:text-justify partie relative">
+                                <span >   {!!__('installer.section.eligibility.industrial.5.activities_accompanying.title')!!} </span>
                             </div>
-                            <div data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="600"
-                                class="pt-4 xl:pt-10 text-center md:text-left xl:text-justify text-base xl:text-xl lg:text-lg">
+                            <div {{App\Helper::test('installer.section.activities_accompanying.content') }}  data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="600" class="pt-4 xl:pt-10 text-center md:text-left xl:text-justify text-base xl:text-xl lg:text-lg">
                                 <span class=" partie relative">   {!!__('installer.section.activities_accompanying.content')!!} </span>
-                        </div>
-                            <div data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="700"
-                                class="grid grid-cols-1 xl:grid-cols-2 md:grid-cols-2 gap-4">
+                             </div>
+                            {{-- <div data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="700" class="grid grid-cols-1 xl:grid-cols-2 md:grid-cols-2 gap-4">
 
                                 <div class="flex items-center pt-6 xl:pt-8 rounded-lg xl:text-xl" role="alert">
                                     <div
@@ -386,6 +490,51 @@
                                     </div>
                                      <span {{App\Helper::test('installer.section.eligibility.industrial.biotechnology.products') }} class=" partie relative"> {!!__('installer.section.eligibility.industrial.biotechnology.products')!!}</span>
                                 </div>
+                            </div> --}}
+                            <div data-aos="zoom-in-right" data-aos-duration="500" data-aos-delay="700" class="grid grid-cols-1 md:grid-cols-2 gap-3 md:py-4 xl:py-0">
+                                <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
+                                    <div class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                        <img src="img/icon/check.png" alt="">
+                                    </div>
+                                    <div {{App\Helper::test('installer.section.eligibility.industrial.5.activities_computer_5') }} class="partie relative ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
+                                        {!!__('installer.section.eligibility.industrial.5.activities_computer_5')!!}
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
+                                    <div class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                        <img src="img/icon/check.png" alt="">
+                                    </div>
+                                    <div  {{App\Helper::test('installer.section.eligibility.industrial.5.telecom_5') }} class=" partie relative ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
+                                        {!!__('installer.section.eligibility.industrial.5.telecom_5')!!}
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
+                                    <div class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                        <img src="img/icon/check.png" alt="">
+                                    </div>
+                                    <div {{App\Helper::test('installer.section.eligibility.industrial.5.biotechnology_5') }}  class=" partie relative ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
+                                        {!!__('installer.section.eligibility.industrial.biotechnology_5')!!}
+                                    </div>
+                                </div>
+                                <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
+                                    <div class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                        <img src="img/icon/check.png" alt="">
+                                    </div>
+                                    <div {{App\Helper::test('installer.section.eligibility.industrial.5.audiovisual_5') }} class=" partie relative ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
+                                        {!!__('installer.section.eligibility.industrial.5.audiovisual_5')!!}
+                                    </div>
+                                </div>
+                                <div class="flex items-center pt-4 lg:pt-8 rounded-lg" role="alert">
+                                    <div
+                                        class="inline-flex items-center flex-shrink-0 w-6 lg:w-8 h-6 lg:h-8 text-green-400 bg-green rounded-lg dark:bg-green-800 dark:text-green-200">
+                                        <img src="img/icon/check.png" alt="">
+                                    </div>
+                                    <div {{App\Helper::test('installer.section.eligibility.industrial.5.software_5') }} class=" partie relative ml-2 lg:ml-4 text-sm lg:text-lg font-normal">
+                                        {!!__('installer.section.eligibility.industrial.5.software_5')!!}
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -398,7 +547,7 @@
 
 <div class="xl:px-20 md:px-0 px-6  bg-no-repeat  bg-gradient-to-r from-orange-100 from-20%  to-gray-100 to-90%">
     <div class="xl:flex flex-col bg-repeat-x" style="background-image: url('img/Image6.png')">
-        <div class="  xl:py-8 md:py-8">
+        <div class=" xl:py-8 md:py-8">
             <div {{App\Helper::test('installer.join_us.title') }} class=" partie relative text-2xl xl:text-4xl md:text-4xl pb-4 xl:pb-8 text-center font-bold text-slate-600 space"
                 data-aos="zoom-in-up" data-aos-delay="700" data-aos-delay="500">
                 {!!__('installer.join_us.title')!!}
