@@ -5,8 +5,10 @@ Translate
 Realization of a content management system for a company adapted to its activities and internal process. (a software that allows to create, manage and modify the content of a website without the need for programming skills).
 
 ### Etape pour lancer le projet apres l'avoir cloner
-1: composer install
-2: remplacer les info de votre BD et executer :php artisan migrate
-3:php artisan serve
-4: npm install
-5: npm run dev
+<ol>
+    <li>composer install</li>
+     <li>remplacer les info de votre BD et executer :php artisan migrate</li>
+    <li>php artisan serve</li>
+    <li>npm install</li>
+    <li>npm run dev</li>
+</ol>
